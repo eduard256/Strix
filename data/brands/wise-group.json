@@ -1,0 +1,57 @@
+{
+  "brand": "Wise Group",
+  "brand_id": "wise-group",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MY-303IP/M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch1_s1"
+    },
+    {
+      "models": [
+        "NVS-365-V01",
+        "NVS-365-VO1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "WS-A9R31",
+        "WS-D9638H"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    }
+  ]
+}

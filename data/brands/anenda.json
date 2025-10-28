@@ -1,0 +1,17 @@
+{
+  "brand": "Anenda",
+  "brand_id": "anenda",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AS23-2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

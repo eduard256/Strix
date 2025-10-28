@@ -1,0 +1,17 @@
+{
+  "brand": "Diske",
+  "brand_id": "diske",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dsk-642"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "Proscan",
+  "brand_id": "proscan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "plt1052"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "PLT1052"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "sys"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.jpg"
+    }
+  ]
+}

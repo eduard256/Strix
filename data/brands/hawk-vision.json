@@ -1,0 +1,44 @@
+{
+  "brand": "Hawk Vision",
+  "brand_id": "hawk-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "APPRO"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Hawkvision"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "K-D302MPOE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "uv ipdm15"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    }
+  ]
+}

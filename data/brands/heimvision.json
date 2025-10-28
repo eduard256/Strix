@@ -1,0 +1,299 @@
+{
+  "brand": "Heimvision",
+  "brand_id": "heimvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "201",
+        "hm202A",
+        "Protect B2",
+        "Protect D1 HM612 PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "201",
+        "HM 241",
+        "hm202A",
+        "hm203",
+        "hm311",
+        "HMA2",
+        "hme311",
+        "protect D1",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "241",
+        "H-241",
+        "HM 241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "241",
+        "cloudcam",
+        "hm202A",
+        "HM311"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "311",
+        "hm311"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "311",
+        "HM311"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.554"
+    },
+    {
+      "models": [
+        "311",
+        "Protect ID1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "92.168.0.18",
+        "CloudCam",
+        "hm202A",
+        "HM211",
+        "hm311",
+        "Protect B2",
+        "Protect D1",
+        "Protect D1 HM612 PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/MainStream"
+    },
+    {
+      "models": [
+        "ca1",
+        "hm541"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "CloudCam",
+        "hm202A",
+        "hm203",
+        "hm311",
+        "Other",
+        "Protect D1",
+        "PROTECT D1",
+        "Protect D1 HM612 PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "CLOUDCAM",
+        "HM 241",
+        "Wireless"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 49779,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CLOUDCAM",
+        "HM 241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 49779,
+      "url": "/cgi-bin/snapshot.cgi?chn=3&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CLOUDCAM",
+        "hm241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 49779,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CLOUDCAM",
+        "HE6800SB",
+        "HM203",
+        "HM311",
+        "Protect D1",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "H241",
+        "HM 241",
+        "HM541"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HM 241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "HM 245"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "hm202A",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "hm202A",
+        "HM311"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/av1"
+    },
+    {
+      "models": [
+        "hm203"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "hm203"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "hm211",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/SubStream"
+    },
+    {
+      "models": [
+        "hm311"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "mh612"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    }
+  ]
+}

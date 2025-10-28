@@ -1,0 +1,26 @@
+{
+  "brand": "Panomera",
+  "brand_id": "panomera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3D-VR-AHD3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "Panomera S4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/encoder1"
+    }
+  ]
+}

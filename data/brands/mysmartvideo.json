@@ -1,0 +1,17 @@
+{
+  "brand": "Mysmartvideo",
+  "brand_id": "mysmartvideo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "N6600"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    }
+  ]
+}

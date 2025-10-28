@@ -1,0 +1,44 @@
+{
+  "brand": "Eagle Vision",
+  "brand_id": "eagle-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.asf"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ioImage/[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    }
+  ]
+}

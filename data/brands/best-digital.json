@@ -1,0 +1,17 @@
+{
+  "brand": "Best Digital",
+  "brand_id": "best-digital",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BNC-771BR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ssnadmin_0"
+    }
+  ]
+}

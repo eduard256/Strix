@@ -1,0 +1,1060 @@
+{
+  "brand": "Ezviz",
+  "brand_id": "ezviz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3cn",
+        "C1C",
+        "C1P",
+        "C2W",
+        "C3HW",
+        "C3N",
+        "C3S",
+        "C3T",
+        "C3TN",
+        "C3W",
+        "C3X",
+        "C6C",
+        "C6CN",
+        "C6N",
+        "C6T",
+        "c8c",
+        "C8c",
+        "CS_CV210",
+        "CS_H6C",
+        "CS-C1C",
+        "CS-C2mini-31WFR",
+        "CS-C3HC",
+        "cs-c3n",
+        "CS-C6CN-A0-3H2WF",
+        "CS-C6N-R101-1G2WF",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CS-C8W",
+        "CS-CTQ3N",
+        "CS-CV200",
+        "CS-CV206",
+        "CS-CV210 (Husky)",
+        "CS-CV216",
+        "CS-CV246",
+        "CS-CV248",
+        "CS-CV248-A0-32WFR",
+        "CS-CV310",
+        "cs-cw310",
+        "CS-H1",
+        "CS-H3",
+        "CS-H6c",
+        "CS-H6c-R101-1G2WF",
+        "CS-H8C",
+        "CS-LC3",
+        "cs-ty1",
+        "CTQ3N",
+        "CTQ3W",
+        "CTQ6C",
+        "cv210",
+        "cv310",
+        "CV4",
+        "CZQ3W",
+        "DB1",
+        "DB1C",
+        "exCube Pro",
+        "ezCube pro",
+        "eztube",
+        "H1c",
+        "H3C",
+        "H6C",
+        "H8C",
+        "H8C-R200",
+        "H9C",
+        "Husky",
+        "LC3",
+        "Mini-O",
+        "Other",
+        "TY1",
+        "TY2",
+        "YT1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "3CN",
+        "c1c",
+        "C1mini",
+        "C3N",
+        "C3N(E32056121)",
+        "C3W",
+        "C3W mike",
+        "C3WN",
+        "C3X",
+        "C4W",
+        "C6c",
+        "C6CN",
+        "C6HN",
+        "C6N",
+        "C6T",
+        "C6W",
+        "C8C",
+        "C8W Pro",
+        "CP1 4MP",
+        "CS_CV210",
+        "CS_H6C",
+        "CS-C1C-E0-1E2WF",
+        "CS-C1HC",
+        "cs-c3n",
+        "CS-C6CN-A0-8C4WF",
+        "CS-C6HN-1C2WFR",
+        "CS-C6N",
+        "CS-C8c",
+        "CS-C8C-A0-1F2WF0",
+        "CS-C8W",
+        "CS-CP1",
+        "CS-CTQ3N",
+        "CS-CV206",
+        "cs-cv246",
+        "CS-CV248",
+        "CSCV310",
+        "CS-CV310",
+        "CS-CV311",
+        "CS-CY310",
+        "CS-DB1",
+        "CS-EL3",
+        "CS-H3",
+        "CS-H3c",
+        "CS-H3-R100",
+        "CS-H8",
+        "CS-H8c",
+        "CS-H8c-R100",
+        "CS-LC1C",
+        "cs-ty1",
+        "CS-TY2",
+        "CTQ2C",
+        "CTQ3W",
+        "CV206",
+        "CV228",
+        "cw3",
+        "DB1",
+        "DB1C",
+        "DC1P",
+        "Dome",
+        "e3s",
+        "EL3",
+        "H3c",
+        "H80x",
+        "H8c",
+        "H9c",
+        "Husky",
+        "LC 3",
+        "LC1",
+        "Mini O Plus",
+        "Other",
+        "TY1",
+        "TY2",
+        "ycc365 Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "3CN",
+        "c1c",
+        "C6CN",
+        "C6N",
+        "CS_CV310",
+        "cs-c3n",
+        "CS-C6N",
+        "CS-CV206",
+        "CS-CV206-C0-3B2WFR",
+        "CS-CV246-A0-1C2WFR",
+        "cs-cv310",
+        "CS-CV311",
+        "cs-ty1",
+        "CS-TY2",
+        "CTQ2C",
+        "CTQ3W",
+        "DB1",
+        "H1c",
+        "H8c",
+        "TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel1"
+    },
+    {
+      "models": [
+        "3CW",
+        "c1c",
+        "c3n",
+        "C3N",
+        "C3Q",
+        "C3TN",
+        "C3W",
+        "C3W Pro",
+        "C3X",
+        "C6 2K",
+        "C6 2K+",
+        "C6c",
+        "C6CN",
+        "C6HN",
+        "C6N",
+        "c6s",
+        "C6T",
+        "C8C",
+        "C8W",
+        "C8W Pro",
+        "CQ6N",
+        "CS-C3HW-1C2WFR",
+        "CS-C4",
+        "CS-C6",
+        "CS-C6C-3B2WFR",
+        "CS-C6H",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CS-C8W",
+        "CS-CP1",
+        "CS-CTQ3N",
+        "CS-CV206",
+        "CS-CV206-C0-1A1WFR-Cube",
+        "cs-cv-246",
+        "CS-CV246",
+        "CS-CV248",
+        "cs-cv310",
+        "CSCV310",
+        "CS-CV311",
+        "CS-DB1",
+        "CS-DB1C",
+        "CS-DP2C",
+        "CS-H1c",
+        "CS-H1c-R101-1G2WR",
+        "CS-H6",
+        "CS-H6C",
+        "CSH8C",
+        "cs-ty1",
+        "CS-TY1-R101-1G2WF",
+        "CS-TY2",
+        "CT3N",
+        "CTQ2C",
+        "CTQ3W",
+        "CTQ6C",
+        "cw-c310",
+        "db1",
+        "DB1C",
+        "Door bell",
+        "DoorBell",
+        "DS-72xx",
+        "DS-72xx Series",
+        "EZ360",
+        "Ezviz CTQ3N",
+        "H3C",
+        "H8c",
+        "H8C 4MP",
+        "husky",
+        "Indoor",
+        "LC1",
+        "LC3",
+        "Mini O Plus",
+        "Other",
+        "TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H.264"
+    },
+    {
+      "models": [
+        "9h9C",
+        "C3N(E32056121)",
+        "CS-C6H-31WRF",
+        "CS-C6N",
+        "CTQ3W",
+        "DB1",
+        "EL3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H_264"
+    },
+    {
+      "models": [
+        "c1c",
+        "C3X",
+        "C6N",
+        "C8c",
+        "C8c 2K+",
+        "CS-C3TN",
+        "CS-CV248",
+        "cs-cv310",
+        "CS-DB1C",
+        "DB1C",
+        "H8C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265_stream"
+    },
+    {
+      "models": [
+        "c1c",
+        "C1C-B",
+        "C1HC",
+        "C1Mini",
+        "C1P",
+        "C2C",
+        "C3A",
+        "c3c",
+        "C3N",
+        "C3S",
+        "C3T",
+        "C3TN",
+        "C3W",
+        "C3WN",
+        "C3X",
+        "C4W",
+        "C6c",
+        "C6C",
+        "C6CN",
+        "c6cnpro",
+        "C6N",
+        "C6TC",
+        "C6W",
+        "c8c",
+        "CS H8C",
+        "CS_CV210",
+        "CS-C3HC",
+        "cs-c3n",
+        "CS-C6N",
+        "CS-C8C-A0-1F2WF0",
+        "CS-CTQ2C",
+        "CS-CTQ3N",
+        "CS-CV206",
+        "cs-cv246",
+        "cs-cv-246",
+        "CS-CV248",
+        "CS-CV310",
+        "CS-H3",
+        "CS-H6c-R100-8B4WF",
+        "C-SH8",
+        "CS-H8c",
+        "CTQ20",
+        "CTQ2C",
+        "CTQ3N",
+        "CTQ3W",
+        "CTQ6C",
+        "ctq6tc",
+        "cw310",
+        "CW3N",
+        "cw8",
+        "DB1",
+        "DB1C",
+        "dp1s",
+        "eztube",
+        "H1C",
+        "H6C",
+        "H8C",
+        "husky",
+        "LC3",
+        "MINI O",
+        "Mini O Plus",
+        "mini pano",
+        "MINI PLUS",
+        "Mini-O",
+        "Other",
+        "OutPro",
+        "TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "c1c",
+        "CS-C3N",
+        "CS-H3",
+        "CS-H3C",
+        "CTQ2C",
+        "H9c",
+        "HUSKY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Channel/01"
+    },
+    {
+      "models": [
+        "c1C",
+        "CS-C6H-31WFR",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "cs-cv310",
+        "CS-H8c",
+        "Ezviz CS-TY1-R101",
+        "H6c PRO",
+        "H8c",
+        "LC3",
+        "Mini O Plus",
+        "Mini-O",
+        "TY1",
+        "YCC365 Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h.264"
+    },
+    {
+      "models": [
+        "C1C",
+        "C3W",
+        "cs-cv310",
+        "CS-DP2C",
+        "DP1C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "C1C",
+        "C4W",
+        "C6CN",
+        "C6T",
+        "CS-CV206",
+        "CS-CV248",
+        "cs-cv310",
+        "CS-CV310-A0-1B2WFR-Tube",
+        "CS-H1c",
+        "CS-H6c",
+        "H3C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "C1C",
+        "C3WN",
+        "C6CN",
+        "C6N",
+        "cs-c3n",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CS-C8PF",
+        "CS-C8W",
+        "CS-CV206",
+        "cs-cv310",
+        "CS-DB1C",
+        "CS-H3_R100",
+        "CSH8C",
+        "CS-TY2",
+        "CTQ2C",
+        "H7c",
+        "h8c",
+        "H9c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "C1C",
+        "C2C",
+        "C3WN",
+        "C6CN",
+        "C6N",
+        "c6s",
+        "CQ6N",
+        "cs-c3n",
+        "CS-C6N",
+        "CS-C8PF",
+        "CS-cv246",
+        "CS-CV248",
+        "cs-cv310",
+        "CTQ2C",
+        "CTQ3N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel0"
+    },
+    {
+      "models": [
+        "C1C",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CS-DB1C",
+        "CTQ3N",
+        "CTQ3W",
+        "H3c",
+        "H3C",
+        "H8c",
+        "TY2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "C1C",
+        "C3N",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CS-DP2C",
+        "CSH8c",
+        "EL3",
+        "H3c",
+        "Mini O Plus",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "C1HC",
+        "C6N",
+        "C8C",
+        "CS-C6N",
+        "CS-C6N-D0",
+        "CS-C8T",
+        "CS-CV246-A0-1C2WFR",
+        "cs-cv310",
+        "CS-H8c-R100-1J4WKFL",
+        "CTQ2C",
+        "CTQ3N",
+        "CTQ3W",
+        "H8C",
+        "H8c 2K+",
+        "LC3",
+        "onvif",
+        "TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "C2C",
+        "C8W",
+        "CS-H8c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "c2cube",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "C2Q",
+        "C3W Pro",
+        "C8W Pro",
+        "CS-CP1",
+        "CS-CV228",
+        "CS-CV246",
+        "cs-cv310",
+        "CS-H8c",
+        "DB1",
+        "H8 3k",
+        "H8C",
+        "LC3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "C3A",
+        "H8C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h_264"
+    },
+    {
+      "models": [
+        "C3W",
+        "C8C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel80"
+    },
+    {
+      "models": [
+        "C3W",
+        "C8C",
+        "CS_CV310",
+        "CS-C3U-22ER",
+        "CS-C6N",
+        "CS-C6N-B0",
+        "CS-DB1",
+        "CS-H8c",
+        "EZVIZ H4",
+        "H3c",
+        "H8C",
+        "TY82"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "C3X",
+        "C6N",
+        "H3C",
+        "H80X",
+        "LC3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264/ch1/main/av_stream"
+    },
+    {
+      "models": [
+        "C4S",
+        "C6HN",
+        "C8C",
+        "CS-C1HC",
+        "CS-C1T",
+        "CS-C6HN-1C2WFR",
+        "CS-C6N",
+        "CS-C8W",
+        "CS-CP1",
+        "CS-CTQ2C",
+        "CS-DP2C",
+        "CS-H3-R100",
+        "CTQ2C",
+        "Ezviz-C6",
+        "H8C",
+        "hC1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H.265"
+    },
+    {
+      "models": [
+        "C4W",
+        "C8c 2K+"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream"
+    },
+    {
+      "models": [
+        "C6C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/mjpeg"
+    },
+    {
+      "models": [
+        "C6C",
+        "C6CN",
+        "CTQ2C",
+        "LC3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "C6C",
+        "C8PF",
+        "CS-C8PF",
+        "H7c",
+        "H9c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/201"
+    },
+    {
+      "models": [
+        "C6C",
+        "cs-c3tn",
+        "CS-C6N",
+        "cs-cv310",
+        "EZ360"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "C6CN",
+        "CS-DB1C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Channel/01"
+    },
+    {
+      "models": [
+        "C8C",
+        "CS-C6N-R101-1G2WF",
+        "CS-CTQ2C",
+        "CS-CV248",
+        "H8c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h.264_stream"
+    },
+    {
+      "models": [
+        "C8c 2K+"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_hd.sdp"
+    },
+    {
+      "models": [
+        "C8PF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "CS-C1C",
+        "CS-C6N",
+        "CS-C6N-R101-1G2WF",
+        "CS-C8C-A0-1F2WFL1(G05708394)",
+        "CSCV310",
+        "CS-H8C",
+        "CS-H8c-R100-1J4WKFL",
+        "CTQ2C",
+        "H8c",
+        "LC3",
+        "TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h.265"
+    },
+    {
+      "models": [
+        "CS-C1T",
+        "CS-CV248",
+        "Mini O Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "cs-c6n",
+        "cs-ty1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "CS-C6N",
+        "H8c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "CS-C6N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel2"
+    },
+    {
+      "models": [
+        "CS-C6W",
+        "Husky"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1/main"
+    },
+    {
+      "models": [
+        "CS-C8C-A0-1F2WF",
+        "H8C",
+        "H9C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/live/2"
+    },
+    {
+      "models": [
+        "CS-C8C-A0-1F2WF0",
+        "CS-H3",
+        "CS-H3-R100-1J3WKFL",
+        "CS-H6C",
+        "Ezviz CS-TY1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265"
+    },
+    {
+      "models": [
+        "CS-C8W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "CS-CP1",
+        "CS-CV248-B1-32WVFMR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/HighResolutionVideo"
+    },
+    {
+      "models": [
+        "CS-CV206",
+        "CS-CV206v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "cs-cv310"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "CS-H8c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101?transportmode=unicast&profile=Profile_2"
+    },
+    {
+      "models": [
+        "CS-H8c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101?transportmode=unicast&profile=Profile_1"
+    },
+    {
+      "models": [
+        "CS-H8c-R100-1J4WKFL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "CS-TY2",
+        "TY2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "CTQ3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "CTQ3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264_ulaw/HD720P"
+    },
+    {
+      "models": [
+        "CTQ3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "CTQ3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "CTQ3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam101/h264"
+    },
+    {
+      "models": [
+        "GK-200MP2B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch0"
+    },
+    {
+      "models": [
+        "H80X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264/ch1/sub/av_stream"
+    },
+    {
+      "models": [
+        "H80X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "H9c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/streaming/Channels/201"
+    },
+    {
+      "models": [
+        "LC1C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "LC3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265Preview_01_main"
+    },
+    {
+      "models": [
+        "USB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/h264"
+    },
+    {
+      "models": [
+        "USB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/h264"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Eco",
+  "brand_id": "eco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "tv7204"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    }
+  ]
+}

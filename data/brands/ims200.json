@@ -1,0 +1,17 @@
+{
+  "brand": "Ims200",
+  "brand_id": "ims200",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "D6008DH-II"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    }
+  ]
+}

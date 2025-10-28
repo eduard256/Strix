@@ -1,0 +1,18 @@
+{
+  "brand": "Dss",
+  "brand_id": "dss",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DF960P",
+        "DFD960P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

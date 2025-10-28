@@ -1,0 +1,26 @@
+{
+  "brand": "Visicom",
+  "brand_id": "visicom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NWK-BDN1005W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "NWK-M9852W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Veravista",
+  "brand_id": "veravista",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "700"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    }
+  ]
+}

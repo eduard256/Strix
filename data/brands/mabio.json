@@ -1,0 +1,26 @@
+{
+  "brand": "Mabio",
+  "brand_id": "mabio",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "P 450"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "P 450"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    }
+  ]
+}

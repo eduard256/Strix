@@ -1,0 +1,163 @@
+{
+  "brand": "Neewer",
+  "brand_id": "neewer",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "l series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "L Series",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "L Series",
+        "Other",
+        "v-100",
+        "V-100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "m series",
+        "OO-5QWMD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "MSeries"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "OO-5QWMD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "Other",
+        "V-100",
+        "V-200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other",
+        "V-100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "V-100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "v100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "V-100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "V-100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    }
+  ]
+}

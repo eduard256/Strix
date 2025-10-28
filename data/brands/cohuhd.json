@@ -1,0 +1,17 @@
+{
+  "brand": "Cohuhd",
+  "brand_id": "cohuhd",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4261-1000-0014"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    }
+  ]
+}

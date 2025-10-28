@@ -1,0 +1,115 @@
+{
+  "brand": "Fisotech",
+  "brand_id": "fisotech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "2MP-D",
+        "3MP",
+        "3MP-D-VF",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2MP-D",
+        "3MP-D-VF",
+        "smart wifi ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "2MP-D",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "3MP",
+        "3MP-D-VF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "3MP-D-VF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "DM365_IPNC",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    }
+  ]
+}

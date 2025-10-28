@@ -1,0 +1,55 @@
+{
+  "brand": "Lumenera",
+  "brand_id": "lumenera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LC165E",
+        "LE275C",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-usr/nph-video"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-usr/nph-image"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-usr/image"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/nph-video"
+    }
+  ]
+}

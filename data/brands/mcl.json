@@ -1,0 +1,66 @@
+{
+  "brand": "Mcl",
+  "brand_id": "mcl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "610",
+        "IP-CAMD610AW"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "626W",
+        "IP-CAMD628EW",
+        "M-624W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "626W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "ip615ew"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "IP-CAM615AEW",
+        "IP-CAM615AEW-74460"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8557,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

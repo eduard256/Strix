@@ -1,0 +1,17 @@
+{
+  "brand": "Pixeye",
+  "brand_id": "pixeye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ck 868"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/image.jpg"
+    }
+  ]
+}

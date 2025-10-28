@@ -1,0 +1,17 @@
+{
+  "brand": "Espressif",
+  "brand_id": "espressif",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EP32-CAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/stream"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Argos",
+  "brand_id": "argos",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "514"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "AV SERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/0?videoCodecType=H.264"
+    }
+  ]
+}

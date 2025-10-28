@@ -1,0 +1,44 @@
+{
+  "brand": "Aottom",
+  "brand_id": "aottom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD30M14JAJ-WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "super4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    }
+  ]
+}

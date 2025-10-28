@@ -1,0 +1,81 @@
+{
+  "brand": "Smart Home",
+  "brand_id": "smart-home",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "daua"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "EW-N4D2J"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264.sdp?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230"
+    },
+    {
+      "models": [
+        "general"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "Other",
+        "SCHLAGE NEXIA WCW100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264.sdp?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230"
+    },
+    {
+      "models": [
+        "PNI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "SCHLAGE NEXIA WCW100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "SCHLAGE NEXIA WCW100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "SCHLAGE NEXIA WCW100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    }
+  ]
+}

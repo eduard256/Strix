@@ -1,0 +1,64 @@
+{
+  "brand": "Mipcam",
+  "brand_id": "mipcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "366357",
+        "IP-CAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C6F0SgZ3N0P6L2",
+        "Y853Q2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "NKIP308-HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NKIP308-HD"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.av"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

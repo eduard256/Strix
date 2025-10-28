@@ -1,0 +1,18 @@
+{
+  "brand": "Hicc-2300t",
+  "brand_id": "hicc-2300t",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVL Bullet",
+        "hd dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    }
+  ]
+}

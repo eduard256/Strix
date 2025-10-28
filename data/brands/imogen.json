@@ -1,0 +1,35 @@
+{
+  "brand": "Imogen",
+  "brand_id": "imogen",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Kerby Wireless Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "operator/get_jpeg.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    }
+  ]
+}

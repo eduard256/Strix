@@ -1,0 +1,66 @@
+{
+  "brand": "Sentry 360",
+  "brand_id": "sentry-360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "360",
+        "fs-ip8180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "360",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "360",
+        "360EYE"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "IS-DM210",
+        "is-ip200-dn"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "is-ip200-dn"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": "/"
+    },
+    {
+      "models": [
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

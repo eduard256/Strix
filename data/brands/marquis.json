@@ -1,0 +1,55 @@
+{
+  "brand": "Marquis",
+  "brand_id": "marquis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ipc-xd400",
+        "ipc-yt824",
+        "YMA42P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ipc-yt60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "ipc-yt60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "IPC-YT60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "IPC-YT60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/2"
+    }
+  ]
+}

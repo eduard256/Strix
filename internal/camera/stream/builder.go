@@ -1,0 +1,321 @@
+package stream
+
+import (
+	"fmt"
+	"net/url"
+	"regexp"
+	"strconv"
+	"strings"
+
+	"github.com/strix-project/strix/internal/models"
+)
+
+// Builder handles stream URL construction
+type Builder struct {
+	queryParams []string
+	logger      interface{ Debug(string, ...any) }
+}
+
+// NewBuilder creates a new stream URL builder
+func NewBuilder(queryParams []string, logger interface{ Debug(string, ...any) }) *Builder {
+	return &Builder{
+		queryParams: queryParams,
+		logger:      logger,
+	}
+}
+
+// BuildContext contains parameters for URL building
+type BuildContext struct {
+	IP       string
+	Port     int
+	Username string
+	Password string
+	Channel  int
+	Width    int
+	Height   int
+	Protocol string
+	Path     string
+}
+
+// BuildURL builds a complete URL from an entry and context
+func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
+	// Set defaults
+	if ctx.Width == 0 {
+		ctx.Width = 640
+	}
+	if ctx.Height == 0 {
+		ctx.Height = 480
+	}
+
+	// Use entry's port if not specified
+	if ctx.Port == 0 {
+		ctx.Port = entry.Port
+	}
+
+	// Use entry's protocol if not specified
+	if ctx.Protocol == "" {
+		ctx.Protocol = entry.Protocol
+	}
+
+	// Replace placeholders in URL path
+	path := b.replacePlaceholders(entry.URL, ctx)
+
+	// Build the complete URL
+	var fullURL string
+
+	// Check if the URL already contains authentication parameters
+	hasAuthInURL := b.hasAuthenticationParams(path)
+
+	switch ctx.Protocol {
+	case "rtsp":
+		if ctx.Username != "" && ctx.Password != "" && !hasAuthInURL {
+			// Standard ports can be omitted
+			if ctx.Port == 554 {
+				fullURL = fmt.Sprintf("rtsp://%s:%s@%s/%s",
+					ctx.Username, ctx.Password, ctx.IP, path)
+			} else {
+				fullURL = fmt.Sprintf("rtsp://%s:%s@%s:%d/%s",
+					ctx.Username, ctx.Password, ctx.IP, ctx.Port, path)
+			}
+		} else {
+			if ctx.Port == 554 {
+				fullURL = fmt.Sprintf("rtsp://%s/%s", ctx.IP, path)
+			} else {
+				fullURL = fmt.Sprintf("rtsp://%s:%d/%s", ctx.IP, ctx.Port, path)
+			}
+		}
+
+	case "http", "https":
+		// For HTTP, check if auth should be in URL or parameters
+		if ctx.Username != "" && ctx.Password != "" && !hasAuthInURL {
+			// Don't put auth in URL for HTTP, will use Basic Auth header
+			if (ctx.Protocol == "http" && ctx.Port == 80) ||
+			   (ctx.Protocol == "https" && ctx.Port == 443) {
+				fullURL = fmt.Sprintf("%s://%s/%s", ctx.Protocol, ctx.IP, path)
+			} else {
+				fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
+			}
+		} else {
+			if (ctx.Protocol == "http" && ctx.Port == 80) ||
+			   (ctx.Protocol == "https" && ctx.Port == 443) {
+				fullURL = fmt.Sprintf("%s://%s/%s", ctx.Protocol, ctx.IP, path)
+			} else {
+				fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
+			}
+		}
+
+	default:
+		// Generic URL construction
+		fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
+	}
+
+	// Clean up double slashes (except after protocol://)
+	fullURL = b.cleanURL(fullURL)
+
+	b.logger.Debug("built stream URL", "url", fullURL, "entry", entry.Type)
+
+	return fullURL
+}
+
+// replacePlaceholders replaces all placeholders in the URL
+func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
+	result := urlPath
+
+	// Common placeholders
+	replacements := map[string]string{
+		"[CHANNEL]":  strconv.Itoa(ctx.Channel),
+		"[channel]":  strconv.Itoa(ctx.Channel),
+		"[WIDTH]":    strconv.Itoa(ctx.Width),
+		"[width]":    strconv.Itoa(ctx.Width),
+		"[HEIGHT]":   strconv.Itoa(ctx.Height),
+		"[height]":   strconv.Itoa(ctx.Height),
+		"[USERNAME]": ctx.Username,
+		"[username]": ctx.Username,
+		"[PASSWORD]": ctx.Password,
+		"[password]": ctx.Password,
+		"[PASWORD]":  ctx.Password, // Handle typo in database
+		"[pasword]":  ctx.Password,
+		"[USER]":     ctx.Username,
+		"[user]":     ctx.Username,
+		"[PASS]":     ctx.Password,
+		"[pass]":     ctx.Password,
+		"[PWD]":      ctx.Password,
+		"[pwd]":      ctx.Password,
+		"[IP]":       ctx.IP,
+		"[ip]":       ctx.IP,
+		"[PORT]":     strconv.Itoa(ctx.Port),
+		"[port]":     strconv.Itoa(ctx.Port),
+		"[TOKEN]":    "", // Empty for now
+		"[token]":    "",
+	}
+
+	// Replace all placeholders
+	for placeholder, value := range replacements {
+		result = strings.ReplaceAll(result, placeholder, value)
+	}
+
+	// Handle {var} style placeholders
+	result = b.replaceVarPlaceholders(result, ctx)
+
+	// Handle query parameter placeholders
+	result = b.replaceQueryParams(result, ctx)
+
+	return result
+}
+
+// replaceVarPlaceholders replaces {var} style placeholders
+func (b *Builder) replaceVarPlaceholders(urlPath string, ctx BuildContext) string {
+	varPattern := regexp.MustCompile(`\{([^}]+)\}`)
+
+	return varPattern.ReplaceAllStringFunc(urlPath, func(match string) string {
+		key := strings.Trim(match, "{}")
+		switch strings.ToLower(key) {
+		case "username", "user":
+			return ctx.Username
+		case "password", "pass", "pwd":
+			return ctx.Password
+		case "ip":
+			return ctx.IP
+		case "port":
+			return strconv.Itoa(ctx.Port)
+		case "channel", "chn", "ch":
+			return strconv.Itoa(ctx.Channel)
+		case "width":
+			return strconv.Itoa(ctx.Width)
+		case "height":
+			return strconv.Itoa(ctx.Height)
+		default:
+			return match // Keep original if not recognized
+		}
+	})
+}
+
+// replaceQueryParams handles query parameter replacements
+func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
+	// Parse URL to handle query params
+	parts := strings.SplitN(urlPath, "?", 2)
+	if len(parts) < 2 {
+		return urlPath
+	}
+
+	basePath := parts[0]
+	queryString := parts[1]
+
+	// Parse query parameters
+	params, err := url.ParseQuery(queryString)
+	if err != nil {
+		return urlPath
+	}
+
+	// Replace known parameter values
+	for key := range params {
+		lowerKey := strings.ToLower(key)
+
+		// Check if this is a known parameter from our list
+		if b.isKnownParameter(lowerKey) {
+			switch lowerKey {
+			case "user", "username", "usr", "loginuse":
+				params.Set(key, ctx.Username)
+			case "password", "pass", "pwd", "loginpas", "passwd":
+				params.Set(key, ctx.Password)
+			case "channel", "chn", "ch":
+				params.Set(key, strconv.Itoa(ctx.Channel))
+			case "width":
+				params.Set(key, strconv.Itoa(ctx.Width))
+			case "height":
+				params.Set(key, strconv.Itoa(ctx.Height))
+			}
+		}
+	}
+
+	// Rebuild URL
+	return basePath + "?" + params.Encode()
+}
+
+// isKnownParameter checks if a parameter is in our known list
+func (b *Builder) isKnownParameter(param string) bool {
+	for _, known := range b.queryParams {
+		if strings.ToLower(known) == param {
+			return true
+		}
+	}
+	return false
+}
+
+// hasAuthenticationParams checks if URL contains auth parameters
+func (b *Builder) hasAuthenticationParams(urlPath string) bool {
+	authParams := []string{
+		"user=", "username=", "usr=", "loginuse=",
+		"password=", "pass=", "pwd=", "loginpas=", "passwd=",
+	}
+
+	lowerPath := strings.ToLower(urlPath)
+	for _, param := range authParams {
+		if strings.Contains(lowerPath, param) {
+			return true
+		}
+	}
+
+	return false
+}
+
+// cleanURL cleans up the URL
+func (b *Builder) cleanURL(fullURL string) string {
+	// Remove double slashes except after protocol://
+	protocolEnd := strings.Index(fullURL, "://")
+	if protocolEnd > 0 {
+		protocol := fullURL[:protocolEnd+3]
+		rest := fullURL[protocolEnd+3:]
+
+		// Replace multiple slashes with single slash
+		rest = regexp.MustCompile(`/{2,}`).ReplaceAllString(rest, "/")
+
+		return protocol + rest
+	}
+
+	return fullURL
+}
+
+// BuildURLsFromEntry generates all possible URLs from a camera entry
+func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext) []string {
+	var urls []string
+
+	// Build main URL
+	mainURL := b.BuildURL(entry, ctx)
+	urls = append(urls, mainURL)
+
+	// For NVR systems, try multiple channels
+	if ctx.Channel == 0 && strings.Contains(strings.ToLower(entry.Notes), "channel") {
+		for ch := 1; ch <= 4; ch++ {
+			altCtx := ctx
+			altCtx.Channel = ch
+			altURL := b.BuildURL(entry, altCtx)
+			if altURL != mainURL {
+				urls = append(urls, altURL)
+			}
+		}
+	}
+
+	// Try different resolutions for snapshot URLs
+	if entry.Type == "JPEG" || entry.Type == "MJPEG" {
+		resolutions := [][2]int{
+			{640, 480},
+			{1280, 720},
+			{1920, 1080},
+		}
+
+		for _, res := range resolutions {
+			if res[0] != ctx.Width || res[1] != ctx.Height {
+				altCtx := ctx
+				altCtx.Width = res[0]
+				altCtx.Height = res[1]
+				altURL := b.BuildURL(entry, altCtx)
+				if altURL != mainURL {
+					urls = append(urls, altURL)
+				}
+			}
+		}
+	}
+
+	return urls
+}

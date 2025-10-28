@@ -1,0 +1,59 @@
+{
+  "brand": "Robaxo",
+  "brand_id": "robaxo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "204B",
+        "RC204B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/"
+    },
+    {
+      "models": [
+        "4RC204A",
+        "Other",
+        "RC204",
+        "RC204A"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "RC204",
+        "RC204A"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "RC204",
+        "RC204A"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=01"
+    },
+    {
+      "models": [
+        "RC360Z"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Eurovideo",
+  "brand_id": "eurovideo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "bx213d",
+        "d213d"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    }
+  ]
+}

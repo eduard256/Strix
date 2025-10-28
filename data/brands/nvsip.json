@@ -1,0 +1,89 @@
+{
+  "brand": "Nvsip",
+  "brand_id": "nvsip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C6F0SoZ3N0PdL2",
+        "H210",
+        "nvsip-ipc",
+        "SY-500P-SG4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "HI3518",
+        "nvsip-ipc",
+        "Other",
+        "R11",
+        "SY-500P-SG4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ipc",
+        "nvsip-ipc",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8854,
+      "url": "/live0.264?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8854,
+      "url": "/live2.264?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8854,
+      "url": "/live4.264?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8854,
+      "url": "/live6.264?user=[USERNAME]&passwd=[PASSWORD]"
+    }
+  ]
+}

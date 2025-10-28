@@ -1,0 +1,19 @@
+{
+  "brand": "Svec",
+  "brand_id": "svec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720phx",
+        "B01POE-4MP-HX",
+        "sv3c poe 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Homedia",
+  "brand_id": "homedia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DID-VIEW-218037-STSLJ",
+        "X Series IP Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    }
+  ]
+}

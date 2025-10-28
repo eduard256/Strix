@@ -1,0 +1,26 @@
+{
+  "brand": "Yoteware",
+  "brand_id": "yoteware",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.2.1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/onvif/live/2"
+    },
+    {
+      "models": [
+        "1.2.1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/Onvif/live/1/1"
+    }
+  ]
+}

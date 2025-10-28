@@ -1,0 +1,17 @@
+{
+  "brand": "Eguard",
+  "brand_id": "eguard",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "G-N5FL-H40CD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

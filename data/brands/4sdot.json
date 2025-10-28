@@ -1,0 +1,72 @@
+{
+  "brand": "4sdot",
+  "brand_id": "4sdot",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4331911061",
+        "4S-B05W-720P",
+        "B05W-720"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "4S-B05W-720P",
+        "B05W-720P",
+        "CMOS720P",
+        "hx series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "B05W-720P",
+        "B07BW-1080P-HX",
+        "HX series",
+        "HX SERIES",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "B07BW-1080P-HX",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "PW638K"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Procam",
+  "brand_id": "procam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NC300",
+        "NC400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "NC360"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "PC-S/A795H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264/ch2"
+    },
+    {
+      "models": [
+        "PC-S/A795H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264/ch3"
+    }
+  ]
+}

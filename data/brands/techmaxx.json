@@ -1,0 +1,26 @@
+{
+  "brand": "Techmaxx",
+  "brand_id": "techmaxx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "T-67"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "XLT-062311-CSXMN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    }
+  ]
+}

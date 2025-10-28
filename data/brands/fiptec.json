@@ -1,0 +1,17 @@
+{
+  "brand": "Fiptec",
+  "brand_id": "fiptec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LO22-PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

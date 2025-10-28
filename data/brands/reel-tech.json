@@ -1,0 +1,26 @@
+{
+  "brand": "Reel Tech",
+  "brand_id": "reel-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "realtech"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "RT-732-200H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    }
+  ]
+}

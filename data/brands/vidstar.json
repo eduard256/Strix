@@ -1,0 +1,17 @@
+{
+  "brand": "Vidstar",
+  "brand_id": "vidstar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "vsc-2121vr-ip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "brand": "Semac",
+  "brand_id": "semac",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "510",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "990506"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IPCAM 515",
+        "IPCAM500",
+        "IPCAM510",
+        "P2P IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ipcam510"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPCAM510"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "IPCAM520"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 3333,
+      "url": "/tmpfs/auto.jpg"
+    }
+  ]
+}

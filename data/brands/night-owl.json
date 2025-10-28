@@ -1,0 +1,380 @@
+{
+  "brand": "Night Owl",
+  "brand_id": "night-owl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0v600-365-kd",
+        "3 m",
+        "54285708",
+        "CAM1",
+        "CAM2",
+        "cam-wnvr29-in",
+        "CAM-WNVR29-IN",
+        "CAM-WNVR2P-IN",
+        "cam-wnvr2p-ou",
+        "CAM-WNVR2P-OU",
+        "cam-wnvr2p-ou_20170811",
+        "cl-a10-841",
+        "Door Bell",
+        "Doorbell",
+        "Other",
+        "ov600",
+        "WCM-C20SD--BU-JUN",
+        "wcm-sd2pou-bu-v2",
+        "WD2CLM",
+        "WG4",
+        "WINR2P-OU",
+        "Wnec47",
+        "wnr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2.W",
+        "CAM-WNVR2P-OU",
+        "DVR-BTD2-8-v2",
+        "DVR-THD30B",
+        "NIGHTOWL2",
+        "WNIP2 CAM2",
+        "WNIP-2LTA-BS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1_1.264"
+    },
+    {
+      "models": [
+        "2.W",
+        "CAM-WNVR2P-IN",
+        "DVR-THD30B",
+        "Other",
+        "WMVR-WNIP2",
+        "WNIP2 CAM3",
+        "WNIP-2LTA-BS",
+        "WNVR-WNIP2-V2-CN4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch2_1.264"
+    },
+    {
+      "models": [
+        "2.W",
+        "CAM-WNVR2P-IN",
+        "DVR-THD30B",
+        "main",
+        "WMVR-WNIP2",
+        "WNIP2 CAM3",
+        "WNIP-2LTA-BS",
+        "WNVR-BTWN8-v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch3_1.264"
+    },
+    {
+      "models": [
+        "2.W",
+        "CAM-2",
+        "CAM-4",
+        "CAM-WNR2P-0U",
+        "CAM-WNR2P-OU",
+        "CAM-WNVR2P-OU",
+        "Other",
+        "WNR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "54285708",
+        "CAM-WNR2P-0U",
+        "CAM-WNR2P-OU",
+        "CAM-WNVR2P-OU",
+        "CAM-WNVR2P-OU_20170811",
+        "Other",
+        "wcm-c20sd-bu-jun",
+        "WDB-20",
+        "WEBCAM",
+        "WG4",
+        "WINR2P-OU",
+        "wnr2p-ou"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "54285708",
+        "CAM-WNR2P-0U",
+        "cam-wnr2p-ou",
+        "DoorBell",
+        "DVR-THD30B",
+        "Other",
+        "scotty",
+        "wcm-sd2pouv2",
+        "WG4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "54285708",
+        "CAM1",
+        "cam-wnr2p-0u",
+        "CAM-WNR2P-OU",
+        "CAM-WNVR2P-IN",
+        "CAM-WNVR2P-OU",
+        "Other",
+        "WCM-SD2POUv2",
+        "WDB-20",
+        "WNR2P-OU"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BTD2",
+        "CAM2",
+        "DVR-FTD4-8",
+        "DVR-THD30B",
+        "FTD4",
+        "Other",
+        "WM-CAM-WAWNP2L",
+        "wmvr-wnip2",
+        "WNIP2-CM",
+        "WNIP-2lta-bs"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "CAM-1",
+        "CAM-2",
+        "CAM-WNR2P-0U",
+        "CAM-WNR2P-OU",
+        "cam-wnvr2p-in",
+        "CAM-WNVR2P-IN",
+        "DVR-THD30B",
+        "NIGHTOWL",
+        "NIGHTOWL2",
+        "Other",
+        "WCM-PWNVR20W-BU-JUN",
+        "WG4",
+        "WINR2P-OU",
+        "wnr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "cam-ippt-hdw",
+        "cam-wnvr2p-ou_20170811",
+        "WCM-D2POUv2",
+        "WCM-SD2POU-BU-V2-JUN"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "CAM-IPPT-HDW",
+        "CAM-WNIP2LWA",
+        "DOORBELL",
+        "DVR-VDP2-8",
+        "WCM-SD2POU-BU-V2",
+        "WM-CAM-WNP2LBU",
+        "WMVR-WNIP2",
+        "WNIP2 (CAM1)",
+        "WNIP2 CAM3",
+        "WNIP-2LTA-BS",
+        "WNIP-2LTA-BS-U",
+        "WNIP-2LTAW-BS-U",
+        "WNIP8",
+        "WNIP-8LTA-BS-U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "CAM-WNVR2P-IN",
+        "Other",
+        "WCM-SD2POU-BU-V2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=2"
+    },
+    {
+      "models": [
+        "CAM-WNVR2P-OU_20170811",
+        "DVR-THD30B",
+        "IP-8LTA-B-V2",
+        "IP-BLTA-B-V2",
+        "QM-CAM-WNP2LBU",
+        "WNIP2-CM",
+        "WNIP-2LTA-BS-U",
+        "WNIP-2LTAW-BS-U",
+        "WNIP-8LTA-BS-U",
+        "wnp8lbu"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "FTD-4"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=5&stream=1"
+    },
+    {
+      "models": [
+        "FTD-4"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=3&stream=1"
+    },
+    {
+      "models": [
+        "NIGHTOWL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "WCM-PWNVR20W-BU-JUN"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "wcm-c20sd-bu-jun",
+        "WCM-C20W-BU"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot"
+    },
+    {
+      "models": [
+        "WCM-SD2P-OU V2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=jeremy.jarrad%40gmail.com&pwd=[PASSWORD]&strm=2"
+    },
+    {
+      "models": [
+        "WM-CAM-WAWNP2L",
+        "WNIP-TLTA-BS-U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "WNVR-20B-4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

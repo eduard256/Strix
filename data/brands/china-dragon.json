@@ -1,0 +1,55 @@
+{
+  "brand": "China Dragon",
+  "brand_id": "china-dragon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "593amtmy6g8h",
+        "C9F0SEZ0N0P2L0",
+        "C9F0SeZ0N0P7L0",
+        "IIII-718128-EADFC",
+        "IPCAM P2P",
+        "Other",
+        "PTZ H3-187V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "c9f0sez0n0p2l0",
+        "C9F0SeZ0N0P7L0",
+        "IPCAM P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "goke",
+        "iCam365"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "JKN06204",
+        "TC55",
+        "TC56"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

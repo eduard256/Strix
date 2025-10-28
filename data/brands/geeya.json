@@ -1,0 +1,122 @@
+{
+  "brand": "Geeya",
+  "brand_id": "geeya",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C601",
+        "C602",
+        "c801",
+        "C801",
+        "c802",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "C601"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "C601",
+        "c801",
+        "C802",
+        "Other",
+        "P2P C602"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "C601",
+        "C602"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "C601"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "C602",
+        "c801",
+        "P2P C602"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c801",
+        "c802"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c801",
+        "c802",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C802"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "C802"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    }
+  ]
+}

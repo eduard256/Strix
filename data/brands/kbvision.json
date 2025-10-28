@@ -1,0 +1,19 @@
+{
+  "brand": "Kbvision",
+  "brand_id": "kbvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR",
+        "KX - H13WN",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    }
+  ]
+}

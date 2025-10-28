@@ -1,0 +1,129 @@
+{
+  "brand": "Ipc-bo",
+  "brand_id": "ipc-bo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "01b",
+        "A03",
+        "Reo-A03"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_06_sub"
+    },
+    {
+      "models": [
+        "02a",
+        "160",
+        "193",
+        "A01",
+        "B01",
+        "REO-A01",
+        "Reo-B1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_03_sub"
+    },
+    {
+      "models": [
+        "02b",
+        "192",
+        "B02",
+        "Reo_B02",
+        "RLN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_11_sub"
+    },
+    {
+      "models": [
+        "410ws",
+        "baksida",
+        "C1 Pro",
+        "E1pro",
+        "fewr",
+        "Other",
+        "RCL-422W",
+        "rlc 410",
+        "RLC240",
+        "rlc-422w",
+        "RLC-511",
+        "RLC-511W",
+        "RLC-520",
+        "rln16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264Preview_01_main"
+    },
+    {
+      "models": [
+        "B02",
+        "Reo_B02",
+        "rln16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_04_sub"
+    },
+    {
+      "models": [
+        "IPC_523128M5MP",
+        "ip-rln",
+        "Other",
+        "rlc-410-5mp",
+        "RLC-520A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_sub"
+    },
+    {
+      "models": [
+        "IPG-8150PSS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/MainStream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_03_main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_02_main"
+    },
+    {
+      "models": [
+        "RCL-520A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

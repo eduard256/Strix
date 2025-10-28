@@ -1,0 +1,17 @@
+{
+  "brand": "Hy Outdoor Ip Camera",
+  "brand_id": "hy-outdoor-ip-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Smart1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

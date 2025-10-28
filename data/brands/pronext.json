@@ -1,0 +1,26 @@
+{
+  "brand": "Pronext",
+  "brand_id": "pronext",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Anibal"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "mp30w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

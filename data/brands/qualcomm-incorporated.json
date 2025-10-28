@@ -1,0 +1,35 @@
+{
+  "brand": "Qualcomm Incorporated",
+  "brand_id": "qualcomm-incorporated",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AR81"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ESCAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IP3M952E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1030,
+      "url": "/h264Preview_01_sub"
+    }
+  ]
+}

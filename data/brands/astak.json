@@ -1,0 +1,84 @@
+{
+  "brand": "Astak",
+  "brand_id": "astak",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CM-818DVR4V"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetStream.cgi?Video=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CM-818DVR4V",
+        "cm-ip700",
+        "cm-mole",
+        "ip-700",
+        "IP-700",
+        "Mole",
+        "mole ip 700",
+        "Mole2",
+        "mole2 ip-700",
+        "NVR",
+        "Other",
+        "PTZ",
+        "ZNY1022"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Mole"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 84,
+      "url": "/snap.jpg?JpegCam=0"
+    },
+    {
+      "models": [
+        "Mole"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Mole"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    },
+    {
+      "models": [
+        "MOLE",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "brand": "Door",
+  "brand_id": "door",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CHINA 1.0MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "gate"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/401"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 552,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "panasonic"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 85,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

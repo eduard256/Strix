@@ -1,0 +1,35 @@
+{
+  "brand": "Safesky Cn",
+  "brand_id": "safesky-cn",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "08037"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "C5900"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SC-H06"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

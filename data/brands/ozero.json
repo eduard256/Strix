@@ -1,0 +1,18 @@
+{
+  "brand": "Ozero",
+  "brand_id": "ozero",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NC-B20",
+        "NC-D10P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    }
+  ]
+}

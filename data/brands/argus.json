@@ -1,0 +1,26 @@
+{
+  "brand": "Argus",
+  "brand_id": "argus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Surveillance DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Surveillance DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=[CHANNEL].JPG&SENDEMPTYIMAGES=NO"
+    }
+  ]
+}

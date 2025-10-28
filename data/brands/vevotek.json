@@ -1,0 +1,17 @@
+{
+  "brand": "Vevotek",
+  "brand_id": "vevotek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "pz7111"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    }
+  ]
+}

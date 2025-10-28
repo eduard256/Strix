@@ -1,0 +1,35 @@
+{
+  "brand": "Brovision",
+  "brand_id": "brovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "olsen"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "WH-D5208"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/202"
+    },
+    {
+      "models": [
+        "WH-D5208"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    }
+  ]
+}

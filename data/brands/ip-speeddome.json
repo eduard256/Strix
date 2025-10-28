@@ -1,0 +1,36 @@
+{
+  "brand": "Ip-speeddome",
+  "brand_id": "ip-speeddome",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EP_PELCO_D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/v2"
+    },
+    {
+      "models": [
+        "EP_PELCO_D",
+        "Secuplug"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "IPN3402HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    }
+  ]
+}

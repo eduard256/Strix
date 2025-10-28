@@ -1,0 +1,64 @@
+{
+  "brand": "Tiandy",
+  "brand_id": "tiandy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CM321",
+        "TC-C321N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other",
+        "TC-C32KN",
+        "TC-C32QN",
+        "TC-NC44M"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "Other",
+        "TC-C34QN",
+        "tc-c34sp",
+        "TC-C34XN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live3.sdp"
+    },
+    {
+      "models": [
+        "TC-321N",
+        "TC-C320N",
+        "TC-C34XN",
+        "TC-C35US"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "TC-C321N",
+        "TC-H332N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

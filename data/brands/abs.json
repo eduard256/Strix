@@ -1,0 +1,108 @@
+{
+  "brand": "Abs",
+  "brand_id": "abs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3 series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3 series",
+        "4 series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/1/video.mjpg"
+    },
+    {
+      "models": [
+        "3 SERIES",
+        "4 SERIES",
+        "MegaCam",
+        "MegaCam 312M",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/1/image.jpg"
+    },
+    {
+      "models": [
+        "3 SERIES",
+        "4 SERIES",
+        "megacam 4210",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    },
+    {
+      "models": [
+        "4 series",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "4 SERIES",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/[CHANNEL]/video.mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    }
+  ]
+}

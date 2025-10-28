@@ -1,0 +1,17 @@
+{
+  "brand": "Scancam",
+  "brand_id": "scancam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SCM-SW2632FD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1554,
+      "url": "snap.jpg?JpegSize=XL"
+    }
+  ]
+}

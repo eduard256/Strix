@@ -1,0 +1,27 @@
+{
+  "brand": "Bvcam",
+  "brand_id": "bvcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ca-ipbf-4mp-wfii"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "on-y8",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

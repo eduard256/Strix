@@ -1,0 +1,17 @@
+{
+  "brand": "Merlan",
+  "brand_id": "merlan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "xyx-ipc"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

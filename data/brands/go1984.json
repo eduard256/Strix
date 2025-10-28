@@ -1,0 +1,26 @@
+{
+  "brand": "Go1984",
+  "brand_id": "go1984",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[USERNAME]/javascript/Jpg?Camera=[CHANNEL]&motion=1"
+    },
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[USERNAME]/java/mjpeg?camera=[CHANNEL]&motion=0"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "brand": "Plv",
+  "brand_id": "plv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dome",
+        "NC402CZE",
+        "NC416ME",
+        "NC801AW",
+        "nc811bde",
+        "NC-813RW",
+        "PLV01",
+        "PLV02",
+        "PLV837",
+        "PLV-NC318W",
+        "PLV-NC402CZE",
+        "PLV-NC416ME",
+        "PLV-NC713RW",
+        "PLV-NC811KE",
+        "PLV-NC813W",
+        "PLV-NC816ME"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "DOME",
+        "NC713RW",
+        "PLV-NC713RW",
+        "RC720AW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "K9604-W",
+        "NC611W",
+        "PLV NC611W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC611W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/view.html"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "PLV-NC713RW"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    }
+  ]
+}

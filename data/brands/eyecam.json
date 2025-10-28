@@ -1,0 +1,182 @@
+{
+  "brand": "Eyecam",
+  "brand_id": "eyecam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1104",
+        "ec-1347",
+        "IPD-L21Y02",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "E8ABFA102826"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ec-1360",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "ec-1392",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "ec-1505",
+        "ICAM-608"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ICam-608",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "ICam-608"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "IP65IW",
+        "Other",
+        "STORAGEOPTIONS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "KaptanCam",
+        "Other",
+        "storageoptions"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Other",
+        "STORAGEOPTIONS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "streaming/channels/0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/CH002.sdp"
+    },
+    {
+      "models": [
+        "STORAGEOPTIONS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "wifi5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/streaming/channels/0"
+    }
+  ]
+}

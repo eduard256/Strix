@@ -1,0 +1,49 @@
+{
+  "brand": "Tuya",
+  "brand_id": "tuya",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AK8743",
+        "China Spy",
+        "Kerui",
+        "lsc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 6554,
+      "url": "/stream_0"
+    },
+    {
+      "models": [
+        "Fesh",
+        "LF-C1D",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "smart"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "SRG-007"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    }
+  ]
+}

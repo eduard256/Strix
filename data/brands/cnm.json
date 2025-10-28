@@ -1,0 +1,64 @@
+{
+  "brand": "Cnm",
+  "brand_id": "cnm",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DM365_IPNC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IP103"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IP103",
+        "Other",
+        "sec-ip-cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "sec-ip-cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "sec-ip-cam"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    }
+  ]
+}

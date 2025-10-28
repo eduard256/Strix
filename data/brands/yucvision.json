@@ -1,0 +1,19 @@
+{
+  "brand": "Yucvision",
+  "brand_id": "yucvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C09H4P2",
+        "IMP-HC8P22W",
+        "IPG-8150PSS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

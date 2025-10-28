@@ -1,0 +1,26 @@
+{
+  "brand": "Motos",
+  "brand_id": "motos",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    }
+  ]
+}

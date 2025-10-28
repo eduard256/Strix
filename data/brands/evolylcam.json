@@ -1,0 +1,18 @@
+{
+  "brand": "Evolylcam",
+  "brand_id": "evolylcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MYDZTG3",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

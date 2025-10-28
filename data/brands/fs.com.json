@@ -1,0 +1,20 @@
+{
+  "brand": "Fs.com",
+  "brand_id": "fs.com",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FS-VCD-3M",
+        "FS-VCF-4M",
+        "IPC101-5M-T",
+        "IPC101-SM-T"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

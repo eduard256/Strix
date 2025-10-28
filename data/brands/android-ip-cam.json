@@ -1,0 +1,65 @@
+{
+  "brand": "Android Ip Cam",
+  "brand_id": "android-ip-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GALAXY ACE",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "IP WEBCAM FOR ANDROID",
+        "zte"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "Other",
+        "samsung"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "TinyCam"
+      ],
+      "type": "MJPEG",
+      "protocol": "https",
+      "port": 8083,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1"
+    },
+    {
+      "models": [
+        "V380-Q10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "XT1609"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 42428,
+      "url": "/"
+    }
+  ]
+}

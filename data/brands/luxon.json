@@ -1,0 +1,35 @@
+{
+  "brand": "Luxon",
+  "brand_id": "luxon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ICS4-20v1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ICS4-20v1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "MIPD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    }
+  ]
+}

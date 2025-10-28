@@ -1,0 +1,87 @@
+{
+  "brand": "Zkteco",
+  "brand_id": "zkteco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ES-52012H"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "Other",
+        "ZKT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Other",
+        "ZKIP472-W",
+        "zk-ir372",
+        "ZKT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Other",
+        "ZKIP472-W",
+        "ZKT",
+        "ZTMD470P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Pl-52D18E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "ZKMD-532"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    }
+  ]
+}

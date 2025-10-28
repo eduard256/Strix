@@ -1,0 +1,105 @@
+{
+  "brand": "Yucheng",
+  "brand_id": "yucheng",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BULLET",
+        "C01H1P2",
+        "C01H1P4",
+        "C01H1WS2",
+        "C01H4W2",
+        "C18H2W3A",
+        "c20h4w4",
+        "c26h12",
+        "C26H1WS4",
+        "c26h2w2as",
+        "C26Z5P2AS",
+        "C26Z5W2AS",
+        "IPG-8150PSS",
+        "Other",
+        "P03Z35LW/P4T20",
+        "P03Z91LW3",
+        "P03Z91LWS4A",
+        "P03Z95LW4",
+        "P03Z95WT20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "C01H1P2",
+        "C02H1W4",
+        "C02H1W4-2",
+        "C03H4P2",
+        "C18H1WS2A",
+        "C18H2W3A",
+        "c19h6w4",
+        "C26H2W2AS",
+        "CL09H1W4",
+        "D05H12",
+        "Other",
+        "P01H9LS4",
+        "p01h9wl4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C02H1W4"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "C26Z55W2AS",
+        "P03Z35LW/P4T20",
+        "p03z35lw4t20",
+        "P03Z95WT20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/MAIN"
+    },
+    {
+      "models": [
+        "IPG-7350PSS-S/W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "IPG-7350PSS-S/W",
+        "P03Z95WT20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "p03z35lw4t20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

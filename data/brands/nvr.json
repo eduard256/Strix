@@ -1,0 +1,134 @@
+{
+  "brand": "Nvr",
+  "brand_id": "nvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "360",
+        "ht56",
+        "K92H",
+        "K93H",
+        "k9601w",
+        "k9604",
+        "K9604-W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "8 Channel",
+        "dahua",
+        "IPC",
+        "Other",
+        "SMART",
+        "Snapvision",
+        "Some"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    },
+    {
+      "models": [
+        "C160407-P03",
+        "cv-nhk04m-w",
+        "cv-nhk04-w",
+        "Elotec K9604-W",
+        "H.264 WIRELESS P2P NVR",
+        "Home",
+        "K8204-W",
+        "K8208-W",
+        "K9604-W",
+        "K9608-W",
+        "L024",
+        "NVR-7504P-P4",
+        "Other",
+        "Othermy cam",
+        "vsd",
+        "WNV14"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "EXIN-L024",
+        "L024"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HT10",
+        "k29h",
+        "K92H",
+        "K93H",
+        "k9601w",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "k8208-w",
+        "K9604-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "K9604-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "LENOVO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "LENOVO",
+        "xemey"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "Eule",
+  "brand_id": "eule",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DOM-21IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "DOM-21IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DOM-21IP_low"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

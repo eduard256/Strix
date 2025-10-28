@@ -1,0 +1,30 @@
+{
+  "brand": "Smax",
+  "brand_id": "smax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AD1",
+        "AU1",
+        "SICPT500W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Other",
+        "SICPT500W",
+        "SICPT501W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/cgi/mjpg/mjpeg.cgi"
+    }
+  ]
+}

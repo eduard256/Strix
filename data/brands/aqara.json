@@ -1,0 +1,35 @@
+{
+  "brand": "Aqara",
+  "brand_id": "aqara",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Doorbell G4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/360p"
+    },
+    {
+      "models": [
+        "Doorbell G4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1080p"
+    },
+    {
+      "models": [
+        "G5 Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1520p"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "brand": "Zetronix",
+  "brand_id": "zetronix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "300w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live1"
+    },
+    {
+      "models": [
+        "Nano"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "Nano"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "zCLOCK-4000w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    }
+  ]
+}

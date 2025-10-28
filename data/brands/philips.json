@@ -1,0 +1,26 @@
+{
+  "brand": "Philips",
+  "brand_id": "philips",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "SPC1300NC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    }
+  ]
+}

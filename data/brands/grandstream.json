@@ -1,0 +1,521 @@
+{
+  "brand": "Grandstream",
+  "brand_id": "grandstream",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "- Central Facing West",
+        "20-1",
+        "3601",
+        "3601HD",
+        "3610",
+        "3610HD",
+        "3611",
+        "3611hd",
+        "3662FHD",
+        "9602",
+        "GDS3710",
+        "GKV3672HD",
+        "GRX3611IR_HD",
+        "GS3500",
+        "GSC3516",
+        "gsc-3610",
+        "GSC3610",
+        "GSC3615",
+        "GSV3611",
+        "GVX3610",
+        "GVX3611",
+        "GVX3611HD",
+        "GVX3611IR",
+        "GVX3672",
+        "GX",
+        "GXV 3610FHD",
+        "GXV3115wp",
+        "GXV3500",
+        "GXV3504",
+        "GXV3601",
+        "GXV3601LL",
+        "GXV3610",
+        "GXV3610_HD",
+        "GXV3611",
+        "GXV3611HD",
+        "GXV3611IR",
+        "GXV3611ir_hd",
+        "GXV3611IRC_HD",
+        "GXV3615",
+        "GXV3615WP",
+        "GXV3615WP_HD",
+        "GXV3651_FHD",
+        "GXV3662_FHD",
+        "GXV3672",
+        "gxv3672 fhd 36",
+        "GXV3672_FHD",
+        "GXV3672_FHD v2",
+        "GXV3672_FHD_36",
+        "GXV3672_HD/FHD v2",
+        "gxv3672-fhd",
+        "GXV3672HD",
+        "gxv3674",
+        "GXV3674_FHD_VF",
+        "gxv3674_hd/fhd_vf v2",
+        "GXV3674_HD_VF",
+        "gxv3674fhd",
+        "GXV3674FHD",
+        "GXV6310HD",
+        "hd3611",
+        "IP Video Server",
+        "IP1536B2",
+        "l Facing East",
+        "Medienraum",
+        "Northwest CGSC3610",
+        "Other",
+        "SouthEast Facing South",
+        "SVX3510_FHD",
+        "VIDEO SERVER",
+        "West Balcony Facing east",
+        "West Side Facing South Ramp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "20-1",
+        "gsc3610",
+        "GSC3610",
+        "GSC3615",
+        "GVX3504",
+        "GVX3611HD",
+        "GXV3504",
+        "GXV3504DVS",
+        "SVX3510_FHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "20-2",
+        "3610HD",
+        "3710",
+        "GDS3710",
+        "GSC3610",
+        "GSC-3615",
+        "GVX3504",
+        "GVX3611HD",
+        "GXV3504",
+        "GXV3672_HD/FHD V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "20-3",
+        "3610HD",
+        "Education Hallway Facing South",
+        "Entrance",
+        "GSC3610",
+        "GVX3611HD",
+        "GXv3504"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/3"
+    },
+    {
+      "models": [
+        "25",
+        "3601",
+        "3601HD",
+        "3611",
+        "3611HD",
+        "3611LL",
+        "GVX3672",
+        "GX3672HD",
+        "GXV 3611",
+        "GXV3601HD",
+        "gxv3601ll",
+        "GXV3611HD",
+        "GXV3611IRC_HD",
+        "GXV3615WP_HD",
+        "GXV3651",
+        "GXV3651FHD",
+        "GXV3672_FHD_fruitsmart",
+        "GXV3672_HD",
+        "gxv3674fhd",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam_h264.sdp"
+    },
+    {
+      "models": [
+        "3501",
+        "3601HD",
+        "3611HD",
+        "gvc1",
+        "GVX3504",
+        "GXV3000",
+        "gxv3500",
+        "GXV3504",
+        "GXV3601",
+        "GXV3601HD",
+        "GXV3610",
+        "GXV3610 FHD",
+        "GXV3610_HD",
+        "GXV3611HD",
+        "GXV3611IRC_HD",
+        "gxv3615",
+        "GXV3615W",
+        "GXV3615WP_HD",
+        "GXV3651_FHD",
+        "GXV3661",
+        "GXV3662",
+        "GXV3662_FHD",
+        "GXV3672",
+        "GXV3672_FHD",
+        "GXV3672_HD",
+        "LLBM Inside",
+        "Other",
+        "VIDEO SERVER"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "3501",
+        "3601",
+        "3601HD",
+        "3610HD",
+        "3611HD",
+        "3662",
+        "GKV3672HD",
+        "GS3500",
+        "GSV3611",
+        "GSV3662HD",
+        "GV-BX2400",
+        "GVX3504",
+        "GVX3611HD",
+        "GVX3611IR",
+        "GX3672HD",
+        "GXV 3610FHD",
+        "GXV 3611",
+        "gxv3500",
+        "GXV-3500",
+        "GXV3504",
+        "GXV3601",
+        "GXV3601_N",
+        "GXV3601HD",
+        "GXV3601LL",
+        "GXV3610",
+        "GXV3610_HD",
+        "GXV3611HD",
+        "GXV3611IR",
+        "GXV3611IR_HD",
+        "gxv3615",
+        "GXV3615W",
+        "GXV3615WP_HD",
+        "GXV3651FHD",
+        "GXV3662",
+        "GXV3662_FHD",
+        "GXV3662HD",
+        "GXV3672",
+        "GXV3672_FHD_36",
+        "GXV3672_HD",
+        "GXV3672_HD/FHD",
+        "GXV3672FHD",
+        "GXV3674_HD_VF",
+        "GXV3674FHD",
+        "IP1536B2",
+        "Other",
+        "Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "3610HD",
+        "GSC",
+        "GX3651_fhd",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "3610HD",
+        "3611HD",
+        "GSV3611",
+        "GXV3611IR_HD",
+        "GXV3672",
+        "GXV3672FHD",
+        "lauvan",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/888888:888888/main"
+    },
+    {
+      "models": [
+        "3611",
+        "3611HD",
+        "GKV3672HD",
+        "GSC3610",
+        "GSV3611",
+        "GV3610v2",
+        "GVX3611HD",
+        "GXV 3611",
+        "gxv3500",
+        "GXV3601_N",
+        "GXV3601HD",
+        "gxv3610",
+        "GXV3611HD",
+        "GXV3615WP_HD",
+        "GXV3662_FHD",
+        "GXV3672_HD",
+        "IP1536B2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/4"
+    },
+    {
+      "models": [
+        "3611",
+        "3611HD",
+        "GVX3504",
+        "GXV 3610FHD",
+        "GXV3500",
+        "GXV3504",
+        "GXV3610_HD",
+        "GXV3611HD",
+        "GXV3611IRC_HD",
+        "GXV3615",
+        "GXV3615W",
+        "GXV3615WP_HD",
+        "GXV3662_FHD_36",
+        "GXV3672",
+        "GXV3672_FHD",
+        "GXV3672_HD",
+        "GXV3674_HD_VF",
+        "Other",
+        "Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/stream?cmd=get&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "GDS3710",
+        "GXV3672_HD_36",
+        "GXV3672FHD"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/"
+    },
+    {
+      "models": [
+        "GDS3710",
+        "GXV3504",
+        "GXV3611HD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "GRX3611IR_HD",
+        "GSV3611",
+        "GXV3611HD",
+        "GXV3611IRC_HD",
+        "GXV3615W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 11018,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "GVX3500"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "/snapshot/view0.jpg"
+    },
+    {
+      "models": [
+        "gxv3240",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "GXV3504",
+        "GXV3504DVS",
+        "GXV3611IR_HD",
+        "GXV3662_FHD",
+        "GXV3672_FHD",
+        "HD5MP",
+        "Lapa",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "GXV3504"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/5"
+    },
+    {
+      "models": [
+        "GXV3601HD",
+        "GXV3611HD",
+        "GXV3611IRC_HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "GXV3611ir_hd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2151,
+      "url": "/ipcam:h264.sdp"
+    },
+    {
+      "models": [
+        "GXV3611ir_hd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 151,
+      "url": "/goform/stream?cmd=get&channel=0"
+    },
+    {
+      "models": [
+        "GXV3615W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/still.cgi"
+    },
+    {
+      "models": [
+        "GXV3672_FHD v2",
+        "GXV3672FHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "media/media.amp"
+    },
+    {
+      "models": [
+        "GXV3672_FHD_36",
+        "GXV3672HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "GXV3672_FHD_36",
+        "GXV3672FHD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "GXV3672_FHD_36"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 10082,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

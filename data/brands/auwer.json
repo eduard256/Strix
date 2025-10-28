@@ -1,0 +1,17 @@
+{
+  "brand": "Auwer",
+  "brand_id": "auwer",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BE-IPH11W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

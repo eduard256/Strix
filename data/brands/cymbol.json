@@ -1,0 +1,17 @@
+{
+  "brand": "Cymbol",
+  "brand_id": "cymbol",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "g3-2mpbl"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/stream1/Profile1"
+    }
+  ]
+}

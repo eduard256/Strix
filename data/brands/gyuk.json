@@ -1,0 +1,26 @@
+{
+  "brand": "Gyuk",
+  "brand_id": "gyuk",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TL-SC3171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "TL-SC3171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    }
+  ]
+}

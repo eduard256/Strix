@@ -1,0 +1,35 @@
+{
+  "brand": "Amopm",
+  "brand_id": "amopm",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TH38C4-ONVIF"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "TH38C4-ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "TH38C4-ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

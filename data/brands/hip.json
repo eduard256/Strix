@@ -1,0 +1,17 @@
+{
+  "brand": "Hip",
+  "brand_id": "hip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cmt9013f"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    }
+  ]
+}

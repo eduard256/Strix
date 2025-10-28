@@ -1,0 +1,17 @@
+{
+  "brand": "Goldstream",
+  "brand_id": "goldstream",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "snapshot/view[CHANNEL].jpg"
+    }
+  ]
+}

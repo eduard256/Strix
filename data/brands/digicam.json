@@ -1,0 +1,18 @@
+{
+  "brand": "Digicam",
+  "brand_id": "digicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "P05-7-C",
+        "P05-7-DF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

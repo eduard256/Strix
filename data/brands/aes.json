@@ -1,0 +1,26 @@
+{
+  "brand": "Aes",
+  "brand_id": "aes",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AES-PC8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "rca"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live0"
+    }
+  ]
+}

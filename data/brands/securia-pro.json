@@ -1,0 +1,37 @@
+{
+  "brand": "Securia Pro",
+  "brand_id": "securia-pro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "3108",
+        "8MP 4K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "N388T-200W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

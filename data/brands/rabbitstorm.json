@@ -1,0 +1,17 @@
+{
+  "brand": "Rabbitstorm",
+  "brand_id": "rabbitstorm",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "T3ML042-MX-1833"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "brand": "Eziviz",
+  "brand_id": "eziviz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C3C",
+        "CS-C1C",
+        "Ztube"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

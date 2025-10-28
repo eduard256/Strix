@@ -1,0 +1,57 @@
+{
+  "brand": "Honic",
+  "brand_id": "honic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dome Poe",
+        "HN-4KA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "HN-4KA",
+        "HN-IRDNS200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "HN-4KA",
+        "HN-DC5",
+        "HN-IRDN200F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "hn-4kz"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HN-IRDNS200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

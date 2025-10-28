@@ -1,0 +1,18 @@
+{
+  "brand": "Zoohi",
+  "brand_id": "zoohi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AR-24W",
+        "N20W1329"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

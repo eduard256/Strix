@@ -1,0 +1,36 @@
+{
+  "brand": "Uxdsecurity",
+  "brand_id": "uxdsecurity",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "mos"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Other",
+        "UIB-D50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    }
+  ]
+}

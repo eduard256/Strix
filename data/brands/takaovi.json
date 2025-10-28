@@ -1,0 +1,17 @@
+{
+  "brand": "Takaovi",
+  "brand_id": "takaovi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "mpeg4/media.amp?resolution=640x480"
+    }
+  ]
+}

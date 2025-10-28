@@ -1,0 +1,64 @@
+{
+  "brand": "Jmk",
+  "brand_id": "jmk",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "009",
+        "012",
+        "ica up-009",
+        "Other",
+        "UP-009",
+        "UP-010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/sf.cgi"
+    },
+    {
+      "models": [
+        "009",
+        "012",
+        "Other",
+        "up-009"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    },
+    {
+      "models": [
+        "jk 8808",
+        "JK-8808",
+        "Other",
+        "UP-035W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "JK-8808"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "JK-8808"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "brand": "Knc",
+  "brand_id": "knc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "230",
+        "HDi47",
+        "KTC230",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/jpeg.cgi"
+    },
+    {
+      "models": [
+        "HDBi230"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HDi47",
+        "KNC-p3BR4XIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "KNC-p3TR3XIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "KTC230",
+        "pin"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "Other",
+        "p3LR3IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "p3TR3XIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    }
+  ]
+}

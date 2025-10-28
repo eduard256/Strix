@@ -1,0 +1,36 @@
+{
+  "brand": "Surip Cam",
+  "brand_id": "surip-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "SI-H653R"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "SI-F1057R"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SRICAM AP009"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "user/videostream.cgi"
+    }
+  ]
+}

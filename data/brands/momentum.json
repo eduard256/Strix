@@ -1,0 +1,289 @@
+{
+  "brand": "Momentum",
+  "brand_id": "momentum",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2002",
+        "mocam",
+        "MOCAM",
+        "mocam01",
+        "MOCAM-01",
+        "mocam1",
+        "MO-CAm-720-01",
+        "Mocam-720-1",
+        "MOCAM-729-01",
+        "moc-cam01",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "2002",
+        "Mocam 01",
+        "MOCAM USB",
+        "mocam01",
+        "MOCAM-01",
+        "MOCAM1",
+        "MOCAM12",
+        "MOCAM3",
+        "Other",
+        "OtherBB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "2002",
+        "720P",
+        "moca-01",
+        "MOCAM 01",
+        "mocam1",
+        "MO-CAm-720-01"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "720p",
+        "Cory",
+        "moca-01",
+        "Mocam 01",
+        "MO-CAM 01",
+        "mocam-01",
+        "MOCAM03",
+        "mocam1",
+        "MOCAM3",
+        "Mocam-720-1",
+        "mocam720p",
+        "MOCAN-01",
+        "moc-cam01",
+        "MOGA-001",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.h264"
+    },
+    {
+      "models": [
+        "Aria Outdoor Floodlight Camera",
+        "MOCAM",
+        "mocam1",
+        "MOCAM1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "CheapCams",
+        "MOCA MP1",
+        "MOCAM",
+        "Mocam 01",
+        "MOCAM USB",
+        "mocam01",
+        "MOCAM-01",
+        "MOCAM-720-1",
+        "Other",
+        "SIG02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/H264/sub"
+    },
+    {
+      "models": [
+        "Cori",
+        "MO-CAM-720-01"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "moam",
+        "Mocam 01",
+        "MO-CAM 01",
+        "MOCAM 720-1",
+        "mocam-01",
+        "MOCAM1",
+        "mocam-720-2",
+        "Other",
+        "Thames"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "moam",
+        "mocam01",
+        "Mocam-1080.01"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "MOCA MP1",
+        "Mocam 01",
+        "MO-CAM 01",
+        "MOCAM01",
+        "MOCAM-01",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    },
+    {
+      "models": [
+        "MO-CAM",
+        "MOCAM01",
+        "MOCAM1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "MO-CAM"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "MOCAM 01",
+        "MOCAM01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "MOCAM 01",
+        "mocam-01",
+        "MOCAM1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "MOCAM 01",
+        "Mocam USB"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "MOCAM 01",
+        "MO-CAM 01",
+        "MOCAM USB",
+        "mocam01",
+        "MOCAM-01",
+        "mocam1",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "MO-CAM 01"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "MO-CAM 01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "MO-CAM 01",
+        "MOCAM USB",
+        "MOCAM1",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "mocam 720-1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "mocam 720-1",
+        "MOCAM-01"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "mocam1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cam_1.jpg"
+    }
+  ]
+}

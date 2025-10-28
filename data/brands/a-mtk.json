@@ -1,0 +1,143 @@
+{
+  "brand": "A-mtk",
+  "brand_id": "a-mtk",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2570D",
+        "6566",
+        "Other",
+        "SUPER"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "media/media.amp"
+    },
+    {
+      "models": [
+        "6566",
+        "AM9539M",
+        "Dome",
+        "Other",
+        "SUPER"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AH2927T-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp"
+    },
+    {
+      "models": [
+        "AH2927T-A",
+        "Dome",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "AM2110D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp?streamprofile=Profile1"
+    },
+    {
+      "models": [
+        "AM2110D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp?streamprofile=Profile2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "capture[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

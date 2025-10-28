@@ -1,0 +1,17 @@
+{
+  "brand": "Shenzhen Reecam Tech.ltd.",
+  "brand_id": "shenzhen-reecam-tech.ltd.",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SPOT-WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

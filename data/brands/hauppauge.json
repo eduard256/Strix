@@ -1,0 +1,18 @@
+{
+  "brand": "Hauppauge",
+  "brand_id": "hauppauge",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P",
+        "mySmarthome Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

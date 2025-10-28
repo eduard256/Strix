@@ -1,0 +1,40 @@
+{
+  "brand": "Vivitar",
+  "brand_id": "vivitar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP 113",
+        "IPC112N",
+        "IPC113",
+        "IPC117",
+        "IPC222",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IP-117"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "IPC113"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "cam[CHANNEL]/h264"
+    }
+  ]
+}

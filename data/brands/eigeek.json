@@ -1,0 +1,49 @@
+{
+  "brand": "Eigeek",
+  "brand_id": "eigeek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/onvif/device_service"
+    },
+    {
+      "models": [
+        "bullet",
+        "bullet 1",
+        "bullet 2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "BULLET",
+        "BULLET 2",
+        "CT0414BKEU",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

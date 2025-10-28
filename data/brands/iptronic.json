@@ -1,0 +1,42 @@
+{
+  "brand": "Iptronic",
+  "brand_id": "iptronic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10803",
+        "6",
+        "ipt-ipl 1080",
+        "IPT-IPL1080DP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "ipl720",
+        "IPT-IPC720B2",
+        "ipt-ipl 1080",
+        "IPT-IPL1080DP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "ipt-ip4bm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    }
+  ]
+}

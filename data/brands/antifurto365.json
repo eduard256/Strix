@@ -1,0 +1,17 @@
+{
+  "brand": "Antifurto365",
+  "brand_id": "antifurto365",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "X Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

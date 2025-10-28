@@ -1,0 +1,28 @@
+{
+  "brand": "Kingkong",
+  "brand_id": "kingkong",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HL101BFA-I436-P-H265",
+        "KK1",
+        "UL66-I236"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "KK1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

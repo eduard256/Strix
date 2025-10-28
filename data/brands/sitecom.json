@@ -1,0 +1,190 @@
+{
+  "brand": "Sitecom",
+  "brand_id": "sitecom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "150N",
+        "150-NWL-405",
+        "IC-192701",
+        "wl_405",
+        "WL-405"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "150N",
+        "150-NWL-405",
+        "Other",
+        "WL-404",
+        "WL-405"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "150-NWL-405",
+        "WL405",
+        "WL-405"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam.sdp"
+    },
+    {
+      "models": [
+        "LN-400",
+        "LN-401",
+        "Other",
+        "WL-400",
+        "WL-402"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "LN-400",
+        "LN-401",
+        "Other",
+        "WL-402"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Image.jpg"
+    },
+    {
+      "models": [
+        "LN-406"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "LN-406",
+        "Other",
+        "WL-404"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "LN-406",
+        "WL-404"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "LN-406"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg?type=motion"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/still.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "WL-404"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "WLC1000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/video.sav"
+    },
+    {
+      "models": [
+        "wlc-4000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    }
+  ]
+}

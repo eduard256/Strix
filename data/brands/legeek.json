@@ -1,0 +1,20 @@
+{
+  "brand": "Legeek",
+  "brand_id": "legeek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "bullet",
+        "C6F0SgZ3N0P6L2",
+        "Other",
+        "ZZZZ-024549-DCDBB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Fujicam",
+  "brand_id": "fujicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FI-361"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

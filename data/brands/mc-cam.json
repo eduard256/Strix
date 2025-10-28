@@ -1,0 +1,26 @@
+{
+  "brand": "Mc-cam",
+  "brand_id": "mc-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FTT800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "FTT800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

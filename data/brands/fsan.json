@@ -1,0 +1,36 @@
+{
+  "brand": "Fsan",
+  "brand_id": "fsan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Other",
+        "WD662"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "WD662"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    }
+  ]
+}

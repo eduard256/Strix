@@ -1,0 +1,26 @@
+{
+  "brand": "4xptz",
+  "brand_id": "4xptz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "30x"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "M400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0"
+    }
+  ]
+}

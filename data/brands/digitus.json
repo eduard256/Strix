@@ -1,0 +1,351 @@
+{
+  "brand": "Digitus",
+  "brand_id": "digitus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "16036",
+        "16037",
+        "16037:WIFI",
+        "16040",
+        "16044",
+        "DN 16027",
+        "DN 16035",
+        "DN 16037",
+        "DN 16039",
+        "dn-16036",
+        "DN-16038",
+        "dn16040",
+        "DN-16040",
+        "DN-16044",
+        "DN-1608",
+        "Optidome",
+        "OPTIZOOM",
+        "Other",
+        "PSCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "16037"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "16040",
+        "DN 16027",
+        "DN 16037",
+        "DN 16039",
+        "dn-16036",
+        "DN-16038",
+        "dn-16039",
+        "DN-16040",
+        "DN-16043",
+        "DN-16044",
+        "Other",
+        "slc"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "16048",
+        "16049",
+        "DN 16047",
+        "DN 16049",
+        "DN-16029",
+        "DN-16038",
+        "DN-16039",
+        "DN-16039R2",
+        "DN-16040",
+        "DN-16043",
+        "DN-16046",
+        "DN-16047",
+        "dn16048",
+        "MoBa 01",
+        "MoBa 02",
+        "MoBa 03"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "16054",
+        "DN-16027",
+        "DN-16053",
+        "DN-16055",
+        "DN-16071",
+        "DN-16082",
+        "DN-16083",
+        "IP Camera Garten",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DN 16034",
+        "DN-16025"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "DN 16035",
+        "DN-16023",
+        "DN-16026",
+        "DN-16043",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DN 16035"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam_h264.sdp"
+    },
+    {
+      "models": [
+        "DN-16004",
+        "DN-16005",
+        "DN-16025",
+        "DN-16030",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/capture"
+    },
+    {
+      "models": [
+        "DN-16005",
+        "DN-16069",
+        "DN-16071",
+        "DN-16083",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "DN-16024",
+        "DN-16025",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "DN-16025",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "DN-16025",
+        "DN-16026",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live/mjpeg"
+    },
+    {
+      "models": [
+        "DN-16026",
+        "DN-16028",
+        "dn-16036",
+        "oneway"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "DN-16026"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "DN-16026"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "DN-16026"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "DN-16027",
+        "DN-16028"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "DN-16028"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "DN-16029"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "DN-16030"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "_gCVimage.jpg"
+    },
+    {
+      "models": [
+        "DN-16032"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "DN-16036",
+        "dn-16039r2",
+        "DN-16043",
+        "DN-16046"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "DN-16047",
+        "DN-16053",
+        "DN-16071",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "DN-16063",
+        "DN-16082"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264"
+    },
+    {
+      "models": [
+        "DN-1608",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "DN-16084"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/video/profile1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    }
+  ]
+}

@@ -1,0 +1,1634 @@
+[
+  {
+    "url": "/ch0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Thingino firmware - main stream channel 0",
+    "model_count": 10000
+  },
+  {
+    "url": "/ch1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Thingino firmware - main stream channel 1",
+    "model_count": 10000
+  },
+  {
+    "url": "/live/main",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Common RTSP main stream for ONVIF cameras",
+    "model_count": 9999
+  },
+  {
+    "url": "/live/sub",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Common RTSP sub stream for ONVIF cameras",
+    "model_count": 9998
+  },
+  {
+    "url": "/ch2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Channel 2 stream",
+    "model_count": 450
+  },
+  {
+    "url": "/ch3",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Channel 3 stream",
+    "model_count": 400
+  },
+  {
+    "url": "/ch4",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Channel 4 stream",
+    "model_count": 350
+  },
+  {
+    "url": "/live/ch1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Live channel 1",
+    "model_count": 420
+  },
+  {
+    "url": "/live/ch2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Live channel 2",
+    "model_count": 380
+  },
+  {
+    "url": "/live/ch3",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Live channel 3",
+    "model_count": 340
+  },
+  {
+    "url": "/live/0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Numeric channel 0",
+    "model_count": 360
+  },
+  {
+    "url": "/live/1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Numeric channel 1",
+    "model_count": 330
+  },
+  {
+    "url": "/live/2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Numeric channel 2",
+    "model_count": 310
+  },
+  {
+    "url": "/av0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Audio/Video stream 0",
+    "model_count": 320
+  },
+  {
+    "url": "/av1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Audio/Video stream 1",
+    "model_count": 280
+  },
+  {
+    "url": "/video1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Video stream 1",
+    "model_count": 410
+  },
+  {
+    "url": "/video2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Video stream 2",
+    "model_count": 370
+  },
+  {
+    "url": "/video3",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Video stream 3",
+    "model_count": 300
+  },
+  {
+    "url": "/main",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Main stream",
+    "model_count": 390
+  },
+  {
+    "url": "/sub",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Sub stream",
+    "model_count": 360
+  },
+  {
+    "url": "/preview",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Preview stream",
+    "model_count": 290
+  },
+  {
+    "url": "/stream",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Generic stream",
+    "model_count": 330
+  },
+  {
+    "url": "/cam0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Camera 0",
+    "model_count": 295
+  },
+  {
+    "url": "/cam1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Camera 1",
+    "model_count": 270
+  },
+  {
+    "url": "/h265",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "H265 codec stream",
+    "model_count": 260
+  },
+  {
+    "url": "/hevc",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "HEVC codec stream",
+    "model_count": 240
+  },
+  {
+    "url": "/unicast",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Unicast stream",
+    "model_count": 230
+  },
+  {
+    "url": "/multicast",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Multicast stream",
+    "model_count": 220
+  },
+  {
+    "url": "/ipcam.h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Generic IP camera H264",
+    "model_count": 250
+  },
+  {
+    "url": "/image",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Simple image endpoint",
+    "model_count": 310
+  },
+  {
+    "url": "/jpeg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Direct JPEG endpoint",
+    "model_count": 300
+  },
+  {
+    "url": "/snapshot",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Snapshot endpoint",
+    "model_count": 285
+  },
+  {
+    "url": "/image.cgi",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "CGI image endpoint",
+    "model_count": 275
+  },
+  {
+    "url": "image/snapshot.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Snapshot image path",
+    "model_count": 265
+  },
+  {
+    "url": "api/snapshot.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "API snapshot",
+    "model_count": 245
+  },
+  {
+    "url": "tmpfs/snap.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "TMPFS snapshot",
+    "model_count": 235
+  },
+  {
+    "url": "stillimage.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Still image",
+    "model_count": 225
+  },
+  {
+    "url": "capture.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Capture endpoint",
+    "model_count": 215
+  },
+  {
+    "url": "current.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Current frame",
+    "model_count": 205
+  },
+  {
+    "url": "api/v1/snapshot",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "API v1 snapshot",
+    "model_count": 195
+  },
+  {
+    "url": "cgi-bin/image",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "CGI bin image",
+    "model_count": 185
+  },
+  {
+    "url": "live/snapshot.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Live snapshot",
+    "model_count": 175
+  },
+  {
+    "url": "media/snapshot.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Media snapshot",
+    "model_count": 165
+  },
+  {
+    "url": "pic.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Simple picture",
+    "model_count": 155
+  },
+  {
+    "url": "/video",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Video endpoint",
+    "model_count": 255
+  },
+  {
+    "url": "/mjpeg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "MJPEG stream",
+    "model_count": 250
+  },
+  {
+    "url": "/stream.mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "MJPEG stream file",
+    "model_count": 230
+  },
+  {
+    "url": "video/stream",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Video stream path",
+    "model_count": 220
+  },
+  {
+    "url": "mjpeg/video",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "MJPEG video path",
+    "model_count": 210
+  },
+  {
+    "url": "live/stream",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Live stream",
+    "model_count": 200
+  },
+  {
+    "url": "camera.mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "Camera MJPEG",
+    "model_count": 190
+  },
+  {
+    "url": "/Streaming/Channels/201",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision channel 201",
+    "model_count": 180
+  },
+  {
+    "url": "/h264/ch1/main/av_stream",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "H264 main stream",
+    "model_count": 170
+  },
+  {
+    "url": "/h264/ch1/sub/av_stream",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "H264 sub stream",
+    "model_count": 160
+  },
+  {
+    "url": "/11",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 1952
+  },
+  {
+    "url": "tmpfs/auto.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 1802
+  },
+  {
+    "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 1147
+  },
+  {
+    "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 970
+  },
+  {
+    "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 906
+  },
+  {
+    "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 901
+  },
+  {
+    "url": "/11",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 898
+  },
+  {
+    "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 856
+  },
+  {
+    "url": "/Streaming/Channels/101",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 789
+  },
+  {
+    "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 723
+  },
+  {
+    "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 719
+  },
+  {
+    "url": "/Streaming/Channels/1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 696
+  },
+  {
+    "url": "cgi-bin/snapshot.cgi?1",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 642
+  },
+  {
+    "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 635
+  },
+  {
+    "url": "/11",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 5544,
+    "notes": "",
+    "model_count": 616
+  },
+  {
+    "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 596
+  },
+  {
+    "url": "videostream.asf",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 536
+  },
+  {
+    "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 527
+  },
+  {
+    "url": "/cam/realmonitor",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 509
+  },
+  {
+    "url": "/0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 505
+  },
+  {
+    "url": "video.cgi?resolution=VGA",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 493
+  },
+  {
+    "url": "image/jpeg.cgi",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 490
+  },
+  {
+    "url": "/live/ch0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 479
+  },
+  {
+    "url": "jpg/image.jpg?size=3",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 462
+  },
+  {
+    "url": "img/snapshot.cgi?size=2",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 461
+  },
+  {
+    "url": "videofeed",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 459
+  },
+  {
+    "url": "snap.jpg?JpegCam=[CHANNEL]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 458
+  },
+  {
+    "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 402
+  },
+  {
+    "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 390
+  },
+  {
+    "url": "/stream1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 390
+  },
+  {
+    "url": "/h264_stream",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 385
+  },
+  {
+    "url": "/1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 381
+  },
+  {
+    "url": "jpg/image.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 379
+  },
+  {
+    "url": "videostream.cgi?rate=11",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 377
+  },
+  {
+    "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "VLC",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 373
+  },
+  {
+    "url": "axis-cgi/mjpg/video.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 370
+  },
+  {
+    "url": "videostream.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 361
+  },
+  {
+    "url": "mjpg/video.mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 361
+  },
+  {
+    "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 355
+  },
+  {
+    "url": "/tcp/av0_0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 10554,
+    "notes": "",
+    "model_count": 355
+  },
+  {
+    "url": "/onvif1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 354
+  },
+  {
+    "url": "/stream1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 346
+  },
+  {
+    "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 342
+  },
+  {
+    "url": "/12",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 340
+  },
+  {
+    "url": "image.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 335
+  },
+  {
+    "url": "live.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 316
+  },
+  {
+    "url": "video/mjpg.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 308
+  },
+  {
+    "url": "/live0.264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 308
+  },
+  {
+    "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 306
+  },
+  {
+    "url": "img/video.mjpeg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 287
+  },
+  {
+    "url": "cgi/mjpg/mjpeg.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 282
+  },
+  {
+    "url": "snapshot.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 266
+  },
+  {
+    "url": "/",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 266
+  },
+  {
+    "url": "cgi-bin/video.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 264
+  },
+  {
+    "url": "snapshot.cgi",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 257
+  },
+  {
+    "url": "ch0_0.h264",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 254
+  },
+  {
+    "url": "mjpg/1/video.mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 253
+  },
+  {
+    "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 247
+  },
+  {
+    "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 81,
+    "notes": "",
+    "model_count": 245
+  },
+  {
+    "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 244
+  },
+  {
+    "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 240
+  },
+  {
+    "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 239
+  },
+  {
+    "url": "/ucast/11",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 233
+  },
+  {
+    "url": "img/snapshot.cgi?size=3",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 232
+  },
+  {
+    "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 228
+  },
+  {
+    "url": "/0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 220
+  },
+  {
+    "url": "/axis-cgi/mjpg/video.cgi",
+    "type": "VLC",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 220
+  },
+  {
+    "url": "mpeg4",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 218
+  },
+  {
+    "url": "video.mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 217
+  },
+  {
+    "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 214
+  },
+  {
+    "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 214
+  },
+  {
+    "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 214
+  },
+  {
+    "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 212
+  },
+  {
+    "url": "axis-media/media.amp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 212
+  },
+  {
+    "url": "/onvif1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 210
+  },
+  {
+    "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 210
+  },
+  {
+    "url": "cgi-bin/viewer/video.jpg?resolution=640x480",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 1025,
+    "notes": "",
+    "model_count": 204
+  },
+  {
+    "url": "/videoMain",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 204
+  },
+  {
+    "url": "/mpeg4",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 203
+  },
+  {
+    "url": "videostream.cgi?resolution=8&rate=13",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 200
+  },
+  {
+    "url": "/1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 199
+  },
+  {
+    "url": "/h264Preview_01_main",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 199
+  },
+  {
+    "url": "axis-media/media.amp?videocodec=h264&resolution=640x480",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 198
+  },
+  {
+    "url": "video.h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 194
+  },
+  {
+    "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 193
+  },
+  {
+    "url": "h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 193
+  },
+  {
+    "url": "/video.mjpg?q=30&fps=33&id=0.5",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 8090,
+    "notes": "",
+    "model_count": 191
+  },
+  {
+    "url": "cam1/mpeg4",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 189
+  },
+  {
+    "url": "/onvif-media/media.amp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 187
+  },
+  {
+    "url": "/h264_stream",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 185
+  },
+  {
+    "url": "/media/video1",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 183
+  },
+  {
+    "url": "/CH001.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 8554,
+    "notes": "",
+    "model_count": 180
+  },
+  {
+    "url": "cam[CHANNEL]/h264",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 179
+  },
+  {
+    "url": "/cam1/onvif-h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 177
+  },
+  {
+    "url": "cgi-bin/video.cgi?msubmenu=mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 176
+  },
+  {
+    "url": "/axis-cgi/mjpg/video.cgi",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 80,
+    "notes": "",
+    "model_count": 171
+  },
+  {
+    "url": "cgi-bin/video.jpg?size=2",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 170
+  },
+  {
+    "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 168
+  },
+  {
+    "url": "mjpeg.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 166
+  },
+  {
+    "url": "/H264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 166
+  },
+  {
+    "url": "VIDEO.CGI",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 165
+  },
+  {
+    "url": "/Streaming/Channels/2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 163
+  },
+  {
+    "url": "videostream.cgi?",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 163
+  },
+  {
+    "url": "/video.h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 162
+  },
+  {
+    "url": "MJPEG.CGI",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 161
+  },
+  {
+    "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 161
+  },
+  {
+    "url": "nphMotionJpeg?Resolution=640x480&Quality=Standard",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 158
+  },
+  {
+    "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 156
+  },
+  {
+    "url": "videoMain",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 155
+  },
+  {
+    "url": "video?submenu=mjpg",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 154
+  },
+  {
+    "url": "video.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 154
+  },
+  {
+    "url": "cgi/jpg/image.cgi",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 153
+  },
+  {
+    "url": "/h264Preview_01_sub",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 152
+  },
+  {
+    "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 152
+  },
+  {
+    "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 7070,
+    "notes": "",
+    "model_count": 147
+  },
+  {
+    "url": "snap.jpg?JpegSize=XL",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 144
+  },
+  {
+    "url": "/",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 141
+  },
+  {
+    "url": "/stream2",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 140
+  },
+  {
+    "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 140
+  },
+  {
+    "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 137
+  },
+  {
+    "url": "/live1.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 137
+  },
+  {
+    "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 88,
+    "notes": "",
+    "model_count": 136
+  },
+  {
+    "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 133
+  },
+  {
+    "url": "/HighResolutionVideo",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 132
+  },
+  {
+    "url": "/img/video.asf",
+    "type": "FFMPEG",
+    "protocol": "mms",
+    "port": 554,
+    "notes": "",
+    "model_count": 129
+  },
+  {
+    "url": "img/video.sav",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 129
+  },
+  {
+    "url": "SnapshotJPEG?Resolution=320x240",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 128
+  },
+  {
+    "url": "play1.sdp",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 127
+  },
+  {
+    "url": "/mjpg/1/video.mjpg",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 8082,
+    "notes": "",
+    "model_count": 127
+  },
+  {
+    "url": "HighResolutionVideo",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 127
+  },
+  {
+    "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 125
+  },
+  {
+    "url": "/live.sdp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 124
+  },
+  {
+    "url": "1/h264major",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 10554,
+    "notes": "",
+    "model_count": 124
+  },
+  {
+    "url": "snap.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 123
+  },
+  {
+    "url": "/",
+    "type": "FFMPEG",
+    "protocol": "http",
+    "port": 80,
+    "notes": "",
+    "model_count": 122
+  },
+  {
+    "url": "axis-cgi/jpg/image.cgi?camera=1&resolution=320x240&compression=25",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 121
+  },
+  {
+    "url": "MediaInput/h264",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 120
+  },
+  {
+    "url": "/ch0_0.264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 119
+  },
+  {
+    "url": "videostream.cgi?rate=0",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 119
+  },
+  {
+    "url": "/ONVIF/MediaInput",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 118
+  },
+  {
+    "url": "/axis-media/media.amp?videocodec=h264&resolution=640x480",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 117
+  },
+  {
+    "url": "/ch0_0.h264",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 116
+  },
+  {
+    "url": "/12",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 116
+  },
+  {
+    "url": "Image.jpg",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 115
+  },
+  {
+    "url": "cgi/mjpg/mjpg.cgi",
+    "type": "MJPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 114
+  },
+  {
+    "url": "/Streaming/Channels/102",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 10554,
+    "notes": "",
+    "model_count": 114
+  },
+  {
+    "url": "live/ch00_0",
+    "type": "VLC",
+    "protocol": "rtsp",
+    "port": 0,
+    "notes": "",
+    "model_count": 113
+  },
+  {
+    "url": "/axis-media/media.amp",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 112
+  },
+  {
+    "url": "cgi-bin/camera",
+    "type": "JPEG",
+    "protocol": "http",
+    "port": 0,
+    "notes": "",
+    "model_count": 112
+  },
+  {
+    "url": "/cam/realmonitor?channel=1&subtype=0",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "",
+    "model_count": 111
+  }
+]

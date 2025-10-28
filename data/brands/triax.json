@@ -1,0 +1,30 @@
+{
+  "brand": "Triax",
+  "brand_id": "triax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CM-MHL400",
+        "TBF 2IP",
+        "TBV 4IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264?ch=1&subtype=0"
+    },
+    {
+      "models": [
+        "CM-MHL400",
+        "TBF 2IP",
+        "TBV 4IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264?ch=1&subtype=1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Exotic Life",
+  "brand_id": "exotic-life",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AP-001-A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    }
+  ]
+}

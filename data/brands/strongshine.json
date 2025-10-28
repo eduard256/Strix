@@ -1,0 +1,18 @@
+{
+  "brand": "Strongshine",
+  "brand_id": "strongshine",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD 960P",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

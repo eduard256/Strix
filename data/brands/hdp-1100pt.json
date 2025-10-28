@@ -1,0 +1,17 @@
+{
+  "brand": "Hdp-1100pt",
+  "brand_id": "hdp-1100pt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dp104"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/h264"
+    }
+  ]
+}

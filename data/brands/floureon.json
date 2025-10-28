@@ -1,0 +1,626 @@
+{
+  "brand": "Floureon",
+  "brand_id": "floureon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "DM523H",
+        "DM523HK",
+        "H.264",
+        "IPD-L26Y02-BS",
+        "PTZ HD IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "720P",
+        "A6808NHS-EU",
+        "dvr",
+        "H.264",
+        "H.264 -JSN",
+        "H.264 WIRELESS P2P NVR",
+        "H264",
+        "IPD-E24Y02-BS",
+        "n816",
+        "N817",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "1080P Patio",
+        "7 1080P 30X ZOOM",
+        "720P",
+        "908HF",
+        "b27w",
+        "BT-H51F/IPD-L26Y02",
+        "BT-HD54F",
+        "BT-HD817",
+        "Camhi",
+        "DID-908HF",
+        "DID-N49-200",
+        "DM326HS",
+        "DM326HT",
+        "dm523h",
+        "DM523HK",
+        "DM523HS",
+        "DMM523HS",
+        "H.264",
+        "H264",
+        "HD54F",
+        "HD-IPC 18x",
+        "HT54",
+        "III-724294-ECEBB",
+        "IPCAM HIP2P",
+        "IPD-C30Y02-BS",
+        "IPD-C34Y02-BS",
+        "IPD-E24Y02-BS",
+        "IPD-L24Y02-BS",
+        "IPD-L26Y02-BS",
+        "LN5810HH",
+        "M32B",
+        "Other",
+        "ptz",
+        "PTZ Dome",
+        "PTZ HD IP CAMERA",
+        "PTZ IP camera",
+        "sd 26w",
+        "SD17W",
+        "SD26W",
+        "SD27W",
+        "SD37W",
+        "ZD-CH130B-F9",
+        "zd-chi130b-f9"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "1080",
+        "1080N",
+        "1080p",
+        "1080PPVTW",
+        "CAMHI",
+        "dvr",
+        "H.264",
+        "H264",
+        "N816",
+        "Other",
+        "Q3 UK",
+        "QF510-UK",
+        "SD1",
+        "SD17W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "507w10",
+        "H.264",
+        "h.264 wireless p2p nvr",
+        "H264",
+        "K9604-W",
+        "NVR",
+        "nvr-6124nm",
+        "Other",
+        "SD26W",
+        "XF-16045-W-K",
+        "XF-A2528S-LW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080",
+        "1080p",
+        "6afd097cdc912bb3",
+        "b27w",
+        "H.264",
+        "HD 720P",
+        "IPCAM HiP2P",
+        "IPD-L26Y02-BS",
+        "M32B",
+        "MB32b",
+        "MH32b",
+        "N5810HH-E",
+        "Other",
+        "PTZ",
+        "Q3-UK",
+        "QF510-UK",
+        "sd13w",
+        "SD17",
+        "SD17W",
+        "SD26W",
+        "SD37W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080",
+        "Camera 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "1080n",
+        "1080P",
+        "7 1080P 30X ZOOM",
+        "DID-N49-200",
+        "H.264",
+        "H264",
+        "IPCAM HIP2P",
+        "lN5810HH-E",
+        "N816",
+        "NVR",
+        "Other",
+        "SD17W",
+        "TTTT-309727-SVDWR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080n",
+        "blk",
+        "ka6004ns4n-a-516a-us",
+        "Other",
+        "SP012",
+        "TTTT-309727-SVDWR",
+        "wxhi100w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "1080N",
+        "1080PPVTW",
+        "N816",
+        "Other",
+        "QF510-AU",
+        "QF510-UK",
+        "TTTT-309727-SVDWR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "1080P",
+        "E6812",
+        "nvr"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1080P",
+        "FD270w",
+        "H.264",
+        "H.264 WIRELESS P2P NVR",
+        "HIP2P",
+        "IPC SP018",
+        "IPCAM HIP2P",
+        "MCAM1SD37W",
+        "N5810HH-E",
+        "Other",
+        "PT 720",
+        "PTZ HD IP CAMERA",
+        "Q3 UK",
+        "Q3-AU",
+        "Q3-EU",
+        "q3-uk",
+        "SD17W",
+        "SD26W",
+        "sd27w",
+        "SD37W",
+        "SP017",
+        "sricam"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "H264"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "1080P",
+        "H.264",
+        "ipc",
+        "IPC Cam",
+        "Other",
+        "SD27W",
+        "XF-A2528S-ZW",
+        "XF-A8285"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080pPVTW",
+        "H.264",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1600TVL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=5&stream=0.sdp?real_stream--rtp-caching=100"
+    },
+    {
+      "models": [
+        "1600TVL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=4&stream=0.sdp?real_stream--rtp-caching=100"
+    },
+    {
+      "models": [
+        "6666"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "6afd097cdc912bb3",
+        "Other",
+        "SD17W",
+        "SD26W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "6afd097cdc912bb3",
+        "7 1080P 30X ZOOM",
+        "A6808NHS-EU",
+        "DM523HS",
+        "FIW1500",
+        "IPD-E24Y02-BS",
+        "IPD-L26Y02-BS",
+        "Other",
+        "SD17W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "A6808NHS-EU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "dm326hs",
+        "DM326HS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "DM523HK",
+        "IPC365",
+        "PD203B-Y1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "DM523HS",
+        "P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "dvr",
+        "n817"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "dvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=2_stream=0.sdp"
+    },
+    {
+      "models": [
+        "dvr",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=4_stream=0.sdp"
+    },
+    {
+      "models": [
+        "H.264",
+        "kv:d4c2"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H.264"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "H.264",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "H.264",
+        "PT 720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "H.264",
+        "HiP2P",
+        "IPCAM HIP2P",
+        "Other",
+        "PTZ HD IP CAMERA",
+        "Q3-AU",
+        "SD26W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "H.264",
+        "IPC_700323"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "H.264",
+        "Other",
+        "PTZ HD IP CAMERA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4unicast"
+    },
+    {
+      "models": [
+        "ha-ja-wf960p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "IPD-C30Y02-BS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "IPD-E24Y02-BS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "k2308ax-h-y03-4c"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "K8204-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "N5810HH-E"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "XF-16045-W-K",
+        "Xf-1604n-lw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=4&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "XF1604H-W",
+        "xf1604n-lw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=4&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "xf1604n-lw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Xf-1604n-lw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "XF-A2528F-ZW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4unicast"
+    }
+  ]
+}

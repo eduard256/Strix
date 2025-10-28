@@ -1,0 +1,206 @@
+{
+  "brand": "Marmitek",
+  "brand_id": "marmitek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Bullet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Eye Anywhere 241",
+        "IP eye anywhere 241",
+        "IP RoboCam 21",
+        "robocam ip21",
+        "vivme"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "GM-8126"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "GM-8126"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ip eye 21",
+        "IP EYE ANYWHERE",
+        "IP Eye AnyWhere 11",
+        "IP ROBOCAM 10/11/541/641",
+        "IP ROBOCAM 21",
+        "Other",
+        "RoboCam 21",
+        "Robocam 541"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "IP Eye Anywhere",
+        "IP eye anywhere 241",
+        "IP RoboCam 10/11/541/641",
+        "IP RoboCam 21",
+        "ipeye anywhere",
+        "Other",
+        "robocam 10",
+        "robocam 11",
+        "Robocam 21",
+        "robocam21"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "IP EYE ANYWHERE",
+        "IP EYE ANYWHERE 241",
+        "IP ROBOCAM 10/11/541/641",
+        "IP ROBOCAM 21",
+        "Other",
+        "robocam 21",
+        "Robocam 21",
+        "ROBOCAM 21",
+        "ROBOCAM 541"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "IP Eye AnyWhere 11"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "IP eye anywhere 241",
+        "IP RoboCam 21",
+        "robocam ip21",
+        "robocam21"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "IP ROBOCAM 10/11/541/641",
+        "IP ROBOCAM 21",
+        "Other",
+        "robocam 21"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "IP RoboCam 21"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/VIDEO.CGI"
+    },
+    {
+      "models": [
+        "IP RoboCam 21"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/MJPEG.CGI"
+    },
+    {
+      "models": [
+        "IP RoboCam 21"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "IP RoboCam 8",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "IMAGE.JPG"
+    },
+    {
+      "models": [
+        "IP RoboCam 8",
+        "Robocam 8"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "MJPEG.CGI"
+    },
+    {
+      "models": [
+        "IP RoboCam 8"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    }
+  ]
+}

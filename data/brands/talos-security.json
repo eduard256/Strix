@@ -1,0 +1,35 @@
+{
+  "brand": "Talos Security",
+  "brand_id": "talos-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP Camera H264"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "IP Camera H264"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IP Camera H264"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    }
+  ]
+}

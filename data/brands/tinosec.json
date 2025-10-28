@@ -1,0 +1,32 @@
+{
+  "brand": "Tinosec",
+  "brand_id": "tinosec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DomeIPCAM",
+        "IPC-BT5025C",
+        "IPC-BT513S",
+        "IPC-DM06WV-2.0",
+        "TC-BT635"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC-BT511SW",
+        "IPC-BT619W",
+        "IPC-Z10B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

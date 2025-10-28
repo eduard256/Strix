@@ -1,0 +1,63 @@
+{
+  "brand": "March Networks",
+  "brand_id": "march-networks",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "C3401A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "ME4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "megapx1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/VideoInput/1/h264/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/h264/1"
+    },
+    {
+      "models": [
+        "SE2_Outdoor_IR_Dome_2",
+        "7-12mm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264/HD1080P"
+    }
+  ]
+}

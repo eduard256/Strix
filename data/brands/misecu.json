@@ -1,0 +1,75 @@
+{
+  "brand": "Misecu",
+  "brand_id": "misecu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5mpx",
+        "ipc-bt511swtv-1.0",
+        "MISECU H.265 1080P PTZ IP Camera 4X Zoom",
+        "MI-XM-629EBP-AI-50WP",
+        "MI-XM-DM13EP-20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "720",
+        "720P",
+        "MISECU H.265 1080P PTZ IP CAMERA 4X ZOOM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "720p",
+        "815",
+        "BT652A-4G",
+        "IPC-BT511S",
+        "IPC-BT621A-2.0C",
+        "IPC-BT623-2.0",
+        "IPC-DM05",
+        "IPC-DM13E-2.0",
+        "IPV-BT511S-10",
+        "MISECU H.265 1080P PTZ IP Camera 4X Zoom",
+        "MI-XM-669BP-AI-80N",
+        "mi-xm-dm13ep-50",
+        "Other",
+        "pt817",
+        "R80X50-PQ",
+        "YN-IPC-BT606WV",
+        "YN-IPC-DM04"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "B06POE-5MP-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC-DM13EW-1.3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

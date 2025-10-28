@@ -1,0 +1,85 @@
+{
+  "brand": "4mp Ip Camera",
+  "brand_id": "4mp-ip-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "47680146",
+        "KEYE",
+        "Other",
+        "Security"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "g-240",
+        "G42"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ID002A",
+        "IPB8224"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ipc-2mpvd28w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "ipc-2mpvd28w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "uniview"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "zero"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

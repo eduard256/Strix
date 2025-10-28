@@ -1,0 +1,18 @@
+{
+  "brand": "Cocoon",
+  "brand_id": "cocoon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HE200074",
+        "IT315003"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "brand": "Anran",
+  "brand_id": "anran",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "1080P",
+        "1080P PTZ Outdoor D/N Color IR Zoom 3-10mm Network CCTV surveillance IP Camera",
+        "1080P PTZ OUTDOOR D/N COLOR IR ZOOM 3-10MM NETWORK CCTV SURVEILLANCE IP CAMERA",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "211",
+        "24 NR-WIFI",
+        "24CW",
+        "24NB",
+        "24NB-IP",
+        "24NB-IP-POE",
+        "24NB-POE",
+        "24nr",
+        "24NW-IP",
+        "24NW-POE",
+        "24PZ",
+        "254",
+        "264",
+        "2mp",
+        "720p",
+        "960H",
+        "ABQ-A1-200W",
+        "AGP",
+        "A-HDPT06W-IP2",
+        "AN-24NR-WIFI",
+        "AnranWifi",
+        "AnranWired",
+        "an-vd123",
+        "ap2br",
+        "AP2GA-IP",
+        "AP3WA-1P",
+        "AP-PTO22",
+        "AR 408-ip",
+        "AR VDB221-IP",
+        "AR_VDB221_WIFI",
+        "AR-24NB",
+        "AR-24NB-IP",
+        "AR-24NB-POE",
+        "AR-24NR",
+        "AR-24NR-WIFI",
+        "AR-408GB-IP",
+        "AR-408GW",
+        "AR-408GW-Wifi-NVT",
+        "AR-AP2GA",
+        "AR-AP2PA-WIFI",
+        "AR-DVB221-POE",
+        "AR-DW105-IP",
+        "ar-hk02w-ip",
+        "AR-N4PW-IP",
+        "ar-pdt22",
+        "AR-PG02_POE",
+        "ar-ptd22",
+        "AR-PTD22-POE",
+        "AR-VD123-POE",
+        "AR-VD123-POE-IP2",
+        "ar-vd123-wifi",
+        "AR-VDB221-POE",
+        "AR-VDB221-WiFi",
+        "AR-VGB101-WIFI",
+        "AR-VGW721-POE",
+        "bullet",
+        "Bullet",
+        "C754R",
+        "chris ptz",
+        "Dome",
+        "GW-G1S",
+        "H.264",
+        "h256",
+        "hd ip wired",
+        "HK02W-ip",
+        "HK02W-WIFI",
+        "IP 2MP",
+        "k8208",
+        "Lekkas",
+        "mad",
+        "Mini wifi",
+        "N4PW-IP",
+        "NVT",
+        "Other",
+        "Other.",
+        "PTZ",
+        "savy",
+        "S-VGB721-IP2.0",
+        "VD123B-wifi",
+        "VGB101-POE",
+        "VGB101-WIFI",
+        "VGB10-WIFI",
+        "W610-DW18",
+        "wifi_1080p",
+        "xxxxx"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "24NR",
+        "24NR-WIFI",
+        "254",
+        "264",
+        "720P",
+        "an-nr24-wifi",
+        "AR-24NR-WIFI",
+        "AR-36WB WIFI",
+        "AR-K04W2HC",
+        "ar-kd4w13",
+        "AR-N48",
+        "H.264",
+        "H.264 WIFI OUTDOOR",
+        "H256",
+        "ip66",
+        "NVT",
+        "Other",
+        "SWC1201WT4",
+        "swc1201wt4 WIFI OUTDOOR",
+        "w307-wifi",
+        "wifi",
+        "WIFI_1080P",
+        "Wireless"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "24NW-IP",
+        "254",
+        "5523-W",
+        "720P",
+        "AR-408GB-IP",
+        "AR-408GB-WIFI",
+        "AR-N13W0-P303",
+        "ar-vd123-wifi",
+        "AR-VGB101-WIFI",
+        "AR-W602",
+        "ar-w606",
+        "AR-W606-WIFI",
+        "B01",
+        "B04",
+        "ipc",
+        "Other",
+        "W602",
+        "WiFi"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "AnranWifi",
+        "AR-03NB-HX",
+        "AR-24",
+        "ar-24w",
+        "AR-36WB-WIFI",
+        "AR-DW18",
+        "AR-HX36",
+        "ar-n20w-hx36",
+        "AR-W602",
+        "AR-W610",
+        "B602",
+        "C6F0SoZ3N0PcL2",
+        "C9F0SgZ3N0PbL0",
+        "c9fosgz3n0pbl0",
+        "IPCAM3",
+        "KS3002MW",
+        "Other",
+        "ptz",
+        "w602",
+        "W610-DW18",
+        "w630",
+        "WIRELESS",
+        "XK888"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P PTZ OUTDOOR D/N COLOR IR ZOOM 3-10MM NETWORK CCTV SURVEILLANCE IP CAMERA",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "ar-24w",
+        "AR-80F",
+        "ar92f",
+        "ar-hx38",
+        "AR-W602",
+        "AR-W610",
+        "AR-W610-WIFI",
+        "ar-w620",
+        "Other",
+        "PORCH PTZ1080P",
+        "PTZ1080P",
+        "WIFI_1080P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "24NB-IP",
+        "24NW-IP",
+        "24NW-POE",
+        "AP2BA-IP20",
+        "AP2GA-IP",
+        "AP3BA-IP",
+        "AR205",
+        "AR-24NB-IP",
+        "AR-408GW",
+        "AR-408GW-WIFI-NVT",
+        "H.264",
+        "IP 2MP",
+        "m24 1p",
+        "Other",
+        "p3max",
+        "S-VGB721-IP2.0",
+        "VGB101-WIFI",
+        "vgw781-ip"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "1080P",
+        "24NB-IP",
+        "24NW-IP",
+        "ABQ-A1-200W",
+        "AnranWired",
+        "AP2GA-IP",
+        "AR-408GB-IP",
+        "AR-408GW",
+        "AR-VDB221-WiFi",
+        "AR-VGB101-WIFI",
+        "D-C7342",
+        "D-C753R",
+        "H.264",
+        "H.264 WIFI OUTDOOR",
+        "HK02W-WIFI",
+        "Other",
+        "pool",
+        "vd122-1p",
+        "VGB10-WIFI",
+        "vgw781-ip"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "1080P PTZ OUTDOOR D/N COLOR IR ZOOM 3-10MM NETWORK CCTV SURVEILLANCE IP CAMERA",
+        "AR_VDB221_WIFI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "1080P PTZ OUTDOOR D/N COLOR IR ZOOM 3-10MM NETWORK CCTV SURVEILLANCE IP CAMERA",
+        "ip180",
+        "Other",
+        "WIFI_1080P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "5523-W6-Q",
+        "AR-W664",
+        "B01",
+        "K8208-3WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "5523-W",
+        "B04",
+        "MINI WIFI",
+        "Other",
+        "XK-67"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "24nb",
+        "24NR-WIFI",
+        "24NW-IP",
+        "AR VDB221-WIFY",
+        "AR-24NW-POE",
+        "AR-N10WA-24NR",
+        "AR-PTZ22-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "24NB-IP",
+        "24NW-IP",
+        "ANRANWIFI",
+        "AR-IP180",
+        "AR-VD123-WIFI",
+        "ip180",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "24NW-IP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "5323-W-Q"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "5523-W6-Q"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8088,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "5MP",
+        "720P",
+        "980p",
+        "AR-B801",
+        "ar-vd123-wifi",
+        "B01",
+        "doma"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ANRAN 5MP 1940p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8119,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "AR-24NB-IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "AR-C735"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ar-vd123-wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[PASSWORD]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "AR-VDB221-WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "AR-VDB221-WiFi",
+        "N01"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AR-W602"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8000,
+      "url": "/onvif/device_service"
+    },
+    {
+      "models": [
+        "AR-W602"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=101.sdp?"
+    },
+    {
+      "models": [
+        "B01",
+        "ZS-GQ2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "H.264",
+        "ip180"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "H.264 WIFI OUTDOOR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "R5108-5H",
+        "v4.02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "wifi_1080p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Avcam",
+  "brand_id": "avcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVM2220SE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/video/profile1"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "brand": "Guangzhou",
+  "brand_id": "guangzhou",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5323-w",
+        "5522",
+        "5mp",
+        "IPC",
+        "ja-ca42",
+        "N8216-2",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "5323-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "5323-W",
+        "c3-y-a6",
+        "C5-Q-A",
+        "Wifi Fisheye"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot"
+    },
+    {
+      "models": [
+        "5323-W",
+        "5522",
+        "5mp",
+        "IPC",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "5522",
+        "6456",
+        "6546",
+        "C3-Y-A6",
+        "c5-q-a",
+        "IPC",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "N8216-2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/gnz_media/main"
+    }
+  ]
+}

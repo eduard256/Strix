@@ -1,0 +1,128 @@
+{
+  "brand": "Zte",
+  "brand_id": "zte",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "796c",
+        "830",
+        "Blade 2T Lite",
+        "lite",
+        "N-860",
+        "Other",
+        "Z-665G",
+        "Z-667",
+        "Z-667G",
+        "Z-66G",
+        "Z753G",
+        "Z768G",
+        "z820",
+        "z990",
+        "zmax pro",
+        "ZTE-667",
+        "ZTE-667G"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Grand X2",
+        "z33"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "n9135",
+        "Other",
+        "Speed",
+        "Z-667",
+        "Z-667G"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

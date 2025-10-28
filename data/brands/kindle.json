@@ -1,0 +1,26 @@
+{
+  "brand": "Kindle",
+  "brand_id": "kindle",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Fire"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Fire 7 HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    }
+  ]
+}

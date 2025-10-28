@@ -1,0 +1,17 @@
+{
+  "brand": "Europ-camera",
+  "brand_id": "europ-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EC-C5MP30S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

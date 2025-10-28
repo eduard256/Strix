@@ -1,0 +1,17 @@
+{
+  "brand": "Pangolin",
+  "brand_id": "pangolin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "T7815WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

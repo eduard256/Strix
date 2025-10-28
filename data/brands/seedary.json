@@ -1,0 +1,29 @@
+{
+  "brand": "Seedary",
+  "brand_id": "seedary",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "D2-X-20",
+        "PTZ 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=1.sdp"
+    },
+    {
+      "models": [
+        "D2-X-20",
+        "Other",
+        "PTZ 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

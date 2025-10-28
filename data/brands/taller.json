@@ -1,0 +1,17 @@
+{
+  "brand": "Taller",
+  "brand_id": "taller",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C320WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    }
+  ]
+}

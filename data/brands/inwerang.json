@@ -1,0 +1,26 @@
+{
+  "brand": "Inwerang",
+  "brand_id": "inwerang",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IWR-IP2P21DSWE7"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IWR-IP2P21DSWE7"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/0/MAIN"
+    }
+  ]
+}

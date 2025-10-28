@@ -1,0 +1,18 @@
+{
+  "brand": "Eyesonic",
+  "brand_id": "eyesonic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ES-3422A-26",
+        "HNC303_MD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

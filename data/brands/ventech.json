@@ -1,0 +1,56 @@
+{
+  "brand": "Ventech",
+  "brand_id": "ventech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "889ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "889ip",
+        "VT898IP",
+        "VT-DM688IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/live/1"
+    },
+    {
+      "models": [
+        "889ip"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "ip889",
+        "VT-R889IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "vt-r889ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Contack",
+  "brand_id": "contack",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "kit-200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "kit-200"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

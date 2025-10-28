@@ -1,0 +1,22 @@
+{
+  "brand": "Reobiux",
+  "brand_id": "reobiux",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "A9QH",
+        "A33H-1P",
+        "B0CSYYZZj6",
+        "dual lens",
+        "K8Q",
+        "X6C-WEQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

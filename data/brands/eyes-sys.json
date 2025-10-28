@@ -1,0 +1,35 @@
+{
+  "brand": "Eyes-sys",
+  "brand_id": "eyes-sys",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4k POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.h264"
+    },
+    {
+      "models": [
+        "4K POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    },
+    {
+      "models": [
+        "ColorVu"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

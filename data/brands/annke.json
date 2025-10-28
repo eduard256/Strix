@@ -1,0 +1,824 @@
+{
+  "brand": "Annke",
+  "brand_id": "annke",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cheap p-t",
+        "C1200",
+        "C500 (I51DL)",
+        "i51el",
+        "NCD8000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "1080p",
+        "141CS",
+        "171gp",
+        "i41fl"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "131m",
+        "141cs",
+        "141CS TJF",
+        "151dj",
+        "151DM",
+        "151DS",
+        "151EH",
+        "191BF",
+        "191BL",
+        "2MP",
+        "4MP BULLET",
+        "AC500",
+        "C1DSP",
+        "C500",
+        "c800",
+        "FCD600",
+        "FFMPEG H.264",
+        "H264",
+        "Hi3518E-IP",
+        "I51DL",
+        "I51DM",
+        "i51DS",
+        "I51DW",
+        "I51DX",
+        "I51EC",
+        "I51EG",
+        "I51EH",
+        "i61dq",
+        "I61DR",
+        "I61DU",
+        "i61fb",
+        "I91BF",
+        "I91BH",
+        "I91BL",
+        "I91DB",
+        "I91F",
+        "l21G",
+        "NC400 (I81HC)",
+        "NC800",
+        "NOVA S",
+        "NP41F1P",
+        "Other",
+        "OTHER 2",
+        "TURRET CAMERA",
+        "w300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "1080P",
+        "141CW",
+        "191BF",
+        "191BL",
+        "5mp",
+        "720p",
+        "Back Porch",
+        "c500",
+        "c800",
+        "C800-4k",
+        "DL81A",
+        "DL81A1t",
+        "DN41R",
+        "DN81R",
+        "dvr",
+        "DVR",
+        "FFMPEG OTHER",
+        "i21ae",
+        "i21G",
+        "I41G",
+        "I51DM",
+        "i51DS",
+        "I91BF",
+        "I91BL",
+        "l91BL",
+        "N44SU",
+        "NP41F1P",
+        "Other",
+        "POE",
+        "POEcustom",
+        "Turret Camera",
+        "Upper Side Yard",
+        "VIEW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "131v",
+        "2mp",
+        "2MP",
+        "720P",
+        "Apoo",
+        "DE41g",
+        "DL81A",
+        "DVR",
+        "H264",
+        "I21DE",
+        "I21G",
+        "I31V",
+        "i41ec",
+        "i71gd",
+        "K9504",
+        "K9604-W",
+        "N34WDB+I31DB",
+        "n441l",
+        "N44WBD1T",
+        "NVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "131V",
+        "141 fl",
+        "CES",
+        "i31",
+        "I31V",
+        "i41",
+        "I4iDG",
+        "JPG",
+        "l31v"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "131V",
+        "141CW",
+        "141gd",
+        "171gp",
+        "2MP",
+        "I21v",
+        "I23EB",
+        "i41fl",
+        "IPC",
+        "l31v"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "141CS",
+        "151DB",
+        "151de",
+        "151dj",
+        "151DM",
+        "191BS",
+        "2MP",
+        "4MP Bullet",
+        "4MP DOME",
+        "720P",
+        "AC500",
+        "AK-N48PIA0-68DT",
+        "c500",
+        "C800",
+        "DE81GB",
+        "DN41R",
+        "DN81R",
+        "DVR",
+        "DW81KD",
+        "i15dx",
+        "i51dm",
+        "I51DS",
+        "I51DX",
+        "I61BK",
+        "I61DR",
+        "I61FC",
+        "I61G",
+        "I91BD",
+        "I91BF",
+        "I91BM",
+        "I91F",
+        "l51DM",
+        "N481Y",
+        "N48PI",
+        "NC400",
+        "NC800",
+        "NCPT500",
+        "Other",
+        "P01",
+        "POE",
+        "VIEW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "141CS",
+        "151DE",
+        "151DM",
+        "161fc",
+        "181HD",
+        "191BF",
+        "191BM",
+        "191DB",
+        "AC500",
+        "ANNKE 4MP PoE",
+        "C500",
+        "c800",
+        "CZ400",
+        "FCD600",
+        "I51DF",
+        "I51DX",
+        "I61BK",
+        "I61DS",
+        "I81HB",
+        "I81HD",
+        "i91be",
+        "I91BF",
+        "I91BL",
+        "I91BN",
+        "I91BQ",
+        "I91DH",
+        "l61fc",
+        "NC400 (I81HC)",
+        "Other",
+        "P01",
+        "PO1",
+        "POE",
+        "sumo"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "141CW",
+        "AK-N48PIA0-68DT",
+        "de81g",
+        "DL81A",
+        "DVR",
+        "POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "141CW"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "141gd",
+        "151DE",
+        "I51DE",
+        "I51DF",
+        "I51DL",
+        "i51dm",
+        "i91bn",
+        "I91DH",
+        "NC400 (I81HC)",
+        "NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "151",
+        "151de",
+        "151DM",
+        "4k POE Turret",
+        "4K Turret",
+        "4MP BULLET",
+        "C800",
+        "CZ400",
+        "I19BN",
+        "I51DM",
+        "I51DN",
+        "I51ds",
+        "I51ES",
+        "I61DR",
+        "I91BF",
+        "I91BL",
+        "I91BM",
+        "I91BN",
+        "I91dn",
+        "NOVA S",
+        "Other",
+        "p10",
+        "POE",
+        "TURRET CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "151CK",
+        "151DM",
+        "C800-4k",
+        "I51CK",
+        "I51DX",
+        "Other",
+        "WZ500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264/ch1/sub/av_stream"
+    },
+    {
+      "models": [
+        "151CK",
+        "191BL",
+        "DW81KD",
+        "I51DN",
+        "I51EH",
+        "I91DS",
+        "NOVA S",
+        "Turret Camera",
+        "WS500",
+        "WZ500",
+        "WZ504"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264/ch1/main/av_stream"
+    },
+    {
+      "models": [
+        "151DM",
+        "I91BQ",
+        "l51DS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "151DQ",
+        "191BV",
+        "i51dm",
+        "NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102/?transportmode=unicast.sdp"
+    },
+    {
+      "models": [
+        "151DQ",
+        "191BV",
+        "i51dm",
+        "I91BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101/?transportmode=unicast.sdp"
+    },
+    {
+      "models": [
+        "191BE",
+        "DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=[USERNAME]_stream=0.sdp"
+    },
+    {
+      "models": [
+        "191bk",
+        "191BL",
+        "c500",
+        "C800-4K",
+        "CZ400",
+        "I19BM",
+        "I51DS",
+        "I91BF",
+        "I91BQ",
+        "isb92",
+        "l51DL",
+        "l91BL",
+        "l91bm",
+        "l91bn",
+        "Pano360 Pro",
+        "Turret",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "191BL",
+        "I91DS",
+        "Pano360 Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "191BS",
+        "AC500",
+        "c800",
+        "C800-4k",
+        "I51DX",
+        "I91BF",
+        "NC800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "191df"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/102"
+    },
+    {
+      "models": [
+        "191df"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "2MP",
+        "i21an"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "4k Turret",
+        "c500",
+        "C800",
+        "I91BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam2/onvif-h264"
+    },
+    {
+      "models": [
+        "720P",
+        "DN61R",
+        "DN81R",
+        "DVR",
+        "Other",
+        "View"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/501"
+    },
+    {
+      "models": [
+        "ACZ800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H265/ch1/main/av_stream"
+    },
+    {
+      "models": [
+        "ACZ800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H265/ch1/sub/av_stream"
+    },
+    {
+      "models": [
+        "c800",
+        "I91DS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_Chayse01April=tlJwpbo6_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "c800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C800-4k",
+        "FCD600",
+        "I81EM",
+        "I91BL",
+        "I91BN",
+        "NCPT500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Dan",
+        "I41GD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "DN81R",
+        "DVR",
+        "H264",
+        "Other",
+        "View"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/401"
+    },
+    {
+      "models": [
+        "dt81dx"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "PSIA/Streaming/channels/[CHANNEL]"
+    },
+    {
+      "models": [
+        "dvr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=4&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/201"
+    },
+    {
+      "models": [
+        "h264",
+        "NP41F1P"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Hi3518E-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=&stream=.sdp?real_stream--rtp-caching=100"
+    },
+    {
+      "models": [
+        "I21eb"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "I51DL",
+        "NC800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "I51DL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265_stream"
+    },
+    {
+      "models": [
+        "I51DM",
+        "I91BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "I51DS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264/0/sub/av_stream"
+    },
+    {
+      "models": [
+        "I51DS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264/0/main/av_stream"
+    },
+    {
+      "models": [
+        "I51EG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=2.sdp"
+    },
+    {
+      "models": [
+        "I61G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "i91bf"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "I91BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "I91DQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "K8208-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "N48PAW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "NCD800",
+        "WZ500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?"
+    },
+    {
+      "models": [
+        "POE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "vc500"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264/ch1/main/av_stream"
+    }
+  ]
+}

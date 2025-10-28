@@ -1,0 +1,75 @@
+{
+  "brand": "Titathink",
+  "brand_id": "titathink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Clock",
+        "GF-H100",
+        "TT531W-N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CLOCK",
+        "TT520PW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1.3gp"
+    },
+    {
+      "models": [
+        "Pinhole",
+        "TT520PW",
+        "TT522PW-PRO",
+        "TT522W-PRO",
+        "TT525PW",
+        "TT525PW 108",
+        "TT730PW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/onvif.sdp"
+    },
+    {
+      "models": [
+        "TT520PW",
+        "TT522PW",
+        "TT522PW-PRO",
+        "TT730PW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TT520PW",
+        "TT522PW-PRO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "TT531W-N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Cygnus",
+  "brand_id": "cygnus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-4M-FW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/videoMain"
+    }
+  ]
+}

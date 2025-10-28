@@ -1,0 +1,48 @@
+{
+  "brand": "Trek",
+  "brand_id": "trek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ai ball 01",
+        "Ai-Ball",
+        "Ai-Ball_1",
+        "Ai-Ball2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Ai-Ball"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=snapshot"
+    },
+    {
+      "models": [
+        "Ai-Ball",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=appletvstream"
+    },
+    {
+      "models": [
+        "Ai-Ball"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

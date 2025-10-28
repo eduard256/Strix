@@ -1,0 +1,20 @@
+{
+  "brand": "Gen",
+  "brand_id": "gen",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2cam",
+        "3200cp",
+        "Other",
+        "P18"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

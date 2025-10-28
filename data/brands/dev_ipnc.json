@@ -1,0 +1,17 @@
+{
+  "brand": "Dev_ipnc",
+  "brand_id": "dev_ipnc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DM368_IPNC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/Streaming/2"
+    }
+  ]
+}

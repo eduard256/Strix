@@ -1,0 +1,18 @@
+{
+  "brand": "Webvision",
+  "brand_id": "webvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HOME VISION",
+        "PPCN453889TMUTT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

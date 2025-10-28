@@ -1,0 +1,17 @@
+{
+  "brand": "Cyberview",
+  "brand_id": "cyberview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CVI-AI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/video_feed"
+    }
+  ]
+}

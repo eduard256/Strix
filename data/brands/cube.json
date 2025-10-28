@@ -1,0 +1,26 @@
+{
+  "brand": "Cube",
+  "brand_id": "cube",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "g520"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "iipc-10hd"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    }
+  ]
+}

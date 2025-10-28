@@ -1,0 +1,20 @@
+{
+  "brand": "Brovotech",
+  "brand_id": "brovotech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2.0.0",
+        "600102003-BV-H0203",
+        "600109004-IPC-H0904",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    }
+  ]
+}

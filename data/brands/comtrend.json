@@ -1,0 +1,20 @@
+{
+  "brand": "Comtrend",
+  "brand_id": "comtrend",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dome",
+        "Mini-Dome",
+        "Other",
+        "VD-21ir"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    }
+  ]
+}

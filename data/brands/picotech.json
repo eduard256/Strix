@@ -1,0 +1,17 @@
+{
+  "brand": "Picotech",
+  "brand_id": "picotech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PC - 680IRPW"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

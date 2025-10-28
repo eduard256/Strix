@@ -1,0 +1,99 @@
+{
+  "brand": "Siepem",
+  "brand_id": "siepem",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC S5030-M",
+        "S5001Y-BW",
+        "S5030-MP2P",
+        "S62024-BWRA",
+        "S6202Y",
+        "S6203",
+        "S6203-WR",
+        "S6203y",
+        "s6203y-wp",
+        "S6203Y-WR",
+        "S6207Y-WRA",
+        "S6219W-WR",
+        "SPCN-330866"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC S5030-M",
+        "S5030-MP2P",
+        "S6319W1-WR2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC S5030-M",
+        "S6203Y-WR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "P2PWIFICAM",
+        "S6203-WR",
+        "S6207Y-WRA",
+        "S6265F-WR2",
+        "S6266F-WR2",
+        "S6319W1-WR2",
+        "s6863 fn",
+        "S6863-fn",
+        "S6863FN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "S5001Y-BW",
+        "s6202y",
+        "S6203y",
+        "S6203Y-WR",
+        "S6211Y-WR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "s6265f-wr2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "S6265F-WR2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

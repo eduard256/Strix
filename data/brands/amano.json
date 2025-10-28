@@ -1,0 +1,18 @@
+{
+  "brand": "Amano",
+  "brand_id": "amano",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CAO-EDH-63-11",
+        "Dome"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    }
+  ]
+}

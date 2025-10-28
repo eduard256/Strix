@@ -1,0 +1,120 @@
+{
+  "brand": "Vr Cam",
+  "brand_id": "vr-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.3MP",
+        "1.5 mp model",
+        "21007175",
+        "244",
+        "360",
+        "6801234561062",
+        "954631967",
+        "AHD Camera",
+        "eseecloud",
+        "Fisheye",
+        "IPC",
+        "Other",
+        "P4-S",
+        "Panoramic",
+        "QJ77",
+        "RG-QJ77-IP",
+        "SP006",
+        "TP-JA960-3M",
+        "VR 360",
+        "VR Camera",
+        "VR-130",
+        "VR-130-A5",
+        "VR-300-H5",
+        "vr360",
+        "VR360-D2",
+        "VR360-WIFI-P2",
+        "VR360-WIFI-P3",
+        "VR360-WIFI-P5",
+        "VR-SN3",
+        "yvr-130-hs"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "360",
+        "IPC",
+        "Other",
+        "VR 360",
+        "VR-130",
+        "VR-130-H5",
+        "VR360-P2",
+        "VR360-WIFI-P2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "360",
+        "ipc",
+        "IPC-4003",
+        "Other",
+        "VR Camera",
+        "VR-300-H5",
+        "VR360-WIFI-P2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "360",
+        "6801234561062",
+        "ipc",
+        "P4-S",
+        "VR360_WIFI-3A",
+        "VR360-WIFI-P3",
+        "WS VR160"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "eseecloud D100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "fish eye"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "v380",
+        "VR360-WIFI-P5"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "live/ch00_0"
+    }
+  ]
+}

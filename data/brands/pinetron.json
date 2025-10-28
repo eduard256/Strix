@@ -1,0 +1,28 @@
+{
+  "brand": "Pinetron",
+  "brand_id": "pinetron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IZ22",
+        "PDR-XM DVR",
+        "PNC-IZ22"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "monitor.cgi?Channel=[CHANNEL]&Audio=0000&Live=1"
+    },
+    {
+      "models": [
+        "PNC-IX1083P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    }
+  ]
+}

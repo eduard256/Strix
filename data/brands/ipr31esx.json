@@ -1,0 +1,17 @@
+{
+  "brand": "Ipr31esx",
+  "brand_id": "ipr31esx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph264vga"
+    }
+  ]
+}

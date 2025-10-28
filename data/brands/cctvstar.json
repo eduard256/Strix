@@ -1,0 +1,17 @@
+{
+  "brand": "Cctvstar",
+  "brand_id": "cctvstar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CIVD-20MSI2812"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    }
+  ]
+}

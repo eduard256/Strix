@@ -1,0 +1,28 @@
+{
+  "brand": "Iguard",
+  "brand_id": "iguard",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "270E",
+        "380E"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "showimg_pda.cgi?cam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "380e",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

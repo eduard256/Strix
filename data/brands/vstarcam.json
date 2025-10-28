@@ -1,0 +1,1135 @@
+{
+  "brand": "Vstarcam",
+  "brand_id": "vstarcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C38S-P",
+        "12345",
+        "12345678",
+        "202",
+        "3 Onvif",
+        "7204",
+        "7337",
+        "7824",
+        "7824WIP",
+        "7833",
+        "7837",
+        "7837WIP",
+        "888",
+        "8888",
+        "af81",
+        "Baglokalet",
+        "beauty",
+        "bl2602",
+        "C15S",
+        "C16S",
+        "C17s",
+        "c22q",
+        "C23",
+        "C23s",
+        "c24s",
+        "C25",
+        "C26S",
+        "C29S",
+        "C33-X4",
+        "C37A",
+        "C38S",
+        "C38S-YG",
+        "C43s",
+        "c50s",
+        "c63s",
+        "C662DR",
+        "C7248",
+        "C7284",
+        "C7388WIP-X4",
+        "C78",
+        "C7815WIP",
+        "c7816",
+        "C7816w",
+        "C7816WIP",
+        "C7823WIP",
+        "c7824",
+        "C7824w",
+        "C7824WIP",
+        "C-7824WIP",
+        "C7824WIP ONV",
+        "C782WIP",
+        "C783",
+        "C-7833",
+        "C7833WIP",
+        "C7833WIPx4",
+        "C7833WIP-X4",
+        "C-7835wip",
+        "C7837",
+        "C-7837WIP",
+        "C7837WIP PnP IPCAM",
+        "C7838",
+        "C7838W",
+        "C-7838WIP",
+        "C7862",
+        "C78833WIP-X4",
+        "C7893WIP",
+        "c7983wip",
+        "C82",
+        "C8733WIP-X4",
+        "C8737",
+        "C8892-RUSS",
+        "C996DR",
+        "C99S Pro-X5 AI",
+        "cccc",
+        "comspot",
+        "CS -1",
+        "CS611Q-X5",
+        "CS621SR",
+        "DATHOME1",
+        "Daves",
+        "Dom",
+        "e38s",
+        "escam",
+        "Escam QF100",
+        "Eye4",
+        "Eye4 C1",
+        "hdcam",
+        "HI03518E",
+        "HI3518E",
+        "Hi3518eV100",
+        "Home",
+        "Icam-608",
+        "Innovations",
+        "ip001",
+        "Ko-Op",
+        "lollandia",
+        "Miley",
+        "mio",
+        "MP#1",
+        "Other",
+        "overmax",
+        "pt 737",
+        "PT-737",
+        "QF100",
+        "robocam",
+        "robocam 5",
+        "Starcam",
+        "STARCAM",
+        "Suneyes",
+        "suneyes-1",
+        "Sunluxy",
+        "T-7815WIP",
+        "T-7838WIP",
+        "timcam",
+        "v21s",
+        "V61S",
+        "Vip starcam",
+        "vp-373",
+        "VST",
+        "VSTAR",
+        "VSTARCAM C7824WIP",
+        "VSTARCAM-HI3518E",
+        "W7815WIP",
+        "xxxx"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "100",
+        "29S",
+        "720",
+        "7824",
+        "Af81",
+        "baby",
+        "C-16s",
+        "C16S",
+        "C18S",
+        "C23",
+        "C26S",
+        "C320",
+        "c33",
+        "C33-X4",
+        "C46S",
+        "C61S",
+        "C662DR",
+        "C7388WIP-X4",
+        "c7815wip",
+        "C7815WIP",
+        "c7816wip",
+        "C7823",
+        "C7824",
+        "c7824wip",
+        "C7833WIP-X4",
+        "C7837",
+        "C7837WIP",
+        "C7837WIP_101",
+        "c789",
+        "c7983wip",
+        "C82R",
+        "c991",
+        "CP782WIP",
+        "CS52Q",
+        "CS55",
+        "cs58q-uv",
+        "eye4",
+        "EYE4",
+        "HI3518E",
+        "Hi3518eV100",
+        "Onvif",
+        "Other",
+        "PT3538",
+        "PTZ",
+        "Sunluxy",
+        "tcamv",
+        "UNLISTED",
+        "V3683",
+        "Vstarcam C24s",
+        "vstarcam hd",
+        "vx25"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_1"
+    },
+    {
+      "models": [
+        "100",
+        "7816WIP",
+        "c16s",
+        "C18S",
+        "C19",
+        "c24s",
+        "C24s",
+        "C26S",
+        "C29",
+        "C29S",
+        "c34s",
+        "C37S",
+        "C50S",
+        "C53S",
+        "C58HD",
+        "c63s",
+        "C7815WIP",
+        "C-7816WIP",
+        "C7824WIP",
+        "C-7833WIP-X4",
+        "C7837WIP",
+        "C82R",
+        "C8892-RUSS",
+        "C90S",
+        "Cam360 T720PWIP",
+        "ESCAM QF100",
+        "H-6837WIP",
+        "Other",
+        "PTZ1",
+        "T-7833WIP",
+        "T-7837WIP",
+        "Vstarcam c21s",
+        "Vstarcam T Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100A",
+        "222",
+        "7281",
+        "7816WIP",
+        "7824WIP",
+        "7837WIP",
+        "C16",
+        "C16S",
+        "C17S",
+        "C18S",
+        "C24",
+        "C24S",
+        "C24Stg",
+        "C29",
+        "C29S",
+        "C320",
+        "c32s-x4",
+        "C58HD",
+        "c63s",
+        "C-7816WIP",
+        "C7823WIP",
+        "C7824",
+        "C7824WIP",
+        "C7824WIP ONV",
+        "C782WIP",
+        "C7833WiP-X4",
+        "C-7837WIP",
+        "C7837WIP(B)",
+        "C7838",
+        "C82R",
+        "C-8716WIP",
+        "C88S-PLUS",
+        "C95",
+        "f24s",
+        "F-6836W",
+        "Other",
+        "t series",
+        "T6836WP",
+        "T6836WTP",
+        "T-7815WIP",
+        "T7835WIP",
+        "T-7837WIP",
+        "T-7838WIP",
+        "VSTA821059DLHBF",
+        "VSTA848432JRVJV",
+        "VSTARCAM C7824WIP",
+        "yfguyf8"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1080P",
+        "C26S",
+        "C7823WIP",
+        "C7824WIp",
+        "C8892-RUSS",
+        "W7815WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/udp/av0_1"
+    },
+    {
+      "models": [
+        "1234",
+        "2222",
+        "7816wip",
+        "7837",
+        "c16s",
+        "C22S",
+        "C34",
+        "C7428",
+        "C-7837WIP",
+        "C-7838WIP",
+        "C-8716WIP",
+        "CS58",
+        "CW34S-X4",
+        "Kar1315",
+        "Order",
+        "Other",
+        "spservice",
+        "T-6835WIP",
+        "T6836WP",
+        "T-6892wp",
+        "T-7815WIP",
+        "T-7833wip",
+        "T-7837WIP",
+        "T-7838WIP",
+        "T-7892WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "2222",
+        "720",
+        "7824WIP",
+        "7837",
+        "7837WIP",
+        "C=7824WIP",
+        "c16s",
+        "C17S",
+        "C24S",
+        "C25",
+        "C50S",
+        "C7812WIP",
+        "C7815WIP",
+        "C7816",
+        "C7816WIP",
+        "C-7816WIP",
+        "C7823WIP",
+        "c7824",
+        "C7824WIP",
+        "C-7824WIP",
+        "C-7837WIP",
+        "C7837WIP(B)",
+        "c-8716wip",
+        "c90s",
+        "CB73",
+        "eye4",
+        "EYE4",
+        "H6837WIP",
+        "Other",
+        "OTHER2",
+        "s18",
+        "SUNEYES",
+        "T-6835WIP",
+        "T6836WP",
+        "T-6836WTP",
+        "T-7833wip",
+        "T-7833WIP",
+        "T-7838WIP",
+        "v18",
+        "v18s",
+        "VSTARCAM C7824WIP",
+        "VSTARCAM C92S",
+        "VSTC392356NSVBB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "6868",
+        "C=7824WIP",
+        "EYE4",
+        "F-6836W",
+        "H-6837WI",
+        "H-6850WIP",
+        "Other",
+        "T-7837WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "7816WIP",
+        "7824",
+        "7837",
+        "C16S",
+        "C25",
+        "C29S",
+        "c32s-x4",
+        "C34S",
+        "C35S",
+        "C37A",
+        "C38",
+        "C38S",
+        "C58HD",
+        "C63S",
+        "C7816WIP",
+        "C-7816WIP",
+        "C7824WIP",
+        "c7833wip",
+        "c7833wip-x4",
+        "C7837WIP(B)",
+        "C93",
+        "EYE4",
+        "F-6836W",
+        "H-6837WI",
+        "H-6837WIP",
+        "H-6850wip",
+        "ICAM-608",
+        "Other",
+        "T-6835WIP",
+        "T-6836WTP",
+        "T-6892wp",
+        "T-7815WIP",
+        "T-7833wip",
+        "T7837WIP",
+        "T-7838WIP",
+        "T-7892WIP",
+        "VSTARCAM C7824WIP",
+        "VSTC431871"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "7823",
+        "C=7824WIP",
+        "C16S",
+        "C24S",
+        "C24S YO",
+        "c37a",
+        "C63S",
+        "c7815wip",
+        "C7816W",
+        "C7816wip",
+        "C7816WIP",
+        "C7823WIP",
+        "C-7824WIP",
+        "C-7833wip",
+        "C7837WIP",
+        "C7837WIP PNP IPCAM",
+        "C7838WIP",
+        "C7842WIP",
+        "C93",
+        "f6815WI",
+        "ip camera c37s",
+        "Other",
+        "T-6892wp",
+        "T7812IP",
+        "T-7833WIP",
+        "T-7838WIP",
+        "vstc"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "7824",
+        "7824WIP",
+        "C=7824WIP",
+        "C16S",
+        "C17S",
+        "C25",
+        "C29S",
+        "C38S",
+        "C38S-JS",
+        "C7812WIP",
+        "c7815wap",
+        "C7815WIP",
+        "C7816",
+        "C-7816WIP",
+        "C7823WIP",
+        "C-7824WIP",
+        "C-7833WIP-X4",
+        "C7837",
+        "C-7837WIP",
+        "C7837WIP PNP IPCAM",
+        "C7842WIP",
+        "EYE4",
+        "H-6837WI",
+        "ONVIF",
+        "Other",
+        "s18",
+        "SUNEYES",
+        "T-6836W",
+        "T6836WP",
+        "T-7815WIP",
+        "T-7833wip",
+        "T-7838WIP",
+        "T-7892WIP",
+        "v18"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "7824",
+        "7824WIP",
+        "7833",
+        "c16s",
+        "C24S",
+        "C7815WIP",
+        "C7823WIP",
+        "C7824WIP",
+        "C7833WIPX4",
+        "C7837WIP",
+        "C7838WIP",
+        "C7842WIP",
+        "EYE4 C1",
+        "T-6835WIP",
+        "T6836WTP PnP IPCAM",
+        "T-7833WIP",
+        "T-7892WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "7837WIP",
+        "C7837WIP",
+        "C7837WIP PNP IPCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "7837WIP",
+        "C16S",
+        "C17S",
+        "C29S",
+        "c32s-x4",
+        "C-7833wip",
+        "C-7837WIP",
+        "C-7838WIP",
+        "c7850wip",
+        "H-6850",
+        "H-6850WIP",
+        "Other",
+        "T-7833wip",
+        "T7835WIP",
+        "T-7838WIP",
+        "VSTARCAM C7824WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "C=7824WIP",
+        "C-7838WIP",
+        "Other",
+        "T-7833WIP",
+        "T7835WIP",
+        "T-7837WIP",
+        "T-7838WIP",
+        "T-7892WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "C16S",
+        "C18s",
+        "C320",
+        "C38S",
+        "c63s",
+        "C-7824WIP",
+        "EYE4",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "c19s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c19s",
+        "C26S",
+        "C7842WIP",
+        "C8817WIP(RUSS)",
+        "C8873B",
+        "C-8892",
+        "cs64",
+        "t series",
+        "T-6835WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C22S",
+        "c24s",
+        "C7837WIP",
+        "C7837WIP PnP IPCAM",
+        "G43S",
+        "ip camera c37s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 18028,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "C22S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 18028,
+      "url": "/cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "C25",
+        "C26S",
+        "CS55"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8001,
+      "url": "/videostream.cgi?rate=10&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c25s",
+        "CS621SR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C26S",
+        "C38S",
+        "c7815wip",
+        "c-7816win",
+        "C7816WIP",
+        "C-7816WIP",
+        "c-8716wip",
+        "F-6836W",
+        "Other",
+        "SUNEYES",
+        "T-6835WIP",
+        "T-6836W",
+        "T6836WTP",
+        "T-7833wip",
+        "T-7837WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "C26S",
+        "C76824",
+        "c7824wip",
+        "C-7838WIP",
+        "Dual",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/udp/av0_0"
+    },
+    {
+      "models": [
+        "c32s-x4",
+        "c34s",
+        "C63S"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8484,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "c32s-x4"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8484,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "c34s"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8004,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "C63s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "C7815WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "C-7816WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "c7824wip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c7824wip",
+        "C7837WIP",
+        "C7842WIP",
+        "T7835WIP",
+        "VSTARCAM C7824WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8484,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c7824wip"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8484,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "C7824WIP",
+        "H6515WI",
+        "H-6837WI",
+        "H-6837WIP",
+        "hi6815wi_2",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C-7824WIP",
+        "C7838WIP",
+        "Other",
+        "T-7892WIP",
+        "T-9872WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "C7833-X4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/livestream.cgi?user=[USERNAME]&pwd=[PASSWORD]&streamid=0&filename="
+    },
+    {
+      "models": [
+        "C7837WIP",
+        "C8873B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C7837WIP PNP IPCAM",
+        "H-6837WIP",
+        "T-7815WIP",
+        "T-7837WIP",
+        "T-7838WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "C8873B",
+        "T7835WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 65337,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=1280&rate=1"
+    },
+    {
+      "models": [
+        "CS55",
+        "VSTARCAM C7824WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8484,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=64"
+    },
+    {
+      "models": [
+        "f628",
+        "f6836w",
+        "H-6837WIP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "F628",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "F-6836W",
+        "H-6837WI",
+        "H-6837WIP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "F-6836W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "F-6836W",
+        "T-6836W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "F-6836W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "F-6836W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "F-6836W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "F-6836W",
+        "Other",
+        "T-6835WIP",
+        "T6836WTP",
+        "T-6892wp",
+        "T-7833wip"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "f8815w ip cam",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H-6812IP",
+        "H-6837WI",
+        "H-6837WIP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "H-6837WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "HI03518E",
+        "VSTARCAM-HI3518E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "HI3518E",
+        "Other",
+        "T-6835WIP",
+        "T6836WTP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "ONVIF",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "T7835WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "T7835WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=1280"
+    },
+    {
+      "models": [
+        "VSTARCAM C7824WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8888,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]19"
+    }
+  ]
+}

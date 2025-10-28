@@ -1,0 +1,27 @@
+{
+  "brand": "Macrovision",
+  "brand_id": "macrovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "v380",
+        "v380pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/feed1.ffm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Vguard",
+  "brand_id": "vguard",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VG-200-DF",
+        "VG7108N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1"
+    }
+  ]
+}

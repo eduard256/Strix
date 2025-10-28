@@ -1,0 +1,153 @@
+{
+  "brand": "Air Live",
+  "brand_id": "air-live",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2015",
+        "Gabinet",
+        "OD-2025HD",
+        "SC-300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "325HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Video?Codec=MPEG4&Width=720&Height=576&Fps=30"
+    },
+    {
+      "models": [
+        "BU720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "CV-720IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "FE-201DM"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "FE-501HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "MD-720",
+        "POE-200HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "OD2015HD",
+        "POE-200HD",
+        "WN-2600HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "OD-2025HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "poe 200 cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "poe200",
+        "poe200 camv2",
+        "POE-200HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "WL=350HD",
+        "wl-2600cam",
+        "wl-350hd"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "wl-1200cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "WN-200HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "WN2600"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    }
+  ]
+}

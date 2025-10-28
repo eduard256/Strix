@@ -1,0 +1,224 @@
+{
+  "brand": "Shixin China",
+  "brand_id": "shixin-china",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10921",
+        "129HW",
+        "IP-05HW",
+        "IP-129HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "129HW",
+        "X9300-MH36"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "333"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "H264DVR",
+        "IP-109H RTSP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IP Series (Other)",
+        "IP SERIES (Other)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IP Series (Other)",
+        "IP-333"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP Series (Other)",
+        "IP06 v2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "pda.cgi?page=image&cam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-05HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "IP06 v1",
+        "IP-109H",
+        "IP-129HW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP06 v1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "showimg_pda.cgi?cam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-108H",
+        "IP-109H RTSP",
+        "IP-129HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/video[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-109H",
+        "IP-109H RTSP",
+        "ulko"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP-129HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/stream3"
+    },
+    {
+      "models": [
+        "IP-129HW"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "IP-129HW"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "IP-129HW",
+        "ONVIF"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "HighResolutionVideo"
+    },
+    {
+      "models": [
+        "IP-129HW"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "IP-129HW",
+        "ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "IP-510"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.html"
+    },
+    {
+      "models": [
+        "IPCAM P2P",
+        "Other",
+        "X9300-MH36"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "ptz1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    }
+  ]
+}

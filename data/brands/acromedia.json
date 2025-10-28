@@ -1,0 +1,182 @@
+{
+  "brand": "Acromedia",
+  "brand_id": "acromedia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "009",
+        "ACROMEDIA IN-009",
+        "IN/EX",
+        "IN/EX Series",
+        "IN-010",
+        "IN-09",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "009",
+        "Acromedia IN-009",
+        "ACROMEDIA IN-009",
+        "BLW-2004E-AHD",
+        "IN-010",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "BLW-2004E-AHD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ECESMS",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "in/ex",
+        "IN/EX Series",
+        "IN-010",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "IN/EX",
+        "IN/EX Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "IN/EX Series",
+        "IN/EX SERİES",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "in-009",
+        "IN-010",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "IN-009",
+        "IN-010"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IN-010"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IN-010"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel2"
+    },
+    {
+      "models": [
+        "IN-010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IN-010"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

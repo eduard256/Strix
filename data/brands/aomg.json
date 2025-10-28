@@ -1,0 +1,17 @@
+{
+  "brand": "Aomg",
+  "brand_id": "aomg",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CBSKY FI-831"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    }
+  ]
+}

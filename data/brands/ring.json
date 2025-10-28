@@ -1,0 +1,94 @@
+{
+  "brand": "Ring",
+  "brand_id": "ring",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Doorbell",
+        "pro",
+        "Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/ring.0/doorbell_82595437/livestream.mp4"
+    },
+    {
+      "models": [
+        "doorbell 3",
+        "Doorbell 4",
+        "Stickup Cam",
+        "Video Doorbell Pro"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.cgi?type=motion&camera=0"
+    },
+    {
+      "models": [
+        "ring 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.cgi?type=motion&camera=2"
+    },
+    {
+      "models": [
+        "Ring Dorbell Wired"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/343ea4d97645_live"
+    },
+    {
+      "models": [
+        "Stickup Cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion&camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Stickup Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8123,
+      "url": "/api/camera_proxy_stream/camera.front_live_view"
+    },
+    {
+      "models": [
+        "Video Doorbell Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8123,
+      "url": "/api/camera_proxy_stream/camera.gate_live_view"
+    },
+    {
+      "models": [
+        "Video Doorbell Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/api/camera_proxy_stream/camera.garden_live_view"
+    }
+  ]
+}

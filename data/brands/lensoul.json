@@ -1,0 +1,17 @@
+{
+  "brand": "Lensoul",
+  "brand_id": "lensoul",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "JD08610-Q1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

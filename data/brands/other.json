@@ -1,0 +1,1352 @@
+{
+  "brand": "Other",
+  "brand_id": "other",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "[p[",
+        "NVE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/601"
+    },
+    {
+      "models": [
+        "[p[",
+        "Ezviz C8PF",
+        "GW500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "001A18E0632C",
+        "adc-v521ir",
+        "anran",
+        "BE2028",
+        "china",
+        "fi18919",
+        "GoDrive",
+        "iCsee",
+        "ID002A",
+        "Outdoor Mini Speed Dome Camera",
+        "sven ic-720",
+        "techmade",
+        "Venus",
+        "VG13081HIPC",
+        "VG360",
+        "WF-100PCX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8110,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "002fnlk",
+        "2130",
+        "2M Box Camera",
+        "33-S",
+        "ai08",
+        "auto focus",
+        "boh?",
+        "C-110",
+        "C6F0SfZ3N0P6L2",
+        "c721IP-2",
+        "Click",
+        "corsee",
+        "ctronics",
+        "F19851P",
+        "Hootoo: hs003",
+        "intex IT-309WC",
+        "IP5M-D",
+        "M2C",
+        "Netsee",
+        "Other",
+        "Out",
+        "tmezon ptz dome",
+        "UMS",
+        "uuuu-197863-glybh",
+        "W-NVR",
+        "Zmodo wifi"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "1.3mp",
+        "D_2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "100",
+        "Brand",
+        "IP Web 1",
+        "Other",
+        "Other PTZ",
+        "SAP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "1020",
+        "1114",
+        "1234",
+        "13582288",
+        "320",
+        "380",
+        "7033-N",
+        "822a",
+        "8812T-WF",
+        "A16-EU",
+        "A8B",
+        "ABQ-A8",
+        "active cam",
+        "alexton",
+        "ASTMY31-POE_1.78MM",
+        "ASZA-B11B-CAM-W-30X-3.0MP",
+        "BirdCam",
+        "Blue 2",
+        "boavizion",
+        "BOLVISION",
+        "BU-E580",
+        "bullet",
+        "C210 SALON",
+        "c310",
+        "C6F0SgZ0N0P6L0",
+        "CS-C6C",
+        "DI350IP5S28",
+        "ds-2cd111",
+        "DS-2CD6365G0E-S/RC",
+        "EVCAM",
+        "ezviz",
+        "f3110",
+        "geovision",
+        "GTs",
+        "HAIZ",
+        "hd",
+        "HDWIFICAM PRO",
+        "Hero",
+        "HIB-2302a",
+        "HiKam S6",
+        "Hink Vision",
+        "hipc",
+        "HiQ-2120wp",
+        "honeywell",
+        "HQ-MP1340T-IR",
+        "HW22M102M",
+        "HX-TR2383F2",
+        "i71BD",
+        "IC-01H3",
+        "ICSEE",
+        "IF26W",
+        "igeek",
+        "IGEEK",
+        "iget",
+        "ip unv ipc-d112-pf28",
+        "IP256",
+        "ipc",
+        "IPC2252-FNB-SIR50-Z2812-P",
+        "IPW-6MP-INT-P-IR",
+        "LF4810",
+        "lkb353a",
+        "local 1.2",
+        "loosafe ls-dz20",
+        "LS-Q11",
+        "MackVision",
+        "Minicam",
+        "n/a",
+        "N1010",
+        "Norden",
+        "Ocam M3+",
+        "ONVIF",
+        "Other",
+        "OT-VNI39",
+        "ov2640",
+        "overmax",
+        "P3S-8MP-EU",
+        "Parking",
+        "PTZIP204WX4IR",
+        "PVZ5_1",
+        "PVZ5_RTST",
+        "QC-ZN007",
+        "RG-IP02",
+        "Ronin",
+        "Skynet",
+        "Smart IP Camera",
+        "SSAE-438465-ADDDB",
+        "ssdcam",
+        "ST-NVR-H1608",
+        "Sunqar",
+        "swann",
+        "T8864D",
+        "Tado C200",
+        "tc60",
+        "TC-C32QN",
+        "tdx",
+        "TECAGO",
+        "TT77",
+        "TTT",
+        "Wanscam",
+        "wifi smart",
+        "Winiston",
+        "Wistino  CCTV 5MP WiFi Outdoor Camera",
+        "xm530",
+        "YCP",
+        "yoosee",
+        "yoosee smart camera",
+        "Yosee"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1234545",
+        "123456",
+        "cam2",
+        "j1200",
+        "LHH1ZL5ACF1ZR43W45CJ",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1028,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "123456"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1028,
+      "url": "/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "13582288",
+        "450",
+        "A2i",
+        "Balticum",
+        "bericam",
+        "BU-E580",
+        "China",
+        "D05POE-5MP",
+        "DCS-6501",
+        "DS-2CD2045FWD-I",
+        "DS-2DE5220IW-AE",
+        "Einfahrt",
+        "hib-2302a",
+        "Hnkvision",
+        "HX-2PT1",
+        "ip-cam",
+        "IPCAM-100",
+        "IPC-T250-M",
+        "mod1x",
+        "mv16288443",
+        "Netvideo",
+        "NORDEN",
+        "NVR-8825/4K",
+        "OPHWD-16US",
+        "orient ip-31-ih2a",
+        "Other",
+        "plv",
+        "Sovmiku",
+        "ssdcam",
+        "ST-NVR-1608",
+        "T8864D",
+        "Tado C200",
+        "Technomate",
+        "Udecer5MPx",
+        "Winiston",
+        "Wistino  CCTV 5MP WiFi Outdoor Camera",
+        "xm 530",
+        "XM-PT629EBP-AI-50G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "1D76",
+        "3c7aaa6b0454",
+        "amz-hd41-3",
+        "DCS-4712E",
+        "Doorbell J7",
+        "F51-3MP",
+        "HDWifiCam Pro",
+        "IP-65",
+        "LENOVO",
+        "merkury mi cw217-101ww",
+        "Other",
+        "poe cam 200",
+        "ptz-2504x-l2",
+        "QC012",
+        "reolink rcl842",
+        "usb"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "2015",
+        "China Cam",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "213",
+        "360",
+        "CHINA CAM",
+        "ONVIF",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2366",
+        "8526",
+        "BR421",
+        "C-110",
+        "C3-0W-H3-D1-111512179548",
+        "c47",
+        "C721IP",
+        "C903IP.2",
+        "caa",
+        "camlytics is crap",
+        "cip",
+        "dahua vto 2202",
+        "Denver: SCH 150",
+        "GWIPC-32034008",
+        "homewizard",
+        "HP 1080p",
+        "IP5M-1179E",
+        "JOOAN",
+        "JW-AP1910S",
+        "luatek",
+        "M Series",
+        "Nest Cam",
+        "Other",
+        "QC 10 1080P",
+        "Qihan",
+        "ST-NVR-H1608",
+        "Vr03",
+        "Wyze Cam V3 RTSP Docker",
+        "Wyze V3 RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "33-S",
+        "825"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "360",
+        "ALL-IN-ONE",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "3gx",
+        "a90",
+        "iCamera2000",
+        "RC8110",
+        "s6203y-wr",
+        "Toucan"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "450",
+        "Cam1",
+        "ip66",
+        "nvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "50X20-SWBG",
+        "cs-cv206",
+        "DS-100",
+        "ds-2cd1743g0-iz",
+        "DS-I214",
+        "Eyenor",
+        "Ezviz  C1C",
+        "Grandstream",
+        "H364DVR",
+        "hike",
+        "HiQ-2120wp",
+        "hiseeu",
+        "hjk",
+        "HK-IPCAM-HI",
+        "HM311",
+        "LLOYDS",
+        "Other",
+        "p10s",
+        "SN-IPC-HW13",
+        "solar",
+        "SP017",
+        "TC70",
+        "Trendnet TV320PI",
+        "Umbrella x218",
+        "V380E",
+        "YCC365"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "57291998",
+        "alltronics",
+        "AXX LIRDBASSF5",
+        "Balticum",
+        "DS-2CD2045FWD-I",
+        "DS-2CD2085FWD-I",
+        "DS-2DE4A425IW-DE",
+        "gok",
+        "GTs1",
+        "HiKam S6",
+        "IH10-a",
+        "ihome-glaz-m",
+        "ip-m4210w 10ir",
+        "ipw",
+        "IWR-IP2M2170WE7",
+        "M3356PMIR-S",
+        "Other",
+        "P10s",
+        "pb4",
+        "r2100",
+        "Skynet",
+        "st-181",
+        "ST-S2541Lite",
+        "topcony",
+        "V380Pro",
+        "Wistino  CCTV 5MP WiFi Outdoor Camera",
+        "XVI EI2010CI-IR",
+        "zijkant"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "5mp WIFI Camera",
+        "CHINA CAM",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "6000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/profile2/media.smp"
+    },
+    {
+      "models": [
+        "810a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h264Preview_01_sub"
+    },
+    {
+      "models": [
+        "810a",
+        "TUYA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h265Preview_01_main"
+    },
+    {
+      "models": [
+        "a90",
+        "ADC-VC826",
+        "C2M",
+        "C6F0SfZ3N0P6L2",
+        "Dahua",
+        "deck1",
+        "EG-CIPEXT001",
+        "energeeks",
+        "f300",
+        "foxicam",
+        "Hikvision",
+        "j1200",
+        "JA-F10R-4-U",
+        "nvr",
+        "rlc-812a",
+        "TR-200Z2",
+        "ULar",
+        "Vimtag"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ABQ-A8",
+        "jhh",
+        "Maxon X3 Mini",
+        "Other",
+        "Pocophone",
+        "SSDCAM",
+        "ST-316-2M-AI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "advision"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.jpg"
+    },
+    {
+      "models": [
+        "All-in-one",
+        "Brand",
+        "Bseries",
+        "Other",
+        "Raspberry Pi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "All-in-one",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "All-in-one",
+        "CHINA CAM",
+        "IP Web 1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "All-in-one",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "All-in-one",
+        "IP Web 1",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AMC06512",
+        "ptz"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Avermedia DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mobile/channel[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "avz",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    },
+    {
+      "models": [
+        "AWC03F",
+        "iCamera2",
+        "Other",
+        "Tapo: C320WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "Axia-VD1",
+        "dtk-b1080p04-2mp",
+        "HK-IPCAM-HI",
+        "Over",
+        "PZT-2504X-12",
+        "wifi pt camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "bericam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "Brand",
+        "BRAND",
+        "Other",
+        "PTZ"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "BRAND",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "bvml",
+        "china",
+        "cmr19",
+        "GWIPC-17202082",
+        "Onvif",
+        "ONVIF",
+        "Other",
+        "Tado C200",
+        "V380",
+        "VTA-83730",
+        "Winiston",
+        "Wistino",
+        "XM530_R80XD50-PQ_8M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "C200E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 554,
+      "url": "/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0"
+    },
+    {
+      "models": [
+        "C6F0SgZ3N0PcL2",
+        "J2000 HDIP2Dp20PA",
+        "tra-svr-6108-4an"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=0"
+    },
+    {
+      "models": [
+        "C8001DN2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "Camius"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    },
+    {
+      "models": [
+        "CGSN-019304-KZKNB",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "China",
+        "EC80-Y13",
+        "elegate",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "China"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "clg-020",
+        "zennox"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CMIP7442W-28M",
+        "Elbex EXIP-4320/BIR (201F)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "cmr818s"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "CS-34304A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/VIDEO.CGI"
+    },
+    {
+      "models": [
+        "CS-34304A",
+        "DSL-5000L"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0"
+    },
+    {
+      "models": [
+        "D_2",
+        "hgnw",
+        "ngixz",
+        "R-MQ60-JA20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "Dahua N22AL12",
+        "lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "Dahua N22AL12"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "DCS-932L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "deck",
+        "Galayou Y4",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "DENVER",
+        "QC20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam2/mpeg4"
+    },
+    {
+      "models": [
+        "DH-IPC-HFW1230SP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46MzIyMzExNjEzMVNoYXl0YW4="
+    },
+    {
+      "models": [
+        "D-Link: DCS-2330L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "DT385-I",
+        "Ezviz db1",
+        "hsdb2a",
+        "ipc",
+        "IPCAM-100",
+        "Other",
+        "PTZ Bulb",
+        "Sovmiku",
+        "ZetPro-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "DWC-400"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/user/videostream.cgi"
+    },
+    {
+      "models": [
+        "ec101-x15",
+        "ptz",
+        "viroyj"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "elegate",
+        "HES328-TD-2.8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "eocamara"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 100,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "es-ipbo626",
+        "ipc365"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream_0"
+    },
+    {
+      "models": [
+        "ezviz c6tc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H.264"
+    },
+    {
+      "models": [
+        "F3110"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "F9900ep",
+        "Foscam",
+        "Foscam FI9826",
+        "norden"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "FD8134",
+        "IB8369"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "G3 PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s0"
+    },
+    {
+      "models": [
+        "Galayou Y4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "GDBW4321EE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "geen"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/jpg/1/image.jpg"
+    },
+    {
+      "models": [
+        "geree"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=0"
+    },
+    {
+      "models": [
+        "GV-TDR2700",
+        "va0076_M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "GW8536-MIC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ip0/1/"
+    },
+    {
+      "models": [
+        "H264",
+        "TWG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=2_stream=0.sdp"
+    },
+    {
+      "models": [
+        "H6-Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "HD-IPC",
+        "norden"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "hikvision"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/8/cff0e9638e8b1682:123456/main"
+    },
+    {
+      "models": [
+        "Hisseu HB613-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1"
+    },
+    {
+      "models": [
+        "HK-IPCAM-HI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "Honor",
+        "Wileyfox"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "hsdb2a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ICVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/hiQ.sdp"
+    },
+    {
+      "models": [
+        "ImgHip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "infinix"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/shot.jpg"
+    },
+    {
+      "models": [
+        "IP2M841B",
+        "sx801"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "IP5M-T1179E",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "IP5M-T1179E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/mpeg4/0/media.amp"
+    },
+    {
+      "models": [
+        "IP-65",
+        "SWANN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ip66-el3mp ir 50",
+        "ip66-EL3MP IR50",
+        "Other",
+        "RTSP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "IPC2124LB-SF28KM-G",
+        "LTAIA-47EAL",
+        "Moja-WiFI-Robot",
+        "Other",
+        "OUTDOOR MINI SPEED DOME CAMERA",
+        "p17",
+        "S855F/5520PHR-AI/WH",
+        "Sovmiku",
+        "Sunqar",
+        "Tecsar",
+        "VX-3P28-MD-IA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "IPC3614LR3_PF28-D",
+        "IPCX-SCB405IP-V10-P",
+        "onvif",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "IPC-E1C2000",
+        "IPD-D41M02",
+        "P10s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "IPC-HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "M2C",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam4/mpeg4"
+    },
+    {
+      "models": [
+        "Misecu: MI-615AW-20",
+        "Mtt",
+        "Other",
+        "P05-7-C",
+        "poe cam 200 cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "NP104-IR",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

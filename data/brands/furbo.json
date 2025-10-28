@@ -1,0 +1,26 @@
+{
+  "brand": "Furbo",
+  "brand_id": "furbo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Furbo2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "Furbo2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream"
+    }
+  ]
+}

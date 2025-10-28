@@ -1,0 +1,57 @@
+{
+  "brand": "Inqmega",
+  "brand_id": "inqmega",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "AKPRO",
+        "CloudCam",
+        "H264",
+        "HD 1080P",
+        "HIP291L",
+        "IL-HIP291L-2M-AI",
+        "Other",
+        "ST-381-2M-TY",
+        "ST-382-2M-YC",
+        "ST-425E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "1080",
+        "11080",
+        "720p",
+        "AKPRO",
+        "cloudcam",
+        "HD 1080P",
+        "HIP291",
+        "Other",
+        "st-379",
+        "st-381",
+        "ST-382-2M-YC",
+        "ST-425-3M-TY",
+        "ycc365 plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "HD 1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/"
+    }
+  ]
+}

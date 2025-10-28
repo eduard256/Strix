@@ -1,0 +1,165 @@
+{
+  "brand": "Rosewill",
+  "brand_id": "rosewill",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "12001",
+        "Other",
+        "RSCM-12001",
+        "RSCM-12002"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "ICS303C",
+        "Other",
+        "rsc-2002",
+        "RSCM-12001",
+        "RSCM-12002",
+        "RXS-3211"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "RSCM=13601B",
+        "RSCM-13601W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "RSCM-12001",
+        "RSCM-12002"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "RSCM-12001",
+        "RXS-3323"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "rscm-13701w"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Other",
+        "RSCM-15701W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Other",
+        "RSX3211",
+        "RXS-3211"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "rcsm-13701w",
+        "RSCM-11001",
+        "RSCM-12001",
+        "RSCM-13701W",
+        "RSCM-15701W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video1+audio1"
+    },
+    {
+      "models": [
+        "RSCM 13601W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "RSCM-13601W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "RXS-3211"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "RXS-3323"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "RXS-3323"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    }
+  ]
+}

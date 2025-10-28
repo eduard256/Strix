@@ -1,0 +1,28 @@
+{
+  "brand": "Hqvision",
+  "brand_id": "hqvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EYE-4HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    },
+    {
+      "models": [
+        "HQ-MP3028BD-IR",
+        "HQ-MP3040T-IR",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

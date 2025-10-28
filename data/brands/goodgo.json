@@ -1,0 +1,17 @@
+{
+  "brand": "Goodgo",
+  "brand_id": "goodgo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GD-SC03"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

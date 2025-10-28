@@ -1,0 +1,17 @@
+{
+  "brand": "Av40185dn-cd",
+  "brand_id": "av40185dn-cd",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "av40185dn"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264.sdp4"
+    }
+  ]
+}

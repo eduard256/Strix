@@ -1,0 +1,315 @@
+{
+  "brand": "Hiwatch",
+  "brand_id": "hiwatch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "040",
+        "114w",
+        "B020",
+        "B620",
+        "DS-I110",
+        "DS-I113",
+        "DS-I114W",
+        "DS-I126",
+        "DS-I200(D)",
+        "DS-I203",
+        "ds-i214w",
+        "DS-I250",
+        "DS-I400",
+        "DS-I400(D)",
+        "DS-I402",
+        "DS-I403(C)",
+        "DS-I403(D)",
+        "DS-I850M",
+        "DS-L113",
+        "DS-N211",
+        "ds-n241w",
+        "DS-P2420",
+        "HWC P120-D/W",
+        "HWI-T221H",
+        "i100",
+        "IPC-B020",
+        "ipc-b120",
+        "IPC-B140",
+        "IPC-B542-G2/4l",
+        "IPC-B642-G2/ZS",
+        "IPC-D120-I",
+        "IPC-D640-Z",
+        "IPC-DG82-G2",
+        "IPC-T020(B)",
+        "IPC-T040(B)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "ALL",
+        "B220",
+        "C6T",
+        "D110",
+        "DS-H216Q",
+        "DS-I102",
+        "DS-I113",
+        "DS-I114",
+        "DS-I114W",
+        "DS-i126",
+        "ds-i200",
+        "DS-I200(D)",
+        "ds-i203",
+        "DS-I213",
+        "ds-i214",
+        "DS-I214(B)",
+        "ds-i214w(b)",
+        "ds-i223",
+        "DS-I400(C)",
+        "ds-l122",
+        "ds-n241w",
+        "i100",
+        "i110",
+        "I114",
+        "i114w",
+        "I120",
+        "IPC-B120-I",
+        "IPC-B140",
+        "IPC-B622-G2/ZS",
+        "IPC-D082-G2/S",
+        "IPC-D120",
+        "IPC-T640-Z",
+        "l110",
+        "Other",
+        "VDP-D2201",
+        "VDP-D2211W(B)",
+        "watch"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ALL",
+        "DS-I102",
+        "ds-i200",
+        "Ds-i203",
+        "DS-I214(B)",
+        "DS-I214W(B)",
+        "DS-I253",
+        "ds-i458",
+        "HiWatch DS-N208(C)",
+        "i450s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "DC-I200",
+        "DS-I102",
+        "DS-I120",
+        "DS-I252L",
+        "DS-I253M",
+        "DS-I450L(C)",
+        "DS-I452M(B)",
+        "HS1400",
+        "IPC-B020(C)",
+        "IPC-B040(B)",
+        "IPC-C042-G0/W",
+        "IPC-D542-g0/SU",
+        "IPS-D542-g0/SU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "DS-1405M(C)",
+        "DS-I252L",
+        "DS-I400(D)",
+        "DS-I450",
+        "IPC-D220-IZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "DS-D100",
+        "DS-I114W",
+        "DS-I122",
+        "DS-I200(D)",
+        "DS-I205M",
+        "DS-I205M(B)",
+        "DS-I220",
+        "DS-I250",
+        "DS-I256Z",
+        "DS-I400",
+        "DS-I420",
+        "DS-I45",
+        "ds-i452c",
+        "DS-I452S",
+        "DS-I458Z",
+        "DS-I653M",
+        "DS-N201",
+        "ds-n241w",
+        "HWC P120-D/W",
+        "HWI-D120H-M",
+        "IPC-b040",
+        "IPC-D542-G0/SU",
+        "IPC-T020(B)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "DS-I114W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "ds-i200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mjpeg"
+    },
+    {
+      "models": [
+        "ds-i200",
+        "DS-I200(c)",
+        "DS-I200(D)",
+        "DS-I202",
+        "DS-I250",
+        "DS-I252W(B)",
+        "DS-I259M",
+        "DS-I400",
+        "ds-i402",
+        "DS-I450",
+        "DS-I450L(C)",
+        "ds-i452c",
+        "DS-I456",
+        "DS-I458Z",
+        "HDC-B020",
+        "i225",
+        "i259",
+        "IPC-B020",
+        "IPC-B120-I",
+        "IPC-B642-G2/ZS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "ds-i200",
+        "VDP-D2201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "Ds-i203"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/"
+    },
+    {
+      "models": [
+        "DS-I214(B)",
+        "DS-I405"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "DS-I220",
+        "i225",
+        "I-258",
+        "PT-Y2400I-DE",
+        "watch"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "ds-i458"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/mjpeg"
+    },
+    {
+      "models": [
+        "DS-l400",
+        "I223",
+        "IPC-B022-G2/U",
+        "IPC-B022-G2\\U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "IPC-D140"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "IPC-D140"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "IPC-T020(B)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    }
+  ]
+}

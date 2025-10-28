@@ -1,0 +1,17 @@
+{
+  "brand": "Oco",
+  "brand_id": "oco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Pro Dome V2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

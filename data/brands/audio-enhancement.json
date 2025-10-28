@@ -1,0 +1,17 @@
+{
+  "brand": "Audio Enhancement",
+  "brand_id": "audio-enhancement",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Educam360-B"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    }
+  ]
+}

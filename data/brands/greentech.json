@@ -1,0 +1,29 @@
+{
+  "brand": "Greentech",
+  "brand_id": "greentech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GT55",
+        "GT-IP21I",
+        "GT-IP55HD",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "GT-IP21I"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

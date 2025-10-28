@@ -1,0 +1,132 @@
+{
+  "brand": "Stardot Tech",
+  "brand_id": "stardot-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0030f4c10852",
+        "Express Video Server",
+        "NETCAM SC",
+        "NETCAM XL",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "netcam.jpg"
+    },
+    {
+      "models": [
+        "Express 2",
+        "Express Video Server",
+        "ExpressXL",
+        "NetcamSC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nph-mjpeg.cgi?[CHANNEL]"
+    },
+    {
+      "models": [
+        "Express Video Server",
+        "EXPRESS VIDEO SERVER",
+        "ExpressXL",
+        "NetCam XL",
+        "Netcam XL 3MP",
+        "NetcamSC",
+        "Other",
+        "SDH130V"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.cgi?[CHANNEL]"
+    },
+    {
+      "models": [
+        "ExpressXL",
+        "NetCam XL"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "NETCAM",
+        "NetCam SC",
+        "NETCAM sc",
+        "NetCam XL",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nph-mjpeg.cgi"
+    },
+    {
+      "models": [
+        "NETCAM",
+        "stardot"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "NetCam SC",
+        "NetCam XL",
+        "NETCAMSC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.cgi"
+    },
+    {
+      "models": [
+        "NETCAM SC",
+        "NETCAM XL",
+        "NetcamSC",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "nph-h264.cgi"
+    },
+    {
+      "models": [
+        "NETCAM SC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "NetCamSC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    }
+  ]
+}

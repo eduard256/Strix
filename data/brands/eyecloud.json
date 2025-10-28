@@ -1,0 +1,26 @@
+{
+  "brand": "Eyecloud",
+  "brand_id": "eyecloud",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C-P05C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "roiy-EyeCloud"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    }
+  ]
+}

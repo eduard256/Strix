@@ -1,0 +1,17 @@
+{
+  "brand": "Elegoo",
+  "brand_id": "elegoo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Mars 5 Ultra AI Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

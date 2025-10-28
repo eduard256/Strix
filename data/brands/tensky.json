@@ -1,0 +1,17 @@
+{
+  "brand": "Tensky",
+  "brand_id": "tensky",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SB-122"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    }
+  ]
+}

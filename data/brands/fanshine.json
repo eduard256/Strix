@@ -1,0 +1,20 @@
+{
+  "brand": "Fanshine",
+  "brand_id": "fanshine",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "fahd1",
+        "fahd3",
+        "FiA027D",
+        "FSWF03"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

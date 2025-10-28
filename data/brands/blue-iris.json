@@ -1,0 +1,47 @@
+{
+  "brand": "Blue Iris",
+  "brand_id": "blue-iris",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Iris",
+        "Iris v3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL]"
+    },
+    {
+      "models": [
+        "Iris",
+        "Iris v3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/[CHANNEL]"
+    },
+    {
+      "models": [
+        "Iris v3",
+        "Iris v3 H.264"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/cam[CHANNEL]/2.0?audio=0&stream=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

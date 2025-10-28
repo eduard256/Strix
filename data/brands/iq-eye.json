@@ -1,0 +1,354 @@
+{
+  "brand": "Iq Eye",
+  "brand_id": "iq-eye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "216fd"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "3",
+        "IQ8712",
+        "IQR53"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/onvif"
+    },
+    {
+      "models": [
+        "3",
+        "4 SERIES",
+        "501",
+        "511",
+        "711D",
+        "IP Cams",
+        "IP CAMS",
+        "IQ031S",
+        "IQ041S",
+        "IQ511",
+        "IQ732N",
+        "IQD10S",
+        "iqm52w",
+        "Other",
+        "SENTINEL 855"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg?ds="
+    },
+    {
+      "models": [
+        "30S",
+        "4 Series",
+        "IQ711"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/now.jpg?snap=spush?ww=1600?wh=1200?wx=0?wy=0"
+    },
+    {
+      "models": [
+        "4 series",
+        "4 SERIES",
+        "511DV",
+        "542S",
+        "703",
+        "732",
+        "752",
+        "832.33",
+        "832.34",
+        "832.35",
+        "832.36",
+        "A12S",
+        "IQ031S",
+        "IQ041S",
+        "IQ711",
+        "IQ732N",
+        "IQ865N",
+        "IQA15N",
+        "IQA32N",
+        "IQD32S",
+        "IQM32N",
+        "iqm61n",
+        "Other",
+        "S031"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg?snap=spush"
+    },
+    {
+      "models": [
+        "4 SERIES",
+        "511",
+        "IP Cams",
+        "IP CAMS",
+        "IQ4xx",
+        "IQ511",
+        "IQM32N",
+        "m53",
+        "Other",
+        "SENTINEL 855"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg?snap=spush?ds="
+    },
+    {
+      "models": [
+        "501",
+        "705",
+        "752",
+        "855",
+        "A12n",
+        "A12S",
+        "IP Cams",
+        "iq511",
+        "IQ711",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "501",
+        "511DV",
+        "711D",
+        "755",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "511DV",
+        "803",
+        "iqa15n",
+        "IQeye753"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "703",
+        "753",
+        "803",
+        "855",
+        "IP CAMS",
+        "SENTINEL 855"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "705",
+        "755",
+        "802",
+        "A12S",
+        "IP CAMS",
+        "IQA15N",
+        "IQeye753"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "705",
+        "855",
+        "862",
+        "IP CAMS",
+        "IQ031s",
+        "IQ031S",
+        "IQ732N",
+        "IQ862N",
+        "IQ863N",
+        "IQA32N",
+        "IQD32S",
+        "IQD41s",
+        "IQD62",
+        "IQM31N",
+        "IQM32N",
+        "Other",
+        "Sentinel 855",
+        "SENTINEL 855",
+        "serie 4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg"
+    },
+    {
+      "models": [
+        "752",
+        "753",
+        "803",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "752"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "//now.jpg?snap=spush0.033?ds=1"
+    },
+    {
+      "models": [
+        "775"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "862"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/stream1"
+    },
+    {
+      "models": [
+        "IQ732N",
+        "IQD31SV-F1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "now.mp4"
+    },
+    {
+      "models": [
+        "IQ862n"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "IQ865N",
+        "iqa15n",
+        "Sentinel 853",
+        "Sentinel 855"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/now.jpg?snap=spush"
+    },
+    {
+      "models": [
+        "IQD32S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/now.mp4&res=high"
+    },
+    {
+      "models": [
+        "IQD32S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/now.mp4&res=low"
+    },
+    {
+      "models": [
+        "IQM31N",
+        "IQM32N"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mp4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/now.mp4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/now.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    }
+  ]
+}

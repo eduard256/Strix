@@ -1,0 +1,18 @@
+{
+  "brand": "Ie-link-0",
+  "brand_id": "ie-link-0",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KHAN",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    }
+  ]
+}

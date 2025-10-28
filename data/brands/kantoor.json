@@ -1,0 +1,17 @@
+{
+  "brand": "Kantoor",
+  "brand_id": "kantoor",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Lock-cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    }
+  ]
+}

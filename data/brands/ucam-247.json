@@ -1,0 +1,126 @@
+{
+  "brand": "Ucam 247",
+  "brand_id": "ucam-247",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "247"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "247",
+        "NC308W-IR-1080P",
+        "NC328SW-IR-1080P",
+        "NC328W-IR-1080P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.jpg"
+    },
+    {
+      "models": [
+        "247i",
+        "NC308SW-1080P",
+        "NC308W-IR-1080P",
+        "NC328SW-1080P",
+        "NC328W-IR",
+        "NC328W-IR-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 150,
+      "url": "/live/0/onvif.sdp"
+    },
+    {
+      "models": [
+        "IPV68IP_JPEG",
+        "NC308W-IR",
+        "NC308W-IR-1080P",
+        "NC328sw",
+        "NC328SW-1080P",
+        "NC328SW-IR-1080P",
+        "NC328W-IR",
+        "NC328W-IR-1080P",
+        "Other",
+        "UCam247i-1080HD",
+        "UCAM247I-1080HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "NC308SW-1080P",
+        "NC308W-IR-1080P",
+        "NC328W-IR-1080P",
+        "Other",
+        "UCAM247i-1080HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 150,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "NC308W-IR-1080P",
+        "NC328W-IR-1080P",
+        "Other",
+        "UCAM247I-1080HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC308W-IR-1080P"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "NC308W-IR-1080P",
+        "NC328W-IR-1080P",
+        "Other",
+        "UCAM247I-1080HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC328SW-1080P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Santachi",
+  "brand_id": "santachi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ST-NT280E1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/tcp/av0_0"
+    }
+  ]
+}

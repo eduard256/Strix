@@ -1,0 +1,17 @@
+{
+  "brand": "Karbontech",
+  "brand_id": "karbontech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KTDVR1600"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Movols",
+  "brand_id": "movols",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Solar Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/"
+    }
+  ]
+}

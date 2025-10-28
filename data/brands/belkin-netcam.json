@@ -1,0 +1,39 @@
+{
+  "brand": "Belkin Netcam",
+  "brand_id": "belkin-netcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "F7D7602V1",
+        "HD NETCAM",
+        "netcam",
+        "Wifi Netcam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    },
+    {
+      "models": [
+        "HD NETCAM",
+        "WIFICAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NETCAM HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

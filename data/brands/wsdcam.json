@@ -1,0 +1,17 @@
+{
+  "brand": "Wsdcam",
+  "brand_id": "wsdcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "R3 WiFi"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    }
+  ]
+}

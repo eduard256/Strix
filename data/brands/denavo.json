@@ -1,0 +1,44 @@
+{
+  "brand": "Denavo",
+  "brand_id": "denavo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DSC-720SI(P)"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    },
+    {
+      "models": [
+        "DSC-720SI(P)"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "DSC-720SI(P)"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=2"
+    },
+    {
+      "models": [
+        "DSC-720SI(P)"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

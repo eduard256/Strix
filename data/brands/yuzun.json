@@ -1,0 +1,17 @@
+{
+  "brand": "Yuzun",
+  "brand_id": "yuzun",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "YZ-W220T6A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Gionee Cam",
+  "brand_id": "gionee-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Gionee"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    }
+  ]
+}

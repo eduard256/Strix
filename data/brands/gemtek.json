@@ -1,0 +1,36 @@
+{
+  "brand": "Gemtek",
+  "brand_id": "gemtek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B1100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "B1100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "D0100",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

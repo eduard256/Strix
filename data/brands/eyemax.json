@@ -1,0 +1,27 @@
+{
+  "brand": "Eyemax",
+  "brand_id": "eyemax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "9000 Series",
+        "HX-08 DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jstream.cgi?chid=[CHANNEL]&cnt=0"
+    },
+    {
+      "models": [
+        "TVST PHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/101"
+    }
+  ]
+}

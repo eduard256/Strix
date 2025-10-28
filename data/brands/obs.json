@@ -1,0 +1,17 @@
+{
+  "brand": "Obs",
+  "brand_id": "obs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "OBS Stream"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1937,
+      "url": "/"
+    }
+  ]
+}

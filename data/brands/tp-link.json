@@ -1,0 +1,1462 @@
+{
+  "brand": "Tp-link",
+  "brand_id": "tp-link",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001",
+        "110",
+        "210",
+        "520ws",
+        "520WS",
+        "553AE",
+        "AS1",
+        "AS2",
+        "AS2 FUT2 GM",
+        "c 100",
+        "C100",
+        "C110",
+        "C111",
+        "c120",
+        "C120",
+        "C121",
+        "c125",
+        "c200",
+        "C200",
+        "C201",
+        "C2010",
+        "c210",
+        "C210",
+        "C211",
+        "C212",
+        "c220",
+        "C222",
+        "C225",
+        "C230",
+        "C240",
+        "C240I",
+        "C250",
+        "c300hp",
+        "C310",
+        "c310",
+        "C320i",
+        "C320i 2.8mm",
+        "C320WS",
+        "C325WB",
+        "C330",
+        "C340",
+        "C350",
+        "C385",
+        "C400HP",
+        "C420i",
+        "C420I",
+        "C425",
+        "C430I 1.0",
+        "C440I",
+        "c500",
+        "C500",
+        "C510",
+        "C510w",
+        "C510W",
+        "C520",
+        "C520SW",
+        "c520ws",
+        "C520ws",
+        "C530WS",
+        "C70",
+        "CP 310",
+        "cp11",
+        "CS510W",
+        "CW320WS",
+        "D130",
+        "InSight S485",
+        "IPC42A",
+        "IPC443AM",
+        "IPC44AN",
+        "IPC48AW",
+        "IPC55AE",
+        "IPC64NA",
+        "NC-200",
+        "NC450-2",
+        "Other",
+        "SC-200",
+        "SC3171",
+        "Tabo C210",
+        "Tape C210 V2",
+        "Tapo C100",
+        "TAPO C100",
+        "Tapo C110",
+        "Tapo c200",
+        "Tapo C200",
+        "TAPO C200C",
+        "Tapo C225",
+        "tapo C310",
+        "Tapo C310",
+        "TAPO C310",
+        "tapo c310",
+        "Tapo C320WS",
+        "Tapo C325WB",
+        "Tapo C60",
+        "TAPO C71",
+        "TAPO TC60",
+        "Tapo TC70",
+        "Tapo TC75",
+        "Tapo_C520WS",
+        "Tapo-c200",
+        "tapoc310",
+        "TC40",
+        "tc41",
+        "TC65",
+        "TC71",
+        "tl-ipc44aw",
+        "TL-IPC633-Z",
+        "TL-IPC638-AEZ",
+        "TL-IPC63N",
+        "TP70",
+        "TP-C320WB",
+        "tp-c325wb",
+        "TP-LINK TL-IPC423P-6",
+        "Vigi",
+        "Vigi 400",
+        "VIGI C240",
+        "VIGI C300HP-6",
+        "VIGI C320I 1.0",
+        "VIGI C330 1.0",
+        "VIGI C340I",
+        "VIGI C340W",
+        "VIGI C400HP-2.8 1.0",
+        "VIGI C400HP-4",
+        "VIGI C420I 1.0",
+        "VIGI C440",
+        "VIGI C440I",
+        "VIGI C440-W",
+        "VIGI C450",
+        "VIGI C540",
+        "VIGI C540 2.0",
+        "Vigi C540V 1.0",
+        "VIGI C540-W 1.0",
+        "vivo c540"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "110",
+        "IP-501P",
+        "TL-SC4171G 5",
+        "TV-751WIC",
+        "TVIP551WI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "110",
+        "252P",
+        "321",
+        "IP-501P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Image.jpg"
+    },
+    {
+      "models": [
+        "2020",
+        "3130",
+        "3130G",
+        "3171",
+        "3171G",
+        "3220",
+        "3230n",
+        "3741",
+        "DCS 2020",
+        "NC220",
+        "Other",
+        "SC-2020",
+        "SC-2020N",
+        "SC-3031",
+        "SC-3130",
+        "SC-3130G",
+        "SC-3171",
+        "SC-3171G",
+        "SC-3230N",
+        "SC-3430",
+        "SC-3430n",
+        "SC-3430N",
+        "SC-3741",
+        "SC-4171G",
+        "TL-2020",
+        "TLSC-2020",
+        "TL-SC2020N",
+        "TLSC-3020N",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3230",
+        "TLSC-3230N",
+        "TLSC-3430",
+        "TLSC-3430N",
+        "TLSC-4171",
+        "TLSC-41716",
+        "TLSC-4171G",
+        "TL-SC4171G 4",
+        "TPLINK",
+        "WVC54GCA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "2020",
+        "3130",
+        "3130g",
+        "3130G",
+        "3170C",
+        "3171",
+        "3171G",
+        "3430",
+        "3741",
+        "Other",
+        "SC-1713G",
+        "SC-2020",
+        "SC-2020N",
+        "sc3030",
+        "sc3031",
+        "SC-3031",
+        "SC3130",
+        "SC-3130G",
+        "SC-3171",
+        "SC-3171G",
+        "SC3230",
+        "SC-3230N",
+        "SC-3430",
+        "SC-3741",
+        "TLSC-2020",
+        "TLSC-2020N",
+        "tl-sc3130",
+        "TLSC-3130",
+        "TLSC-3130g",
+        "TLSC-3130G",
+        "TL-SC3130G V1",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3230",
+        "TLSC-3230N",
+        "TLSC-3430",
+        "TLSC-4171G",
+        "WXH-103232-EACBA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "252P",
+        "IP-110",
+        "IP-TV422W",
+        "Other",
+        "TV-410W",
+        "TVIP-100W",
+        "TVIP-110WN",
+        "TV-IP252P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "3020",
+        "NC-200",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "311",
+        "311PI",
+        "IP-311",
+        "TV-314pi",
+        "TV-IP314PI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "311PI",
+        "C310",
+        "C320WS",
+        "IP-320PI",
+        "Tapo C310",
+        "TV-IP319PI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "3120",
+        "3130",
+        "3130G",
+        "3170C",
+        "3171",
+        "3171g",
+        "3171G RTSP",
+        "3230N",
+        "3430",
+        "4171g",
+        "4171G",
+        "c 100",
+        "C200",
+        "C510W",
+        "Other",
+        "SC-2020",
+        "SC-3031",
+        "SC-3130",
+        "SC-3130G",
+        "SC-3171",
+        "SC-3171G",
+        "SC-3171G-my",
+        "SC3171Gv1",
+        "SC-3220",
+        "SC-3230",
+        "SC-3230N",
+        "SC-3430",
+        "SC-4171G",
+        "SC-4171G-2",
+        "TL-3050",
+        "TLSC-2020N",
+        "TLSC-3020N",
+        "TLSC-31",
+        "TLSC-3130",
+        "TLsc3130g",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3230",
+        "TLSC-3430N",
+        "TLSC-4171",
+        "TLSC-4171G",
+        "TL-SC4171G 2",
+        "TPLINK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "3130",
+        "3130G",
+        "3171",
+        "3171G",
+        "Other",
+        "SC-2020",
+        "SC3130",
+        "SC-3130G",
+        "SC-3171",
+        "sc3171g",
+        "SC-3171G",
+        "TL-SC",
+        "TLSC-2020",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171 v2",
+        "TLSC-3171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "3130",
+        "3160",
+        "3171G",
+        "C310",
+        "Other",
+        "SC-3130G",
+        "SC3171",
+        "SC-3171G",
+        "TL-SC3130G V1",
+        "TL-SC3170G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "3130",
+        "3171",
+        "3171g",
+        "3171G",
+        "Other",
+        "SC-1713G",
+        "SC-3130Gv2",
+        "sc3171g",
+        "SC-3171G",
+        "tlsc31",
+        "TLSC-3171",
+        "TL-SC3171G",
+        "tlscg1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro2"
+    },
+    {
+      "models": [
+        "3130",
+        "3171G",
+        "SC3130v2",
+        "SC-3171G",
+        "TLSC-3171G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro3"
+    },
+    {
+      "models": [
+        "3130",
+        "3171",
+        "3171G",
+        "3741",
+        "4171G",
+        "Other",
+        "SC-1713G",
+        "SC-2020",
+        "SC-3130",
+        "SC-3130G",
+        "SC3171",
+        "SC-3171G",
+        "SC3171-Grafeio",
+        "SC3171-Grafeio2",
+        "SC-3430",
+        "SC-4171G",
+        "TLSC-2020",
+        "TLSC-2020N",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3130PC",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3430",
+        "TLSC-4171",
+        "TLSC-4171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    },
+    {
+      "models": [
+        "3130g",
+        "sc-2020",
+        "SC-2020",
+        "SC-3130G",
+        "SC-3430"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "3130G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "3171",
+        "3171G",
+        "C200",
+        "C310",
+        "C400HP-2.8",
+        "JKY",
+        "Other",
+        "SC-2020",
+        "TLSC-2020",
+        "TL-SC2020N",
+        "TLSC-3137G",
+        "TLSC-3171G",
+        "TLSC-3230",
+        "TLSC-3230N",
+        "TV-300i"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "3171G",
+        "Other",
+        "SC-2020",
+        "SC-3040",
+        "SC-3171G",
+        "SC-3430",
+        "TL-IP551W",
+        "TLSC-2020",
+        "TLSC-2020N",
+        "TLSC-3130",
+        "TLSC-3171G",
+        "TLSC-3230"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "3230n",
+        "Other",
+        "SC-3230",
+        "SC-3230N",
+        "Tapo c200",
+        "TLSC-3230",
+        "TLSC-3230N"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "3230N",
+        "SC3230",
+        "SC-3230N",
+        "TLSC-3230"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "3430",
+        "Other",
+        "SC-3130G",
+        "SC-3220N",
+        "SC-3230N",
+        "SC-3430",
+        "SC-3430n",
+        "Tapo C100",
+        "TC70",
+        "TLSC-2020",
+        "TLSC-3230",
+        "TLSC-3230N",
+        "TLSC-3430",
+        "TLSC-3430N",
+        "TVIP-310PI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.h264"
+    },
+    {
+      "models": [
+        "3741",
+        "4171G",
+        "dcs 2020",
+        "Other",
+        "SC-2020",
+        "SC-2020DN",
+        "SC-2020N",
+        "SC-3130G",
+        "SC3171",
+        "SC-3220N",
+        "SC3230",
+        "SC-3430",
+        "TL-MR2020",
+        "TLSC-2020",
+        "TLSC-2020N",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3430",
+        "TLSC-4171G"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "3741",
+        "Other",
+        "SC-1713G",
+        "SC-3130G",
+        "SC-3171",
+        "SC-3171G",
+        "SC-4171G",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-3230",
+        "TLSC-3430",
+        "TLSC-4171",
+        "TLSC-4171g",
+        "TLSC-4171G"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "430C",
+        "c100",
+        "C111",
+        "C120",
+        "C121",
+        "c200",
+        "C200",
+        "C225",
+        "C230",
+        "C240I",
+        "C310",
+        "C320Ws",
+        "C325WB",
+        "C340",
+        "C350",
+        "C400HP",
+        "C400HP-2.8",
+        "C400HP-2.8 1.0",
+        "C430I 1.0",
+        "c500",
+        "C500",
+        "C510W",
+        "C520WS",
+        "C530WS",
+        "cs320",
+        "CW320",
+        "CW320WS",
+        "D130",
+        "IPC48AW",
+        "tapo",
+        "Tapo C100",
+        "Tapo c200",
+        "Tapo C210",
+        "Tapo C220",
+        "TAPO C310",
+        "Tapo TC70",
+        "TC100",
+        "TC60",
+        "TC65",
+        "TL-IPC63N",
+        "VIGI C300",
+        "VIGI C300HP-4",
+        "VIGI C540",
+        "VIGI C540 2.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "450",
+        "nc220",
+        "NC220",
+        "NC230",
+        "NC250",
+        "NC260",
+        "NC450",
+        "NC450-2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/h264_vga.sdp"
+    },
+    {
+      "models": [
+        "450",
+        "C310",
+        "loor",
+        "NC230",
+        "NC250",
+        "nc-260",
+        "NC260",
+        "NC260 RTSP",
+        "NC400",
+        "NC450",
+        "NC450-2",
+        "NC450-2_anda",
+        "ntani",
+        "Other",
+        "Tapo c200",
+        "TL-NC230",
+        "wmm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_hd.sdp"
+    },
+    {
+      "models": [
+        "520ws",
+        "C100",
+        "C110",
+        "c120",
+        "C200",
+        "c210",
+        "C210",
+        "C220",
+        "c310",
+        "C310",
+        "C320WS",
+        "C325WB",
+        "c420",
+        "C425",
+        "c500",
+        "C500",
+        "C510w",
+        "C60",
+        "kc420ws",
+        "NC400",
+        "tapo",
+        "TAPO C100",
+        "Tapo c200",
+        "TAPO TC60",
+        "TAPOC310",
+        "TC65",
+        "tc70"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "ANC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "imagep/picture.jpg"
+    },
+    {
+      "models": [
+        "BASIC 01",
+        "SC3230",
+        "TLSC-3137G",
+        "TL-SC3230",
+        "TLSC-3230N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "c 100",
+        "tc310",
+        "TC60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "C100",
+        "C310",
+        "NC220",
+        "Other",
+        "SC-32230",
+        "SC-3230N",
+        "VIGI C330I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "C100x",
+        "C210",
+        "c310",
+        "NC450-2",
+        "tc310",
+        "Topo C310"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C110"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "C121",
+        "c330",
+        "C430I 1.0",
+        "Tapo c200",
+        "tapo c320ws"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/stream1"
+    },
+    {
+      "models": [
+        "c200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 800,
+      "url": "/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "C200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Camera%201"
+    },
+    {
+      "models": [
+        "C210",
+        "KC100 Home Assistant Integration",
+        "Tapo c200",
+        "TAPO C310",
+        "tapo c310 f552"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 554,
+      "url": "/live/BalconyCam"
+    },
+    {
+      "models": [
+        "C240I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/stream1/Profile1"
+    },
+    {
+      "models": [
+        "C310"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "C310",
+        "Tapo C310"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C310",
+        "Tapo C310"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "c500",
+        "Tapo c200",
+        "Tapo C200C",
+        "tapo c310",
+        "TAPO C71",
+        "Tapo D235",
+        "TC70",
+        "VIGI C355"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/stream1"
+    },
+    {
+      "models": [
+        "c500",
+        "C510W",
+        "Tapo C210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "DCS",
+        "DCS-2332L",
+        "DCS-935L",
+        "IP-572PI",
+        "TV-IP562WI",
+        "TV-IP571PI",
+        "TV-IP745SIC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "dcs 931l",
+        "DCS-2102",
+        "DCS-2130",
+        "DCS-930L",
+        "dcs-932l",
+        "IP-551W1",
+        "IP-672W",
+        "Other",
+        "SC-2020",
+        "TLSC-3171",
+        "TV-851WI",
+        "TV-IP110WN",
+        "TVIP551W",
+        "TV-IP551WI",
+        "TV-IP672PI",
+        "TV-IP751WC",
+        "TV-IP851WIC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "DCS-2130",
+        "TL-SC4171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "DCS-2130",
+        "DCS-2332L"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms"
+    },
+    {
+      "models": [
+        "DCS-5020L",
+        "DCS-520L",
+        "DCS-930",
+        "DCS-930L",
+        "DCS-932l",
+        "DCS-932LB",
+        "Other",
+        "SC3230",
+        "TL-IP551W",
+        "TLSC-3230",
+        "TLSC-3230N",
+        "TP-IP751",
+        "TVIP-100W",
+        "TV-IP551W",
+        "TV-IP751WC",
+        "TV-IP751WIC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "DCS-5020L",
+        "TL-SC4171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "IC-5150W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "IP311PI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "IPC669-A4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/stream1?channel=2"
+    },
+    {
+      "models": [
+        "IP-TV422W",
+        "TV-IP310"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "N3230",
+        "Other",
+        "SC3230"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "NC200",
+        "NC220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/stream/getvideo"
+    },
+    {
+      "models": [
+        "NC-200",
+        "NC230",
+        "TPLINK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC-200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "NC-200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC-200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "NC-200",
+        "nc210",
+        "Tapo c200",
+        "TL-SC4171G",
+        "tp-link IPC-43AN-ZOOM-DUAL 1.0"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "nc220",
+        "NC230",
+        "NC250",
+        "NC450-2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/stream/video/mjpeg"
+    },
+    {
+      "models": [
+        "NC250",
+        "tp-wr105eu"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SC-3220",
+        "SC-3220N",
+        "SC-32230",
+        "SC-3230",
+        "SC-3230N",
+        "TLSC-3230N",
+        "TP-LINK-S1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Other",
+        "Winkel"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "SC-3230N",
+        "TLSC-3020N",
+        "TLSC-3230"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "TLSC-3130",
+        "TLSC-3130G",
+        "TLSC-3171",
+        "TLSC-3171G",
+        "TLSC-4171G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live/mjpeg"
+    },
+    {
+      "models": [
+        "Other",
+        "SC-3230",
+        "SC-3230N",
+        "TLSC-3020N",
+        "TLSC-3130",
+        "TLSC-3230",
+        "TLSC-3230N"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "SC-3230",
+        "SC-3230N",
+        "TLSC-3230"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/capture"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "SC-2020N",
+        "tl-3130g",
+        "TLSC-2020",
+        "TL-SC4171"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1180,
+      "url": "/jpg/image.jpg"
+    },
+    {
+      "models": [
+        "SC-3230",
+        "SC-3230N",
+        "TAPO C100",
+        "TLSC-3020N",
+        "TLSC-3230",
+        "TLSC-3230N"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "Tapo C100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "Tapo c200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/net_video.cgi?channel=0"
+    },
+    {
+      "models": [
+        "Tapo c200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 2020,
+      "url": "/onvif/device_service"
+    },
+    {
+      "models": [
+        "tapo c320ws"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/stream2"
+    },
+    {
+      "models": [
+        "Tapo C530WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream8"
+    },
+    {
+      "models": [
+        "Tapo D235"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/stream2"
+    },
+    {
+      "models": [
+        "TLSC-3130"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "TLSC-3130"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "TLSC-3171G"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TL-SC3230N",
+        "TV-IP311PI"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "TP-Link 3230"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "TV IP110W",
+        "TV-IP110WN",
+        "TV-IP262PI",
+        "TV-IP312",
+        "TV-IP312W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    }
+  ]
+}

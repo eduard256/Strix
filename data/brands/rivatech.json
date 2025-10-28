@@ -1,0 +1,19 @@
+{
+  "brand": "Rivatech",
+  "brand_id": "rivatech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "RC1020HD",
+        "RC1202HD",
+        "RC3502HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    }
+  ]
+}

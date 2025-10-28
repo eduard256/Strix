@@ -1,0 +1,988 @@
+{
+  "brand": "Wansview",
+  "brand_id": "wansview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001",
+        "043825-XXHGP",
+        "1080",
+        "1080 Hd",
+        "1080p",
+        "1080P HD",
+        "1080P HD W1",
+        "1080P HD w2",
+        "1080p HD W4",
+        "1080p HD W6",
+        "1080P HD Wireless Cloud IP Camera Q5",
+        "1080P K3",
+        "1080p K5",
+        "1080P MID RES",
+        "1080p pro hd",
+        "1080P Pro HD W2",
+        "1080P Q5",
+        "1080P Q6",
+        "1080P W1",
+        "1080P w2",
+        "1080P W3",
+        "1080p W4",
+        "1080P W5",
+        "1080P W5 Cloud",
+        "1080p W6",
+        "1080P W6 Cam1",
+        "1080P W6 Cam1 WLAN",
+        "1080pw4",
+        "1080PW4",
+        "1090",
+        "121",
+        "19*",
+        "192",
+        "251253",
+        "2k 3mp g6",
+        "2K Indoor",
+        "2K Light Bulb Security Camera",
+        "2mp",
+        "459116",
+        "543NB",
+        "543W",
+        "625",
+        "625W",
+        "633GBU",
+        "700GC",
+        "702p",
+        "720",
+        "720P",
+        "720P IP CAMERA",
+        "720p W3",
+        "720p x",
+        "AME",
+        "dome",
+        "g2 dome camera",
+        "GalaYou G7",
+        "Galayou Y4",
+        "Gar",
+        "IP CAMERA G6",
+        "IP Camera K2",
+        "IP Camera Q3",
+        "IP CAMERA Q5",
+        "IP Camera W2",
+        "ismart",
+        "K2 720P",
+        "K3 1080",
+        "k31080p",
+        "K40",
+        "kitchen cam",
+        "Lightbulb G6 IndoorOutdoor Cloud Camera",
+        "M series",
+        "Master",
+        "mcm625ga",
+        "mma",
+        "NBC543W",
+        "NCH537MW",
+        "NCM",
+        "NCM 621W",
+        "ncm 625 ga",
+        "NCM620GA",
+        "NCM620W",
+        "NCM621W",
+        "NCM622GA",
+        "NCM622GA Q2",
+        "NCM623W",
+        "NCM624W",
+        "ncm625",
+        "NCM625 working",
+        "ncm-625GA",
+        "NCM625GB",
+        "NCM-625W",
+        "NCM630GB",
+        "NCM725GA",
+        "NCM750GA",
+        "NCM751",
+        "NCM751GA",
+        "NCM751GA (W1)",
+        "ncm751vga",
+        "NCM754GC",
+        "ncm75aga",
+        "NGX5444",
+        "NGX6544",
+        "Observatory",
+        "Other",
+        "Outdoor 1080p W4",
+        "OUTDOOR 1080P W4paul",
+        "Outdoor 720p",
+        "Porch",
+        "Pro",
+        "Pro HD 1080P",
+        "ProHD",
+        "ProHD W1",
+        "Q3 (X SERIES)",
+        "Q3 (X Serires)",
+        "Q3 1080p",
+        "Q3 720p",
+        "Q33",
+        "Q35",
+        "q3s",
+        "Q3-s",
+        "Q3S",
+        "qs3",
+        "Recepcion",
+        "Series x",
+        "USA703K2",
+        "US-W4-B",
+        "VIEW-587022-NBDUZ",
+        "VIEW-633583-UFPYB",
+        "vpxpz",
+        "W2 1080P",
+        "W2(1080P)",
+        "W2(x)",
+        "W2/1080P)",
+        "W-3",
+        "W3 720",
+        "W3 X series",
+        "W3720p",
+        "W4/W5",
+        "w41080",
+        "W60",
+        "w9 1080p",
+        "Wansview Q5",
+        "Wansview W5 1080p",
+        "Wansview W9",
+        "WaQ3-S",
+        "WCam 1",
+        "WhoKnows",
+        "wide",
+        "wvc9bdlt308hawuz",
+        "wvcc418",
+        "X 1080p",
+        "X 720p",
+        "X series",
+        "X Series",
+        "x series wifi ip",
+        "x624w",
+        "X720",
+        "xseries"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "002kqkb",
+        "002qkwj",
+        "nbc541w",
+        "nc541",
+        "NCB541W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1125,
+      "url": "/videostream.cgi?resolution=64&rate=30"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "541",
+        "541W",
+        "625",
+        "720P",
+        "720P IP CAMERA",
+        "NBC543W",
+        "NC541",
+        "NC541W-P",
+        "ncb5140",
+        "NCB-540",
+        "ncb540w",
+        "NCB-541W",
+        "NCB-543W",
+        "NCL616W",
+        "Other",
+        "tchne",
+        "W2 1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "1080",
+        "541W",
+        "543W",
+        "720P IP CAMERA",
+        "NBC543W",
+        "NCB-534W",
+        "ncb541",
+        "NCB-541W",
+        "NCB-543W",
+        "NCB545W",
+        "NCL615W",
+        "X SERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "1080",
+        "541",
+        "543NB",
+        "625W",
+        "720P",
+        "DCS543W",
+        "ga/gb/630w rtjp",
+        "N540W",
+        "N541",
+        "NBC543W",
+        "NCB-534W",
+        "NCB540W",
+        "NCB-541w",
+        "NCB-541W",
+        "NCB-543W",
+        "NCB545W",
+        "nch-530w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "1080",
+        "1080p",
+        "1080P HD",
+        "1080P HD W1",
+        "1080p HD W4",
+        "1080p HD W6",
+        "1080P K3",
+        "1080p K5",
+        "1080p mid res",
+        "1080P PRO HD",
+        "1080P PRO HD W2",
+        "1080P Q5",
+        "1080P Q6",
+        "1080P W3",
+        "1080P W5",
+        "1080p W6",
+        "1080PW4",
+        "2mp",
+        "541W",
+        "624W",
+        "625W",
+        "702P",
+        "720",
+        "720P",
+        "720P IP CAMERA",
+        "720p W3",
+        "720P wireless outlook Camera",
+        "780GB",
+        "DCS543W",
+        "Dilbert",
+        "IP CAMERA K2",
+        "IP Camera Q5",
+        "IP CAMERA W2",
+        "K2 720P",
+        "K3 1080",
+        "NC541W",
+        "NCM622GA",
+        "NCM625GA",
+        "NCM625GB",
+        "NCM-630GB",
+        "NCM750GA",
+        "NCM751GA",
+        "NCM751GA (W1)",
+        "Other",
+        "pro",
+        "PRO HD",
+        "Q3S",
+        "US-W4-B",
+        "W2 1080P",
+        "W2(1080P)",
+        "W-3",
+        "W3 720",
+        "W4/W5",
+        "W5 Cloud",
+        "W9 1080P",
+        "wan",
+        "Wansview W9",
+        "WVCA6GRVLGUPYl9Z",
+        "X 720P",
+        "x series",
+        "x series K3",
+        "X SERIES WIFI IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "1080P HD",
+        "1080p HD W6",
+        "625W",
+        "720P",
+        "720P W3",
+        "780GB",
+        "Dilbert",
+        "ncm624w",
+        "ncm625",
+        "NCM625GA",
+        "NCM625W",
+        "Other",
+        "Q5",
+        "X 720P",
+        "X SERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch2"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P PRO HD",
+        "1080P PRO HD W2",
+        "NCH-530W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "1080 HD",
+        "1080P HD",
+        "1080P PRO HD",
+        "2K W7",
+        "M Series",
+        "MCM-627",
+        "NCB541W",
+        "NCH536MW",
+        "NCM625W",
+        "NCM626w",
+        "NCM-628",
+        "NCM751GA",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "1080P PRO HD",
+        "1080P PRO HD W2",
+        "NC530",
+        "nch532mkw",
+        "NCH532MW",
+        "NCH536MW",
+        "NCH537MW",
+        "NCM621W",
+        "NCM623w",
+        "NCM-627",
+        "Other",
+        "W2 1080P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P HD W1",
+        "1080P HD W2",
+        "1080P HD W4",
+        "1080P W3",
+        "720P",
+        "720P IP CAMERA",
+        "Q3 1080P",
+        "Q3-s",
+        "Q3S",
+        "W2/1080P)",
+        "W-3",
+        "X 720P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg/stream.cgi?chn=0"
+    },
+    {
+      "models": [
+        "1080p HD W6",
+        "1080P PRO HD",
+        "541W",
+        "625W",
+        "NBC543W",
+        "NC541",
+        "ncm620",
+        "NCM620W",
+        "NCM622GA Q2",
+        "NCM-624W",
+        "NCM-625",
+        "NCM626w",
+        "Other",
+        "W4/W5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P HD Wireless Cloud IP Camera Q5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/camera"
+    },
+    {
+      "models": [
+        "1080P PRO HD",
+        "625W",
+        "Other",
+        "Z SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "1080P Q5",
+        "Ncb541W s",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "123456",
+        "541W",
+        "nc541",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "124",
+        "NC543W",
+        "NCB541W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "541",
+        "NCL615W",
+        "NCS601W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "541",
+        "543W",
+        "ncm-620w",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "541W",
+        "625",
+        "625W",
+        "JW0009",
+        "nc541",
+        "NCB-534W",
+        "NCB-541W",
+        "NCB-543W",
+        "NCH 530W",
+        "NCL615W",
+        "NCM521W",
+        "NCM620W",
+        "NCM621W",
+        "NCM622W",
+        "NCM625GA",
+        "NCM-627",
+        "NCM-628",
+        "NCM751GA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "541W",
+        "543NB",
+        "dcs543w",
+        "N540w",
+        "NC541W",
+        "nc543w",
+        "NC543W-P",
+        "NCB-541w",
+        "NCB541W",
+        "NCB541W-adt",
+        "NCB-543W",
+        "NCB545W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "543w",
+        "N540w",
+        "nc543w",
+        "NCL610W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "616",
+        "720P W3",
+        "JW0011",
+        "L SERIES",
+        "N541",
+        "NBC543W",
+        "Nc541w-p",
+        "nc543w",
+        "NC543W-P",
+        "NCB-541W",
+        "NCL615w",
+        "NCL616W",
+        "NCM621W",
+        "ncs543w",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "625W",
+        "MCM-627",
+        "N540w",
+        "nc543w",
+        "NCB-534W",
+        "NCB-541W",
+        "NCB-543W",
+        "NCL-610W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "673572"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "720P IP CAMERA",
+        "720P W3",
+        "nch 530w",
+        "NCH-530W",
+        "NCH531MW",
+        "NCH532MKW",
+        "Other",
+        "UNOWN"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Cinnado",
+        "NCM629W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "G-6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "L Series",
+        "NCB1541W",
+        "NCB-541W",
+        "NCB-543W",
+        "NCL610D04",
+        "NCL-610W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "myCam",
+        "NC541W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "N540w",
+        "nc543w",
+        "NCB-534W",
+        "NCB-541W",
+        "NCB-543W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "N540w",
+        "nc543w",
+        "NCB541W",
+        "NCL-610W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "nbc541w",
+        "NCB541W",
+        "NCB541W-adt",
+        "NCL610D04",
+        "NCL610W",
+        "NCL614W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "NBC543W",
+        "NCB541W",
+        "NCL610W",
+        "NCL615w",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "NBC543W",
+        "ncb545w",
+        "NCB-546W",
+        "NCB546W3",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "NC512",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "NC540W",
+        "NCB541W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "nc541",
+        "NC541W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "nc543w",
+        "NCB541W",
+        "NCL616W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "nc543w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "NCB-534W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NCB541W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "NCB541W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "NCB-543W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 1025,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "NCH532MW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/web/mobile.html"
+    },
+    {
+      "models": [
+        "NCH532MW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/web/admin.html"
+    },
+    {
+      "models": [
+        "NCH536MW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NCH536MW",
+        "Unk"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "NCM625W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264Preview_01_main"
+    },
+    {
+      "models": [
+        "NCM-625W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8887,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "NCS601W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/1/image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.html"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "vdata.v"
+    },
+    {
+      "models": [
+        "Otherncl615"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "PRO HD 1080P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "UNK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=0"
+    }
+  ]
+}

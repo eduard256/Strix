@@ -1,0 +1,17 @@
+{
+  "brand": "Goldnet",
+  "brand_id": "goldnet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "RT-5176"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

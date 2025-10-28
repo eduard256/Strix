@@ -1,0 +1,29 @@
+{
+  "brand": "Evolution",
+  "brand_id": "evolution",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Concealed",
+        "Indoor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.sdp"
+    },
+    {
+      "models": [
+        "Evo5",
+        "Evo5 mini",
+        "Mini"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/PSIA/Streaming/channels/2"
+    }
+  ]
+}

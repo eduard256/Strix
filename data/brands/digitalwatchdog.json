@@ -1,0 +1,17 @@
+{
+  "brand": "Digitalwatchdog",
+  "brand_id": "digitalwatchdog",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DWC-MTT4Wi36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    }
+  ]
+}

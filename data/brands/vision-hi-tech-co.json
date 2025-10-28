@@ -1,0 +1,18 @@
+{
+  "brand": "Vision Hi-tech Co",
+  "brand_id": "vision-hi-tech-co",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "727",
+        "VisionXIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mjpeg&basic_auth=[AUTH]"
+    }
+  ]
+}

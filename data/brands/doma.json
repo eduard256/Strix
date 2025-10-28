@@ -1,0 +1,19 @@
+{
+  "brand": "Doma",
+  "brand_id": "doma",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Cotier",
+        "TV-631W/IP",
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Pollo",
+  "brand_id": "pollo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PC4M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

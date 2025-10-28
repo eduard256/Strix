@@ -1,0 +1,36 @@
+{
+  "brand": "Sarotech",
+  "brand_id": "sarotech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ip300",
+        "IPCAM-1000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IPCAM-1000G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live0"
+    },
+    {
+      "models": [
+        "IPCAM-1000G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live2"
+    }
+  ]
+}

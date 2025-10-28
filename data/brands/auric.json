@@ -1,0 +1,27 @@
+{
+  "brand": "Auric",
+  "brand_id": "auric",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "232",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "XM2008"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

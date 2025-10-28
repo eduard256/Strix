@@ -1,0 +1,472 @@
+{
+  "brand": "Kaikong",
+  "brand_id": "kaikong",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1016",
+        "1602W",
+        "ip1018",
+        "ip-1801",
+        "Other",
+        "sip1018",
+        "sip428"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "1016",
+        "sip1016",
+        "SIP1018W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1018W",
+        "1501"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/0.jpg"
+    },
+    {
+      "models": [
+        "1201",
+        "1602",
+        "1602w",
+        "SIP1602",
+        "SIP1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1201",
+        "1214",
+        "1303",
+        "Other",
+        "sip 1303",
+        "SIP1130",
+        "SIP1201",
+        "SIP1201plus",
+        "SIP1201PLUS",
+        "Sip1303w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1303",
+        "SIP 1128",
+        "sip 1215",
+        "sip 1303",
+        "SIP1201"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1406",
+        "1601",
+        "1602",
+        "ip1018",
+        "Other",
+        "SIP 1601",
+        "SIP1201",
+        "SIP1602",
+        "SIP1602W",
+        "sip1603",
+        "SIP1603W",
+        "sip428"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "1406",
+        "Other",
+        "SIP1201",
+        "sip1205"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "1601",
+        "Sip1601"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "1601",
+        "1602",
+        "1602w",
+        "Other",
+        "sip 1601",
+        "sip 1602",
+        "sip1016",
+        "Sip1601",
+        "SIP1601",
+        "SIP1602",
+        "SIP1602W",
+        "SPI1602"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "1601",
+        "SIP1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1602",
+        "SIP1602",
+        "SIP1602W",
+        "SP1602W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "1602",
+        "ip1018",
+        "Other",
+        "sip1018",
+        "sip1818"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "1602",
+        "1602w",
+        "sip 1602",
+        "SIP1602",
+        "SIP1602W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1602",
+        "sip 1601",
+        "SIP 1602W",
+        "Sip1601",
+        "SIP1602"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "1602",
+        "SIP1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "1602",
+        "sip 1602",
+        "SIP1602",
+        "SIP1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "1602",
+        "1602W",
+        "SIP1602",
+        "sip1602w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "1602",
+        "1602w",
+        "Other",
+        "sip 1601",
+        "SIP 1602W",
+        "sip1601w",
+        "sip1601w-en",
+        "sip1602w",
+        "SIP1603"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1602",
+        "SIP 1602w",
+        "SIP 1602W",
+        "SIP1602"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1602w",
+        "sip 1016",
+        "SIP1602",
+        "sip1602w",
+        "SIP1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "8900",
+        "IP-1018",
+        "ip-1080",
+        "sip 1016"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "CAM01",
+        "Other",
+        "SIP1201"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "11"
+    },
+    {
+      "models": [
+        "ip1018",
+        "Other",
+        "SIP 1022"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "sip 1602W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "sip 1016",
+        "sip 1018w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SIP 1018W",
+        "SIP 1128",
+        "sip1128"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SIP 1128",
+        "Sip1601"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "SIP 1201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "sip 1602w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "sip 1602W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SIP 1602W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "SIP 1602W",
+        "sip1602w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SIP1201"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "sip1303",
+        "sip1303w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "Sip1303"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "sip1602w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "sp1303"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    }
+  ]
+}

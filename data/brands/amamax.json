@@ -1,0 +1,59 @@
+{
+  "brand": "Amamax",
+  "brand_id": "amamax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CCTVDVRH800"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CCTVDVRMPEG4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Getvideo.cgi?Cookie="
+    },
+    {
+      "models": [
+        "CCTVDVRMPEG4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPZB-600",
+        "IPZW-400",
+        "IPZW-600",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "IPZB-600",
+        "IPZW-400",
+        "IPZW-500",
+        "IPZW-600"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "brand": "Hamrolte",
+  "brand_id": "hamrolte",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H-A8H",
+        "HKBQ15L-W50",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Hdf"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "hkbc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "HKBQ15L-I30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "HKBQ15L-I50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

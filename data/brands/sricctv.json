@@ -1,0 +1,388 @@
+{
+  "brand": "Sricctv",
+  "brand_id": "sricctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001",
+        "004",
+        "008",
+        "A-0009",
+        "A-001",
+        "A-003",
+        "AP-0005",
+        "AP-0009",
+        "AP-001",
+        "AP-0014",
+        "AP003",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-006",
+        "AP-008",
+        "AP-009",
+        "AP-009 Trial",
+        "AP-011",
+        "AP-03",
+        "Other",
+        "SR-001"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "004",
+        "AP-004",
+        "AP-006"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "009C",
+        "AP-008",
+        "Other",
+        "SP-006",
+        "SP-007",
+        "SP-009B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "A-0006",
+        "AP-0009",
+        "AP-001",
+        "AP-002",
+        "AP003",
+        "AP-005",
+        "AP-006",
+        "AP-008",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "A-0006",
+        "AP-004",
+        "AP-005",
+        "AP-006",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "A-0006",
+        "A-009",
+        "AJ-006",
+        "AP-0001",
+        "AP-0005",
+        "AP-0009",
+        "AP-001",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-006",
+        "AP-008",
+        "AP-009",
+        "AP-009 TESTED",
+        "AP-014",
+        "H-264",
+        "Other",
+        "P2P-Black",
+        "P2P-BLACK",
+        "SP-007",
+        "SR-001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A-001",
+        "A-003",
+        "AB-001",
+        "AP-003",
+        "AP-008",
+        "AP-009",
+        "AP-0091",
+        "AP-0093",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "A-003",
+        "AP-0009",
+        "AP-001",
+        "AP-009",
+        "AP-011",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A-004",
+        "A-500",
+        "AP-0005",
+        "AP-001",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-006",
+        "AP-008",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "AB-001",
+        "AP-003",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "AP-0005",
+        "AP-001",
+        "AP-002",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-008",
+        "AP-009",
+        "AP-011",
+        "Other",
+        "SP-007",
+        "SR-001",
+        "SR-004"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AP-0005",
+        "AP-001",
+        "AP-003",
+        "AP-004",
+        "AP-006",
+        "AP-008",
+        "AP-009 TESTED",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "AP-001",
+        "AP-002",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-008",
+        "AP-009",
+        "AP-011",
+        "AP-014",
+        "Other",
+        "SR-001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AP-001",
+        "AP-003",
+        "AP-004",
+        "AP-004AF",
+        "AP-008",
+        "AP-009 Trial",
+        "Other",
+        "SR-001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AP-002",
+        "AP-003",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "AP-003",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "AP-003",
+        "AP-007",
+        "AP-008",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AP-003",
+        "AP-004",
+        "AP-008",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "AP-004",
+        "AP-005",
+        "AP-006",
+        "AP-0093",
+        "Other",
+        "P2P-BLACK"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "AP-004",
+        "AP-006",
+        "AP-009",
+        "AP-011",
+        "HD-750",
+        "Other",
+        "P2P-BLACK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "AP-005",
+        "AP-006",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "AP-006"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "C6F0SfZ3N0P0L0",
+        "C6F0SFZ3N0P0L0",
+        "IPF-W-2",
+        "Other",
+        "sp012"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mobile_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

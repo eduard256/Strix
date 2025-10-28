@@ -1,0 +1,18 @@
+{
+  "brand": "Au3",
+  "brand_id": "au3",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AU3-1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

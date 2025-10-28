@@ -1,0 +1,28 @@
+{
+  "brand": "Ip3393pv2",
+  "brand_id": "ip3393pv2",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "zot"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Other",
+        "ZOT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

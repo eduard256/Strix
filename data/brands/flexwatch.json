@@ -1,0 +1,70 @@
+{
+  "brand": "Flexwatch",
+  "brand_id": "flexwatch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1120",
+        "1150 Cam",
+        "117x Cam",
+        "500A",
+        "DVR",
+        "FW11xx RTSP",
+        "FW5470",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/fwstream.cgi?ServerId=0&AppKey=0x331287e3&CameraId=[CHANNEL]&PortId=0&PauseTime=1&FwCgiVer=0x0001"
+    },
+    {
+      "models": [
+        "117x Cam",
+        "DVR",
+        "FW11xx RTSP",
+        "FW3170-PS-E",
+        "FW7500-TXV-R"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam0_[CHANNEL]"
+    },
+    {
+      "models": [
+        "117X CAM",
+        "500A",
+        "DVR",
+        "Kalving 1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/fwstream.cgi?ServerId=0&AppKey=0x00006784&PortId=0&CameraId=[CHANNEL]&PauseTime=0&FwCgiVer=0x0001"
+    },
+    {
+      "models": [
+        "FW3170-PS-E",
+        "FW7500-TXV-R",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "cam0_1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/fwstream.cgi"
+    }
+  ]
+}

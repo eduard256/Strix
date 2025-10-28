@@ -1,0 +1,38 @@
+{
+  "brand": "Gwelltimes",
+  "brand_id": "gwelltimes",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4056085"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "HIKAM",
+        "IPC",
+        "Other",
+        "X7200-MJ36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/video.mp4"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "brand": "Geo",
+  "brand_id": "geo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1500",
+        "CB120",
+        "EBL2101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH001.sdp"
+    }
+  ]
+}

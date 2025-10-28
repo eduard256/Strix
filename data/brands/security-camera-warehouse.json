@@ -1,0 +1,27 @@
+{
+  "brand": "Security Camera Warehouse",
+  "brand_id": "security-camera-warehouse",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "43230",
+        "Viking 4.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Warrior 2.0 v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

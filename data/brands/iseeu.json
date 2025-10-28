@@ -1,0 +1,81 @@
+{
+  "brand": "Iseeu",
+  "brand_id": "iseeu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "Analog",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/401"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/501"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/601"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/701"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/901"
+    },
+    {
+      "models": [
+        "Analog"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/201"
+    }
+  ]
+}

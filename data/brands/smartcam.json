@@ -1,0 +1,44 @@
+{
+  "brand": "Smartcam",
+  "brand_id": "smartcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "smartcam hd+"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "smartcam hd+"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "SmartCam Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile4/media.smp"
+    }
+  ]
+}

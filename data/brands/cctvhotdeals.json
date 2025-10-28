@@ -1,0 +1,170 @@
+{
+  "brand": "Cctvhotdeals",
+  "brand_id": "cctvhotdeals",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mobile/channel[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "screen.jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/1/image.jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[USERNAME]/cam[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images/stream_[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot_ch0[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "H9008 w/ Web Port"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "pokus"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

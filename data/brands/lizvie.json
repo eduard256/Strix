@@ -1,0 +1,29 @@
+{
+  "brand": "Lizvie",
+  "brand_id": "lizvie",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dock",
+        "GF-L300BASE",
+        "L500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "pb100",
+        "Radio Clock"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

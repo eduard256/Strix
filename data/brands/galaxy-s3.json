@@ -1,0 +1,27 @@
+{
+  "brand": "Galaxy S3",
+  "brand_id": "galaxy-s3",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP WebCAM",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "IP WebCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    }
+  ]
+}

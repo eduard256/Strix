@@ -1,0 +1,35 @@
+{
+  "brand": "Sab",
+  "brand_id": "sab",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2600"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "SABIP1400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "SABIP1400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

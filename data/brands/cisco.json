@@ -1,0 +1,504 @@
+{
+  "brand": "Cisco",
+  "brand_id": "cisco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2421",
+        "2500",
+        "2500 IP Camera",
+        "2520",
+        "civis-ipc-2520v",
+        "civs-ipc-2520v",
+        "CIVS-IPC-2611",
+        "linksys",
+        "Marketing",
+        "Other",
+        "puck",
+        "PVC2300",
+        "WCV80N",
+        "WVC Series",
+        "WVC2",
+        "WVC200",
+        "WVC210",
+        "WVC2300",
+        "WVC300",
+        "WVC54G",
+        "WVC54GC",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "2500",
+        "2500 IP Camera",
+        "2500W",
+        "2600",
+        "Other",
+        "PVC2300",
+        "WVC SERIES",
+        "WVC210",
+        "WVC2300",
+        "WVC54G",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "2500",
+        "2500 IP Camera",
+        "2521",
+        "2530v IP CAMERA",
+        "2531",
+        "2600",
+        "CIVS-IPC-2611",
+        "Other",
+        "PVC2300",
+        "WCV80N",
+        "WNVC80N",
+        "WVC Series",
+        "wvc-210",
+        "WVC210",
+        "WVC2300",
+        "WVC80N"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "2500 IP Camera",
+        "5010",
+        "5011  IP Camera",
+        "Cisco HD IP Camera 4500E Series",
+        "CIVS 2900",
+        "IPC5011",
+        "OtherJJ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/qvga.jpg"
+    },
+    {
+      "models": [
+        "2500 IP Camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "2500 IP Camera",
+        "2500W",
+        "2530v IP CAMERA",
+        "Cisco 2531V",
+        "Cisco IPC 2531V",
+        "CIVS-IPC-2500W",
+        "CIVS-IPC-2611",
+        "IPC 2531V",
+        "IPC-2500",
+        "Other",
+        "PVC2300",
+        "PVC300",
+        "Server",
+        "VC220",
+        "WCV80N",
+        "WMV80N",
+        "WVC 210",
+        "WVC SERIES",
+        "WVC200",
+        "WVC2300",
+        "wvc54g",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "2500 IP CAMERA",
+        "Other",
+        "PVC2300",
+        "VC240",
+        "WVC SERIES",
+        "WVC210"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[code]"
+    },
+    {
+      "models": [
+        "2500 IP CAMERA",
+        "Other",
+        "PVC2300",
+        "VC220",
+        "VC240",
+        "WVC SERIES",
+        "WVC210"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "2500 IP CAMERA2",
+        "PVC2300",
+        "WVC SERIES",
+        "WVC210",
+        "WVC2300",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "2530V IP CAMERA"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "8630",
+        "Other",
+        "PVC300",
+        "VC220",
+        "VC240"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video2.mjpg"
+    },
+    {
+      "models": [
+        "CISCO IPC 2531V"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CIVS-IPC-2520V",
+        "CIVS-IPC-2611",
+        "HPA",
+        "PVC2300",
+        "WVC 210",
+        "WVC Series",
+        "WVC210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "CIVS-IPC-2611",
+        "linksys",
+        "Other",
+        "PVC2300",
+        "VC220",
+        "WCV80N",
+        "WVC Series",
+        "wvc200",
+        "wvc-210",
+        "WVC210",
+        "WVC2300",
+        "wvc54g",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "CIVS-IPC-6630",
+        "CIVS-IPC-8000P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/StreamingSetting?version=1.0&action=getRTSPStream&ChannelID=1&ChannelName=Channel1"
+    },
+    {
+      "models": [
+        "CIVS-IPC-8000P",
+        "VC220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "CIVS-IPC-8000P",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/video.sav"
+    },
+    {
+      "models": [
+        "cv220",
+        "Ipc-8030",
+        "PVC300",
+        "VC220",
+        "VC240",
+        "VC240-TCR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "DCS-3220"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "j",
+        "LINKSYS",
+        "PVC2300",
+        "WCV80N",
+        "WVC Series",
+        "WVC200",
+        "WVC210",
+        "WVC2300",
+        "wvc54g",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "LINKSYS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LINKSYS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "WVC Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Other",
+        "Wvc210"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "wvc"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "Other",
+        "PVC2300",
+        "PVC300",
+        "VC220",
+        "VC240",
+        "WVC300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/snapshot.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "PVC2300",
+        "WV200",
+        "WV210",
+        "WVC2300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "PVC2300",
+        "PVC300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/[code]"
+    },
+    {
+      "models": [
+        "PVC300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "PVC300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "PVC300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "VWC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "WCS-1130"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "WCS-1130"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "play3.sdp"
+    },
+    {
+      "models": [
+        "WCS-1130",
+        "WSC-1130"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "play1.sdp"
+    },
+    {
+      "models": [
+        "WVC 210"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "WVC Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    }
+  ]
+}

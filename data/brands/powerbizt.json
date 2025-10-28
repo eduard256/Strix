@@ -1,0 +1,31 @@
+{
+  "brand": "Powerbizt",
+  "brand_id": "powerbizt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP-Pro 52030",
+        "Other",
+        "SPRO-5103IM",
+        "TCIP T-Typ2020x",
+        "TCIPE-Pro53030 IRMDN"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other",
+        "TCIP-LPro213WDRMDN"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

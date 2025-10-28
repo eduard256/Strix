@@ -1,0 +1,32 @@
+{
+  "brand": "Biovision",
+  "brand_id": "biovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "biovison",
+        "BIOVISON",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "c6f0sg",
+        "C6F0SgZONOPfLt",
+        "C6F0SgZONOPgL2",
+        "HD22M102M",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

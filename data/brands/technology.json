@@ -1,0 +1,26 @@
+{
+  "brand": "Technology",
+  "brand_id": "technology",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5000,
+      "url": "/"
+    }
+  ]
+}

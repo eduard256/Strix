@@ -1,0 +1,17 @@
+{
+  "brand": "Gf-pumps",
+  "brand_id": "gf-pumps",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "xenon"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live0.264"
+    }
+  ]
+}

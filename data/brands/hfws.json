@@ -1,0 +1,27 @@
+{
+  "brand": "Hfws",
+  "brand_id": "hfws",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HF-NMW620-A20A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "HF-NSW631-B80C",
+        "HF-NSWAF719-B80D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

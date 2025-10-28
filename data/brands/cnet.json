@@ -1,0 +1,44 @@
+{
+  "brand": "Cnet",
+  "brand_id": "cnet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CIC-920W"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "vdata.v"
+    },
+    {
+      "models": [
+        "CIC-930w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "CIC-930W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "CIC-930W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/getimage.cgi?motion=0"
+    }
+  ]
+}

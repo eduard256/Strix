@@ -1,0 +1,17 @@
+{
+  "brand": "Mant",
+  "brand_id": "mant",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H264"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

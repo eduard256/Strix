@@ -1,0 +1,31 @@
+{
+  "brand": "Ace",
+  "brand_id": "ace",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Esperanza",
+        "Other",
+        "samsung",
+        "Xin",
+        "Yca"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "noname",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile0"
+    }
+  ]
+}

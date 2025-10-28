@@ -1,0 +1,19 @@
+{
+  "brand": "Movo",
+  "brand_id": "movo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AT-201",
+        "NT-3000",
+        "nt400b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.asf"
+    }
+  ]
+}

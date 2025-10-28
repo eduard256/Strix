@@ -1,0 +1,17 @@
+{
+  "brand": "Sn Ipc",
+  "brand_id": "sn-ipc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4015sw"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ROH/channel/11"
+    }
+  ]
+}

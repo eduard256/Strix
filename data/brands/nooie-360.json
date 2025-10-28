@@ -1,0 +1,17 @@
+{
+  "brand": "Nooie 360",
+  "brand_id": "nooie-360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC100B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

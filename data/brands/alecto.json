@@ -1,0 +1,224 @@
+{
+  "brand": "Alecto",
+  "brand_id": "alecto",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "150",
+        "150IP",
+        "Atheros",
+        "c903IP",
+        "dv150",
+        "dvc",
+        "dvc 120 ip",
+        "dvc 160ip",
+        "DVC 210IP",
+        "dvc-150ip",
+        "DVC-150-IP",
+        "DVC-1601",
+        "dvc210IP",
+        "dvc215IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "150ip",
+        "DCV-210IP",
+        "DVC120",
+        "dvc-120IP",
+        "DVC-150-IP",
+        "DVC-160IP",
+        "DVC-210ip",
+        "DVC-210IP",
+        "Other",
+        "UNLISTED"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "dbvc-215IP",
+        "DVC 135IP",
+        "dvc 154ip",
+        "DVC 215IP",
+        "DVC_125IP",
+        "dvc-1000",
+        "DVC-125IP",
+        "dvc135IP",
+        "dvc-135IP",
+        "DVC154IP",
+        "dvc210IP",
+        "dvc-210IP",
+        "dvc-215",
+        "dvc215IP",
+        "dvc-215IP",
+        "DVC-215IP",
+        "dvc-315IP",
+        "Other",
+        "Voordeur"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVC 135IP",
+        "DVC 215IP",
+        "DVC-125IP",
+        "dvc-135ip",
+        "DVC-154",
+        "DVC-155-IP",
+        "DVC-215IP",
+        "DVC-255-IP",
+        "dvi135",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "dvc 150ip",
+        "DVC120",
+        "DVC150IP",
+        "dvc-210IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "dvc 215",
+        "DVC-125IP",
+        "DVC-164IP",
+        "DVC-215IP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVC 215IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "DVC 215IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11d=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVC-105IP",
+        "DVC-255-IP",
+        "SMARTBABY10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "DVC-135IP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "DVC-150IP",
+        "DVC-210IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "DVC-155-IP",
+        "dvc215IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "dvc-215IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVC-250-IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IVM150 ?",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "SMARTBABY10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "SMARTBABY10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Serang",
+  "brand_id": "serang",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "tl-3171"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    }
+  ]
+}

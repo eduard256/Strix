@@ -1,0 +1,17 @@
+{
+  "brand": "Bridge",
+  "brand_id": "bridge",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "md1300 ir-od"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "HighResolutionVideo"
+    }
+  ]
+}

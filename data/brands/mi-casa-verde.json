@@ -1,0 +1,46 @@
+{
+  "brand": "Mi Casa Verde",
+  "brand_id": "mi-casa-verde",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    },
+    {
+      "models": [
+        "vistacam",
+        "VistaCamSD"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "VISTACAM",
+        "VistaCamSD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "VistacamSD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

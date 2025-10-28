@@ -1,0 +1,17 @@
+{
+  "brand": "Nutri Vision",
+  "brand_id": "nutri-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Petoneer"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

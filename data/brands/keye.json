@@ -1,0 +1,32 @@
+{
+  "brand": "Keye",
+  "brand_id": "keye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3.2.6",
+        "IIIII-407858-DAFFE",
+        "NNNN-003072-FCDFE",
+        "Other",
+        "UID-HHH-0287-13-EDBFD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "GGGG-062152-EFBED",
+        "NNNN-531960-EBAFF",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    }
+  ]
+}

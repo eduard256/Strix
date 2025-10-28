@@ -1,0 +1,67 @@
+{
+  "brand": "Merkury",
+  "brand_id": "merkury",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cw001",
+        "cw017-101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "Cw007"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "CW007",
+        "MIC-CW007-199W",
+        "MI-CW217",
+        "WiFiCam720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "MI-CW007-199W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "MI-CW020"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0"
+    },
+    {
+      "models": [
+        "mi-cw051"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

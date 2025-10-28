@@ -1,0 +1,35 @@
+{
+  "brand": "Mjpg-streamer",
+  "brand_id": "mjpg-streamer",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "PIZero"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "RPI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/html/cam_pic_new.php"
+    }
+  ]
+}

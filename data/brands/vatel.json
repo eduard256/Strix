@@ -1,0 +1,28 @@
+{
+  "brand": "Vatel",
+  "brand_id": "vatel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "HT-N4K1080P-3919"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "HT-N$K1080P-9313"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

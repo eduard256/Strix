@@ -1,0 +1,17 @@
+{
+  "brand": "Bettini",
+  "brand_id": "bettini",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TB232B121"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.264"
+    }
+  ]
+}

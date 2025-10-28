@@ -1,0 +1,304 @@
+{
+  "brand": "Victure",
+  "brand_id": "victure",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "IP360",
+        "PC240",
+        "PC530",
+        "PC540",
+        "PC730"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "IP360",
+        "P540",
+        "PC650"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "IPC360",
+        "PC660"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/h264"
+    },
+    {
+      "models": [
+        "IPC360",
+        "IPC365",
+        "PC240",
+        "PC240-2",
+        "pc530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC365",
+        "Other",
+        "PC540",
+        "PC650",
+        "pc730"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "IPC365",
+        "PC540",
+        "pc730"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "IPC750",
+        "PC420",
+        "PC540",
+        "PC650",
+        "pc750"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other",
+        "PC420",
+        "PC660",
+        "pc730"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "Other",
+        "PC530",
+        "PC650",
+        "pc730",
+        "PC750"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "OTHERPC330",
+        "p370",
+        "p540",
+        "PC420",
+        "PC530",
+        "PC540",
+        "PC650",
+        "PC650b",
+        "PC730",
+        "pc750",
+        "RC530"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "PC240",
+        "PC420",
+        "PC540",
+        "PC650",
+        "PC730",
+        "PC750",
+        "pcm 540"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "PC320"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "PC420",
+        "PC540",
+        "PC650",
+        "pc730",
+        "pc750"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "PC420",
+        "PC540",
+        "pc730",
+        "pc750"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=00"
+    },
+    {
+      "models": [
+        "pc530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonit"
+    },
+    {
+      "models": [
+        "PC530",
+        "PC540",
+        "PC650"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "h264_2"
+    },
+    {
+      "models": [
+        "PC540",
+        "PC650"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "PC540",
+        "PC730"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/h264_2"
+    },
+    {
+      "models": [
+        "PC540",
+        "PC650",
+        "PC650b",
+        "PC730",
+        "PC750"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "PC650"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00"
+    },
+    {
+      "models": [
+        "PC650"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "PC660",
+        "sc210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "PC660",
+        "PC730"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "pc730"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=Z3VycmllcmlyZ0BnbWFpbC5jb206MzAwNTc4cmc="
+    },
+    {
+      "models": [
+        "VS1800"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    }
+  ]
+}

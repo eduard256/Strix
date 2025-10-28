@@ -1,0 +1,121 @@
+{
+  "brand": "Aver",
+  "brand_id": "aver",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2012",
+        "SF2012H-B",
+        "SF2012H-D",
+        "TR311HN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "520Pro",
+        "AVer CAM520 Pro2",
+        "DL30",
+        "FB2027-3",
+        "FB3027",
+        "FD2020-M",
+        "fv3808",
+        "Other",
+        "ptc500s",
+        "PTZ310N",
+        "TR-311",
+        "TR311HN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live_st1"
+    },
+    {
+      "models": [
+        "AV-CM20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "FB 1026",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "FS2012H-C",
+        "Other",
+        "SF2012H-C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=false"
+    },
+    {
+      "models": [
+        "FX2000",
+        "Other",
+        "SF1311H-C",
+        "TR311HN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live_st2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "PTC310H",
+        "PTC330UV2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "SF2012B",
+        "SF2012H-B",
+        "SF2012H-D"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

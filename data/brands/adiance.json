@@ -1,0 +1,17 @@
+{
+  "brand": "Adiance",
+  "brand_id": "adiance",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion"
+    }
+  ]
+}

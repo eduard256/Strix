@@ -1,0 +1,119 @@
+{
+  "brand": "Eversecu",
+  "brand_id": "eversecu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B07GPGPV67",
+        "ES-IP46F",
+        "LBC4",
+        "LCD4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "B2-R",
+        "CS770",
+        "W660",
+        "WP953"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "CS770"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_1"
+    },
+    {
+      "models": [
+        "es-ipbo626",
+        "ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "idl"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "LBC4",
+        "LCD4",
+        "ptz2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "LBC4",
+        "LCD4",
+        "UV-8520D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/stream3/mobotix.mjpeg"
+    },
+    {
+      "models": [
+        "LBC4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "LCD4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "ptz2",
+        "X0031LN8WX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "UV-8520D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "brand": "Platinum",
+  "brand_id": "platinum",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CMIP7422-M",
+        "CMIP8042-28",
+        "CMIP8322W-M",
+        "CM-PI-2MP-DH",
+        "IPC-2M2023",
+        "LV-CTP4134",
+        "PTZIP212X20-C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/h264_stream"
+    }
+  ]
+}

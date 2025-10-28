@@ -1,0 +1,53 @@
+{
+  "brand": "Vlc",
+  "brand_id": "vlc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/webcam"
+    },
+    {
+      "models": [
+        "Screen RTSP 554"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Screen RTSP 554"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/stream"
+    },
+    {
+      "models": [
+        "Screen RTSP 554"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Stream"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/stream0"
+    }
+  ]
+}

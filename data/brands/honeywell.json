@@ -1,0 +1,452 @@
+{
+  "brand": "Honeywell",
+  "brand_id": "honeywell",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1024",
+        "H4W2GR2",
+        "HED3PR3",
+        "HICC-0100P",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "1024",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=01"
+    },
+    {
+      "models": [
+        "DELL",
+        "RYDELL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "H 264",
+        "HBD2PR1",
+        "hcc-685pt",
+        "hicc-p3100",
+        "HIDC-P-010",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "H 264",
+        "H4D2F",
+        "HON09B759",
+        "HON0A8472",
+        "ipcam pt",
+        "ipcam-10",
+        "IPCAM-IP",
+        "ipcam-od",
+        "IPCAM-PT",
+        "IPCAM-PT2",
+        "ipcam-w12",
+        "IPCAM-WI",
+        "IPCAM-WI2",
+        "ipcam-wl",
+        "ipcam-wo",
+        "IP-WO",
+        "Other",
+        "Other2",
+        "w12",
+        "wap"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "H 264",
+        "IPCAM-10",
+        "IPCAM-ip",
+        "IPCAM-PT",
+        "IPCAM-PT2",
+        "IPCAM-WI",
+        "IPCAM-WI2",
+        "ip-w0",
+        "IP-WO",
+        "Other",
+        "Other2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "H 264",
+        "IPCAM-PT",
+        "IPCAM-PT2",
+        "ipcam-w12",
+        "IPCAM-WI2",
+        "ipcam-wl",
+        "IPCAM-WL",
+        "IPCAM-WO",
+        "Other",
+        "w12",
+        "WI2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "H 264",
+        "H2S2P6",
+        "H3D3S2",
+        "H4D1FRX",
+        "H4D2F",
+        "H4S1P1",
+        "HCD5HIH",
+        "HCD5WIHX",
+        "HCW1F",
+        "HCW1FX",
+        "HD31F",
+        "HD3MDIH",
+        "hd45ip",
+        "HD4HDIH",
+        "hd4mdih",
+        "hd54ip",
+        "HD55IPX",
+        "HDZ20HDEX",
+        "HDZ20HDX",
+        "HDZ30",
+        "honeywell h4d1fr",
+        "IPCAM-WL",
+        "IP-WO",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "H2D2PR1",
+        "hcc-685pt"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "H2D2PR1",
+        "HBL2R1",
+        "WIC1"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "H2S1P6",
+        "HDZ22HDEX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "H2W2GR1",
+        "HPW2P1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46QWRtaW4xMjMu"
+    },
+    {
+      "models": [
+        "H3D1F",
+        "H3D2F",
+        "H3S1p",
+        "H3S1P",
+        "H4D1F",
+        "H4s1P",
+        "H4W1F",
+        "HBD2FR",
+        "HCD1F",
+        "Paco"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media"
+    },
+    {
+      "models": [
+        "h3w4gr1v",
+        "H4D3PRV2",
+        "H4W4PER2",
+        "H4W4PER3",
+        "HBD3PR2",
+        "hbw4per2",
+        "HD7016",
+        "HDZ252",
+        "HDZ302DE",
+        "HDZ52DPR1",
+        "HM4L8GR1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "HBW2GR3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46Qm91bG91ODEh"
+    },
+    {
+      "models": [
+        "HC30WF5R1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live2.sdp"
+    },
+    {
+      "models": [
+        "HC30WF5R1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "HCD1F",
+        "hd 4mdip",
+        "HD31F",
+        "HD3MDIP",
+        "HD4MDIP",
+        "hdm3dip",
+        "Other",
+        "Rydell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/mpeg4"
+    },
+    {
+      "models": [
+        "hd 4mdip",
+        "HD4MDIP",
+        "hdm3dip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "HD3MDIP",
+        "HD45IP",
+        "HD4MDIP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/[CHANNEL]"
+    },
+    {
+      "models": [
+        "HD44IP",
+        "HD4HDIH",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "hd45ip",
+        "IP cam WI2b",
+        "ipcam-od",
+        "Ipcam-pt",
+        "IPCAM-PT",
+        "ipcam-w12",
+        "IPCAM-WI",
+        "IPCAM-WI2",
+        "Other",
+        "w12",
+        "WI2"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "HD4HDIH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HD4HDIH",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "HDR-C1648L",
+        "Honeywell HREP",
+        "HREP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "hdz302de",
+        "hie2piv"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HIDC-2600TVI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    },
+    {
+      "models": [
+        "HNB-210V2I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/1/1/Profile1"
+    },
+    {
+      "models": [
+        "ipc",
+        "ipcam-w12",
+        "IPCAM-WI",
+        "IPCAM-WI2",
+        "ipcam-wl",
+        "IP-WO",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "IPCAM PT",
+        "IPCAM-IP",
+        "IPCAM-PT",
+        "IPCAM-PT2",
+        "ipcam-wo",
+        "IPCAM-WO",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "IP-WO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/media.sav"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "axis-media/media.amp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/image.jpg"
+    }
+  ]
+}

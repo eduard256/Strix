@@ -1,0 +1,26 @@
+{
+  "brand": "Roidmi",
+  "brand_id": "roidmi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EVE Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "EVE Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264/HD1080P"
+    }
+  ]
+}

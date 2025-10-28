@@ -1,0 +1,17 @@
+{
+  "brand": "Lylu",
+  "brand_id": "lylu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Smart Sphere"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

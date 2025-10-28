@@ -1,0 +1,38 @@
+{
+  "brand": "Ginzzu",
+  "brand_id": "ginzzu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HIB-4303A",
+        "HIB-5302S",
+        "HIB5303A",
+        "HIB-5303A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "HIB-5303A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HWB-5302A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

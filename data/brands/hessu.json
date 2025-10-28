@@ -1,0 +1,17 @@
+{
+  "brand": "Hessu",
+  "brand_id": "hessu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "WHD318B"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

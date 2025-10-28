@@ -1,0 +1,62 @@
+{
+  "brand": "Sectec",
+  "brand_id": "sectec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "buiten",
+        "BULLET",
+        "DOME",
+        "ST-758M",
+        "ST-AHD5008P",
+        "STIP",
+        "ST-IP121M",
+        "ST-IP7016E-1M",
+        "ST-IP805M",
+        "st-ip935w-1.4m"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=[CHANNEL]_stream=0.sdp"
+    },
+    {
+      "models": [
+        "BULLET"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=[CHANNEL]_stream=1.sdp"
+    },
+    {
+      "models": [
+        "sfip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "ST-291-2M-AI"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "ST-IP573F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=[CHANNEL]_stream=0.sdp?real_stream"
+    }
+  ]
+}

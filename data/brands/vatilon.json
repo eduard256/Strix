@@ -1,0 +1,68 @@
+{
+  "brand": "Vatilon",
+  "brand_id": "vatilon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "h62",
+        "PB4"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "HD Bullet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "P03H42",
+        "PA2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "P05",
+        "PA2",
+        "PB4",
+        "T62",
+        "YC-W608"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "pb1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "PB4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/h264_stream"
+    }
+  ]
+}

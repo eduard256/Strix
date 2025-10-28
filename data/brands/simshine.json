@@ -1,0 +1,17 @@
+{
+  "brand": "Simshine",
+  "brand_id": "simshine",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "simcam s1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/live"
+    }
+  ]
+}

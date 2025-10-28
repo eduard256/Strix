@@ -1,0 +1,17 @@
+{
+  "brand": "Octopi",
+  "brand_id": "octopi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C920"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "//webcam/?action=stream"
+    }
+  ]
+}

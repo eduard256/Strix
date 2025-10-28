@@ -1,0 +1,332 @@
+{
+  "brand": "X10",
+  "brand_id": "x10",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "34a",
+        "39A",
+        "AirSight",
+        "AIRSIGHT Dome",
+        "AirSight HD",
+        "Airsight x40",
+        "airsight x60",
+        "Other",
+        "PTZ PRO",
+        "xc36a",
+        "xc38a",
+        "XC-38A",
+        "XC-40A",
+        "XX-34A",
+        "XX-40A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "39A",
+        "AirSight",
+        "AIRSIGHT",
+        "AIRSIGHT Dome",
+        "AirSight HD",
+        "AIRSIGHT OUTSIDE",
+        "Airsight XX39",
+        "Other",
+        "XC-38A",
+        "XX-39A",
+        "XX41Ahome",
+        "XX-56A",
+        "XX-59A",
+        "XX-69A",
+        "xx70a"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "39-A",
+        "AirSight",
+        "AIRSIGHT X36A",
+        "Other",
+        "XX-52A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "40",
+        "AirSight",
+        "AIRSIGHT Dome",
+        "AirSight HD",
+        "AirSight Outside",
+        "Airsight X36A",
+        "AirSightBIONDI",
+        "MyCam1",
+        "Other",
+        "PTZ PRO",
+        "XC-38A",
+        "XX-39A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "40",
+        "AirSight",
+        "Other",
+        "XC-36A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "airsight",
+        "AirSight",
+        "Other",
+        "XX62A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AirSight",
+        "AIRSIGHT B",
+        "AirSight Dome",
+        "AIRSIGHT Dome",
+        "Arcsight",
+        "Other",
+        "PTZ PRO",
+        "XC-36A",
+        "XC-38A",
+        "XC-40A",
+        "XX-36A",
+        "XX-40A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "AirSight",
+        "Other",
+        "XX-34A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AirSight",
+        "XX-59A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mobile_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AirSight",
+        "AIRSIGHT X36A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AirSight",
+        "AIRSIGHT Dome",
+        "Other",
+        "XX-52A",
+        "XX-59A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "AirSight",
+        "AIRSIGHT X36A",
+        "Other",
+        "XC-36A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "AirSight",
+        "AirSight Dome",
+        "AIRSIGHT Dome",
+        "Other",
+        "PTZ PRO",
+        "XX-40A"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Airsight X36A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Jake"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "Other",
+        "XX-36A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "XX-60"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "X-10PT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "XC-38A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "XC-38A",
+        "XX-36C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "XC-38A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "XX-59A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

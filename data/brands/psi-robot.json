@@ -1,0 +1,19 @@
+{
+  "brand": "Psi Robot",
+  "brand_id": "psi-robot",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "456",
+        "Psi",
+        "PSI Robot 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    }
+  ]
+}

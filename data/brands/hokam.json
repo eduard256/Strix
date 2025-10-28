@@ -1,0 +1,17 @@
+{
+  "brand": "Hokam",
+  "brand_id": "hokam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "a9 mini"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

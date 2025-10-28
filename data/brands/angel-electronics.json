@@ -1,0 +1,75 @@
+{
+  "brand": "Angel Electronics",
+  "brand_id": "angel-electronics",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ctipc-123c1080pw"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "CTIPC-224",
+        "CTIPC-245C",
+        "CTIPC-275C1080P",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CTIPC-275C1080P"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "CTIPC-285C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "CTIPC-290C5MP-B",
+        "ctpt-90c1080p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Dreamstar"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

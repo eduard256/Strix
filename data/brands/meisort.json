@@ -1,0 +1,27 @@
+{
+  "brand": "Meisort",
+  "brand_id": "meisort",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "v11"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1EDBA8F05638533F788D8B5E71187399&0"
+    },
+    {
+      "models": [
+        "WQJ802B-FH-2-S",
+        "Y203s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

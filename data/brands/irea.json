@@ -1,0 +1,17 @@
+{
+  "brand": "Irea",
+  "brand_id": "irea",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GV-T540"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    }
+  ]
+}

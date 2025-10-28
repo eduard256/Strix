@@ -1,0 +1,17 @@
+{
+  "brand": "Dish-cam",
+  "brand_id": "dish-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD2500P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/h264/1"
+    }
+  ]
+}

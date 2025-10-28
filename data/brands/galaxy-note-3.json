@@ -1,0 +1,17 @@
+{
+  "brand": "Galaxy Note 3",
+  "brand_id": "galaxy-note-3",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Olly1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    }
+  ]
+}

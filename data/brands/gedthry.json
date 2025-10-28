@@ -1,0 +1,17 @@
+{
+  "brand": "Gedthry",
+  "brand_id": "gedthry",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "rehgj"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    }
+  ]
+}

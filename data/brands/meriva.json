@@ -1,0 +1,26 @@
+{
+  "brand": "Meriva",
+  "brand_id": "meriva",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MFD-400S4L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "MOB-400S3L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile2"
+    }
+  ]
+}

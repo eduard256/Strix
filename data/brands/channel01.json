@@ -1,0 +1,38 @@
+{
+  "brand": "Channel01",
+  "brand_id": "channel01",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AIPC-420BM",
+        "anni",
+        "qrt-601",
+        "SZS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "IP WIFI Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "novell"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

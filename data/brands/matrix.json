@@ -1,0 +1,55 @@
+{
+  "brand": "Matrix",
+  "brand_id": "matrix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Argo Face"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg"
+    },
+    {
+      "models": [
+        "Satatya",
+        "SATATYA CIBR13FL40CW",
+        "SATATYA CIBR13FL60CW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Satatya"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/mjpeg"
+    },
+    {
+      "models": [
+        "SATATYA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "SATATYA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

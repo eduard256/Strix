@@ -1,0 +1,54 @@
+{
+  "brand": "V360",
+  "brand_id": "v360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-FH",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "nikytech"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "V360 PRO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

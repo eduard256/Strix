@@ -1,0 +1,17 @@
+{
+  "brand": "Ipnawin7",
+  "brand_id": "ipnawin7",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP CAMERA 002A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    }
+  ]
+}

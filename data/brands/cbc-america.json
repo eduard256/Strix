@@ -1,0 +1,66 @@
+{
+  "brand": "Cbc America",
+  "brand_id": "cbc-america",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GANZ",
+        "ZN-MD243M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/gnz_media/main"
+    },
+    {
+      "models": [
+        "GANZ",
+        "zn-md243m"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/gnz_media/second"
+    },
+    {
+      "models": [
+        "mp2",
+        "Mp2a"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230"
+    },
+    {
+      "models": [
+        "MP2",
+        "mp5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img.jpg"
+    },
+    {
+      "models": [
+        "mp5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    },
+    {
+      "models": [
+        "ZN-DT2MA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "gnz_media/main"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Eonboom",
+  "brand_id": "eonboom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVI20B-2.0M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

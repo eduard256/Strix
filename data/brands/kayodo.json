@@ -1,0 +1,18 @@
+{
+  "brand": "Kayodo",
+  "brand_id": "kayodo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2Mp",
+        "KYD-IPD200M"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    }
+  ]
+}

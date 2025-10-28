@@ -1,0 +1,17 @@
+{
+  "brand": "Sibel",
+  "brand_id": "sibel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPOB-ELE4IR28"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

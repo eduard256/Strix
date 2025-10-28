@@ -1,0 +1,27 @@
+{
+  "brand": "Mwr",
+  "brand_id": "mwr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C1223",
+        "MF822"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_1"
+    },
+    {
+      "models": [
+        "C1223HW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    }
+  ]
+}

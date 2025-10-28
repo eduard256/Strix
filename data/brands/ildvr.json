@@ -1,0 +1,29 @@
+{
+  "brand": "Ildvr",
+  "brand_id": "ildvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "INC-2030W",
+        "INC-M20B06V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    },
+    {
+      "models": [
+        "INCMD",
+        "INC-MP28VZ",
+        "INS-MP2020-H5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

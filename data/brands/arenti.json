@@ -1,0 +1,33 @@
+{
+  "brand": "Arenti",
+  "brand_id": "arenti",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DOME",
+        "DOME1",
+        "Doom",
+        "GO mini 2k",
+        "IN1",
+        "Other",
+        "Outdoor OP1",
+        "P2 Indoor Smart Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "M4T"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

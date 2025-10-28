@@ -1,0 +1,17 @@
+{
+  "brand": "I30vd",
+  "brand_id": "i30vd",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MicroView"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "brand": "Anga",
+  "brand_id": "anga",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AQ-229IPD",
+        "AQ-6108R5",
+        "Other",
+        "RT AQ-6108R5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

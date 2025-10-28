@@ -1,0 +1,237 @@
+{
+  "brand": "Sinocam",
+  "brand_id": "sinocam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1mp Cam",
+        "1mp IP Cam",
+        "1mp IP Camera",
+        "4036SW",
+        "5033 SW",
+        "8n-ipc-5033sw",
+        "ip 2mp cam",
+        "IP-66",
+        "IPC F20M",
+        "IPC-5030",
+        "IPC-5033",
+        "IPC-F10P",
+        "IPC-F20M",
+        "Other",
+        "SN-5022CSW",
+        "SN-6409C",
+        "SN-IPC-5032CSW",
+        "SN-IPC-5033SW-UK",
+        "sn-ipc-5033sw-us",
+        "SN-IPC-8002A-Wi-EU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1MP IP Camera",
+        "4036sw",
+        "5001-S",
+        "5033 SW",
+        "8002",
+        "8003-C",
+        "8107",
+        "Aussen",
+        "Black",
+        "Cam2",
+        "H264",
+        "H264 IP",
+        "ipc-5001c-ppoe",
+        "IPC-7004A-Wi-EU",
+        "IPC-9031A-POE",
+        "notsure",
+        "onvi",
+        "Other",
+        "sino",
+        "SINO",
+        "SN-30008B",
+        "sn5033",
+        "SN-6408CW",
+        "SN-6409C",
+        "SN-6409CW",
+        "SN-IP-8005C",
+        "SN-IPC 4036SW",
+        "Sn-IPC-4015SW-AU",
+        "SN-IPC-4036SW-AU",
+        "SN-IPC-5032CSW",
+        "SN-IPC-5033",
+        "SN-IPC5033CSW-WI",
+        "SN-IPC-5033SW-WI-UK",
+        "SN-IPC-5125CSW",
+        "SN-IPC-562410",
+        "SN-IPC-6409",
+        "SN-IPC-8002A-Wi-EU",
+        "SN-NVK-6004H10",
+        "SN-NVK-W5065",
+        "x264"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "1MP IP CAMERA",
+        "5033 SW",
+        "8003-C",
+        "c7824wip",
+        "H264",
+        "IP 2MP CAM",
+        "ONVI",
+        "Other",
+        "SNIPC3010FCSW20-UK",
+        "SN-IPC-4036SW-AU",
+        "sn-ipc-5033",
+        "SN-IPC-5033SW-EU",
+        "sn-ipc-5033sw-us",
+        "SN-IPC-HW07-UK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "3001",
+        "4000",
+        "snipc3001"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "5033",
+        "HI-3518C",
+        "ip 2mp cam",
+        "IPC-4036CSW-UK",
+        "ONVI",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "8002",
+        "IPC 4015CSW-EU",
+        "x264"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "8003-C",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "BulletTech83"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "ipc 4550",
+        "sn-ipc-4550"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-CAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "SN-IPC-3010FCSW",
+        "SN-IPC-5032CSW-EU",
+        "SN-IPC-5033SW-US"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SN-IPC-3001FSW13"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    }
+  ]
+}

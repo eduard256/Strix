@@ -1,0 +1,291 @@
+{
+  "brand": "Alhua",
+  "brand_id": "alhua",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1320SP-0360B",
+        "DH-IPC-HDBW4300E",
+        "DH-IPC-HF2100P",
+        "DH-IPC-HFW1120RMP",
+        "HFW5200EP-Z12",
+        "IPC-HDBW1320E",
+        "IPC-HDBW4200E",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "2230",
+        "DHI-XVR4108C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "4433C-A",
+        "dh_hac_hdw1200r",
+        "DH_IPC_HFW1320SP",
+        "DH-IPC-HDBW1320EP-W",
+        "DH-IPC-HDBW1435EP-W-028B",
+        "DH-IPC-HDBW2431RP-ZS",
+        "DH-IPC-HDBW4431R-AS",
+        "DH-IPC-HDW4631C",
+        "DH-IPC-HDW4631C-A",
+        "DH-IPC-HDW4641C-A",
+        "DH-IPC-HFW1220SP",
+        "DH-IPC-HFW1320SP-W",
+        "DHI-XVR5116HS-S2",
+        "DH-SD22204T-GN",
+        "dh-xvr4104hs-x1",
+        "HDBW1420EP-0280B",
+        "HDW4433CA",
+        "hfw 1120 sw",
+        "IPC",
+        "IPC-EB5531",
+        "IPC-HDW1230S",
+        "IPC-HDW2431T-ZS-S2",
+        "IPC-HDW4433C-A",
+        "IPC-HFW1320S-W",
+        "IPC-HFW2431R-ZS-IRE6",
+        "IPC-T1B40",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "Bullet",
+        "DH-IPC-HDBW4300E",
+        "DH-IPC-HFW4300S",
+        "Dome",
+        "IPC-2200",
+        "IPC-HFW3200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "BULLET",
+        "c35",
+        "c35p",
+        "dh_hac_hdw1200r",
+        "DH_IPC_HFW1320SN",
+        "DH_IPC_HFW1320SP",
+        "DHI-HCVR4108HS-S3",
+        "DHI-HCVR5216AN-S3",
+        "dh-ipc-hd2100p-0360b",
+        "DH-IPC-HDBW4300E",
+        "DH-IPC-HDBW4431R-AS",
+        "DH-IPC-HDW1230SP-0280B",
+        "DH-IPC-HDW1320SP-0360B",
+        "DH-IPC-HFW1000S",
+        "DH-IPC-HFW1000SP",
+        "DH-IPC-HFW1120RMP",
+        "dh-ipc-hfw3849t1p-as-pv",
+        "DHI-XVR5116HS-S2",
+        "DH-SD42212S-HN",
+        "DH-VXR4104HS-X1",
+        "dh-xvr4104hs-x1",
+        "dvmini",
+        "IPC-HDBW2421R-VFS",
+        "IPC-HDBW4200E",
+        "IPC-HDBW4431R-ZS",
+        "IPC-HDW2320R-ZS",
+        "IPC-HDW4300C",
+        "IPC-HDW4431C-A",
+        "IPC-HFW1320S-W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "DH_IPC_HFW1320SN",
+        "DH-IPC-HFW1000SP",
+        "DH-IPC-HFW4300S",
+        "DH-IPC-HFW4800EP(4mm)",
+        "IPC-HDW4300C",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "DH_IPC_HFW1320SP",
+        "DHI-HCVR4108HS-S3",
+        "DH-IPC-HDBW4431R-AS",
+        "DH-IPC-HF2100P",
+        "DH-IPC-HFW1000SP",
+        "DH-IPC-HFW4300S",
+        "DH-SD2920T-GN",
+        "DH-VXR4104HS-X1",
+        "dh-xvr4104hs-x1",
+        "HDBW2208R-Z",
+        "IPC-2200",
+        "IPC-HDW2320R-ZS",
+        "IPC-HFW1000SN",
+        "IPC-HFW1320S-W",
+        "IPC-HFW3200",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DHI-HCVR5216AN-NT",
+        "DH-IPC-HDBW4300C",
+        "DH-IPC-HFW1120RMP",
+        "DHI-XVR5116HS-S2",
+        "DH-VXR4104HS-X1",
+        "dh-xvr4104hs-x1",
+        "IPC-HDW2431T-AS-0280B-S2",
+        "IPC-HDW4300C",
+        "IPC-HDW4431C-A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DH-IPC-HDBW4300E",
+        "DH-IPC-HFW1000SP",
+        "DH-IPC-HFW4300S",
+        "IPC-2200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "DH-IPC-HDW1320SP-0360B",
+        "DH-IPC-HFW1000SP",
+        "DH-IPC-HFW4300S",
+        "HDBW5421EP-Z",
+        "HFW5200EP-Z12",
+        "IPC-HDBW5421E-Z",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "DH-IPC-HFW1200S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "DH-IPC-HFW2449S-S-IL",
+        "IPC-HDW2320R-ZS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "DH-IPC-HFW3441 TP-ZAS",
+        "DH-ipc-hfw3441TP-ZAS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46MzIyMzExNjEzMVNoYXl0YW4="
+    },
+    {
+      "models": [
+        "DHI-XVR4108C",
+        "ipc-A35",
+        "IPC-HDBW2531EP-S",
+        "IPC-HDBW4431R-ZS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "DHI-XVR5104HS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-2200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPC-HDBW3541F-AS-M",
+        "IPC-HFW2201R-ZS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    }
+  ]
+}

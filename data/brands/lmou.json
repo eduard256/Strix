@@ -1,0 +1,17 @@
+{
+  "brand": "Lmou",
+  "brand_id": "lmou",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-TA22CP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    }
+  ]
+}

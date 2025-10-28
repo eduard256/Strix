@@ -1,0 +1,17 @@
+{
+  "brand": "Littleadd",
+  "brand_id": "littleadd",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LA-WL0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live0"
+    }
+  ]
+}

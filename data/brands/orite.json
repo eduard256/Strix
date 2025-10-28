@@ -1,0 +1,67 @@
+{
+  "brand": "Orite",
+  "brand_id": "orite",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "301",
+        "IP-301"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=0"
+    },
+    {
+      "models": [
+        "IC-301",
+        "Orite TP300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "IP300",
+        "IP-301",
+        "PT-300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    },
+    {
+      "models": [
+        "IP-301"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.jpg"
+    },
+    {
+      "models": [
+        "MW-bisi",
+        "NW-100N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.asf"
+    },
+    {
+      "models": [
+        "PT-300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=false"
+    }
+  ]
+}

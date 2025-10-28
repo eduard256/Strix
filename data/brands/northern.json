@@ -1,0 +1,28 @@
+{
+  "brand": "Northern",
+  "brand_id": "northern",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/snl/live/1/1"
+    },
+    {
+      "models": [
+        "IP4",
+        "NTH-IP3W",
+        "nth-ip4w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

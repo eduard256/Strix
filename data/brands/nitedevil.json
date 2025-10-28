@@ -1,0 +1,17 @@
+{
+  "brand": "Nitedevil",
+  "brand_id": "nitedevil",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "24c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1240,
+      "url": "/ch01/0"
+    }
+  ]
+}

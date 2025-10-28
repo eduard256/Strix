@@ -1,0 +1,179 @@
+{
+  "brand": "Elp",
+  "brand_id": "elp",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "1080p",
+        "1280*720P",
+        "1881",
+        "1882",
+        "1892",
+        "1MEGPIX",
+        "2MP",
+        "6100",
+        "6200B",
+        "720p",
+        "720P MINI",
+        "720P MINI CAM",
+        "EL-IP-1882",
+        "ELP-IP1881",
+        "ELP-IP1881W",
+        "ELP-IP1882",
+        "ELP-IP1892-POE",
+        "ELP-IP3100HR",
+        "ELP-IP3100HRNC",
+        "ELP-IP3110HR",
+        "ELP-IP6200B",
+        "ELP-IP6200DB",
+        "ELP-IP9100BM-POE",
+        "ELP-IR3110HR",
+        "HD POE",
+        "IP1881",
+        "ip1891",
+        "ip1892",
+        "ip1895",
+        "ip3100hb",
+        "ip3110hr-wifi",
+        "IP3200HR",
+        "IP4100VR",
+        "ip5180vd",
+        "ip9200bm",
+        "ONVIF",
+        "TOP-201",
+        "X00FIBWA7"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "1080",
+        "1080p",
+        "1080P",
+        "1280*720p",
+        "1881",
+        "1882",
+        "1892",
+        "1megpix",
+        "2MP",
+        "720P",
+        "720P Mini",
+        "720P Mini Cam",
+        "ELP-1881",
+        "ELP-IP1881",
+        "ELP-IP1881W",
+        "ELP-IP1882",
+        "ELP-IP1892-POE",
+        "ELP-IP3100HR",
+        "ELP-IP3110HR",
+        "ELP-IP6200DB",
+        "ELP-IP9100BM-POE",
+        "IP1881",
+        "IP-1891POE",
+        "IP1892",
+        "IP3100HB",
+        "IP3120HR-POE",
+        "IP4100VR",
+        "ip6100",
+        "Megapixel IP Camera",
+        "Onvif",
+        "onvif 1280x768",
+        "Other",
+        "X000QY76TT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1080",
+        "1MEGPIX",
+        "2MP",
+        "ELP-IP1881",
+        "ELP-IP6200DB",
+        "mini",
+        "ONVIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp"
+    },
+    {
+      "models": [
+        "6100",
+        "IP3120HR-POE",
+        "IP4100VR",
+        "onvif",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "720P Mini",
+        "ELP-IP1881",
+        "ELP-IP3100HR",
+        "ELP-IP3100HRnc",
+        "IP1818",
+        "IP1881",
+        "IP200W",
+        "IP4100VR",
+        "ONVIF 1280X768",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "ELP-IP1881"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "ELP-USBBFHD01M"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/pull"
+    },
+    {
+      "models": [
+        "IP1892"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "IP500W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    }
+  ]
+}

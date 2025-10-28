@@ -1,0 +1,19 @@
+{
+  "brand": "Cynics",
+  "brand_id": "cynics",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3335",
+        "CNC-3332",
+        "CNC-3812"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    }
+  ]
+}

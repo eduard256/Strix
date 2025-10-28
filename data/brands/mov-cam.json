@@ -1,0 +1,17 @@
+{
+  "brand": "Mov Cam",
+  "brand_id": "mov-cam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LINKSYS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    }
+  ]
+}

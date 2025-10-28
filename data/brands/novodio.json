@@ -1,0 +1,17 @@
+{
+  "brand": "Novodio",
+  "brand_id": "novodio",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "smartCam HD+"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

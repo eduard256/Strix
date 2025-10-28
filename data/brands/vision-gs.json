@@ -1,0 +1,17 @@
+{
+  "brand": "Vision Gs",
+  "brand_id": "vision-gs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/pull-[CHANNEL]"
+    }
+  ]
+}

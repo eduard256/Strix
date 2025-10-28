@@ -1,0 +1,111 @@
+{
+  "brand": "Ernitec",
+  "brand_id": "ernitec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Hawk",
+        "Mercury",
+        "Mercury 205",
+        "Orion",
+        "Other",
+        "Other-2",
+        "Vega",
+        "Vega 102"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "HAWK",
+        "Mercury SX301IR",
+        "SX302IR",
+        "sx402m"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi?"
+    },
+    {
+      "models": [
+        "Maskinrom",
+        "Other",
+        "SX302IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "OTHER-2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "SX302IR",
+        "SX802OPH"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "SX302IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264_2"
+    },
+    {
+      "models": [
+        "SX302IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264_3"
+    },
+    {
+      "models": [
+        "SX302IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264_4"
+    },
+    {
+      "models": [
+        "SX302IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "SX302IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "jpeg"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Cv-b13b10-odi",
+  "brand_id": "cv-b13b10-odi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Bullet Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "BULLET CAMERA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Prada",
+  "brand_id": "prada",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PC-NVD-325R"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    }
+  ]
+}

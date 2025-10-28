@@ -1,0 +1,18 @@
+{
+  "brand": "Inaxsys",
+  "brand_id": "inaxsys",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IN-BO2MIR22A",
+        "IN-DO4M36A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    }
+  ]
+}

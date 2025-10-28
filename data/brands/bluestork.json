@@ -1,0 +1,121 @@
+{
+  "brand": "Bluestork",
+  "brand_id": "bluestork",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "aman",
+        "BS-IPCAM/W2",
+        "BS-IPCAM-W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "BLUEPIX IPCAM",
+        "BS-IPCAM-W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "BLUEPIX IPCAM-IP02",
+        "BS-CAM/DOME/HD",
+        "BS-CAM-OF/HD",
+        "BS-IPCAM/W2",
+        "Cam-R HD",
+        "CloudCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1.3gp"
+    },
+    {
+      "models": [
+        "BS-HOME-CAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 65432,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "BS-IPCAM/TP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BS-IPCAM/TP",
+        "BS-IPCAM-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BS-IPCAM/W2",
+        "BS-IPCAM-W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "BS-IPCAM-W",
+        "Other",
+        "Portail"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "fghgh"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "TP81C2300195"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    }
+  ]
+}

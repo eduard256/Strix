@@ -1,0 +1,65 @@
+{
+  "brand": "Avidsen",
+  "brand_id": "avidsen",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "123281",
+        "123282",
+        "123283",
+        "123284",
+        "123287",
+        "123288",
+        "123288 GVM",
+        "123381232",
+        "123382",
+        "123981",
+        "123982",
+        "720",
+        "IPC282-Miw",
+        "IPC380-i",
+        "ipc382",
+        "Other",
+        "visia",
+        "VISIA 123287",
+        "Visia 123288"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "123281",
+        "123282",
+        "123287",
+        "123288",
+        "123382",
+        "IPC281",
+        "IPC281-Ex",
+        "IPC382-i",
+        "IPC382-i 123382 V1",
+        "Other",
+        "visia",
+        "visia 8"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "123281",
+        "123380"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12nese-camera-teardown1"
+    }
+  ]
+}

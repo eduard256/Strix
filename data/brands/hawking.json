@@ -1,0 +1,121 @@
+{
+  "brand": "Hawking",
+  "brand_id": "hawking",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "310",
+        "HNC310",
+        "Tech HNC300 Series",
+        "Tech HNC320 Series",
+        "TVP110"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "IMAGE.JPG"
+    },
+    {
+      "models": [
+        "HNC3W",
+        "HNC5W",
+        "HNC720G",
+        "JNC3W",
+        "Other",
+        "Tech HNC300 Series",
+        "Tech HNC320 Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "HNC-700PT",
+        "HNC720G",
+        "hnc800ptz",
+        "HNC-820G",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "HNC720G",
+        "Other",
+        "Tech HNC720G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "TECH HNC290",
+        "Tech HNC290G",
+        "TECH HNC300 SERIES",
+        "TECH HNC320 SERIES",
+        "TECH HNC720G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "loginfree.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "Tech HNC290"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "Tech HNC290"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "Tech HNC320 Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Tech NC200 Series",
+        "Tech NC220 Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    }
+  ]
+}

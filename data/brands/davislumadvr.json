@@ -1,0 +1,17 @@
+{
+  "brand": "Davislumadvr",
+  "brand_id": "davislumadvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LUM-500-DVR-16CH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/902"
+    }
+  ]
+}

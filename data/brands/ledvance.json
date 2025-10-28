@@ -1,0 +1,18 @@
+{
+  "brand": "Ledvance",
+  "brand_id": "ledvance",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SMART+ Wifi Wall Camera Control",
+        "wifi smart +"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

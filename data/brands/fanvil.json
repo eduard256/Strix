@@ -1,0 +1,79 @@
+{
+  "brand": "Fanvil",
+  "brand_id": "fanvil",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "i10v",
+        "i31S",
+        "i62",
+        "i63",
+        "i64"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream.live0"
+    },
+    {
+      "models": [
+        "i10v",
+        "i62",
+        "i63"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream.live1"
+    },
+    {
+      "models": [
+        "i16V",
+        "i30",
+        "i32V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "i18s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "i30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "i30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=1.sdp?real_stream"
+    },
+    {
+      "models": [
+        "i32V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=2.sdp?real_stream"
+    }
+  ]
+}

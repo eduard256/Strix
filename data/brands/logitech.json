@@ -1,0 +1,477 @@
+{
+  "brand": "Logitech",
+  "brand_id": "logitech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3D printer camera",
+        "9000",
+        "c270",
+        "c310",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "5050",
+        "c270",
+        "C310",
+        "C615",
+        "MCC950",
+        "Other",
+        "Quick Cam for notebooks",
+        "QuickCam E3500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "510",
+        "7000",
+        "922 Pro Stream",
+        "C170",
+        "c270",
+        "c505",
+        "C615",
+        "C920e",
+        "C9230C",
+        "hd720p",
+        "Webcam 120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "525"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "525",
+        "720p",
+        "C170",
+        "c270",
+        "c310",
+        "HD Pro Webcam C900",
+        "Other",
+        "Quickcam Pro 4000",
+        "WEBCAM PRO 9000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "700",
+        "700e",
+        "700i",
+        "700i700i",
+        "700n",
+        "720p",
+        "750",
+        "750E",
+        "750i",
+        "Alert",
+        "ALERT",
+        "Alert 750e",
+        "Alert 750i",
+        "Alert Other",
+        "e750",
+        "logitech alert",
+        "Other",
+        "Webcam C920"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "HighResolutionVideo"
+    },
+    {
+      "models": [
+        "700",
+        "700e",
+        "750E",
+        "750i",
+        "Alert",
+        "ALERT 700i",
+        "Alert 750e",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "700N",
+        "9000",
+        "c270",
+        "C615",
+        "C920",
+        "orbit",
+        "Other",
+        "PRO 4000",
+        "Webcam Pro 9000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    },
+    {
+      "models": [
+        "720p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 83,
+      "url": "/?camid=2"
+    },
+    {
+      "models": [
+        "9000",
+        "930L",
+        "931L",
+        "932l",
+        "c270",
+        "C933-L",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Image.jpg"
+    },
+    {
+      "models": [
+        "922 PRO STRE922AM",
+        "922pro",
+        "c390",
+        "C615",
+        "Quickcam E2500",
+        "V - UBC40",
+        "Webcam C920"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "930L",
+        "936L",
+        "DCS-5029L",
+        "dcs800",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "936L",
+        "C933-L",
+        "v-u0016"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "936L",
+        "Other",
+        "WVC54GCA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "Alert",
+        "c270",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Brio",
+        "Webcam C920"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/HighResolutionVideo"
+    },
+    {
+      "models": [
+        "C170",
+        "C925e"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "c270"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "C270"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/webcam/?action=stream"
+    },
+    {
+      "models": [
+        "C300h"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/pull"
+    },
+    {
+      "models": [
+        "C310"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jstream.cgi?chid=[CHANNEL]&cnt=0"
+    },
+    {
+      "models": [
+        "c316",
+        "Webcam C920"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C550",
+        "csx1100",
+        "Other",
+        "QUICKCAM PRO 4000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "C615",
+        "C920",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "C920"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "C920"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C920",
+        "Other",
+        "QUICKCAM PRO 4000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cam_1.jpg"
+    },
+    {
+      "models": [
+        "C920",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "csx1100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "LAN-NCW150/S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NCW150/S",
+        "Other",
+        "PLC-128PW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "orbit",
+        "Other",
+        "WEBCAM PRO 9000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nphMotionJpeg?Resolution=320x240&Quality=Motion"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "WVC54GCA"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "P6000LH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/flv.cgi"
+    },
+    {
+      "models": [
+        "quickcam zoom white",
+        "Webcam Pro 9000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Webcam C920"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?camid=1"
+    },
+    {
+      "models": [
+        "WEBCAM PRO 9000"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

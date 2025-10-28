@@ -1,0 +1,17 @@
+{
+  "brand": "Aircamubnt",
+  "brand_id": "aircamubnt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "UBIQUITY"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    }
+  ]
+}

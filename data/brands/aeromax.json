@@ -1,0 +1,34 @@
+{
+  "brand": "Aeromax",
+  "brand_id": "aeromax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "aeromaxnl621e",
+        "N621e",
+        "NL621E",
+        "NLE621E",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/admin/snapshot.cgi"
+    },
+    {
+      "models": [
+        "n621-e",
+        "N621e",
+        "NL",
+        "NL621E",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    }
+  ]
+}

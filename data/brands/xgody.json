@@ -1,0 +1,18 @@
+{
+  "brand": "Xgody",
+  "brand_id": "xgody",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "QX59",
+        "y4a-za"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "brand": "Cacagoo",
+  "brand_id": "cacagoo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "288ZD-2MP",
+        "IPCAM-100",
+        "MSC316DM-V02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Other",
+        "XY-R9820-F4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

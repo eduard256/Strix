@@ -1,0 +1,99 @@
+{
+  "brand": "Aote",
+  "brand_id": "aote",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "1012",
+        "Josh",
+        "Other",
+        "S898bvE",
+        "W1012vG-B-POE",
+        "W5999bG",
+        "W5999W-B",
+        "W5999W-POE",
+        "W6409G",
+        "W6409G-B",
+        "W898bG-B",
+        "W898bG-B-POE",
+        "W898bvG-B-POE",
+        "W898G 5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "Other",
+        "W3200",
+        "W889G-B"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "W514vG-B",
+        "W5889G-B",
+        "W898bvG-B-POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "TEK 1.0MP/1.0 Megapixel HD 1280X720P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "W898bvG-B-POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "W898bvG-B-POE"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    }
+  ]
+}

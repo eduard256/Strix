@@ -1,0 +1,17 @@
+{
+  "brand": "Mytech",
+  "brand_id": "mytech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam2/mpeg4"
+    }
+  ]
+}

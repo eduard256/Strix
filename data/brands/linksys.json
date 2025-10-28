@@ -1,0 +1,422 @@
+{
+  "brand": "Linksys",
+  "brand_id": "linksys",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "54G",
+        "54GCA",
+        "Other",
+        "PTZ",
+        "PVC2003",
+        "W54GC",
+        "WVC200",
+        "WVC210",
+        "WVC2300",
+        "WVC54GC",
+        "WVC54GCA",
+        "WVC80N",
+        "wvn80"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "54G",
+        "54GCA",
+        "Down",
+        "EVC54GCA",
+        "ILLO AIRE",
+        "OC810",
+        "Other",
+        "PVC2003",
+        "pvc2300",
+        "W54G",
+        "W54GC",
+        "wcv",
+        "WCV200",
+        "WSC 80N",
+        "WV210",
+        "wvc",
+        "WVC Series",
+        "WVC SERIES",
+        "WVC11b",
+        "WVC200",
+        "WVC210",
+        "WVC2300",
+        "WVC54G",
+        "WVC54GC",
+        "WVC54GCA",
+        "WVC54GCAmgp",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "920",
+        "932L",
+        "Other",
+        "WVC200",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "MJPEG.CGI"
+    },
+    {
+      "models": [
+        "anc 808v",
+        "anc 80v",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "lca",
+        "LCAB03VLNOD",
+        "LCAD03FLN",
+        "LCAD03VLNOD",
+        "LCAM0336OD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LCAB03VLNNOD",
+        "LCAB03VLNOD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "LCAB03VLNOD",
+        "LCAD03FLN",
+        "LCAD03VLNOD",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel2"
+    },
+    {
+      "models": [
+        "LCAB03VLNOD",
+        "LCAD03FLN",
+        "LCAD03VLNOD",
+        "LCAM0336OD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/video2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "pvc2300",
+        "WVC Series",
+        "WVC200",
+        "WVC210",
+        "WVC2300",
+        "wvc54gca",
+        "WVC54GCA",
+        "wvc64n",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "Other",
+        "pvc2300",
+        "WCV200",
+        "WCV80N",
+        "WSC 80N",
+        "WVC200",
+        "WVC54GC",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "W54G",
+        "wc210",
+        "WCV200",
+        "WVC",
+        "WVC SERIES",
+        "WVC200",
+        "WVC210",
+        "WVC54GC",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "PVC2300",
+        "W54G",
+        "WVC SERIES",
+        "WVC200",
+        "WVC210",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "WCV80N",
+        "Wireless-G",
+        "WPC200",
+        "WVC200",
+        "WVC210",
+        "WVC54G",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "WCV80N",
+        "WVC Series",
+        "WVC210",
+        "WVC54GA",
+        "wvc54gca",
+        "WVC54GCA",
+        "WVC80N",
+        "WVCS4GCA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "PVC2003",
+        "pvc2300",
+        "WVC200",
+        "WVC210",
+        "WVC54GC",
+        "WVC54GCA",
+        "wvc80",
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "pvc2300"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "PVC2300",
+        "WSC 80N",
+        "WVC210",
+        "WVC2300",
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "SC3130",
+        "WVC Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "W54G"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "WVC200",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "WVC200",
+        "WVC54GC",
+        "WVC54GCA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "WVC200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "WVC54G",
+        "WVC54GC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "WVC54GC",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "WVC54GCA",
+        "WVC80N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "WVC80N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

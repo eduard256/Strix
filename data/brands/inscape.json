@@ -1,0 +1,35 @@
+{
+  "brand": "Inscape",
+  "brand_id": "inscape",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Data NVC910H"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg.jpg"
+    },
+    {
+      "models": [
+        "Data NVC910H"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg1.jpg"
+    },
+    {
+      "models": [
+        "Data NVC910H"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg2.jpg"
+    }
+  ]
+}

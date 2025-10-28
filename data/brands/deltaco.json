@@ -1,0 +1,28 @@
+{
+  "brand": "Deltaco",
+  "brand_id": "deltaco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Outdoor Smart Home Camera",
+        "SH-IPC06",
+        "SH-IPC07"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "SH-IPC06"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    }
+  ]
+}

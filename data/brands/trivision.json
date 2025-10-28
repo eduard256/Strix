@@ -1,0 +1,229 @@
+{
+  "brand": "Trivision",
+  "brand_id": "trivision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "335PW",
+        "336PW",
+        "NC 335PW",
+        "NC-217WF",
+        "NC-240WF-HD-1080P",
+        "NC-316W",
+        "NC-326PW",
+        "NC-326W",
+        "nc-335",
+        "nc-335w",
+        "NC-336PW",
+        "NC-336PW-HD-1080P",
+        "NC-336W",
+        "NC-336W HD",
+        "NC-336W-HD-1080P",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "335PW",
+        "338wp-1080",
+        "cc 335pw",
+        "nc 335PW",
+        "NC-239WF",
+        "NC-240WF",
+        "NC-240WF-HD-1080P",
+        "nc-250hd 1080p",
+        "NC-250PW-HD 1080P",
+        "NC-250WP HD 1080P",
+        "NC-316PW",
+        "NC-316W",
+        "NC-335pw",
+        "NC-335PW-HD-1080P",
+        "nc336",
+        "NC-336PW-HD-1080P",
+        "NC-336PW-HD-1080P SBR",
+        "nc336w",
+        "NC-336W-HD-1080P",
+        "ntro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/onvif.sdp"
+    },
+    {
+      "models": [
+        "335PW",
+        "MFC-228WF",
+        "MFC-229WF",
+        "nc 3333pw",
+        "NC-107W",
+        "nc-227wf-hd-720p",
+        "NC-240WF",
+        "NC-306W",
+        "NC-307W",
+        "NC-335PW",
+        "NC-335PW-HD-1080P",
+        "NC-336PW",
+        "NC-336PW-HD-1080P",
+        "NC-336W-HD-1080P",
+        "NC-360PW",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.jpg"
+    },
+    {
+      "models": [
+        "nc 3333pw",
+        "nc 333pw",
+        "nc 33pw",
+        "NC-240WF-HD-1080P",
+        "NC-326G",
+        "NC-326PW",
+        "NC-326W",
+        "nc330pw",
+        "nc-335pw",
+        "NC-335PW-HD-1080P",
+        "NC-336P",
+        "NC-336PW",
+        "NC-336PW HD1080",
+        "NC-336PW-HD-1080P",
+        "NC-350PW HD 1080",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC-107W",
+        "NC-336PW-HD-1080P",
+        "NC-336W-HD-1080P"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.av"
+    },
+    {
+      "models": [
+        "NC-230WF",
+        "NC-335PW-HD-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "NC-335PW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC-335PW-HD-10"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC-335PW-HD-1080P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/live/1/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "NC-335PW-HD-1080P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/live/0/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "NC-335PW-HD-1080P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/stream.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "TV-IP110WN"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "TRI-VID23"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "TV-IP302PI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch1/stream0"
+    },
+    {
+      "models": [
+        "TV-IP302PI"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "TV-TY 308-2mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    }
+  ]
+}

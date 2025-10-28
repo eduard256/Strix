@@ -1,0 +1,17 @@
+{
+  "brand": "Netvue",
+  "brand_id": "netvue",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Vigil"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

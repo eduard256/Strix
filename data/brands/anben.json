@@ -1,0 +1,17 @@
+{
+  "brand": "Anben",
+  "brand_id": "anben",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BPI205-2H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.264"
+    }
+  ]
+}

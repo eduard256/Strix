@@ -1,0 +1,17 @@
+{
+  "brand": "Intellsec",
+  "brand_id": "intellsec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "7Inch 20X"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    }
+  ]
+}

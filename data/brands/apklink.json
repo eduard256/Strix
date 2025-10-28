@@ -1,0 +1,141 @@
+{
+  "brand": "Apklink",
+  "brand_id": "apklink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "37738236",
+        "7838",
+        "Atendimento",
+        "AVACom",
+        "BT464",
+        "C7812WIP",
+        "C7815WIP",
+        "C7837WIP",
+        "C7838WIP",
+        "easycam",
+        "ESCAM QF100",
+        "HI3518E",
+        "In1",
+        "IP-1",
+        "JK-C7823W",
+        "Other",
+        "PT 737",
+        "QF100",
+        "QF300",
+        "SP-TM01EWP",
+        "StarBase",
+        "StarCam",
+        "SUNLUXY",
+        "T7838WIP",
+        "Vstarcam",
+        "Vstarcam C7815IP",
+        "WP-711",
+        "wp-717"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "C7637WIP",
+        "Camspot 3.1",
+        "H264_HOMENET_CAM",
+        "jth1",
+        "SUNLUXY_MTS",
+        "VstarCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/udp/av0_0"
+    },
+    {
+      "models": [
+        "C7812WIP",
+        "EASYCAM",
+        "ESCAM",
+        "ESCAM QF100",
+        "VSTARCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "C7835WIP",
+        "C7837WIP",
+        "C7838WIP",
+        "Camspot 3.1",
+        "E6813",
+        "ESCAM",
+        "Other",
+        "QF100",
+        "vstarcam c7837wip",
+        "wintech"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/tcp/av0_1"
+    },
+    {
+      "models": [
+        "EASYCAM",
+        "WINTECH"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "ESCAM QF100",
+        "STARCAM",
+        "VSTARCAM",
+        "VSTARCAM C7815IP",
+        "VSTARCAM C7816IP",
+        "VSTARCAM C7837WIP",
+        "VSTJ513084CSLEY"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "VSTARCAM C7837WIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "VSTARCAM C7837WIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

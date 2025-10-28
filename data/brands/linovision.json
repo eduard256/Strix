@@ -1,0 +1,19 @@
+{
+  "brand": "Linovision",
+  "brand_id": "linovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC422UW-10",
+        "IPC608UW-10",
+        "V7163F-EPT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

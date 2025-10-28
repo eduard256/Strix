@@ -1,0 +1,17 @@
+{
+  "brand": "Produttore Ignoto #!",
+  "brand_id": "produttore-ignoto-%23!",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Wireless interno"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    }
+  ]
+}

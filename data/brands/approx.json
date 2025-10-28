@@ -1,0 +1,124 @@
+{
+  "brand": "Approx",
+  "brand_id": "approx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "APPi",
+        "APPIP002",
+        "APPIP01W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APPI01P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "APPI01P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "APPI01P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "APPI01P2P",
+        "APPIP02P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "APPIP002",
+        "APPIP01WV4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "APPIP002",
+        "ip002"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    },
+    {
+      "models": [
+        "appIP01P2P",
+        "APPIP01WV4",
+        "APPIP03P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "appIP01P2P",
+        "VSTB224232GDWGU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APPIP02P2P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10552,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "APPIP400HDPRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "LC-7226"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms"
+    }
+  ]
+}

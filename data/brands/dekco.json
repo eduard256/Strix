@@ -1,0 +1,53 @@
+{
+  "brand": "Dekco",
+  "brand_id": "dekco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2K PTZ IP",
+        "DC2L-2P",
+        "DC4L",
+        "DC5E",
+        "dc5l",
+        "DC5P",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "dc4l",
+        "DC5L",
+        "P2 DC5L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "DC4L",
+        "DC8E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "DC9P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    }
+  ]
+}

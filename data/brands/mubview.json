@@ -1,0 +1,17 @@
+{
+  "brand": "Mubview",
+  "brand_id": "mubview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PK320 2k"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

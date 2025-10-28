@@ -1,0 +1,18 @@
+{
+  "brand": "Uhi",
+  "brand_id": "uhi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "755",
+        "755R"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

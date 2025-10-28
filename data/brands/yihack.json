@@ -1,0 +1,18 @@
+{
+  "brand": "Yihack",
+  "brand_id": "yihack",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dome",
+        "OutdoorHome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

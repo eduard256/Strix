@@ -1,0 +1,63 @@
+{
+  "brand": "Hdipc",
+  "brand_id": "hdipc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2MPPTZ",
+        "786",
+        "8300-imx122",
+        "9999",
+        "B01POE",
+        "Bullet",
+        "domecam",
+        "ext-mob",
+        "h.265",
+        "hall",
+        "JIVISION",
+        "lato 1",
+        "Other",
+        "outcam",
+        "QD4000",
+        "s6203y",
+        "Side",
+        "SouthDoor",
+        "SV-B01POE",
+        "sv-b01poe-1080",
+        "SV-B01POE-1080P",
+        "svbc",
+        "SVC3 1080p",
+        "TWC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "2MPPTZ",
+        "4sdot",
+        "720HD",
+        "ANT",
+        "h.264",
+        "Hall 640",
+        "IPC",
+        "IPC 720 HD",
+        "Other",
+        "outcam1",
+        "PR115",
+        "QD400",
+        "RTT-5300",
+        "SV-BIIVPOE",
+        "WiFi Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    }
+  ]
+}

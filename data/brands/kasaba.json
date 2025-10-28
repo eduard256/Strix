@@ -1,0 +1,17 @@
+{
+  "brand": "Kasaba",
+  "brand_id": "kasaba",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TRX-20WiFi-PL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

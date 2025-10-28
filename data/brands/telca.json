@@ -1,0 +1,28 @@
+{
+  "brand": "Telca",
+  "brand_id": "telca",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TC-9751",
+        "TC-9852"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi"
+    },
+    {
+      "models": [
+        "TC-9751",
+        "TC-9852"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion"
+    }
+  ]
+}

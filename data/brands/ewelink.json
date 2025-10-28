@@ -1,0 +1,17 @@
+{
+  "brand": "Ewelink",
+  "brand_id": "ewelink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch0"
+    }
+  ]
+}

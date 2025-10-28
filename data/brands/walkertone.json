@@ -1,0 +1,46 @@
+{
+  "brand": "Walkertone",
+  "brand_id": "walkertone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3260",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/888888:888888/main"
+    },
+    {
+      "models": [
+        "HI-3512"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/888888:888888/sub"
+    },
+    {
+      "models": [
+        "HI-3512"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "WT-1536E",
+        "WT-1536M"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    }
+  ]
+}

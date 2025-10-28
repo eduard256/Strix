@@ -1,0 +1,17 @@
+{
+  "brand": "Jatech",
+  "brand_id": "jatech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPD-E2B5Y18"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam4/mpeg4"
+    }
+  ]
+}

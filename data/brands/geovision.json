@@ -1,0 +1,830 @@
+{
+  "brand": "Geovision",
+  "brand_id": "geovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1",
+        "2100",
+        "3402",
+        "8711",
+        "ABD1300",
+        "ABL2703",
+        "adb1300",
+        "ADR1300",
+        "ASSEMBLY",
+        "BL110",
+        "Bl2501",
+        "BL320",
+        "bx110d",
+        "BX2700",
+        "BX-4700",
+        "CB120",
+        "Cube220",
+        "domo",
+        "EBD2702",
+        "EBD4711",
+        "EBL 1100 2F",
+        "EBL 2100",
+        "EBL 2100E",
+        "EBL1100",
+        "edr2100",
+        "EDR-2100",
+        "FE520",
+        "Fisheye 3mp",
+        "GV CB220",
+        "GV EBX1100",
+        "GV_FD2400",
+        "GV2500",
+        "GV600",
+        "GV-ADR2701",
+        "GV-BL-1501",
+        "GV-BL220",
+        "GV-BX2400",
+        "GV-BX520D",
+        "GV-CB120",
+        "GV-DVR",
+        "GV-EBD4700",
+        "GV-EBD4711",
+        "GV-EBL 1100",
+        "GV-EDR1100",
+        "GV-EDR2100",
+        "GV-EDR2700",
+        "GV-EDR-4700",
+        "gv-efd2101",
+        "GV-EFER3700",
+        "GV-EVD2100",
+        "GV-FER3402",
+        "GV-FX120D",
+        "GV-MDF120",
+        "GV-MDF130",
+        "GV-MDR120",
+        "GV-MFD130",
+        "gv-mfd2700",
+        "gv-mfd520",
+        "GV-PPTZ7300-SD",
+        "GV-TDR2700",
+        "GV-TDR2704-2F",
+        "GV-tdr4700",
+        "GV-VD2530",
+        "GV-VD2540",
+        "GV-VD2712",
+        "GV-VD3400",
+        "GV-VD5340",
+        "gv-vs2800",
+        "HCW-120",
+        "MFD120",
+        "neye",
+        "Other",
+        "s200-s",
+        "SD2322",
+        "SNVR 1600",
+        "TDR2704-2F",
+        "use",
+        "VD-2712"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/CH002.sdp"
+    },
+    {
+      "models": [
+        "1.3 MP",
+        "1220",
+        "1224",
+        "1501",
+        "2211",
+        "2401",
+        "360_Fish",
+        "6.0",
+        "ABL2703",
+        "Assembly",
+        "BL110",
+        "BL1100",
+        "BL1300",
+        "BL-2400",
+        "bl2410",
+        "bl2501",
+        "BL-5310",
+        "Box Camear",
+        "BX120",
+        "bx130d",
+        "BX-4700",
+        "BX520D",
+        "BX5300",
+        "cam 201",
+        "cam 202",
+        "caw120",
+        "cb 220",
+        "CB120",
+        "CB220",
+        "CBW220",
+        "Cube",
+        "DOMO",
+        "DS-2CD2432F",
+        "DS-2CD63C2F-IVS",
+        "ebd-4711",
+        "EBD4711",
+        "EBL 1100 2F",
+        "EBL 2100",
+        "EBL1100",
+        "EBL-1100 2F",
+        "EBL1100F",
+        "EBX1100",
+        "EBX2100",
+        "EDF1100",
+        "edr2001-of",
+        "EDR2100-0F",
+        "EFD1100",
+        "EFER3700",
+        "EVD3100",
+        "FD120",
+        "FD-2500",
+        "FER521",
+        "FER5701",
+        "ffi",
+        "fish",
+        "fisheye",
+        "Geo120D",
+        "GeoBX1300",
+        "GV Camera",
+        "gv cb220",
+        "GV EBX1100",
+        "GV FE",
+        "GV_CB220",
+        "GV=EBL 1100-1f",
+        "gv-1100-2f",
+        "gv-1300",
+        "GV1500",
+        "gv220",
+        "GV2500",
+        "GV320",
+        "GV-ABL2701",
+        "GV-ADR2701",
+        "GV-BL1200",
+        "GV-BL120D",
+        "GV-BL130D",
+        "gv-bl1500",
+        "GV-BL-1500",
+        "GV-BL3400",
+        "GV-BL3410",
+        "GV-BL5311",
+        "GV-BX110",
+        "GV-BX130D",
+        "GV-BX1500",
+        "GV-BX2400",
+        "gv-bx2500",
+        "GV-BX320D",
+        "GV-BX-3400",
+        "GV-BX520D",
+        "GV-CA220",
+        "GV-CAW220",
+        "GV-CW220",
+        "GV-EBD4700",
+        "GVEBL1100F",
+        "GV-EBL2100",
+        "GV-EBL2100-2F",
+        "GV-EBL2101",
+        "GV-EBL2702",
+        "GV-EDR1100",
+        "GV-EDR1100-0f",
+        "GV-EDR2100",
+        "GV-EDR2100-0f",
+        "GV-EDR2700",
+        "GV-EDR-4700",
+        "GV-EFD1100",
+        "GV-EFD1100-0f",
+        "GV-EFD2100",
+        "GV-EFD2700-2F",
+        "gv-EFD4700",
+        "GV-EFD4700-0F",
+        "GV-EFER3700",
+        "GV-EFR3700",
+        "GV-EVD2100",
+        "GV-EVD3100",
+        "GV-EVD5100",
+        "GV-EVD5700",
+        "GV-FD1200",
+        "GV-FD120D",
+        "GV-FD1500",
+        "GV-FD2200",
+        "GV-FD-220D",
+        "GV-FD2410",
+        "GV-FE2301",
+        "GV-FE3402",
+        "GV-FE520",
+        "GV-FER3402",
+        "GV-FER521",
+        "GV-FER5303",
+        "GV-FER5701",
+        "GV-GA220",
+        "GV-IPCAM",
+        "GV-LPC2011",
+        "GV-LPR1200",
+        "GV-MDF130",
+        "GV-MDR220",
+        "GV-MDR320",
+        "GV-MDR530",
+        "GV-MFD110",
+        "GV-MFD130",
+        "GV-MFD1501",
+        "GV-MFD320",
+        "GV-MFP1501",
+        "GV-SD220",
+        "GV-TBL4810",
+        "GV-TDR2700",
+        "GV-UBL1211",
+        "GV-UBL3401",
+        "GV-UBX1301",
+        "GV-UNP2500",
+        "GV-VCBW-1201",
+        "GV-VD120",
+        "GV-VD120D",
+        "GV-VD1540",
+        "GV-VD2530",
+        "GV-VD4711",
+        "GV-VD5340",
+        "GV-VD5700",
+        "h234",
+        "HCW-120",
+        "Hilera",
+        "Lager",
+        "LPR",
+        "mfd120",
+        "mfd2401",
+        "nl test s220",
+        "normal",
+        "Other",
+        "Part",
+        "Server",
+        "stair",
+        "TVD4710",
+        "UBL1211",
+        "UBX1320",
+        "Upstairs",
+        "VD1500",
+        "Video Server",
+        "VS2400",
+        "way"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH001.sdp"
+    },
+    {
+      "models": [
+        "1.3 MP",
+        "adb1300",
+        "ADR1300",
+        "BL4713",
+        "ebd8711",
+        "EBX1100",
+        "EDR-2100-0F",
+        "gv CAMERA",
+        "GV_CB220",
+        "GV-ABL4703",
+        "GV-ADR2702",
+        "GV-BL-1500",
+        "GV-BL-1501",
+        "GV-BL320D",
+        "gv-bx1500",
+        "GV-EBL3101",
+        "gv-efd2101",
+        "GV-EFD2700",
+        "GV-EFD2700-2F",
+        "gv-fd2400",
+        "GV-FD2410",
+        "GV-SD220",
+        "GVTBL",
+        "GV-VD120D",
+        "GV-VD220",
+        "HCW-120",
+        "MSJ10",
+        "Other",
+        "PT220",
+        "SD2301",
+        "vd320",
+        "vd-mdr220",
+        "VIDEO SERVER"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "19803p",
+        "19804P",
+        "3402",
+        "3600",
+        "3601",
+        "bx2400",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "2008R"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/mjpeg?cam=[USERNAME]&IDKey=cfaa5afa-fc84-4c29-bafd-6fa43ef1cd58&time=674724540681"
+    },
+    {
+      "models": [
+        "200s",
+        "GV-SD220",
+        "s200-s"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "250`",
+        "BX1111",
+        "GV-BX110D",
+        "GV-EBD4711",
+        "GV-EFD1100",
+        "GV-FD5300",
+        "GV-FE420",
+        "GV-MFD120",
+        "GV-MFD1501",
+        "GV-MFD220",
+        "GV-MFD3401"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "3600"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "6.0",
+        "7.02",
+        "GV-DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cam[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "6.0",
+        "7.02",
+        "8.X",
+        "ebd4700",
+        "GV Camera",
+        "gv600",
+        "GV-DVR",
+        "GV-FD120D",
+        "GV-Hybrid LPR 10R",
+        "Other",
+        "SERVER"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "CH00[CHANNEL].sdp"
+    },
+    {
+      "models": [
+        "8.x",
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[USERNAME]/cam[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "8.X",
+        "GV Camera",
+        "gv600",
+        "Other",
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetImage.cgi"
+    },
+    {
+      "models": [
+        "8.X",
+        "GV Camera",
+        "GV-1480",
+        "gv600",
+        "GV-DVR",
+        "Other",
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/getimage"
+    },
+    {
+      "models": [
+        "ABD1300",
+        "adb1300",
+        "ADR1300",
+        "GV CAMERA",
+        "gv-4700",
+        "GV-AVD2700",
+        "GV-EBD4711",
+        "GVTBL",
+        "HCW-120",
+        "PT220",
+        "TVD4710"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video1"
+    },
+    {
+      "models": [
+        "ABD1300",
+        "gv cb220",
+        "GV-BL120D",
+        "HCW-120",
+        "Other",
+        "tbl"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/PSIA/Streaming/channels/1?videoCodecType=MPEG4"
+    },
+    {
+      "models": [
+        "ABD1300",
+        "adb1300",
+        "GV-ADR2701",
+        "GV-EBD2702",
+        "GV-TDR2700",
+        "HCW-120"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "ABD1300",
+        "GV-BL3700"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "BL2072"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "CBW220",
+        "EBL 2100",
+        "GV Camera",
+        "GV CAMERA",
+        "GV320",
+        "GV-ABL2701",
+        "GV-CB120",
+        "GV-EBL 1100",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/1?videoCodecType=MPEG4"
+    },
+    {
+      "models": [
+        "CSP"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "EBD4711",
+        "GV-BX2400",
+        "GV-EBD4711",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "ebd8800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media2/video2"
+    },
+    {
+      "models": [
+        "EDR2100-0F",
+        "GV-BL3411",
+        "GV-MFD1501",
+        "GVTBL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "GV Camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms.jpg"
+    },
+    {
+      "models": [
+        "gv cb220",
+        "GV-TR2700"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=8&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500263890"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=9&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500428125"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=10&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500492344"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=11&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500531652"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=12&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500570470"
+    },
+    {
+      "models": [
+        "GV-1120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=13&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500638126"
+    },
+    {
+      "models": [
+        "gv-650"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?cam=[USERNAME]&IDKey=cfaa5afa-fc84-4c29-bafd-6fa43ef1cd58&time=[PASSWORD]674724540681"
+    },
+    {
+      "models": [
+        "GV-ABL2701",
+        "GV-ABL2702",
+        "GV-PTZ5810-IR",
+        "PT220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "GV-ADR2702",
+        "GV-AVD4710",
+        "GV-EBD2704",
+        "HCW-120",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/CH000.sdp"
+    },
+    {
+      "models": [
+        "GV-CA120",
+        "GV-FE520",
+        "GV-VD5700"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "//CH001.sdp"
+    },
+    {
+      "models": [
+        "GV-CB120"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    },
+    {
+      "models": [
+        "GV-FD-220D"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "gv-vs2800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH010.sdp"
+    },
+    {
+      "models": [
+        "gv-vs2800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH014.sdp"
+    },
+    {
+      "models": [
+        "gv-vs2800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH012.sdp"
+    },
+    {
+      "models": [
+        "gv-vs2800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CH013.sdp"
+    },
+    {
+      "models": [
+        "HCW-120",
+        "YU6TTR6TRG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/Pinology101:has2bepuyyps/main"
+    },
+    {
+      "models": [
+        "HWK-2008-DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HWK-2008-DVR"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/1/image.jpg"
+    }
+  ]
+}

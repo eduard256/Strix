@@ -1,0 +1,17 @@
+{
+  "brand": "Limix",
+  "brand_id": "limix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LID-30"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "stream1"
+    }
+  ]
+}

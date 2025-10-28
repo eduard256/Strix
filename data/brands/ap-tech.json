@@ -1,0 +1,26 @@
+{
+  "brand": "Ap-tech",
+  "brand_id": "ap-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AP-D100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "AP-D100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    }
+  ]
+}

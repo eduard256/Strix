@@ -1,0 +1,117 @@
+{
+  "brand": "Appro",
+  "brand_id": "appro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "7228",
+        "DVR-3016",
+        "LC_7226",
+        "Other",
+        "VS Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms"
+    },
+    {
+      "models": [
+        "DVR-3016"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api.htm?op.liveimage=1"
+    },
+    {
+      "models": [
+        "LC_7226"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LC_7226",
+        "lc-7226",
+        "Other",
+        "VS Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "lc7211wb",
+        "lc-7226",
+        "LC-74xx",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LC-74xx"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/stream.cgi?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "brand": "Hipcam",
+  "brand_id": "hipcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "c6f0snz0n0pml2",
+        "C7815WIP",
+        "C9F0SeZ0N0P0L0",
+        "C9F0SEZ0N0P0L0",
+        "ckbridg",
+        "Hami",
+        "IP-CAMERA",
+        "Ital;y",
+        "Mexico Closet",
+        "Other",
+        "RGB",
+        "SCM-SW2666FD-3.6HD",
+        "shodan",
+        "sof4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P",
+        "C6F0SeZ0N0P3L0",
+        "C9F0SEZ0N0P0L0",
+        "Other",
+        "ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "2345",
+        "425",
+        "C6F0SEZ0N0P3L0",
+        "C7815WIP",
+        "C9F0SEZ0N0P0L0",
+        "FDT-FD7902",
+        "NCM620W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C7815WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "C7815WIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/udp/av0_0"
+    },
+    {
+      "models": [
+        "C7815WIP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "C9F0SEZ0N0P0L0",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CMT"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "NCM620W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Abron",
+  "brand_id": "abron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AB-IPR506NB-US"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsph2641080p"
+    }
+  ]
+}

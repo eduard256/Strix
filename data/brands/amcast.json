@@ -1,0 +1,17 @@
+{
+  "brand": "Amcast",
+  "brand_id": "amcast",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP4M-1041B (RTSP)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    }
+  ]
+}

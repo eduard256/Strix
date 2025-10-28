@@ -1,0 +1,17 @@
+{
+  "brand": "Actiontec",
+  "brand_id": "actiontec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "rc8021v"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    }
+  ]
+}

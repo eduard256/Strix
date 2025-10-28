@@ -1,0 +1,65 @@
+{
+  "brand": "Bullet",
+  "brand_id": "bullet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6113",
+        "720P",
+        "B200",
+        "DS-2CD1021G0-I",
+        "Hikvision",
+        "iDS-2cd7a46G0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C062105-IP5",
+        "DS-2CD1021G0",
+        "DS-2CD1021G0-I",
+        "DS-2CD1321G0-I",
+        "DS-2CD2043G2-IU",
+        "DS-2CD3047G2-LS",
+        "IPC-T221H-L",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    }
+  ]
+}

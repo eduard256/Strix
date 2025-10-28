@@ -1,0 +1,18 @@
+{
+  "brand": "Dgsol",
+  "brand_id": "dgsol",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dg-sc2100w",
+        "dg-sc2600"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    }
+  ]
+}

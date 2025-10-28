@@ -1,0 +1,80 @@
+{
+  "brand": "Videoteknika",
+  "brand_id": "videoteknika",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/401"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/601"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/Unicast/channels/501"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/702"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/202"
+    },
+    {
+      "models": [
+        "VN2008/8P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8002,
+      "url": "/Streaming/Unicast/channels/801"
+    }
+  ]
+}

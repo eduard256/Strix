@@ -1,0 +1,35 @@
+{
+  "brand": "Kmw",
+  "brand_id": "kmw",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SPES-01"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    },
+    {
+      "models": [
+        "SPES-01"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/second"
+    },
+    {
+      "models": [
+        "SPES-2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/second"
+    }
+  ]
+}

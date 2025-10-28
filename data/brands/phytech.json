@@ -1,0 +1,31 @@
+{
+  "brand": "Phytech",
+  "brand_id": "phytech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "PLC-128PW",
+        "PLC-129PW",
+        "PLC-325 PW",
+        "PLC-335PW",
+        "PLC-336PW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "plc-128w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/onvif.sdp"
+    }
+  ]
+}

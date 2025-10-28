@@ -1,0 +1,17 @@
+{
+  "brand": "Janex",
+  "brand_id": "janex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Introx"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/cif"
+    }
+  ]
+}

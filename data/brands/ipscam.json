@@ -1,0 +1,18 @@
+{
+  "brand": "Ipscam",
+  "brand_id": "ipscam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "925POE (RS7507)",
+        "IPS911"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

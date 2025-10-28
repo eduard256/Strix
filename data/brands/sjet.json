@@ -1,0 +1,17 @@
+{
+  "brand": "Sjet",
+  "brand_id": "sjet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "544545d"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ucast/12"
+    }
+  ]
+}

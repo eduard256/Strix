@@ -1,0 +1,148 @@
+{
+  "brand": "Hivision",
+  "brand_id": "hivision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5mp",
+        "CS-CV246-B0-1C1WFR",
+        "CS-CV246-B0-3B2WFR",
+        "CS-H6c-R101",
+        "DS-2CD2023G0E-I(B)",
+        "MCL12",
+        "miniPTZ",
+        "Other",
+        "THW-220H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "B120",
+        "DS-2CD2043G2 - IU20240527AAWRFE7553853",
+        "ds2cd2043g2-i",
+        "DS-2CD2720F-IZS",
+        "EZVIZ C6C",
+        "EZVIZ C6CN",
+        "IP-515 2.0MP",
+        "ir Network Camera",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "DS-2CD2143G0-I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "DS-2CD2720F-IZS",
+        "IPC-T250H-MU",
+        "IPC-T259H",
+        "Narrow",
+        "TVW-3101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "DS-2CD2T22WD-I320160307BBWR578427073",
+        "DS-P2420"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HV-3820",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HV-3820"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-T250H-M",
+        "l1200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1702"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1802"
+    },
+    {
+      "models": [
+        "V100R003"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    }
+  ]
+}

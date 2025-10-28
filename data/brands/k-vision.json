@@ -1,0 +1,17 @@
+{
+  "brand": "K-vision",
+  "brand_id": "k-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "K-D302MPOE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

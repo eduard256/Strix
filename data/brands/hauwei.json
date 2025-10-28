@@ -1,0 +1,17 @@
+{
+  "brand": "Hauwei",
+  "brand_id": "hauwei",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "U880"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

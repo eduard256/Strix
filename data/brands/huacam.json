@@ -1,0 +1,210 @@
+{
+  "brand": "Huacam",
+  "brand_id": "huacam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5150",
+        "701",
+        "712",
+        "720",
+        "721",
+        "bullet",
+        "Color CCD",
+        "Cyclops",
+        "diagen",
+        "Dome",
+        "FezDW",
+        "foo",
+        "h264",
+        "Hcv 724",
+        "hcv207",
+        "HCV701",
+        "HCV701264x",
+        "HCV712",
+        "HCV720",
+        "HCV724",
+        "HCV724-AL",
+        "HCV824",
+        "HCV824g",
+        "hcv901",
+        "High Res",
+        "hill",
+        "hooha",
+        "HPV701",
+        "Huacam2",
+        "mti1",
+        "noidea",
+        "onvif-vlc",
+        "Other",
+        "UpstairsDeck"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "5150",
+        "703",
+        "712",
+        "714",
+        "724",
+        "Cyclops",
+        "HCV701",
+        "HCV712",
+        "HCV724",
+        "High Res",
+        "hv724",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "7010"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "712",
+        "720",
+        "Color CCD",
+        "HCV701",
+        "HCV712",
+        "hcv724",
+        "HCV724",
+        "HCV725",
+        "HCV822",
+        "HCV824",
+        "Huacam2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/4"
+    },
+    {
+      "models": [
+        "712",
+        "H4RS-S",
+        "HCV701",
+        "HCV701-vlc",
+        "HCV712",
+        "HCV724",
+        "Other",
+        "vlc-me"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Cyclops",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "HCV701"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "HCV712",
+        "High Res"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/stream?cmd=get&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HCV712",
+        "HCV712w"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    },
+    {
+      "models": [
+        "HCV712"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "HCV712",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "HCV712",
+        "High Res"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "HCV720"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "sdp"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    }
+  ]
+}

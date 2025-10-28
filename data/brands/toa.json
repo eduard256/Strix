@@ -1,0 +1,19 @@
+{
+  "brand": "Toa",
+  "brand_id": "toa",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "n-c3120",
+        "n-c3220 3",
+        "n-c3820"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "getjpeg.cgi?[USERNAME]&ch[CHANNEL]"
+    }
+  ]
+}

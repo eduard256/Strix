@@ -1,0 +1,26 @@
+{
+  "brand": "Teckin",
+  "brand_id": "teckin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hvn tc800"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "TC100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video0_unicast"
+    }
+  ]
+}

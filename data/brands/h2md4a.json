@@ -1,0 +1,17 @@
+{
+  "brand": "H2md4a",
+  "brand_id": "h2md4a",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "tttt-203215-ucmrr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Bigfoot",
+  "brand_id": "bigfoot",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ICAMERA-1000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    }
+  ]
+}

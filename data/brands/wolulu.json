@@ -1,0 +1,17 @@
+{
+  "brand": "Wolulu",
+  "brand_id": "wolulu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AS-51227"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/h264"
+    }
+  ]
+}

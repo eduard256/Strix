@@ -1,0 +1,17 @@
+{
+  "brand": "Celestrom",
+  "brand_id": "celestrom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "live/ch00_0"
+    }
+  ]
+}

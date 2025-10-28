@@ -1,0 +1,21 @@
+{
+  "brand": "Clever Loop",
+  "brand_id": "clever-loop",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "251253-SLCPR",
+        "342405-JJWJS",
+        "457040-WXVZB",
+        "Other",
+        "X series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

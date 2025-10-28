@@ -1,0 +1,20 @@
+{
+  "brand": "Ansice",
+  "brand_id": "ansice",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DS-2CD3T20D-I3",
+        "H.264",
+        "IPC-NT98562_80N40_S38",
+        "MI-IP19"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live1.264"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Ipm-1z-20x-dn",
+  "brand_id": "ipm-1z-20x-dn",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "avantura"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

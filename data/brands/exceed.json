@@ -1,0 +1,17 @@
+{
+  "brand": "Exceed",
+  "brand_id": "exceed",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Ali"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    }
+  ]
+}

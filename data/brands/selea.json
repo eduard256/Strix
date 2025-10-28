@@ -1,0 +1,26 @@
+{
+  "brand": "Selea",
+  "brand_id": "selea",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "X-T850"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/p3.264"
+    },
+    {
+      "models": [
+        "X-T850"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/p3.mjpg"
+    }
+  ]
+}

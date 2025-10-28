@@ -1,0 +1,67 @@
+{
+  "brand": "Raster",
+  "brand_id": "raster",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4200",
+        "RS-SDI20420LP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "4200",
+        "ip-4200 df",
+        "ip-4200hi",
+        "RS-ip4200hi"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "media/media.amp"
+    },
+    {
+      "models": [
+        "4200",
+        "ip-4200df"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "ip-4200df"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "ip-4200hi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "RS-130SH3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

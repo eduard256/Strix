@@ -1,0 +1,17 @@
+{
+  "brand": "Cb-102ae",
+  "brand_id": "cb-102ae",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel1"
+    }
+  ]
+}

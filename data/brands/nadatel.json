@@ -1,0 +1,35 @@
+{
+  "brand": "Nadatel",
+  "brand_id": "nadatel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "camera 4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ip1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0/Channel=0;Profile=0"
+    },
+    {
+      "models": [
+        "IP1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    }
+  ]
+}

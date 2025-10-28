@@ -1,0 +1,18 @@
+{
+  "brand": "Eyewatch",
+  "brand_id": "eyewatch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "eyeFOUR",
+        "eyeFOUR iMX.6"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8111,
+      "url": "/mjpg/video.mjpg"
+    }
+  ]
+}

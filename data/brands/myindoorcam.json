@@ -1,0 +1,17 @@
+{
+  "brand": "Myindoorcam",
+  "brand_id": "myindoorcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ADC-V520IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1032,
+      "url": "live.sdp"
+    }
+  ]
+}

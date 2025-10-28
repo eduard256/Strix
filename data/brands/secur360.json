@@ -1,0 +1,19 @@
+{
+  "brand": "Secur360",
+  "brand_id": "secur360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SL 9600",
+        "SL-9601-00",
+        "Video Doorbell SL-9601-00"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

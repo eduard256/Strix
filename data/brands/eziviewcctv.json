@@ -1,0 +1,18 @@
+{
+  "brand": "Eziviewcctv",
+  "brand_id": "eziviewcctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CS-C6N",
+        "DS-2CD1141"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

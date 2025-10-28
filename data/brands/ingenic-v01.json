@@ -1,0 +1,17 @@
+{
+  "brand": "Ingenic-v01",
+  "brand_id": "ingenic-v01",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPCAM-100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "brand": "Ipc365",
+  "brand_id": "ipc365",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "360",
+        "gesee",
+        "Mibao",
+        "NEXHT CAM",
+        "Other",
+        "P450",
+        "PW2C1806E-GTY",
+        "VICTURE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/realmonitor"
+    },
+    {
+      "models": [
+        "81XXF",
+        "d100",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ey-wf0358weus"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "Other",
+        "PW2K2N06E-GTWY"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=01"
+    },
+    {
+      "models": [
+        "Other",
+        "PW2K2N06E-GTWY"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Smartguard",
+  "brand_id": "smartguard",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DR-IPC-01",
+        "WIFI HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

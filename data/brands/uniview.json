@@ -1,0 +1,275 @@
+{
+  "brand": "Uniview",
+  "brand_id": "uniview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "12345",
+        "720p",
+        "Bullet Cam",
+        "BULLETIPCAM",
+        "ColorHunter",
+        "daboo2",
+        "DOME",
+        "IPC1112060880",
+        "ipc2121rs3",
+        "IPC2122SR3-PF36",
+        "IPC2123LR3-PF28M-F",
+        "IPC2124ER3-DPF40",
+        "IPC2124LR3-PF40",
+        "IPC2124SR3-DPF36",
+        "IPC2125SR3-ADUPF40",
+        "IPC2222ER5-DUPF40-C",
+        "IPC2224SR5-DPF40-B",
+        "IPC2322EBR-P",
+        "IPC2324EBR-DP",
+        "IPC2324EBR-DPZ28",
+        "ipc2333",
+        "IPC242ER5-DL",
+        "IPC252ERA-X22",
+        "IPC322LR-MLP28-RU",
+        "ipc322sb",
+        "IPC3232ER3-DVZ28-C",
+        "IPC3235ER3-DUVZ",
+        "IPC3611SR3",
+        "IPC3614SR3-DPF28M",
+        "IPC3614SR3-DPF36",
+        "IPC3615SE-ADF28KM-WL-IO",
+        "IPC3615SR3-ADF28K-G",
+        "IPC6252SL-X33UP",
+        "IPC642E-X22-IN",
+        "IPC-B112-PF28",
+        "IPC-B114-P28",
+        "IPC-B114-PF28",
+        "IPC-B114-PF40",
+        "ipcsr",
+        "Other",
+        "Speed dome",
+        "uni",
+        "UN-IPC3611SR3",
+        "UNIVIEW_Mini Dome",
+        "UNIVIEW_MINI DOME",
+        "unv"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video1"
+    },
+    {
+      "models": [
+        "bullet",
+        "BULLET CAM",
+        "BULLETIPCAM",
+        "DOME",
+        "IPC2121SR3-PF36",
+        "IPC2122LB-SF40-A",
+        "IPC2122LR-MLP40-RU",
+        "IPC2122SR3-PF36",
+        "IPC2122SR3-PF40",
+        "IPC2122SR3-UPF40-C-RU",
+        "ipc2124sr3-dpf36",
+        "IPC2125SR3-ADUPF40",
+        "IPC222ER-F36",
+        "IPC2321",
+        "IPC2322EBR-P",
+        "ipc2323s-ir3-f36-dt",
+        "IPC232S-IR3-HF40-C-D",
+        "IPC314SR-DVPF28",
+        "IPC322SB",
+        "ipc322sr",
+        "IPC325ER3-DUVPF28",
+        "IPC3611ER3-PF28",
+        "IPC3612",
+        "IPC3612ER3-PF28",
+        "ipc3612sr3-pf36",
+        "IPC3614SR3-ADF28K-G",
+        "IPC3614SR3-DPF28M",
+        "ipcsr",
+        "UNV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "bulletIPCam",
+        "ipc",
+        "IPC2122SR3-UPF40-C-RU",
+        "IPC2124SR3-DPF36",
+        "IPC2324EBR-DPZ28",
+        "IPC325LR3-VSPF28-D",
+        "ipc6221ER-X20",
+        "Other",
+        "uni"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video2"
+    },
+    {
+      "models": [
+        "dome",
+        "DVZ28",
+        "ipc2124sr3-dpf36",
+        "IPC6252SL-X33-VF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video3"
+    },
+    {
+      "models": [
+        "DOME",
+        "IPC2122SR3-PF40",
+        "IPC312SB-ADF28K-I0",
+        "IPC675LFW",
+        "IPC-B114-P28",
+        "NVR201-04LP",
+        "NVR301-04 P4",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/unicast/c1/s1/live"
+    },
+    {
+      "models": [
+        "DOME",
+        "ip1200",
+        "IPC2122SR3-PF40",
+        "IPC2125SR3-ADUPF40",
+        "IPC312SR-VPF28-C",
+        "IPC322ER3-DUVPF28-B",
+        "IPC322LR3-VSPF28-D",
+        "IPC3234SR3-DVZ28",
+        "IPC324ER3-DVPF28",
+        "IPC324LR3-VSPF28-D",
+        "IPC3612LR-MLP28-RU",
+        "IPC3638SR3-DPZ",
+        "Other",
+        "UNIVIEW_MINI DOME"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "Dome IPC322LR3-VSPF28",
+        "IPC2122CR3-PF40-A",
+        "IPC2122SR3-PF36",
+        "IPC2123LR3-PF28M-F",
+        "IPC2224ER6-DSC40-C",
+        "IPC3612ER3-PF28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPB4212M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IPC2124LB-SF28KM-G",
+        "IPC-D114-PF40"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/media/video0/"
+    },
+    {
+      "models": [
+        "IPC2124LR5-DUPF40M-F",
+        "IPC3614SB-ADF28KM-I0",
+        "IPC3618LE-ADF40K-G",
+        "IPC3634SB-ADZK-I0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "IPC2324LBR3-SPZ28-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "IPC322LR3-VSPF40-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast/c1/s0/live"
+    },
+    {
+      "models": [
+        "IPC3232ER3-DVZ28-C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mediavideo"
+    },
+    {
+      "models": [
+        "IPC3232ER-VS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC3638SE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "NVR304-32E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast/c2/s1/live"
+    },
+    {
+      "models": [
+        "PVR08H1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

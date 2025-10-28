@@ -1,0 +1,26 @@
+{
+  "brand": "Kohlen",
+  "brand_id": "kohlen",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TV-CTZY9825A-GKA-2MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "TV-CZTY9825A-GKA-2MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "brand": "Yoluke",
+  "brand_id": "yoluke",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3MP PTZ",
+        "5MP",
+        "5MP-4X-PTZ",
+        "C6F0SgZ3N0P6L2",
+        "dome",
+        "Other",
+        "p1-2mp-rwf",
+        "p1-4x",
+        "P1-4X-5MP",
+        "P1-5MP-RWF",
+        "P2-20X",
+        "P2-20X5MP",
+        "P2-20X5MP-WiFi",
+        "P2-30X-5MPF",
+        "P3-4X",
+        "P3-5MP-RWF",
+        "P4 - 1X",
+        "PI=5MP-RWF",
+        "PI-2MP-RWF",
+        "PI-5MP-RWF",
+        "Ptz  5mp",
+        "smp ptz",
+        "x002bnn5cf"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "B07XRQ8YXV",
+        "ipcam-900139",
+        "p1-4x",
+        "P1-4X-5MP",
+        "P1-5MP-RWF",
+        "P1-5mp-wf",
+        "P2-20X",
+        "P2-20X5MP-WiFi",
+        "P3-5MP-WF",
+        "PI-5MP-RWF",
+        "ptz",
+        "Ptz  5mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "P1-5MP-RWF",
+        "P2-20X",
+        "P3-5MP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "P2-20X",
+        "P2-20X5MP",
+        "P4 - 1X"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "S20-WIFI-T31"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/port8080"
+    }
+  ]
+}

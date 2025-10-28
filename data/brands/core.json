@@ -1,0 +1,17 @@
+{
+  "brand": "Core",
+  "brand_id": "core",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dum"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0"
+    }
+  ]
+}

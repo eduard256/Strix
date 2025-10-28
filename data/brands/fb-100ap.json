@@ -1,0 +1,17 @@
+{
+  "brand": "Fb-100ap",
+  "brand_id": "fb-100ap",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "fd100a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel1"
+    }
+  ]
+}

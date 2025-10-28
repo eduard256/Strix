@@ -1,0 +1,18 @@
+{
+  "brand": "Granvista",
+  "brand_id": "granvista",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GVP-221",
+        "PTZ Camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/admin/snapshot.cgi"
+    }
+  ]
+}

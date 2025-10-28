@@ -1,0 +1,56 @@
+{
+  "brand": "Hsmartlink",
+  "brand_id": "hsmartlink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HSL-289799-JUWZB",
+        "i9831b-#6698"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_1"
+    },
+    {
+      "models": [
+        "HSL-289799-JUWZB"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "HSL-289799-JUWZB",
+        "I9831B-#6698",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HSL-289799-JUWZB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "i9831b-#6698"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    }
+  ]
+}

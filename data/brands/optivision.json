@@ -1,0 +1,35 @@
+{
+  "brand": "Optivision",
+  "brand_id": "optivision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVRMINIH4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ivop.get?action=live&THREAD_ID="
+    },
+    {
+      "models": [
+        "OV Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "OV Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/3"
+    }
+  ]
+}

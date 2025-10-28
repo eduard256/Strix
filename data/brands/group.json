@@ -1,0 +1,17 @@
+{
+  "brand": "Group",
+  "brand_id": "group",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "rvi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

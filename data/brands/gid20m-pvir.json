@@ -1,0 +1,17 @@
+{
+  "brand": "Gid20m-pvir",
+  "brand_id": "gid20m-pvir",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "G4S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/media"
+    }
+  ]
+}

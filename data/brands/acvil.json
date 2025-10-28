@@ -1,0 +1,17 @@
+{
+  "brand": "Acvil",
+  "brand_id": "acvil",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "WIFI-5MP-30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/702"
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "brand": "7links",
+  "brand_id": "7links",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3628-675",
+        "PX-3615-675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "3655",
+        "3786-675",
+        "IPC-440HD",
+        "IPC-710IR",
+        "Meins",
+        "Other",
+        "PX3309",
+        "PX3615",
+        "PX-3628-675",
+        "PX-3671-675 LHL",
+        "px-3688-675",
+        "px-3722-675",
+        "PX3744",
+        "Sitzplatz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "3655",
+        "ipc-710ir",
+        "ipc-720",
+        "IP-CAM",
+        "PX 3675",
+        "PX3309",
+        "PX-3615"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3655",
+        "7LinksCamBarn",
+        "IPC-380",
+        "IPC-720",
+        "IPC-720 HD",
+        "IPC-800.FHD",
+        "ipc900.ptz",
+        "NX4275",
+        "NX-4284-675",
+        "PX3615",
+        "PX-3688-675",
+        "PX-3755"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "3671",
+        "3677",
+        "3677-675",
+        "3720-675",
+        "3720-919",
+        "3755",
+        "Incam",
+        "ipc-720",
+        "IPC-760HD",
+        "IPC-770HD",
+        "IP-Cam-in",
+        "Other",
+        "PX3309",
+        "PX-3671-675 LHL",
+        "px-3675",
+        "px-3719-675",
+        "px-3720-675",
+        "PX-3720-675",
+        "Überwachung"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3671",
+        "3677",
+        "3677-675",
+        "3720-919",
+        "IPC-440.HD",
+        "ipc-710ir",
+        "IPC-710IR",
+        "IP-Cam-in",
+        "IP-Wi-Fi",
+        "lenacam",
+        "Other",
+        "PX 3675",
+        "px 3675-675",
+        "PX3309",
+        "PX3614_675",
+        "PX3615",
+        "px-3671",
+        "PX-3671-675 LHL",
+        "px-3688-675",
+        "px-3722-675",
+        "Px3722-675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "3671",
+        "as",
+        "moja",
+        "Other",
+        "PX3614_12",
+        "PX3615",
+        "PX-3615-675",
+        "px-3671",
+        "RoboCam III"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "3677",
+        "374411",
+        "3755",
+        "ipc-20hd",
+        "IPC-340HD",
+        "IPC-440.HD",
+        "IPC440HD",
+        "IPC-720",
+        "IPC-770HD",
+        "IPC-850.FHD",
+        "Other",
+        "Px3722-675",
+        "px3744",
+        "PX-3744",
+        "Px3744-675",
+        "px3755",
+        "PX-3755",
+        "PX-3765-675",
+        "px-3775",
+        "PX-4760"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "3677",
+        "HAUSTÜR",
+        "IPC-710IR",
+        "IP-WI-FI",
+        "Other",
+        "px-1179-675",
+        "px-1279",
+        "PX3309",
+        "PX3615",
+        "PX-3688-675",
+        "RoboCam II",
+        "ROBOCAM III",
+        "ÜBERWACHUNG",
+        "Wireless"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "3677",
+        "IPC-430 WIFI",
+        "IPC-631.HD",
+        "IP-CAM",
+        "Other",
+        "PX-3615"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "3720-675",
+        "ipc-720 HD",
+        "IPC-760HD",
+        "IPC-770HD",
+        "Other",
+        "PX 3675",
+        "px 3675-675",
+        "PX-3671-675 LHL",
+        "PX36771-1",
+        "px-3720-675"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3720-675",
+        "ipc-720",
+        "NX-4558"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "3744",
+        "IPC 260",
+        "IPC-20HD",
+        "ipc900.ptz",
+        "Other",
+        "PX 3760-675",
+        "PX-3755-675"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "videoMain"
+    },
+    {
+      "models": [
+        "3775-675"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "4336",
+        "IPC-20HD",
+        "IPC-430 WIFI",
+        "IPC-720 HD",
+        "IP-CAM-IN",
+        "nx-4341-675",
+        "NX-4341-675",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "CS131A",
+        "RoboCam",
+        "RoboCam II",
+        "RoboCam III"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "Haustür",
+        "IP-Wi-Fi",
+        "Other",
+        "PX3614_12",
+        "PX3615",
+        "px-3722-675"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "IPC-220.hd",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "IPC-300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "IPC-340HD",
+        "ipc-380",
+        "IPC-770HD",
+        "IP-CAM",
+        "PX-37878"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "IPC-400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    },
+    {
+      "models": [
+        "IPC-430 WIFI",
+        "Other",
+        "PX3615"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-440.HD",
+        "IPC-440HD",
+        "IPC-750HD",
+        "ipc900.ptz",
+        "NX-4207",
+        "NX-4209"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "IPC-440.HD",
+        "IPC-720",
+        "NX-4558-913"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "IPC440HD",
+        "ipc900.ptz"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "IPC-440HD",
+        "ipc-720",
+        "Other",
+        "PX3309",
+        "PX3615",
+        "px-3675",
+        "px-3688-675"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "ipc-631.hd",
+        "px-3690"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "ipc-631.hd",
+        "px-3690"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "IPC-710IR",
+        "Other",
+        "PX3615",
+        "px-3690"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "ipc-720",
+        "IPC-720 HD",
+        "Other",
+        "PX3615",
+        "px-3690"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "IPC-720 HD",
+        "IP-CAM",
+        "nx 4389",
+        "NX-4389-675",
+        "Other",
+        "pano360s",
+        "SK7008-T1F1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "IPC-740"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "IP-CAM",
+        "PX3614_675"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP-CAM",
+        "Other",
+        "PX3615"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "IP-Wi-Fi",
+        "Other",
+        "PX3615"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "KT-6764",
+        "PX-3744",
+        "RoboCam III"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "NX-4209"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/h264/ch0"
+    },
+    {
+      "models": [
+        "NX-4336-675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "NX-4389-675",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "PX3615"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "PX3309"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "px 3675-675",
+        "PX3615",
+        "px3723"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "px 3675-675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "PX3309",
+        "PX3615"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "PX3614_675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "PX3615",
+        "SK7008-T1F1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/401"
+    },
+    {
+      "models": [
+        "PX-3615-675"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 888,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "PX-3615-675"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "px-3688-675"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "px-3690"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "px-3690"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "RoboCam II",
+        "RoboCam III"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "RoboCam II"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 82,
+      "url": "/cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "RoboCam III"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "RoboCam III"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 82,
+      "url": "/cgi/mjpg/mjpg.cgi"
+    }
+  ]
+}

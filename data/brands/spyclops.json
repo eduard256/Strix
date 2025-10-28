@@ -1,0 +1,28 @@
+{
+  "brand": "Spyclops",
+  "brand_id": "spyclops",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=1"
+    },
+    {
+      "models": [
+        "Other",
+        "spy-mnbltwip5",
+        "SPY-MNDMWIP4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

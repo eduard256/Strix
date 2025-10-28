@@ -1,0 +1,17 @@
+{
+  "brand": "Avn",
+  "brand_id": "avn",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "avn244va"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    }
+  ]
+}

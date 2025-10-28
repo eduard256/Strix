@@ -1,0 +1,746 @@
+{
+  "brand": "Apexis",
+  "brand_id": "apexis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1200",
+        "3932"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "1200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=&resolution=32"
+    },
+    {
+      "models": [
+        "213 PTZ",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "215 ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "216 FD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "910hd",
+        "AH9063CW",
+        "APM-H803",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J803",
+        "H Series",
+        "H602",
+        "H804",
+        "HD 9063",
+        "HP602",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AH9063CW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_1"
+    },
+    {
+      "models": [
+        "AH9063CW",
+        "apm- j803- ws",
+        "APM-H803",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J0233",
+        "APM-J8015-WS",
+        "H Series",
+        "HD 9063",
+        "J Series",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AL DVR",
+        "APEXIS APM-J011 WS",
+        "apexis J series",
+        "apm- j803- ws",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J011-WS",
+        "APM-J012-WS",
+        "APM-J0233",
+        "APM-J0233-IR",
+        "APM-J901-z-ws",
+        "APM-Jo11-ws",
+        "IP Bell",
+        "J Series",
+        "j233",
+        "jo 233 ws",
+        "jo233",
+        "Other",
+        "Other IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AL DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg.cgi?refresh=0&channel=[CHANNEL]&id=[USERNAME]&pass=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]&oldbrowser=1"
+    },
+    {
+      "models": [
+        "apexis apm-j011 ws",
+        "APM-401-WS",
+        "APM-602",
+        "APM-J011",
+        "APM-J011-WS",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J012-WS2",
+        "APM-J0233",
+        "APM-J0233-IR",
+        "APM-J803",
+        "APM-J901-z-ws",
+        "j",
+        "J Series",
+        "J602",
+        "J901",
+        "J902",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APEXIS APM-J011 WS",
+        "apexis apm-j8015",
+        "apexis J series",
+        "APEXIS J SERIES",
+        "Apexis: APM-JP6235-WS",
+        "apm- j0011- ws",
+        "APM- J0011- WS",
+        "apm- j803- ws",
+        "Apm j901 z Ws",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-J001",
+        "APM-J011",
+        "APM-J011-WS",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J012-WS2",
+        "APM-J02233",
+        "apm-j0233",
+        "APM-J0233",
+        "APM-J0233 WIFI",
+        "APM-J0233-IR",
+        "APM-J602-WS-IR",
+        "APM-J802",
+        "APM-J803",
+        "APM-J901",
+        "APM-J901-z-ws",
+        "APM-J902",
+        "apm-j902-z-ws",
+        "apm-j903-z-ir",
+        "APXIS SERIES",
+        "domIP",
+        "H Series",
+        "H804",
+        "J Series",
+        "J8015",
+        "J901",
+        "J902",
+        "JP4045",
+        "JSERIES",
+        "ner Yard",
+        "Other",
+        "Other Ip camera",
+        "Other IP CAMERA",
+        "OTHER IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "APEXIS APM-J011 WS",
+        "apexis J series",
+        "APM J901 Z WS",
+        "APM-J011",
+        "APM-J012-WS",
+        "APM-J0233-IR",
+        "Other",
+        "Other IP CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "apexis J series",
+        "APM-J012-WS",
+        "J602",
+        "Other",
+        "Other IP CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "apexis J series",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J901-Z-WS",
+        "APM-JP6235-WS",
+        "E8ABFA19537A",
+        "J Series",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "APEXIS J SERIES",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J0233",
+        "APM-J0233-IR",
+        "APM-J901-Z-WS",
+        "apm-jo11",
+        "APM-JP6235-WS",
+        "J011",
+        "J602",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "APEXIS J SERIES",
+        "Apexis1",
+        "apm- j0011- ws",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J011-ws",
+        "APM-J012",
+        "apm-j802",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "APEXIS J SERIES",
+        "APM-J011"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APEXIS J SERIES",
+        "APM-J011",
+        "APM-J011-Richard",
+        "APM-J011-WS",
+        "APM-J012",
+        "APM-J0233"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "apm- j0011- ws",
+        "APM- J0011- WS",
+        "APM-H804-WS",
+        "APM-J011",
+        "apm-j02233",
+        "APM-J0233",
+        "APM-J8015-WS",
+        "APM-J802",
+        "APM-JP6235-WS",
+        "H Series",
+        "H SERIES",
+        "J SERIES",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "APM- J0011- WS",
+        "APM-J011",
+        "APM-J011-WS",
+        "APM-J0233",
+        "ID002A",
+        "J SERIES",
+        "Other",
+        "OTHER IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-602",
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "APM-HP602",
+        "APM-HP602-MPC-WS",
+        "APM-J011",
+        "APM-J901-z-ws",
+        "APM-jp8015ws",
+        "H Series",
+        "H602",
+        "H804",
+        "Other",
+        "Other Ip camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mobile_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-H803",
+        "Other Ip camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "APM-H803-MPC",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "APM-H803-MPC",
+        "APM-HP602-MPC-WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-H803-WS",
+        "APM-H804-WS",
+        "J902",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J012",
+        "APM-J0233",
+        "APM-J0233 WIFI",
+        "APM-J803",
+        "APM-J901",
+        "J Series",
+        "J602",
+        "J901",
+        "Other",
+        "Other Ip camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "APM-H804-WS",
+        "APM-J011",
+        "APM-J011-ws",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J0233",
+        "APM-J0233-IR",
+        "apm-j903-z-ir",
+        "J Series",
+        "J012",
+        "J602",
+        "J901",
+        "j901(door)",
+        "J902",
+        "j902ws",
+        "Mailstep",
+        "Other",
+        "Other Ip camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "APM-H804-WS",
+        "APM-HP804-MPC-WS",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "APM-H804-WS",
+        "J Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-H804-WS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "APM-H804-WS",
+        "J Series"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "APM-J011",
+        "APM-J012 WS",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "APM-J011",
+        "APM-J012-WS",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "APM-J011"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/fullsize.jpg?camera=[CHANNEL]&clock=on&motion=0"
+    },
+    {
+      "models": [
+        "APM-J011",
+        "APM-J011-WS",
+        "APM-J012",
+        "APM-J012-WS",
+        "APM-J601-IR",
+        "APM-JO11",
+        "C-7816WIP",
+        "j101",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-J012",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "APM-J012",
+        "apm-j012 ws",
+        "APM-J012-WS",
+        "APM-J8015-WS",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-J012",
+        "APM-J012-WS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "APM-J0233 WIFI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 132,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "apm-j1018",
+        "APM-J802-WS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "APM-J802-WS",
+        "ltd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "dealextreme"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "J SERIES",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "j012",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "onix"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other IP CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "Q6032-E"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

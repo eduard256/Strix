@@ -1,0 +1,172 @@
+{
+  "brand": "Hilook",
+  "brand_id": "hilook",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AIT210",
+        "b140h",
+        "barda",
+        "D120C",
+        "D140C",
+        "D640H-Z",
+        "H.250+",
+        "H.265+",
+        "IPC",
+        "IPC-B120H",
+        "IPC-B121H",
+        "IPC-B121H-M",
+        "IPC-B129H",
+        "IPC-B149HA",
+        "IPC-B150H-M",
+        "IPC-B180H-UF",
+        "IPC-B650-Z",
+        "ipc-d120",
+        "IPC-D129HA",
+        "IPC-D140H",
+        "IPC-D261H-MU",
+        "IPC-D620H-Z",
+        "IPC-P100-D/W",
+        "IPC-T120",
+        "IPC-T221H-C",
+        "IPC-t229H",
+        "IPC-T240H",
+        "IPC-T250H",
+        "IPC-T261H-MU",
+        "IPC-T269H-MU/SL",
+        "IPC-T620-Z",
+        "IPC-T621H-Z",
+        "IPC-T641H",
+        "IPC-T651H-Z",
+        "Other",
+        "PTZ-N2404I-DE3",
+        "PTZ-N2C400M-DE",
+        "PTZ-N4225I-DE20191130CCWRD95011336W",
+        "T240H",
+        "Tipc-d120"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "DVR",
+        "IPC-B120H",
+        "IPC-B121H",
+        "IPC-B480H",
+        "IPC-T261H-MU",
+        "IPC-T620-Z",
+        "Left Side",
+        "No.1",
+        "No.3",
+        "No.4",
+        "No.5",
+        "NVR-216",
+        "PTZ-N2404I-DE3",
+        "Right Side",
+        "T4_30DL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "id140h",
+        "IPC-B640H-Z",
+        "IPC-D140H-M",
+        "IPC-T259H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "IPCAM-T4-30DL",
+        "IPC-B180",
+        "ipc-B180H",
+        "IPC-B180H-UF",
+        "IPC-D121H-M",
+        "IPC-T221H",
+        "IPC-T651-Z(C)",
+        "PTZ-N42151"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC-B121H",
+        "IPC-B140HA-LDF/W",
+        "IPC-B140HA-LUF/SL",
+        "N2C400I-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "IPC-B149HA",
+        "IPC-C220-D/W",
+        "IPC-D140H-M",
+        "IPC-P100 D/W",
+        "IPC-T259H",
+        "Other",
+        "PTZ-N2204I-DE3",
+        "PTZ-N2404I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IPC-B180H-UF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/302"
+    },
+    {
+      "models": [
+        "IPC-T261H-MU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/301"
+    },
+    {
+      "models": [
+        "PTZ-N2404I-DE3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    }
+  ]
+}

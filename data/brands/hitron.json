@@ -1,0 +1,46 @@
+{
+  "brand": "Hitron",
+  "brand_id": "hitron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "eneo"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/onvif-stream1"
+    },
+    {
+      "models": [
+        "HNCV-811PZ0S4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "HNCV-811PZ0S4",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "nut-8213r",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    }
+  ]
+}

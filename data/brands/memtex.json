@@ -1,0 +1,17 @@
+{
+  "brand": "Memtex",
+  "brand_id": "memtex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cv100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 53000,
+      "url": "/162C/cam0/vidaud"
+    }
+  ]
+}

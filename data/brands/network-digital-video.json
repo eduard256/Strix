@@ -1,0 +1,26 @@
+{
+  "brand": "Network Digital Video",
+  "brand_id": "network-digital-video",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HDIPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HDIPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    }
+  ]
+}

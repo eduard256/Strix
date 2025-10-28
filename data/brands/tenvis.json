@@ -1,0 +1,1566 @@
+{
+  "brand": "Tenvis",
+  "brand_id": "tenvis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0001",
+        "0001RW",
+        "1P602W 2013",
+        "2013",
+        "319-W",
+        "330-KP",
+        "3815",
+        "3815-W",
+        "3815W.",
+        "3815W2013",
+        "391",
+        "602w",
+        "626",
+        "640x480",
+        "H262",
+        "io602",
+        "ip 391w",
+        "IP ROBOT 3",
+        "IP-319w",
+        "IP-391W",
+        "IP-391WHD",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815W",
+        "jpt 3815-w",
+        "JPT3185w",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "JPT-3815W+ 2013",
+        "JPT8415W-HD",
+        "Mini-319",
+        "MINI-319w",
+        "MINI-319W",
+        "MINI-319W 2013",
+        "MJPEG",
+        "Other",
+        "PT-713x",
+        "t18618",
+        "T27653",
+        "t50239",
+        "t54300",
+        "TR-3818"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "0001",
+        "1920",
+        "3085W",
+        "319-W",
+        "3813",
+        "3815",
+        "3815-W",
+        "3815W.",
+        "3815W-HD",
+        "391w-hd",
+        "602W",
+        "661",
+        "692",
+        "H-264",
+        "H-264-inge",
+        "HD",
+        "HD PAN TILT",
+        "ip 391whdWHD",
+        "IP319W",
+        "IP-391-HD",
+        "IP-391W",
+        "IP-391WHD",
+        "IP-602W",
+        "IP602WInge",
+        "IPROBOT2",
+        "IP-ROBOT3",
+        "IPROBOT3 H.264",
+        "JP-3815",
+        "JP-3815W",
+        "JPT 3815W-HD",
+        "JPT3185W",
+        "JPT-3815",
+        "JPT-3815HD",
+        "jpt3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "JPT-381HD",
+        "JPW-3815 HD",
+        "MJPEG",
+        "Other",
+        "P391W-HD",
+        "PT-7131W",
+        "T6812",
+        "T8801",
+        "T8805",
+        "T8809",
+        "T8810",
+        "TBS3008",
+        "TH-611",
+        "th661",
+        "TH-661",
+        "TH661d",
+        "TH667",
+        "TH692",
+        "TR3815W",
+        "TZ100",
+        "TZ300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "0001rw",
+        "0012",
+        "3813",
+        "391w-hd",
+        "IP-602W",
+        "JPT3185W",
+        "JPT-3814WP2P",
+        "JPT-3815-P2P",
+        "JPT3815W",
+        "JPT-3815W 2013",
+        "JPT-3815WHD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "0012",
+        "1P602W 2013",
+        "3815-W",
+        "IP-391W",
+        "IP391W HD",
+        "IP-602W",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013A",
+        "JPT-3815W+",
+        "JPT-3818",
+        "Mini-319",
+        "Other",
+        "PT-7131W",
+        "TR3815W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "0952",
+        "3085W",
+        "3815-w",
+        "3815W",
+        "3815-W",
+        "3815W.",
+        "3815W2013",
+        "3815W-HD",
+        "djdw",
+        "IP-319w",
+        "IP-391W",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815W",
+        "JPT 3815W (CLONE)",
+        "JPT 3815W HD",
+        "JPT3185W",
+        "JPT3815",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT3815W",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+ 2013",
+        "LTP2013W",
+        "Mini-319",
+        "MINI-319W",
+        "MINI-319W 2013",
+        "Other",
+        "T-50348",
+        "UNLISTED",
+        "us55526"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1P602W 2013",
+        "3085w",
+        "319-W",
+        "3815",
+        "3815-W",
+        "3815W2013",
+        "391W-HD",
+        "IP 391 W HD",
+        "IP-319W",
+        "IP-391W",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815W",
+        "JPT 3815W HD",
+        "JPT 3815W-HD",
+        "JPT3185W",
+        "JPT-3815",
+        "JPT-3815-P2P",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "JPT-3815WP2P",
+        "JPT-3818",
+        "JW-1315",
+        "Other",
+        "TH-661",
+        "TR-3818"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "1P602W 2013",
+        "3815W",
+        "IP-319W",
+        "IP-391W",
+        "IP-391WHD",
+        "IP-602W",
+        "IPROBOT 3",
+        "IPROBOT 3 IAN",
+        "JP-3815W",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W 2013",
+        "Mini-319",
+        "MINI-319W",
+        "Other",
+        "TH-661"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1P602W 2013",
+        "3815",
+        "3815-W",
+        "3815W2013",
+        "IP-319W",
+        "IP-391W",
+        "IP-391WHD",
+        "IP-602W",
+        "JP-3815W",
+        "JPT-3814WP2P",
+        "JPT-3815",
+        "JPT-3815-P2P",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "Other",
+        "T8612",
+        "TZ100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1P602W 2013",
+        "2013",
+        "3815-W",
+        "3815W.",
+        "3815W2013",
+        "HD",
+        "IP-391WHD",
+        "IP602W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "JPW-3815 HD",
+        "Other",
+        "T8612",
+        "TR-3828"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "2013",
+        "ip391w",
+        "Iprobot 3",
+        "JPT3815",
+        "JPT-3815W 2013",
+        "misc",
+        "Other",
+        "reeca"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "2014",
+        "Iprobot 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "319w",
+        "319-W",
+        "3815W2013",
+        "3815W-HD",
+        "391",
+        "611",
+        "661",
+        "692",
+        "720HD",
+        "AE38312",
+        "AE8312",
+        "FIXEDWP",
+        "H-264",
+        "H692",
+        "HD",
+        "HD PAN TILT",
+        "HT661",
+        "ibrobot3",
+        "IP-391-HD",
+        "IP-391WHD",
+        "IPROBOT 3-E",
+        "IP-ROBOT3",
+        "IPROBOT3 H.264",
+        "JP-3815W",
+        "JPT 3815-W",
+        "JPT 3815w (Clone)",
+        "JPT 3815W HD",
+        "JPT-3815 HD",
+        "jpt3815-hd",
+        "JPT3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W 2013A",
+        "JPT-3815W+",
+        "JPT3815WHD",
+        "JPT8415W-HD",
+        "JPTW",
+        "JPTW8750",
+        "JPW-3815 HD",
+        "JTP",
+        "Mini319",
+        "Other",
+        "RJN",
+        "RJN-2",
+        "RTT-8700",
+        "SH692",
+        "T8612",
+        "T8810",
+        "TH-611",
+        "TH-661",
+        "TH661 Black",
+        "TH661 White",
+        "TH661D",
+        "TH662",
+        "TH671",
+        "TH-69",
+        "TH692",
+        "th692alan",
+        "TH-962",
+        "TZ100",
+        "WH-TH661"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "319w",
+        "319-W",
+        "IP-391W",
+        "JPT3185W-HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "319w",
+        "3815",
+        "3815-W",
+        "3815W.",
+        "3815W2013",
+        "draai",
+        "HD",
+        "IP 391 w hd",
+        "IP-319w",
+        "ip391w",
+        "IP-602W",
+        "JP3815",
+        "JP-3815W",
+        "JPT3185W",
+        "JPT-3815",
+        "JPT-3815 HD",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815WP2P",
+        "M1Q",
+        "mini319w",
+        "Other",
+        "TR3815W",
+        "TZ100/IPROBOT3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "319w",
+        "319-W",
+        "362B",
+        "3815",
+        "3815W",
+        "3815W.",
+        "3815W2013",
+        "3815W-HD",
+        "661",
+        "692",
+        "8805",
+        "H-264",
+        "H-692",
+        "IBROBOT3",
+        "iMegaCam",
+        "IP ROBOT 3",
+        "IP-391W",
+        "IP-391WHD",
+        "iprobot",
+        "iprobot 3 Ian",
+        "IProbot2",
+        "iprobot3",
+        "iprobot3t",
+        "jpg.jpg",
+        "JPT 3815-W",
+        "JPT3185W",
+        "JPT3815",
+        "jpt3815-hd",
+        "JPT-3815HD",
+        "JPT-3815W 2013A",
+        "JPT-3815W HD",
+        "JPT-6315",
+        "Other",
+        "P391W-HD",
+        "ROBOT",
+        "ROBOT3",
+        "RTT-8700",
+        "SH661",
+        "T3875D",
+        "T6812",
+        "T8805",
+        "T8806",
+        "T8809",
+        "TH661",
+        "TH-661",
+        "TH661D",
+        "TH671",
+        "TH-692",
+        "TR3815W",
+        "TZ100/iProbot3",
+        "v.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "319-W",
+        "3815-W",
+        "391W-HD",
+        "IP391W",
+        "IP-602W",
+        "JPT-3815",
+        "JPT-3815 HD",
+        "JPT-3815w",
+        "JPT-3815W",
+        "Other",
+        "TR3815W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "319-W",
+        "JPT8518W",
+        "MINI-319w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "351.148",
+        "381",
+        "3815",
+        "3815-w",
+        "3815-W",
+        "3815W.",
+        "3815w2013",
+        "391W-HD",
+        "8513",
+        "IP-319W",
+        "IP-391-HD",
+        "IP-391W",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815W",
+        "JPT-3815",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W 2013a",
+        "JPT-3815W+",
+        "JW-1315",
+        "Mini-318W",
+        "MINI-319",
+        "MINI-319W",
+        "MINI-319W 2013",
+        "Other",
+        "PT-7131W",
+        "T-23979",
+        "T-50348",
+        "US-28449"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "381",
+        "3815",
+        "3815-W",
+        "3815W2013",
+        "3815W-HD",
+        "HATENA",
+        "IP ROBOT 3",
+        "IP319w",
+        "IP-319W",
+        "IP-391W",
+        "IP-602W",
+        "JP-3815W",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "JPT8518W",
+        "MINI-319W 2013",
+        "Other",
+        "TH661",
+        "TR-3818"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "IP-391W",
+        "IP-602W",
+        "iprobot",
+        "Iprobot 3",
+        "IPROBOT 33",
+        "IPW-391",
+        "JPT-3815",
+        "JPT-3815-P2P",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT3815W-HD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "3815W.",
+        "3815W2013",
+        "H262",
+        "IP-319W",
+        "IP-391W",
+        "IP-391WHD",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815W",
+        "JPT3185W",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "Mini-318w",
+        "Mini-319",
+        "MINI-319w",
+        "MINI-319W 2013",
+        "Other",
+        "PT3815W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "3815W2013",
+        "IP-391W",
+        "IP-602W",
+        "JP-3815W",
+        "JPT-3815",
+        "jpt3815w",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3818",
+        "JPW-3815 HD",
+        "MINI-319W",
+        "Other",
+        "TR3815W",
+        "TR-3818"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815",
+        "3815W",
+        "3815W2013",
+        "JP-3815W",
+        "JPT-3815W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "3815W-HD",
+        "HD",
+        "JPT-3815W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "3815W.",
+        "HD",
+        "IP-391W",
+        "IP-602W",
+        "IPROBOT 33",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "Mini-319",
+        "Other",
+        "PT-7131W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815",
+        "3815-W",
+        "3815W2013",
+        "IP-319w",
+        "IP-602W",
+        "JP-3815",
+        "JP-3815_1",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "3815w",
+        "TH-661"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "3815W",
+        "3815W2013",
+        "IP-319w",
+        "IP-602W",
+        "JPT-3815W",
+        "JPT-3815W+",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "3815-W",
+        "3815W.",
+        "3815W-HD",
+        "391",
+        "FS-IPC100",
+        "IP-391W",
+        "IP-602W",
+        "IP-602WW",
+        "iprobot3",
+        "JP-3815",
+        "JP-3815W",
+        "JPT-3815",
+        "jpt3815w",
+        "JPT-3815w",
+        "JPT-3815W",
+        "JPT-3815W 2013",
+        "mini",
+        "MINI-319W",
+        "Other",
+        "PT-7131W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "3815-W",
+        "3815W2013",
+        "JP-3815W",
+        "JPT-3815-P2P",
+        "JPT-3815W",
+        "JPT-3815W+ 2013"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815-W",
+        "JPT-3815W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3815-W",
+        "ibrobot3",
+        "IP-391W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "image.mpg"
+    },
+    {
+      "models": [
+        "3815-W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "3815W-HD",
+        "391W-HD",
+        "IP ROBOT 3",
+        "Iprobot 3",
+        "JPT-3815",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "391",
+        "391W-HD",
+        "IP ROBOT2",
+        "IP-391W",
+        "IP-ROBOT3",
+        "JP-3815W",
+        "JPT-381HD",
+        "Other",
+        "P391W-HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/video0"
+    },
+    {
+      "models": [
+        "391",
+        "IP-391WHD",
+        "IPROBOT 3 2",
+        "IPROBOT3",
+        "IPWHD",
+        "Other",
+        "TS4001",
+        "TZ100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "391",
+        "IP-391W",
+        "JPT-3815",
+        "JPT-3815w",
+        "MINI-319W",
+        "MINI-319W 2013",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "391",
+        "IP ROBOT2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&rate=11"
+    },
+    {
+      "models": [
+        "391W-HD",
+        "IP ROBOT 3",
+        "IP-391WHD",
+        "IP-ROBOT3",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "391W-HD",
+        "IP Robot 3",
+        "IP ROBOT 3",
+        "IP-391W",
+        "IP-391WHD",
+        "IPRobot2",
+        "Other",
+        "TH-661",
+        "TZ100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/av0"
+    },
+    {
+      "models": [
+        "391W-HD",
+        "IP-391W",
+        "IPRobot2",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/av1"
+    },
+    {
+      "models": [
+        "391W-HD",
+        "IP ROBOT2",
+        "IP-391WHD",
+        "iprobot3",
+        "Other",
+        "T3806D",
+        "T8863D",
+        "TZ100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "391W-HD",
+        "H-264",
+        "IP-391W",
+        "IP-391WHD",
+        "IPROBOT 3 2",
+        "iprobot3",
+        "JPT-3815W",
+        "Other",
+        "TZ100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "602",
+        "IP-602W",
+        "JPT-3815w",
+        "JPT-3815W 2013",
+        "JPT-3815W+",
+        "Mini-319",
+        "MINI-319W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/media/?action=stream"
+    },
+    {
+      "models": [
+        "602",
+        "TV-IP311PI Low"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 81,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "C16S",
+        "IP391W",
+        "IP-602W",
+        "Iprobot 3",
+        "JP-3815W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 27973,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "GM8126",
+        "IP319W",
+        "IP-391WHD",
+        "JPT-3815",
+        "Other",
+        "TZ100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam3/mpeg4"
+    },
+    {
+      "models": [
+        "HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "ibrobot3",
+        "IPROBOT 3",
+        "IP-ROBOT3",
+        "Other",
+        "TZ100/IPROBOT3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam2/mpeg4"
+    },
+    {
+      "models": [
+        "IBROBOT3",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/rtsp_live1"
+    },
+    {
+      "models": [
+        "IP 391W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "IP ROBOT2",
+        "IPRobot2",
+        "IPROBOT2",
+        "Other",
+        "TZ100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "live/h264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP ROBOT2",
+        "IPROBOT 3 IAN",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "video[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-319W",
+        "IP-391W",
+        "IP-602W",
+        "JPT-3815",
+        "JPT-3815w",
+        "JPT-3815W",
+        "MINI-319W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "IP391W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/vjpeg.v?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP391W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=30"
+    },
+    {
+      "models": [
+        "IP-391W",
+        "Other",
+        "P391W-HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "IP-391W",
+        "JPT-3815",
+        "JPT-3815w",
+        "Other",
+        "TR-3818"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "IP-391W",
+        "IPROBOT3",
+        "Other",
+        "TH-661",
+        "TZ100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Video?Codec=MPEG4&Width=720&Height=576&Fps=30"
+    },
+    {
+      "models": [
+        "IP-391WHD",
+        "IPRobot2",
+        "JPT8518W",
+        "Other",
+        "TZ100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "ip602",
+        "IP-602W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP-602",
+        "IP-602W",
+        "jp 3815",
+        "JPT-3815W HD",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "IP-602W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "IP-602W"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "IPK",
+        "PTZ",
+        "th661"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Iprobot 3",
+        "T8863D",
+        "TS4001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/video1"
+    },
+    {
+      "models": [
+        "Iprobot 3",
+        "Other",
+        "TH661",
+        "TH661D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "JP-3815W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "JPT-3815",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "JPT-3815"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/index1.htm"
+    },
+    {
+      "models": [
+        "JPT-3815-P2P",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "JPT-3815W",
+        "MINI-319W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "JPT-3815W 2013",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "JPT-3815W 2013",
+        "Mini-319",
+        "MINI-319W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "JPT-3815W 2013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=720&rate=0"
+    },
+    {
+      "models": [
+        "JPT3815WHD",
+        "TH692"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "JPT3815W-HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "JPT3815W-HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other",
+        "TZ100"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "av2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "nph-h264.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "CAM_ID.[PASSWORD].mp2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 83,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "T8863D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video0"
+    },
+    {
+      "models": [
+        "T8863D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/image.mpg"
+    },
+    {
+      "models": [
+        "T8863D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av2"
+    },
+    {
+      "models": [
+        "th-661"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "TH661"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "w319"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

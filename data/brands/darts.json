@@ -1,0 +1,17 @@
+{
+  "brand": "Darts",
+  "brand_id": "darts",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2 hd"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    }
+  ]
+}

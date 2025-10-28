@@ -1,0 +1,17 @@
+{
+  "brand": "Ip-t5201-f",
+  "brand_id": "ip-t5201-f",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Escam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

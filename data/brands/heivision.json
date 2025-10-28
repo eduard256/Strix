@@ -1,0 +1,121 @@
+{
+  "brand": "Heivision",
+  "brand_id": "heivision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "02EN",
+        "HM203"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "2.0mp IP Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/mjpeg"
+    },
+    {
+      "models": [
+        "HM 241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "HM 241"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 49779,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HM202",
+        "HM203",
+        "HM205",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "HM203"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "HM203"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "HM205"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam0/mjpeg"
+    },
+    {
+      "models": [
+        "HS214",
+        "HV214"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Megapixel IP Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "protect d 1 ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    }
+  ]
+}

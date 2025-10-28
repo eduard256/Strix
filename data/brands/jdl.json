@@ -1,0 +1,26 @@
+{
+  "brand": "Jdl",
+  "brand_id": "jdl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CORE Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?camera=[CHANNEL]&framerate=5"
+    },
+    {
+      "models": [
+        "CORE Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?codec=mjpeg&camera=[CHANNEL]"
+    }
+  ]
+}

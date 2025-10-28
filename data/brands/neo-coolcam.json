@@ -1,0 +1,541 @@
+{
+  "brand": "Neo Coolcam",
+  "brand_id": "neo-coolcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "16CH"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "197",
+        "COOLCAM",
+        "COOLCAM HBAAP",
+        "Coolcam HBP",
+        "COOLCAM HBP",
+        "HBP",
+        "NEO",
+        "NIP",
+        "NIP 06",
+        "NIP 21",
+        "NIP-12",
+        "NIP-20",
+        "NIP-31H",
+        "NIP-36",
+        "NIP-51FX",
+        "nip-61(GE)",
+        "NIP-61GE",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "coolcam",
+        "COOLCAM",
+        "E-LOCK",
+        "NC603P",
+        "NIP-02",
+        "nip-06",
+        "NIP-12",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "coolcam",
+        "neo",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "coolcam",
+        "IP-20",
+        "NEO",
+        "nip-02",
+        "NIP-02",
+        "NIP-55",
+        "NIP-550VX",
+        "p2p",
+        "P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "coolcam",
+        "Coolcam HBP",
+        "NIP",
+        "NIP 06",
+        "NIP 20",
+        "NIP-02",
+        "NIP-02(OAM)",
+        "NIPJEAN2",
+        "Other",
+        "P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "coolcam",
+        "Nip-53",
+        "Other",
+        "P2P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Coolcam",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "COOLCAM HBP",
+        "IP-20",
+        "NIP 06",
+        "NIP-02",
+        "NIP-227316-CACCC",
+        "P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "E-Lock",
+        "E-LOCK",
+        "NIP-02",
+        "NIP-06",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "COOLCAM HBP",
+        "COOLCAM nip22",
+        "COOLCAM NIP-22",
+        "NEO",
+        "NIP",
+        "NIP-061GE",
+        "NIP-06NEW",
+        "NIP-25",
+        "NIP-28",
+        "NIP-28 (FX)",
+        "NIP-31",
+        "nip-51fx",
+        "NIP-55",
+        "nip-55ge",
+        "nip-56fx",
+        "NIP-61GE",
+        "NP20",
+        "Other",
+        "P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "NIP-02",
+        "NIP-02BGPW3A2",
+        "NIP-06",
+        "NIP-09",
+        "NIP-31",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "nip-12",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "neo",
+        "NIP-02(OAM)",
+        "NIP-06",
+        "NIP-102428-DFBEF",
+        "NIP-H20(OZX)",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "COOLCAM",
+        "neo",
+        "NIP-02",
+        "NIP-02(OAO)",
+        "NIP-03(OAM)",
+        "NIP-06",
+        "NIP-160238-AADDB",
+        "NIP-O2 (OAO)",
+        "Other",
+        "p2p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "COOLCAM HBP",
+        "NIP-12",
+        "NIP-12(OAM)",
+        "NIP-130876-ADAEB",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "COOLCAM HBP",
+        "NIP 180x",
+        "NIP 20",
+        "NIP JEAN",
+        "NIP-02(OAM)",
+        "NIP-066777-BWESL",
+        "NIP-102428-DFBEF",
+        "NIP-161397-AADBF",
+        "NIP-MJPEG",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Low Res",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "NC603P",
+        "NIP-02BGPW3A2",
+        "NIP-06",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "neo"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "NIP 06",
+        "NIP-06new",
+        "NIP-213979-DBAFA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "NIP 06",
+        "NIP-31H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av1"
+    },
+    {
+      "models": [
+        "NIP 20",
+        "NIP-12",
+        "NIP-55",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "NIP-02",
+        "NIP-02(OAM)",
+        "NIP-02BGPW3A2",
+        "NIP-06",
+        "NIP-09",
+        "nip-11",
+        "NIP-12",
+        "NIP-26",
+        "NIP-31",
+        "NIP-61GE",
+        "OBJ-007260-LYLDU",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "NIP-02BGPW3A2",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "NIP-02BGPW3A2",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "nip-06",
+        "NIP-09",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "nip-06"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NIP-06",
+        "NIP-09",
+        "NIP-36",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "NIP-06",
+        "OBJ-007260-LYLDU",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NIP-09",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NIP-09"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mobile/channel[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "NIP-09",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "NIP-09",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "NIP-09"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "NIP-09"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "NIP-09"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam.sdp"
+    },
+    {
+      "models": [
+        "nip-11",
+        "nip-20",
+        "NIP-55",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "NIP-12(OAM)",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "NIP-55"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    }
+  ]
+}

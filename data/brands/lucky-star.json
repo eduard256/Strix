@@ -1,0 +1,31 @@
+{
+  "brand": "Lucky Star",
+  "brand_id": "lucky-star",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CLOUD IP CAMERA 720P",
+        "X Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch2"
+    },
+    {
+      "models": [
+        "CloudIP",
+        "CLOUDIP",
+        "LuckyStar720p",
+        "Other",
+        "small smart"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

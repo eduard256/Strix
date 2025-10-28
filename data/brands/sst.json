@@ -1,0 +1,26 @@
+{
+  "brand": "Sst",
+  "brand_id": "sst",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SST-CNS-BUI18"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mjpeg"
+    },
+    {
+      "models": [
+        "SST-CNS-BUI18"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

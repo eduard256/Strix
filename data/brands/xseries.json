@@ -1,0 +1,32 @@
+{
+  "brand": "Xseries",
+  "brand_id": "xseries",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "630",
+        "750gb",
+        "HappyEgg",
+        "Other",
+        "tweede",
+        "X SERIES WIFI IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "Other",
+        "X SERIES WIFI IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    }
+  ]
+}

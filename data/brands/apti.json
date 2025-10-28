@@ -1,0 +1,79 @@
+{
+  "brand": "Apti",
+  "brand_id": "apti",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "13v2-36",
+        "14C2-36W",
+        "27C4",
+        "APTI-14V3-2812W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "14-C2",
+        "14C6-2812",
+        "24C6-2812W",
+        "304C2-23WP",
+        "APTI-24V2-36W",
+        "APTI-24V-2812",
+        "apti-301d2-36wp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "14C2-36W",
+        "27C4",
+        "RF42MA-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "14C2-36W",
+        "27C4",
+        "27C4-2812W",
+        "2KP6-2812",
+        "APTI-14V3-2812W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2KP6-2812"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "304C2-23WP",
+        "304C2-28WP",
+        "APTI-54C6-2812P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.h264"
+    }
+  ]
+}

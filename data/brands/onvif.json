@@ -1,0 +1,425 @@
+{
+  "brand": "Onvif",
+  "brand_id": "onvif",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001111",
+        "23344",
+        "380",
+        "3805P",
+        "3851",
+        "4312B",
+        "49336059",
+        "57ii",
+        "asecam",
+        "Cotier_TV631W-ip",
+        "d53m02",
+        "DONPHIA",
+        "Euronet",
+        "GRANSTREAM",
+        "GW5050IP",
+        "IP03-J",
+        "ipc6200",
+        "IPD-E2A5L18-BS",
+        "m2-p488",
+        "Main",
+        "NAUM",
+        "NAUM2",
+        "NAUM3",
+        "ONVIF CAMERA",
+        "ONVIF_IPNC",
+        "Other",
+        "patton",
+        "POE-661B",
+        "PROFILE S",
+        "PROVISION ISR",
+        "SC3V-1",
+        "techma",
+        "TH32E-ONVIF",
+        "TH38M-ONVIF-P2P",
+        "V380",
+        "v380 pro",
+        "V380-Q10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "342",
+        "5MPtopsee",
+        "5MPTOPSEE",
+        "960p",
+        "960Pchina spot 2019",
+        "d53m02",
+        "diamond",
+        "gw security 5mg",
+        "gwsecurity 5mb",
+        "IF52W93",
+        "ipc6200",
+        "IPC-F20M",
+        "IPD-D53L02-BS",
+        "IPD-E2A5L18-BS",
+        "JH720e1",
+        "LBH30SE200W4",
+        "lsvision",
+        "model 2000",
+        "ONVIF_IPNC",
+        "Other",
+        "rhbr",
+        "Secureye",
+        "westmile",
+        "zsvdr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "5MPTOPSEE",
+        "Other",
+        "VNcam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "9411",
+        "DomeCam",
+        "DONPHIA",
+        "eyeonet4k",
+        "Other",
+        "PROVISION ISR",
+        "Sibell IP",
+        "Techson S1Pro52030IM",
+        "TeleEye",
+        "tvt"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "admin",
+        "Other",
+        "Profile S",
+        "PTZ",
+        "SC3V-1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "AK-HD54F245",
+        "gate 1",
+        "granstream",
+        "MC400L",
+        "NDR-405-P-BGZ20",
+        "oma",
+        "ONVIF_IPNC",
+        "Other",
+        "PTXDome1",
+        "PTZ",
+        "S3VC",
+        "sc3v",
+        "SV-B06POE-1080P-A",
+        "V380",
+        "v380 pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "DOMECAM",
+        "IF52W93",
+        "IPC",
+        "Other",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "DOMECAM",
+        "IPC-model",
+        "ONVIF CAMERA",
+        "Other",
+        "Other_onvif",
+        "profile s",
+        "PTZ",
+        "S3VC",
+        "SC3V-1",
+        "shenzeh",
+        "VESKYS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ec107-x15",
+        "Model S",
+        "Other",
+        "v380",
+        "V380",
+        "V380 PRO"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "IF52W93",
+        "IPC-HDBW4431R-ZS",
+        "IPHD",
+        "Other",
+        "PTZ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Ipc",
+        "V380 PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "ipc2122",
+        "V380-Q10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "IPG-7920PHM-AI/T7H",
+        "Other",
+        "QD900",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/0/MAIN"
+    },
+    {
+      "models": [
+        "JH720E1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "MBDZ-30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "MC400L"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NLISTED",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ONVIF Camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other",
+        "TH38M-ONVIF-P2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "profile s",
+        "PTZ",
+        "PTZ1",
+        "V380 PRO",
+        "YN-AJ8079R-POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Shenzhen Jiaxinjie Technology Co. Ltd",
+        "V380",
+        "V380 PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "TH38M-ONVIF-P2P",
+        "VESKYS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "UNLISTED",
+        "V380",
+        "Veskys"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "v380 pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "v380 pro",
+        "XY WIFI CAM OD4MMV380 PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "Weird"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

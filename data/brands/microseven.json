@@ -1,0 +1,188 @@
+{
+  "brand": "Microseven",
+  "brand_id": "microseven",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MYM71080i-A",
+        "MYM71080i-A-PTZ20XS",
+        "1.3 mega dome",
+        "1083",
+        "960p",
+        "C6F0SgZ3N0P0L0",
+        "M7877",
+        "M7B15",
+        "M7B37W",
+        "m7b4k--wpsaa",
+        "M7B4K-wpsaa",
+        "m7b57",
+        "M7B5MP-SWSAA",
+        "m7b77",
+        "M7B77-SWSAA",
+        "M7B77-WBPS",
+        "M7B77-WPS",
+        "M7B77-WPS HD",
+        "M7D4MP-PTZ4X-WPSAA",
+        "m7d5m",
+        "M7D77-POE",
+        "M7MY",
+        "M7-RD550PTWS-N",
+        "MD712-POE",
+        "MYM7",
+        "MYM7 bruce",
+        "MYM70108i",
+        "MYM71080i-A",
+        "MYM71080i-A-PTZ20X",
+        "MYM71080i-B",
+        "mym75mp",
+        "MYM7i",
+        "Other",
+        "swa"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1083d2000c7d",
+        "960p",
+        "M7 DVR",
+        "MYM7",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam_h264.sdp"
+    },
+    {
+      "models": [
+        "550 TVL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot_ch0[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "East Side",
+        "M784K-wpsaa",
+        "M7B5MP-SWSAA",
+        "M7B77-WPSV2",
+        "M7D12",
+        "MY7",
+        "MYM7 1080-A",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 31391,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "M7 DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot_ch[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "M7 DVR",
+        "M7B37W",
+        "m7b77",
+        "M7B77-WPS",
+        "M7B77-WPS HD",
+        "M7D12-POE",
+        "m7d77-poe",
+        "M7MY",
+        "Mini",
+        "my7",
+        "MyM7 1080-A",
+        "MYM7I",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "M7b77",
+        "MYM7",
+        "MyM7 1080",
+        "MYM7 1080-A",
+        "MyM71080-A",
+        "MYM75MP-HX-VB22",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "M7D12-POE",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "MYM7"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "MYM7"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Ym7"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    }
+  ]
+}

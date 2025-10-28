@@ -1,0 +1,251 @@
+{
+  "brand": "Xiaomi",
+  "brand_id": "xiaomi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Anits",
+        "cctv",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0.h264"
+    },
+    {
+      "models": [
+        "Anits",
+        "AntCamera",
+        "ANTCAMERA",
+        "antis",
+        "Ants",
+        "Dome",
+        "Other",
+        "Xiaofang",
+        "XIAOMI DAFANG HACKS"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "ANITS",
+        "ANTCAMERA",
+        "Mijia",
+        "Other",
+        "SXJ01ZM"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Dafang",
+        "Dafang Hacks",
+        "Dafang3",
+        "defang",
+        "Other",
+        "T20",
+        "Xiaofang",
+        "Xiaofang RTSP",
+        "xiaomi dafang Hacks",
+        "zecoj/fang-hacks-internal"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/unicast"
+    },
+    {
+      "models": [
+        "Dafang"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/cgi-bin/currentpic.cgi?width=1920&height=1080&nightvision=1"
+    },
+    {
+      "models": [
+        "DID"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video?profile=0"
+    },
+    {
+      "models": [
+        "Imilab Home Security Camera Basic"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "M1901F7H"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "Mi 8",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "Mi Home Security Camera 360",
+        "Other",
+        "pro",
+        "redmi note 3",
+        "redmi note 8",
+        "xiaomi dafang Hacks"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "mi mix 3",
+        "MI-3",
+        "mi5",
+        "Note A5",
+        "Other",
+        "redmi",
+        "RedMi 1",
+        "Redmi Note 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Mijia",
+        "Outdoor 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "MJSXJ02CM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "MJSXJ02CM",
+        "MJSXJ05CM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/mainstream"
+    },
+    {
+      "models": [
+        "MJSXJ02HL",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "MJSXJ05CM",
+        "Other",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "MJSXJ05CM",
+        "zecoj/fang-hacks-internal"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "MJSXJ05CM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/substream"
+    },
+    {
+      "models": [
+        "oma"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "redmi",
+        "Redmi 8T"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Outdoor 1080p",
+        "XiaoYi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

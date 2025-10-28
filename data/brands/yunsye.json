@@ -1,0 +1,26 @@
+{
+  "brand": "Yunsye",
+  "brand_id": "yunsye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "ysy-3002l-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

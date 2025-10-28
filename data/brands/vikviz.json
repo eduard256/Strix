@@ -1,0 +1,18 @@
+{
+  "brand": "Vikviz",
+  "brand_id": "vikviz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "pg2347c",
+        "PTZ-3601-IZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    }
+  ]
+}

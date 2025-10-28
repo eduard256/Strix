@@ -1,0 +1,162 @@
+{
+  "brand": "Sunba",
+  "brand_id": "sunba",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1800",
+        "187",
+        "20x",
+        "20X",
+        "405",
+        "406-D20X",
+        "502-4X",
+        "502S-4X",
+        "507-20XB",
+        "507-20XB P2P",
+        "507-20XC",
+        "601",
+        "601 20x",
+        "601 20X",
+        "601-D20X",
+        "602-D20X",
+        "801-D20X",
+        "805",
+        "805-DG20X",
+        "FT-HD PoE 3.6mm",
+        "Other",
+        "P636 V2",
+        "PTZ",
+        "Sunba Megapixel 1080 HP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "405-D20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "405-ECO",
+        "Illuminati",
+        "p425"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "507-20XB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "601-D20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "601-D20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "601-D20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ONVIF/MediaInput"
+    },
+    {
+      "models": [
+        "601-D25X",
+        "805-D20X",
+        "805-DG20x"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "801-D20X",
+        "sipuli"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HZ502-20XA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8556,
+      "url": "/Onvif/Streaming/2"
+    },
+    {
+      "models": [
+        "P636 V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "P636 V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "PTZ IR Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "robot"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    }
+  ]
+}

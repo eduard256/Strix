@@ -1,0 +1,63 @@
+{
+  "brand": "Udp Technology",
+  "brand_id": "udp-technology",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPE-1100M",
+        "IPE-3500M",
+        "NVC-1000",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_unicast_firststream"
+    },
+    {
+      "models": [
+        "IPE-1100M",
+        "IPE-3500M",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_unicast_secondstream"
+    },
+    {
+      "models": [
+        "IPE-3500M",
+        "IPN302HD",
+        "NVC-1000",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nvc-cgi/operator/snapshot.fcgi?channel=[CHANNEL]&name=snapshot&resolution=custom&quality=70&width=[WIDTH]&height=[HEIGHT]"
+    },
+    {
+      "models": [
+        "IPN",
+        "IPN302HD",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    }
+  ]
+}

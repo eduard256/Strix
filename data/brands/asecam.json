@@ -1,0 +1,60 @@
+{
+  "brand": "Asecam",
+  "brand_id": "asecam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8 MP",
+        "8MP Dome",
+        "IF52N53-IR",
+        "IF56N53-IR",
+        "NH4RH-200H",
+        "NZ4RN-A80A18",
+        "Other",
+        "P05H42"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "8mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "8Mp"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": ""
+    },
+    {
+      "models": [
+        "8MP Smart Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Dome 4K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    }
+  ]
+}

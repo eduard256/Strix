@@ -1,0 +1,103 @@
+{
+  "brand": "Avigilon",
+  "brand_id": "avigilon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.0-H3-D1",
+        "HD H.264 Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/media/cam0/still.jpg"
+    },
+    {
+      "models": [
+        "1.0-H3-PO2",
+        "gjgj"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/defaultPrimary?streamType=u"
+    },
+    {
+      "models": [
+        "3.0C-H4A-BO2-IR-B",
+        "6.0MP H5A WDR",
+        "MP5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/defaultPrimary?streamType=m"
+    },
+    {
+      "models": [
+        "4.0mp h5a wdr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C2-0-H3-D1-101505051742"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "ENC-4P-H264"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/defaultPrimary3?streamType=u"
+    },
+    {
+      "models": [
+        "H4sl",
+        "HD H.264 Camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "media/still.jpg"
+    },
+    {
+      "models": [
+        "HD H.264 Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "M4 Multisensor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/defaultPrimary-3?streamType=u"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230"
+    }
+  ]
+}

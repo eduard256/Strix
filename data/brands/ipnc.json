@@ -1,0 +1,166 @@
+{
+  "brand": "Ipnc",
+  "brand_id": "ipnc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1010",
+        "IPDOME_MEGA200",
+        "spy"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1.ch"
+    },
+    {
+      "models": [
+        "1322",
+        "chiu",
+        "Cool",
+        "shani",
+        "shanyh2",
+        "SNC-WD91M1322",
+        "TECHSON"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264main"
+    },
+    {
+      "models": [
+        "3Mega",
+        "jano",
+        "jano-24",
+        "jano3",
+        "Other",
+        "shani",
+        "TechSon"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/Streaming/channels/2"
+    },
+    {
+      "models": [
+        "764",
+        "ccd",
+        "CCD CAMERA",
+        "escam knockoff",
+        "EVERVOX",
+        "hi1602",
+        "hislicon",
+        "IVS-D6000",
+        "kinietis",
+        "onvif",
+        "Other",
+        "senzor",
+        "Testi",
+        "Web Cam Hi3518"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Acunico",
+        "ARCUNICO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7554,
+      "url": "/dev=IPC-00000000/media=0/channel=0&level=0"
+    },
+    {
+      "models": [
+        "Acunico"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7554,
+      "url": "/dev=IPC-00000000/media=0/channel=0&level=1"
+    },
+    {
+      "models": [
+        "Aoshidi",
+        "Aoshido",
+        "CCD",
+        "H20237",
+        "oma",
+        "spy",
+        "suchinko",
+        "teset"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0.ch"
+    },
+    {
+      "models": [
+        "KK_IP_CAM",
+        "nima",
+        "Other",
+        "p1001",
+        "Robocam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "KK_IP_CAM",
+        "Other",
+        "SOAR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TESTJPEG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mjpeg"
+    },
+    {
+      "models": [
+        "TH32E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "brand": "Safevant",
+  "brand_id": "safevant",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P Dome",
+        "BL05801",
+        "DO2VV",
+        "Other",
+        "Safevant PTZ Dome Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

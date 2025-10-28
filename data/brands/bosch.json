@@ -1,0 +1,767 @@
+{
+  "brand": "Bosch",
+  "brand_id": "bosch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4000 IP HD",
+        "455",
+        "5000",
+        "DINION",
+        "DINION HD",
+        "dinion ip",
+        "DINION-IP",
+        "DVR RTSP 440/480/600",
+        "flexidome 2000hd",
+        "Flexidome IP INDOOR 5000 HD (CPP4)",
+        "flexidome ip micro 2000",
+        "nbc 265",
+        "nbc-265",
+        "NBC-265P",
+        "NBC-265W",
+        "NBC-455-11P",
+        "NDC",
+        "NDC-225-P",
+        "NDC-455",
+        "NTC-255-PI",
+        "Other",
+        "VG4",
+        "VideoJet 10",
+        "VIDEOJET X40",
+        "VIP X1",
+        "VIP X1 XF"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10600,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "4000 IP HD",
+        "455",
+        "5000",
+        "700",
+        "7000",
+        "7000 IP",
+        "7000HD",
+        "71022",
+        "800",
+        "Autodome",
+        "Autodome 7000",
+        "autodome jr800",
+        "autodome starlight 7000",
+        "Autodome VG5 PTZ",
+        "Autodome2-700",
+        "Autodome7xx",
+        "cap cam",
+        "ddd",
+        "Dinion",
+        "Dinion 138",
+        "Dinion 5000",
+        "Dinion 8000",
+        "DINION HD",
+        "Dinion7000",
+        "dmo",
+        "Dome",
+        "etet",
+        "flexidome",
+        "Flexidome",
+        "FlexiDome HD",
+        "Flexidome HP",
+        "Flexidome IP outdoor",
+        "Flexidome IP OUTDOOR 5000 IR",
+        "Flexidome NDN-498P",
+        "ghg",
+        "IP bullet 5000",
+        "junior800",
+        "MHM",
+        "nbc262",
+        "NBN-498-P",
+        "nbn-50022-v3",
+        "nbn921",
+        "NDC",
+        "NDC 265-P",
+        "NDC-225-PI",
+        "NDC-255-P",
+        "ndc265",
+        "NDC-265-P APA",
+        "NDC-274-PT",
+        "NDC-284-P",
+        "NDC-284-PT",
+        "NDC-455V03-21P",
+        "NDN 265 PIO",
+        "ndn832-B",
+        "NDN-832v-A",
+        "NIN733V0",
+        "NIN832-V0P",
+        "NTC",
+        "NTI-50022",
+        "NWD-495V03-20P",
+        "ojo",
+        "on 75",
+        "ONVIF",
+        "Other",
+        "sdds",
+        "second",
+        "Tinyon 2000 WiFi",
+        "Unkown",
+        "VG4",
+        "vg5-7230-epc4",
+        "videojet X40",
+        "VIP X1 XF",
+        "VIP X1600",
+        "VIP-X1600M4A",
+        "VIP-X1600M4S",
+        "vjr831"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10600,
+      "url": "/rtsp_tunnel"
+    },
+    {
+      "models": [
+        "4000 IP HD",
+        "455",
+        "495",
+        "500 Series 36X Day/Night Hi Res",
+        "700",
+        "7000 IP",
+        "7000HD",
+        "AUTODOME",
+        "autodome 4000",
+        "AUTODOME 7000",
+        "Autodome IP 4000 HD",
+        "AUTODOME IP 7000 HD",
+        "Bosch 4000",
+        "DINION",
+        "dinion ip",
+        "Dome",
+        "DVR",
+        "DVR RTSP 440/480/600",
+        "Flexi DomeIP",
+        "flexicome ip micro 2000 hd",
+        "Flexidome",
+        "flexidome 7000",
+        "Flexidome HD",
+        "Flexidome IP",
+        "Flexidome IP 7000",
+        "Flexidome IP INDOOR 5000 HD (CPP4)",
+        "Flexidome IP OUTDOOR",
+        "Flexidome MICRO 5MP",
+        "HD bullet 5K",
+        "ip microdome",
+        "IR5000",
+        "MC550",
+        "Metal MiC",
+        "NBC-225-P",
+        "nbc-265-p",
+        "NBC-265P",
+        "NBN-498-P",
+        "NDC 265-P",
+        "NDC-225-PI",
+        "ndc255",
+        "NDC-255-P",
+        "NDC-265-P APA",
+        "NDC-274P",
+        "NDC-455",
+        "NDC-455-v03-12IP",
+        "NDN 265 PIO",
+        "NDN-498-P",
+        "NIN-50022-A3",
+        "npc-20012-f2",
+        "NTC-255-PI",
+        "NTC-265-PI",
+        "NWC-0455-10P",
+        "NWC-0455-20P",
+        "NWC-0495-10P",
+        "NWD-495V03-20P",
+        "Other",
+        "VG4",
+        "VG4 Autodome",
+        "VIDEOJET 10",
+        "VIP X1",
+        "VIP X1600",
+        "vip10s",
+        "VIP-X1600M4A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10600,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "4000 IP HD",
+        "Autodome",
+        "AutoDome 700 IP 24",
+        "Autodome II IP",
+        "AUTODOME IP 5000 HD",
+        "Flexidome IP HD",
+        "Flexidome IP indoor 5000 HD (CPP4)",
+        "Flexidome IP outdoor 5000 IR",
+        "Flexidome NDN-921-P",
+        "nbc",
+        "nbc265",
+        "nbc-265-p",
+        "ndc265",
+        "ONVIF",
+        "VIDEOJET X40",
+        "VIP X1 XF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10600,
+      "url": "video.h264"
+    },
+    {
+      "models": [
+        "500 Series 36X Day/Night Hi Res",
+        "7000",
+        "900",
+        "Autodome",
+        "Dinino",
+        "Dinion",
+        "Dinion 5000",
+        "DINION-IP2",
+        "Flexi DomeIP",
+        "Flexidome",
+        "FlexiDome 1234",
+        "Flexidome HD",
+        "Flexidome IP",
+        "flexidome micro 5mp",
+        "FlexoDome NWD-495V03-20P",
+        "IR5000",
+        "MVC455",
+        "nbc 265",
+        "nbc-225-p",
+        "NBC-265W",
+        "NDC",
+        "ndc 225-p",
+        "NDC 265-P",
+        "NDC-225-PI",
+        "NDC-255-P",
+        "NDC-455",
+        "NDN-498-V03-21S",
+        "NDN-832v-A",
+        "NIN832-V0P",
+        "NTC-255-PI",
+        "NWC-0495-10p",
+        "Other",
+        "PTZ",
+        "VG4 Autodome",
+        "VG4i",
+        "VG4i1",
+        "VideoJet 10",
+        "videojet X40",
+        "VIP X1",
+        "VIP X1600",
+        "VIP-X1600M4A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "7000",
+        "7000 IP",
+        "ddd",
+        "Flexidome IP 5000 HD",
+        "Gamma Shredder Fluff Discharge7000 IP",
+        "NBN-498-P",
+        "NDI-50022_A3",
+        "NTS-265-PI",
+        "NWC-0455-10P",
+        "NWC-0495-10p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "7000 IP",
+        "AUTODOME 7000",
+        "Dinion",
+        "DINION HD",
+        "DVR",
+        "DVR RTSP 440/480/600",
+        "Flexidome",
+        "Flexidome IP",
+        "Flexidome IP HD",
+        "Flexidome IP OUTDOOR",
+        "flixidome",
+        "MI 7000",
+        "NBC-225-P",
+        "NBN-498-P",
+        "ndc-225-p",
+        "NDC-225-PI",
+        "NDC-255-P",
+        "NDC-455",
+        "NIN-733V10",
+        "NIN-833V10",
+        "NWC-0455-20P",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "7000 IP",
+        "7000HD",
+        "NDC-274"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "7000 IP",
+        "Flexidome",
+        "Flexidome IP INDOOR 5000 HD (CPP4)",
+        "FLEXIDOME IP MICRO 2000",
+        "Flexidome NDN-921-P",
+        "IP 5000",
+        "nbc 265",
+        "NDC-255-P",
+        "PTZ",
+        "Starlight 6000 vr23"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/stream1/Profile1"
+    },
+    {
+      "models": [
+        "Autodome",
+        "Autodome II IP",
+        "Autodome IP 5000 IR",
+        "Dinion",
+        "DINION HD",
+        "Dinion starlight 8000",
+        "Dinion_h264",
+        "Flexidome",
+        "Flexidome HD",
+        "Flexidome IP",
+        "Flexidome ndn-498-p",
+        "IP BULLET 5000",
+        "nbc-225-p",
+        "NBC-265P",
+        "NBN-498-P",
+        "NDC",
+        "NDC-265P",
+        "NDN-265-PIO",
+        "NDN-498-P",
+        "NIN733V0",
+        "NTC-265-PI",
+        "NTI-50022-V3",
+        "NWC-0455-20P",
+        "Other",
+        "VG4 Autodome",
+        "VG4i",
+        "VIP X1",
+        "VIP X1 XF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "Autodome",
+        "AUTODOME 7000",
+        "Dinion",
+        "DINION",
+        "DVR",
+        "DVR RTSP 440/480/600",
+        "Flexidome IP HD",
+        "Flexidome NDN-921-P",
+        "NBC-265P",
+        "NDC 265-P",
+        "NTC-255-PI",
+        "Other",
+        "VG4 Autodome"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "AUTODOME IP 7000 HD",
+        "Flexidome IP 5000 HD",
+        "Flexidome IP outdoor 5000 IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "AUTODOME IP 7000 HD",
+        "Flexidome IP outdoor 5000 IR",
+        "Flexidome IP starlight 8000i",
+        "IP 5000",
+        "NBE-7604-AL",
+        "NBE-7604-AL-OC",
+        "nbn-733V-IP",
+        "npc-20012-f2",
+        "NWC-0455-10P",
+        "Other",
+        "werwer"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "bosch-nbc-265p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "D73W",
+        "HR06"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Denion",
+        "Dinion 6000",
+        "DINION IP NWC 0455",
+        "dinion-ip",
+        "DVR RTSP 440/480/600",
+        "FLEXI DOMEIP",
+        "Flexidome",
+        "Flexidome HD",
+        "nbc-225-p",
+        "ndc-225-p",
+        "NDC-225-PI",
+        "NDC-255-P",
+        "NDC-265P",
+        "NDC-274-P",
+        "NDN 265 PIO",
+        "NTC-255-PI",
+        "NTI-50022",
+        "NWC-0455-10P",
+        "NWC-0455-20P",
+        "Other",
+        "Spectra",
+        "VG4 AUTODOME",
+        "VideoJet 10",
+        "VIP X2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Dinion 8000",
+        "Dinion starlight NBN80025"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8075,
+      "url": "/snap.jpg?JpegCam=0"
+    },
+    {
+      "models": [
+        "DINION HD",
+        "DINION IP 5000 HD",
+        "DVR RTSP 440/480/600",
+        "nbc 265",
+        "nbc-265-p",
+        "NBN921",
+        "ndc265",
+        "UNLISTED"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cgi-bin/rtspStream/[CHANNEL]"
+    },
+    {
+      "models": [
+        "DINION IP 5000 HD",
+        "nbc 265",
+        "nbc-265-p",
+        "ndc265",
+        "UNLISTED"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "DIVAR 3000",
+        "Divar5000",
+        "FLEXIDOME IP OUTDOOR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DIVAR 3000",
+        "Divar5000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DIVAR 3000",
+        "DIVAR 3000 AN"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "DS-HD6462M-WD",
+        "Flexidome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch1-s1"
+    },
+    {
+      "models": [
+        "DVR",
+        "VG4 Autodome",
+        "VIP X1 XF"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "DVR",
+        "DVR RTSP 440/480/600",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsp_tunnel"
+    },
+    {
+      "models": [
+        "Flexidome IP",
+        "V320"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg"
+    },
+    {
+      "models": [
+        "Flexidome IP 5000 HD",
+        "Flexidome IP indoor 5000 HD (CPP4)",
+        "FlexiDome NDN-921-P",
+        "Flexidome panaramic 5100i",
+        "gyhkjgh",
+        "IP bullet 4000 HD",
+        "IP micro 2000 HD",
+        "NBN-733V-IP",
+        "NDC 265-P",
+        "NTC-255-PI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.h264"
+    },
+    {
+      "models": [
+        "Flexidome IP OUTDOOR",
+        "FLEXIDOME NDN-912-P",
+        "Flexidome NDN-921-P",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 10600,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "FLEXIDOME IP starlight 6000 VR",
+        "NTC-265-PI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "Flexidome IP starlight 8000i"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/?inst=2"
+    },
+    {
+      "models": [
+        "Flexidome NDN-921-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "NDC-225-PI",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "11"
+    },
+    {
+      "models": [
+        "NDC-255-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "NTC-255-PI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "NWC-0800",
+        "NWC-0900",
+        "nwc-900"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img.jpg"
+    },
+    {
+      "models": [
+        "NWC-0800",
+        "nwc-900"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "12"
+    },
+    {
+      "models": [
+        "UNKOWN"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "VIP X1600"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/line=2"
+    },
+    {
+      "models": [
+        "VIP-X1600M4A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    }
+  ]
+}

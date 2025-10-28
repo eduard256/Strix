@@ -1,0 +1,769 @@
+{
+  "brand": "Maginon",
+  "brand_id": "maginon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1 ac",
+        "100",
+        "100AC",
+        "10AC",
+        "1pc-10c",
+        "20C",
+        "40747",
+        "90577",
+        "ac10",
+        "F18910W",
+        "IIPC-1",
+        "IP SUPRA",
+        "ip1",
+        "IP-1",
+        "IP100",
+        "IP100AC",
+        "IP-20C",
+        "ip-ac10",
+        "IPC",
+        "ipc 10 ac",
+        "IPC 100",
+        "ipc 100ac",
+        "IPC 20C",
+        "ipc 3ac",
+        "IPC_1A",
+        "IPC-1",
+        "ipc-10",
+        "IPC-100 AC",
+        "IPC-100 HD",
+        "ipc100h",
+        "Ipc-10a",
+        "IPC-10AC",
+        "IPC1ATHUIS",
+        "IPC-2",
+        "ipc-20",
+        "ipc20c",
+        "IPC-20c",
+        "IPC-25 HDC",
+        "IPC-250",
+        "ipc-250 HDC",
+        "IPC-250HDC",
+        "ipc-26hdc",
+        "IPC-30FHD",
+        "IPC-3AC",
+        "IPC-40 C",
+        "Lokaal",
+        "Other",
+        "supra IPC",
+        "SUPRA IPC-10",
+        "SUPRA IPC-100AC",
+        "SUPRA IPC-10A",
+        "supra IPC-10AC",
+        "Supra IPC-1A",
+        "SUPRA IPC-20C",
+        "supra_3",
+        "SUPRACAM IPC100 AC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "100 AC",
+        "20C",
+        "ipc",
+        "IPC-20",
+        "IPC20C",
+        "SUPRA IPC-20C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100 AC",
+        "10AC",
+        "IPC 10AC",
+        "IPC-100 HD",
+        "IPC-100AC",
+        "ipc-10ac",
+        "ipc-1a",
+        "IPC-1A  test",
+        "ipc-20",
+        "ipc-30fhd",
+        "Other",
+        "SUPRA IPC-20C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "100 AC",
+        "IPC",
+        "IPC 1A",
+        "IPC1",
+        "IPC-100 HD",
+        "IPC2",
+        "IPC-20C",
+        "IPC-25HDC",
+        "IPC-26 HDC",
+        "IPC-2a",
+        "supra ipc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "100 AC",
+        "IIPC-1",
+        "IPC 1",
+        "IPC-10 ac",
+        "IPC-100 AC",
+        "IPC-100ACw",
+        "IPC-10AC",
+        "IPC-1a",
+        "IPC1A",
+        "IPC-1A  test",
+        "IPC2",
+        "IPC-20c",
+        "IPC-25 HDC",
+        "ipc-250hdc",
+        "IPC-26 HDC",
+        "IPCA",
+        "Other",
+        "SUPRA IPC-100AC",
+        "SUPRA IPC-1A",
+        "SUPRA IPC-20C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "100 AC",
+        "ipc 100ac"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100 AC",
+        "ipc 100ac",
+        "ipc-100ac"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100 AC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100 AC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "100 AC",
+        "IPC-20C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100AC",
+        "10AC",
+        "IP20C",
+        "IPC 100",
+        "IPC 10AC",
+        "IPC 2",
+        "IPC-1",
+        "IPC-100 AC",
+        "ipc-1a",
+        "IPC-20",
+        "IPC20C",
+        "IPC-25 HDC",
+        "Other",
+        "SUPRA IPC-100AC",
+        "SUPRA IPC-20C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100AC",
+        "IPC 100",
+        "IPC-100 HD",
+        "ipc100a",
+        "IPC-100AC",
+        "Other",
+        "Vision"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "100AC",
+        "IPC_1A",
+        "IPC-1",
+        "IPC-10",
+        "IPC-10 AC",
+        "IPC-250 HDC",
+        "SUPRA IPC-20C",
+        "supraIPC",
+        "w2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "10AC",
+        "20C",
+        "IP-20C",
+        "IPC",
+        "IPC 10AC-DS",
+        "IPC-1",
+        "IPC-100 AC",
+        "IPC-10AC",
+        "ipc1a",
+        "IPC-1A",
+        "IPC-20",
+        "IPC-20C",
+        "IPC-25 HDC",
+        "IPC-250 HDC",
+        "ipc-25hdc",
+        "Other",
+        "Supra IPC-20c",
+        "supracam ipc100 ac"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "10AC",
+        "1PC-3AC",
+        "213",
+        "IPC 20C",
+        "IPC-1",
+        "IPC-100 AC",
+        "IPC-10AC",
+        "ipc-1a",
+        "IPC1A",
+        "ipc-2",
+        "Other",
+        "Supra IPC-10AC",
+        "SUPRA IPC-20C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "10AC",
+        "90577",
+        "IIPC-1",
+        "ip ptz",
+        "IPC 1",
+        "ipc 2",
+        "ipc/10",
+        "IPC_1A",
+        "IPc-1",
+        "IPC-100 AC",
+        "ipc-10ac",
+        "IPC-10AC",
+        "ipc-1a",
+        "IPC-2",
+        "Other",
+        "Supra IPC-10A",
+        "Supra IPC-10AC",
+        "Supra IPC-1A",
+        "Supra IPC-20c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "1pc-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "1pc-3ac",
+        "20C",
+        "90577",
+        "IIPC-1",
+        "ipc",
+        "IPC 1",
+        "ipc 10-a huis",
+        "IPC_1A",
+        "ipc_1a jr",
+        "ipc-1",
+        "IPC1",
+        "IPC-1 eric vlc",
+        "IPC-100 AC",
+        "IPC-100AC",
+        "IPC-10AC",
+        "IPC-1A  test",
+        "ipc-1a_local",
+        "IPC1Athuis",
+        "IPC-2",
+        "ipc20c",
+        "IPC-20C",
+        "IPC-25 HDC",
+        "IPC-250 HDC",
+        "IPC-26 HDC",
+        "ipc-A-1",
+        "ipx 3ac",
+        "ispy1",
+        "medion",
+        "Miei",
+        "OtheIPC-1A",
+        "Other",
+        "Supra IPC-100AC",
+        "SUPRA IPC-100AC",
+        "supra ipc-10a",
+        "supra IPC-10AC",
+        "Supra IPC-1A"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "20C",
+        "ipc 1a",
+        "IPC 20C",
+        "ipc1",
+        "IPC-1",
+        "ipc10",
+        "IPC-100AC",
+        "IPC-1A",
+        "ipc20",
+        "IPC-25 HDC",
+        "Other",
+        "Supra IPC-100AC",
+        "SUPRA IPC-20C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "20C",
+        "IP-20c",
+        "IPC 20C",
+        "IPC 20C2",
+        "IPC-1",
+        "IPC-2",
+        "IPC-20",
+        "Other",
+        "Supra IPC-20",
+        "SUPRA IPC-20C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IIPC-1",
+        "ipc 20c",
+        "ipc(op)",
+        "ipc+",
+        "ipc1",
+        "IPC-1",
+        "IPC-100 AC",
+        "IPC-10AC",
+        "ipc-1A",
+        "IPC1A",
+        "ipc-2",
+        "IPC-20",
+        "IPC-20C",
+        "ipc-25hdc",
+        "Other",
+        "zol"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IIPC-1",
+        "IP SUPRA",
+        "IPC-20C",
+        "IPC-25 HDC",
+        "ipc-250 hdc",
+        "Other",
+        "Supra IPC-10AC",
+        "SUPRA IPC-20C",
+        "Supra IPC-40C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "IP PTZ",
+        "IP SUPRA",
+        "IPC 100",
+        "IPC-1",
+        "IPC-100 AC",
+        "IPC-100AC!!",
+        "IPC1A",
+        "IPC-1o ac",
+        "IPC-2",
+        "IPC-20c",
+        "Other",
+        "SUPRA IPC-20C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP PTZ",
+        "IPC 1",
+        "ipc-1",
+        "SPC1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "IP SUPRA ERP",
+        "IPC 100",
+        "IPC-1",
+        "IPC-1A",
+        "IPC-1A  test",
+        "ipc20c",
+        "IPC-20c",
+        "IPC-20C",
+        "IPC-25 HDC",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP20C",
+        "IPC 1",
+        "IPC 20C",
+        "IPC_1A",
+        "ipc-100ac",
+        "IPC-100AC",
+        "ipc-20",
+        "ipc-20c",
+        "IPC20c",
+        "IPC-25 HDc",
+        "ipc-26hdc",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "IP20C",
+        "IPC-100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "ipc",
+        "IPC 100",
+        "IPC-10 ac",
+        "IPC-100AC",
+        "IPC-10AC",
+        "IPC-20",
+        "ipc-250hdc",
+        "IPC25HDC",
+        "Other",
+        "Supra IPC-10AC",
+        "SUPRA IPC-20C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1009,
+      "url": "/VIDEO.CGI"
+    },
+    {
+      "models": [
+        "ipc 100ac"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "ipc 20c"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "ipc 3ac",
+        "IPC-1",
+        "ipc-1a",
+        "IPC-3AC",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "ipc1",
+        "IPC-1",
+        "ipc-1a",
+        "IPC-2",
+        "IPC-25 HDC",
+        "SUPRA IPC-1A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "i-pc1",
+        "IPC-1",
+        "ipc-1a",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPC-1",
+        "IPC-2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IPC-1",
+        "IPC-100AC",
+        "IPC-10AC",
+        "IPC-20C",
+        "SUPRA IPC-20C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-1",
+        "IPC-100",
+        "IPC-100 HD",
+        "IPC-2",
+        "ipc-250",
+        "IPC-40 C",
+        "ipx 3ac"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IPC-100 AC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "IPC-1a",
+        "IPC-26HDC",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "IPC-1A",
+        "Supra IPC-100AC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "IPC-2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "ipc-20c"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?"
+    },
+    {
+      "models": [
+        "IPC-25 HDc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "IPC-25 HDc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi"
+    },
+    {
+      "models": [
+        "IPC-25 HDc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "IPC-40 C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "PTcam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "Security OD-2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=11"
+    }
+  ]
+}

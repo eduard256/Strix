@@ -1,0 +1,17 @@
+{
+  "brand": "Holovision",
+  "brand_id": "holovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "9112"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

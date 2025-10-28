@@ -1,0 +1,17 @@
+{
+  "brand": "Sv-b0w-720p-hx",
+  "brand_id": "sv-b0w-720p-hx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SV-B06W-720P-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "brand": "Everfocus",
+  "brand_id": "everfocus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1360",
+        "3260",
+        "EBN268",
+        "EDN 3260",
+        "EHN3260",
+        "EHN3261",
+        "EMN2220",
+        "EPN4220",
+        "ezn",
+        "EZN1260",
+        "EZN268",
+        "EZN3160",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cgi-bin/rtspStreamOvf/1"
+    },
+    {
+      "models": [
+        "2260",
+        "ECOR264",
+        "EDN 2160",
+        "EDN 2260"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "2260"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "imagep/picture.jpg"
+    },
+    {
+      "models": [
+        "3260",
+        "dvr",
+        "EAN3220",
+        "EBN268",
+        "ECOR",
+        "EDN 3260",
+        "EDN1120",
+        "EHN1320",
+        "EHN3260",
+        "EPN4220",
+        "EPN4220d",
+        "EZN1260",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cgi-bin/rtspStreamOvf/0"
+    },
+    {
+      "models": [
+        "3260",
+        "EAN900",
+        "EDN 3260",
+        "EDN3240",
+        "EPN 4220",
+        "EQN2200",
+        "EZN3240",
+        "EZN3260",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "streaming/channels/0"
+    },
+    {
+      "models": [
+        "DVR",
+        "ECOR",
+        "EPARA",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "m/camera[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "EBN268",
+        "EHN1320",
+        "EHN3261",
+        "EZN 268"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "EDN2210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "EHN3200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cgi-bin/rtspStream/0"
+    },
+    {
+      "models": [
+        "eqn2101",
+        "eqn2200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "eqn2101",
+        "eqn2200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "eqn2200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "EZN1540-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    }
+  ]
+}

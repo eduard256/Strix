@@ -1,0 +1,19 @@
+{
+  "brand": "Axgio",
+  "brand_id": "axgio",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H03-SD",
+        "H03-SD(08)",
+        "H03-SD(8G)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    }
+  ]
+}

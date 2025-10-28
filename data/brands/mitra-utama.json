@@ -1,0 +1,26 @@
+{
+  "brand": "Mitra Utama",
+  "brand_id": "mitra-utama",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BLK N3304MV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream1.asf"
+    },
+    {
+      "models": [
+        "BLK N3304MV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.asf"
+    }
+  ]
+}

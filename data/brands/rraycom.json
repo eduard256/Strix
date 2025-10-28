@@ -1,0 +1,17 @@
+{
+  "brand": "Rraycom",
+  "brand_id": "rraycom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Wired HD Flood"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264?ch=0&subtype=0"
+    }
+  ]
+}

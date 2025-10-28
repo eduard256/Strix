@@ -1,0 +1,73 @@
+{
+  "brand": "Visualint",
+  "brand_id": "visualint",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6200",
+        "VI-1400",
+        "VI-1500",
+        "VI-4300",
+        "VL-1500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "7200",
+        "VI-7100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nvc-cgi/operator/snapshot.fcgi?channel=[CHANNEL]&name=snapshot&resolution=custom&quality=70&width=[WIDTH]&height=[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "vim-1550",
+        "VM-1550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "VI-1400",
+        "VI-4350",
+        "VI-4350-VT",
+        "vim 3140",
+        "VIM-1250",
+        "VI-M-1350",
+        "vim-1550",
+        "VI-M-1550-VT",
+        "VIM-4340",
+        "VIM-4350",
+        "VIM-7150",
+        "vim-7650",
+        "VM-1550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "vim-1550"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    }
+  ]
+}

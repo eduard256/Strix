@@ -1,0 +1,17 @@
+{
+  "brand": "Lof-v",
+  "brand_id": "lof-v",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8177"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "brand": "Revotech",
+  "brand_id": "revotech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1706",
+        "I712-2-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "1796",
+        "cctv",
+        "H6EV100-SW-H",
+        "I6032B-POE 1080P",
+        "i6032-HS",
+        "I6032W-[OE",
+        "i6038-poe",
+        "I706-2-p",
+        "nvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "603I",
+        "604I",
+        "I706",
+        "I706-2-POE-FHW",
+        "i706-3",
+        "i708-POE",
+        "I712-16EV2",
+        "IF04-POE-Audio-16EV2",
+        "IPIR-P",
+        "l706-3-poe"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "86032b",
+        "I6032b-wifi",
+        "if-04-audio",
+        "ipir-HS",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "cctv",
+        "DVR",
+        "DVR2",
+        "jcresort",
+        "Main Jcresort",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "DVR2"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H42",
+        "H6EV200-S-30-L 0S77",
+        "I712-16EV2",
+        "I712P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1/stream1"
+    },
+    {
+      "models": [
+        "H42"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "H6EV200-S-30-L 0S77",
+        "ipir-hs"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "H6EV200-S-30-L 0S77",
+        "HD cameras",
+        "HD CAMERAS",
+        "HS82",
+        "I706-2-POE-16EV2",
+        "I712",
+        "Other",
+        "REHCUW-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    },
+    {
+      "models": [
+        "H85",
+        "I6032W-FHW",
+        "I706-4",
+        "I706-P-FHW",
+        "I712P",
+        "IF02-P-FHW-Se",
+        "IF-04-AUDIO",
+        "ipir-hs",
+        "krakonosovo"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "HD cameras"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/1/jpeg.php"
+    },
+    {
+      "models": [
+        "HD CAMERAS",
+        "I6032B-POE 1080P",
+        "ipc"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HD CAMERAS",
+        "i712",
+        "I712-16EV2",
+        "I712-16V2",
+        "I712P",
+        "IPIR-P",
+        "Other",
+        "R16DVR4"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "i3004"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "I3012-P",
+        "I6032B-P",
+        "I712",
+        "if02",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "I3012-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam0/h264"
+    },
+    {
+      "models": [
+        "I6032B"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "I706-4",
+        "IF02-P-FHW-Se"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Rucb-36"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

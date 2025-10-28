@@ -1,0 +1,17 @@
+{
+  "brand": "Cennan",
+  "brand_id": "cennan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "rc8021v"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Kdt",
+  "brand_id": "kdt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Eacd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mode=real&idc=1&ids=1"
+    },
+    {
+      "models": [
+        "T10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/H264"
+    }
+  ]
+}

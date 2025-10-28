@@ -1,0 +1,17 @@
+{
+  "brand": "Atlona",
+  "brand_id": "atlona",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AT-HDVS-CAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtp",
+      "port": 4000,
+      "url": "/"
+    }
+  ]
+}

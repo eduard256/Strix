@@ -1,0 +1,26 @@
+{
+  "brand": "Bigasua",
+  "brand_id": "bigasua",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BMT101016034"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BMT101016034"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

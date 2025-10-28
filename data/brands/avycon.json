@@ -1,0 +1,19 @@
+{
+  "brand": "Avycon",
+  "brand_id": "avycon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVC-EHN41FT",
+        "AVC-VN91FLT",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile2"
+    }
+  ]
+}

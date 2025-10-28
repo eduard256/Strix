@@ -1,0 +1,58 @@
+{
+  "brand": "Repotec",
+  "brand_id": "repotec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "RP-VP370"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "IMAGE.JPG"
+    },
+    {
+      "models": [
+        "Other",
+        "RP-VP370",
+        "RP-WV200",
+        "VP200"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "RP-VP0921",
+        "RP-VP0961"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "RP-VP370"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "MJPEG.CGI"
+    },
+    {
+      "models": [
+        "RP-VP700"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/video2"
+    }
+  ]
+}

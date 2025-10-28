@@ -1,0 +1,17 @@
+{
+  "brand": "Fkyro",
+  "brand_id": "fkyro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "oluhn"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    }
+  ]
+}

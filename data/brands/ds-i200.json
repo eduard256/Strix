@@ -1,0 +1,17 @@
+{
+  "brand": "Ds-i200",
+  "brand_id": "ds-i200",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    }
+  ]
+}

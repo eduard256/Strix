@@ -1,0 +1,18 @@
+{
+  "brand": "Avosys",
+  "brand_id": "avosys",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP9000",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=2"
+    }
+  ]
+}

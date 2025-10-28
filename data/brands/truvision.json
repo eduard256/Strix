@@ -1,0 +1,175 @@
+{
+  "brand": "Truvision",
+  "brand_id": "truvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1225",
+        "Flexidome HD",
+        "Other",
+        "TVA-1101",
+        "TVB-5506",
+        "TVB-5603",
+        "tvc-m5225e-3m-p",
+        "tvd-1103",
+        "TVD-5604",
+        "TVD-M2225V-2-P",
+        "TVW-3101",
+        "TVW-5605"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "2232P16",
+        "22s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/401"
+    },
+    {
+      "models": [
+        "2232P16",
+        "22s",
+        "TVN1008S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "22s",
+        "Flexidome HD",
+        "TVB-5506",
+        "tvc-m5225e-3m-p",
+        "TVD-3101",
+        "tvd-6504",
+        "TVN-10S",
+        "TVP-1104",
+        "TVW-3101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "22s",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/902"
+    },
+    {
+      "models": [
+        "22s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/702"
+    },
+    {
+      "models": [
+        "22s",
+        "22S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1024,
+      "url": "/Streaming/Unicast/channels/202"
+    },
+    {
+      "models": [
+        "22s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/901"
+    },
+    {
+      "models": [
+        "T17924-16LS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "TVB-5603",
+        "TVD-1203",
+        "tvd-5303",
+        "TVD-5305",
+        "TVD-N210V-2-N",
+        "UVP-N120P-36X-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "TVB-5603",
+        "TVF-3104"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "TVB-5607"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "tvd-5303",
+        "TVD-5305",
+        "TVW-5605"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "TVD-5303"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "TVD-M2225V-2-P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    }
+  ]
+}

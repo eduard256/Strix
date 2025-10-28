@@ -1,0 +1,17 @@
+{
+  "brand": "Ip Chitchat",
+  "brand_id": "ip-chitchat",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PT-DOOR01C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.jpg"
+    }
+  ]
+}

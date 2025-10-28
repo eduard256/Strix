@@ -1,0 +1,27 @@
+{
+  "brand": "Steren",
+  "brand_id": "steren",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CCTV-220"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IP Cam Z 32001",
+        "Smart IPcam Z:32001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=320x240"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Seven Systems",
+  "brand_id": "seven-systems",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SEVEN IP-7215PA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoMain"
+    }
+  ]
+}

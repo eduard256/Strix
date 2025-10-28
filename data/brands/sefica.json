@@ -1,0 +1,17 @@
+{
+  "brand": "Sefica",
+  "brand_id": "sefica",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PC95BOF/IR-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1554,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Niante",
+  "brand_id": "niante",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "X SERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    }
+  ]
+}

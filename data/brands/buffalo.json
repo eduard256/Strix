@@ -1,0 +1,26 @@
+{
+  "brand": "Buffalo",
+  "brand_id": "buffalo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "wnc01wh"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "channel2"
+    },
+    {
+      "models": [
+        "WNC01WH"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

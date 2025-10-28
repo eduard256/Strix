@@ -1,0 +1,17 @@
+{
+  "brand": "Deep Sentinel",
+  "brand_id": "deep-sentinel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TC-C34MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    }
+  ]
+}

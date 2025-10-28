@@ -1,0 +1,17 @@
+{
+  "brand": "Pacom",
+  "brand_id": "pacom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    }
+  ]
+}

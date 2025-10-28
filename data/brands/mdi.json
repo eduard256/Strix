@@ -1,0 +1,17 @@
+{
+  "brand": "Mdi",
+  "brand_id": "mdi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MDI-2016"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    }
+  ]
+}

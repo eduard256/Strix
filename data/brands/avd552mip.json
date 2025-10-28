@@ -1,0 +1,26 @@
+{
+  "brand": "Avd552mip",
+  "brand_id": "avd552mip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Avue"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "Avue"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live2.sdp"
+    }
+  ]
+}

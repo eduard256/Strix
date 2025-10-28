@@ -1,0 +1,56 @@
+{
+  "brand": "Phylink",
+  "brand_id": "phylink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "233w",
+        "325PW",
+        "hd720",
+        "Other",
+        "pc233s",
+        "Phylink Cube HD1028",
+        "plc 325w",
+        "PLC-129PW",
+        "PLC-233W",
+        "plc-325pw",
+        "plc-335",
+        "PLC-335PW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Bullet HD",
+        "HD PLC-223W",
+        "Other",
+        "PLC-128PW",
+        "PLC-132PW",
+        "PLC-233W",
+        "PLC-335PW",
+        "plc-335spw",
+        "PLC-336PW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/onvif.sdp"
+    },
+    {
+      "models": [
+        "hd plc-223w",
+        "plc-233w",
+        "PLC-325PW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

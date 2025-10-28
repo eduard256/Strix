@@ -1,0 +1,17 @@
+{
+  "brand": "Ews1025",
+  "brand_id": "ews1025",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EWS1025-EnGenius"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

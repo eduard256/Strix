@@ -1,0 +1,55 @@
+{
+  "brand": "Commend",
+  "brand_id": "commend",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Duetto",
+        "EE980CM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "3.mjpg"
+    },
+    {
+      "models": [
+        "ID5"
+      ],
+      "type": "MJPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/mjpeg/video.mjpg?resolution=1280x960&fps=15"
+    },
+    {
+      "models": [
+        "Intercom Client",
+        "TS8110V"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "WS-300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg/video.mjpeg"
+    },
+    {
+      "models": [
+        "WS-CM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    }
+  ]
+}

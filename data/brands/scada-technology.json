@@ -1,0 +1,29 @@
+{
+  "brand": "Scada Technology",
+  "brand_id": "scada-technology",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ST-MB-3MP",
+        "ST-MD-3MP",
+        "ST-MP-PTZ-18XIR",
+        "ST-TD-3MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "ST-VD-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/2"
+    }
+  ]
+}

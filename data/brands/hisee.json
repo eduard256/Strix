@@ -1,0 +1,87 @@
+{
+  "brand": "Hisee",
+  "brand_id": "hisee",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "215",
+        "ca11-sc-i-poe-223",
+        "ipc-t20000",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "712",
+        "HD115-DZ",
+        "whd714",
+        "WS318"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream--rtp-caching=100"
+    },
+    {
+      "models": [
+        "BC1",
+        "BC1-5MP",
+        "by2000",
+        "HD812-P",
+        "hd914-P",
+        "HD918-P",
+        "IPC-T20000",
+        "WHD818"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "domeFFMPEG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "HD812-P",
+        "HI115-PTZ",
+        "hsy-a1008nm",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch2_0.264"
+    }
+  ]
+}

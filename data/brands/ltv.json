@@ -1,0 +1,40 @@
+{
+  "brand": "Ltv",
+  "brand_id": "ltv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CNM-310 40"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "CNM-320 C1",
+        "LTV-1CNT40-F40",
+        "ltv-3tcnb20-f32-sb"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "LTV-ICDM2-623LH-V3-9",
+        "LTV-ICDM2-823-F2.1",
+        "LTV-ICDV-723-V3.3-12",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    }
+  ]
+}

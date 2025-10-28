@@ -1,0 +1,36 @@
+{
+  "brand": "Bullwark",
+  "brand_id": "bullwark",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2101IP-V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "BLW-2024",
+        "BLW-2202IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 7000,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

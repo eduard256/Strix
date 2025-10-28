@@ -1,0 +1,17 @@
+{
+  "brand": "Videotronik",
+  "brand_id": "videotronik",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-8470-SFW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    }
+  ]
+}

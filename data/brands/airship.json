@@ -1,0 +1,35 @@
+{
+  "brand": "Airship",
+  "brand_id": "airship",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "Server 4.711+"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?camera=[CHANNEL]&framerate=5"
+    },
+    {
+      "models": [
+        "Server 4.711+"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?codec=mjpeg&camera=[CHANNEL]"
+    }
+  ]
+}

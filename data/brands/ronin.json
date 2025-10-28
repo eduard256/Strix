@@ -1,0 +1,17 @@
+{
+  "brand": "Ronin",
+  "brand_id": "ronin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NR-W1CIP2SC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

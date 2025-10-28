@@ -1,0 +1,17 @@
+{
+  "brand": "Squira",
+  "brand_id": "squira",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PD910"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/stream1"
+    }
+  ]
+}

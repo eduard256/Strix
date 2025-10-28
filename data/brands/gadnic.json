@@ -1,0 +1,73 @@
+{
+  "brand": "Gadnic",
+  "brand_id": "gadnic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1P23LS",
+        "SX24",
+        "SX37",
+        "SX70"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "220",
+        "360",
+        "CAMS15",
+        "CS10",
+        "cs30",
+        "CS60",
+        "mio",
+        "Other",
+        "p20002",
+        "P2P00009",
+        "P2P00011",
+        "P2P00023",
+        "P2P00037",
+        "rertre",
+        "SX37",
+        "Sx9"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "4k Beast",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CS10"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "P9PRO",
+        "sx37"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "brand": "Cricket",
+  "brand_id": "cricket",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Camera_EXT1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10556,
+      "url": "/rtsp/unicast/DefaultProfile-02"
+    },
+    {
+      "models": [
+        "CR-POE-13S2C_14181850",
+        "CR-POE-13S2C_14181858",
+        "CR-POE-13S2C_14181859",
+        "CR-POE-20S2C_14050067",
+        "CR-POE-20S3C_14241655",
+        "Other",
+        "Point Grey",
+        "PointGrey Cricket 1.3MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/unicast/DefaultProfile-01"
+    }
+  ]
+}

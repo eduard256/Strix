@@ -1,0 +1,212 @@
+{
+  "brand": "Eneo",
+  "brand_id": "eneo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ENC 1003 MJPEG",
+        "GXD-1610M",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms"
+    },
+    {
+      "models": [
+        "GLS-2302H",
+        "IEB-62F0036M0A",
+        "Jukola 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "GXB-1710M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/ipcam/stream.cgi?nowprofileid=2"
+    },
+    {
+      "models": [
+        "GXC-1606M-IR",
+        "GXD-1610M",
+        "GXD-1710M/IR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms?nowprofileid=2"
+    },
+    {
+      "models": [
+        "GXC-1606M-IR",
+        "GXD-1610M",
+        "GXD-1710M/IR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "GXC-1606M-IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/stream.cgi?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "GXD-1610M",
+        "GXD-1710M/IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/stream.cgi?nowprofileid=2"
+    },
+    {
+      "models": [
+        "IED63"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/stream1"
+    },
+    {
+      "models": [
+        "IED63"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/stream2"
+    },
+    {
+      "models": [
+        "NIP-55"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "NLC-1401"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "stream[CHANNEL]"
+    },
+    {
+      "models": [
+        "NLD/NXC/NXD camera"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream[CHANNEL]"
+    },
+    {
+      "models": [
+        "NXC-1402",
+        "NXD-1602M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch1/stream0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live2.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "PLD-2012PTZ",
+        "PXD-1010F021",
+        "PXD-2018PTZ1080"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "PLD-2012PTZ",
+        "PXD-1010F021",
+        "PXD-5360F01IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "PTB Series",
+        "PXB/PXD-2020/2080"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam0_[CHANNEL]"
+    },
+    {
+      "models": [
+        "PXD-2018PTZ1080"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "PXD-2018PTZ1080"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264_2"
+    },
+    {
+      "models": [
+        "PXD-5360F01IR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    }
+  ]
+}

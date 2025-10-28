@@ -1,0 +1,17 @@
+{
+  "brand": "Ahula",
+  "brand_id": "ahula",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HDW-4433C-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    }
+  ]
+}

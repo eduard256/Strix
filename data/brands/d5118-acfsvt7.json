@@ -1,0 +1,17 @@
+{
+  "brand": "D5118-acfsvt7",
+  "brand_id": "d5118-acfsvt7",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "pelco"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    }
+  ]
+}

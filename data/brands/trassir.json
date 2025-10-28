@@ -1,0 +1,71 @@
+{
+  "brand": "Trassir",
+  "brand_id": "trassir",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2141",
+        "2143",
+        "3243",
+        "D2B5 3.6",
+        "d2s5",
+        "D8121IR2V3",
+        "D8121IR2V4",
+        "D8121IRV4",
+        "IPC-M0502",
+        "TR 2141",
+        "TR-D2121IR3",
+        "TR-D2123IR6",
+        "TR-D2143IR6",
+        "TR-D2221WDIR4",
+        "tr-d2d1 2.8",
+        "TR-D3121IR1",
+        "TR-D4141R1",
+        "TR-D4S5 v2",
+        "TR-D7111IR1W",
+        "TR-D7141IR1",
+        "TR-D8111IR2W",
+        "TR-D8121IR2W",
+        "TR-D8121WDIR2V2",
+        "TR-D9151",
+        "TR-W2C1",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "TR-D4101IR1V3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "TR-D4S5 v2",
+        "TR-W2C1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/sub"
+    },
+    {
+      "models": [
+        "TR-D8121IR2V6",
+        "TR-X204v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    }
+  ]
+}

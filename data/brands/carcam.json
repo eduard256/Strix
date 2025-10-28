@@ -1,0 +1,59 @@
+{
+  "brand": "Carcam",
+  "brand_id": "carcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10x",
+        "chino"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "5905"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "CAM-2898SD",
+        "IPC3516",
+        "V380",
+        "V380Q1-WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Cam-360/RV5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Cam-5905MP",
+        "IPC3516",
+        "svn-840"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

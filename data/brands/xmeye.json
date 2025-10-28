@@ -1,0 +1,265 @@
+{
+  "brand": "Xmeye",
+  "brand_id": "xmeye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "000",
+        "1H.265",
+        "27.",
+        "3131",
+        "530",
+        "7004",
+        "7008H",
+        "AI-0017",
+        "AY-3008SA",
+        "CCTVDISCOVER Minibullet PTZ",
+        "DOME_IP",
+        "H.264  34567",
+        "H.264  PORT",
+        "h.265",
+        "H246DVR",
+        "HD WIFI IP CAMERA",
+        "Hykker Wi-Fi 360 Home Secure",
+        "JRP1-R",
+        "MOTOR1",
+        "n3703-720p-3.6mm",
+        "Other",
+        "R2-30G",
+        "R80X50-PQ",
+        "Top308",
+        "tv-al0801-lm-xm",
+        "XMEYE 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "3MP-2.1",
+        "8Mp-1.8",
+        "gw-p2vfd-m4x"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "7005H",
+        "ahb7840r",
+        "HD WIFI IP CAMERA",
+        "ID4-PMM",
+        "IVG-N8S",
+        "ncv-jo1w",
+        "NVR",
+        "Other",
+        "R2-30G",
+        "XMEYE 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "DOME_IP",
+        "GWIPC",
+        "H.264  34567",
+        "H.264  PORT",
+        "H.264  Port:34567",
+        "H.265",
+        "IPG-83X50PS-WPN",
+        "IVG-N8S",
+        "NST-IOH6522",
+        "Other",
+        "Top-201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "DOME_IP",
+        "H.264  34567",
+        "H.264  PORT",
+        "Other",
+        "X0023HS0VZ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DVR NVR 5M-N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=2&stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "H.264  34567",
+        "H.265",
+        "H246DVR",
+        "Other",
+        "XMEYE 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "H246DVR",
+        "Other",
+        "XM530_80X50_8M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "IVG-N8S",
+        "Lonovoo",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "IVG-N8S",
+        "R2-30G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=2_stream=0.sdp"
+    },
+    {
+      "models": [
+        "XM3mpptz(R2-30G)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "XM530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "XMEYE 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "XMEYE H246DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "brand": "Itx-security",
+  "brand_id": "itx-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "bullet",
+        "dddd",
+        "IND2",
+        "KCEZB",
+        "NCD-2003PRH",
+        "NMB2300PR",
+        "RB300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "INDi-3007PR",
+        "sme-2220"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPDM844"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "KCEZB",
+        "NCD-2003PR2003PR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/second"
+    }
+  ]
+}

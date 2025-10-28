@@ -1,0 +1,44 @@
+{
+  "brand": "Loryta",
+  "brand_id": "loryta",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-B5442E-Z4E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "IPC-T2431T-AS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ipc-t5442t-ze"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "IPC-T5442T-ZE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "brand": "Gopro",
+  "brand_id": "gopro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Hero 3+"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Hero 9 Black",
+        "Hero7",
+        "Hero9"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/live"
+    }
+  ]
+}

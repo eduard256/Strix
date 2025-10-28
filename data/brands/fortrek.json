@@ -1,0 +1,17 @@
+{
+  "brand": "Fortrek",
+  "brand_id": "fortrek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "401ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    }
+  ]
+}

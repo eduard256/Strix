@@ -1,0 +1,51 @@
+{
+  "brand": "Jrc Tokki",
+  "brand_id": "jrc-tokki",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "81DGPOE4MP-S",
+        "A8Q",
+        "chowha-02",
+        "IP3MP-POE",
+        "LTID-57FEA-AP",
+        "NVT IPC",
+        "XM-PT825-40P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC_GK7205V200_G4F_S38"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC_GK7205V200_G4F_S38",
+        "XM530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "XM530"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

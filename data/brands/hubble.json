@@ -1,0 +1,76 @@
+{
+  "brand": "Hubble",
+  "brand_id": "hubble",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "==95",
+        "1662",
+        "FOCUS66-B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "1668"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion"
+    },
+    {
+      "models": [
+        "1854",
+        "focus 73",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Focus 71"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 6667,
+      "url": "/blinkhd"
+    },
+    {
+      "models": [
+        "Focus 72",
+        "Focus72-W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "focus 73"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Focus72-W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.cgi?type=motion"
+    }
+  ]
+}

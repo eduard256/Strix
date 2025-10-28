@@ -1,0 +1,17 @@
+{
+  "brand": "Konnek Stein",
+  "brand_id": "konnek-stein",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "m23"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mp4"
+    }
+  ]
+}

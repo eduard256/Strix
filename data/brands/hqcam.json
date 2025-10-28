@@ -1,0 +1,31 @@
+{
+  "brand": "Hqcam",
+  "brand_id": "hqcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "50X20-WGH",
+        "5MP",
+        "C6F0SgZ3N0PlL2",
+        "H.265 POE 5MP Outdoor Night Vision",
+        "Other",
+        "PIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "NK-S9104W5POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

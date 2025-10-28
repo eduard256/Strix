@@ -1,0 +1,27 @@
+{
+  "brand": "Innotrends",
+  "brand_id": "innotrends",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "xm-202-2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Smart Wifi Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=11"
+    }
+  ]
+}

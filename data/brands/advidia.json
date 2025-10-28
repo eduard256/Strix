@@ -1,0 +1,327 @@
+{
+  "brand": "Advidia",
+  "brand_id": "advidia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "A14",
+        "A-15",
+        "A-30",
+        "A-34W",
+        "A-38-F",
+        "A-44-IR",
+        "A-49-F",
+        "A-54-OD",
+        "Other",
+        "vp-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "A14",
+        "A-34"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "A-14",
+        "A-34W",
+        "A-45",
+        "A-46"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "A-28",
+        "a-35",
+        "vp-4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "A-34W",
+        "A-37FW",
+        "A-47",
+        "M-46-FW",
+        "VP-16-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "A-34W",
+        "A-37FW",
+        "A-44-IR",
+        "A-45"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "a-35",
+        "A-55",
+        "vp-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/103"
+    },
+    {
+      "models": [
+        "A-37fw",
+        "A-37-FW",
+        "A-47",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "A-427-V",
+        "vp-4",
+        "VP-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "A-427-V",
+        "VP-16-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/901"
+    },
+    {
+      "models": [
+        "A-427-V",
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=2&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "A-44-IR",
+        "a-49-f",
+        "VP-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "a-49-f"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "a-49-f",
+        "E-47-V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "A-54-OD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "A-65",
+        "B-38-V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "A-88-V",
+        "B-31"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "B-31"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": ""
+    },
+    {
+      "models": [
+        "B-31"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/cmd/system?GET_STREAM&USER=[USERNAME]&PWD=[PASSWORD]"
+    },
+    {
+      "models": [
+        "B-31",
+        "B-33",
+        "B5360",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    },
+    {
+      "models": [
+        "E-37-V"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "p-25",
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/MediaInput"
+    },
+    {
+      "models": [
+        "vp-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "vp-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/Channels/1103"
+    },
+    {
+      "models": [
+        "VP-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/902"
+    },
+    {
+      "models": [
+        "VP-16-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch2_0.h264"
+    },
+    {
+      "models": [
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Streaming/Channels/5"
+    },
+    {
+      "models": [
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "vp-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=101&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "VP-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Streaming/Channels/1"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "brand": "Ips",
+  "brand_id": "ips",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1024V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "1812VW",
+        "EA1812",
+        "ea-1822",
+        "EYE 03W",
+        "ips-eye01w",
+        "IPS-Ki-EL",
+        "Ki-DL",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "7038",
+        "911",
+        "914V",
+        "922V",
+        "924v",
+        "925POE",
+        "925POE (RS7507)",
+        "ips-eye01w",
+        "IPS-EYE01W2",
+        "IPS-eye03w",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "911",
+        "913V",
+        "922V",
+        "923",
+        "Eye",
+        "Hi3507   RS7507H",
+        "ips-eye01a",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0.h264"
+    },
+    {
+      "models": [
+        "911",
+        "911s",
+        "911V",
+        "912",
+        "913V",
+        "914V",
+        "922",
+        "924VPOE",
+        "925",
+        "925POE",
+        "eye01w",
+        "Eye3",
+        "eyeow1",
+        "Hi3507   RS7507H",
+        "IPS-911",
+        "IPS-924V",
+        "IPS-EYE01W",
+        "IPS-EYE01W2",
+        "IPS-eye03w",
+        "Ki-C",
+        "ki-e",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "911",
+        "IPS IPS-EYE01W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "913V"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_[CHANNEL].H264"
+    },
+    {
+      "models": [
+        "ips-eye01w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=0"
+    }
+  ]
+}

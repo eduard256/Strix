@@ -1,0 +1,26 @@
+{
+  "brand": "Hhi",
+  "brand_id": "hhi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "P34H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "ST-VBIP4002DL6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/0"
+    }
+  ]
+}

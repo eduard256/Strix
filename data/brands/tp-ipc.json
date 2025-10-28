@@ -1,0 +1,82 @@
+{
+  "brand": "Tp-ipc",
+  "brand_id": "tp-ipc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100",
+        "310",
+        "3d print",
+        "424-A",
+        "c100",
+        "C110",
+        "c200",
+        "C200",
+        "C200 TAPO",
+        "C210",
+        "C211",
+        "C320WS",
+        "C400HP",
+        "cam2",
+        "F782",
+        "IPC424-A",
+        "Other",
+        "t100",
+        "Tapo",
+        "Tapo 200",
+        "Tapo C200",
+        "Tapo C200.",
+        "Tapo C225",
+        "Tapo C320WS",
+        "tapo_c200",
+        "Tapo65",
+        "tapoc100",
+        "TC60",
+        "TP-200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "310",
+        "C200",
+        "C210",
+        "C22",
+        "C320WS 2",
+        "tapo",
+        "TAPO C200_",
+        "Tapo C225",
+        "TAPO tc40",
+        "tapo100",
+        "tip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "C200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "brand": "General",
+  "brand_id": "general",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0101",
+        "1300",
+        "230",
+        "2MP",
+        "3100",
+        "3200C",
+        "3200CHD",
+        "3200cp",
+        "3300",
+        "391789",
+        "4200",
+        "4200SP",
+        "4300s",
+        "5200",
+        "5300",
+        "7153",
+        "8310",
+        "Alhua Bullet",
+        "amb eye 1.3",
+        "AMBEYE3",
+        "B7 IPCAM Test",
+        "blachlak",
+        "bryan",
+        "Bullet",
+        "CameraKINGPTZ",
+        "Clay",
+        "cortile",
+        "Dah",
+        "Dahau 4300s",
+        "Dahaus",
+        "Dahua",
+        "dahua 2mp Bullet",
+        "Dahua 4200",
+        "Dahua PTZ",
+        "Dahua2",
+        "dahui",
+        "Dahus",
+        "Dauhu",
+        "dauhua",
+        "dge",
+        "DH-DAX",
+        "ENC4360",
+        "GenIV",
+        "Hard",
+        "HFW1200S-W",
+        "hfw2100",
+        "HFW3200",
+        "hfw4100s",
+        "hhhh",
+        "ICR",
+        "icrealtime",
+        "IP66",
+        "ipc",
+        "IPC-2200",
+        "IPC-DHW2100N",
+        "IPC-HFW2100",
+        "IPC-HFW3300CP",
+        "ip-hwb-3200s",
+        "LEAD1",
+        "Other",
+        "PTZ_Cam",
+        "qvis",
+        "Risco Outdoor",
+        "Smoker",
+        "ST-MD-3MP",
+        "templo entrada",
+        "Templo sarcofago",
+        "test gen4",
+        "till",
+        "TZC$EA",
+        "TZC3DW217000",
+        "TZC4EA",
+        "v390",
+        "van",
+        "vantech",
+        "VIP",
+        "voordeur",
+        "w3200sl-b",
+        "WIIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "0101",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ALL-IN-ONE",
+        "DAHAU 4300S",
+        "DAHUA 2MP BULLET",
+        "Other",
+        "QVIS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "B7 IPCAM TEST",
+        "DH-DAX",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "B7 IPCAM TEST",
+        "HDIP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "DAHUA",
+        "DAUHU"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DAHUA PTZ",
+        "DAUHU",
+        "IPC-DHW2030-ZR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "DAHUA PTZ",
+        "ICREALTIME",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Funlux",
+        "giga",
+        "My ZModo",
+        "Other",
+        "RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channel/301/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channel/302/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channel/102/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channel/101/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/302/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/301/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/101/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/102/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/201/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/202/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/401/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/402/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/501/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/502/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/002/"
+    },
+    {
+      "models": [
+        "hik"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9550,
+      "url": "/Streaming/Channels/001/"
+    },
+    {
+      "models": [
+        "HK-720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPOB-EL1IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "QVIS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "SMALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/streaming/mjpeg"
+    }
+  ]
+}

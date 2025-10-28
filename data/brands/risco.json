@@ -1,0 +1,26 @@
+{
+  "brand": "Risco",
+  "brand_id": "risco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.3 MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 64272,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "IP outdoor bullet"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

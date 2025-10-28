@@ -1,0 +1,21 @@
+{
+  "brand": "Rifatron",
+  "brand_id": "rifatron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD1 Series DVR",
+        "MH Series DVR",
+        "MM Series DVR",
+        "MM SERİES DVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/animate.cgi?[CHANNEL]"
+    }
+  ]
+}

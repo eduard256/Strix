@@ -1,0 +1,17 @@
+{
+  "brand": "Bticino",
+  "brand_id": "bticino",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

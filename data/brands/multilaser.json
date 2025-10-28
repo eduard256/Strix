@@ -1,0 +1,17 @@
+{
+  "brand": "Multilaser",
+  "brand_id": "multilaser",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "RE007"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    }
+  ]
+}

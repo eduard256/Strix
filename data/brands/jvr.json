@@ -1,0 +1,17 @@
+{
+  "brand": "Jvr",
+  "brand_id": "jvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "JVR01"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    }
+  ]
+}

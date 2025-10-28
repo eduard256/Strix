@@ -1,0 +1,45 @@
+{
+  "brand": "Yicam",
+  "brand_id": "yicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "Other",
+        "y21ga Outdoor 1080P",
+        "YI-HACK 0.15"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/snapshot.sh?res=low"
+    },
+    {
+      "models": [
+        "1080P",
+        "Yi Outdoor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264"
+    },
+    {
+      "models": [
+        "1080P",
+        "49CN",
+        "720p 27US",
+        "Dome Camera 1080p",
+        "Modified FW- YI-HACK 0.15",
+        "Yi Outdoor",
+        "YYS.2016"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

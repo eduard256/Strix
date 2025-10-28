@@ -1,0 +1,196 @@
+{
+  "brand": "Yawcam",
+  "brand_id": "yawcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/out.jpg?q=30&id=0.16474807427079585&r=1612862926465"
+    },
+    {
+      "models": [
+        "1.1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/out.jpg?q=30&id=0.7040952851838247&r=1612863146825"
+    },
+    {
+      "models": [
+        "1.1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/out.jpg?q=30&id=0.9649783585624165&r=1612863191778"
+    },
+    {
+      "models": [
+        "1.1",
+        "HD3300",
+        "HTTP/1.1",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8888,
+      "url": "/out.jpg"
+    },
+    {
+      "models": [
+        "1280",
+        "HDC-270",
+        "HTTP",
+        "LIFECAM",
+        "Other",
+        "WIN HTTP",
+        "WINDOWS",
+        "YAWCAM-1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "HDC-270",
+        "Http",
+        "LIFECAM",
+        "Other",
+        "Win HTTP",
+        "WINDOWS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    },
+    {
+      "models": [
+        "Other",
+        "windows"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "WIN HTTP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nphMotionJpeg?Resolution=320x240&Quality=Standard"
+    },
+    {
+      "models": [
+        "WINDOWS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "WINDOWS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    }
+  ]
+}

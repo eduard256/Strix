@@ -1,0 +1,17 @@
+{
+  "brand": "P-link",
+  "brand_id": "p-link",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TL-SC3130"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/video.mp4"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "brand": "Bcs",
+  "brand_id": "bcs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1100",
+        "4200",
+        "BCS-P-212RWSA",
+        "DIMP4200AIR",
+        "Other",
+        "P-415RWM",
+        "recorder",
+        "SCIP1100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "1130AIR",
+        "DMIP2130AIR-M"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1130AIR",
+        "1200AIR",
+        "BCS-TIP3200IR-E",
+        "BIP7201",
+        "Other",
+        "TCP5200-IR E",
+        "TIP3200",
+        "universal"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "2E05EC2PAU00103",
+        "BCS-SDIP1204IR-II",
+        "DMIP",
+        "DMIP2401IR-M-IV",
+        "Other",
+        "TIP8801AIR-IV",
+        "universal"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2E05EC2PAU00103"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "414",
+        "BCS-P-212RWSA",
+        "P-212R3S-E",
+        "P-415RWM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "4401"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "BCS NVR",
+        "BCS-TIP3200IR-E",
+        "DIMP 3200IR-E",
+        "DIPM",
+        "DMIP",
+        "DMIP maciej",
+        "DMIP3401AIR",
+        "Other",
+        "TCP-3200IR_E",
+        "TCP5200-IR E",
+        "TIP3200",
+        "TIP3200IR-E",
+        "TIP8801AIR-IV"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BCS-TIP3200IR-E",
+        "tip5300ir-e"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "BCS-TIP4501IR-Ai"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DIMP",
+        "DIPM",
+        "DMIP",
+        "Other",
+        "tip5300ir-e",
+        "TIP8801AIR-IV"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "DIMP4200AIR",
+        "-P-412"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "DMIP120AIR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "HGW-b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1"
+    },
+    {
+      "models": [
+        "HGW-bm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=0"
+    },
+    {
+      "models": [
+        "TCP5200-IR E"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

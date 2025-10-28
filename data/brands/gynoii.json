@@ -1,0 +1,17 @@
+{
+  "brand": "Gynoii",
+  "brand_id": "gynoii",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GPW-1025"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

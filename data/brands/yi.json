@@ -1,0 +1,100 @@
+{
+  "brand": "Yi",
+  "brand_id": "yi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Home 2K Pro",
+        "YI CAM",
+        "Yi Dome 1080p",
+        "Yi home",
+        "Yi Home",
+        "Yi Home 1080p",
+        "Yi Home 2k PRO",
+        "Yi Home Camer 1080",
+        "yi_dome_1080p",
+        "Yicam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "Yi Ant",
+        "Yi Home",
+        "YICAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0.h264"
+    },
+    {
+      "models": [
+        "YI ANT",
+        "YI HOME",
+        "Yi Home 1080p",
+        "Yicam"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Yi Dome 1080p",
+        "Yi Home",
+        "YI Home 1080",
+        "Yi Home 1080p",
+        "Yi Home Camer 1080",
+        "yi_dome_1080p",
+        "Yicam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264"
+    },
+    {
+      "models": [
+        "YI HOME"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Yi Home Camer 1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "Yi Home Camer 1080"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video?profile=0"
+    },
+    {
+      "models": [
+        "Yicam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1.h264"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Jubson",
+  "brand_id": "jubson",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720p",
+        "ES500-MIP-813A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8557,
+      "url": "/PSIA/Streaming/channels/2"
+    }
+  ]
+}

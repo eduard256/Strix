@@ -1,0 +1,470 @@
+{
+  "brand": "Merit Lilin",
+  "brand_id": "merit-lilin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2MP Camera 1080p",
+        "2MP CAMERA 1080P",
+        "2MP Camera 1080p (port 80)",
+        "2MP Camera 2MP",
+        "2MP Camera 2MP (port 80)",
+        "3MP Camera 1080p",
+        "3MP Camera 1080p (port 80)",
+        "5MP Camera 1080p",
+        "5MP Camera 1080p (port 80)",
+        "7022",
+        "H.264",
+        "IPG1022ES",
+        "IPG1052",
+        "L series 2MP Camera 2MP",
+        "L series 2MP Camera 2MP (port 80)",
+        "LR7022",
+        "LR7022E4",
+        "LR7722EX",
+        "LR7722X",
+        "mr832",
+        "Other",
+        "ZR2322"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph2641080p"
+    },
+    {
+      "models": [
+        "2MP Camera 480p",
+        "2MP Camera 480p (port 80)",
+        "3MP Camera 480p",
+        "3MP Camera 480p (port 80)",
+        "5MP Camera 480p",
+        "5MP Camera 480p (port 80)",
+        "960H 480p",
+        "960H 480p (port 80)",
+        "IPS622 480p",
+        "IPS622 480p (port 80)",
+        "IPS722 480p",
+        "IPS722 480p (port 80)",
+        "L series 2MP Camera 480p",
+        "L series 2MP Camera 480p (port 80)",
+        "VS212 480p",
+        "VS212 480p (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph264480p"
+    },
+    {
+      "models": [
+        "2MP Camera 480p jpeg",
+        "2MP Camera 480p jpeg (port 80)",
+        "3MP Camera 480p jpeg",
+        "3MP Camera 480p jpeg (port 80)",
+        "5MP Camera 480p jpeg",
+        "5MP Camera 480p jpeg (port 80)",
+        "960H jpeg",
+        "960H jpeg (port 80)",
+        "IPS622 jpeg",
+        "IPS622 jpeg (port 80)",
+        "IPS722 jpeg",
+        "IPS722 jpeg (port 80)",
+        "L series 2MP Camera 480p jpeg",
+        "L series 2MP Camera 480p jpeg (port 80)",
+        "VS212 jpeg",
+        "VS212 jpeg (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtspjpeg480p"
+    },
+    {
+      "models": [
+        "2MP Camera 720p",
+        "2MP Camera 720p (port 80)",
+        "3MP Camera 720p",
+        "3MP Camera 720p (port 80)",
+        "5MP Camera 720p",
+        "5MP Camera 720p (port 80)",
+        "IPFASTDOME",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph264720p"
+    },
+    {
+      "models": [
+        "2MP Camera jpeg 720p",
+        "2MP Camera jpeg 720p (port 80)",
+        "3MP Camera jpeg 720p",
+        "3MP Camera jpeg 720p (port 80)",
+        "5MP Camera jpeg 720p",
+        "5MP Camera jpeg 720p (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtspjpeg720p"
+    },
+    {
+      "models": [
+        "2MP Camera jpeg cif",
+        "2MP Camera jpeg cif (port 80)",
+        "3MP Camera jpeg cif",
+        "3MP Camera jpeg cif (port 80)",
+        "5MP Camera jpeg cif",
+        "5MP Camera jpeg cif (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtspjpegcif"
+    },
+    {
+      "models": [
+        "3MP Camera 3MP",
+        "3MP Camera 3MP (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph2643m"
+    },
+    {
+      "models": [
+        "5522E",
+        "Dome",
+        "DVR3xx/NDR1xx",
+        "DVR5xx",
+        "IPG1022ES",
+        "IPR434",
+        "IPR6122",
+        "LR7022E4",
+        "LR7424",
+        "Other",
+        "SIP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage[CHANNEL]"
+    },
+    {
+      "models": [
+        "5MP Camera 5MP",
+        "5MP Camera 5MP (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph2645m"
+    },
+    {
+      "models": [
+        "7022",
+        "D/N2mp",
+        "H.264",
+        "ipd552ex4.2n",
+        "IPR6122",
+        "ipr7334",
+        "LD2222",
+        "LR2122E4",
+        "LR2322EX.3.6",
+        "LR2522",
+        "LR6022",
+        "MR6342",
+        "mr832",
+        "Other",
+        "S210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph264480p"
+    },
+    {
+      "models": [
+        "960H",
+        "960H (port 80)",
+        "VS212",
+        "VS212 (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph264960h"
+    },
+    {
+      "models": [
+        "AHD DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "sub_[CHANNEL]"
+    },
+    {
+      "models": [
+        "AHD DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "main_[CHANNEL]"
+    },
+    {
+      "models": [
+        "DHD216"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/net_jpeg.cgi?ch=1"
+    },
+    {
+      "models": [
+        "DHD216"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/net_jpeg.cgi?ch=0"
+    },
+    {
+      "models": [
+        "DVR204"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetStream.cgi?Video=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DVR204"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DVR204",
+        "H.264 D1 Camera",
+        "H.264 HD CAMERA",
+        "IPFASTDOME",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "DVR204",
+        "H.264 HD Camera",
+        "iMEGAPRO Camera",
+        "IPR320ESX",
+        "IPR434",
+        "IPR6122",
+        "IPS420",
+        "LD2222",
+        "LR7722EX",
+        "Other",
+        "P5R6352E2",
+        "ZR6122-IVS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap"
+    },
+    {
+      "models": [
+        "DVR308",
+        "H.264 HD Camera",
+        "iMEGAPRO Camera",
+        "LR7022E4",
+        "Other",
+        "P5R6352E2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage?camera=[CHANNEL]&fmt=vga"
+    },
+    {
+      "models": [
+        "H.264"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "H.264",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "H.264 HD CAMERA",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage"
+    },
+    {
+      "models": [
+        "Ipd2220es",
+        "IPR434",
+        "LD2222",
+        "LR832",
+        "Other",
+        "S210",
+        "ZMR8122X-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "IPFastDome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph264"
+    },
+    {
+      "models": [
+        "IPR712M4.3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641024p"
+    },
+    {
+      "models": [
+        "IPR712S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph264720p"
+    },
+    {
+      "models": [
+        "ipr7334",
+        "LR7022"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPS622 SXGA",
+        "IPS622 SXGA (port 80)",
+        "IPS722 SXGA",
+        "IPS722 SXGA (port 80)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph264sxga"
+    },
+    {
+      "models": [
+        "LR7022"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LR7022E4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/getimage0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 8085,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtsph264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtspjpeg"
+    },
+    {
+      "models": [
+        "PDR-400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/Stream?Video"
+    }
+  ]
+}

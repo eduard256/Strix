@@ -1,0 +1,17 @@
+{
+  "brand": "Seenergy",
+  "brand_id": "seenergy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SVR-104"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    }
+  ]
+}

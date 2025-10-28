@@ -1,0 +1,171 @@
+{
+  "brand": "Provision",
+  "brand_id": "provision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "360",
+        "dai-310iph04",
+        "DAI-390PA36",
+        "DAI-480IPE28",
+        "DI-330IPS36",
+        "DI-340IPE-28",
+        "DI-390IPS36",
+        "DS-2CD1131-I",
+        "I2-320IPSN-28",
+        "I3-330IPSVF",
+        "I3-380IP04",
+        "I5PT-390IPX4-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "717",
+        "F-717",
+        "PT-737",
+        "wp-717"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "717",
+        "F-717",
+        "F-737",
+        "ISR",
+        "PT-737",
+        "PT-838",
+        "WP-711",
+        "WP-717P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "717",
+        "F-717",
+        "isr",
+        "Other",
+        "pt-737",
+        "PT-737",
+        "pt-737e"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "737",
+        "PT-737"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "737"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DI-350IP5S28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "DI-390IPS36",
+        "I5PT-390IPX10 / +"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile3"
+    },
+    {
+      "models": [
+        "F-717",
+        "PT-737"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "i5pt-390ipx10-p",
+        "ISR",
+        "pt-373",
+        "PT-737",
+        "PT-737E",
+        "PT-838",
+        "PTP-838",
+        "PV-WP-717"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "PT-737"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "PT-838"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 10080,
+      "url": "/"
+    },
+    {
+      "models": [
+        "wp-717"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 911,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

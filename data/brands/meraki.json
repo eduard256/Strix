@@ -1,0 +1,41 @@
+{
+  "brand": "Meraki",
+  "brand_id": "meraki",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "13852285"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "MV12",
+        "MV12W",
+        "MV12WE",
+        "MV22",
+        "MV22x",
+        "MV32",
+        "MV63"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9000,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "MV72"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9000,
+      "url": "/LIVE"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "brand": "Sensormatic",
+  "brand_id": "sensormatic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EDVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api.htm?op.liveimage=1"
+    },
+    {
+      "models": [
+        "icam1000",
+        "OC-810",
+        "RC-8021WADT",
+        "rc8025b-adt",
+        "RT8021W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "nv412a",
+        "OC-810",
+        "Other",
+        "RC-8021",
+        "RC-8021WADT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "nv412a",
+        "RC8021",
+        "RC-8021WADT",
+        "RC-8021W-ADT"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "oc810",
+        "OC-810",
+        "OC-810v",
+        "Other",
+        "RC-8021",
+        "RC-8021WADT",
+        "rc8025b",
+        "rc8025b-adt"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "RC8025B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.cgi"
+    }
+  ]
+}

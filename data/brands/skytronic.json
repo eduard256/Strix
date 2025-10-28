@@ -1,0 +1,63 @@
+{
+  "brand": "Skytronic",
+  "brand_id": "skytronic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "351.148",
+        "dome",
+        "IP Camera Outdoor",
+        "IP Outdfoor",
+        "IP66",
+        "IP99",
+        "JWEV-163290-DDEDB",
+        "Other",
+        "WiFi"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "DOME"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "JWEV-163290-DDEDB",
+        "WIFI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "JWEV-330332-CDDEB"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 99,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "oem",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

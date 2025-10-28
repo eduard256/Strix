@@ -1,0 +1,300 @@
+{
+  "brand": "Ubiquiti",
+  "brand_id": "ubiquiti",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "aircam",
+        "Air-Cam",
+        "Air-CAM",
+        "AIR-CAM",
+        "Air-vision",
+        "AIR-VISION",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "aircam",
+        "Air-Cam",
+        "Other",
+        "UVC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "aircam",
+        "G4 Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Aircam",
+        "Air-Cam",
+        "Air-vision",
+        "AIR-VISION",
+        "Other",
+        "WCSNET-ACD1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Air-Cam",
+        "Air-vision"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "Air-Cam",
+        "Other",
+        "WCSNET-ACD1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "Air-Cam"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0[CHANNEL]_0"
+    },
+    {
+      "models": [
+        "Air-Cam",
+        "AIRCAM",
+        "air-cam mini",
+        "aircam2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi"
+    },
+    {
+      "models": [
+        "Air-Cam"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Air-Cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1&resolution=320x240"
+    },
+    {
+      "models": [
+        "AIR-CAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Flex",
+        "UVC G3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "s0"
+    },
+    {
+      "models": [
+        "Flex",
+        "G3 Bullet",
+        "G3 Dome",
+        "G3 Flex",
+        "G4 Pro",
+        "Other",
+        "unifi g3",
+        "UVC",
+        "UVC Dome",
+        "UVC G3",
+        "UVC G3 Dome",
+        "UVC G3 Flex",
+        "UVC G3 Pro",
+        "UVC G4 pro",
+        "UVC G4 PRO",
+        "uvc gv3 flex",
+        "UVC-Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s0"
+    },
+    {
+      "models": [
+        "Flex",
+        "G3 Bullet",
+        "G3 Flex",
+        "unifi g3",
+        "UVC G3",
+        "UVC G3 Pro",
+        "uvc g4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s1"
+    },
+    {
+      "models": [
+        "G3 Bullet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/59icRTmMY7RCuJzM?enableSrtp"
+    },
+    {
+      "models": [
+        "G3 Bullet",
+        "G3 Dome",
+        "G4 Pro",
+        "UVC",
+        "UVC G3",
+        "UVC G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s2"
+    },
+    {
+      "models": [
+        "G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/5e254c28900822014a06053a_0"
+    },
+    {
+      "models": [
+        "G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch00_0"
+    },
+    {
+      "models": [
+        "G3 Instant"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/2BWx4LD70YdOYaEV?enableSrtp"
+    },
+    {
+      "models": [
+        "G3 Instant"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/ejakpsT9WvWFBynf?enableSrtp"
+    },
+    {
+      "models": [
+        "G3 Micro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/8Wtty2D3vG2XDa2N?enableSrtp"
+    },
+    {
+      "models": [
+        "G4 Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/v2xYofqne4G4ZT5u?enableSrtp"
+    },
+    {
+      "models": [
+        "G4 Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/7aMpSdYeblv747Bu?enableSrtp"
+    },
+    {
+      "models": [
+        "G4 Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/DRELXB66JxT9T4XW"
+    },
+    {
+      "models": [
+        "UVC G3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/bwf59Q0TPFcTxHek?enableSrtp"
+    },
+    {
+      "models": [
+        "UVC G3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/A0z19ORRP3pn6p6Y?enableSrtp"
+    },
+    {
+      "models": [
+        "UVC G4 pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/osmdk0V84fUhXvll"
+    }
+  ]
+}

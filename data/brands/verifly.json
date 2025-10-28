@@ -1,0 +1,18 @@
+{
+  "brand": "Verifly",
+  "brand_id": "verifly",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "lirdnts200",
+        "Lirdnts200"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5554,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

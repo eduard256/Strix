@@ -1,0 +1,92 @@
+{
+  "brand": "Knewmart",
+  "brand_id": "knewmart",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720",
+        "IPCAM01",
+        "knew",
+        "kr0022",
+        "KR0038",
+        "KR0041",
+        "KR0041-2",
+        "kr0043",
+        "KW0043",
+        "KW01B",
+        "KW02B",
+        "onvif 720p",
+        "ONVIF720HD IP CAMERA",
+        "Other",
+        "PNP ip",
+        "WXH-216766-BABBB",
+        "X SERIES IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Ip Kamera",
+        "KR0038",
+        "KR004",
+        "KR0043",
+        "KW02B",
+        "ONVIF720HD IP CAMERA",
+        "Other",
+        "PNP IP",
+        "pnp webcam",
+        "PNP1P",
+        "WXH-122168-FDCEF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "KR0041",
+        "KR0043",
+        "ONVIF720HD IP Camera",
+        "WXH-102908-BEADA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "kr0043"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "KW01B",
+        "KW02B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

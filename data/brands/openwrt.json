@@ -1,0 +1,17 @@
+{
+  "brand": "Openwrt",
+  "brand_id": "openwrt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "mjpeg_streamer"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 28080,
+      "url": "/?action=stream"
+    }
+  ]
+}

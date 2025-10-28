@@ -1,0 +1,17 @@
+{
+  "brand": "Ltek",
+  "brand_id": "ltek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LD40L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Crest",
+  "brand_id": "crest",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CCN-2824F"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1188,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CCN-4824s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1188,
+      "url": "/h264_stream"
+    }
+  ]
+}

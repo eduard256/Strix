@@ -1,0 +1,28 @@
+{
+  "brand": "Soho",
+  "brand_id": "soho",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cs-5814cf",
+        "Internet Camera",
+        "IP-561"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "IP-561"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/capture"
+    }
+  ]
+}

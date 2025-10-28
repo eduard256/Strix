@@ -1,0 +1,17 @@
+{
+  "brand": "Videoiq",
+  "brand_id": "videoiq",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VIQ-HD-CRD200-3-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

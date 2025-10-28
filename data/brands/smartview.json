@@ -1,0 +1,18 @@
+{
+  "brand": "Smartview",
+  "brand_id": "smartview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "thd2410A",
+        "The2410a"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    }
+  ]
+}

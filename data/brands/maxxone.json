@@ -1,0 +1,35 @@
+{
+  "brand": "Maxxone",
+  "brand_id": "maxxone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Bullet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "m1p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "M1P-C3A40F-E-G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video3"
+    }
+  ]
+}

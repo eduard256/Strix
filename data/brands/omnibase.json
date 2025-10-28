@@ -1,0 +1,17 @@
+{
+  "brand": "Omnibase",
+  "brand_id": "omnibase",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "minidome4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

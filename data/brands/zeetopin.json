@@ -1,0 +1,17 @@
+{
+  "brand": "Zeetopin",
+  "brand_id": "zeetopin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ZS-GX6S-T"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

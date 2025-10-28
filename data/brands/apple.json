@@ -1,0 +1,221 @@
+{
+  "brand": "Apple",
+  "brand_id": "apple",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3GS",
+        "ipad",
+        "iPad 2",
+        "iPad Air",
+        "iphone 4",
+        "iPhone 4 CDMA",
+        "iPhone 4S",
+        "iphone 5",
+        "iPhone 5S",
+        "iphone 6",
+        "Iphone4",
+        "iPod",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?codec=mjpeg&camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "3GS",
+        "Iphone",
+        "IPHONE 4",
+        "IPHONE 6",
+        "IPHONE 6 PLUS",
+        "Iphone4",
+        "iphone6",
+        "iPod"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?camera=[CHANNEL]&fps=5&quality=75&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "iipad",
+        "ipad",
+        "iphone 5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "iipas",
+        "iphone 6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "ipad"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/"
+    },
+    {
+      "models": [
+        "IPAD 2",
+        "iphone",
+        "iphone1",
+        "IPHONE6",
+        "iPhone7"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live?camera=[USERNAME]&quality=75&fps=5&resolution=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Ipad Air",
+        "iPhone 4",
+        "IPHONE 4 CDMA",
+        "iPhone 4S",
+        "iPhone 5",
+        "iPhone 6 Plus",
+        "iPhone3",
+        "IPHONE6",
+        "IPOD",
+        "macbook",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "IP-CAM-APP",
+        "iphone 7",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "iphone",
+        "iphone 4",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "iPhone",
+        "iPhone 4",
+        "IPHONE 4S",
+        "iPhone 6",
+        "iPhone SE",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "iphone 4",
+        "iphone se"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/live?codec=mjpeg&camera=0"
+    },
+    {
+      "models": [
+        "IPHONE 4",
+        "iphone3",
+        "Ipod"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "iPhone 4S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "iphone 5",
+        "IPHONE 5S",
+        "iPhone 8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPHONE 5"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.mjpg"
+    },
+    {
+      "models": [
+        "IPHONE 5S",
+        "Sony"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "iphone 6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    }
+  ]
+}

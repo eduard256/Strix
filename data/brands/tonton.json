@@ -1,0 +1,121 @@
+{
+  "brand": "Tonton",
+  "brand_id": "tonton",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "T8ZD2-10",
+        "wireless nvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "1080p",
+        "PE3020-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "1080p"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P",
+        "1329",
+        "C1319DN4-H",
+        "C6F0SgZ0P5L2",
+        "C6F0SgZ3N0P5L2",
+        "C6F0SGZ3N0P6L2",
+        "Other",
+        "TTTT-291042-FGBDF",
+        "TTTT-53493HDDX",
+        "tttt-648629-kfvgy",
+        "tttt-648877-zlkhc",
+        "TTTT-743510-WWBEL",
+        "TTTT-753493",
+        "tttt-834942-yljcs",
+        "tttt-838077-kjzul",
+        "WIRELESS NVR",
+        "X001YAVP5P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P",
+        "c1319DN4-H",
+        "c1319dn4h1808",
+        "C6F0SgZ3N0P5L2",
+        "C6F0SgZ3N0P6L2",
+        "c6fosgz3nop6l2",
+        "IPC365",
+        "Other",
+        "TCW51A-2MP",
+        "TTTT-753493-HDDM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1PJ2-2019B",
+        "8CH NVR",
+        "wireless nvr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5MP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C6fosgz3nop6l2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "MMMM-672187_EEDCF",
+        "wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

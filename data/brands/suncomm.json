@@ -1,0 +1,18 @@
+{
+  "brand": "Suncomm",
+  "brand_id": "suncomm",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "oc-432",
+        "rc8230d"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

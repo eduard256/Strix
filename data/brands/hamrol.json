@@ -1,0 +1,33 @@
+{
+  "brand": "Hamrol",
+  "brand_id": "hamrol",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "180",
+        "5mp ptz",
+        "8MP Ultra HD",
+        "8MP ULTRA HD",
+        "H5015M-XMI",
+        "NVT",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "EO Hamrol PTZ_2NVT",
+        "NVT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

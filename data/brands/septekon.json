@@ -1,0 +1,38 @@
+{
+  "brand": "Septekon",
+  "brand_id": "septekon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "640",
+        "764",
+        "Other",
+        "ty30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "764"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1000,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

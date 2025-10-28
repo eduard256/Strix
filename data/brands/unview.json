@@ -1,0 +1,166 @@
+{
+  "brand": "Unview",
+  "brand_id": "unview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6415SR",
+        "IPC2122SR3-F40W-D",
+        "IPC2324LB-ADZK-G",
+        "ipc3605sb-adf16km",
+        "IPC3612ER3-PF28-B",
+        "IPC3612LR3-PF28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/media/video1"
+    },
+    {
+      "models": [
+        "C1L-2WN",
+        "IPC2122LR3-PF28M-D",
+        "IPC2325SB-DZK-I0",
+        "IPC3235ER3-DUVZ",
+        "IPC3612LB-ADF28K",
+        "IPC3612LR3-PF28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "DPF36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "IPC2122LR3-PF40-C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 30002,
+      "url": "/unicast/c1/s1/live"
+    },
+    {
+      "models": [
+        "IPC2122SR3-F40W",
+        "IPC3615SR3-ADF28K-G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "IPC2122SR3-F40W-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/media/video3"
+    },
+    {
+      "models": [
+        "ipc2124sr3-dpf36"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "ipc2124sr3-dpf36"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "IPC2324LBR3-SPZ28-D",
+        "IPC322SR3-DVPF28-MX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IPC322SR3-DVPF28-MX",
+        "UNV ipc2122LB-sf-40-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC328LE-ADF28K-G",
+        "UNV ipc2122LB-sf-40-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/media/video2"
+    },
+    {
+      "models": [
+        "IPC328SB-ADF28K-I0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "IPC3614LE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "IPC3614SR3-ADPF28-F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/"
+    },
+    {
+      "models": [
+        "IPC3F12P-RU3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast/c9/s0/live"
+    }
+  ]
+}

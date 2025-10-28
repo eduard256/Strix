@@ -1,0 +1,17 @@
+{
+  "brand": "Asti",
+  "brand_id": "asti",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "sed-2120"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": ""
+    }
+  ]
+}

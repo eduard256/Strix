@@ -1,0 +1,17 @@
+{
+  "brand": "Svision Co",
+  "brand_id": "svision-co",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "idk"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 34567,
+      "url": "/ch0_0.264"
+    }
+  ]
+}

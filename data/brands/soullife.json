@@ -1,0 +1,44 @@
+{
+  "brand": "Soullife",
+  "brand_id": "soullife",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "PS6Lite"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/HighResolutionVideo"
+    },
+    {
+      "models": [
+        "PS6Lite"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "SL-03"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

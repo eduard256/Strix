@@ -1,0 +1,19 @@
+{
+  "brand": "Tevah",
+  "brand_id": "tevah",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ANC-600G",
+        "ANC-606G",
+        "ANC-818G"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    }
+  ]
+}

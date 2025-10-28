@@ -1,0 +1,17 @@
+{
+  "brand": "Xdh",
+  "brand_id": "xdh",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "XDH-16"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webapp.cgi?MODE=8&ID=[USERNAME]&PW=[PASSWORD]&VER=3000&CH=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "brand": "Concept Pro",
+  "brand_id": "concept-pro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CVP9324DNIR-IP4M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/snl/live/1/1"
+    },
+    {
+      "models": [
+        "cvp9328dnir-ip4m-g",
+        "KCI4D-1080",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    }
+  ]
+}

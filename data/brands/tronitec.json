@@ -1,0 +1,17 @@
+{
+  "brand": "Tronitec",
+  "brand_id": "tronitec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TR-200Z2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/?action=stream"
+    }
+  ]
+}

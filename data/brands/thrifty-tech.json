@@ -1,0 +1,28 @@
+{
+  "brand": "Thrifty Tech",
+  "brand_id": "thrifty-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8MP 4K UHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=Golden%40786&channel=1&stream=101.sdp?"
+    },
+    {
+      "models": [
+        "8MP GOLD SERIES",
+        "Thrifty Tech 5MP IP",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=101.sdp?"
+    }
+  ]
+}

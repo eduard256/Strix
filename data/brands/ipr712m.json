@@ -1,0 +1,17 @@
+{
+  "brand": "Ipr712m",
+  "brand_id": "ipr712m",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph264vga"
+    }
+  ]
+}

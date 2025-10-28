@@ -1,0 +1,17 @@
+{
+  "brand": "Bluecherry",
+  "brand_id": "bluecherry",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "media/mjpeg.php?multipart=true&id=[CHANNEL]"
+    }
+  ]
+}

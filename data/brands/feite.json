@@ -1,0 +1,17 @@
+{
+  "brand": "Feite",
+  "brand_id": "feite",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8L-TZ832"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

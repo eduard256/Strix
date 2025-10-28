@@ -1,0 +1,19 @@
+{
+  "brand": "Shiwojia",
+  "brand_id": "shiwojia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "PTZ security camera",
+        "ST-426-TY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

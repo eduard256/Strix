@@ -1,0 +1,613 @@
+{
+  "brand": "Airlive",
+  "brand_id": "airlive",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2025HD",
+        "2060HD",
+        "OD-2025HD",
+        "OD-2060HD",
+        "POE-200HD",
+        "WL-2600CAM",
+        "WN-200HD",
+        "WN-200HD-ETI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "2060hd",
+        "BU-2026",
+        "CW-720",
+        "Gabinet",
+        "OD2025HD",
+        "OD-325HD",
+        "OD-600HD",
+        "Other",
+        "WN/POE-2600HD",
+        "WN-200HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "2060HD",
+        "325hd",
+        "AirLive OD-600HD",
+        "CU-720",
+        "IP-200",
+        "OD2015HD",
+        "OD-2025HD",
+        "OD-2060HD",
+        "OD-325HD",
+        "OD-600HD",
+        "Other",
+        "POE-100HD",
+        "POE-200HD"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2060HD",
+        "IP-200",
+        "OD-2025HD",
+        "OD-325HD",
+        "OD-600HD",
+        "POE-200HD",
+        "WN/POE-2600HD",
+        "WN-200HD",
+        "WN-200HD-ETI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "325hd",
+        "OD-2060HD",
+        "OD-325HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "325hd",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "325hd",
+        "CW-720",
+        "IP-200",
+        "OD-325HD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "325HD",
+        "IP-200",
+        "OD-600HD",
+        "Other",
+        "POE-100CAM v2",
+        "POE-200HD",
+        "POE-280HD",
+        "POE-5010HD",
+        "wl 2000",
+        "WL-2600CAM",
+        "WL-260CAM",
+        "WN/POE-2600HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "325hd640",
+        "OD-325HD",
+        "OD-600HD",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "400152",
+        "720ir",
+        "AirliveCW-720IR",
+        "CW-720IR",
+        "OD-2060HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp"
+    },
+    {
+      "models": [
+        "AH-2573",
+        "Other",
+        "WL-1000CAM",
+        "wl-1200cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8000,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "BC-5010",
+        "BU-3025",
+        "BU-3025V2",
+        "BU-3026",
+        "BU-3026IVS",
+        "BU5010",
+        "CU-720",
+        "h264",
+        "IP-200",
+        "MD-3025",
+        "OD2025",
+        "OD-2025HD",
+        "OD-325HD",
+        "OD-600HD",
+        "POE-100HD",
+        "POE-200HD",
+        "POE-5010HD",
+        "WN/POE-2600HD",
+        "zadaj"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "BC-5010",
+        "OD300",
+        "Other",
+        "POE-5010HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/jpeg.cgi"
+    },
+    {
+      "models": [
+        "BU2015",
+        "BU-3025V2",
+        "BU-3026",
+        "BU-3026-IVS",
+        "MD-3025",
+        "Other",
+        "sc 300w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "BU-2015"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/mobile"
+    },
+    {
+      "models": [
+        "bu-2026",
+        "BU-3028",
+        "CU-720",
+        "OD-2025HD",
+        "OD-325HD",
+        "OD-600HD",
+        "POE-100HD",
+        "poe-2600hd",
+        "WN/POE-2600HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "BU-3026",
+        "BU-3026-IVS",
+        "BU-3028"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "BU-3026-IVS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "BU-3026-IVS_MY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "BU-3128",
+        "BU720",
+        "CU-720",
+        "DM-720",
+        "MD-720",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "BU-720",
+        "MD-720",
+        "WN/POE-2600HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "CU-720",
+        "FE-201DM",
+        "FE-210DM"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "CU-720"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "CU-720",
+        "IP-200",
+        "od300",
+        "Other",
+        "POE-100CAM V2",
+        "POE-100HD",
+        "POE-200HD",
+        "POE-280HD",
+        "WL-2000CAM",
+        "WL-2600",
+        "WL-2600CAM",
+        "WL-260CAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "DY-NC10"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "fe-200",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    },
+    {
+      "models": [
+        "FE-200CU",
+        "FE-200DM",
+        "FE-200VD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/admin/snapshot.cgi"
+    },
+    {
+      "models": [
+        "IP-200",
+        "OD-325HD",
+        "OD-600HD",
+        "Other",
+        "WN/POE-2600HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IP-200",
+        "OD-325HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "IP-200"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "vdata.v"
+    },
+    {
+      "models": [
+        "MD-720"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/view/image?pro_0"
+    },
+    {
+      "models": [
+        "MD-720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro2"
+    },
+    {
+      "models": [
+        "OD-2025HD",
+        "Other",
+        "POE-260CAM",
+        "WL-2600CAM",
+        "WN/POE-2600HD",
+        "WN-200HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "OD-2025HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "od300",
+        "OD-325HD",
+        "Other",
+        "POE-260CAM",
+        "WL2000",
+        "WL-2000CAM",
+        "WL-2600CAM",
+        "wl-350hd",
+        "WL-350HD",
+        "wn-150"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "OD300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "OD-325HD",
+        "POE-280HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "OD-325HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Video?Codec=MPEG4&Width=720&Height=576&Fps=30"
+    },
+    {
+      "models": [
+        "OD-600HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "OD-600HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "OD-600HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "POE-250HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/stream1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "POE-100CAM V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "POE-200HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "POE-280HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "POE-5010HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "wl-1200cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "WN-200HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

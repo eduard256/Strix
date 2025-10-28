@@ -1,0 +1,17 @@
+{
+  "brand": "Xblock",
+  "brand_id": "xblock",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GPCZ-636A1NT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam0_0"
+    }
+  ]
+}

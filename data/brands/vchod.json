@@ -1,0 +1,17 @@
+{
+  "brand": "Vchod",
+  "brand_id": "vchod",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "RTX-IP26H"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Archos",
+  "brand_id": "archos",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    }
+  ]
+}

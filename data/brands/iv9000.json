@@ -1,0 +1,17 @@
+{
+  "brand": "Iv9000",
+  "brand_id": "iv9000",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "9150"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/profile1"
+    }
+  ]
+}

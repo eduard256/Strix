@@ -1,0 +1,23 @@
+{
+  "brand": "Kyocera",
+  "brand_id": "kyocera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "c6725",
+        "event",
+        "hydro1",
+        "Phone",
+        "POS",
+        "rise",
+        "Wave"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

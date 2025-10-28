@@ -1,0 +1,27 @@
+{
+  "brand": "V4l2rtspserver",
+  "brand_id": "v4l2rtspserver",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "raspberrpi3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/unicast"
+    },
+    {
+      "models": [
+        "RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/geo/bali1/"
+    }
+  ]
+}

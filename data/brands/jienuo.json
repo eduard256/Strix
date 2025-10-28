@@ -1,0 +1,130 @@
+{
+  "brand": "Jienuo",
+  "brand_id": "jienuo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "605wifi",
+        "ColorVu",
+        "JN 107AR-D-WIFI",
+        "JN-02-D-WIFI",
+        "JN-08-E-WIFI",
+        "JN-107AR",
+        "JN-107AR-D-WIFI",
+        "JN-602SW",
+        "JN-605HV-WIF",
+        "JN-605HV-WIFI",
+        "JN-605SW",
+        "JN-605SW-D-WIFI",
+        "JN-605WS-D-WIFI",
+        "JN-IP107-D-WIFI",
+        "JN-IP407-E-POE",
+        "JN-IP501AR-A-WIFI",
+        "JN-IP501AR-B-WIFI",
+        "JN-IP501AR-D-WIFI",
+        "JN-IP516AR-D-WIFI",
+        "JN-IP601AR-A-WIFI",
+        "JN-IP601AR-D-WIFI",
+        "jn-ip605hv-a-wifi",
+        "JN-IP605HV-D-WIFI",
+        "JN-IP605HV-WIFI",
+        "JN-IP670AR-D-WIFI",
+        "Other",
+        "SSAT-145332-BDDAD",
+        "Terasa 1",
+        "WIFI IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "605wifi",
+        "JN 107AR-D-WIFI",
+        "JN-107AR-E-WIFI",
+        "JN-IP107",
+        "JN-IP107-E-WIFI",
+        "JN-IP45-D-wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "ar501"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Ar511",
+        "IP501JR",
+        "jn-ip501ar-d-wifi",
+        "jn-ip507ar-a-wifi",
+        "JN-IP5108AR-A-WIFI",
+        "jn-ip6008AR-A-Wifi",
+        "JN-IP608AR-A-WIFI",
+        "kuh"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "ip501jr",
+        "JN-IP506AR-A-WIFI",
+        "JN-IP601AR-D-WIFI",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "IP516AR",
+        "JN-IP501AR-A-WIFI",
+        "JN-IP501AR-B-WIFI",
+        "JN-IP5108AR-A-WIFI",
+        "jn-ip516",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "JN-IP516AR-D-WIFI",
+        "jn-ip517ar-d",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "JN-IP608AR-A-WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif-stream2"
+    }
+  ]
+}

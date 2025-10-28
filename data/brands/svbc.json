@@ -1,0 +1,45 @@
+{
+  "brand": "Svbc",
+  "brand_id": "svbc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "A Series",
+        "Sv3c",
+        "SV-B01POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "B06W-720P-HX",
+        "B08W-5MP-HX",
+        "Eas",
+        "Other",
+        "SV3C",
+        "SV-B01-960P",
+        "SV-B01W-1080p-HX",
+        "sv-b05w-5mp-hx",
+        "SV-B11vPOE-1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "SAEU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

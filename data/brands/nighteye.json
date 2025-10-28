@@ -1,0 +1,17 @@
+{
+  "brand": "Nighteye",
+  "brand_id": "nighteye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SIP-E03-200STA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    }
+  ]
+}

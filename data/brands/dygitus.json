@@ -1,0 +1,17 @@
+{
+  "brand": "Dygitus",
+  "brand_id": "dygitus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "16036"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "brand": "Simicam",
+  "brand_id": "simicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4K POE 48V",
+        "3.6mm",
+        "4K POE Camera",
+        "H43",
+        "HD Camera",
+        "HD CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=2_stream=1.sdp?real_stream"
+    },
+    {
+      "models": [
+        "A314D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "HD Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=5_stream=1.sdp?real_stream"
+    },
+    {
+      "models": [
+        "HD Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=6_stream=1.sdp?real_stream"
+    },
+    {
+      "models": [
+        "HD Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=10_stream=1.sdp?real_stream"
+    },
+    {
+      "models": [
+        "QJ-8M-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

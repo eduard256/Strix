@@ -1,0 +1,17 @@
+{
+  "brand": "Kaansky",
+  "brand_id": "kaansky",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "domecam1.3mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

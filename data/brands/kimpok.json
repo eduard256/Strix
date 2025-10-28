@@ -1,0 +1,17 @@
+{
+  "brand": "Kimpok",
+  "brand_id": "kimpok",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KP-366W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

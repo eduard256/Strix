@@ -1,0 +1,62 @@
+{
+  "brand": "Infinova",
+  "brand_id": "infinova",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "onvif",
+        "Other",
+        "V1492MP-30T",
+        "V1492MP-30T25HE",
+        "V6204",
+        "v6411",
+        "VH111-A20B-A0",
+        "VH224-A20B-A012"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "Other",
+        "V2501-M"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "V6204"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1.AMP"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/mjpeg"
+    },
+    {
+      "models": [
+        "V6842"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video1enc1"
+    }
+  ]
+}

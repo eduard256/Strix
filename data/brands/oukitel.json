@@ -1,0 +1,17 @@
+{
+  "brand": "Oukitel",
+  "brand_id": "oukitel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP Webcam Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video?1920x1080"
+    }
+  ]
+}

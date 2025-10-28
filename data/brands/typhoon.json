@@ -1,0 +1,17 @@
+{
+  "brand": "Typhoon",
+  "brand_id": "typhoon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TM013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    }
+  ]
+}

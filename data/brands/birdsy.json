@@ -1,0 +1,26 @@
+{
+  "brand": "Birdsy",
+  "brand_id": "birdsy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BirdsyPole"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "BirdsyPole"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/sub"
+    }
+  ]
+}

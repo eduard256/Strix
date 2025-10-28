@@ -1,0 +1,29 @@
+{
+  "brand": "Blaupunkt",
+  "brand_id": "blaupunkt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "D30",
+        "VIO-B30",
+        "vio-D40",
+        "VIO-DP20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "Vio-HS20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46MTNWV2JyMjg="
+    }
+  ]
+}

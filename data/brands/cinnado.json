@@ -1,0 +1,35 @@
+{
+  "brand": "Cinnado",
+  "brand_id": "cinnado",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "D1/Thingino FW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1"
+    },
+    {
+      "models": [
+        "D1/Thingino FW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0"
+    },
+    {
+      "models": [
+        "dm1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "live/ch00_0"
+    }
+  ]
+}

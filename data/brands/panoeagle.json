@@ -1,0 +1,40 @@
+{
+  "brand": "Panoeagle",
+  "brand_id": "panoeagle",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4818X-IS",
+        "PG2357C",
+        "pg2385i",
+        "PTZ-4620IZT2",
+        "ptz-4818-iz",
+        "ptz4833"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "pg2385i"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "ptz-2504"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264?username=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

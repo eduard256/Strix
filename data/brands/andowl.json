@@ -1,0 +1,78 @@
+{
+  "brand": "Andowl",
+  "brand_id": "andowl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPG-X6-WEQ2",
+        "Q-S30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "IPG-X6-WEQ2",
+        "q-s712"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Q-A236",
+        "Q-A275",
+        "Q-S2i",
+        "QS66"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "q-s4",
+        "Q-SX002"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "q-s4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/streamtype=0"
+    },
+    {
+      "models": [
+        "Q-S4",
+        "S-Q4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/streamtype=1"
+    },
+    {
+      "models": [
+        "Q-S807"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    }
+  ]
+}

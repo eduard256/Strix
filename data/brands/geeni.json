@@ -1,0 +1,69 @@
+{
+  "brand": "Geeni",
+  "brand_id": "geeni",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CW006"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CW007",
+        "CW033",
+        "GNC-CW220",
+        "hawk2",
+        "hawk3",
+        "MI-CW020",
+        "mi-cw217",
+        "Smart Doorbell"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HAWK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "mi-cw017-101w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 60906,
+      "url": "/"
+    },
+    {
+      "models": [
+        "MI-CW017-101W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "Mini 7C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/stream_0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Broadcom",
+  "brand_id": "broadcom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "L series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    }
+  ]
+}

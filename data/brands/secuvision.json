@@ -1,0 +1,17 @@
+{
+  "brand": "Secuvision",
+  "brand_id": "secuvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NVR-D0432A-16P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/chID=1&streamType=main"
+    }
+  ]
+}

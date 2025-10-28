@@ -1,0 +1,44 @@
+{
+  "brand": "Quadrant Technology",
+  "brand_id": "quadrant-technology",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "qcp-a356"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "qcp-a356"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/app/camera.html"
+    },
+    {
+      "models": [
+        "qcp-a356"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/app/events.html?partnerId=iSecurityPlus"
+    },
+    {
+      "models": [
+        "qcp-a356"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/app/camera.html?partnerId=iSecurityPlus"
+    }
+  ]
+}

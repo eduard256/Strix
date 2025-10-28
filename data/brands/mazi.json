@@ -1,0 +1,26 @@
+{
+  "brand": "Mazi",
+  "brand_id": "mazi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HTVR-0410LT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "IWH-31IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    }
+  ]
+}

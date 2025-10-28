@@ -1,0 +1,17 @@
+{
+  "brand": "Anhkiet",
+  "brand_id": "anhkiet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3h07811pag00942"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    }
+  ]
+}

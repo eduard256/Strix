@@ -1,0 +1,176 @@
+{
+  "brand": "Yoosee",
+  "brand_id": "yoosee",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "20048",
+        "25512319",
+        "2981432",
+        "8177",
+        "Dog",
+        "J1080P",
+        "meli",
+        "Other",
+        "qf502",
+        "Y-8177",
+        "Y-8177 1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "2262711"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "25512319",
+        "29074193",
+        "2981432",
+        "34930167",
+        "360",
+        "6310",
+        "8177",
+        "alal",
+        "C100E",
+        "D100",
+        "dome",
+        "DOM-J1080P",
+        "EC9-IPC-JV-3480-F",
+        "Gadinan Wifi Camera Yoosee APP ONVIF IP Camera",
+        "GW10",
+        "gwipc",
+        "GWIPC",
+        "HL-100SS",
+        "IL-HIP292-1M-ZY",
+        "J1080P",
+        "meli",
+        "mercadoLibre",
+        "Mini Yoosee",
+        "nao lembro",
+        "nose",
+        "ORB776",
+        "Other",
+        "P1080",
+        "Q16-1080-WH",
+        "Q16-5MP-WH",
+        "RW-650S",
+        "W10",
+        "Y-8177",
+        "Y-8177 1080P",
+        "Y-8777",
+        "YD-D-01",
+        "YN-8801JW-2MP",
+        "YN-8807JW-2MP",
+        "YN-881JW-2MP",
+        "YooSee 720p",
+        "Yoosee Generic",
+        "YYC-XF2+3",
+        "ZN001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "29074193",
+        "C9F0SeZ3N0P6L0",
+        "c-yz01d2f11e4n",
+        "Other",
+        "RC65",
+        "tony",
+        "YOSSE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "720p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "algo"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "GW4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "GWIPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IL-HIP292-1M-ZY"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "J1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "lightbulb"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=adminpass&balls=balls5"
+    },
+    {
+      "models": [
+        "Lightbulb",
+        "YN-8801JW-2MP",
+        "ys06"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

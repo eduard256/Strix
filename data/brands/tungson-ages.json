@@ -1,0 +1,18 @@
+{
+  "brand": "Tungson Ages",
+  "brand_id": "tungson-ages",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP71",
+        "IP72"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

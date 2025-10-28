@@ -1,0 +1,62 @@
+{
+  "brand": "Adj",
+  "brand_id": "adj",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "700-00048"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1024,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "DVR (Channel 1)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "DVR (Channel 2)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=2&subtype=0"
+    },
+    {
+      "models": [
+        "DVR (Channel 3)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=0"
+    },
+    {
+      "models": [
+        "Wireless IPCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "WIRELESS IPCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

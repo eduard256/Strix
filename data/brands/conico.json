@@ -1,0 +1,37 @@
+{
+  "brand": "Conico",
+  "brand_id": "conico",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "812E",
+        "gx6s",
+        "ZS-GX1S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "F330"
+      ],
+      "type": "MJPEG",
+      "protocol": "https",
+      "port": 7443,
+      "url": "/ccm/ccm_pic_get.jpg?hfrom_handle=887330&dsess=1&dsess_nid=MHkMHqeZgXPcaHyOZ.AyecFCDdpjEF7g&dsess_sn=1jfiegbqtkbxa&dtoken=p1_xxxxxxxxxx"
+    },
+    {
+      "models": [
+        "FI-362C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

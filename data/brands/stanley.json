@@ -1,0 +1,27 @@
+{
+  "brand": "Stanley",
+  "brand_id": "stanley",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8000 irv",
+        "IPC-5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "IPC-5100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    }
+  ]
+}

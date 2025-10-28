@@ -1,0 +1,349 @@
+{
+  "brand": "Safehome",
+  "brand_id": "safehome",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1 mp hd p2p",
+        "278040-Nordic",
+        "hhfhfh",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1 MP HD P2P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/onvif-stream1"
+    },
+    {
+      "models": [
+        "1 MP HD P2P",
+        "1HD",
+        "1MP HD P2P Camera",
+        "1MPHDP2P",
+        "2 MP Wireless P2P FULL HD Outdoor",
+        "278040",
+        "278040_dreje",
+        "278047",
+        "278047-NordicX",
+        "278050",
+        "278050-Nordic",
+        "278050-Nordic-X",
+        "278052",
+        "278052-NordicX",
+        "278054",
+        "278054-2",
+        "IPROBOT",
+        "Nordic",
+        "Other",
+        "P2P outdoor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "1MP HD P2P CAMERA",
+        "2 MP FULL HD P2P CAMERA",
+        "278050-Nordic-X",
+        "278051",
+        "278051-nordic",
+        "278056-NORDICX",
+        "Oma Nordic"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "278040-nordic",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "278041-NORDIC",
+        "278042",
+        "278052-NORDICX",
+        "HD628",
+        "HD-628W",
+        "IP255",
+        "Other",
+        "p2p",
+        "P2P OUTDOOR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "278042",
+        "616-W",
+        "IP601W",
+        "IP601W-hd",
+        "Other",
+        "VGA 616W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "278042-NORDIC",
+        "IP3815W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "278043",
+        "IP601W",
+        "IP601W-hd",
+        "iprobot",
+        "NORDIC",
+        "OTHER-MEDION",
+        "P2P OUTDOOR",
+        "VGA 616W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "391W-HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/video0"
+    },
+    {
+      "models": [
+        "616-W",
+        "IP601W-hd",
+        "Other",
+        "P2P OUTDOOR",
+        "VGA 615W",
+        "w616"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CLJXA1HPJJBBA56PYZ61",
+        "IPRobot3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8001,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HD P2P HD628W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "HD-628W",
+        "HD-720P",
+        "IP601W",
+        "IP601W-hd",
+        "vga616w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "HD-628W",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "IP3815W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP-601W",
+        "Other",
+        "WH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "ip601w-hd",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "ip601w-hd"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "IP601W-hd",
+        "IPRobot",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP601W-hd",
+        "iprobot",
+        "MP 391W-HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP601W-hd",
+        "iprobot",
+        "Other",
+        "p2p"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other-Medion"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "p2p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "p2p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "p2p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "brand": "Eyeplus",
+  "brand_id": "eyeplus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Alt",
+        "CloudCam",
+        "EYEPLUS_DEV",
+        "H9017D",
+        "HIP291G Alt",
+        "IL-HIP291G-2M-AI",
+        "Other",
+        "uggh"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/av1"
+    },
+    {
+      "models": [
+        "CloudCam",
+        "EYEPLUS_DEV",
+        "RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "C-P08-23(EN)A",
+        "DEV_1",
+        "EYEPLUS_DEV",
+        "HIP291G",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/mpeg4"
+    },
+    {
+      "models": [
+        "C-P80-23",
+        "EYEPLUS_DEV",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "DEV_1",
+        "EYEPLUS_DEV",
+        "EYEPLUS_FRT",
+        "Other",
+        "zs-gx1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "DEV_1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/live/1"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/live/2"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "Eteplus-dev"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "EYEPLUS_DEV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "EYEPLUS_DEV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/onvif/device_service"
+    },
+    {
+      "models": [
+        "eyeplus-DEV",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "IL-HIP291G-2M-AI",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "brand": "Leftek",
+  "brand_id": "leftek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2mp",
+        "CA11",
+        "ca11-sc-i-poe-223",
+        "LF-CE11-SB-I-POE-223",
+        "Minicam",
+        "Other",
+        "S2018V1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "720P",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CA11",
+        "CA11-SC-I-POE-223",
+        "LF-CE11-SB-1-POE-223",
+        "LF-CE11-SB-I-PODE-223",
+        "LF-CE11-SB-I-POE-223",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "ca11-sc-i-poe-223",
+        "F1-10I",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "F1-10I"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/2.3gp"
+    },
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    }
+  ]
+}

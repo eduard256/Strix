@@ -1,0 +1,26 @@
+{
+  "brand": "Ip66",
+  "brand_id": "ip66",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

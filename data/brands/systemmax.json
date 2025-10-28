@@ -1,0 +1,27 @@
+{
+  "brand": "Systemmax",
+  "brand_id": "systemmax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "N-1350",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "SMB-2MPIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    }
+  ]
+}

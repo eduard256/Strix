@@ -1,0 +1,17 @@
+{
+  "brand": "Febfox Wifi Camera",
+  "brand_id": "febfox-wifi-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "UHD camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

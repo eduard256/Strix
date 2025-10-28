@@ -1,0 +1,17 @@
+{
+  "brand": "Monita Cctv",
+  "brand_id": "monita-cctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LPR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/channel=0;stream=0;user=[USERNAME];pass=[PASSWORD];"
+    }
+  ]
+}

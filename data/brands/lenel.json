@@ -1,0 +1,76 @@
+{
+  "brand": "Lenel",
+  "brand_id": "lenel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CST-240",
+        "ict 230",
+        "ICT-220",
+        "ICT-230",
+        "ict2301",
+        "ICT-240"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg.jpg"
+    },
+    {
+      "models": [
+        "ICT-220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "ICT-220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "ICT-220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.h264"
+    },
+    {
+      "models": [
+        "ICT-220"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "ICT-220"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "ICT-240"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg2.jpg"
+    }
+  ]
+}

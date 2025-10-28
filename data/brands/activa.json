@@ -1,0 +1,28 @@
+{
+  "brand": "Activa",
+  "brand_id": "activa",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ACT-200W",
+        "ACT-2800/3100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "ACT-2100",
+        "ACT-2800/3100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    }
+  ]
+}

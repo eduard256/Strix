@@ -1,0 +1,100 @@
+{
+  "brand": "Lowes Iris",
+  "brand_id": "lowes-iris",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0C830",
+        "c830",
+        "LWD-0280",
+        "OC821",
+        "RC8221",
+        "SERCOMM",
+        "WIRELESS IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "INDOOR",
+        "OC821",
+        "Other",
+        "RC-8221",
+        "SERCOMM",
+        "Wireless IP Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "INDOOR",
+        "INDOOR / OUTDOOR",
+        "LC8221",
+        "OC821",
+        "OC8221",
+        "RC8221",
+        "SERCOMM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "indoor / outdoor",
+        "OC821",
+        "RC8221",
+        "SERCOMM",
+        "WIRELESS IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "INDOOR / OUTDOOR",
+        "OC821",
+        "OC8221",
+        "RC2111",
+        "RC-8221"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "OC821",
+        "OC821D",
+        "OC8221",
+        "Other",
+        "RC-8221"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "oc821d"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "brand": "Fujtech",
+  "brand_id": "fujtech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Drop",
+        "Drop HD",
+        "DROP HD",
+        "mini",
+        "Mini",
+        "Mini HD",
+        "MINI HD",
+        "MINI IP camera",
+        "MINI IP CAMERA",
+        "Other",
+        "View"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "HD PTZ",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    }
+  ]
+}

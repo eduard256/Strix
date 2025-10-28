@@ -1,0 +1,26 @@
+{
+  "brand": "Evonet",
+  "brand_id": "evonet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C-SD220-Z18"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/?trackID=0"
+    },
+    {
+      "models": [
+        "C-VD310IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/media"
+    }
+  ]
+}

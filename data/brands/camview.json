@@ -1,0 +1,53 @@
+{
+  "brand": "Camview",
+  "brand_id": "camview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2AFPL-PE3020-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2AFPL-PE3020-W",
+        "CAMVIEW N SERIES",
+        "ic171w",
+        "M212w",
+        "Other",
+        "VR-130"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2AFPL-PE3020-W",
+        "M212w",
+        "PE3020-w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "M212w",
+        "Other",
+        "pe3020-w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

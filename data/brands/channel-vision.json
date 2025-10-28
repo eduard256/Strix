@@ -1,0 +1,42 @@
+{
+  "brand": "Channel Vision",
+  "brand_id": "channel-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6521",
+        "SC565w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/v2"
+    },
+    {
+      "models": [
+        "6521",
+        "6522",
+        "6522-new",
+        "6564",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "6554",
+        "6564",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    }
+  ]
+}

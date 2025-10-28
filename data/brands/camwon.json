@@ -1,0 +1,28 @@
+{
+  "brand": "Camwon",
+  "brand_id": "camwon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C6F0SpZ3N0PgL2",
+        "Other",
+        "SSA-290980-BBFEF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "WIP-PB200N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

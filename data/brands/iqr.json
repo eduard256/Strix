@@ -1,0 +1,17 @@
+{
+  "brand": "Iqr",
+  "brand_id": "iqr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "I32"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    }
+  ]
+}

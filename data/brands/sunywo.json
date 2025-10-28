@@ -1,0 +1,35 @@
+{
+  "brand": "Sunywo",
+  "brand_id": "sunywo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H6EV100-N4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "JVSW0711"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "JVSW0711"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile1"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "brand": "Gw Security",
+  "brand_id": "gw-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1337IP",
+        "2016IP",
+        "2040",
+        "5050IP",
+        "5071IP",
+        "5072ip",
+        "5092IP",
+        "5MP",
+        "GW1324IP",
+        "GW-1340IP",
+        "Gw-2037",
+        "GW-2037IP",
+        "GW-2050IP",
+        "GW-2078IP",
+        "GW-2271IP",
+        "GW5037IP",
+        "GW-5071IP",
+        "GW-5072IP",
+        "GW-5080IP",
+        "GW5088IP",
+        "GW-5091IP",
+        "GW-N-2037IP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "1337IP",
+        "ge2237ip",
+        "GE2237IP",
+        "GW 200ip",
+        "GW-2040",
+        "GW-2089IP",
+        "GW5037IP",
+        "GW-5061IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2016IP",
+        "2037",
+        "2065ip",
+        "2078-IP",
+        "2261ip",
+        "5050IP",
+        "5072IPC",
+        "5091IP",
+        "5MP",
+        "GW 5055",
+        "GW1361IP",
+        "GW-2040IP",
+        "GW-2050IP",
+        "GW-2061IP",
+        "GW-2071IP",
+        "GW-2250",
+        "GW5037IP",
+        "GW-5050IP",
+        "GW-5061IP",
+        "GW-5071IP",
+        "GW-5081IP",
+        "HD1920",
+        "IP-2000",
+        "IP-2037",
+        "VDG1060DN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "2250IP",
+        "5050IP",
+        "5071IP",
+        "5MP",
+        "GW 200ip",
+        "GW1361IP",
+        "GW-2037IP",
+        "GW-2061IP",
+        "GW-5050ip",
+        "GW5077mic",
+        "gw6836wpw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2440I",
+        "GW-2061IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "5050IP",
+        "5MP",
+        "GW 200ip",
+        "GW-2040IP",
+        "GW-2061",
+        "GW2071IP",
+        "GW-2250IP",
+        "GW-5050IP",
+        "GW-5071IP",
+        "gw-5450eip",
+        "IP66",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5050IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "5081IP",
+        "GW-1333IP",
+        "GW-2050IP",
+        "GW5037IP",
+        "GW-5050IP",
+        "GW5077MIC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "5081IP",
+        "5180",
+        "5MP",
+        "GW5037IP",
+        "GW-5071IP",
+        "GW-5080IP",
+        "GW5188IP",
+        "GW5237IP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "5083IP",
+        "5088IP",
+        "555",
+        "GW5037IP",
+        "GW-5072IP",
+        "GW5237IP",
+        "gw8087mmic",
+        "ipc 5071",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "5500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "8171",
+        "GW-5437MIC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "GW 200ip",
+        "GW-5071IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "GW-2037IP",
+        "GW-2237IP",
+        "GW-5061IP",
+        "GW-5071IP",
+        "GW-5072IP",
+        "GW5088IP",
+        "gwsec",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "GW-2040ip",
+        "GW-2061IP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "GW-2061IP",
+        "hw10",
+        "KDT-HW67RC80"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "GW-2078IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "GW2737MICWIFI",
+        "GW5737MIC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "GW2737MICWIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/sub"
+    },
+    {
+      "models": [
+        "GW4028IP",
+        "gw-4067ipc",
+        "GW5161IP",
+        "X100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5050,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "GW4571MIP",
+        "unk"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch00/0"
+    },
+    {
+      "models": [
+        "GW5037IP",
+        "GW-5061IP",
+        "GW-5071ip",
+        "GW-5081IP",
+        "GW-5088IP",
+        "GW-5091IP",
+        "kdw-hw29rc72",
+        "Other",
+        "VDG2061IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "GW-5071IP"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "GW-5080IP",
+        "GW-5088IP",
+        "GW8538IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "GW-5080IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "GW5537IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "GW822CVB",
+        "GW852CVB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "GW-NVR2224E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "GW-NVR2224E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=0"
+    },
+    {
+      "models": [
+        "VDG1389IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    }
+  ]
+}

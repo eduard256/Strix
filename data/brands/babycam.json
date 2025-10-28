@@ -1,0 +1,54 @@
+{
+  "brand": "Babycam",
+  "brand_id": "babycam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "baby",
+        "Ideanext"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "IDEANEXT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "IPT303"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2600,
+      "url": "/"
+    },
+    {
+      "models": [
+        "white"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4_1.sdp"
+    },
+    {
+      "models": [
+        "yoosee"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

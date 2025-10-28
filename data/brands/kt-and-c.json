@@ -1,0 +1,44 @@
+{
+  "brand": "Kt And C",
+  "brand_id": "kt-and-c",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KNC-HDi47"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "KNC-p2DR28V12IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "KNC-p3BR4IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "KNC-p3BR4IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

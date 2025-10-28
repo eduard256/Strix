@@ -1,0 +1,21 @@
+{
+  "brand": "Ps-link",
+  "brand_id": "ps-link",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GBK50T",
+        "IP105P",
+        "NT20220526001",
+        "Other",
+        "PS-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

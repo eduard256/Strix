@@ -1,0 +1,18 @@
+{
+  "brand": "Codnida",
+  "brand_id": "codnida",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PTZ Camera",
+        "PTZ Security Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

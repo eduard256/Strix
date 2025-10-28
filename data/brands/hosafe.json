@@ -1,0 +1,345 @@
+{
+  "brand": "Hosafe",
+  "brand_id": "hosafe",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "2MB6P AtP",
+        "629",
+        "H2MB4W",
+        "H2MB6A",
+        "H2MB6PA",
+        "h2md",
+        "H2MD4A",
+        "H2MD6PA",
+        "H2MW3A",
+        "HOSAFE 1920mark",
+        "HOSAFE-628",
+        "H-series",
+        "HX-2PT1",
+        "IPC",
+        "OSC",
+        "Other",
+        "PTZ",
+        "SV1MB1W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "1MB1W-HD",
+        "1MW1",
+        "1mw12",
+        "2MB2",
+        "2MD3G",
+        "2MW1",
+        "dome",
+        "HOSAFE 1920",
+        "HOSAFE-13MD4",
+        "HX-2PT1",
+        "Other",
+        "P720P",
+        "ZVR2MB1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "13mb1g",
+        "1MB1G",
+        "1mb1w",
+        "1MB1W-HD",
+        "629",
+        "HOSAFE-13MD4",
+        "hosafe-13md4p",
+        "HOSAFE-1MB1G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "13mb6",
+        "1MB1",
+        "1MB1G",
+        "1mb1w",
+        "1MB6",
+        "1MEG1G",
+        "2mb",
+        "2MD3W",
+        "HOSAFE-1MB1W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "13MB6",
+        "1MB1",
+        "black dome"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "13MD1G",
+        "13MD1W",
+        "180ViewDome",
+        "1M1G",
+        "1M1W",
+        "1MB 1G",
+        "1MB1Q",
+        "1mb1w",
+        "1MB1W",
+        "1MB3W",
+        "1MB6",
+        "1MB6P",
+        "1MD1B",
+        "1md1w",
+        "1MD1W",
+        "1MD4P",
+        "1MEG1G",
+        "1mp",
+        "1mpg",
+        "2MB1",
+        "2MB2",
+        "2mb3",
+        "2mb3g",
+        "2MB6",
+        "2MB6P",
+        "2MB8P",
+        "2MD1",
+        "2MD4P",
+        "2MP2W",
+        "720p",
+        "dome",
+        "Hosafe 1080",
+        "Hosafe 1920",
+        "HOSAFE 2MB2W",
+        "HOSAFE 2MB6P",
+        "HOSAFE-1MB1W",
+        "IMB1W",
+        "IMD1W",
+        "IPC",
+        "K3MB1GP",
+        "MD13G1",
+        "MD1B",
+        "mp2",
+        "Other",
+        "R2 V3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "1M1W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1MB1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "1mb1w"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "1mb1w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "1MB1W",
+        "1mb4e",
+        "1MB6",
+        "1MB6P",
+        "1MD1B",
+        "1MD1W",
+        "1MD4P",
+        "2MB6P",
+        "2MB8P",
+        "2MD2W",
+        "2MD4P",
+        "2MW1",
+        "628",
+        "9320",
+        "DOME",
+        "EMENTARY",
+        "H2MB3W",
+        "h2mb4wa",
+        "H2MB4WA",
+        "H2MB6",
+        "h2mb61",
+        "H2MB6A",
+        "H2MB6PA",
+        "H2MD4",
+        "h2md4a",
+        "H2MD6PA",
+        "H5MB4WPA",
+        "hk-2pt1",
+        "Hosafe 1080",
+        "Hosafe-1MB6P",
+        "hosafe-1mw1",
+        "HX-2PT1",
+        "HX-2PT1-5",
+        "J20-P7",
+        "Jim",
+        "Other",
+        "Personal",
+        "PTZ",
+        "ptz int",
+        "Voor",
+        "x2c5000v-w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1MW20G",
+        "HOSAFE 1MB1W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "2MB",
+        "hk-2pt1",
+        "HX-2PT1",
+        "OSC",
+        "PoE",
+        "whitt"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "720P",
+        "p720d",
+        "Wireless 720P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "Achter",
+        "X2MSD1",
+        "X2MSL1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "H2MB4WCA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "HX-2pt1",
+        "Megapixel",
+        "Other",
+        "ptz int"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "HX-2pt1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "HX-2PT1",
+        "Other",
+        "R2 V3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "HX-2PT1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "K3MB1GP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    }
+  ]
+}

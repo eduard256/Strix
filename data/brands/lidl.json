@@ -1,0 +1,37 @@
+{
+  "brand": "Lidl",
+  "brand_id": "lidl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "iuk",
+        "IUK 5A1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "IUK 5A1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IUK 5A1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

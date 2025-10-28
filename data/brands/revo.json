@@ -1,0 +1,59 @@
+{
+  "brand": "Revo",
+  "brand_id": "revo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "i6032BV200",
+        "RUBCB36-1A",
+        "RUCB36-1AX",
+        "RUWCB40-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC: Wireless"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?account=[USERNAME]&password=[PASSWORD]&stream=1"
+    },
+    {
+      "models": [
+        "IPC: Wireless"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?account=[USERNAME]&password=[PASSWORD]&stream=0"
+    },
+    {
+      "models": [
+        "Other",
+        "RUCFE4K-1C",
+        "RUCT2812-1",
+        "T320"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    }
+  ]
+}

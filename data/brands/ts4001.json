@@ -1,0 +1,39 @@
+{
+  "brand": "Ts4001",
+  "brand_id": "ts4001",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8081",
+        "dvr1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/0/video0"
+    },
+    {
+      "models": [
+        "GM8126",
+        "h109",
+        "IP Robot3",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "p720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av1"
+    }
+  ]
+}

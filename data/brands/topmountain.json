@@ -1,0 +1,17 @@
+{
+  "brand": "Topmountain",
+  "brand_id": "topmountain",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "JND-Y1-100W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

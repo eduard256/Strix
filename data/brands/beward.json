@@ -1,0 +1,268 @@
+{
+  "brand": "Beward",
+  "brand_id": "beward",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1210",
+        "1710DM",
+        "2015",
+        "2710",
+        "2710R",
+        "B1070",
+        "B1710RV",
+        "B2.980FP",
+        "B2230RVZ",
+        "b2710dr",
+        "B2720RV",
+        "B4230RVZ",
+        "B5350RVZ",
+        "BN1250-1",
+        "dacha",
+        "DK103",
+        "DS06M",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    },
+    {
+      "models": [
+        "13102",
+        "N Series",
+        "N Series 2",
+        "N1250",
+        "N13102",
+        "N13103",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "2710-p2",
+        "B1011",
+        "b108",
+        "BD SERIES",
+        "DK103",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_1"
+    },
+    {
+      "models": [
+        "4370",
+        "BD4640RCV",
+        "laguna"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264"
+    },
+    {
+      "models": [
+        "B1114",
+        "BD SERIES",
+        "N500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "B1710RV",
+        "BD Series",
+        "N SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "B2.920",
+        "BD SERIES",
+        "BD4330",
+        "BD4330D",
+        "bd4330dh",
+        "BD4640DS",
+        "BD4640RC",
+        "bw4370rv"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "B2.920F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "BD",
+        "BD Series",
+        "BD43...",
+        "BN1250-1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "BD Series",
+        "bd3370",
+        "BD43",
+        "BD43...",
+        "bd4330dh",
+        "denemeeee",
+        "N Series",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "BD SERIES",
+        "N Series",
+        "N1250",
+        "N13103",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "BD SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi?"
+    },
+    {
+      "models": [
+        "BD4640RC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_1"
+    },
+    {
+      "models": [
+        "cd600",
+        "N Series",
+        "N Series 2",
+        "n300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "DSN23215PS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "n100",
+        "N13103",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    },
+    {
+      "models": [
+        "N1000",
+        "N13103"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "n500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "SV3210RC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/main"
+    },
+    {
+      "models": [
+        "SV3210RC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/sub"
+    }
+  ]
+}

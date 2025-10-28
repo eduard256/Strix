@@ -1,0 +1,17 @@
+{
+  "brand": "Luxor",
+  "brand_id": "luxor",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "lx-515sh"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetImage.cgi"
+    }
+  ]
+}

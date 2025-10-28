@@ -1,0 +1,17 @@
+{
+  "brand": "Smartit",
+  "brand_id": "smartit",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "b30-6"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Zsgl",
+  "brand_id": "zsgl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264?ch=1&subtype=0&proto=Onvif"
+    }
+  ]
+}

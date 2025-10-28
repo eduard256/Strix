@@ -1,0 +1,71 @@
+{
+  "brand": "Gaines Dvr",
+  "brand_id": "gaines-dvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/201"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/302"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/402"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/502"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/602"
+    },
+    {
+      "models": [
+        "LV-T9408XHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/channels/102"
+    }
+  ]
+}

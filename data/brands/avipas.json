@@ -1,0 +1,19 @@
+{
+  "brand": "Avipas",
+  "brand_id": "avipas",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "av1082w",
+        "ptz",
+        "x1280"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0"
+    }
+  ]
+}

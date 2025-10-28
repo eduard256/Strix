@@ -1,0 +1,17 @@
+{
+  "brand": "Ipgah9oc2am7",
+  "brand_id": "ipgah9oc2am7",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CVLM-I333"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

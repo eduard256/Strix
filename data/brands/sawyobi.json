@@ -1,0 +1,17 @@
+{
+  "brand": "Sawyobi",
+  "brand_id": "sawyobi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ezviz"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H.264"
+    }
+  ]
+}

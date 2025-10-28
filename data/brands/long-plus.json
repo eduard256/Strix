@@ -1,0 +1,19 @@
+{
+  "brand": "Long Plus",
+  "brand_id": "long-plus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BR40W3200T",
+        "IPC-DSW3200T",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    }
+  ]
+}

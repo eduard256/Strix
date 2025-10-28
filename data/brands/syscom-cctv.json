@@ -1,0 +1,18 @@
+{
+  "brand": "Syscom Cctv",
+  "brand_id": "syscom-cctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Cube",
+        "Cubeip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

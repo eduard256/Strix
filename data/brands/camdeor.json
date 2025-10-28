@@ -1,0 +1,18 @@
+{
+  "brand": "Camdeor",
+  "brand_id": "camdeor",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CAR-B2500HQIP",
+        "CAR-R300IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    }
+  ]
+}

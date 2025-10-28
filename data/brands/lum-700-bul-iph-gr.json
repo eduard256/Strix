@@ -1,0 +1,17 @@
+{
+  "brand": "Lum-700-bul-iph-gr",
+  "brand_id": "lum-700-bul-iph-gr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

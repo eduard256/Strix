@@ -1,0 +1,63 @@
+{
+  "brand": "Xmarto",
+  "brand_id": "xmarto",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0815"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "IP-Camera IPC 1.3.0",
+        "PE3021-W",
+        "WW2024"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "IP-Camera IPC 1.3.0",
+        "mine",
+        "Other",
+        "pe3013",
+        "PE3021-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-CAMERA IPC 1.3.0",
+        "Other",
+        "pe3013w",
+        "unk",
+        "wno18"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "pe3010-w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    }
+  ]
+}

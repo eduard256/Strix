@@ -1,0 +1,67 @@
+{
+  "brand": "Motioneye",
+  "brand_id": "motioneye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        ".40",
+        "db1",
+        "model 1",
+        "motion",
+        "MotionEye 0.39",
+        "Other",
+        "Pi0",
+        "rpi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "0.42.1",
+        "espcam32",
+        "motion",
+        "MotionEye 0.39",
+        "MotionEYEOS",
+        "Other",
+        "Pi Zero",
+        "rpi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/"
+    },
+    {
+      "models": [
+        "espcam32"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/stream"
+    },
+    {
+      "models": [
+        "espcam32"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/81"
+    },
+    {
+      "models": [
+        "icloud"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8151,
+      "url": "/live/video/profile1"
+    }
+  ]
+}

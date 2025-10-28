@@ -1,0 +1,27 @@
+{
+  "brand": "Hzconnect",
+  "brand_id": "hzconnect",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "9600 doorbell",
+        "Smart Door Bell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "9600 doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8000,
+      "url": "/mobile"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Cc Plus",
+  "brand_id": "cc-plus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "E-35A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5543,
+      "url": "/live/channel1"
+    },
+    {
+      "models": [
+        "E-35A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5543,
+      "url": "/live/channel0"
+    }
+  ]
+}

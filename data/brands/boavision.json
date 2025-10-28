@@ -1,0 +1,280 @@
+{
+  "brand": "Boavision",
+  "brand_id": "boavision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P PTZ 10x zoom"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "1080P PTZ 10X ZOOM",
+        "4X",
+        "5mp",
+        "87.24H22M102M",
+        "bw8mp8x",
+        "Dome IR150",
+        "h22m102m",
+        "HD WIRELESS WIFI MINI PTZ",
+        "HD22M502M",
+        "HD54F",
+        "HD54F-4MP",
+        "HX-HD20H6B20A",
+        "hx-hd20m200as",
+        "HX-W54F5MP",
+        "IPD-E2A5L18-BS",
+        "IR150 30x",
+        "Speed Dome",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "1080P PTZ 10X ZOOM",
+        "Boavision speed dome",
+        "by158a8aba",
+        "ipd-d53l02-b",
+        "IPD-D53M02-BS",
+        "IPD-E2A5L18-BS",
+        "IPD-E36L02",
+        "Other",
+        "ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "1080P PTZ 10X ZOOM",
+        "1080P PT'Z 5X ZOOM",
+        "416XNT",
+        "4MP",
+        "ABQ-A36B",
+        "B987W",
+        "C6F0SgZ0N0PfL2",
+        "front doorHD22M502M",
+        "HD IP CAMERA",
+        "HD WIRELESS WIFI MINI PTZ",
+        "hd22m",
+        "HD22M102M",
+        "HD22M-1080P",
+        "HD22M502M",
+        "HD80M",
+        "HHX-B03-2MPX-B03-2MP",
+        "HX-B03-5MP",
+        "HX-GK20K200AS",
+        "Other",
+        "ptz",
+        "PTZ",
+        "testmsp",
+        "UY-IVS2-SB6R",
+        "WIFI PTZ IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P PTZ 5X ZOOM",
+        "HD22M102M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]pass&balls=balls5"
+    },
+    {
+      "models": [
+        "1080P PTZ 5X ZOOM",
+        "36x",
+        "HD IP CAMERA",
+        "HX-HD20M28AS",
+        "R11-4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "365 degree PTZ",
+        "HD22M102M",
+        "HD22M-1080P",
+        "HX-W54F5MP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "365 DEGREE PTZ",
+        "4MP",
+        "H22M102M",
+        "HD IP Camera",
+        "HD Wifi PTZ camera",
+        "HD Wireless Wifi Mini PTZ",
+        "hd22m102m",
+        "hx-hc2850b1080",
+        "HX-HC2850B1080",
+        "HX-HD20H6B20A",
+        "hx-hd20m24as",
+        "MINI IR SPEED DOME",
+        "Other",
+        "ptz"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "HD IP Camera",
+        "HD22M102M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "HD IR Intelligent Dome"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    },
+    {
+      "models": [
+        "HD WIRELESS WIFI MINI PTZ",
+        "HD22M102M",
+        "IPCX-PC3034MPA-P",
+        "R11-4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "hd22m102m",
+        "HD22M102M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "HD22M102M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "HD22M102M",
+        "HX-W54F5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "HD22M102M",
+        "hx-hd50m28as"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "HD22M102M",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "hd54f",
+        "IPD-D53L02-B",
+        "IPD-D53M02-BS",
+        "MINI IR SPEED DOME"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "hd54f-5mp",
+        "IPD-E36L02-BS-2 series",
+        "sp15"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "HD80M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "hdb4f"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "IP DOME"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream/1/h264minor"
+    }
+  ]
+}

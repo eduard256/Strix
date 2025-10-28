@@ -1,0 +1,43 @@
+{
+  "brand": "Pheenet",
+  "brand_id": "pheenet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100",
+        "Mcas-100",
+        "MCAS100",
+        "Mcas300",
+        "MCAS-400PT",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "151",
+        "153",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "MCAS-400PT",
+        "MCAS-400PTG"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    }
+  ]
+}

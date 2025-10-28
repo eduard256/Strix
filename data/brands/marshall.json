@@ -1,0 +1,48 @@
+{
+  "brand": "Marshall",
+  "brand_id": "marshall",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CV420-30X-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/hevc"
+    },
+    {
+      "models": [
+        "Encoder",
+        "VS-102",
+        "VS-102-HDI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Other",
+        "VS-14",
+        "VS-572"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "3gpp"
+    }
+  ]
+}

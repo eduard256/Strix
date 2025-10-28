@@ -1,0 +1,17 @@
+{
+  "brand": "Esypop",
+  "brand_id": "esypop",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EP-2142FWD-IS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/udp/av0_0"
+    }
+  ]
+}

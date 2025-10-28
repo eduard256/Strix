@@ -1,0 +1,17 @@
+{
+  "brand": "Pnzeo",
+  "brand_id": "pnzeo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "pnzeo w2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    }
+  ]
+}

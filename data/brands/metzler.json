@@ -1,0 +1,17 @@
+{
+  "brand": "Metzler",
+  "brand_id": "metzler",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VDM10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1_v"
+    }
+  ]
+}

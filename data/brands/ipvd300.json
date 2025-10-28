@@ -1,0 +1,18 @@
+{
+  "brand": "Ipvd300",
+  "brand_id": "ipvd300",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPVD-3MPVFIR",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream.sdp1"
+    }
+  ]
+}

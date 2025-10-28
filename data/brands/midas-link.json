@@ -1,0 +1,42 @@
+{
+  "brand": "Midas-link",
+  "brand_id": "midas-link",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "203W",
+        "idk",
+        "ML-203W",
+        "ml-203w-g",
+        "ML-204DW",
+        "ml204dw-g",
+        "ML204DW-G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "ML-214SD",
+        "MS-214SD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "MS-214SD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    }
+  ]
+}

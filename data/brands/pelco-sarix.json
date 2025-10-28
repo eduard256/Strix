@@ -1,0 +1,139 @@
+{
+  "brand": "Pelco Sarix",
+  "brand_id": "pelco-sarix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5220",
+        "B6 PSGE",
+        "d5118",
+        "elcome",
+        "ES5230",
+        "IBE322-1R",
+        "IBP110-er",
+        "id10",
+        "IJP221-1IS",
+        "IL-10",
+        "IM-10",
+        "IM10C10",
+        "IM-10C10ADDWXR1",
+        "IM-10DN101E",
+        "IME",
+        "IME219-AEFTGV5",
+        "IME322",
+        "imm270",
+        "IM-P11101",
+        "IMP221-1RS",
+        "IMP319-1E",
+        "IMP-321",
+        "IM-S0C10",
+        "IM-S0LW",
+        "IX-E20DN",
+        "IX-P11",
+        "IXS0C",
+        "Other",
+        "pelco",
+        "Sarix",
+        "Sarix ID",
+        "SARIX ID",
+        "SARIX PRO",
+        "SARIX PRO2",
+        "SARIXIP",
+        "Tim"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "D5118",
+        "IDE20DN",
+        "IJP121-1IS",
+        "IJP221-1IS",
+        "im10c10",
+        "IMP319-1E",
+        "IX-10",
+        "IX-E20DN",
+        "Other",
+        "Sarix",
+        "SARIX ID",
+        "SARIX IMS0",
+        "SARIX PRO",
+        "SARIXIP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg"
+    },
+    {
+      "models": [
+        "IBP110-er",
+        "id10",
+        "SARIX PRO2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "IBP121-1I",
+        "imp121-1is",
+        "IMP319-1E",
+        "IM-S0C10",
+        "IX-P11",
+        "SARIX PRO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/pull"
+    },
+    {
+      "models": [
+        "id10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    },
+    {
+      "models": [
+        "IL-10",
+        "IM-10DN101E",
+        "IM-S0C10",
+        "IX-E20DN",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/qvga.jpg"
+    },
+    {
+      "models": [
+        "IME219-AEFTGV5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.fcgi?mode=real&si=[USERNAME]&mon=1&ch=[CHANNEL]&width=[WIDTH]&height=[HEIGHT]&quality=7&fps=0"
+    },
+    {
+      "models": [
+        "Sarix Enhanced"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    }
+  ]
+}

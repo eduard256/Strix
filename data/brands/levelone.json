@@ -1,0 +1,775 @@
+{
+  "brand": "Levelone",
+  "brand_id": "levelone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0010/0020",
+        "1091",
+        "fcs_0010",
+        "FCS-0020",
+        "FCS-0040",
+        "FCS-1030",
+        "FCS-3031",
+        "FSC-0040",
+        "WCS 0040",
+        "wcs-0010",
+        "WCS-6020"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "0010/0020",
+        "0030",
+        "0031/1121/3061/5041",
+        "1010/2010",
+        "1131/1141/3071/3081/5051",
+        "FCS 4000",
+        "FCS-0010",
+        "FCS-0030",
+        "FCS-1020",
+        "FCS-1030",
+        "FCS-1040",
+        "FCS-1101",
+        "FCS-3000",
+        "FCS-3021",
+        "FCS-3031",
+        "FCS-5011",
+        "FCS-5030",
+        "Other",
+        "WCS-0040"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "0010/0020",
+        "0030",
+        "1010/2010",
+        "1091",
+        "1131/1141/3071/3081/5051",
+        "FCS 4000",
+        "FCS-0010",
+        "Fcs-0020",
+        "FCS-0030",
+        "FCS-0040",
+        "FCS-1020",
+        "FCS-1030",
+        "fcs-1040",
+        "FCS-3000",
+        "FCS-3031",
+        "FCS-3091",
+        "FSC-0040",
+        "Other",
+        "WCS 0040",
+        "WCS-1090"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "0010/0020",
+        "10_212",
+        "1010_2",
+        "1091",
+        "FCS-0010",
+        "FCS-0020",
+        "FCS-0040",
+        "fcs-1040",
+        "FCS-1091",
+        "FCS-1131",
+        "FCS-3051",
+        "Other",
+        "wcs-0010",
+        "WCS-2003"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "0030",
+        "5052",
+        "FCS-0031",
+        "FCS-1020",
+        "fcs-1122",
+        "FCS-5030",
+        "FCS-5041",
+        "fcs-6010",
+        "Other",
+        "Wcs 00500",
+        "WCS-0030",
+        "WCS-0050"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "0030",
+        "0031/1121/3061/5041",
+        "FCS-0050",
+        "Other",
+        "Wcs 00500"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/media.cgi?action=getSnapshot"
+    },
+    {
+      "models": [
+        "0030",
+        "0031/1121/3061/5041",
+        "FCS-0030",
+        "FCS-0050",
+        "FCS-1121",
+        "FCS-3063",
+        "FCS-5041",
+        "FCS-6010",
+        "Other",
+        "Wcs 00500",
+        "WCS-0030",
+        "WCS-0050",
+        "ws050"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "channel2"
+    },
+    {
+      "models": [
+        "0031/1121/3061/5041",
+        "1131/1141/3071/3081/5051",
+        "5051",
+        "FCS-1131",
+        "FCS-5031",
+        "FCS-5051",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "0031/1121/3061/5041",
+        "FCS-0032",
+        "FCS-3021",
+        "FCS-5011",
+        "FCS-5030"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "0031/1121/3061/5041",
+        "3061",
+        "FCS-0030",
+        "FCS-0031",
+        "FCS-1121",
+        "FCS-5041",
+        "FCS-5067",
+        "Other",
+        "WCS-0050"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "0051",
+        "fcs 1121",
+        "fcs-4203"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel1"
+    },
+    {
+      "models": [
+        "020",
+        "FCS-1091",
+        "FSC-0040",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "1010",
+        "1010/2010",
+        "1030",
+        "fcs 1010",
+        "FCS 1060",
+        "Fcs 9064",
+        "FCS-1010",
+        "FCS1030",
+        "FCS-1040",
+        "FCS-1040-JPG",
+        "fcs-1050",
+        "FCS-1070",
+        "FCS-1081",
+        "FCS-1131",
+        "FCS-3000",
+        "FCS-4101",
+        "FCS-5030",
+        "fsc1010",
+        "IP61x2",
+        "Other",
+        "WCS",
+        "wcs 2040",
+        "wcs-2010",
+        "WCS-2030",
+        "wcs-2060",
+        "WSC-2030"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "1010/2010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1081",
+        "FCS 4000",
+        "FCS-1101",
+        "fcs-4100",
+        "Min",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "1091",
+        "FCS-1030",
+        "FCS-1060",
+        "FCS-5011",
+        "FCS-5030",
+        "Other",
+        "WCS-0040",
+        "WCS-2030",
+        "WCS-2060"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "1131/1141/3071/3081/5051",
+        "5051",
+        "FCS-0071",
+        "FCS-1131",
+        "fcs-3073",
+        "FCS-3080",
+        "FCS-3081",
+        "FCS-5011",
+        "FCS-5051",
+        "FCS-5061",
+        "Other",
+        "WCS 0040",
+        "wcs-0010"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "3061",
+        "5051",
+        "fcs 3071",
+        "FCS-3081",
+        "FCS-5051",
+        "WCS-2030"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi?"
+    },
+    {
+      "models": [
+        "4101",
+        "FCS 3101",
+        "FCS-1060",
+        "FCS-4101",
+        "FCS-4301",
+        "FCS-4302",
+        "FCS5068",
+        "FCS-5093",
+        "FSC-4101",
+        "FSC-6020",
+        "wcs-6050"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "4101",
+        "fcs-4020",
+        "FCS-5030"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video2.mjpg"
+    },
+    {
+      "models": [
+        "fcs- 0032",
+        "FCS 3065",
+        "FCS-0032",
+        "FCS-1152",
+        "FCS-3053",
+        "FCS-3054",
+        "FCS-4044",
+        "FCS-5056",
+        "FCS-5064"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    },
+    {
+      "models": [
+        "fcs 3061",
+        "FCS-0030",
+        "FCS-0050",
+        "FCS-1122",
+        "FCS-3052",
+        "fcs-5052",
+        "fcs-6010",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "FCS 3065",
+        "FCS 3101",
+        "FCS-3054",
+        "FCS-4044",
+        "FCS-5056"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif-stream1"
+    },
+    {
+      "models": [
+        "FCS 4000",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "FCS 4202",
+        "FCS-1041",
+        "FCS-4302",
+        "FCS-5041",
+        "FCS-5042",
+        "WCS-2060",
+        "WCS-6020",
+        "WCS-6050"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "imagep/picture.jpg"
+    },
+    {
+      "models": [
+        "FCS-0010",
+        "FCS-0020"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "access_code"
+    },
+    {
+      "models": [
+        "FCS-0030",
+        "FSC-1122",
+        "FSC-6010",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "FCS-0030",
+        "FCS-1020"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "FCS-0030",
+        "FCS-4051"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "FCS-0030",
+        "FCS-4302"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "FCS-0031",
+        "FCS-3063",
+        "FCS-5051",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "FCS-0032",
+        "FCS-3021",
+        "FCS-5030",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "FCS-0040",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "FCS-0051",
+        "FCS-3063"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/cmd/system?GET_STREAM&USER=[USERNAME]&PWD=[PASSWORD]"
+    },
+    {
+      "models": [
+        "FCS-0051",
+        "FCS-5056"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/onvif&event&video1"
+    },
+    {
+      "models": [
+        "FCS-0071",
+        "FCS-3091"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    },
+    {
+      "models": [
+        "FCS-0071",
+        "FCS-3091",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/admin/snapshot.cgi"
+    },
+    {
+      "models": [
+        "FCS-1010",
+        "FCS-1030",
+        "FCS-1040",
+        "fcs-1040-jpg",
+        "Fcs-1050",
+        "fcs-1060",
+        "FCS-2030",
+        "FCS-3000",
+        "WCS 2040",
+        "WCS-0040",
+        "WCS-2010",
+        "WCS-2030",
+        "WCS-2060",
+        "WCS-2070",
+        "wsc2010",
+        "WSC2010"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "fcs-1040",
+        "FCS-5030",
+        "FCS-7111"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "FCS-1040",
+        "FCS-3000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2"
+    },
+    {
+      "models": [
+        "FCS-1081",
+        "FCS-1101",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "FCS-1135",
+        "FCS-3085"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "FCS-1153",
+        "FCS-3053",
+        "FCS-3054",
+        "FCS-5053"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "FCS-3081"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "FCS-3084"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "FCS-4051",
+        "NVC-810"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "FCS-4051",
+        "FSC-5060"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel0"
+    },
+    {
+      "models": [
+        "fcs-4100",
+        "fcs-4101",
+        "Other",
+        "WCS-6050"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "FCS-500x Camera Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "IEIDVR?CH=[USERNAME]&CARD=0"
+    },
+    {
+      "models": [
+        "FCS-5030"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "FCS-5058"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Hauptstream"
+    },
+    {
+      "models": [
+        "FCS-5067",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "stream/bidirect/channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "loginfree.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "WCS-0040"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "wcs-2010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.jpg?cam=1&quality=3&size=2"
+    },
+    {
+      "models": [
+        "WCS2040"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.jpg"
+    }
+  ]
+}

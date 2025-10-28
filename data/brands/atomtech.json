@@ -1,0 +1,18 @@
+{
+  "brand": "Atomtech",
+  "brand_id": "atomtech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ATOM Cam",
+        "ATOM Cam 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    }
+  ]
+}

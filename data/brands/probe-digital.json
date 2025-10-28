@@ -1,0 +1,17 @@
+{
+  "brand": "Probe Digital",
+  "brand_id": "probe-digital",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PTI-H2100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi"
+    }
+  ]
+}

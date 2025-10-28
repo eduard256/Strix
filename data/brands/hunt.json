@@ -1,0 +1,203 @@
+{
+  "brand": "Hunt",
+  "brand_id": "hunt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1ncd",
+        "HDR-16RP",
+        "HLC-79AD",
+        "HLC-81i",
+        "HLC-84em",
+        "HLT-87Z",
+        "HLV-1CI",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetImage.cgi"
+    },
+    {
+      "models": [
+        "DVR-08CH",
+        "HLC-81i"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetStream.cgi?Video=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HBD-16EE",
+        "HDR PRO DVR",
+        "HDR-16EE",
+        "HDR-16RP",
+        "HLC-81I",
+        "HLT-S30",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "HDR-16RP",
+        "HLC-79AD",
+        "HLC-81i",
+        "HLV-1CI",
+        "HNCA02",
+        "HWS-04HD",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "HDR-16RP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg.cgi?refresh=0&channel=[CHANNEL]&id=[USERNAME]&pass=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]&oldbrowser=1"
+    },
+    {
+      "models": [
+        "HLC-15",
+        "HLC-74ED",
+        "HLC-79AD",
+        "HLC-79CD",
+        "HLC-81I",
+        "HLT-87Z",
+        "HLT87Z/A",
+        "HLV-1CI",
+        "HLV-1CM",
+        "HWS-04HD",
+        "Other",
+        "VLC-83V/W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetImage.cgi?CH=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HLC-74ED",
+        "HLC-81i",
+        "HLT-87Z",
+        "HLV-1CI",
+        "Lonix",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=0"
+    },
+    {
+      "models": [
+        "HLC-79AD",
+        "HLC-81i",
+        "HLV-1CI",
+        "HWS-04HD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetStream.cgi"
+    },
+    {
+      "models": [
+        "HLC-79AD",
+        "HLC-79CD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "v2"
+    },
+    {
+      "models": [
+        "HLC-79AD",
+        "HLC-81i",
+        "HWS-04HD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video1+audio1"
+    },
+    {
+      "models": [
+        "HLV-1FM",
+        "ip79mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HNC303",
+        "HNC303-VD",
+        "HNC304TDC",
+        "HNC304-XD",
+        "HTP-T3MPT",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "HNC303"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "HNC303"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "hnc304td"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HY-HI26P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/GetStream.cgi?Video=0"
+    }
+  ]
+}

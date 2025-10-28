@@ -1,0 +1,90 @@
+{
+  "brand": "Avertx",
+  "brand_id": "avertx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "510",
+        "AVX-HD510",
+        "HD510"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif-stream1"
+    },
+    {
+      "models": [
+        "AVX-HD820IR",
+        "HD300IR",
+        "HD90"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8082,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "AVX-HD820IR",
+        "HD-80IP",
+        "HD820",
+        "HD820IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video1"
+    },
+    {
+      "models": [
+        "HD420IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "HD420IR",
+        "PTC500S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_st1"
+    },
+    {
+      "models": [
+        "HD510"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8082,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "HD820",
+        "HD90",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "HD90"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    }
+  ]
+}

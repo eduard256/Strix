@@ -1,0 +1,17 @@
+{
+  "brand": "Komatsu",
+  "brand_id": "komatsu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BB-HCM580"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nphMotionJpeg?Resolution=640x480&Quality=Standard"
+    }
+  ]
+}

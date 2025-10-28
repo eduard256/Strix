@@ -1,0 +1,33 @@
+{
+  "brand": "Nettoly",
+  "brand_id": "nettoly",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "157840-BBADD",
+        "Gara",
+        "IPCAM 720p",
+        "IPCAM 720P",
+        "J07",
+        "Other",
+        "X0027K6DCL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "J07"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

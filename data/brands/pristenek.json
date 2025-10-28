@@ -1,0 +1,17 @@
+{
+  "brand": "Pristenek",
+  "brand_id": "pristenek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EX-S06WM-3W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    }
+  ]
+}

@@ -1,0 +1,808 @@
+{
+  "brand": "Avtech",
+  "brand_id": "avtech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "202z",
+        "avm359an",
+        "AVM5547",
+        "AVN211"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "212Z",
+        "358-HD",
+        "80X",
+        "ANM357A",
+        "Arbres fruitiers et route",
+        "AVC",
+        "AVC792",
+        "AVM2220TP",
+        "AVM2421",
+        "AVM2421AP/F28",
+        "AVM2443",
+        "AVM317ZBP/F38",
+        "AVM328",
+        "AVM328A",
+        "AVM357a",
+        "avm357zap",
+        "AVM357ZAP",
+        "AVM358",
+        "AVM3650L-000E532CC486",
+        "AVM365A",
+        "AVM428ZDN",
+        "AVM459",
+        "avm521cp/f38",
+        "AVM532F",
+        "AVM542AP/F28F12",
+        "AVM542B",
+        "avm542fp",
+        "AVM543",
+        "AVM552",
+        "AVM561",
+        "avm571",
+        "AVM583",
+        "AVN 362",
+        "AVN211",
+        "avn244",
+        "AVN252",
+        "AVN257",
+        "AVN284",
+        "AVN314",
+        "AVN314-HS64",
+        "avn314z",
+        "AVN320",
+        "AVN362",
+        "AVN363V",
+        "AVN363Z",
+        "AVN801",
+        "avn801z",
+        "AVN807ZA",
+        "AVN80X",
+        "AVP542B",
+        "AVX931",
+        "AVZ529",
+        "AVZ592",
+        "DC2",
+        "dgd2404",
+        "DGM 5106",
+        "dgm1105",
+        "dgm1304",
+        "DM1306",
+        "DVR (2)",
+        "eagle",
+        "Entatech",
+        "h.264",
+        "H264 DVR",
+        "IP cameras",
+        "NVM428",
+        "Other",
+        "PtZ",
+        "UNLISTED"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264"
+    },
+    {
+      "models": [
+        "3300auxsd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "358-HD",
+        "457A",
+        "465",
+        "500",
+        "7dvr",
+        "7xx DVR Series",
+        "7xxdvr",
+        "AV5115-8B",
+        "av7",
+        "av801",
+        "AVC2",
+        "AVC791 DVR",
+        "AVC792 DVR",
+        "AVH308EA",
+        "avi201",
+        "AVI201ZP",
+        "avi203z",
+        "AVI203Z",
+        "AVM 521A",
+        "AVM 571",
+        "avm2172",
+        "avm2451t",
+        "AVM301",
+        "AVM317B",
+        "AVM317bpP/F38",
+        "AVM317ZBP/F38",
+        "AVM328",
+        "AVM328A",
+        "AVM328Z",
+        "AVM328ZB/F38",
+        "AVM332P",
+        "AVM3453P",
+        "AVM357",
+        "AVM357A",
+        "AVM357ZAP",
+        "AVM365",
+        "AVM417A",
+        "AVM428ZDN",
+        "AVM457",
+        "avm4570",
+        "avm457z",
+        "avm457zap",
+        "AVM459",
+        "AVM459AP",
+        "AVM475",
+        "AVM511",
+        "AVM542A jpeg",
+        "AVM542B",
+        "avm542BP",
+        "AVM552",
+        "AVM553JP",
+        "AVM561",
+        "AVM565A",
+        "avm571",
+        "AVN211",
+        "AVN212",
+        "avn216",
+        "avn222",
+        "AVN252",
+        "AVN257",
+        "avn320",
+        "AVN362",
+        "AVN363Z",
+        "AVN420",
+        "avn542",
+        "AVN801",
+        "AVN801vv",
+        "avn801z",
+        "AVN805",
+        "AVN807ZA",
+        "AVN80X",
+        "AVN815ez",
+        "AVP542B",
+        "avt216SE",
+        "AVT216SE",
+        "AVX931",
+        "awm357",
+        "DG1004",
+        "DGM1104",
+        "DGM1104QSP",
+        "DVR",
+        "DVR (2)",
+        "H264 DVR",
+        "haven",
+        "IP cameras",
+        "IVS DVR",
+        "kimlong",
+        "KPD675",
+        "KPD677H",
+        "MainGate",
+        "MDR757ZB-E",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "452B",
+        "AVI201",
+        "AVM 512AP",
+        "avm301",
+        "avm357",
+        "AVM357a",
+        "AVM357ZAP/F38",
+        "AVM358CHF",
+        "AVM417A",
+        "AVM428",
+        "AVM428D",
+        "AVM457",
+        "AVM459",
+        "AVM542B",
+        "AVM542fp",
+        "AVM552",
+        "AVM561",
+        "avm565a",
+        "avm571",
+        "AVMU428D",
+        "AVN216Z",
+        "AVN244",
+        "avn284",
+        "AVN328ZBN",
+        "AVN420P",
+        "avn701",
+        "AVN813",
+        "dgm1104",
+        "Entatech",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264_ulaw/VGA"
+    },
+    {
+      "models": [
+        "457A",
+        "458C",
+        "AV321",
+        "AV5115-8B",
+        "AV565",
+        "AVC793ZC",
+        "AVM 503P",
+        "AVM2220TP",
+        "AVM2421",
+        "AVM2443",
+        "AVM317ZBP/F38",
+        "AVM328A",
+        "AVM357A",
+        "AVM357ZAP",
+        "AVM358",
+        "avm359an",
+        "AVM417",
+        "AVM417A",
+        "AVM428",
+        "AVM457ZAP",
+        "AVM511P",
+        "AVM521",
+        "avm542",
+        "AVM552",
+        "AVM5547",
+        "AVN211",
+        "AVN212",
+        "AVN244zvp/22",
+        "AVN284",
+        "AVN362",
+        "AVN80x",
+        "AVT216SE",
+        "AVZ592",
+        "dg-104",
+        "DG104",
+        "DGM 5406P/F28",
+        "dgm1104",
+        "DGM1104",
+        "dgm1134",
+        "dgm1304",
+        "dgm5206",
+        "DGM5206SVAT",
+        "H264",
+        "H264 DVR",
+        "h264 ip",
+        "IP CAMERAS",
+        "kpd677",
+        "KPD965working",
+        "MDR759H",
+        "NVM328",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264/HD1080P"
+    },
+    {
+      "models": [
+        "540",
+        "AVH-408P",
+        "AVM2432P",
+        "AVM2451T",
+        "avm2592L",
+        "AVM420UP",
+        "AVM5",
+        "AVM511p",
+        "AVM561",
+        "AVM592",
+        "AVN 521A",
+        "C04",
+        "dgm1104",
+        "dgm1105",
+        "dgm1304",
+        "KPD677",
+        "Other",
+        "YGN2003A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/video_audio/profile1"
+    },
+    {
+      "models": [
+        "701",
+        "AVC791 DVR",
+        "AVI201",
+        "AVI201zp",
+        "AVM328Z",
+        "AVM357A",
+        "AVM457",
+        "AVM459",
+        "AVN204",
+        "AVN211",
+        "AVN252",
+        "AVN257",
+        "AVN284",
+        "AVN314",
+        "AVN314-HS64",
+        "AVN314z",
+        "AVN362",
+        "AVN420",
+        "avn701",
+        "AVN801",
+        "AVN801zeu",
+        "AVN807A",
+        "AVN80X",
+        "avn80XZ",
+        "AVN813",
+        "AVx 252",
+        "IP cameras",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "701",
+        "ANM357A",
+        "ANN363V",
+        "AVC791 DVR",
+        "AVM328Z",
+        "AVM357A",
+        "AVM417A",
+        "AVM457",
+        "AVN212",
+        "AVN257",
+        "AVN304",
+        "AVN314",
+        "AVN314-HS64",
+        "AVN362",
+        "AVN362V",
+        "AVN80X",
+        "AVN812",
+        "AVN813",
+        "AVx 252",
+        "AVX 252",
+        "CAM04",
+        "DVR",
+        "IP cameras",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "7xx DVR Series",
+        "art",
+        "AV321",
+        "av801",
+        "AVC791 DVR",
+        "AVH8516",
+        "AVI203",
+        "AVIZ321",
+        "AVM 302AP",
+        "AVM301",
+        "AVM311P",
+        "AVM311P/F28",
+        "AVM317B",
+        "AVM328",
+        "AVM328A",
+        "AVM328Z",
+        "AVM357A",
+        "AVM359A",
+        "AVM417A",
+        "AVM428",
+        "AVM542A jpeg",
+        "AVM571",
+        "AVN211",
+        "AVN212",
+        "avn216",
+        "AVN252",
+        "AVN257",
+        "avn284",
+        "AVN362",
+        "AVN801",
+        "avn801z",
+        "AVN80X",
+        "AVN812",
+        "AVx 252",
+        "AVx 322",
+        "AVX931",
+        "AVZ516",
+        "AVZ529",
+        "awm357",
+        "dgm5606",
+        "DVR",
+        "DVR (2)",
+        "H264 DVR",
+        "haven",
+        "IP cameras",
+        "KPD675",
+        "KPD677H",
+        "MDR757ZB-E",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "7xx DVR Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Getvideo.cgi?Cookie="
+    },
+    {
+      "models": [
+        "7xx DVR Series",
+        "av801",
+        "AVC",
+        "AVC2",
+        "AVC791 DVR",
+        "avc791dvr",
+        "AVC792 DVR",
+        "AVM217Z",
+        "AVM328Z",
+        "AVM357A",
+        "AVM459",
+        "AVM561",
+        "avm571",
+        "AVN211",
+        "AVN212",
+        "AVN252",
+        "AVN304",
+        "AVN420P",
+        "AVN801",
+        "avn801z",
+        "AVN801zeu",
+        "AVN80X",
+        "AVN812",
+        "AvTech-Mjpeg",
+        "AVx 252",
+        "AVZ516",
+        "AVZ5192",
+        "DVR",
+        "DVR (2)",
+        "H264",
+        "H264 DVR",
+        "IP CAMERAS",
+        "Itsu",
+        "KPD675",
+        "MDR688B",
+        "MDR757ZB-E",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "7XX DVR SERIES",
+        "ANN363V",
+        "AVC791 DVR",
+        "AVN212",
+        "AVN362",
+        "AVN801",
+        "AVN80X",
+        "AVX 252",
+        "AVX 322",
+        "DVR",
+        "DVR (2)",
+        "IP cameras",
+        "IVS DVR",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "live/mjpeg"
+    },
+    {
+      "models": [
+        "AV5115-8B",
+        "AV5115-9A",
+        "AV5455DN-50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264.sdp"
+    },
+    {
+      "models": [
+        "av801",
+        "AVI201zp",
+        "AVN80X",
+        "Fatts",
+        "h264",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "AVD744",
+        "avm328",
+        "AVM328B",
+        "AVM328ZDP/F38",
+        "AVM359AN",
+        "AVM428A",
+        "AVM553JP",
+        "AVN801",
+        "AVS529",
+        "dgm1134",
+        "H264",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/h264_ulaw/HD720P"
+    },
+    {
+      "models": [
+        "AVH408P",
+        "AVM",
+        "AVM 521A",
+        "avm552",
+        "AVM5547",
+        "DGM 5606P/F28",
+        "DGM1105q",
+        "DGM2203",
+        "Other",
+        "YGN2003A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8151,
+      "url": "/live/video/profile1"
+    },
+    {
+      "models": [
+        "AVH800EA6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8085,
+      "url": "/live/video_audio/ch01/record"
+    },
+    {
+      "models": [
+        "AVH800EA6",
+        "ygn2003a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/video_audio/ch01_ch01/pc"
+    },
+    {
+      "models": [
+        "avi",
+        "avi201"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "avm217z",
+        "AVM317B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AVM217Z",
+        "AVM357A",
+        "AVM417A",
+        "AVN815EZ",
+        "AVS529",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264/SXGA"
+    },
+    {
+      "models": [
+        "AVM317BPP/F38"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "AVM328A",
+        "AVM365",
+        "h.264"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264/HD1080"
+    },
+    {
+      "models": [
+        "AVM328A",
+        "AVM5547",
+        "AVZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/h264/ch0"
+    },
+    {
+      "models": [
+        "avm542"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/video/profile3"
+    },
+    {
+      "models": [
+        "AVM5447P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "AVN362",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "AVN362",
+        "AVN80X"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "live/h264_ulaw"
+    },
+    {
+      "models": [
+        "AVN362",
+        "IP CAMERAS"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.h264"
+    },
+    {
+      "models": [
+        "AVN362"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/live.h264"
+    },
+    {
+      "models": [
+        "AVN812"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "avt216SE",
+        "EAGLE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "/cgi-bin/guest/Video.cgi?media=JPEG&channel=16"
+    },
+    {
+      "models": [
+        "avt420"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 51938,
+      "url": "/cgi-bin/guest/Video.cgi?media=JPEG&channel=1"
+    },
+    {
+      "models": [
+        "avt420"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 51938,
+      "url": "/cgi-bin/guest/Video.cgi?media=JPEG&channel=2"
+    },
+    {
+      "models": [
+        "IP CAMERAS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "mjkj",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Diadromos",
+  "brand_id": "diadromos",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FCS-1040"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    }
+  ]
+}

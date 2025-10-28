@@ -1,0 +1,17 @@
+{
+  "brand": "Ctipc",
+  "brand_id": "ctipc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "631c720POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Coolpad",
+  "brand_id": "coolpad",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "332QA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    }
+  ]
+}

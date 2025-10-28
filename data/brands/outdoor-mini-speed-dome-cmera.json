@@ -1,0 +1,17 @@
+{
+  "brand": "Outdoor Mini Speed Dome Cmera",
+  "brand_id": "outdoor-mini-speed-dome-cmera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cc-p11-68enc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

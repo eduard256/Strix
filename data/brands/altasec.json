@@ -1,0 +1,45 @@
+{
+  "brand": "Altasec",
+  "brand_id": "altasec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Asecam_pa",
+        "ATHD16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/1/live.3gp"
+    },
+    {
+      "models": [
+        "ATHD16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01/0/live.3gp"
+    },
+    {
+      "models": [
+        "ATHD16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch00/0/live.3gp"
+    },
+    {
+      "models": [
+        "ATHD16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch00/1/live.3gp"
+    }
+  ]
+}

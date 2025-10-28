@@ -1,0 +1,36 @@
+{
+  "brand": "Lumens",
+  "brand_id": "lumens",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CL 510",
+        "Cl-510"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "VC-A50P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8557,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "VC-BC701P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/hevc"
+    }
+  ]
+}

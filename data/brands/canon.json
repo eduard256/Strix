@@ -1,0 +1,257 @@
+{
+  "brand": "Canon",
+  "brand_id": "canon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "740",
+        "CRN-300",
+        "VB-M50B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream/profile2=r"
+    },
+    {
+      "models": [
+        "CN-R500",
+        "H-SERIES",
+        "M42",
+        "m44",
+        "Other",
+        "vb-610",
+        "VB-C10",
+        "VB-C300",
+        "VB-C50I/C50IR SERIES",
+        "VB-C60",
+        "VB-H41",
+        "VB-H43",
+        "VB-H45",
+        "VB-h610",
+        "VB-H610VE",
+        "VB-H630VE",
+        "VB-H710F",
+        "VB-H730F",
+        "VB-M40",
+        "VB-M42",
+        "VB-M44",
+        "VB-M600D",
+        "VB-M700F",
+        "VBS30D",
+        "VB-S30VE",
+        "VB-S805D"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/video.cgi"
+    },
+    {
+      "models": [
+        "CRN-300",
+        "VB-M720F"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/-wvhttp-01-/GetOneShot?image_size=320x240&frame_count=0"
+    },
+    {
+      "models": [
+        "CR-N500",
+        "Unknown Model",
+        "VB-C60",
+        "VB-M44",
+        "VB-M50B",
+        "VB-M620VE",
+        "VB-M720F",
+        "VB-S30D",
+        "VB-S805D",
+        "VB-S900F",
+        "VB-S905F"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/-wvhttp-01-/video.cgi"
+    },
+    {
+      "models": [
+        "DC210"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=[CHANNEL].JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "H-SERIES",
+        "Other",
+        "VB-C10",
+        "VB-C300",
+        "VB-M40"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/GetLiveImage"
+    },
+    {
+      "models": [
+        "i50",
+        "Other",
+        "Public WebCam",
+        "VB300",
+        "VB-C10",
+        "VB-C300",
+        "VB-C500D",
+        "VB-C50FSi",
+        "vb-c50i",
+        "VB-C50i/C50iR Series",
+        "VB-C60",
+        "vb-h41",
+        "VB-H43",
+        "VB-H630",
+        "VB-H630VE",
+        "VB-M40",
+        "VB-M42",
+        "VB-M50B",
+        "VBS30D",
+        "VB-S900F"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "Public WebCam",
+        "vb150",
+        "VB-C10",
+        "vb-c10r",
+        "VB-C10r",
+        "VB-C10R",
+        "VB-C300",
+        "VB-C50Fi",
+        "VB-C50FSi",
+        "vb-c50i",
+        "VB-C50i/C50iR Series",
+        "VB-C50İ/C50İR SERİES",
+        "VB-C60",
+        "VB-M40",
+        "VB-M42",
+        "VB-M600D"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "vdata.v"
+    },
+    {
+      "models": [
+        "VB-C300"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "vb-h41",
+        "VB-H41",
+        "vb-h630",
+        "VB-H710F",
+        "VB-M42",
+        "VB-M50B",
+        "VB-M720F",
+        "VB-S900F",
+        "VB-S905F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream/profile1=r"
+    },
+    {
+      "models": [
+        "VB-H43",
+        "VB-S800D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream/profile0=r"
+    },
+    {
+      "models": [
+        "VB-M40"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "profile1=u"
+    },
+    {
+      "models": [
+        "VB-M600D"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "profile1=r"
+    },
+    {
+      "models": [
+        "VB-M720F",
+        "VB-R12VE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/-wvhttp-01-/GetOneShot?image_size=320x240"
+    },
+    {
+      "models": [
+        "VB-S900F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/viewer/admin/index.html?lang=en"
+    },
+    {
+      "models": [
+        "VB-S900F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

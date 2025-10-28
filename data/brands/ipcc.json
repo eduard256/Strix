@@ -1,0 +1,253 @@
+{
+  "brand": "Ipcc",
+  "brand_id": "ipcc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "20hd"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "21w",
+        "7206E",
+        "7207E",
+        "7210E",
+        "B10",
+        "B12",
+        "B12L",
+        "B12NW",
+        "B13N",
+        "B20",
+        "B22",
+        "B24",
+        "D23",
+        "H-02",
+        "H03",
+        "H05",
+        "IIII-551433-ABEBF",
+        "IPCC-B11",
+        "IPCC-B11N-W",
+        "IPCC-B13N",
+        "IPCC-H05S-W",
+        "ipcc-H05-w1080p",
+        "IPCC-SDM21LW",
+        "IPCLOUD",
+        "MD532P",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "11"
+    },
+    {
+      "models": [
+        "2480"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "3XPTZ",
+        "9610",
+        "B10",
+        "B15N-W",
+        "ipcc-9610 v2",
+        "ipcc-H05--W-1080P",
+        "IPCC-H05W-1080p",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "3XPTZ",
+        "7210",
+        "7210W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5080",
+        "B11N",
+        "B12",
+        "IPCC-H05-POEA",
+        "IPCC-H05-W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "5533"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "720",
+        "7210W",
+        "h03",
+        "IPCC-7210W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "720",
+        "IPCC-7210e"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "7206E",
+        "7606E",
+        "H-02n"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "7210W",
+        "7210W-3X",
+        "B10",
+        "B10A",
+        "B12nw",
+        "B12NW",
+        "B12N-W",
+        "B15N-W",
+        "b22",
+        "IPCC-009041-BUFXD",
+        "IPCC-7210W",
+        "IPCC-B15N-W",
+        "IPCC-B17-1080P",
+        "VVVIPC1501223580HSDS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "7210W",
+        "IPCC-7210W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "7210W",
+        "7210W-MJPEG",
+        "IPCC-7210W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "7210W",
+        "7210W-MJPEG",
+        "IPCC-7210W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "B10",
+        "HD MEGAPIXEL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "IP-CAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ipcc h02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "IPCC-7210W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "x01"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

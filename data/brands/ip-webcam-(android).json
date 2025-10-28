@@ -1,0 +1,111 @@
+{
+  "brand": "Ip Webcam (android)",
+  "brand_id": "ip-webcam-(android)",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ANDOID IP CAMERA",
+        "ANDROID LG",
+        "IP WEBCAM ANDROID",
+        "IP-CAMERA",
+        "IPHONE",
+        "LG K4 2017",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "ANDROID LG",
+        "IP Webcam(Android)",
+        "Other",
+        "wiko"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ip web",
+        "Pixel 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "IP WEBCAM ANDROID",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "IP WEBCAM ANDROID",
+        "Other",
+        "Xiaomi Redmi Note 5"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "IP WEBCAM ANDROID"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "IP-CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Pixel 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/videofeed"
+    }
+  ]
+}

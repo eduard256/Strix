@@ -1,0 +1,42 @@
+{
+  "brand": "Seetong",
+  "brand_id": "seetong",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "Dome",
+        "TI368GW",
+        "Tuin"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "456",
+        "DOME",
+        "hl-ip14-100e",
+        "Other",
+        "TW38T15"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "TI368GW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 2001,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

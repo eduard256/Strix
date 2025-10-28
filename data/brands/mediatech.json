@@ -1,0 +1,90 @@
+{
+  "brand": "Mediatech",
+  "brand_id": "mediatech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4059",
+        "4059-1",
+        "hd pro",
+        "MT 4097",
+        "MT40",
+        "mt405`",
+        "MT4051",
+        "MT4052",
+        "mt4059",
+        "MT4059",
+        "mt4098",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "4059",
+        "MT4051",
+        "MT4052"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "4059-1",
+        "MT40",
+        "mt4050"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "MT 4097",
+        "MT4052"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "MT4050",
+        "MT4051",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "MT4051",
+        "MT4052"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "MT4052"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "brand": "Jenimex",
+  "brand_id": "jenimex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1_mpx1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2MPX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2MPX1",
+        "2MPX2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "2MPX2",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "5MPx"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "JENCMPP205"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9002,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "JENCMPP205"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9002,
+      "url": "/mpeg4"
+    }
+  ]
+}

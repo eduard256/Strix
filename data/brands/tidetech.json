@@ -1,0 +1,43 @@
+{
+  "brand": "Tidetech",
+  "brand_id": "tidetech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "12443d9d",
+        "B01-2MP",
+        "BC1-2MP",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4_1.sdp"
+    },
+    {
+      "models": [
+        "BC3-5MP-SD",
+        "E36Y0701",
+        "Other",
+        "P1-4X-5MPB",
+        "PTZ Outdoor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp"
+    },
+    {
+      "models": [
+        "gtn",
+        "PTZ OUTDOOR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "brand": "Asante",
+  "brand_id": "asante",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "SMARTBOT PT",
+        "Voiager 1",
+        "Voiager 2PT",
+        "voyager",
+        "VOYAGER 1",
+        "Voyager I",
+        "Voyager I/II",
+        "VOYAGER SMARTBOT",
+        "VoyagerII"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "smartbot",
+        "VOYAGER I",
+        "VOYAGER I/II",
+        "VOYAGER II"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SmartBot",
+        "Voyager 1",
+        "VOYAGER I",
+        "VOYAGER I/II",
+        "VOYAGER II",
+        "Voyager Smartbot"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg?type=motion"
+    },
+    {
+      "models": [
+        "Other",
+        "Voyager I"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "pl29",
+        "smartbot",
+        "Voyager 1",
+        "Voyager I",
+        "Voyager I/II",
+        "VOYAGER SMARTBOT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion"
+    },
+    {
+      "models": [
+        "SMARTBOT",
+        "Voyager 1",
+        "VOYAGER II",
+        "VoyagerI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "Voyager I"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/mpeg4"
+    },
+    {
+      "models": [
+        "Voyager II"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "GetData.cgi"
+    }
+  ]
+}

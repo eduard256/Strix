@@ -1,0 +1,17 @@
+{
+  "brand": "Pixus",
+  "brand_id": "pixus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PXD-IWN2E1 RF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": "/"
+    }
+  ]
+}

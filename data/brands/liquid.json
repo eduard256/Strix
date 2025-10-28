@@ -1,0 +1,17 @@
+{
+  "brand": "Liquid",
+  "brand_id": "liquid",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Ego"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=appletvstream"
+    }
+  ]
+}

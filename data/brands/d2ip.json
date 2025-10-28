@@ -1,0 +1,17 @@
+{
+  "brand": "D2ip",
+  "brand_id": "d2ip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "215D2iP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam0_0"
+    }
+  ]
+}

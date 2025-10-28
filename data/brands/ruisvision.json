@@ -1,0 +1,17 @@
+{
+  "brand": "Ruisvision",
+  "brand_id": "ruisvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3MP 1.8MM LENS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

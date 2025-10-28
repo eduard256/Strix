@@ -1,0 +1,29 @@
+{
+  "brand": "Droid",
+  "brand_id": "droid",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Cell",
+        "Other",
+        "Turbo"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Nesus7",
+        "Nexus 7 jpg"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    }
+  ]
+}

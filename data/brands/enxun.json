@@ -1,0 +1,39 @@
+{
+  "brand": "Enxun",
+  "brand_id": "enxun",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dome",
+        "MIP-813W",
+        "MIP-823H1",
+        "MP180"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/Streaming/channels/2"
+    },
+    {
+      "models": [
+        "MIP-812A",
+        "VS-MIP723Y1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/2?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "MIP-822a"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Crl",
+  "brand_id": "crl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SK-50"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/media/?action=stream"
+    }
+  ]
+}

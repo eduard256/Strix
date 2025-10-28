@@ -1,0 +1,95 @@
+{
+  "brand": "Ipux",
+  "brand_id": "ipux",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100",
+        "1330",
+        "2030",
+        "CS6000/E",
+        "ICS-100",
+        "ICS1310",
+        "ICS-131A",
+        "ICS-2330",
+        "ICS7220",
+        "Other",
+        "SC6000/E"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "1003",
+        "1013",
+        "1033",
+        "1330",
+        "ICS-100",
+        "ICS-1310",
+        "ICS1330",
+        "ICS-2330",
+        "okok",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "1013",
+        "CS6000/E",
+        "ICS-1033",
+        "ICS1310",
+        "ICS-1310",
+        "ICS1330",
+        "ics2330",
+        "ICS-2330",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "1013",
+        "ICS-100",
+        "ICS-1033",
+        "ICS1330",
+        "ICS2330",
+        "ICS303A",
+        "ICS7220"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "ICS2330"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ip-100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    }
+  ]
+}

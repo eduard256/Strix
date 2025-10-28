@@ -1,0 +1,41 @@
+{
+  "brand": "Anni Digital",
+  "brand_id": "anni-digital",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ANNI-HL04CP03V",
+        "IP-001",
+        "IPC3J24P-I2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "fc3",
+        "fc5",
+        "IPC3F18P-I3",
+        "IPC5F19P2-I3-W",
+        "IPC5F1JMM-13"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "k9604-w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

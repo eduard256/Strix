@@ -1,0 +1,18 @@
+{
+  "brand": "East",
+  "brand_id": "east",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "365IP",
+        "IP-5IRD4S02-W-2.8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/Streaming/channels/h264"
+    }
+  ]
+}

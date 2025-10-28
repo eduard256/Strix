@@ -1,0 +1,17 @@
+{
+  "brand": "Ez-watching",
+  "brand_id": "ez-watching",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dvr"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/?action=stream"
+    }
+  ]
+}

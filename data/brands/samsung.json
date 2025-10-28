@@ -1,0 +1,1536 @@
+{
+  "brand": "Samsung",
+  "brand_id": "samsung",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1.3",
+        "509",
+        "6004",
+        "6084RP",
+        "7004p",
+        "7010",
+        "7010f",
+        "7080r",
+        "8610",
+        "G IP Smart Cam",
+        "IP CAM G",
+        "IPOLIS",
+        "L6013R",
+        "Other",
+        "QND-6070R",
+        "QND-7010R",
+        "QND-7020R",
+        "QND7030RN",
+        "QNO-6010R",
+        "QNO-6020R",
+        "QNO-6070R",
+        "QNO-7020R",
+        "QNO-7080R",
+        "QNV-7010R",
+        "QNV-7020R",
+        "QNV-7080R",
+        "SCH-I415",
+        "SmartCam",
+        "SME DVR",
+        "SMP-3120",
+        "SN0-6084",
+        "SN0-6084R",
+        "snb",
+        "snb 5001",
+        "SNB 7001",
+        "SNB-5000",
+        "SNB-5004",
+        "SNB-600",
+        "SNB-6003",
+        "snb-6004",
+        "SNB-6010",
+        "snb7000",
+        "SNB-7000",
+        "SNB--7084r",
+        "SND",
+        "SND 5000",
+        "Snd 501",
+        "SND-1000N",
+        "SND-3080",
+        "SND-3080F",
+        "snd-5048",
+        "SND-5084",
+        "snd-5601",
+        "SND-6011R",
+        "snd-6011rp",
+        "SND-6013R",
+        "SND-6048R",
+        "snd-6083n",
+        "SND-6084R",
+        "SND-L6013",
+        "snf-810",
+        "snh p6410",
+        "snh-e6413bn",
+        "SNH-P6412BN",
+        "SNH-V6414BN",
+        "SNO-1080R",
+        "SNO-1080RN",
+        "sno5080",
+        "SNO-5080R",
+        "sno5084rp",
+        "SNO6083R",
+        "sno7078r",
+        "SNO-L6013R",
+        "SNO-L6013RN",
+        "SNO-L6083R",
+        "SNO-L6o13R",
+        "SNP-3120",
+        "SNP-3370/TH",
+        "SNP-5200H",
+        "SNP-5321",
+        "SNP-5430H",
+        "SNP-6321",
+        "snr",
+        "SNV-3120",
+        "SNV-5080",
+        "SNV-6012MN",
+        "SNV-6013",
+        "SNV-6048R",
+        "SNV-6083R",
+        "SNV-6084",
+        "SNV-6084R",
+        "SNV-L5083R",
+        "SNV-L6083R",
+        "sp 101",
+        "SPE-100",
+        "SPE-101",
+        "SVN-6012MN",
+        "video server",
+        "wisenet"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=jpg"
+    },
+    {
+      "models": [
+        "2080R"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "2315",
+        "3_ipv_n",
+        "400",
+        "530T",
+        "A40",
+        "avant",
+        "Core Prime",
+        "Gaaxy J3 Mission",
+        "Galaxy 5",
+        "galaxy A9",
+        "Galaxy Ace",
+        "Galaxy I 9001",
+        "Galaxy III Mini",
+        "galaxy player 5.0",
+        "Galaxy player SIII",
+        "galaxy s",
+        "galaxy S III",
+        "Galaxy s10+",
+        "GALAXY S2-1",
+        "galaxy s4",
+        "galaxy s6",
+        "GALAXY S7",
+        "GALAXY S9",
+        "gallaxy",
+        "gallaxy s6",
+        "GS5",
+        "GT-I9070",
+        "gts7582",
+        "i747",
+        "I-997",
+        "IP WebCAM",
+        "J7 Prime",
+        "J7-Prime",
+        "Mobile Phone",
+        "Note 1",
+        "Note 10.1 2014 SM-P605",
+        "note 3",
+        "note 4",
+        "note 8",
+        "Other",
+        "prime",
+        "S4 mini",
+        "SamsungMini",
+        "SC-01K",
+        "SCC-C6325N",
+        "SC-D353",
+        "SCH-I415",
+        "sgh i747",
+        "SGH-S959G",
+        "shg",
+        "SME DVR",
+        "SM-G530AZ UD",
+        "SM-G955U",
+        "SM-N910P",
+        "SNB-2000",
+        "SNB-6003",
+        "snc-550",
+        "SNC-7478",
+        "SNC-B2315",
+        "SNC-B5395",
+        "SND-7080",
+        "SNF M300P",
+        "SNP-3301",
+        "SPH-M840",
+        "tab e",
+        "Tablet",
+        "Xcover",
+        "xcover2",
+        "YOUTH"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "3001",
+        "a50",
+        "core 2",
+        "Galaxy A7 (2018)",
+        "Galaxy S3",
+        "galaxy s9",
+        "Other",
+        "S20 FE 5G",
+        "sm-g357",
+        "SNC-B5399",
+        "XCover 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "3001",
+        "A10e",
+        "a32",
+        "ek gc200",
+        "galaxy 7",
+        "Galaxy j7",
+        "Galaxy S3",
+        "Galaxy S6 Active",
+        "Handy S6",
+        "S21+",
+        "XCover 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "3001",
+        "5050",
+        "QNO-7080R",
+        "QNV-7010R",
+        "QNV-7080R",
+        "SNB 5000p",
+        "SND-5084",
+        "SND-7084r",
+        "SND-L5013",
+        "SND-L6013RN",
+        "SNO-7082R",
+        "SNP-5200H",
+        "SNP-6200RH",
+        "snv-",
+        "SNV-1080",
+        "WISENET III H.264"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "3001",
+        "SNC-79440BW"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "386T",
+        "8610",
+        "Galaxy",
+        "Galaxy s10+",
+        "GALAXY TABLET",
+        "n750",
+        "Other",
+        "prime",
+        "sch-s738c",
+        "SNC-B2315",
+        "tab s",
+        "tablet"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg"
+    },
+    {
+      "models": [
+        "5 neo",
+        "550",
+        "56431",
+        "A40",
+        "advent",
+        "Avant",
+        "Cell",
+        "CORE A03",
+        "CORE PRIME",
+        "default",
+        "Duos",
+        "ek gc200",
+        "ek-gc110",
+        "f3111",
+        "g550t",
+        "Galaxy 3",
+        "Galaxy A5",
+        "galaxy ace",
+        "galaxy core prime SM-S820L",
+        "galaxy grand prime",
+        "Galaxy Note 3",
+        "galaxy s 10",
+        "Galaxy s10+",
+        "Galaxy S6 Active",
+        "GALAXY S7",
+        "Galaxy S8",
+        "Galaxy SIII",
+        "Galaxy Tab A",
+        "GALAXY Tablet",
+        "glxy",
+        "GT-8160",
+        "gt9300",
+        "GTDuos",
+        "GT-i9195",
+        "GT-S5301",
+        "GT-S6310N",
+        "GT-S6500t",
+        "gt-s7582",
+        "gt-S7582",
+        "I-1905",
+        "i-747",
+        "I-8262",
+        "I-9082",
+        "IP WebCAM",
+        "j3v",
+        "M830",
+        "mali",
+        "Mini",
+        "n750",
+        "nbote 4",
+        "Note",
+        "note 3",
+        "NOTE 5",
+        "note 8",
+        "note2",
+        "Old Phone",
+        "On 5",
+        "Other",
+        "phome",
+        "phone2",
+        "prevail",
+        "S 3",
+        "S III",
+        "S21+",
+        "s4 mini",
+        "S5 Active",
+        "S5 Neo",
+        "S6 Edge +",
+        "S7 Edge",
+        "S8+",
+        "Samsung-SM-G870A",
+        "SCH-I415",
+        "sgh i747",
+        "SGH-I727",
+        "Si900",
+        "SII",
+        "Sm-S727VL",
+        "snc-550",
+        "snc-b2331",
+        "SNC-B5395",
+        "sph-m820-bst",
+        "sph-m830",
+        "Stratosphere",
+        "Ultra",
+        "wit",
+        "xcover2",
+        "xzxd",
+        "zwart"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "5040",
+        "550",
+        "7010",
+        "cnd-5200",
+        "IP Smart Cam",
+        "ip200",
+        "ipolis",
+        "L6013R",
+        "L6013RN",
+        "L6083RP",
+        "Other",
+        "PND-9080R",
+        "PNV-9080R",
+        "QND-6070R",
+        "QND-7010R",
+        "QND-7080R",
+        "QNO-6010R",
+        "QNO-6020R",
+        "QNO-6070R",
+        "QNO-7080R",
+        "QNV-7010R",
+        "QNV-7080R",
+        "samsung sn",
+        "SDE-120",
+        "Smartcam",
+        "SMZ",
+        "SN0-6084",
+        "snb 6011N",
+        "SNB 7001",
+        "snb 7004n",
+        "SNB-3000",
+        "snb5000",
+        "SNB-5004",
+        "SNB-6003",
+        "SNB-6004",
+        "SNB-6010",
+        "SNB-6011",
+        "snb-8000",
+        "SNB-8000N",
+        "SNC-B5366N",
+        "snd",
+        "SND - 3038",
+        "SND 1011",
+        "snd-1000n",
+        "SND-5011",
+        "SND-5011P",
+        "SND-5061",
+        "SND5080",
+        "snd-6011rp",
+        "SND-6013R",
+        "SND-6083N",
+        "SND-6084R",
+        "SND-7080",
+        "SND-7084",
+        "SND-L6013",
+        "SND-L6013R",
+        "SND-L6083R",
+        "SNF-7010",
+        "SNF-8010",
+        "snh p6410",
+        "snh-6440bn",
+        "SNH-E6411BN",
+        "SNH-E6413BN",
+        "SNH-E6413BN CAMERA",
+        "SNH-E6440BN",
+        "SNH-V6414BN",
+        "SNO-1080R",
+        "SNO-1080RN",
+        "SNO-5080R",
+        "SNO-6084R",
+        "SNO-6543",
+        "SNO-7082R",
+        "sno-7084r",
+        "SNO-8081R",
+        "SNO-L6013R",
+        "SNO-L6083R",
+        "SNP-3120",
+        "SNP-5200H",
+        "SNP-6200H",
+        "SNP-6200RH",
+        "SNP-6200RP",
+        "snp-6320",
+        "SNP6320",
+        "SNP-6320H",
+        "snp-6321",
+        "snr",
+        "SNS-R0810W",
+        "SNV-3082",
+        "SNV-5010",
+        "SNV-5080",
+        "SNV-5080R",
+        "SNV-6013",
+        "snv-6018",
+        "SNV-6083",
+        "SNV-6083R",
+        "snv-6084r",
+        "SNV-7080",
+        "SNV-7080R",
+        "SNV-7082n",
+        "SNV-7084R",
+        "SNV-8080",
+        "SNV-L5083R",
+        "SNV-L6083R",
+        "SNZ-5200",
+        "SNZ-6320P",
+        "SPE-100",
+        "SPE-101",
+        "spe-400",
+        "Too",
+        "WISENET",
+        "WN3",
+        "XNP-6120H"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "6013",
+        "6084RP",
+        "Other",
+        "QNO-6010R",
+        "SN0-6084",
+        "SNB-6004P",
+        "SNB-6400",
+        "SNB-7000",
+        "SND-5080P",
+        "SND-6011R",
+        "SND-6048R",
+        "SND-6084R",
+        "SND-L6013R",
+        "SNH-1011N",
+        "SNH-P6410BN",
+        "SNH-P6412BN",
+        "SNO-6011R",
+        "SNO-6019",
+        "SNO-L6083R",
+        "SNP-3370TH",
+        "SNP-6320H",
+        "snv-6012mp",
+        "SNV-6013",
+        "SNV-6048R",
+        "snv-6084",
+        "SNV-6084R",
+        "SNV-L6083R",
+        "WiseNet III H.264"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/profile1/media.smp"
+    },
+    {
+      "models": [
+        "6084RP",
+        "Other",
+        "SNB-3000",
+        "SNB-6003",
+        "SNC-7478",
+        "SNC-B2315P",
+        "SNC-B5366N",
+        "SNC-B5395",
+        "snc-m300",
+        "snc-msnc300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=jpg"
+    },
+    {
+      "models": [
+        "7010",
+        "QNO-7080R",
+        "snf7010",
+        "SNF-8010",
+        "SNH-1011n",
+        "SNH-P6410BN",
+        "SNH-V6410PN",
+        "SNV-6048R",
+        "XNO6085R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/profile4/media.smp"
+    },
+    {
+      "models": [
+        "800 V",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "A 20",
+        "galaxy tab a",
+        "Other",
+        "S20 FE",
+        "SNH-P6410BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A03s",
+        "Grand Prime SM-G530 G",
+        "Other",
+        "sm-a250f",
+        "SM-G900F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/h264_pcm.sdp"
+    },
+    {
+      "models": [
+        "A50",
+        "A54",
+        "Galaxy III Mini",
+        "Galaxy J7",
+        "Galaxy S3",
+        "galaxy s6",
+        "Galaxy Tab A",
+        "J3 IP Webcam",
+        "Neo"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "A70",
+        "DIWK41M",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Blaze",
+        "galaxy",
+        "GT3110",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "Core",
+        "Galaxy",
+        "Galaxy 3",
+        "GALAXY S2",
+        "GALAXY S3",
+        "galaxy s4",
+        "Galaxy s5",
+        "Galaxy S6",
+        "Galaxy S7",
+        "gt-p3113ts",
+        "gtp3114ts",
+        "n750",
+        "Other",
+        "sch-s738c",
+        "SM-J100H",
+        "SPH-L710T",
+        "Xperia"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "D910",
+        "Galaxy S2",
+        "Galaxy S2-1",
+        "GALAXY S7",
+        "GT-I9070",
+        "I-337",
+        "I-8262",
+        "I-9300",
+        "IP WebCAM LP",
+        "Note5",
+        "Other",
+        "phone",
+        "S6 Edge +",
+        "SII",
+        "SM-N910P",
+        "SPH-L710T",
+        "sprint",
+        "Tab 3",
+        "Ultra"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DC-D353",
+        "SC-D353"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=[CHANNEL].JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "ds60"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/qvga.jpg"
+    },
+    {
+      "models": [
+        "ds60",
+        "Galaxy S7",
+        "note",
+        "Other",
+        "sm-s920l"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "F6836W",
+        "F-M136",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "galaxy",
+        "galaxy A9",
+        "galaxy ace",
+        "Galaxy j7",
+        "Galaxy s8+",
+        "Mobile Phone",
+        "note 8",
+        "S20 FE 5G",
+        "SDR-B84300",
+        "SNC-79440BW",
+        "wisenet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/"
+    },
+    {
+      "models": [
+        "galaxy",
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "Galaxy J7",
+        "Galaxy S3",
+        "Iscar-Camera",
+        "note 4",
+        "Other",
+        "sm-s920l",
+        "sm-s975l",
+        "SNP-3301"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "Galaxy J7"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/Browser"
+    },
+    {
+      "models": [
+        "Galaxy S5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/shot.jpg"
+    },
+    {
+      "models": [
+        "Galaxy Tab A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1024,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Grand Prime SM-G530 W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "/h264.sdp"
+    },
+    {
+      "models": [
+        "GT-I0980",
+        "Other",
+        "SRD-165"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "IP Smart Cam",
+        "PoE Outdoor",
+        "snh-6440bn",
+        "SNH-E6411BN",
+        "SNH-E6440BN",
+        "SNH-P6410BN",
+        "SNH-V6410PN",
+        "SNH-V6414BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile5/media.smp"
+    },
+    {
+      "models": [
+        "IP Smart Cam",
+        "QNO-6020R",
+        "Smartcam",
+        "SmartCam D1",
+        "SNH-1011N",
+        "SNH-E6440BN",
+        "SNH-P6410BN",
+        "SNH-V6410PN",
+        "SNH-V6430BN",
+        "XNP-6120H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/profile5/media.smp"
+    },
+    {
+      "models": [
+        "ipolis",
+        "Other",
+        "QNO-6020R",
+        "snb 6011N",
+        "SNB-5000",
+        "SND-6011R",
+        "SND-6013RP",
+        "snd-7004",
+        "SND-L6013R (H.264)",
+        "snd-L6013R H.264",
+        "SNH-1011N",
+        "snv*8080",
+        "SNV-5080",
+        "SNV-6013",
+        "SNV-7084r",
+        "SPE-101",
+        "WISENET",
+        "XNF-8010RV",
+        "XNV-6010"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/profile2/media.smp"
+    },
+    {
+      "models": [
+        "iPolis-RTSP",
+        "SNH-P6410BN",
+        "SNH-V6414BN",
+        "SNO-L6013R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile2/media.smp"
+    },
+    {
+      "models": [
+        "nx3000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 7679,
+      "url": "/qvga_livestream.avi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "Other",
+        "s10",
+        "XCover 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "SNO-6084R"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Other",
+        "SDR-B73303P1T",
+        "SDR-B74301",
+        "WISENET"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "media/still.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "SDR-B73303P1T"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SME DVR",
+        "SNB-2000",
+        "SNC-1300",
+        "SNC-B5395",
+        "SND-7080",
+        "SNP-3301",
+        "SNP-3370TH"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4unicast"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SCC-C6325N",
+        "tabS3",
+        "WISENET"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "profile[CHANNEL]/media.smp"
+    },
+    {
+      "models": [
+        "Other",
+        "SNB-5004",
+        "SNC-570",
+        "SNC-570N",
+        "SND-560",
+        "SNP-3301",
+        "SNP-3370TH"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "public/video.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "SDE-120",
+        "SDE-3000N",
+        "SME",
+        "SME DVR",
+        "SME DVR 4220",
+        "SME-2220"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    },
+    {
+      "models": [
+        "Other",
+        "SRN-473S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/checkimage.cgi?UID=[USERNAME]&CAM=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nphMotionJpeg?Resolution=640x480&Quality=Standard"
+    },
+    {
+      "models": [
+        "scc-c6475"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/3"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/4"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/5"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/6"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/7"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/8"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/9"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/10"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/13"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/14"
+    },
+    {
+      "models": [
+        "SDC-9441BC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 4524,
+      "url": "/15"
+    },
+    {
+      "models": [
+        "sfd",
+        "SNH-E6411BN",
+        "SNH-P6410BN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile4/media.smp"
+    },
+    {
+      "models": [
+        "Smartcam",
+        "SNH-1011N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/profile6/media.smp"
+    },
+    {
+      "models": [
+        "SMT DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/fwstream.cgi?ServerId=0&AppKey=0x00006784&PortId=0&CameraId=[CHANNEL]&PauseTime=0&FwCgiVer=0x0001"
+    },
+    {
+      "models": [
+        "SNB-2000"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/cam[CHANNEL]/2.0?audio=0&stream=0"
+    },
+    {
+      "models": [
+        "SNB-2000"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mjpeg/media.smp"
+    },
+    {
+      "models": [
+        "SNB-3000",
+        "SNB-6000",
+        "SNV-3081",
+        "SNV-6084N",
+        "SNV-6084R",
+        "WISENET"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MJPEG/media.smp"
+    },
+    {
+      "models": [
+        "SNB-3000",
+        "SND-3080F",
+        "SNV-3080",
+        "SNV-3081"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264/media.smp"
+    },
+    {
+      "models": [
+        "SNB-3000",
+        "SND-1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1/media.smp"
+    },
+    {
+      "models": [
+        "SNB-6003"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "SNC-570"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/public/video.cgi?ch=1"
+    },
+    {
+      "models": [
+        "SND-6048R",
+        "Techwin SND-7084",
+        "Techwin SNV-7084"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.cgi?msubmenu=jpg"
+    }
+  ]
+}

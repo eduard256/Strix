@@ -1,0 +1,439 @@
+{
+  "brand": "Pelco",
+  "brand_id": "pelco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cms1",
+        "D5118",
+        "D5220",
+        "D5230",
+        "D6230",
+        "D6230L",
+        "ID10C",
+        "IM-10C101",
+        "IM10DN10-1E",
+        "IM10DN10-1N",
+        "IM-10DN101V",
+        "IM10DN10-IV",
+        "IM10LW10-1E",
+        "IME119",
+        "IMM12018",
+        "IMM12027-1EP",
+        "IMP1100",
+        "IMP121A-1IS-T81505624",
+        "IM-P519",
+        "IMS-0C10",
+        "IMS0DN10-1E",
+        "IPX11",
+        "IX-10",
+        "IX-30C",
+        "IX-30DN",
+        "IX-DN30",
+        "IX-E10LW-ADDNRX0",
+        "IX-E20DN",
+        "IXE20DN-PO-AAQHXC0",
+        "IX-P30DN",
+        "IX-P31",
+        "IXS0C",
+        "MS0C10-1V",
+        "Other",
+        "S5118",
+        "SARIX",
+        "Sarix ID",
+        "SARIX IMS0",
+        "SARİX IMS0",
+        "SARIX PRO",
+        "Sarix Pro2",
+        "SarixIP",
+        "Spectra Enhanced",
+        "Spectra IV",
+        "SPECTRA IV",
+        "Spectra Pro",
+        "TXB-N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg"
+    },
+    {
+      "models": [
+        "d3200",
+        "D5118",
+        "D5230ADFRZ28",
+        "D6230L",
+        "D7230L",
+        "ES5230",
+        "harf West",
+        "IBE329-1R",
+        "IBP221",
+        "ID10C",
+        "IDE20DN",
+        "IM-10C101",
+        "IM-10C10ACQTL38",
+        "IM-10C10AD9603",
+        "IM-10DN101E",
+        "IM10DN10-1V",
+        "IM-10LW10",
+        "IM10LW10-1E",
+        "IME119",
+        "IME219",
+        "IME219-AEFTGV5",
+        "IME3",
+        "IME319",
+        "IMM12018",
+        "IMM12027-1EP",
+        "IMM12036",
+        "IM-P11101",
+        "IM-P11101E",
+        "IMP1110-1-T4",
+        "IMP121A-1IS-T81505624",
+        "IMP221-1ES",
+        "IMP221A-1IS",
+        "IMP231-1ERS",
+        "IMP319-1-T41303953",
+        "IMP321-1RS-T82504427",
+        "IM-P519",
+        "IP-110",
+        "IP-CAMERA-IBP219-ER-T32501860",
+        "IX-10",
+        "IX20",
+        "IX-30C",
+        "IX-30DN",
+        "IX-DN30",
+        "IXE10DN",
+        "IX-E10LW-ADDNRX0",
+        "IXE20DN-PO-AAQHXC0",
+        "IXE51",
+        "IX-P11",
+        "IX-P31",
+        "IXP51",
+        "IX-P51DN",
+        "IX-P52DN",
+        "IXS0DN",
+        "Loft",
+        "Net5404T",
+        "Optera",
+        "Other",
+        "P1220-FWH1",
+        "RCI WA Special",
+        "S7230L",
+        "S7240L",
+        "Sarix",
+        "SARIX ENHANCED",
+        "Sarix ID",
+        "Sarix IMP1110-1E",
+        "Sarix IMS0",
+        "SARİX IMS0",
+        "Sarix Pro",
+        "SARIX PRO2",
+        "SarixIP",
+        "School",
+        "Spectra IV",
+        "SPECTRA PRO",
+        "TXB-N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "d5118",
+        "Spectra",
+        "SPECTRA PRO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/qvga.jpg"
+    },
+    {
+      "models": [
+        "D7230L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8088,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ec101-b3y2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Ensight Sarix",
+        "IMM12027-1EP",
+        "IMM12036",
+        "IM-P11101",
+        "IM-P11101E",
+        "IMP231-1ERS",
+        "IP-Camera-IBP219-ER-T32501860",
+        "IP-Camera-IBP521-1I-T61500014",
+        "Other",
+        "P1220-FWH1",
+        "SARIX ID"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "evo-05lid",
+        "EVO-05NCD",
+        "evo-5",
+        "Grandeye",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[CHANNEL]/video.cgi"
+    },
+    {
+      "models": [
+        "IDE10DN",
+        "IM-10DN101E",
+        "IP-110",
+        "IX-E20DN",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    },
+    {
+      "models": [
+        "IM-10C101",
+        "IME219-AEFTGV5"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.fcgi?mode=real&si=[USERNAME]&mon=1&ch=[CHANNEL]&width=[WIDTH]&height=[HEIGHT]&quality=7&fps=0"
+    },
+    {
+      "models": [
+        "IM10DN10-1V"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "IMM12027-1EP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "IMM12036",
+        "ixe32",
+        "Net5404T"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/stream1"
+    },
+    {
+      "models": [
+        "IMP221-1ES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/sstream1"
+    },
+    {
+      "models": [
+        "IMS10",
+        "IWP121-1ES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/jpeg"
+    },
+    {
+      "models": [
+        "ip mini",
+        "IP-110",
+        "Pelco Spectra",
+        "Spectra",
+        "spectra enhanced",
+        "Spectra IV",
+        "spectraIV-ip"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/jpegControl.php?frameRate=10"
+    },
+    {
+      "models": [
+        "IP-CAMERA-IBP219-ER-T32501860",
+        "SarixIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "stream[CHANNEL]"
+    },
+    {
+      "models": [
+        "IS90-CHV9X",
+        "Net_Old",
+        "Net300Tsmall",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IS90-CHV9X"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "IX-E20DN",
+        "IX-P21",
+        "IX-P30DN",
+        "IXP51",
+        "Other",
+        "sarix",
+        "SARIXIP",
+        "Spectra IV"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/pull"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "vid.cgi?id=[USERNAME]&doc=[PASSWORD]&nc=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Sarix Enhanced"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "Sarix IMS0",
+        "SARİX IMS0"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg?id=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Spectra IV IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Spectra IV IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0"
+    }
+  ]
+}

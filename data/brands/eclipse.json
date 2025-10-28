@@ -1,0 +1,42 @@
+{
+  "brand": "Eclipse",
+  "brand_id": "eclipse",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Bullet",
+        "ECL-IP55MP",
+        "esg-ipbms2f3",
+        "ESG-IPBP2V6-Z",
+        "IPD7",
+        "IPD72",
+        "IPPTZ",
+        "SURVEILLANCE"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "ESG-IPDM4F2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "ESG-IPDM4F2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    }
+  ]
+}

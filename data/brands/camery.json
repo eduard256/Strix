@@ -1,0 +1,26 @@
+{
+  "brand": "Camery",
+  "brand_id": "camery",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "h.264 network dvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam2/mpeg4"
+    },
+    {
+      "models": [
+        "h.264 network dvr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    }
+  ]
+}

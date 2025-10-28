@@ -1,0 +1,17 @@
+{
+  "brand": "Aszhonga",
+  "brand_id": "aszhonga",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Q10C-JZ-WIFI-2.0MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Stardot",
+  "brand_id": "stardot",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "belmont svb",
+        "belmontsvg2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.cgi?[CHANNEL]"
+    }
+  ]
+}

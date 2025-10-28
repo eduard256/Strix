@@ -1,0 +1,130 @@
+{
+  "brand": "Avs",
+  "brand_id": "avs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP cameras",
+        "Other",
+        "SYSTEMS HD1024 SERIES",
+        "TITANAPOLLOATOM DVR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "ME",
+        "titan apollo atom",
+        "TitanApolloAtom DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg.fcgi?mode=real&si=[USERNAME]&mon=1&ch=[CHANNEL]&width=[WIDTH]&height=[HEIGHT]&quality=7&fps=0"
+    },
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-usr/image"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "Systems HD1024 Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "pic01/images.jpg"
+    },
+    {
+      "models": [
+        "Systems HD1024 Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/image/mjpeg.cgi?id=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Systems MPix 2.0"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "Systems MPix Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stream/nph-stream.cgi?id=[USERNAME]&pw=[PASSWORD]&streamtype=jpeg&truenph=1"
+    },
+    {
+      "models": [
+        "Systems MPix Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stream/nph-stream.cgi?id=[USERNAME]&pw=[PASSWORD]&streamtype=mjpeg&truenph=1"
+    },
+    {
+      "models": [
+        "Y4C-ZA"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

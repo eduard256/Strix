@@ -1,0 +1,17 @@
+{
+  "brand": "Krypton",
+  "brand_id": "krypton",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "vr-sn3.0h"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

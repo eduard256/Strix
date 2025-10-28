@@ -1,0 +1,35 @@
+{
+  "brand": "Nuvico",
+  "brand_id": "nuvico",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ALDVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg.cgi?refresh=0&channel=[CHANNEL]&id=[USERNAME]&pass=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]&oldbrowser=1"
+    },
+    {
+      "models": [
+        "EasyNet DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getjpeg.cgi?[USERNAME]&ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "EVL-400N"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "monitor.cgi?Channel=[CHANNEL]&Audio=0000&Live=1"
+    }
+  ]
+}

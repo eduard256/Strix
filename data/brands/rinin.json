@@ -1,0 +1,19 @@
+{
+  "brand": "Rinin",
+  "brand_id": "rinin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3mp",
+        "3mp ip",
+        "SH035-BL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    }
+  ]
+}

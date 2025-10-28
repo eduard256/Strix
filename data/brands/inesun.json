@@ -1,0 +1,114 @@
+{
+  "brand": "Inesun",
+  "brand_id": "inesun",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2mp",
+        "HD-IPC",
+        "INS-HD360AE-2.0MP",
+        "INS-HD42-2MP-3X-Plastic",
+        "INS-HD54F-WIFI",
+        "IP66",
+        "IPD-D53Y00",
+        "IPD-E36Y0701-BS",
+        "Other",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "5MP",
+        "INS-HD360AE-2.0MP",
+        "INS-HD361-2.0MP",
+        "INS-HD46A-5",
+        "INS-HD54FAL-5.0MP+POE",
+        "INS-HD64FAL-5",
+        "IPD-D53L02-BS",
+        "IPD-E2A5L18-BS",
+        "Other",
+        "PTZ",
+        "PZT IP",
+        "THEBEST"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "5MP",
+        "HDIPC",
+        "Inesun PTZ",
+        "INS-HD360AE-2.0MP",
+        "INS-HD46A-5",
+        "INS-HD54FAL-5",
+        "Other",
+        "ptz",
+        "pzt ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "INS-HD360AE-2.0MP",
+        "INS-HD43AE-2.0MP",
+        "INS-HD616-5",
+        "IPD-E36Y0701-BS",
+        "Other",
+        "PTZ camera",
+        "PZT IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "INS-HD46RM-5.0MP+poe"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "INS-HD54F-WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "IPD-D53Y0701-BS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264major"
+    },
+    {
+      "models": [
+        "IPD-D53Y0701-BS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264minor"
+    }
+  ]
+}

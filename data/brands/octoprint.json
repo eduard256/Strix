@@ -1,0 +1,20 @@
+{
+  "brand": "Octoprint",
+  "brand_id": "octoprint",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "Pi3",
+        "Pi4",
+        "RP4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/webcam/?action=stream"
+    }
+  ]
+}

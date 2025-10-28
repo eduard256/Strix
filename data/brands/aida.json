@@ -1,0 +1,18 @@
+{
+  "brand": "Aida",
+  "brand_id": "aida",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD-NDI-CUBE",
+        "HD-NDI-IP67"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream/main"
+    }
+  ]
+}

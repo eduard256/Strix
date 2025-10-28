@@ -1,0 +1,17 @@
+{
+  "brand": "Cloud2000",
+  "brand_id": "cloud2000",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "brand": "Shenzhen",
+  "brand_id": "shenzhen",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2A6M4HQ-X",
+        "B SERIES",
+        "CTIPC-285C-Z4",
+        "P2PWIFICAM",
+        "SD5W 1080PS HX",
+        "SPOT-WIFI",
+        "v380",
+        "V380",
+        "v380s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "3516F0",
+        "C112WX",
+        "D200-SW",
+        "HD-IPC smart cam",
+        "i6032b",
+        "IPCAME BILLIAN",
+        "Other",
+        "P05",
+        "P2PIPCAM",
+        "P2PWIFICAM",
+        "PTZ",
+        "reecam",
+        "TC105",
+        "TC55",
+        "V380",
+        "XM82-8MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "720p",
+        "i6032b",
+        "TC98",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "720P",
+        "N5810HH-E",
+        "Other",
+        "P2PWIFICAM",
+        "smart wifi camera",
+        "V380"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "720P",
+        "Other",
+        "P2PWIFICAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "720P",
+        "Other",
+        "P2PIPCAM",
+        "SMARTEYE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "720P",
+        "HuiYanIPC",
+        "i6032b",
+        "Other",
+        "P2PIPCAM",
+        "P2PWIFICAM",
+        "SMARTEYE",
+        "TC20",
+        "V380",
+        "V380S",
+        "xseries"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "720P",
+        "Other",
+        "v380",
+        "V380",
+        "v380s",
+        "V380S"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "b series",
+        "P2PWIFICAM",
+        "smarteye",
+        "SMARTEYE",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CCC365"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "CP05",
+        "N-AG463GWp",
+        "TC105",
+        "YCC365 PLUS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "cvafa-i465",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/4"
+    },
+    {
+      "models": [
+        "EYE_PLUS (YCC365 Plus app)",
+        "i6032b",
+        "Other",
+        "v380s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "GWIPC-19664444",
+        "P26-32-3-GK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "icomm",
+        "v380",
+        "XM82-8MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "im61"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "N-AG463GWp",
+        "Other",
+        "TC56",
+        "TC98"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264/ch0/raw/av_stream"
+    },
+    {
+      "models": [
+        "Other",
+        "P2PWIFICAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other",
+        "P2PIPCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other",
+        "SMARTEYE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 555,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "v380",
+        "v380 pro",
+        "V380 PRO",
+        "YCC365 Plus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "Other",
+        "TC56"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/H264/ch1/main/av_stream"
+    },
+    {
+      "models": [
+        "P2PWIFICAM",
+        "TR-CIPR129-POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Shixin"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "SMART WIFI CAMERA",
+        "XD07"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "SMARTEYE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "SV-B01-1080p-poe"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "TD-3104B1H-4P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/?chID=2&streamType=main&linkType=tcp"
+    },
+    {
+      "models": [
+        "Trolink"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "v380",
+        "v380s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "v380s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "XM30-4MP-BY"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=0"
+    }
+  ]
+}

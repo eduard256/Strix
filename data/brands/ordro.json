@@ -1,0 +1,35 @@
+{
+  "brand": "Ordro",
+  "brand_id": "ordro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HDV-Z20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HDV-Z20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "HDV-Z20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam3/mpeg4"
+    }
+  ]
+}

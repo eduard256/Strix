@@ -1,0 +1,215 @@
+{
+  "brand": "Eufy",
+  "brand_id": "eufy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2c pro",
+        "2k indoor camera",
+        "2K Pan  and  Tilt",
+        "C120",
+        "C210",
+        "C22",
+        "C220",
+        "Cam 2 Pro",
+        "Cam 2C (Regular - USA)",
+        "Cam2C",
+        "E220",
+        "E30",
+        "e42",
+        "Eufy 2 pro",
+        "eufy Security Outdoor Cam E220",
+        "EUFYCAM 2 PRO",
+        "EUFYCAM 2C",
+        "FloodLight Cam Pro",
+        "Garage-Control Cam Plus",
+        "Home",
+        "indoor 2k pan tilt",
+        "Indoor Cam",
+        "Indoor Cam 2K",
+        "Indoor Cam 2K / T8400X",
+        "Indoor Cam 2K Pan  and  Tilt",
+        "Indoor Cam C220",
+        "Indoor Cam C220 PTZ",
+        "Indoor Cam Mini",
+        "Indoor Cam Pan and Tilt",
+        "Indoor Cam S350",
+        "IndoorCam C24",
+        "indoorcam4k",
+        "modele E",
+        "Other",
+        "Outdoor Cam",
+        "Outdoor Cam Pro",
+        "Outdoor Pro",
+        "Outdoor Wired Camera Pro 2k",
+        "Pan  and  Tilt",
+        "Pan and tilt 2k",
+        "S350",
+        "Security Outdoor Cam E220",
+        "Security Solo IndoorCam C24",
+        "Security Solo OutdoorCam C24",
+        "Solo OutdoorCam L40",
+        "t8113",
+        "T8400",
+        "T84001W1",
+        "T8400X",
+        "T8410",
+        "T8410121",
+        "T8419",
+        "Tilt-Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live0"
+    },
+    {
+      "models": [
+        "2k Doorbell Dual",
+        "C24",
+        "Cam2c",
+        "Cam2c Pro",
+        "Eufy 2 pro",
+        "EufyCam 2",
+        "EufyCam 2C Pro",
+        "eufyCam S330",
+        "Other",
+        "pan en tilt",
+        "S330",
+        "T8210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live2"
+    },
+    {
+      "models": [
+        "C210",
+        "Cam 2C",
+        "Cam 2C Pro",
+        "Cam2c Pro",
+        "EufyCam 2 Pro",
+        "EufyCam 2C Pro",
+        "Pro2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live1"
+    },
+    {
+      "models": [
+        "Cam2c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "file",
+      "port": 0,
+      "url": "D:/"
+    },
+    {
+      "models": [
+        "Cam2c",
+        "eufycam2k",
+        "floodlight cam",
+        "indoor Cam 2K Pan  and  Tilt",
+        "T8210",
+        "t8401",
+        "T8401"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/"
+    },
+    {
+      "models": [
+        "E340 Floodlight",
+        "EufyCam S330"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live3"
+    },
+    {
+      "models": [
+        "eufyCam S330"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live4"
+    },
+    {
+      "models": [
+        "HomeBase  2",
+        "indoor Cam 2K Pan  and  Tilt",
+        "Pan and tilt 2k",
+        "Security Solo IndoorCam C24",
+        "T8210",
+        "T8410"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "Indoor Cam 2K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "indoor Cam 2K Pan and Tilt"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10002,
+      "url": "/mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "Outdoor Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/media.sav"
+    },
+    {
+      "models": [
+        "Outdoor Wired Camera Pro 2k"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "Solo 2k"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "T8410"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

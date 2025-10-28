@@ -1,0 +1,27 @@
+{
+  "brand": "Grwibeou",
+  "brand_id": "grwibeou",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Speed dome 000A125",
+        "Y4C-ZA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "YCC365PLUS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam3/mpeg4"
+    }
+  ]
+}

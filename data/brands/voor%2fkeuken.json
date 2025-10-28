@@ -1,0 +1,17 @@
+{
+  "brand": "Voor/keuken",
+  "brand_id": "voor%2fkeuken",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Mini PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

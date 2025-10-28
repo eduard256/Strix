@@ -1,0 +1,75 @@
+{
+  "brand": "Belkin",
+  "brand_id": "belkin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "F7D7601v1",
+        "F7D7601V1",
+        "F7D7602v1",
+        "F7D7602V1",
+        "HD NetCam",
+        "NETCAM",
+        "NetCam F7D7601v1",
+        "NetCam HD",
+        "Netcam HD+",
+        "NetCam HDx",
+        "NetCam HDxx",
+        "open",
+        "WiFi NetCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/goform/video"
+    },
+    {
+      "models": [
+        "HD NETCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "netcam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "WiFi NetCam"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

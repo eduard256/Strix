@@ -1,0 +1,17 @@
+{
+  "brand": "Apn Vision Ltd.",
+  "brand_id": "apn-vision-ltd.",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "QC16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

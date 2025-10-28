@@ -1,0 +1,101 @@
+{
+  "brand": "Holdoor",
+  "brand_id": "holdoor",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p IP Camera",
+        "wcam-174040-nghrh",
+        "WCAM-220781-GGJUL",
+        "WIFICAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "1080P IP CAMERA",
+        "2.1",
+        "650",
+        "NETCAM",
+        "Other",
+        "WIFI 720"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "720p",
+        "720p WiFi",
+        "Netcam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "DWB-02242E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NETCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NETCAM",
+        "WCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "WCAM",
+        "wificam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "WIFI 720"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "WiFi 720p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

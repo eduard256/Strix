@@ -1,0 +1,27 @@
+{
+  "brand": "Goswift",
+  "brand_id": "goswift",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GS-2MPTURRET-1",
+        "GS-4KBULLET-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/1"
+    },
+    {
+      "models": [
+        "GS-4KBULLET-1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    }
+  ]
+}

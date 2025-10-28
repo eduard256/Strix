@@ -1,0 +1,693 @@
+{
+  "brand": "Escam",
+  "brand_id": "escam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0WL  QD100",
+        "300",
+        "420D",
+        "brick qd300",
+        "BRICK QD300",
+        "Es300",
+        "Escan",
+        "fq001",
+        "fq002",
+        "G02",
+        "ICSEE",
+        "ICSEE1",
+        "Q630M",
+        "qd 410",
+        "QD100",
+        "QD300",
+        "QD320",
+        "QD330",
+        "QD500",
+        "qd520",
+        "QD520",
+        "qf001",
+        "QF001",
+        "QF002",
+        "qf007",
+        "QF007",
+        "QF100",
+        "qf218",
+        "QF218",
+        "QF605",
+        "slaba kvalietat",
+        "Snail QD500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "152",
+        "900",
+        "BRICK QD300",
+        "Brick QD900WIFI",
+        "G02 PTZ",
+        "HD3500V",
+        "ICSEE",
+        "IP2M-841W",
+        "Other",
+        "Q630M",
+        "Q6320",
+        "QD800",
+        "QD900",
+        "QD900 WF",
+        "QD900 Wi-Fi",
+        "QD900S",
+        "QF218"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "2mp",
+        "300",
+        "500",
+        "520",
+        "brick",
+        "Brick",
+        "BRICK",
+        "brick qd300",
+        "Brick Qd300",
+        "cam03",
+        "D520",
+        "DQ520",
+        "ES300",
+        "ESCAM Beick QD300",
+        "Escam QD420",
+        "Fighter",
+        "GD300",
+        "HD3500V",
+        "Home Security Camera",
+        "ICSEE",
+        "ims",
+        "NoIdea!",
+        "ONVIF",
+        "ONVVIF 720p",
+        "Other",
+        "OWL QD100",
+        "Peashooter",
+        "Peashooter (ONVIF)",
+        "Peashooter QD520",
+        "PeaShooter QD520",
+        "Peashooterqd520",
+        "pvr",
+        "PVR001",
+        "PVR008",
+        "Q1039",
+        "q300",
+        "Q300",
+        "Q500",
+        "Q520",
+        "Q630",
+        "Q630M",
+        "q645r",
+        "qd 300",
+        "QD 300",
+        "qd100",
+        "QD100",
+        "QD100a",
+        "qd300",
+        "QD300 HiRes Onvif",
+        "QD320",
+        "qd330",
+        "Qd330",
+        "QD330",
+        "QD400",
+        "qd500",
+        "QD500",
+        "qd520",
+        "QD520",
+        "qd520 onvif",
+        "QD520?",
+        "QD520-2",
+        "QD520-3",
+        "QD530",
+        "qd900",
+        "qf001",
+        "QF001",
+        "QF001_2",
+        "QF002",
+        "QF003",
+        "qf218",
+        "QF218",
+        "qf518",
+        "QF518",
+        "QF800",
+        "qf910",
+        "QP136",
+        "QT215",
+        "QT500",
+        "RScam",
+        "Snail QD500",
+        "SnailCam",
+        "V100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "300",
+        "ESC-IPC-1",
+        "G02",
+        "G10",
+        "icsee",
+        "ICSEE",
+        "Other",
+        "QD 500",
+        "QD300",
+        "QF001",
+        "qf007",
+        "QF007",
+        "QF007g",
+        "Snail QD500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "300",
+        "5MP",
+        "900",
+        "900WiFi",
+        "AM-Q6320-WIFI",
+        "Block",
+        "BRICK 900",
+        "Brick HD900",
+        "BRICK Q300 WIFI",
+        "BRICK QD300",
+        "Brick QD900",
+        "Brick QD900 WiFi",
+        "BRICK QD900 WIFI",
+        "Brick900",
+        "Bricks Wifi",
+        "D300W",
+        "DG9-00",
+        "escam 200",
+        "Fixed",
+        "G01",
+        "G02",
+        "G02 PTZ",
+        "G02-1",
+        "ICSEE",
+        "Other",
+        "OutdoorWifi",
+        "PT303",
+        "Q6230WIFI",
+        "Q6320",
+        "Q6320WIFI",
+        "q900",
+        "QD 300",
+        "QD 500",
+        "qd300",
+        "QD300",
+        "QD300 brick wifi",
+        "QD320",
+        "QD800",
+        "qd800 wifi",
+        "QD900",
+        "QD900 HiRes Onvif",
+        "QD900S",
+        "QD900WiFi",
+        "QD900WIFI",
+        "QF001",
+        "QF218",
+        "QF300",
+        "QF608",
+        "QPT511",
+        "Sentry QD900S",
+        "WifiOutdoor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ANT",
+        "Ant QF606",
+        "MY103",
+        "Other",
+        "pvr0008",
+        "QF218",
+        "QF605"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "Ant 605",
+        "diamond qf506",
+        "Diamond QF-506",
+        "ESCAM Q8",
+        "Other",
+        "PVR608",
+        "qf500",
+        "QF-500",
+        "QF500 Onvif",
+        "QF506",
+        "QF518",
+        "QF600",
+        "QF605",
+        "QF910",
+        "r80x50-pq"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "Ant QF606",
+        "ELF QF200",
+        "Pearl QF100",
+        "QF100",
+        "QF100 P",
+        "QF200",
+        "QF280"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "CAM03",
+        "ESC-IPC-1",
+        "G02",
+        "go2",
+        "ONVVIF 720P",
+        "Other",
+        "QD900 WI-FI",
+        "QF002",
+        "QF300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "DEV.xm",
+        "Other",
+        "Peashooter QD520",
+        "PVR008",
+        "qd100",
+        "QD300",
+        "QD500",
+        "QD520",
+        "QD520RB",
+        "qd530",
+        "QF001",
+        "QF007",
+        "qf218",
+        "Snail QD500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp"
+    },
+    {
+      "models": [
+        "ESCAM Shark QP180",
+        "ESCAM SHARK QP180",
+        "Other",
+        "qd900",
+        "QF001",
+        "QP02",
+        "QP110",
+        "qp180",
+        "WIFIOUTDOOR",
+        "wnk403",
+        "wnk803"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "G02",
+        "GO2",
+        "ICSEE",
+        "ICSEE1",
+        "QF518"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "G02"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "GO2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "HD3100",
+        "ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "hd3500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "icsee"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "ICSEE",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "IP365",
+        "pvr0008",
+        "QP1.30",
+        "QP130"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/realmonitor"
+    },
+    {
+      "models": [
+        "KDM-A111N3",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "kdm-a131",
+        "Other",
+        "QF100",
+        "QF300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "k-h10-2mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg?res=full&x0=0&y0=0&x1=100%25&y1=100%25&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "QF001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    },
+    {
+      "models": [
+        "Other",
+        "Pearl QF100",
+        "qd300",
+        "QF100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "QP02",
+        "qp180",
+        "wnk403",
+        "wnk803"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=2&stream=0.sdp?real_stream%22"
+    },
+    {
+      "models": [
+        "Other",
+        "qf218"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream%22"
+    },
+    {
+      "models": [
+        "PEARL QF100",
+        "QF100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "PEARL QF100",
+        "QF002"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "PVR002",
+        "QPT511"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "Q630M",
+        "QD300",
+        "QD320"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "qd100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "QD-310"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8010,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "qd520"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "QF001",
+        "qf218",
+        "QF518",
+        "QH002"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01.264"
+    },
+    {
+      "models": [
+        "QF100",
+        "QF300"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "qf218",
+        "QF290"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/video.sav"
+    },
+    {
+      "models": [
+        "Qf290"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 10554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "QF508"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "QF800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "QH002"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01.264?dev=1"
+    },
+    {
+      "models": [
+        "QP180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "WNK404"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 7070,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

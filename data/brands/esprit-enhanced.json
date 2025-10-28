@@ -1,0 +1,17 @@
+{
+  "brand": "Esprit Enhanced",
+  "brand_id": "esprit-enhanced",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ES6230-K090647"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1_v"
+    }
+  ]
+}

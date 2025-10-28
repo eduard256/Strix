@@ -1,0 +1,17 @@
+{
+  "brand": "Sartek",
+  "brand_id": "sartek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "iHM42-2T07-T2-EN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

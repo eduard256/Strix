@@ -1,0 +1,17 @@
+{
+  "brand": "Camerawelt",
+  "brand_id": "camerawelt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5MP POE IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

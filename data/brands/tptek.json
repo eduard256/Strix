@@ -1,0 +1,46 @@
+{
+  "brand": "Tptek",
+  "brand_id": "tptek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5MP",
+        "C6F0SoZ0N0PmL2",
+        "MP8",
+        "Other",
+        "tpek",
+        "WO1013E",
+        "WO2018E(8MP)",
+        "WOR205-5XCH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "960p",
+        "UNLISTED"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C6F0SoZ0N0PmL2",
+        "MP8",
+        "Other",
+        "WO2018E(8MP)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    }
+  ]
+}

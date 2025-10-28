@@ -1,0 +1,77 @@
+{
+  "brand": "Hongjingtian",
+  "brand_id": "hongjingtian",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1vp-p75",
+        "720P",
+        "bullet",
+        "Bullet",
+        "HJT IP CAMERA",
+        "HJT-IPC6100-B1",
+        "HJT-IPC6100-B1W",
+        "HJT-IPC6200-B1W",
+        "HJT-IPC6200-B2",
+        "HJT-IPC6200-D1",
+        "Other",
+        "Wired"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1vp-p75"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    },
+    {
+      "models": [
+        "720",
+        "720P",
+        "Bullet",
+        "HJT IP CAMERA",
+        "hjt-ipc6100-b1w",
+        "HJT-IPC6100-B1W",
+        "hjt-ipc6100-d1",
+        "HJT-IPC6200-B1W",
+        "HJT-IPC6200-D1",
+        "HJT-IPC6200-D2",
+        "Other",
+        "V6.1.1.2.1-20150320"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Bullet",
+        "HJT IP CAMERA",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "HJT-IPC100-D1W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

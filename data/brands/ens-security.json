@@ -1,0 +1,17 @@
+{
+  "brand": "Ens Security",
+  "brand_id": "ens-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ED8004TSC-2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1"
+    }
+  ]
+}

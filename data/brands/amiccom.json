@@ -1,0 +1,30 @@
+{
+  "brand": "Amiccom",
+  "brand_id": "amiccom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "Z_22047",
+        "z_32001",
+        "Z_3201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2600,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Z_22041",
+        "Z_22047"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2600,
+      "url": "/media/ch0/stream0"
+    }
+  ]
+}

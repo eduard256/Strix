@@ -1,0 +1,80 @@
+{
+  "brand": "Fam",
+  "brand_id": "fam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "002famr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/video?encode=h264(1)"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "live/h264_ulaw"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/cam[CHANNEL]/2.0?audio=0&stream=0"
+    },
+    {
+      "models": [
+        "FAM-IPC3013"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    }
+  ]
+}

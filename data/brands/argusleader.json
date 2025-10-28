@@ -1,0 +1,17 @@
+{
+  "brand": "Argusleader",
+  "brand_id": "argusleader",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AS21231"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "brand": "Imou",
+  "brand_id": "imou",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2c-d",
+        "Bullet 2",
+        "Cue2",
+        "ipc-a26hp-v2",
+        "IPC-F22P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "4MP Bullet",
+        "ADC2W",
+        "bullet",
+        "Bullet lite",
+        "Bullet Lite",
+        "Cue",
+        "Cue2",
+        "G22P",
+        "G26E",
+        "G26EP",
+        "Imou IPC-G22",
+        "ipc g22",
+        "IPC-A12",
+        "ipc-c26ep-imou",
+        "IPC-D42",
+        "IPC-G22",
+        "ipc-g42",
+        "IPC-S3D-5M0WJ",
+        "Lite",
+        "looc",
+        "Looc",
+        "Other",
+        "ranger",
+        "Ranger",
+        "RANGER 2C",
+        "ranger pro",
+        "Ranger Pro",
+        "Ranger pro z"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "4MP BULLET",
+        "bullet 2c",
+        "dome lite 4mp 828a",
+        "IPC-F42",
+        "IPC-F42F-D",
+        "IPC-F42FN",
+        "RANGER",
+        "RANGER 2C 4MP-D",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]"
+    },
+    {
+      "models": [
+        "4MP BULLET",
+        "BULIT4M",
+        "Bullet",
+        "BULLET LITE",
+        "bullrt lite",
+        "DOME LITE 4MP 828A",
+        "G26EP",
+        "IPC-C26EP-IMOU",
+        "IPC-D22",
+        "ipc-g42",
+        "ranger pro",
+        "UNLISTED"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "Bazen 1080p",
+        "Bullet 2c 4mp",
+        "Bullet 3C",
+        "BULLET LITE",
+        "clue 2",
+        "Cruiser 4MP (IPC-S42-FP)",
+        "Cruiser SE+ (IPC-S21FE)",
+        "Cue2",
+        "DB61i",
+        "Imou IPC-G22",
+        "IPC-A42-L",
+        "IPC-C22F-C",
+        "IPC-C26E",
+        "IPC-C26E-V2",
+        "IPC-F22FE",
+        "IPC-F42",
+        "IPC-G22",
+        "IPC-G26EP",
+        "IPC-T22A",
+        "IPC-TA32CP-L",
+        "looc",
+        "Moje",
+        "Ranger 2",
+        "Ranger 2C",
+        "Ranger Dual 6MP",
+        "Ranger SE 4MP",
+        "Vchod 1080p",
+        "Vchod Studio",
+        "Vchod Studio 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "Bazen 640x480",
+        "DB61i",
+        "IPC-A42-L",
+        "IPC-T22A",
+        "Ranger 2",
+        "Ranger 2C",
+        "Vchod 640x480",
+        "Vchod Studio 640x480",
+        "Zahrada 640x480"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "bullet",
+        "BULLET LITE",
+        "ipc-g26ep",
+        "IPC-T26EP",
+        "Looc",
+        "LOOC2",
+        "TURRET"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Bullet",
+        "Bullet Lite",
+        "Floodlight",
+        "G22P",
+        "IMOU IPC-G22",
+        "IPC-A26HI",
+        "IPC-C26EP",
+        "IPC-D22",
+        "ipc-g22",
+        "IPC-G22",
+        "ipc-g26ep",
+        "ipc-g42",
+        "IPC-T26EP",
+        "LITE",
+        "Looc",
+        "ranger",
+        "Ranger pro",
+        "rangeriq",
+        "TURRET"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "bullet 2c",
+        "Bullet 2C",
+        "Cue2",
+        "IPC-S42F",
+        "IPC-S7XEN-10M0WED",
+        "k.a.",
+        "Looc2",
+        "Ranger 2",
+        "ranger2",
+        "Rex",
+        "TP2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "bullet 2c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Bullet 4MP lite",
+        "Dome 4mp",
+        "DOME 4MP",
+        "dome lite 4mp",
+        "DOME LITE 4MP",
+        "DOME LITE 4MP 828A",
+        "IPC-D42",
+        "ipc-g42",
+        "Knight",
+        "LOOC2",
+        "Ranger IQ",
+        "ranger pro",
+        "Ranger Pro V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Bullet lite",
+        "IPC-K3C",
+        "Ranger 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Bullet Lite",
+        "Looc",
+        "ranger",
+        "ranger pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "cell c3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=staphi2"
+    },
+    {
+      "models": [
+        "Cell Pro",
+        "IPC-A12",
+        "IPC-A22",
+        "Ranger Pro Z",
+        "Vchod"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46bmljazEyMTk="
+    },
+    {
+      "models": [
+        "Cruiser 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "Cruiser 2C",
+        "T42EA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "Cue2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "F22AP",
+        "IPC-A43P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&resolution=2560x1440"
+    },
+    {
+      "models": [
+        "IPC-A43P",
+        "IPC-F22P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IPC-C26E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "IPC-C26EP"
+      ],
+      "type": "JPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46bWLuaWRvMjAyMy4=]"
+    },
+    {
+      "models": [
+        "IPC-G22"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "IPC-K42P",
+        "looc",
+        "Looc-v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-S6D"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/onvifsnapshot/media_service/snapshot?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "Ranger 2",
+        "T42EA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00"
+    },
+    {
+      "models": [
+        "Ranger 2",
+        "T-26E",
+        "Turret"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "RANGER IQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=Sp%40rks73"
+    },
+    {
+      "models": [
+        "Ranger IQ-B6E4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46QmVlckNhbTM2NSU0MDExMQ=="
+    }
+  ]
+}

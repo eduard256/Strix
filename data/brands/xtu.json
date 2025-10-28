@@ -1,0 +1,17 @@
+{
+  "brand": "Xtu",
+  "brand_id": "xtu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Doorbell J5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

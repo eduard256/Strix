@@ -1,0 +1,62 @@
+{
+  "brand": "Crenova",
+  "brand_id": "crenova",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "520",
+        "abk-q360",
+        "abk-qd520",
+        "CHS0126N",
+        "GQ-02",
+        "Other",
+        "pan q 360",
+        "q360",
+        "qd520"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Amazon",
+        "qd520"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/streaming/video0"
+    },
+    {
+      "models": [
+        "q-360 5.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "q-360 5.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/realmonitor"
+    },
+    {
+      "models": [
+        "QD520"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/streaming/video1"
+    }
+  ]
+}

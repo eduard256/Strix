@@ -1,0 +1,18 @@
+{
+  "brand": "Avtron",
+  "brand_id": "avtron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AM-SM2061-vma2",
+        "AM-SM2061-VMA2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

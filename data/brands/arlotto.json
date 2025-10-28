@@ -1,0 +1,76 @@
+{
+  "brand": "Arlotto",
+  "brand_id": "arlotto",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1200"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AR1200",
+        "AR1500",
+        "BX200"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/2?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "AR1200",
+        "AR1500",
+        "BX200"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/1?videoCodecType=MPEG4"
+    },
+    {
+      "models": [
+        "ar1500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/PSIA/Streaming/channels/0?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "AR1500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "AR1500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/0?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "AR3520P",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "Bolide",
+  "brand_id": "bolide",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BN7009HA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    },
+    {
+      "models": [
+        "VCI-252-05"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "VCI-252-05"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    }
+  ]
+}

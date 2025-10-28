@@ -1,0 +1,18 @@
+{
+  "brand": "Idis Global",
+  "brand_id": "idis-global",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DC-D1323FR",
+        "MNC222SH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/media"
+    }
+  ]
+}

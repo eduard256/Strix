@@ -1,0 +1,18 @@
+{
+  "brand": "Besta",
+  "brand_id": "besta",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CLJ100L",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/image/0.jpg"
+    }
+  ]
+}

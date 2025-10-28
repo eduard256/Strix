@@ -1,0 +1,146 @@
+{
+  "brand": "Siqura",
+  "brand_id": "siqura",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2f2002f2-ei",
+        "HSD-626"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ProfileToken_1_4"
+    },
+    {
+      "models": [
+        "900",
+        "BC-620",
+        "BC829v2",
+        "C-60 E-MC",
+        "HD-66APT/N",
+        "HSD-620",
+        "HSD-622",
+        "HSD-626",
+        "HSD-820",
+        "MSD-620",
+        "MSD-622"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/h264/1"
+    },
+    {
+      "models": [
+        "BC-20",
+        "BC-22",
+        "BC-24",
+        "FD-20",
+        "FD-22",
+        "FD-24",
+        "FD27",
+        "FD-28",
+        "FD67",
+        "MD-20"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "BL860"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "fd2002f2-ei"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "FD-24",
+        "FD67",
+        "HSD-620"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "FD62",
+        "HSD-626",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "fd64"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "HD626"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ProfileToken_1_1"
+    },
+    {
+      "models": [
+        "HD-66",
+        "HSD-621PRH",
+        "HSD-626",
+        "HSD-820",
+        "MD60"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.jpg?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HSD-620PRH",
+        "HSD-621PRH",
+        "HSD-628EXP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "HSD-820"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    }
+  ]
+}

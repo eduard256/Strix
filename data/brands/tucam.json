@@ -1,0 +1,17 @@
+{
+  "brand": "Tucam",
+  "brand_id": "tucam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KK004B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp_live0"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "brand": "Luowice",
+  "brand_id": "luowice",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080 HD",
+        "1080P",
+        "960p",
+        "lws-r8-2mp",
+        "lws-y4-960p",
+        "LWS-Y4-960P",
+        "Other",
+        "V180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080 HD",
+        "1080P",
+        "960",
+        "LWS-V 101-3mP",
+        "LWS-V110-3MP-LJ",
+        "LWS-Y4-1080P-GSUS2",
+        "LWS-Y4-960P",
+        "Other",
+        "PTZ",
+        "PTZ IP CAMERA",
+        "V180"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 81,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "1080p",
+        "960P",
+        "lws-1080p-gsus",
+        "LWSD5",
+        "LWS-R8-2MP",
+        "Other",
+        "PTZ IP CAMERA",
+        "v180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080P",
+        "D5-5mp",
+        "IP 10X 2MP PTZ IP",
+        "lwsd5",
+        "LWS-DS-5MP",
+        "LWS-R8-2MP",
+        "LWS-V110-3MP-GSUK",
+        "Other",
+        "PTZ",
+        "PTZ IP Camera",
+        "PTZ IP CAMERA",
+        "Unten"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ds-100jaA",
+        "LUO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "LWS-C6625JA",
+        "V180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot"
+    },
+    {
+      "models": [
+        "PE9013-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "PE9013-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/livestream/11?action=play&media=video_audio_data"
+    }
+  ]
+}

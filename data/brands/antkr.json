@@ -1,0 +1,28 @@
+{
+  "brand": "Antkr",
+  "brand_id": "antkr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AMA-2500",
+        "AMZ-1100",
+        "xgen"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "AMA-2500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

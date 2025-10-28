@@ -1,0 +1,226 @@
+{
+  "brand": "Pixord",
+  "brand_id": "pixord",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100 Series",
+        "120",
+        "200 Series",
+        "201P",
+        "205p",
+        "Lennart P465",
+        "Other",
+        "P120",
+        "p400",
+        "P-400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images1full"
+    },
+    {
+      "models": [
+        "100 SERIES",
+        "Other",
+        "P-400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "video.h264"
+    },
+    {
+      "models": [
+        "200",
+        "200 SERIES",
+        "201P",
+        "205p",
+        "261",
+        "4000 Server Series",
+        "Other",
+        "p4000"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage?camera=[CHANNEL]&fmt=full"
+    },
+    {
+      "models": [
+        "4000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "4000",
+        "4000 Server Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images[CHANNEL]sif"
+    },
+    {
+      "models": [
+        "4000",
+        "Other",
+        "P-1401 Video Server",
+        "P-400",
+        "P-400-2",
+        "P405",
+        "P-415M",
+        "P423"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "4000 Server Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images[CHANNEL]full"
+    },
+    {
+      "models": [
+        "423_LESV",
+        "P405"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=0"
+    },
+    {
+      "models": [
+        "636",
+        "Other",
+        "p606",
+        "pl621",
+        "pl621e"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "v01"
+    },
+    {
+      "models": [
+        "ND6914E",
+        "NL621",
+        "Other",
+        "P600E",
+        "pl621"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/admin/snapshot.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "P-400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage"
+    },
+    {
+      "models": [
+        "Other",
+        "P405"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Getimage.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "P600",
+        "P600E",
+        "pb670e",
+        "pd-614",
+        "pl621",
+        "pl621e"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmp/snap.jpg"
+    },
+    {
+      "models": [
+        "P-1401 Video Server"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "track[CHANNEL]"
+    },
+    {
+      "models": [
+        "p400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "p400",
+        "P405",
+        "p463"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "P-400",
+        "p412",
+        "P423"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "P-400"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "P405"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    }
+  ]
+}

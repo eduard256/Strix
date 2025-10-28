@@ -1,0 +1,449 @@
+{
+  "brand": "Intelbras",
+  "brand_id": "intelbras",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1230",
+        "im5",
+        "iM7",
+        "MHDX1016",
+        "Other",
+        "VIP",
+        "VIP-5450-D-Z",
+        "VIPS4220"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "3000vd",
+        "IC4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=3&subtype=00"
+    },
+    {
+      "models": [
+        "3008HDX",
+        "ic3",
+        "MHDX1016",
+        "NVD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=4&subtype=0"
+    },
+    {
+      "models": [
+        "3220B",
+        "HDCVI 3116 G2",
+        "iM5+ Full Color",
+        "muithd",
+        "MULTIHD",
+        "Other",
+        "v3000",
+        "VIP 1230"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5450",
+        "iM7",
+        "mhdx 1116",
+        "MHDX1016",
+        "OUTRO",
+        "VD5032",
+        "vip 3020",
+        "VIP S3020 G2",
+        "VIPS3020"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BR_1",
+        "Other",
+        "OUTRO",
+        "S4120",
+        "vip",
+        "VIP 1020 G2",
+        "VIP 5230 SD",
+        "VIP 5450 D Z",
+        "VIP4120",
+        "VIPS3020",
+        "VIP-S3120",
+        "VIPS4020g2",
+        "WS100"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "dvr 3116"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "/2Fonvif/2Fdevice_service"
+    },
+    {
+      "models": [
+        "DVR iMHDX 3016"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 54713,
+      "url": "/cam/realmonitor?channel=2&subtype=1"
+    },
+    {
+      "models": [
+        "DVR MHDX 508",
+        "MHDX 3116",
+        "mxhd 3108"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=4&subtype=1&authBasic=YWRtaW46KkFkMzFuMTV0UjJjWDAj"
+    },
+    {
+      "models": [
+        "HDCI 1032",
+        "Other",
+        "vd3000",
+        "VIP 1230"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HDCVI 3116 G2",
+        "iM3",
+        "Mibo IM3",
+        "VIp",
+        "VIP-S3330",
+        "VIP-S3330-G2",
+        "VIP-S4020-G2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "ic3",
+        "IC3",
+        "IC4",
+        "VIP 1020 G2",
+        "VIP1220",
+        "VIP1220B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "ic3",
+        "iM4-C",
+        "IM4C",
+        "IME 360",
+        "mhdx 1116",
+        "mibo ic3",
+        "Mibo IM3",
+        "teste",
+        "VIP",
+        "VIP 3230",
+        "VIP-1020-B-G2",
+        "VIP-S3120",
+        "VIPS4020g2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "ic3",
+        "IC5",
+        "Innovar",
+        "ISIC 6",
+        "Mibo iC3",
+        "Other",
+        "S3020",
+        "s3120",
+        "VD3016",
+        "VIP",
+        "VIP 3250 MIC",
+        "vip25",
+        "VIP4120",
+        "VIPS3020",
+        "VIP-S3120",
+        "VIPS4100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "ic3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "IM3",
+        "VIP-1230-D-G3"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true"
+    },
+    {
+      "models": [
+        "IM4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=T%4001051938"
+    },
+    {
+      "models": [
+        "IM5 SC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=tkto%40070810"
+    },
+    {
+      "models": [
+        "iM5+ Full Color",
+        "MHDX 3004-C",
+        "Multihd",
+        "VIP 3230",
+        "VIP-1230-D-G2",
+        "VIP-3230-B-SL",
+        "VIP-3230-D-SL-G2",
+        "VIP-3240-Z-G3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "iM7-FC-8138",
+        "Multi HD",
+        "VIP 1230",
+        "VIP 1230 B",
+        "VIP 3330 G2",
+        "VIP-1230-B-G2",
+        "VIP-3240-ZG3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "iMHDX 3016"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 54713,
+      "url": "/cam/realmonitor?channel=3&subtype=1"
+    },
+    {
+      "models": [
+        "ISIC 6",
+        "Other",
+        "VD3016",
+        "VD5032"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "MHDX 1008",
+        "VIP-3240-D-IA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=nederland1%21"
+    },
+    {
+      "models": [
+        "MHDX 508"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&authBasic=YWRtaW46KkFkMzFuMTV0UjJjWDAj"
+    },
+    {
+      "models": [
+        "MHDX 508"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=2&subtype=1&authBasic=YWRtaW46KkFkMzFuMTV0UjJjWDAj"
+    },
+    {
+      "models": [
+        "Mibo iC3",
+        "vip 3020"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=00"
+    },
+    {
+      "models": [
+        "Other",
+        "PVIP1000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5501,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "Other",
+        "VIPS4020g2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=Olumornezcpc11%23"
+    },
+    {
+      "models": [
+        "vd3000",
+        "VIP 1020 G2",
+        "VIP 1220B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/"
+    },
+    {
+      "models": [
+        "VIP",
+        "VIP E4320Z",
+        "VIPS4100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "VIP 1020 G2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[PASSWORD]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "vip 1220 B",
+        "VIP 1220B",
+        "VIP1220G3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "VIP E-5230 SD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=0"
+    },
+    {
+      "models": [
+        "VIP-3230-D-SL-G2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=6pRb%237h8"
+    },
+    {
+      "models": [
+        "VIPP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "VIPS4020g2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "VIPS4100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

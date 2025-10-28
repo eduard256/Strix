@@ -1,0 +1,26 @@
+{
+  "brand": "Loxone",
+  "brand_id": "loxone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Intercom"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "Intercom"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpg/video.mjpg?login=YWRtaW46YWRtaW4="
+    }
+  ]
+}

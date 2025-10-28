@@ -1,0 +1,19 @@
+{
+  "brand": "Minnray",
+  "brand_id": "minnray",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SDI 30X",
+        "UV100",
+        "UV510A-12-ST"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0"
+    }
+  ]
+}

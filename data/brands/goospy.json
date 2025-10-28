@@ -1,0 +1,17 @@
+{
+  "brand": "Goospy",
+  "brand_id": "goospy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Clock Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video.mp4"
+    }
+  ]
+}

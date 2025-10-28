@@ -1,0 +1,23 @@
+{
+  "brand": "Genuine",
+  "brand_id": "genuine",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2.1",
+        "Dome",
+        "fgf",
+        "h264",
+        "htf",
+        "hyt",
+        "kce"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    }
+  ]
+}

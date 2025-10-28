@@ -1,0 +1,17 @@
+{
+  "brand": "Herkules",
+  "brand_id": "herkules",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720p"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    }
+  ]
+}

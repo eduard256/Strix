@@ -1,0 +1,128 @@
+{
+  "brand": "Grandtec",
+  "brand_id": "grandtec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1-Port Video Server",
+        "GD-425 4-Port Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    },
+    {
+      "models": [
+        "GD-425 4-PORT VIDEO SERVER",
+        "Grand IP Camera ii",
+        "IP Camera II",
+        "IP Camera Plus",
+        "MEGA CAM",
+        "Other",
+        "Pan Tilt V5",
+        "Pan/Tilt IP",
+        "wifi camera",
+        "wifi camera pro",
+        "wifi camera pro2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "still.jpg"
+    },
+    {
+      "models": [
+        "GRAND IP CAMERA PRO",
+        "IP Camera II",
+        "ip cmera iii",
+        "MEGA CAM",
+        "Other",
+        "wifi camera pro",
+        "wifi camera pro2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "GRAND IP CAMERA PRO",
+        "grand ip iii",
+        "IP camera ii",
+        "IP Camera Plus",
+        "wifi camera",
+        "wifi camera pro",
+        "wifi camera pro1",
+        "wifi camera pro2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "IP Camera Plus",
+        "wifi camera pro"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Mega Cam",
+        "MEGA PIXEL II WIFI",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "Mega Cam",
+        "Mega Pixel II Wifi",
+        "MegaPixel",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/still.cgi"
+    },
+    {
+      "models": [
+        "Mega Pixel II Wifi"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/0?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "WIFI CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "WIFI CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Xvr",
+  "brand_id": "xvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "XVR_3521A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

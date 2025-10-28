@@ -1,0 +1,266 @@
+{
+  "brand": "360 Eye",
+  "brand_id": "360-eye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1111",
+        "EC101-B3Y2",
+        "EC107-B3Y2",
+        "EC107Y-B3Y10",
+        "EC38",
+        "EC73-V13",
+        "EC76-U15",
+        "Other",
+        "v380",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "360",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "360"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "360",
+        "360eye",
+        "360Eye",
+        "360EYE",
+        "360EYE PRO",
+        "EC101-X15",
+        "EC76",
+        "EC76-U15",
+        "EC80_V13",
+        "EC80-X15",
+        "i360",
+        "Other",
+        "v380",
+        "V380"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "360",
+        "360Eye Pro"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "360eye",
+        "EC101-X15",
+        "EC107-B3Y2",
+        "EC107Y-B3Y10",
+        "EC73-N13",
+        "IPC365",
+        "v380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "360EYE",
+        "360Eye Pro",
+        "EC101Y-B3Y10",
+        "IPC365"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "360EYE",
+        "360EYE PRO",
+        "EC101-X15",
+        "EC107-B3Y2",
+        "EC73-N13",
+        "EC76",
+        "EC76-U15",
+        "eyes",
+        "IPC365",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "360EYE EC129-X15",
+        "EC101-B3Y2",
+        "EC101-X15",
+        "EC101Y-B3Y10",
+        "EC107-X15",
+        "EC37",
+        "EC73-N13",
+        "EC73-V13",
+        "PW2K2N06E-GTWY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "603",
+        "Other",
+        "V380"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "E101-B3Y2",
+        "EC101Y-B3Y10"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "EC101-B3Y2",
+        "EC107-B3Y2",
+        "EC76-X15",
+        "epc101",
+        "Other",
+        "v380",
+        "V380 Wifi IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "EC101-X15",
+        "EC132-X15",
+        "EC80-X15"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=8080&subtype=1"
+    },
+    {
+      "models": [
+        "EC101-X15",
+        "mv12241966"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "EC101-X15",
+        "PW2L2A06A-GTY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "EC107-B3Y2",
+        "EC73-N13"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "EC107-B3Y2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "EC107-X15",
+        "EC137-X15",
+        "EC80-X15",
+        "XM80-8MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/realmonitor?channel=0&stream=0.sdp"
+    },
+    {
+      "models": [
+        "EC137Y-B3Y2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "SL-CAM",
+        "V380",
+        "y335"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "V380"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    }
+  ]
+}

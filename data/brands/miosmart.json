@@ -1,0 +1,18 @@
+{
+  "brand": "Miosmart",
+  "brand_id": "miosmart",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "N526",
+        "VixCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

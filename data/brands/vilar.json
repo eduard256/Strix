@@ -1,0 +1,28 @@
+{
+  "brand": "Vilar",
+  "brand_id": "vilar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ipc 1002",
+        "IpCamera_VS-IPC1002",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    },
+    {
+      "models": [
+        "IPC1002"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/sf.cgi"
+    }
+  ]
+}

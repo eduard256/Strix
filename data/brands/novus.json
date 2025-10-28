@@ -1,0 +1,100 @@
+{
+  "brand": "Novus",
+  "brand_id": "novus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1 mpx",
+        "2400",
+        "NVIP-3DN3012V/IR-1P",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "321",
+        "7000",
+        "7020SD",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "7000",
+        "nvip-1dn3000h",
+        "NVIP-3DN3012V/IR-1P",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "Nasza",
+        "NVIP-TDN5401C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=false"
+    },
+    {
+      "models": [
+        "NVIP-2C2011D-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/h264"
+    },
+    {
+      "models": [
+        "NVIP-2C2011D-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam0/h264"
+    },
+    {
+      "models": [
+        "NVIP-2H-6401",
+        "NVIP-2H-6502M/F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "NVIP-6401F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264?ch=1&subtype=0"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "brand": "Airlink",
+  "brand_id": "airlink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1001",
+        "101",
+        "AIC250",
+        "aic250w",
+        "AICN500 SERIES",
+        "SkyIPCam 747 Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "101",
+        "1777W",
+        "747W",
+        "777w",
+        "AIC1620POE",
+        "AIC600W",
+        "AICN500 Series",
+        "AICN500/A",
+        "AICN500W",
+        "Other",
+        "SkyIPCam 747 Series",
+        "SkyIPCam 777 Series",
+        "SkyIPCam500W",
+        "SkyIPCam747W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "101",
+        "AIC250",
+        "AICAP650 Series",
+        "AICAP650W",
+        "AICP310 Series",
+        "SkyIPCam 310",
+        "SkyIPCam250"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/video2"
+    },
+    {
+      "models": [
+        "101",
+        "AIC600W",
+        "AIC650W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "101",
+        "AIC250",
+        "Other",
+        "SmurfA1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "101",
+        "250AIC",
+        "AIC250",
+        "AIC250W",
+        "AIC650W",
+        "AICN777W",
+        "ic-250",
+        "Sky IP cam 250",
+        "SKYIPCAM250",
+        "SkyIPCam250w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "101",
+        "AIC250",
+        "AIC250W",
+        "AIC600W",
+        "AICN500 SERIES",
+        "Other",
+        "SKYIPCAM 747 SERIES",
+        "SKYIPCAM 777 SERIES",
+        "SKYIPCAM250",
+        "SkyIPCam250w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "101",
+        "AIC250",
+        "AIC-250A",
+        "aic250w",
+        "AIC250W",
+        "AIC600W",
+        "AICN500 SERIES",
+        "CS-5A1EAE",
+        "Other",
+        "SKYIPCAM 747 SERIES",
+        "SKYIPCAM 777 SERIES",
+        "SKYIPCAM500W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "1620W",
+        "1777W",
+        "500",
+        "747w",
+        "ACIN1747W",
+        "AIC250",
+        "AIC600W",
+        "aicn00w/ana",
+        "AICN500",
+        "AICN500 SERIES",
+        "AICN500/A",
+        "AICN500W",
+        "AICN500W/ANA",
+        "AICN777W",
+        "Other",
+        "SkyIPCam 500",
+        "SKYIPCAM 747 SERIES",
+        "SKYIPCAM 777 SERIES",
+        "SkyIPCam1747W",
+        "SKYIPCAM250W",
+        "SkyIPCam500W",
+        "SkyIPCam747W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "1620W",
+        "747W",
+        "ACIN1747W",
+        "AIC1620POE",
+        "AIC250",
+        "AICAP650W",
+        "AICN1500W",
+        "AICN500 Series",
+        "aicn747W",
+        "AICN777W",
+        "Other",
+        "SKYIPCAM 747 SERIES",
+        "SKYIPCAM 777 SERIES",
+        "SKYIPCAM1777W",
+        "SKYIPCAM500W",
+        "SkyIPCam747W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpg.cgi"
+    },
+    {
+      "models": [
+        "1777W",
+        "AICN777W",
+        "SkyIPCam 777 Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "250aic",
+        "aic250",
+        "AIC250",
+        "aic250w",
+        "SKYIPCAM250W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "250AIC",
+        "AIC-250W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "310",
+        "AIC250",
+        "AIC600W",
+        "AIC650W",
+        "AIC650Wdean",
+        "AICAP650 SERIES",
+        "AICN500 SERIES",
+        "AICP310 Series",
+        "Other",
+        "SkyIPCam 310",
+        "SKYIPCAM 747 SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "goform/capture"
+    },
+    {
+      "models": [
+        "600w",
+        "AIC600W",
+        "AIC650W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam.sdp"
+    },
+    {
+      "models": [
+        "AIC250",
+        "AIC250W",
+        "AIC600W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "aic250w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AIC600W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "AIC600W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "AIC600W"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_video.cgi?channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AICP310 Series",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other",
+        "SmurfA12"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi?type=motion&camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "Other",
+        "SmurfA1",
+        "SmurfA12"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "SkyIPCam 747 Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi/jpg/image.cgi"
+    }
+  ]
+}

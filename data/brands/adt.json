@@ -1,0 +1,433 @@
+{
+  "brand": "Adt",
+  "brand_id": "adt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0c810",
+        "0C810",
+        "1000",
+        "1600hd",
+        "8025b",
+        "A-ADT-4HS2",
+        "AD412-ADT",
+        "ADT8025B",
+        "G-Camera",
+        "i1000",
+        "ICAMERA",
+        "icamera 1000",
+        "Icamera 1000",
+        "ICAMERA1000",
+        "ICAMERA-1000-ADT",
+        "MDC83",
+        "NV412A-ADT",
+        "OC810",
+        "OC810-ADT",
+        "OC835-ADT",
+        "Other",
+        "PULSE",
+        "RC8010",
+        "RC8021",
+        "RC8021W",
+        "RC8021W-ADT",
+        "RC8025",
+        "RC8025-ADT",
+        "rc8025b",
+        "Rc8025b",
+        "RC8025B-adt",
+        "RC8025B-ADT",
+        "RC8025B-V2",
+        "rc8-25b-adt",
+        "RCR021W-ADT",
+        "toycam"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "0c810",
+        "1000",
+        "8025B",
+        "ADT8025B",
+        "ICAMERA1000",
+        "ICAMERA-1000-ADT",
+        "MDC835-ADT",
+        "OC810",
+        "OC810-ADT",
+        "OC835-ADT",
+        "otc810",
+        "Other",
+        "pulsar",
+        "PULSE",
+        "RC8021",
+        "RC8021W",
+        "RC8021W-ADT",
+        "RC8025",
+        "RC8025-ADT",
+        "RC8025B",
+        "RC8025B-ADT",
+        "rc8325-v2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "0C810",
+        "1234",
+        "8025",
+        "8025B",
+        "A-ADT4HS2",
+        "ADT8025B",
+        "Icamera 1000",
+        "ICamera1000",
+        "ICAMERA-1000",
+        "ICAMERA-1000-ADT",
+        "mdc835",
+        "NV412A",
+        "OC810",
+        "OC810-ADT",
+        "OC835-ADT",
+        "oc835v3",
+        "OTC810",
+        "Other",
+        "pulse",
+        "RC8010",
+        "RC8021",
+        "RC8021W",
+        "rc8021w-adt",
+        "RC8021W-ADT",
+        "RC8025",
+        "RC8025-ADT",
+        "RC8025b",
+        "RC8025B-adt",
+        "RC8025B-V2",
+        "RC8025b-vb",
+        "RC8201",
+        "rc8235",
+        "RC8326",
+        "RCR021W-ADT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "1600hd",
+        "A-ADT4HS2",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "8025B",
+        "iCamera-1000",
+        "ICAMERA1000",
+        "OC810-ADT",
+        "RC8025-ADT",
+        "RC8025B-ADT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "8025B",
+        "iCamera",
+        "Icamera 1000",
+        "ICAMERA1000",
+        "ICAMERA-1000-ADT",
+        "NV412A",
+        "OC810",
+        "OC810-ADT",
+        "Other",
+        "pulse",
+        "RC8021",
+        "RC8021W",
+        "RC8021W-ADT",
+        "RC8025",
+        "RC8025-ADT",
+        "RCR021W-ADT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "A-ADT4HS2",
+        "Icamera 1000",
+        "ICAMERA1000",
+        "ICamera-1000-ADT",
+        "oc810",
+        "OC810-ADT",
+        "Other",
+        "RC8021",
+        "RC8021W-ADT",
+        "RC8025",
+        "RC8025B-ADT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "A-ADT-4HS2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam4/mpeg4"
+    },
+    {
+      "models": [
+        "AD412-ADT",
+        "nv412a",
+        "NV412A-ADT",
+        "RC8021",
+        "RC8021W",
+        "RC8021W-ADT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "Digital Video Recorder"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=2&subtype=1"
+    },
+    {
+      "models": [
+        "DYK4500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "DYK4500"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "G-CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "ICAMERA",
+        "ICAMERA 1000",
+        "ICAMERA-1000-ADT",
+        "OC810",
+        "Other",
+        "PULSE",
+        "RC8021W-ADT",
+        "RC8025-ADT",
+        "rc8025b",
+        "RC8025b-ADT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "ICAMERA1000",
+        "ICAMERA-1000-ADT",
+        "ipcam-wo",
+        "OC810-ADT",
+        "Other",
+        "RC8021",
+        "RC8021W-ADT",
+        "rc8025",
+        "RC8025-ADT",
+        "RC8025B",
+        "RC8025B-ADT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "ICAMERA-1000",
+        "OC810-ADT",
+        "OC845",
+        "RC8025B-ADT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/video.sav"
+    },
+    {
+      "models": [
+        "NV412a",
+        "RC8021W",
+        "rc8021w-adt"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "NV412A-ADT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "NV412A-ADT",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NV412A-ADT",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "OC810-ADT",
+        "rc8021w",
+        "sc468",
+        "SC87C51C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "oc835v3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "oc845"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "OC845"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam4/mpeg4"
+    },
+    {
+      "models": [
+        "OC845"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "rc8021w"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/main.cgi?"
+    },
+    {
+      "models": [
+        "RC8021W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "rc8021w-adt"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "RC8025B-ADT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "SC821C83"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/main.cgi?next_file=main.htm"
+    }
+  ]
+}

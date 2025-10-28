@@ -1,0 +1,103 @@
+{
+  "brand": "Avermedia",
+  "brand_id": "avermedia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP V58",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "IP V58",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "NAV",
+        "sf2012h"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "v2"
+    },
+    {
+      "models": [
+        "NV Series",
+        "NV SERİES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mobile/channel[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SF1301"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "play1.sdp"
+    },
+    {
+      "models": [
+        "SF+1301"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "sf1301"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "sf1301"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=640&rate=0"
+    },
+    {
+      "models": [
+        "SF1301"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "SF1301"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/jpg/image.cgi"
+    }
+  ]
+}

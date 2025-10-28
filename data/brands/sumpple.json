@@ -1,0 +1,102 @@
+{
+  "brand": "Sumpple",
+  "brand_id": "sumpple",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "610",
+        "610S",
+        "631",
+        "A610",
+        "S610",
+        "S631",
+        "S650",
+        "Sumpple S610"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "610",
+        "610S",
+        "631",
+        "960P",
+        "Other",
+        "qd300",
+        "S601",
+        "S610",
+        "s631",
+        "S631",
+        "S6312",
+        "S651",
+        "SUMPPLE S610"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "610",
+        "s601",
+        "s610",
+        "S610",
+        "s650",
+        "S651",
+        "SC631"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "610",
+        "610S",
+        "S610",
+        "S631",
+        "SUMPPLE S610"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "610S",
+        "s310",
+        "S822"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "631"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5546,
+      "url": "/live/av1"
+    },
+    {
+      "models": [
+        "S610"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

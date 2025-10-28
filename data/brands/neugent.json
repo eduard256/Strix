@@ -1,0 +1,35 @@
+{
+  "brand": "Neugent",
+  "brand_id": "neugent",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LP mjpeg DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stream_jpeg.cgi?channel=[CHANNEL]&fps=1&multipart=1"
+    },
+    {
+      "models": [
+        "LPjpegDVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/grabJPEG?06678"
+    },
+    {
+      "models": [
+        "LPmjpegDVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stream_jpeg.cgi?channel=[CHANNEL]&fps=1&multipart=0"
+    }
+  ]
+}

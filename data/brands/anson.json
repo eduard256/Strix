@@ -1,0 +1,37 @@
+{
+  "brand": "Anson",
+  "brand_id": "anson",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ax-200dbi-ip",
+        "Ax-200PID-IP",
+        "AX-4201IPW-B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "AX-200PID-IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "AX-A005"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/channel=0;stream=1;user=[USERNAME];pass=[PASSWORD];"
+    }
+  ]
+}

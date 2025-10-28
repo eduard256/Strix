@@ -1,0 +1,130 @@
+{
+  "brand": "Adc",
+  "brand_id": "adc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "700x",
+        "723",
+        "V510",
+        "v520ir",
+        "V520IR",
+        "V521IR",
+        "V721W",
+        "V820"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1026,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "700X"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1026,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "723",
+        "ADCi400-X002",
+        "D064",
+        "Ilustra400",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live1.sdp"
+    },
+    {
+      "models": [
+        "723",
+        "Other",
+        "V520IR",
+        "V820"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live2.sdp"
+    },
+    {
+      "models": [
+        "ILLustra400",
+        "ILUSTRA400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms"
+    },
+    {
+      "models": [
+        "ILLustra400",
+        "ILUSTRA400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "V520IR",
+        "V723"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "Other",
+        "v510",
+        "V520IR",
+        "V720W",
+        "V721W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1026,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "V510"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "V520IR",
+        "V721W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1032,
+      "url": "/live3.sdp"
+    },
+    {
+      "models": [
+        "V521IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

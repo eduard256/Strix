@@ -1,0 +1,79 @@
+{
+  "brand": "Cooau",
+  "brand_id": "cooau",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001",
+        "1080",
+        "720p",
+        "BULLET",
+        "CT0258BKEU",
+        "CT0258BKUK",
+        "CT0258WHUS",
+        "ct0276bkeu",
+        "CT0276BKUK",
+        "IP-CAMERA",
+        "Other",
+        "ZZZZ-320984-EBFFC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "2.0MPIX",
+        "362c",
+        "623c",
+        "720P",
+        "BULLET",
+        "ct0276bkuk",
+        "CT044SWHUK",
+        "CT2076BKUK",
+        "F300",
+        "Other",
+        "SV3C",
+        "x000s lhqn3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "C23S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "ct0276bkuk",
+        "Other",
+        "SV3C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CT2076BKUK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=M"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Bb10",
+  "brand_id": "bb10",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Droid"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    }
+  ]
+}

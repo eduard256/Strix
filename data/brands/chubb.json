@@ -1,0 +1,17 @@
+{
+  "brand": "Chubb",
+  "brand_id": "chubb",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dsr-cgi/getdsrimage.cgi?camera=[CHANNEL]&username=[USERNAME]&password=[PASSWORD]&adfa=1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Saqicam",
+  "brand_id": "saqicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SQ-D20CT30-POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/MAIN"
+    }
+  ]
+}

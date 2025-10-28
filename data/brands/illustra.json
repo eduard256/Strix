@@ -1,0 +1,74 @@
+{
+  "brand": "Illustra",
+  "brand_id": "illustra",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2mp",
+        "Essentials 2MP Dome 2.7-12mm"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "600",
+        "ADCi610-D113",
+        "Flex 600",
+        "i210"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/primarystream"
+    },
+    {
+      "models": [
+        "600",
+        "AD610",
+        "ies02mfbnwiy",
+        "Illustra Edge 2MP Compact Mini-Dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ufirststream"
+    },
+    {
+      "models": [
+        "adci800f-D111",
+        "flex",
+        "ies02mfbnwiy",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "FLEX",
+        "Illustra Pro 12MP Fisheye",
+        "Pro 3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoStreamId=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

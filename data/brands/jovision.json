@@ -1,0 +1,231 @@
+{
+  "brand": "Jovision",
+  "brand_id": "jovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "506",
+        "H6EV200",
+        "HD 1MP",
+        "IP-B21",
+        "IP-SPS03",
+        "JVS-DA230",
+        "JVS-H302-A2",
+        "JVS-H411",
+        "JVS-N5DL-HC",
+        "JVS-N83-HY",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "B20",
+        "FULL HD 1080P 2MP",
+        "JVS-h2-21",
+        "JVS-H400",
+        "JVS-N5DL-HC",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "Full HD 1080P 2MP",
+        "H411",
+        "HD 1MP",
+        "JVS-H210",
+        "JVS-N3122SL",
+        "JVS-N3DL-HG-12V",
+        "JVS-N3FL-HF-POE",
+        "JVS-N3FL-HT",
+        "JVS-N5DL-DC",
+        "JVS-N5FL-DF-POE",
+        "JVS-N61-NA",
+        "JVS-N63-HC",
+        "JVS-N83-DY",
+        "N61-HA",
+        "N61-NA",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "GK5V200-30-L18S76-S4-N",
+        "H411"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "GK5V200-30-L18S76-S4-N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0/cloud:Baltu912/main"
+    },
+    {
+      "models": [
+        "H6C-P-20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "HD 1MP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "JVS-H411"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "jvs-n5fl-dd-poe",
+        "JVS-N5FL-DD-PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/h264"
+    },
+    {
+      "models": [
+        "JVS-N5FL-HT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "JVS-N83-DY",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "JVS-N83-HY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1"
+    },
+    {
+      "models": [
+        "JVS-N83-HY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/0"
+    },
+    {
+      "models": [
+        "JVS-N83-HY"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/2"
+    },
+    {
+      "models": [
+        "JVS-N83-HY",
+        "N61-NA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "JVS-N936-MDL-2.8mm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0/admin:ZaZa1970/main"
+    },
+    {
+      "models": [
+        "JVS-N95-X3"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "n61-na"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/onvif1"
+    }
+  ]
+}

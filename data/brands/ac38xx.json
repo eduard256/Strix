@@ -1,0 +1,28 @@
+{
+  "brand": "Ac38xx",
+  "brand_id": "ac38xx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dm12",
+        "MD12"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/live/2"
+    },
+    {
+      "models": [
+        "DM12",
+        "MD12"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/live/1"
+    }
+  ]
+}

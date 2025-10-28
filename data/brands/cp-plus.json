@@ -1,0 +1,407 @@
+{
+  "brand": "Cp Plus",
+  "brand_id": "cp-plus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "121",
+        "CP-UVR-0401E1-CS"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "121",
+        "1MP",
+        "2MP",
+        "CN-RNP-36D",
+        "cp unc",
+        "CP:UVR-0401E1S",
+        "cp-unc-cs13l1-vmw",
+        "cp-unc-da10l3s-0360",
+        "CP-UNC-DA10R3",
+        "CP-UNC-DA20L3S-V2",
+        "cp-unc-da30l3s-0360",
+        "CP-UNC-DB21L3C-M",
+        "CP-UNC-DP10L3C-V2",
+        "CP-UNC-T2322L3",
+        "CP-UNC-TA10L3S-0280",
+        "CP-UNC-TA10L3S-0360",
+        "CP-UNC-TA13L2/L3",
+        "CP-UNC-TA13L3",
+        "CP-UNC-TA20L3S",
+        "CP-UNC-TA20L3S-0360",
+        "CP-UNC-TA30l3S",
+        "CP-UNC-TY20FL2C",
+        "CP-UNP-3013SL10 SPEED DOME",
+        "CP-UNP-3022R15DA",
+        "CP-UVC-T1000L2A",
+        "CP-UVR-1601E1",
+        "CP-UVR-1601E1-S",
+        "CP-VAC-D24L2",
+        "CP-VGC-T13L2",
+        "da10l3s",
+        "DVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "1MP",
+        "3MP",
+        "cnp_unc",
+        "CP-UAR-0804Q1-AB",
+        "CP-UNC-CS10L1W",
+        "CP-UNC-DP10L3C-V2-0280B",
+        "CP-UNC-T2212L3-0360",
+        "CP-UNC-T2322L3",
+        "CP-UNC-T5254L3",
+        "CP-UNC-TP10L2C",
+        "Dine",
+        "dome camera",
+        "DVR",
+        "Infeed of automatic shot blasting",
+        "MODEL CB",
+        "Other",
+        "TP10L3C-V2-0360B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "1MP",
+        "CP-NC9W-K",
+        "CP-UAR-080001-B",
+        "CP-UNC-DP10L2C",
+        "CP-UNC-DP10L3C-V2-0280B",
+        "CP-UNC-TA13L2/L3",
+        "CP-UNC-TA40L3-0360",
+        "CP-UNC-TE20ZL5-MD",
+        "CP-UNP-D2521L10-DP",
+        "DOME CAMERA",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "1MP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "1MP",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "2MP",
+        "3MP",
+        "cp unc",
+        "CP-UNC-DA10L3S-0360",
+        "CP-UNC-DA20L3S-V2",
+        "CP-UNC-DB21L3C-M",
+        "CP-UNC-DP10L3C-V2",
+        "CP-UNC-T2322L3",
+        "cp-unc-ta20l3s-v2-0360",
+        "CP-UNC-TA41PL3-D",
+        "cp-unc-tb13fl3-md",
+        "CP-UNC-TE4K082ZR5-M",
+        "CP-UNC-TS21PL3-0360",
+        "CP-UVC-T1000L2A",
+        "CP-UVR-1601E1",
+        "CP-VAC-D24L2",
+        "DVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2MP",
+        "CP-UNC-T2212L3-0360",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "3MP",
+        "CP-UNC-CS10L1W",
+        "CP-UNC-DP10L2C",
+        "CP-UNC-DP10L3C-V2",
+        "CP-UNC-TA10L3S-0280",
+        "CP-UNC-TA13L2/L3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "AData",
+        "CP3J00FD1PBQ03248",
+        "cp-unc-da30l3s-0360",
+        "CP-UNC-DP10L2C",
+        "CP-UVC-T1000L2A0360",
+        "CP-UVR-1601E1",
+        "da10l3s",
+        "DOME CAMERA",
+        "IPC V 1.37",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Bseries",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "CNP_UNC",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "CNP_UNC",
+        "CP-UNC-CS10L1W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CN-RNP-36D",
+        "CP-RNP-36D"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "CP",
+        "CP-NC9W-K",
+        "CP-UNC-DP10L2C",
+        "CP-UNP-F4521L25-DAP",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "CP E41A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5543,
+      "url": "/live/channel1"
+    },
+    {
+      "models": [
+        "CP E41A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5543,
+      "url": "/live/channel0"
+    },
+    {
+      "models": [
+        "CP4J05314PAG00023"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CP-EPK-HC10L1",
+        "ezykam ep10l1",
+        "HPK-HP10L1",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CP-EPK-HC10L1",
+        "CP-UNC-TA21PL3",
+        "HPK-HP10L1",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CP-RNP-36D",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "CP-UAR-0804Q1-AB",
+        "CP-UNC-DB21L3C-M-0360",
+        "CP-UNC-TA20L8S-V2-600",
+        "cp-unc-td41l5e-md-j",
+        "CP-UNC-VA51L3-MDS",
+        "DVR",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "CP-UAR-0804Q1-AB",
+        "DVR",
+        "IPC v 1.37",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "CP-UNC-DA13L3-0360",
+        "CP-UNP-2020TL10",
+        "CP-UNP-3013SL10 Speed Dome"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "D21"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "EPK-EP10L1"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    }
+  ]
+}

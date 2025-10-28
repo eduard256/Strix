@@ -1,0 +1,114 @@
+{
+  "brand": "Basler",
+  "brand_id": "basler",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1280C"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/mjpeg?session_id=0&buffer=0&prio=high&frame=4"
+    },
+    {
+      "models": [
+        "bip1300",
+        "bip-2",
+        "bip2-1300",
+        "IP Camera (2)",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4"
+    },
+    {
+      "models": [
+        "bip-2",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "bip-2",
+        "IP CAMERA (2)",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "BIP-2",
+        "IP CAMERA (2)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "BIP-2",
+        "BIP2-1300",
+        "BIP-640c",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpeg?stream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "BIP-2",
+        "bip2-1300c-dn",
+        "IP CAMERA (2)",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpeg"
+    },
+    {
+      "models": [
+        "BIP-2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "jpeg"
+    },
+    {
+      "models": [
+        "BIP2-1000C-DN",
+        "IP Camera (2)"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpeg?stream=[CHANNEL]"
+    }
+  ]
+}

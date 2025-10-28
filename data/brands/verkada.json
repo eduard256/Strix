@@ -1,0 +1,17 @@
+{
+  "brand": "Verkada",
+  "brand_id": "verkada",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CD62"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/standard"
+    }
+  ]
+}

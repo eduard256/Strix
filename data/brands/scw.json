@@ -1,0 +1,42 @@
+{
+  "brand": "Scw",
+  "brand_id": "scw",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Deputy 2.0",
+        "HNC303-MB",
+        "Other",
+        "Sheriff 8.0",
+        "Warrior 8.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1025,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Deputy 2.0",
+        "deputy 4.0",
+        "sheriff 4.0",
+        "Viking 4.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "Sheriff 8.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/3"
+    }
+  ]
+}

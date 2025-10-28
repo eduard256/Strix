@@ -1,0 +1,18 @@
+{
+  "brand": "Yanivision",
+  "brand_id": "yanivision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4MP",
+        "mini ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4_1.sdp"
+    }
+  ]
+}

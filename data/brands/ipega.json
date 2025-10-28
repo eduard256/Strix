@@ -1,0 +1,48 @@
+{
+  "brand": "Ipega",
+  "brand_id": "ipega",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "KP-CA 178",
+        "KP-CA110",
+        "KP-CA127",
+        "KP-CA176"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "KP-CA127"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "KP-CA173",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    }
+  ]
+}

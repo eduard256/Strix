@@ -1,0 +1,225 @@
+{
+  "brand": "Milesight",
+  "brand_id": "milesight",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "200",
+        "MS-c5372",
+        "PTZ BULLET"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "3MP mini Dome",
+        "Box",
+        "Bullet",
+        "Bullet Outdoor",
+        "C2672-P",
+        "C3366-FP",
+        "C3366-FPH",
+        "C3581-P",
+        "C3672",
+        "c3687",
+        "C8477",
+        "c-ms3672",
+        "Etuovi",
+        "MiniDoom",
+        "MS-2672C",
+        "ms-2681",
+        "MS-2972-FPB",
+        "MS-3366-FPH",
+        "MS-3567-FPN",
+        "ms-3672",
+        "MS3672",
+        "MS-3689-P",
+        "MS-C2163",
+        "MS-C2173",
+        "MS-C2191",
+        "MS-C2363",
+        "ms-c2681",
+        "MS-C2682",
+        "MS-C2961-EB",
+        "MS-C2961-EPB",
+        "MS-C2961-REB",
+        "MS-C2962-FIPB",
+        "MS-C2963-EB",
+        "MS-C2973-PB",
+        "MS-C3567-PN",
+        "MS-C3587-PA",
+        "MS-C3662",
+        "ms-c3672",
+        "MS-C4461-E(P)B",
+        "MS-C4462-FIPB",
+        "MS-C4473-PB",
+        "MS-C4482-PB",
+        "MS-C5361",
+        "MS-C5375-PD",
+        "MS-C8164-PD",
+        "MS-C8175-PD/BJ",
+        "MS-C8176-PA",
+        "NC2971",
+        "Other",
+        "Takaovi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/main"
+    },
+    {
+      "models": [
+        "3MP MINI DOME",
+        "BULLET",
+        "C2972",
+        "MS-C3577-PNA",
+        "MS-C3742-B",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "BULLET",
+        "BULLET CAMERA",
+        "BULLET OUTDOOR",
+        "bullet0",
+        "C2972",
+        "MS-C2173",
+        "Other",
+        "PTZ Bullet"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BULLET"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "BULLET",
+        "BULLET CAMERA",
+        "ms-c3582-pa",
+        "MS-C5361"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BULLET"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "SnapshotJPEG?Resolution=320x240"
+    },
+    {
+      "models": [
+        "Bullet Camera",
+        "C2982",
+        "MS-C2163",
+        "MS-C5361",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/sub"
+    },
+    {
+      "models": [
+        "BULLET CAMERA",
+        "BULLET OUTDOOR",
+        "MS-3366-FPH",
+        "ms-3672",
+        "MS-C2163",
+        "MS-C3263",
+        "MS-C3263-PN",
+        "MS-C3687",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "ms-c2682",
+        "ms-c3291pw",
+        "MS-C3366-FPN"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "MS-C2963-EB",
+        "MS-C2973-PB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "MS-C2972-FPB",
+        "MS-C2973-PB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/ipcam/mjpeg.cgi?ch=0"
+    },
+    {
+      "models": [
+        "MS-C3263"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "MS-N1008-UPC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch_101"
+    },
+    {
+      "models": [
+        "PRODEJNA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

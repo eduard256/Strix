@@ -1,0 +1,67 @@
+{
+  "brand": "Hicam",
+  "brand_id": "hicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2axqi ar d1",
+        "577hg",
+        "C9F0SeZ0N0P4L0",
+        "CCCC-041029-CPRNE",
+        "CT0276BKUK",
+        "EEEE-165313-DUJHE",
+        "luna",
+        "Other",
+        "s62"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "ap02",
+        "cooau",
+        "floodlight",
+        "Skolegata"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "AP02",
+        "ap2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "CCCC-041029-CPRNE",
+        "mmm-129115-ddaaf",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    }
+  ]
+}

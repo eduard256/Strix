@@ -1,0 +1,17 @@
+{
+  "brand": "Piper",
+  "brand_id": "piper",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Classic"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/img/video.sav"
+    }
+  ]
+}

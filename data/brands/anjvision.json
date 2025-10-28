@@ -1,0 +1,19 @@
+{
+  "brand": "Anjvision",
+  "brand_id": "anjvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "mc200c2",
+        "MC500L",
+        "MC-F40"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    }
+  ]
+}

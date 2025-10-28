@@ -1,0 +1,51 @@
+{
+  "brand": "Hyundai",
+  "brand_id": "hyundai",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "414",
+        "HYU-145",
+        "HYU-408",
+        "HYU-751",
+        "HYU-914",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "HNO-6020R",
+        "HYU-414"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "HYU-145",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "HYU-408"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

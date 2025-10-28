@@ -1,0 +1,17 @@
+{
+  "brand": "Balkong",
+  "brand_id": "balkong",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Billig"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    }
+  ]
+}

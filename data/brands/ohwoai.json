@@ -1,0 +1,17 @@
+{
+  "brand": "Ohwoai",
+  "brand_id": "ohwoai",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Ultra HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    }
+  ]
+}

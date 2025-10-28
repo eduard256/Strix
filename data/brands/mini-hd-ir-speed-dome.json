@@ -1,0 +1,17 @@
+{
+  "brand": "Mini Hd Ir Speed Dome",
+  "brand_id": "mini-hd-ir-speed-dome",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "THD54F20X"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/1:1/main"
+    }
+  ]
+}

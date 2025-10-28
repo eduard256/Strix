@@ -1,0 +1,192 @@
+{
+  "brand": "Vivint",
+  "brand_id": "vivint",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "520ir",
+        "adc-510",
+        "ADC-520",
+        "ADC620",
+        "ADC-V510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "adc-v610p",
+        "ADC-V610PT",
+        "ADC-V620PT",
+        "FIXED",
+        "hdp450",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "520ir",
+        "ADC-520",
+        "ADC-V510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "ADC-V620PT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1032,
+      "url": "/live3.sdp"
+    },
+    {
+      "models": [
+        "520ir",
+        "ADC-V520IR",
+        "Doorbell",
+        "hdp450"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1026,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "520IR",
+        "520IR-2D2741",
+        "520IR-2S2741",
+        "ADC-510",
+        "ADC-520",
+        "ADC-V510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "ADC-V610PT",
+        "ADC-V620PT",
+        "adr",
+        "DBC2",
+        "FIXED",
+        "Other",
+        "V-DBC1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "adc-510",
+        "ADC-520",
+        "ADC620",
+        "ADC-V510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "ADC-V610",
+        "adc-v610p",
+        "ADC-V610PT",
+        "FIXED",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1032,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "adc-v510",
+        "ADC-V510",
+        "ADC-V610PT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "ADC-V510",
+        "ADC-V520IR",
+        "ADC-V610PT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "ADC-V520IR",
+        "ADC-V610PT"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "ADC-V610PT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "ADC-V610PT"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "ADC-V620PT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "FIXED"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "IPC-117"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

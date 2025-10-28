@@ -1,0 +1,75 @@
+{
+  "brand": "Netcat",
+  "brand_id": "netcat",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "1080p CCTV",
+        "C01H4W2",
+        "C09H4W4",
+        "Other",
+        "POE1080p",
+        "PT-152",
+        "pt-163-d100w4-w",
+        "PT-163-S200W4-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P CCTV",
+        "C01H1W2",
+        "C01H42",
+        "c02h1w4",
+        "C02H4P2",
+        "C04H4W4",
+        "c09h1p4",
+        "PT-152",
+        "PT-163-S100W4-P",
+        "PT-163-S200W4-W",
+        "PT-163-S200W4-W-S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "652",
+        "653"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "D11X34",
+        "Other",
+        "P01X2LP4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "name"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    }
+  ]
+}

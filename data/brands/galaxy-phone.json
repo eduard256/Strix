@@ -1,0 +1,18 @@
+{
+  "brand": "Galaxy Phone",
+  "brand_id": "galaxy-phone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "700",
+        "note 3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

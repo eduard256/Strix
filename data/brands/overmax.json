@@ -1,0 +1,190 @@
+{
+  "brand": "Overmax",
+  "brand_id": "overmax",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3.1",
+        "camspot",
+        "CAMSPOT 3.1",
+        "CAMSPOT 3.3",
+        "camspot 4.1",
+        "Camspot3.1 krbk"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "3.1",
+        "Camspot 3.1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "3.3",
+        "Camspot 3.1",
+        "CAMSPOT 3.1",
+        "CAMSPOT 3.2",
+        "CAMSPOT 3.3",
+        "CamSpot 4.1",
+        "HSL150819GSTFR",
+        "VSTB185436GVHEP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "3.3",
+        "Camspot 3.3",
+        "CAMSPOT 3.3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "4",
+        "2",
+        "4.2",
+        "4.4",
+        "4.5",
+        "4.6",
+        "camspot",
+        "Camspot 3.0",
+        "CAMSPOT 3.1",
+        "Camspot 3.2",
+        "CAMSPOT 3.3",
+        "CAMSPOT 3.5",
+        "CAMSPOT 4.2",
+        "camspot 4.3",
+        "Camspot 4.4",
+        "CAMSPOT 4.4",
+        "camspot 4.5",
+        "camspot 4.7",
+        "camspot4.4",
+        "CamspotView",
+        "Camview",
+        "CAMVIEW 3.1",
+        "CamView 4.0",
+        "Garaz",
+        "HSL150819GSTFR",
+        "Other",
+        "OV-Camspot",
+        "overmax 4.5",
+        "quickspot",
+        "spotcam 4.4",
+        "VIEW-1113464-GPTUL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "4.2",
+        "4.8",
+        "Camspot 4.2",
+        "CAMSPOT 4.5",
+        "CAMSPOT 4.8",
+        "Camview 4.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1.3gp"
+    },
+    {
+      "models": [
+        "4.8",
+        "Camspot",
+        "CAMSPOT 4.3",
+        "CAMSPOT 4.5",
+        "Camspot 4.8",
+        "Other",
+        "spotcam 4.8"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "CAMSPOT 3.1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "CAMSPOT 3.1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_1"
+    },
+    {
+      "models": [
+        "CAMSPOT 3.1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Camspot 3.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "CAMSPOT 4.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    },
+    {
+      "models": [
+        "camspot 4.7 one"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    }
+  ]
+}

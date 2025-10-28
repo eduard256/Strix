@@ -1,0 +1,19 @@
+{
+  "brand": "Jecurity",
+  "brand_id": "jecurity",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Je-q001",
+        "Je-q0012",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

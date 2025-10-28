@@ -1,0 +1,19 @@
+{
+  "brand": "Huisun",
+  "brand_id": "huisun",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dm-rdc305fhpt-ks20hc2",
+        "DM-SCB405IDP-V 10-E",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

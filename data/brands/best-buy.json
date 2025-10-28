@@ -1,0 +1,37 @@
+{
+  "brand": "Best Buy",
+  "brand_id": "best-buy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Easy Home Sentinel"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Easy Home Sentinel",
+        "EASY HOME SENTINEL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "EASY HOME SENTINEL",
+        "Sentinel"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "videostream.cgi?"
+    }
+  ]
+}

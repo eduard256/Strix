@@ -1,0 +1,26 @@
+{
+  "brand": "Bwa",
+  "brand_id": "bwa",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DiREX-Pro DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpegstream?cam=[CHANNEL]&single=1"
+    },
+    {
+      "models": [
+        "DiREX-Pro DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpegstream?cam=[CHANNEL]"
+    }
+  ]
+}

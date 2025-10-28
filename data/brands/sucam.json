@@ -1,0 +1,17 @@
+{
+  "brand": "Sucam",
+  "brand_id": "sucam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "y3h-20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/tmpfs/auto.jpg"
+    }
+  ]
+}

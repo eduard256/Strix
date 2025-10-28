@@ -1,0 +1,17 @@
+{
+  "brand": "Tcs Avd Ip",
+  "brand_id": "tcs-avd-ip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVD94020-0010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mjpg"
+    }
+  ]
+}

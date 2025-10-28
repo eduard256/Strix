@@ -1,0 +1,28 @@
+{
+  "brand": "Louwice",
+  "brand_id": "louwice",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720",
+        "LWS-DS-5MP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ice"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

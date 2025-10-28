@@ -1,0 +1,19 @@
+{
+  "brand": "Owlcat",
+  "brand_id": "owlcat",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B87W-POE",
+        "D77W-WH",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

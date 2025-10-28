@@ -1,0 +1,57 @@
+{
+  "brand": "Harex",
+  "brand_id": "harex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.3MP",
+        "1MP HD 720",
+        "720P",
+        "720p 1mp",
+        "720p IP",
+        "HD IP 720",
+        "HRX103",
+        "HRX-I5024P",
+        "HRX-I524C",
+        "HRX-IA604-1",
+        "IPCamIndoor",
+        "NVT-HI3518EP",
+        "ONVIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "720P IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    }
+  ]
+}

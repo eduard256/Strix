@@ -1,0 +1,35 @@
+{
+  "brand": "Ip Webcam",
+  "brand_id": "ip-webcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CAMHI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "SN-IPC-HW16"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

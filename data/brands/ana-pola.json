@@ -1,0 +1,17 @@
+{
+  "brand": "Ana Pola",
+  "brand_id": "ana-pola",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Polaroid"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    }
+  ]
+}

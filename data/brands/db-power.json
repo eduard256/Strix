@@ -1,0 +1,855 @@
+{
+  "brand": "Db Power",
+  "brand_id": "db-power",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "002duht",
+        "H264 1080P",
+        "HD023P",
+        "hd024p",
+        "hdo24p",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "002DUHT",
+        "AddyCam",
+        "AMAZON ONE!",
+        "b",
+        "b-series",
+        "C301E",
+        "H.264",
+        "HD015P",
+        "IP030",
+        "IPC",
+        "IPCAMERA HOF",
+        "MartyCam",
+        "mjpeg",
+        "Mobile_Cam",
+        "Other",
+        "P2P H264",
+        "PTZ",
+        "VA0033k",
+        "VA0044_M",
+        "VA033K",
+        "VA033K+",
+        "VA036K",
+        "VA038K",
+        "VA039K"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "002euqv",
+        "003abtu",
+        "003bniy",
+        "B SERIES",
+        "b-series",
+        "CAM0077",
+        "cam0086",
+        "cAM0546",
+        "Other",
+        "VA035K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "003add series b",
+        "va035k"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "003agam",
+        "b",
+        "b series",
+        "eagleone",
+        "f1368",
+        "H.264",
+        "hc-wv06",
+        "HD011P",
+        "IP030",
+        "IPC",
+        "Other",
+        "P2P H264",
+        "PTZ",
+        "VA0038K",
+        "VA035K",
+        "WIFI IP IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "003AGAM",
+        "003chpy",
+        "003cmqa",
+        "ACT-2800/3100",
+        "b",
+        "b series",
+        "B Series",
+        "B-SERIES",
+        "CAM0078",
+        "cAM0546",
+        "H.264",
+        "HD IP",
+        "HD011P",
+        "Other",
+        "Salis Cam",
+        "Shaker",
+        "Something",
+        "VA-033K",
+        "va035k",
+        "VA035K",
+        "VA036K",
+        "VA038K",
+        "wifi ip ir"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "003aipx"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "003akmx",
+        "b series",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "003apyi",
+        "035k",
+        "B serie"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "003arfu",
+        "b series",
+        "HC-WV06",
+        "HD011P",
+        "HD015P",
+        "HD024P",
+        "IPCam_HOF",
+        "JWEV-094466-MJHVG",
+        "Other",
+        "Other2",
+        "VA0033K",
+        "va033",
+        "VA033K",
+        "VA033K+",
+        "va035k",
+        "VA038k",
+        "wifi ip ir"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "003axzi"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "003bcwn",
+        "005uwzf",
+        "C300E",
+        "Cube IP",
+        "H022P",
+        "HD022P",
+        "HD025",
+        "HD027P",
+        "HD028P",
+        "M Series",
+        "Other",
+        "VA0033M",
+        "va035k hd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "003ciwk",
+        "b-series",
+        "ERIK",
+        "HD011P",
+        "HD012P",
+        "HD015P",
+        "L-615W",
+        "LA040",
+        "Other",
+        "VA0038K",
+        "VA003K+",
+        "VA033K",
+        "VA033K+",
+        "VA035K",
+        "VA038",
+        "VA039K",
+        "VA039K-Test",
+        "VA040",
+        "VA390k"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "003coos",
+        "b series",
+        "B-Series",
+        "f-series",
+        "hd024p",
+        "Other",
+        "VA035K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "10003",
+        "1080 P",
+        "123456",
+        "700gb",
+        "700GB",
+        "700MB",
+        "AMAZON ONE!",
+        "C 754",
+        "c300e",
+        "C754 1080p",
+        "C754 1080P",
+        "C754-2",
+        "Decking",
+        "H.264 1080P",
+        "H264 1080p",
+        "HD024p",
+        "HD027P",
+        "HD028P",
+        "IPC",
+        "Other",
+        "V754",
+        "VA0129",
+        "X Series",
+        "XSERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "1HD",
+        "Other",
+        "va035k"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "302c",
+        "302e",
+        "720P",
+        "8GB",
+        "C300E",
+        "c301e",
+        "C301E",
+        "C302E",
+        "C303E",
+        "c320w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "b",
+        "Other",
+        "wifi ip ir"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "B",
+        "b series",
+        "H.264",
+        "HC-WV06",
+        "IP030",
+        "IPCamHof",
+        "Other",
+        "VA003K+",
+        "VA-033K",
+        "VA033K+",
+        "VA036K"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "B",
+        "B series",
+        "Other",
+        "VA-033K",
+        "VA-033K+",
+        "VA035K"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "b series",
+        "Other",
+        "VA-033K",
+        "VA035K",
+        "VA039K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "b series",
+        "DBPOWER",
+        "extcams",
+        "HD015P",
+        "IPC",
+        "kiskFirstCam",
+        "Other",
+        "va033k",
+        "VA033K",
+        "VA033K+",
+        "VA035K",
+        "VA036K",
+        "VA038k",
+        "va039k",
+        "VA039K",
+        "wifi ip ir"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "b series",
+        "Other",
+        "VA-033K",
+        "wifi ip ir"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "b series",
+        "cAM0546",
+        "Other",
+        "VA035K"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "bhv"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1.3gp"
+    },
+    {
+      "models": [
+        "C 754",
+        "C475",
+        "C75",
+        "C754 1080p",
+        "HD027P2",
+        "Other",
+        "VA0129",
+        "x-series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "c-100e",
+        "C-100E",
+        "C200E",
+        "pt100c",
+        "PT100C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "C300E",
+        "c302e"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "C300E",
+        "M Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "C300E",
+        "C302E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "CAM0989",
+        "h240",
+        "HD021P",
+        "HDPCI",
+        "Other",
+        "VA0074_M",
+        "VA0087_M",
+        "VA0089_M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "CameraHof",
+        "IP030",
+        "IPC",
+        "IPCamera Hof",
+        "IPCAMERA HOF",
+        "IPCamHof",
+        "Other",
+        "VA0033K",
+        "VA003K+",
+        "VA038k"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "DBD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DBPOWER",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "eye",
+        "VA-033K",
+        "VA033K+"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "H Series",
+        "HD023P",
+        "hd024p",
+        "HD024P",
+        "HD924P",
+        "hdo24p",
+        "m series",
+        "Other",
+        "P2P H264",
+        "VA-003K+",
+        "VA033K+",
+        "va035k",
+        "VA038k"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "H.264",
+        "HD022P",
+        "HD023P",
+        "Other",
+        "VA-033K",
+        "va035k",
+        "VA060K"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "H.264",
+        "M SERIES",
+        "Other",
+        "VA003K+",
+        "VA033K+",
+        "wifi ip ir"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "H.264",
+        "Other",
+        "VA0032_M"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HD011P",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "HD023P",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "ip030",
+        "L-615W",
+        "Other",
+        "VA0044_M",
+        "VA-033K",
+        "VA033K+",
+        "va039k"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "IPCamHof"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "ipw391",
+        "L-615W",
+        "MOBILE_CAM",
+        "Other",
+        "VA0033M",
+        "VA0034_M",
+        "VA-033K",
+        "VA033K+",
+        "VA038k",
+        "VA039K"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "M Series",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "Other",
+        "VA038k"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "Other",
+        "va060k",
+        "VA060K"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "Other",
+        "VA036K"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "Other",
+        "Version 2",
+        "wifi ip ir"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "VA-033K",
+        "VA033K+"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other",
+        "PTZ Dome",
+        "VA033K+",
+        "va039k",
+        "VA040K"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "VA003K+",
+        "VA-033K",
+        "VA-033K+"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "VA038K"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    }
+  ]
+}

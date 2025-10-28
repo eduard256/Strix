@@ -1,0 +1,17 @@
+{
+  "brand": "Fostar",
+  "brand_id": "fostar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FC2501P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/videoMain"
+    }
+  ]
+}

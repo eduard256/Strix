@@ -1,0 +1,214 @@
+{
+  "brand": "Unifi",
+  "brand_id": "unifi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "aircam",
+        "G2 Micro",
+        "G3 Dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "G3 Dome",
+        "G3 Flex",
+        "G3Pro",
+        "G4 BULLET",
+        "Other",
+        "pro a3",
+        "U3 Pro",
+        "unifi A3PRO",
+        "UVC",
+        "UVC G3",
+        "UVC G3 Dome",
+        "UVC G3 DOME",
+        "UVC G3 Flex",
+        "UVC-G3-Pro",
+        "UVC-G3-PRO",
+        "UVG G3 Dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s0"
+    },
+    {
+      "models": [
+        "G4 Bullet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/Y6LkiH8UDTSbjlyR"
+    },
+    {
+      "models": [
+        "G4 Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/7k9wbmWV4capQOJn"
+    },
+    {
+      "models": [
+        "g4 instant"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/ZOeooeCNUzrdEMBB"
+    },
+    {
+      "models": [
+        "G4 Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/CfoWfNYSi2Uto1Va"
+    },
+    {
+      "models": [
+        "G4 Pro",
+        "G4-KM",
+        "UVC G3",
+        "UVC G3 Dome",
+        "UVC G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s1"
+    },
+    {
+      "models": [
+        "G5 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/gwQPQxLdpAcz83Oy?enableSrtp"
+    },
+    {
+      "models": [
+        "NVR-pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7441,
+      "url": "/FDIahGtqNYurTDpc?enableSrtp"
+    },
+    {
+      "models": [
+        "NVR-pro",
+        "PRO",
+        "uvc micro"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/euwkG3hjFjvc4Hgv"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/FWIpiqzfEvvdCAAY"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/bGQUCKWG5my3BRIt"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/G3dyqVoAMRY4sIhg"
+    },
+    {
+      "models": [
+        "UVC G3",
+        "UVC G3 Flex",
+        "UVC G3 MICRO",
+        "UVC-G3-db73.localdomain"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/s2"
+    },
+    {
+      "models": [
+        "UVC G3 BULLET"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsps",
+      "port": 7447,
+      "url": "/C871oCwtXekmFfOJ"
+    },
+    {
+      "models": [
+        "UVC G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/hQ0t5jE5wP4yYVzD"
+    },
+    {
+      "models": [
+        "UVC G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/jkRzYFwDgmCnVTMB"
+    },
+    {
+      "models": [
+        "UVC G3 Flex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/87eIzaVpJHI5qkeU"
+    },
+    {
+      "models": [
+        "UVC G3 Micro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7447,
+      "url": "/4NifILe1B0uQyMcN?enablertsp"
+    }
+  ]
+}

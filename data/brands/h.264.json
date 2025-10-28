@@ -1,0 +1,509 @@
+{
+  "brand": "H.264",
+  "brand_id": "h.264",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "002HMRS",
+        "H Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1",
+        "101",
+        "1080",
+        "11",
+        "16mmlens",
+        "1Mp",
+        "1Mpix",
+        "24NB",
+        "24NW-IP",
+        "2mp",
+        "2Mp",
+        "2Mpix",
+        "2MPix",
+        "321",
+        "5510",
+        "admin",
+        "Anram",
+        "anran",
+        "Anran",
+        "ANRAN",
+        "AnRan 1",
+        "Anran 24W-IP",
+        "Anran AR-VGB101-IP2.0",
+        "Anran BulletCam01",
+        "Anran C-C754R",
+        "Anran HD",
+        "AnranDome",
+        "AnranOut",
+        "apti",
+        "AR-408GW",
+        "asa",
+        "ASP-59130T",
+        "BEST",
+        "c7342",
+        "ccd",
+        "China H264",
+        "DC7342",
+        "demo",
+        "Dome",
+        "DVR",
+        "esc",
+        "esc1",
+        "h264",
+        "H264",
+        "H264rte",
+        "Hidden",
+        "hq vid",
+        "HSE",
+        "HView AHD-D8C4",
+        "IPC",
+        "IPC_2M",
+        "IPC_NT98566_N8-WQ_S38",
+        "ipint 1.3",
+        "IPNC-CHINA",
+        "IRW-72IP",
+        "kinaFckKnows",
+        "KIP 200V25",
+        "kip200",
+        "KIR_2mp",
+        "KNC-BR3421",
+        "Longse_SM",
+        "Masood",
+        "moja",
+        "N130",
+        "N4PW-IP",
+        "N51820L",
+        "nran",
+        "NVSIP",
+        "NVT",
+        "onvif",
+        "ONVIF",
+        "Other",
+        "qube",
+        "Saber",
+        "Saber CCTv",
+        "S-AP2CA",
+        "SCM-194730",
+        "UNVIEW",
+        "v101",
+        "vd123",
+        "vd126",
+        "vd221",
+        "vd221ip",
+        "vdtech",
+        "vgb101",
+        "VGB662-IP",
+        "VGB721-IP",
+        "VGW781-IP",
+        "XM530_85X20_T.8M",
+        "XM530-R80x30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1.3 IP Spy Cam",
+        "11614ga",
+        "16CH",
+        "aOther",
+        "AP1164ga",
+        "ap-1414GA",
+        "China H264",
+        "CHINA H264",
+        "china01",
+        "CP-ip70A",
+        "F715-HD2002",
+        "fa12",
+        "Little Cam",
+        "Other",
+        "pst-hh201b",
+        "shadows1",
+        "UNICAD",
+        "vd123",
+        "VD123-IP",
+        "vd-ide1413",
+        "Wanzse",
+        "XM530_R80X20-PQ_8M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp"
+    },
+    {
+      "models": [
+        "104",
+        "106",
+        "107",
+        "108",
+        "109",
+        "3MP Camera",
+        "center",
+        "H17",
+        "ipnc",
+        "ipnc-china",
+        "jmv",
+        "onvif",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "16ch",
+        "50H20L_18EV200_S38",
+        "8port",
+        "h26429",
+        "Other",
+        "tsm"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1Mpix",
+        "GS",
+        "ON VIF"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "2",
+        "anram",
+        "anran",
+        "Anran VG8101",
+        "ASP-59130T",
+        "B404",
+        "CantonK 760",
+        "CHINA H264",
+        "dome",
+        "esc",
+        "H264",
+        "joe",
+        "KIP-200NF60",
+        "Other",
+        "Saber CCTV",
+        "s-ap2ga",
+        "VGB662-IP",
+        "VGB721-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "50H20L_18EV200_S38"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "ADMIN",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "ADMIN",
+        "h26429"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ADMIN",
+        "ANRAN",
+        "CHINA H264",
+        "H264",
+        "ONVIF",
+        "Other",
+        "Speed"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "ADMIN",
+        "scm-194730"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Anran",
+        "DVR",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?"
+    },
+    {
+      "models": [
+        "ANRAN AR-VGB101-IP2.0",
+        "DVR",
+        "H264"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "China 1",
+        "gtec",
+        "Hiinakas",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=1.sdp"
+    },
+    {
+      "models": [
+        "DVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "DVR",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "h26429",
+        "VGW781-IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "HI3516ev100_50h20l_s38",
+        "HI3516EV100_50H20L_S38",
+        "on vif",
+        "ON VIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "HQ VID",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC",
+        "NVT",
+        "ON VIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ipncs"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "nvsip",
+        "ONVIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "NVT",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nvc-cgi/operator/snapshot.fcgi?channel=[CHANNEL]&name=snapshot&resolution=custom&quality=70&width=[WIDTH]&height=[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/wappaint?camera_no=[CHANNEL]&animation=0&name=[USERNAME]&password=[PASSWORD]&pic_size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "tmzone"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "XM530_85X50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "xVim"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/mobile2:818181/main"
+    }
+  ]
+}

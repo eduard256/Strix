@@ -1,0 +1,17 @@
+{
+  "brand": "Seecom",
+  "brand_id": "seecom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SNP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/main"
+    }
+  ]
+}

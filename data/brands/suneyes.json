@@ -1,0 +1,353 @@
+{
+  "brand": "Suneyes",
+  "brand_id": "suneyes",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "SP-FJ01W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "702",
+        "Other",
+        "SP-HS01W",
+        "SP-HS02W",
+        "SP-HS04WR",
+        "SP-HS05W",
+        "SP-P1806SZ",
+        "SP-P701",
+        "SP-T01EWP",
+        "SP-V1801SW",
+        "SP-V1801W",
+        "sp-v1802w",
+        "SP-V1806SW",
+        "SP-V701W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "Q701",
+        "SP-P1083WP",
+        "SP-P1802",
+        "SP-P1802SWPT2",
+        "SP-P1802SWPTZ",
+        "SP-P1803SW",
+        "SP-P1803SWZ",
+        "SP-P1804SW",
+        "SP-P1804SWZ",
+        "SP-P1806SZ",
+        "SP-P701EWPT",
+        "SP-P702W",
+        "SP-P703W",
+        "SP-P901W",
+        "SP-Q701",
+        "SP-Q701W",
+        "SP-Q702",
+        "SP-TM01WP",
+        "SP-V1802W",
+        "SP-V1806SW",
+        "SP-V701W",
+        "sw-1803sw"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-FJ01W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-H02W",
+        "SP-HS02W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-FJ02W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-FJ01W",
+        "SP-FJ02W",
+        "SP-H01W",
+        "SP-H02W",
+        "SP-HM01WP",
+        "SP-HS01W",
+        "SP-HS02W",
+        "SP-HS04WR",
+        "SP-T02WP",
+        "SP-TH02WP",
+        "SP-TM01EWP",
+        "SP-TM01WP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-H01W",
+        "SP-H02W",
+        "SP-H02WP",
+        "SP-HS01W",
+        "SP-HS02W",
+        "SP-HS05W",
+        "SP-T03WP",
+        "SP-TM01EWP",
+        "SP-TM01WP",
+        "SP-TM06EWP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-FJ01W",
+        "SP-H01W",
+        "SP-H02W",
+        "SP-HM01WP",
+        "SP-T01EWP",
+        "SP-TH02Wp",
+        "SP-TH02WP",
+        "SP-TM01EWP",
+        "SP-TM01WP",
+        "SP-tm05wp"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "outside",
+        "SP-HS01W",
+        "SP-HS02W",
+        "UNLISTED"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "Other",
+        "P703",
+        "SP-P1802SWPTZ",
+        "SP-P1803SWZ",
+        "SP-P701",
+        "SP-P701EW",
+        "SP-P701EWPT",
+        "SP-V1801W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-H01W",
+        "SP-H02W",
+        "SP-HS01W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "SP-H02W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SP-FJ01W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "SP-H02W",
+        "SP-HM01WP",
+        "SP-HS01W",
+        "SP-HS02W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "SP-H02W",
+        "SP-HM01WP",
+        "SP-HS02W",
+        "sp-th02w",
+        "SP-TH02WP",
+        "Sp-TM",
+        "SP-TM01EWP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "SP-H02W",
+        "SP-HS02W",
+        "SP-T01EWP",
+        "SP-T01WP",
+        "SP-TH02WP",
+        "SP-TM01EWP",
+        "SP-TM01WP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "SP-H02W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "SP-H02W",
+        "SP-P701",
+        "SP-V1801W",
+        "suneye"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SP-H02WP",
+        "SP-TH02WP",
+        "sp-tho2wp"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "SP-HS02W",
+        "sp-th02w",
+        "SP-TH02WP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "SP-P1803SWZ",
+        "SP-P1804SWZ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "sp-p903w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "sp-tes",
+        "SP-TH02WP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    }
+  ]
+}

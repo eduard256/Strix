@@ -1,0 +1,79 @@
+{
+  "brand": "S3vc",
+  "brand_id": "s3vc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "B01POE-3MPL-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "B06POE-5MP-HX",
+        "BULLET",
+        "Other",
+        "SV-B01POE-1080P-L",
+        "WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Bullet",
+        "Other",
+        "SV-B06W-5MP-HX",
+        "WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "SV-B01POE-1080P-L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "SV-B01POE-1080P-L"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "SV-B803W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "WiFi"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

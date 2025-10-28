@@ -1,0 +1,26 @@
+{
+  "brand": "Lotus",
+  "brand_id": "lotus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LT-C008"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "LT-C009"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

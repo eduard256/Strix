@@ -1,0 +1,27 @@
+{
+  "brand": "Wevo",
+  "brand_id": "wevo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "200B",
+        "200FHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8081,
+      "url": "stream[CHANNEL]"
+    },
+    {
+      "models": [
+        "200-FHD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

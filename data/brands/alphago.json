@@ -1,0 +1,17 @@
+{
+  "brand": "Alphago",
+  "brand_id": "alphago",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ALP-600"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av0_1&user=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

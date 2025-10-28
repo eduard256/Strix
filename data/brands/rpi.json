@@ -1,0 +1,46 @@
+{
+  "brand": "Rpi",
+  "brand_id": "rpi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1st"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8000,
+      "url": "/stream.mjpg"
+    },
+    {
+      "models": [
+        "rpi1",
+        "usbcam",
+        "zero"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "wzero"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/"
+    },
+    {
+      "models": [
+        "zero"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]pass&balls=balls5"
+    }
+  ]
+}

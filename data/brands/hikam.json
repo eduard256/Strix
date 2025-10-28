@@ -1,0 +1,51 @@
+{
+  "brand": "Hikam",
+  "brand_id": "hikam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3929",
+        "8235",
+        "A152013",
+        "A7+",
+        "Buh",
+        "DS-2CD2942WDJ",
+        "Hi Kam A7 V2",
+        "MW8",
+        "Other",
+        "PG2357C3",
+        "Pro",
+        "Pro A9",
+        "Q7 / A7",
+        "Q8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "a7 v2",
+        "HiKam A9",
+        "IMW5Pro",
+        "mw5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "mw5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

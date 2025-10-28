@@ -1,0 +1,17 @@
+{
+  "brand": "Ematic",
+  "brand_id": "ematic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "funtab"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    }
+  ]
+}

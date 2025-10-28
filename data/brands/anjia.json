@@ -1,0 +1,17 @@
+{
+  "brand": "Anjia",
+  "brand_id": "anjia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AJ-L33PQ08A1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    }
+  ]
+}

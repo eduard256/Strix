@@ -1,0 +1,65 @@
+{
+  "brand": "Wbox",
+  "brand_id": "wbox",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0E-13DF28",
+        "0E-21DF28",
+        "OE-21DF28",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "0E-21BF40",
+        "0e-40bf40wdr",
+        "OE-21DF28",
+        "OE-31DF28",
+        "oe-clid5r2fs",
+        "Other",
+        "WBXIL139RT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 556,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "OE-21BF40WDR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "OE-21BF40WDR",
+        "OE-31BVF2812",
+        "OE-31DF28",
+        "OE-40BF40WDR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "WBXIB28124MW"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

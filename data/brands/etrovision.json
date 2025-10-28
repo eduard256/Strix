@@ -1,0 +1,85 @@
+{
+  "brand": "Etrovision",
+  "brand_id": "etrovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CKSC",
+        "ev 8580",
+        "EV8180U",
+        "EV8580",
+        "EV8580A-C",
+        "ev8582a",
+        "EV8582A-BD",
+        "EV8781A",
+        "EV8782A-B",
+        "EV8782U-B",
+        "EVxx8x",
+        "N53",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "config/jpeg.cgi"
+    },
+    {
+      "models": [
+        "ev3151"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "EV3151"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "EV6355"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "EV8180F",
+        "EV8781a",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "rtpvideo[CHANNEL].sdp"
+    },
+    {
+      "models": [
+        "EV8780U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtpvideo1.sdp"
+    },
+    {
+      "models": [
+        "N76F-M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtpvideoch12.sdp"
+    }
+  ]
+}

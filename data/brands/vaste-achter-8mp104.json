@@ -1,0 +1,17 @@
+{
+  "brand": "Vaste Achter 8mp104",
+  "brand_id": "vaste-achter-8mp104",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ACHTERRAAM104"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_1"
+    }
+  ]
+}

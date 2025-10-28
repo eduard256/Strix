@@ -1,0 +1,17 @@
+{
+  "brand": "Sorrano",
+  "brand_id": "sorrano",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video?1920x1080"
+    }
+  ]
+}

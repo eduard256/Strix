@@ -1,0 +1,17 @@
+{
+  "brand": "Covisec",
+  "brand_id": "covisec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ALD-400HK w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    }
+  ]
+}

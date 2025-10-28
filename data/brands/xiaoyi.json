@@ -1,0 +1,26 @@
+{
+  "brand": "Xiaoyi",
+  "brand_id": "xiaoyi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "PPZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

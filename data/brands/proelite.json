@@ -1,0 +1,31 @@
+{
+  "brand": "Proelite",
+  "brand_id": "proelite",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP01A",
+        "Ip01ax",
+        "ProElite POD04"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IP01A",
+        "IP01AX",
+        "Other",
+        "pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "brand": "Tvt",
+  "brand_id": "tvt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2311",
+        "9000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "2Other",
+        "TD-2104TS-C",
+        "TD-2116TS-HC",
+        "TD-2708TE-HP",
+        "TD-2708TS-CL",
+        "TD-2716TS-CL",
+        "TD-3216H2-C",
+        "TD-9441E3",
+        "TD-9525S1",
+        "tvt1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/?chID=2&streamType=main&linkType=tcp"
+    },
+    {
+      "models": [
+        "Other",
+        "rer",
+        "TD-2716TS-CL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/chID=1&streamType=main&linkType=tcpst"
+    }
+  ]
+}

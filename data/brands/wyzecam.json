@@ -1,0 +1,203 @@
+{
+  "brand": "Wyzecam",
+  "brand_id": "wyzecam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cam v2",
+        "Cam V2",
+        "CAM V2",
+        "Other",
+        "Pan",
+        "V2",
+        "V2 RTSP",
+        "Wyze Cam Pan",
+        "wyze cam v2",
+        "Wyze cam V2",
+        "Wyze Cam V2",
+        "Wyze cam V2 RTSP",
+        "WYZE CAM V2 RTSP",
+        "Wyze Cam V3 RTSP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live"
+    },
+    {
+      "models": [
+        "cam v2",
+        "Cam V2",
+        "Pan Cam",
+        "pan-tilt",
+        "PTZ",
+        "V2 Dafang",
+        "V2 RTSP",
+        "V2 Webcam Firmware",
+        "V3",
+        "V3  RTSP",
+        "v3 RTSP",
+        "Wyze Cam Pan RTSP",
+        "wyze cam v2",
+        "Wyze Cam V2",
+        "Wyze cam V2 RTSP",
+        "wyze cam v3",
+        "Wyze Cam V3 RTSO",
+        "Wyze Cam V3 RTSP",
+        "Wyze Cam-Pan",
+        "Wyze Cam-Pan RTSP",
+        "Wyze v2",
+        "Wyze v3",
+        "WYZEC1-JZ",
+        "WYZEC2",
+        "Wyzecam V3 RTSP",
+        "Wyze-docker-bridge"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "cam V2",
+        "Cam V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/mia_cam"
+    },
+    {
+      "models": [
+        "Doorbell"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "Doorbell"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?cameraId=59313593&token=[TOKEN]"
+    },
+    {
+      "models": [
+        "Other",
+        "Wyze Cam Pan",
+        "Wyze cam V2 RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/unicast"
+    },
+    {
+      "models": [
+        "Personal"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8888,
+      "url": "/1ddc4de6-f48b-484b-995f-a66a98b34af2"
+    },
+    {
+      "models": [
+        "v2 openmiko"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/video3/unicast"
+    },
+    {
+      "models": [
+        "V2 Webcam Firmware"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/webcam/?action=stream"
+    },
+    {
+      "models": [
+        "wyze cam v2",
+        "Wyze cam V2 RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 36760,
+      "url": "/"
+    },
+    {
+      "models": [
+        "wyze cam v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.jpg"
+    },
+    {
+      "models": [
+        "Wyze cam V2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "wyze cam v3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Wyze cam V3 RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/wyze-1"
+    },
+    {
+      "models": [
+        "Wyze Cam v3 RTSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/wyze-2"
+    },
+    {
+      "models": [
+        "Wyze-Bridge"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/living-room-cam"
+    },
+    {
+      "models": [
+        "WYZE-BRIDGE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8888,
+      "url": "/living-room-cam/stream.m3u8"
+    }
+  ]
+}

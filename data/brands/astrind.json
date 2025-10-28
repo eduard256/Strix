@@ -1,0 +1,17 @@
+{
+  "brand": "Astrind",
+  "brand_id": "astrind",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Unique Eyes"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    }
+  ]
+}

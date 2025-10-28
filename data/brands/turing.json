@@ -1,0 +1,26 @@
+{
+  "brand": "Turing",
+  "brand_id": "turing",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TP-MED4M28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "TP-MED8M28C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    }
+  ]
+}

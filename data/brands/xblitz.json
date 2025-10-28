@@ -1,0 +1,17 @@
+{
+  "brand": "Xblitz",
+  "brand_id": "xblitz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "force"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

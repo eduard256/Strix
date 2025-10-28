@@ -1,0 +1,17 @@
+{
+  "brand": "Unzano",
+  "brand_id": "unzano",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HD600"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/p3.mjpg"
+    }
+  ]
+}

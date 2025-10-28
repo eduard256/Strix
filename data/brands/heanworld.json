@@ -1,0 +1,35 @@
+{
+  "brand": "Heanworld",
+  "brand_id": "heanworld",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1020W",
+        "HA-101W",
+        "HA-1030W",
+        "HA-108W",
+        "HA-191W",
+        "HA-h3050W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1030w",
+        "720p",
+        "ha-1030w",
+        "HA-106W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    }
+  ]
+}

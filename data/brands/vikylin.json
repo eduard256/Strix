@@ -1,0 +1,72 @@
+{
+  "brand": "Vikylin",
+  "brand_id": "vikylin",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DT087G2",
+        "VK-PTZ-3601-iZ",
+        "YC2387C-ISU-28",
+        "YML_18_STARIRN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "H24M05",
+        "SD49825XB-HNR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "PG2T87C",
+        "PTZ-4820-IZT",
+        "PTZ-4825X-ISZ",
+        "VK-YC21651-285"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "PG2T87C",
+        "vk-ptz-3601-IZ",
+        "YC2387C-ISU-28",
+        "YC-PTZ-3601-iZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "YC2265I-ISU-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1?username=admin&password=E10ADC3949BA59ABBE56E057F20F883E"
+    },
+    {
+      "models": [
+        "YC2265I-ISU-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0?username=admin&password=E10ADC3949BA59ABBE56E057F20F883E"
+    }
+  ]
+}

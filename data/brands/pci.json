@@ -1,0 +1,26 @@
+{
+  "brand": "Pci",
+  "brand_id": "pci",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CS-TX05FM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "CS-TX05FM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/jpg/image.jpg?size=3"
+    }
+  ]
+}

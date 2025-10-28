@@ -1,0 +1,35 @@
+{
+  "brand": "Hanbang",
+  "brand_id": "hanbang",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hhh"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "HW-A01S"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "hw-ipc275"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    }
+  ]
+}

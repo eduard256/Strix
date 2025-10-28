@@ -1,0 +1,36 @@
+{
+  "brand": "Realink",
+  "brand_id": "realink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "CX410",
+        "Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_main"
+    },
+    {
+      "models": [
+        "Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_sub"
+    }
+  ]
+}

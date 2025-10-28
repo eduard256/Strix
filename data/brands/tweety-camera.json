@@ -1,0 +1,17 @@
+{
+  "brand": "Tweety Camera",
+  "brand_id": "tweety-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "N895"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "brand": "Eura-tech",
+  "brand_id": "eura-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IC-01C3",
+        "IC-03C3",
+        "ic-11c3",
+        "IC-11C3",
+        "IC-12C3",
+        "IC-15C3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "IC-01C3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 99,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IC-03C3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "IC-03C3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "IC-03C3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

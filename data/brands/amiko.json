@@ -1,0 +1,28 @@
+{
+  "brand": "Amiko",
+  "brand_id": "amiko",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "60F",
+        "B60M400zoom",
+        "FE20A400POE WIFI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "D20V200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": "/onvif-stream1"
+    }
+  ]
+}

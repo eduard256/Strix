@@ -1,0 +1,51 @@
+{
+  "brand": "Bascom",
+  "brand_id": "bascom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hd plus",
+        "HD-18",
+        "hd-40",
+        "HD4P",
+        "HD-50"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HD-18",
+        "HD-19",
+        "HD40",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/video_audio/profile1"
+    },
+    {
+      "models": [
+        "HD-19"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/video_audio/profile2"
+    },
+    {
+      "models": [
+        "HD-19"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    }
+  ]
+}

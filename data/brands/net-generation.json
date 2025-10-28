@@ -1,0 +1,18 @@
+{
+  "brand": "Net Generation",
+  "brand_id": "net-generation",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPCAM25110",
+        "N25110"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    }
+  ]
+}

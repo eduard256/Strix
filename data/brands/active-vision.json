@@ -1,0 +1,17 @@
+{
+  "brand": "Active Vision",
+  "brand_id": "active-vision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ACC-V11"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    }
+  ]
+}

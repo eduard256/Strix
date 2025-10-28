@@ -1,0 +1,18 @@
+{
+  "brand": "Xyclop",
+  "brand_id": "xyclop",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Hal3 Buiten 24",
+        "XC-BU-34F-IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0.h264"
+    }
+  ]
+}

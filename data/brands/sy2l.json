@@ -1,0 +1,44 @@
+{
+  "brand": "Sy2l",
+  "brand_id": "sy2l",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "sy8001-wr",
+        "SY8001-WR",
+        "sy8002f"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "720p",
+        "960P",
+        "SY8001",
+        "SY8001-MR",
+        "sy8001-wr"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "960P",
+        "Other",
+        "sy8001"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

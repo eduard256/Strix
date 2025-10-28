@@ -1,0 +1,78 @@
+{
+  "brand": "Sonoff",
+  "brand_id": "sonoff",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Cam Slim",
+        "CAM-S2",
+        "DW2",
+        "GBP",
+        "GK_200MP2C",
+        "GK-200",
+        "GK-200MP2-B",
+        "Other",
+        "S-CAM",
+        "Slim"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch0"
+    },
+    {
+      "models": [
+        "CAM Slim",
+        "GK-200MP2B",
+        "GK-200MP2-B",
+        "Slim"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch1"
+    },
+    {
+      "models": [
+        "gk-200",
+        "GK-200MP2",
+        "GK-200MP2-B",
+        "Pant-Tilt",
+        "XXXX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "GK-200MP2B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/snapshot.sh?res=low"
+    },
+    {
+      "models": [
+        "GK-200MP2-B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    }
+  ]
+}

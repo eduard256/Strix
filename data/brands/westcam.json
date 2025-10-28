@@ -1,0 +1,51 @@
+{
+  "brand": "Westcam",
+  "brand_id": "westcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "301655956206",
+        "Other",
+        "WM-351185110",
+        "WM-35185110",
+        "WM-35185115"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "365IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/Streaming/channels/h264"
+    },
+    {
+      "models": [
+        "Other",
+        "WM-128339"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "W201",
+        "W212",
+        "WM-35185029"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

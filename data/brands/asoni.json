@@ -1,0 +1,97 @@
+{
+  "brand": "Asoni",
+  "brand_id": "asoni",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4xx Series",
+        "615",
+        "CAM619IR",
+        "CAM635",
+        "CAM6631FIR-POE",
+        "LAger 1",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetImage.cgi"
+    },
+    {
+      "models": [
+        "4xx Series",
+        "CAM635",
+        "Other",
+        "Series 4"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=0"
+    },
+    {
+      "models": [
+        "4XX SERIES",
+        "615",
+        "CAM619IR",
+        "cam628",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "615",
+        "CAM619IR",
+        "CAM635"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "v2"
+    },
+    {
+      "models": [
+        "CAM646MIR-POE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/v2"
+    },
+    {
+      "models": [
+        "CAM646MIR-POE",
+        "CAM6631FIR-PoE",
+        "CAM6691FiR-PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "CAM748FIR-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/GetImage.cgi"
+    }
+  ]
+}

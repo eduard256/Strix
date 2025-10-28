@@ -1,0 +1,17 @@
+{
+  "brand": "Leocam",
+  "brand_id": "leocam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HOSAFE 1MD4P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    }
+  ]
+}

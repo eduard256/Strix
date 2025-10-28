@@ -1,0 +1,26 @@
+{
+  "brand": "Xtendrobotics",
+  "brand_id": "xtendrobotics",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "M1B1-IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/camera.mjpeg"
+    },
+    {
+      "models": [
+        "M1B2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 11315,
+      "url": "/stream?topic=/camera/color/image_raw"
+    }
+  ]
+}

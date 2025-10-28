@@ -1,0 +1,17 @@
+{
+  "brand": "Dextel",
+  "brand_id": "dextel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Hobimtek 360"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    }
+  ]
+}

@@ -1,0 +1,1285 @@
+{
+  "brand": "Easyn",
+  "brand_id": "easyn",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0444",
+        "100",
+        "10D",
+        "1133",
+        "122334",
+        "12345",
+        "147T",
+        "147W",
+        "158j",
+        "158W",
+        "186",
+        "187",
+        "187V",
+        "196",
+        "1bf",
+        "20w",
+        "213344",
+        "21344",
+        "2233444",
+        "223445",
+        "22345",
+        "23143",
+        "2322",
+        "234",
+        "2345",
+        "23454",
+        "23456",
+        "2355",
+        "24444",
+        "3030",
+        "324325",
+        "3245",
+        "326667",
+        "333333333",
+        "34353",
+        "344",
+        "3444",
+        "345",
+        "34535",
+        "34552",
+        "3456",
+        "345656",
+        "3513",
+        "43566666",
+        "4556",
+        "4677",
+        "546577",
+        "56677",
+        "613A",
+        "678",
+        "720P",
+        "960P",
+        "a157w",
+        "A17-187V-W_F",
+        "A187V3E03",
+        "Baby Monitor",
+        "e345",
+        "EASYN H3-P1D3",
+        "EASYN HS-691",
+        "EASYN HS-691 A105",
+        "es100v mini",
+        "F SERIES",
+        "F-M1BF",
+        "FS-613",
+        "FS-613A",
+        "FS-613A-M136",
+        "H3",
+        "H3 137",
+        "H-3 V10D",
+        "H-3 V10R",
+        "h3-105v",
+        "H3-137V",
+        "H3-147W",
+        "H3-186A",
+        "H3-187",
+        "H3-187V",
+        "H3-691B-V186I",
+        "H3-BEN7",
+        "H3-E-31-B-E5",
+        "H3-E-31-E-E1",
+        "H3-lager",
+        "H3-P1D3",
+        "H3-V137",
+        "HS-691",
+        "HS-691B-V186I",
+        "IBF - ONVIF",
+        "IP cameras",
+        "IPCAM H3-V10R",
+        "IP-CAMERA",
+        "Mini 10D",
+        "nserie",
+        "Other",
+        "pallero",
+        "s2344",
+        "series",
+        "SRIRE",
+        "V10D"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "100",
+        "136",
+        "613A",
+        "720P",
+        "EasyN HS-691",
+        "ENG",
+        "F",
+        "F series",
+        "FI8919W",
+        "F-M106",
+        "F-M10R",
+        "F-M136",
+        "F-M166",
+        "F-M1BF",
+        "fs 613",
+        "FS-603A M106",
+        "FS-613",
+        "FS613 B M166",
+        "fs613A",
+        "FS-613A",
+        "FS-613A-M136",
+        "FS-613B",
+        "F-Series",
+        "FSERIES",
+        "FS-M136",
+        "H3",
+        "IP CAMERAS",
+        "L-610WS",
+        "Other",
+        "ours",
+        "series f",
+        "WCS H3-187"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "100",
+        "186p",
+        "76algo",
+        "F series",
+        "H6-M137H",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "100",
+        "1BF",
+        "ENG",
+        "fm136",
+        "FS-613A",
+        "FS-613A-M36",
+        "moja",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "100",
+        "109",
+        "10R",
+        "115W",
+        "137v",
+        "147T",
+        "147W",
+        "158",
+        "15W",
+        "186",
+        "186p",
+        "187",
+        "196",
+        "1BF",
+        "201",
+        "202",
+        "203",
+        "345",
+        "546",
+        "720",
+        "720P",
+        "960H",
+        "A1BF",
+        "AX912",
+        "b187",
+        "E001",
+        "EasyN H3-P1D3",
+        "EasyN HS-691",
+        "ES100V MINI",
+        "ES200K",
+        "F_SERIES",
+        "F1B",
+        "F2-611B",
+        "F3-Series",
+        "F-M136",
+        "F-M166",
+        "H187",
+        "H-3 V10D",
+        "H-3 V10R",
+        "H3-137V",
+        "H3-18 7V",
+        "H3-187V",
+        "H3-Dan",
+        "H3-Dan-Wifi",
+        "H3-E-21-B-C2",
+        "H3-P1D3",
+        "H3-V106",
+        "H6-M137h",
+        "HS-691",
+        "HS-691 A105",
+        "ibf - onvif",
+        "IP CAMERAS",
+        "IP-CAMERA",
+        "JY-V136",
+        "mine",
+        "Mini 10D",
+        "mini Blue Eye",
+        "Other",
+        "V10R",
+        "VTR10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "109",
+        "115V",
+        "158",
+        "158 Esija",
+        "187 WCS",
+        "187V",
+        "189V",
+        "1BF",
+        "6461",
+        "720P",
+        "a196",
+        "Ext",
+        "F-M1BF",
+        "H-3 V10D",
+        "H3-137V",
+        "H3-147W",
+        "h3-187w",
+        "Other",
+        "Our Cam",
+        "WCS H3-187",
+        "WCS H3-187W",
+        "WCS-187"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "1133",
+        "136",
+        "1BF",
+        "21344",
+        "223445",
+        "23143",
+        "234",
+        "2345",
+        "324325",
+        "3245",
+        "345",
+        "345656",
+        "46573",
+        "613A",
+        "677",
+        "EasyN F-M1BF",
+        "F series",
+        "F136",
+        "F3-M166",
+        "F-M136",
+        "F-M166",
+        "F-M181",
+        "FS-603A M106",
+        "FS613 B M166",
+        "FS-613B",
+        "FS-M136",
+        "H7 Series",
+        "H7 SERİES",
+        "Other",
+        "WIFI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "136",
+        "AlfieEye5",
+        "EASYN HS-691",
+        "F",
+        "F series",
+        "F106",
+        "F133",
+        "F136",
+        "F2-611B",
+        "fm136",
+        "F-M136",
+        "F-M161",
+        "F-M166",
+        "F-M181",
+        "F-M1BF",
+        "FS-613",
+        "FS613 B M166",
+        "FS-613A-M136",
+        "FS-613B",
+        "FS-613B-MJPEG",
+        "FSERIES",
+        "FS-M136",
+        "H3-P1D3",
+        "H3-V10R",
+        "IP CAMERAS",
+        "IP-CAMERA",
+        "M136",
+        "Other",
+        "ours",
+        "ours2",
+        "salonEASYN HS-691",
+        "wifi",
+        "wow"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "136",
+        "187",
+        "613a",
+        "EasyN HS-691",
+        "ezcam pan/tilt v2",
+        "F",
+        "F series",
+        "F_M10R",
+        "F136",
+        "F166",
+        "F2-611B",
+        "F3",
+        "F3-166",
+        "f-m105",
+        "F-M106",
+        "fm-136",
+        "F-M136",
+        "F-M161",
+        "F-M166",
+        "F-M181",
+        "F-M1BF",
+        "FS-603A M106",
+        "FS-613",
+        "FS613A",
+        "FS-613A-M136",
+        "FS-613B",
+        "FS613B  166",
+        "FS-613B-M166",
+        "FS-613B-MJPEG",
+        "F-Series",
+        "F-SERIES",
+        "FS-M136",
+        "gtaip",
+        "H-3 V10R",
+        "H6-837",
+        "Hedge Camera",
+        "IP cameras",
+        "IP-CAMERA",
+        "m1bf",
+        "mitsos",
+        "Other",
+        "tayto",
+        "txxu",
+        "URSA 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "136",
+        "187",
+        "21344",
+        "2233444",
+        "2334545",
+        "324325",
+        "34353",
+        "344",
+        "EASYN HS-691 A105",
+        "F series",
+        "F_SERIES",
+        "F3-M187",
+        "F-M10R",
+        "F-M136",
+        "FS-613",
+        "FS-613A-M136",
+        "H3-187V",
+        "H3-V10R",
+        "IP-CAMERA",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "136",
+        "186p",
+        "187",
+        "1bf",
+        "3F Series",
+        "EZCAM PAN/TILT V2",
+        "F series",
+        "F SERIES",
+        "F136",
+        "F2-611B",
+        "F2-E-21-F1",
+        "F3",
+        "F3-166",
+        "F3-M166",
+        "F3M187",
+        "F3-Series",
+        "f-m105",
+        "F-M136",
+        "F-M166",
+        "FS-613",
+        "FS613 B M166",
+        "FS-613A-M136",
+        "FS-613B-MJPEG",
+        "H6-837",
+        "IDP3",
+        "IP-CAMERA",
+        "M187",
+        "Other",
+        "T7588 HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "136",
+        "613A",
+        "EasyN HS-691 A105",
+        "ENG",
+        "F",
+        "F series",
+        "F-M10R",
+        "F-M136",
+        "F-M166",
+        "F-M181",
+        "F-M1BF",
+        "FS-613",
+        "FS-613A-M136",
+        "FS-613B",
+        "FS-613B-M166",
+        "F-SERIES",
+        "H6-M137h",
+        "nati",
+        "Other",
+        "WIFI"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "136",
+        "F",
+        "F series",
+        "F_SERIES",
+        "F106",
+        "F3-M166",
+        "f-m105",
+        "F-M10R",
+        "F-M136",
+        "F-M161",
+        "f-m-166",
+        "F-M166",
+        "FS-613",
+        "FS-613B",
+        "FS-613B-M166",
+        "F-Series",
+        "FS-M136",
+        "lb",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "186p",
+        "187",
+        "F_M10R",
+        "H3",
+        "h3 v106",
+        "H-3 V10R",
+        "H3-187V",
+        "H3-196V",
+        "H3-V106",
+        "H7 Series",
+        "hs691",
+        "Other",
+        "Pole",
+        "V10R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_h264.sdp"
+    },
+    {
+      "models": [
+        "187",
+        "720P",
+        "est-007660333",
+        "F3",
+        "F3-166",
+        "F3-M166",
+        "F3-Series",
+        "F-M166",
+        "F-SERIES",
+        "H3-V10R",
+        "H6-M137h",
+        "kitch",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "187",
+        "H3",
+        "h3-186v",
+        "H3-V10R",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "11"
+    },
+    {
+      "models": [
+        "187",
+        "720P",
+        "ENG",
+        "F2-611B",
+        "F3-166",
+        "F3-M166",
+        "F3M187",
+        "F3-SERIES",
+        "F-M1b1",
+        "F-SERIES",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1bf",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "1BF",
+        "f_series",
+        "F3-m187",
+        "F-M136",
+        "F-M181",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1BF",
+        "EasyN HS-691",
+        "est-007660-611b",
+        "F",
+        "F SERIES",
+        "F_M10R",
+        "F2-611B",
+        "F3",
+        "F3-176M",
+        "F-M166",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "22345",
+        "EasyN HS-691"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "613A",
+        "F2-E-21-F1",
+        "FS-613B-M166"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "613A",
+        "f-Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Eastn IP F-Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?"
+    },
+    {
+      "models": [
+        "EasyN HS-691",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "EasyN HS-691"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "EasyN HS-691",
+        "HS-691",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "EasyN HS-691",
+        "est-007660-2",
+        "F",
+        "F series",
+        "F133",
+        "F136",
+        "F2-611B",
+        "F3-M166",
+        "F3-Series",
+        "F-M10R",
+        "F-M136",
+        "F-M161",
+        "F-M166",
+        "FS-603A M106",
+        "FS-613",
+        "FS-613A-M136",
+        "FS-613B",
+        "f-Series",
+        "FSERIES",
+        "IP Camera BO",
+        "Other",
+        "T7588 HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "EasyN HS-691",
+        "H3",
+        "H3-147W",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "ELPIDIO",
+        "F",
+        "F SERIES",
+        "F2-611B",
+        "F3M187",
+        "F-M105",
+        "F-M136",
+        "F-M166",
+        "FS-603A M106",
+        "FS-613",
+        "FS613 b M166",
+        "FS-613A-M136",
+        "FS-613B",
+        "f-Series",
+        "H3",
+        "H6-837",
+        "H6-M137H",
+        "H7 SERIES",
+        "H7 SERİES",
+        "HS-691",
+        "IP-CAMERA",
+        "M-F136",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "ELPIDIO",
+        "F",
+        "F series",
+        "F3M187",
+        "F-M10R",
+        "F-M166",
+        "F-M181",
+        "FS-603A M106",
+        "FS-613",
+        "FS-613A-M136",
+        "FS-613B",
+        "FS-613B-MJPEG",
+        "F-SERIES",
+        "H6-837",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "est-007660",
+        "F_M10R",
+        "F2-611B",
+        "F3M187-W",
+        "f-m105",
+        "F-M166",
+        "FS-613",
+        "FS613 B M166",
+        "FS-613A-M136",
+        "FS-613B-JPEG",
+        "H3",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "est-007660",
+        "F series",
+        "F3-M166",
+        "FS-613",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "est-007660-3",
+        "F3-166",
+        "F3-SERIES"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "F",
+        "F series",
+        "F3-M166",
+        "F-M136",
+        "F-M161",
+        "F-M166",
+        "FS-613",
+        "FS-613B",
+        "FS-613B-M166",
+        "F-SERIES",
+        "IPCAM H3-V10R",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "F",
+        "F SERIES",
+        "F_SERIES",
+        "F133",
+        "F136",
+        "F3M187-W",
+        "F3-Series",
+        "fseries",
+        "H6-837",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "F series",
+        "F SERIES",
+        "F3-166",
+        "F3-M166",
+        "H6-837",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "F series",
+        "F133",
+        "F-136",
+        "F2-611B",
+        "F3-M166",
+        "F3-SERIES",
+        "F-M136",
+        "f-Series",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "F series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "F series",
+        "F-M1BF",
+        "f-Series",
+        "H6-837",
+        "Other",
+        "TM001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "F Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "F SERIES",
+        "F-136",
+        "f138",
+        "F2-611B",
+        "F3",
+        "F3-166",
+        "F3-M166",
+        "FS613",
+        "FS-613A-M136",
+        "FS-613B",
+        "FS-613B-M166",
+        "FS-613B-MJPEG",
+        "fseries",
+        "Other",
+        "s series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "F_M10R"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "f_series",
+        "F-M10R",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "F_SERIES"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video/mjpg.cgi"
+    },
+    {
+      "models": [
+        "F136",
+        "FS-613",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "F2-611B",
+        "M091",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "F2-611B",
+        "F-M136",
+        "FS-613A-M136 Custom"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "F2-611B",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "F2-611B",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "vdata.v"
+    },
+    {
+      "models": [
+        "F2-E-21-F1",
+        "F3-M166",
+        "F-M136"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "F3-166"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "f603",
+        "FM139",
+        "FS-613A-M136"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 91,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "FI8919W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "FS-613"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8085,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "FS-613A-M136"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "FS-613A-M136"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "F-Series"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "H3"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "12"
+    },
+    {
+      "models": [
+        "H-3 V10D",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "H3-137V",
+        "H3-187V",
+        "H3-V137",
+        "H6-M137h",
+        "H7 Series",
+        "IPCAM H3-V10R",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "H3-187V",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "H6-M137h"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nphMotionJpeg?Resolution=640x480&Quality=Standard"
+    },
+    {
+      "models": [
+        "H7 Series"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/video[CHANNEL]"
+    },
+    {
+      "models": [
+        "HS-691B-V186I"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "KDX1ZL7U1FHF54LWJN51"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "n54"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/[CHANNEL]/video.mjpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "TM001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=640*480"
+    }
+  ]
+}

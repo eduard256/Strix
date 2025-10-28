@@ -1,0 +1,28 @@
+{
+  "brand": "Sw360",
+  "brand_id": "sw360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CIP-37186AT",
+        "CIP-39218KL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "CIP-39218AT",
+        "IP66"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

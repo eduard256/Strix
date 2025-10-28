@@ -1,0 +1,17 @@
+{
+  "brand": "Hanhwa",
+  "brand_id": "hanhwa",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VDR-10002"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1/media.smp"
+    }
+  ]
+}

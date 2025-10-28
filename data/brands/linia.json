@@ -1,0 +1,17 @@
+{
+  "brand": "Linia",
+  "brand_id": "linia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "avtech459"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/h264/VGA"
+    }
+  ]
+}

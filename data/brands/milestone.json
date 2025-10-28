@@ -1,0 +1,17 @@
+{
+  "brand": "Milestone",
+  "brand_id": "milestone",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MP-13101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch1-s1"
+    }
+  ]
+}

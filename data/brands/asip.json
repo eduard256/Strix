@@ -1,0 +1,27 @@
+{
+  "brand": "Asip",
+  "brand_id": "asip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "7000EM Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/Img.jpg"
+    },
+    {
+      "models": [
+        "7000EM Series",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Camera=0&BandWidth=0"
+    }
+  ]
+}

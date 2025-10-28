@@ -1,0 +1,28 @@
+{
+  "brand": "Smart",
+  "brand_id": "smart",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dbpower",
+        "SmartCam",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Wireless IP-Cam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/pusher.cgi"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "brand": "Chortau",
+  "brand_id": "chortau",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080 wireless outdoow",
+        "1080 WIRELESS OUTDOOW",
+        "201",
+        "202",
+        "2022",
+        "C63S",
+        "q/wsdk 001-2015",
+        "Q/WSDK 001-2015",
+        "SE2000",
+        "se3000",
+        "se4000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "2021",
+        "C53S",
+        "SE200",
+        "SE2000",
+        "SE3000",
+        "SE-4000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "Q/WSDK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "SE4000"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "SE-4000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

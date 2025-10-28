@@ -1,0 +1,84 @@
+{
+  "brand": "Convision",
+  "brand_id": "convision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CC-6400 (RTSP)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "IP Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "camera.jpg?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "camera.push?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "fullsize.push?camera=1&sleep=15"
+    },
+    {
+      "models": [
+        "V Series Video Server",
+        "V100/200 Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "fullsize.jpg?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "V Series Video Server",
+        "V100/200 Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "hugesize.jpg?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "V Series Video Server",
+        "V100/200 Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "fullsize.push?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "V Series Video Server",
+        "V100/200 Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "hugesize.push?camera=[CHANNEL]"
+    }
+  ]
+}

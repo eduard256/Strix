@@ -1,0 +1,363 @@
+{
+  "brand": "Speco",
+  "brand_id": "speco",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "02b5",
+        "02MD2",
+        "05MDP1",
+        "O2-B2",
+        "o2b5",
+        "O2C1",
+        "O2d3",
+        "O2-D4",
+        "o2dp9",
+        "O2FB3M",
+        "O2iB3M",
+        "O2iMD1",
+        "O2iMT61",
+        "O2MB1",
+        "o5mdp1",
+        "OINT-56B1G",
+        "OPTZ-36XO",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg.jpg"
+    },
+    {
+      "models": [
+        "02C1",
+        "02MD2",
+        "O2C1",
+        "O2D10",
+        "O2-MD1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "02MB1",
+        "O2-D4",
+        "O2MB1",
+        "O4VLD1",
+        "O8D2M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "02vlb7",
+        "O2VLD7J"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9008,
+      "url": "/ch01/0"
+    },
+    {
+      "models": [
+        "02vlb7"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9008,
+      "url": "/ch01/1"
+    },
+    {
+      "models": [
+        "03VLD1",
+        "04d1",
+        "04d2m",
+        "O3VFDM",
+        "O3VLB3",
+        "O3VLD1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "03VLD1",
+        "04d1",
+        "1234",
+        "DVR4WM",
+        "O2C1",
+        "O2-D4",
+        "O3VLB3",
+        "OID-4",
+        "Other",
+        "TECH DVR-16IP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "04d2m",
+        "O3VLD1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "D16HS",
+        "D8RS1TB",
+        "O2DP14",
+        "O2DP14-242954"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Master-0"
+    },
+    {
+      "models": [
+        "H4FB1M 4MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/main_1"
+    },
+    {
+      "models": [
+        "IP-SD10X",
+        "Other",
+        "SIP",
+        "SIPD3",
+        "SIPWDRB2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    },
+    {
+      "models": [
+        "O2-B16",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "O2-D4",
+        "OINT-56B1G",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4"
+    },
+    {
+      "models": [
+        "O2MD2WK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "O2-VLB2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "O3VLB3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "O4D9M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 9008,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "O4T7N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/chID=3&streamType=main&linkType=tcp"
+    },
+    {
+      "models": [
+        "Other",
+        "VIP2B3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/1/jpeg.php"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other",
+        "ZIP-2B"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "Live/Channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "SIPD3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/cmd/system?GET_STREAM&USER=[USERNAME]&PWD=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mobile/channel[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ivop.get?action=live&THREAD_ID="
+    },
+    {
+      "models": [
+        "Tech DVR-16IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images[CHANNEL]sif"
+    },
+    {
+      "models": [
+        "Tech DVR-16IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images[CHANNEL]full"
+    },
+    {
+      "models": [
+        "Tech DVR-16IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage?camera=[CHANNEL]&fmt=full"
+    },
+    {
+      "models": [
+        "VIP-2B1M",
+        "VIP-2C1N",
+        "VIP-2P1",
+        "VIP-2PTZ12X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/stream1"
+    },
+    {
+      "models": [
+        "VIP2P1N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/stream1"
+    },
+    {
+      "models": [
+        "ZIP-2B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0/Channel=0;Profile=0"
+    }
+  ]
+}

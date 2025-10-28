@@ -1,0 +1,17 @@
+{
+  "brand": "Economato",
+  "brand_id": "economato",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVTECH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/live/video_audio/profile3"
+    }
+  ]
+}

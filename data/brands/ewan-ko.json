@@ -1,0 +1,17 @@
+{
+  "brand": "Ewan Ko",
+  "brand_id": "ewan-ko",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Dun lang"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/CH002.sdp"
+    }
+  ]
+}

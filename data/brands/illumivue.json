@@ -1,0 +1,17 @@
+{
+  "brand": "Illumivue",
+  "brand_id": "illumivue",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ILV-IP8T-NC.2-BK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

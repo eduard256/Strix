@@ -1,0 +1,19 @@
+{
+  "brand": "Owlvision",
+  "brand_id": "owlvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10x960p",
+        "NR10X-130H",
+        "NR10X-200H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/0"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "brand": "Space Technology",
+  "brand_id": "space-technology",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "171 M IP Home",
+        "ST-110 IP Home"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "ST-171 M IP HOME"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "ST-710 M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "ST-901 IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ST-901 IP",
+        "ST-V5603"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "ST-901 IP",
+        "ST-V5603",
+        "ST-V5603 PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "st-v2611 pro",
+        "ST-v2703"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_sub"
+    }
+  ]
+}

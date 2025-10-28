@@ -1,0 +1,36 @@
+{
+  "brand": "Activecam",
+  "brand_id": "activecam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ac-d4121ir1v2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "AC-D7111IR1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/streaming/video0"
+    },
+    {
+      "models": [
+        "AC-D7111IR1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/streaming/video1"
+    }
+  ]
+}

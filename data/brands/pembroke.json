@@ -1,0 +1,18 @@
+{
+  "brand": "Pembroke",
+  "brand_id": "pembroke",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PLANETICA-2200",
+        "PLANETICA-4500V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media.amp"
+    }
+  ]
+}

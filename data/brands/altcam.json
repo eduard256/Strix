@@ -1,0 +1,20 @@
+{
+  "brand": "Altcam",
+  "brand_id": "altcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ddddd",
+        "IBC13IR",
+        "icv51ir",
+        "IDMF24IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live0.264"
+    }
+  ]
+}

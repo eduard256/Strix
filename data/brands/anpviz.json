@@ -1,0 +1,269 @@
+{
+  "brand": "Anpviz",
+  "brand_id": "anpviz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "250",
+        "3MP",
+        "5MP",
+        "IPC-B880w-D",
+        "IPC-D250W-S",
+        "IPC-D350",
+        "IPC-D383WD-S",
+        "IPC-IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "3MP",
+        "5MP",
+        "ipc-b850w-ds",
+        "ipc-d3240w-s",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "4mp",
+        "5MP",
+        "AZ-IPZW30205WFS",
+        "BulletCam",
+        "DW77",
+        "IPC3442W28",
+        "IPC-D308WD-S",
+        "IPC-D383WD-S",
+        "IPC-D7451EDS-4X",
+        "Other",
+        "PTZIP204WX4IR",
+        "WP-244W",
+        "wp-245w-eu",
+        "WP-25505W-US"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "4MP",
+        "DW77",
+        "ESNP104-IR/4X",
+        "IPC-D383WD-S",
+        "Other",
+        "PTZIP204WX4IR",
+        "WP-245-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/"
+    },
+    {
+      "models": [
+        "5MP",
+        "AZ-IPZ45520-EU",
+        "Dome",
+        "ipc-240",
+        "IPC-250B-S",
+        "IPC-B850W",
+        "IPC-D2083WD-S",
+        "ipc-d230w",
+        "ipc-d2330w",
+        "ipc-d250g",
+        "IPC-D250WS",
+        "IPC-D260W-s",
+        "IPC-D3150G-S",
+        "IPC-D350W-S",
+        "IPC-D360W-ST",
+        "IPC-D383WD-S",
+        "MC500L",
+        "MC500L5",
+        "Other",
+        "PTZIP204WX4IR",
+        "PTZIP30A60WD-SA-5X(A)",
+        "USeries",
+        "YMF10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "5MP",
+        "IPC-B8740w-s",
+        "IPC-D230W",
+        "IPC-D250G",
+        "IPC-D250G-S",
+        "Other",
+        "PTZ-2504X-I2",
+        "YM800sv2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "8MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/stream1"
+    },
+    {
+      "models": [
+        "AT500PE20",
+        "AZ-IPZ45520-EU",
+        "IPC-D250B-S",
+        "IPC-D250W-S",
+        "IPC-D3240W-S",
+        "IPC-D383WD-S",
+        "Iums400",
+        "PTZIP204WX4IR",
+        "PTZIP45520E-S-EU",
+        "YMF52_NM223N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "D240W",
+        "H420W",
+        "IPC-B852VU-S",
+        "IPC-D250W",
+        "IPC-D3240W-S",
+        "IPC-D360W-ST"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "IPC-250B-S",
+        "IPC-D3150G-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "IPC-250B-S",
+        "IPC-B852VU-S",
+        "IPC-D3240W-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "ipc-b2t86pd-sa",
+        "IPC-B8740W-S",
+        "IPC-D3A43W-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC-B852VU-S",
+        "IPC-D340W",
+        "IPC-D383WD-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "IPC-B863WD-S",
+        "ipc-d230w",
+        "IPC-D240W-S",
+        "IPC-D250W-S",
+        "IPC-D280W-S",
+        "PTZIP204",
+        "PTZIP204WX4IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "IPC-D250W-S",
+        "IPC-D383WD-S",
+        "U Series",
+        "UNK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264?username=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-D250W-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264cif?username=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-D363WD-SA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "PTZIP204WX4IR",
+        "YML 12D2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "brand": "Q-see",
+  "brand_id": "q-see",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "300",
+        "QC826"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 85,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "308",
+        "395",
+        "8004b",
+        "8004B",
+        "958",
+        "DVR",
+        "DVR W/ WEB PORT",
+        "Other",
+        "QC-308",
+        "QC-588",
+        "QC-918B",
+        "QCN-7001b",
+        "QCN-7005b",
+        "QCN-8004B",
+        "QCN8030D",
+        "QCN8033B",
+        "QCN8068B",
+        "QCN8068D",
+        "QCW3MP1B",
+        "QS-9016"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "308",
+        "DVR",
+        "DVR w/ Web Port",
+        "ONVIF",
+        "Other",
+        "QC-804",
+        "QC-804-Channel2",
+        "QC-804-CHANNEL2",
+        "QC-804-Channel3",
+        "QCW2MPSL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "308",
+        "DVR w/ Web Port",
+        "Other",
+        "QC-804-CHANNEL4",
+        "QCN-8023B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "3MP bullet",
+        "8002b",
+        "8004b",
+        "8012B",
+        "bullet",
+        "BULLET",
+        "DVR w/ Web Port",
+        "ONVIF",
+        "Other",
+        "QC-308",
+        "QC-40108",
+        "QC-588",
+        "QC-7005B",
+        "QC-804",
+        "QC-858",
+        "qcn",
+        "QCN-7001b",
+        "QCN-7001B",
+        "QCN7002D",
+        "QCN-7005B",
+        "QCN-8001D",
+        "QCN-8004B",
+        "qcn8007b",
+        "qcn8009d",
+        "QCN-8012",
+        "QCN-8012B",
+        "QCN-8014Z",
+        "QCN-8023B",
+        "QCN8025Z",
+        "QCN-8912B",
+        "QNC7001B",
+        "QNC8004B",
+        "QT5140-4A6-1",
+        "SD-40212"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "3MP BULLET",
+        "814",
+        "BULLET",
+        "QC-304",
+        "QC-858"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "3MP BULLET",
+        "80018D",
+        "8004",
+        "8026B",
+        "8030D",
+        "Other",
+        "Other 2",
+        "QCN-7001b",
+        "QCN-7005b",
+        "QCN7005B",
+        "qcn8033b",
+        "QTN-8017b",
+        "QTN-8017B",
+        "QTN-8019B",
+        "QTN-8022b",
+        "QTN-8022D",
+        "QTN-8040D",
+        "SD-40212"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "8002",
+        "Other",
+        "QCN-7001b",
+        "QCN-7001B",
+        "QCN7002D"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/0?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "8004",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "8004B",
+        "Other",
+        "qc8116",
+        "QCN-70005b",
+        "QCN-70005B",
+        "QCN-8004B",
+        "QCN8030D",
+        "QCN8033B"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "8017B",
+        "C022136GMCIQM",
+        "QCA8050B",
+        "QTH81"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "8026B",
+        "QCN8026B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "8026B",
+        "8033b",
+        "QCM-8039D",
+        "QCN-8009D",
+        "QCN-8014Z",
+        "QCN8026b",
+        "QCN8068B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "8Ch DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "8Ch DVR"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "960H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=8&subtype=1&authBasic=[AUTH]"
+    },
+    {
+      "models": [
+        "C022136GMCIQM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/PSIA/Streaming/channels/0?videoCodecType=H.264"
+    },
+    {
+      "models": [
+        "C022136GMCIQM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "Car_Fr",
+        "DVR",
+        "DVR w/ Web Port",
+        "DVR W/ WEB PORT",
+        "NVR",
+        "ONVIF",
+        "Other",
+        "QC304",
+        "QCN8090B",
+        "QCN8099B",
+        "QCW2MP",
+        "QCW2MPSL",
+        "qcw3mp16f",
+        "QCW3MP16F",
+        "QCW3MP1B",
+        "QCW4K1MCB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "DVR w/ Web Port",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "DVR w/ Web Port",
+        "Other",
+        "QS-408-411"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "ONVIF",
+        "Other",
+        "QTN8031B",
+        "QTN8037BC",
+        "QTN-8041B",
+        "QTN8059B-N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "images/stream_[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg?type=motion"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_unicast_firststream"
+    },
+    {
+      "models": [
+        "Other",
+        "QCN-7001b"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "Other",
+        "QCN-7001b"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/h264/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 85,
+      "url": "/cgi-bin/snapshot.cgi?3"
+    },
+    {
+      "models": [
+        "QC-304",
+        "QCN-8028D",
+        "QCW3MP1B"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "QC826"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 85,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "QC9016"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 85,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "qcn7006b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "QCN-8014Z"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "QCN8068B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "QCW2MPSL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1&authBasic=[AUTH]"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "brand": "Jvs",
+  "brand_id": "jvs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H-510",
+        "JVS-B68-DX",
+        "JVS-H302-A2",
+        "N61"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    }
+  ]
+}

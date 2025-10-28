@@ -1,0 +1,18 @@
+{
+  "brand": "Loveday Smart Home",
+  "brand_id": "loveday-smart-home",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LD-P2P-2",
+        "LVD-166-H5A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

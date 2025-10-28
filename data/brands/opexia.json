@@ -1,0 +1,46 @@
+{
+  "brand": "Opexia",
+  "brand_id": "opexia",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CPSx",
+        "opc",
+        "op-cs01"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "OPCS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "OPCS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "/img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "OP-MS01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    }
+  ]
+}

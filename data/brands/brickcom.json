@@ -1,0 +1,219 @@
+{
+  "brand": "Brickcom",
+  "brand_id": "brickcom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100b-ap",
+        "CB-100",
+        "CB-100ap",
+        "fb-100ae",
+        "FD-100Ae",
+        "FD-130AE",
+        "GE-100-CB",
+        "MB300",
+        "OB-300Af",
+        "Other",
+        "VD-130AE",
+        "VD-301AF",
+        "VD-302ap",
+        "WCB-100A",
+        "WCB-202Ap",
+        "WCB-500Ap",
+        "works ok 1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "channel2"
+    },
+    {
+      "models": [
+        "150",
+        "50xA",
+        "C2100",
+        "CB-200Ap",
+        "CB-200AP",
+        "OB-200AF-A1-v5",
+        "ob-500af",
+        "VD-130AE",
+        "VD-300Af",
+        "VD-302Np",
+        "VD-500Af",
+        "WCB-100Ae",
+        "WCB-100Ap"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel2"
+    },
+    {
+      "models": [
+        "30xN",
+        "C2100",
+        "C3103-W",
+        "CB-040Af",
+        "CB-100Ae",
+        "cb100ae-08",
+        "CB-100Ap",
+        "CB-100AP",
+        "FB-100Ap",
+        "FD-130Ae",
+        "FD-130AE",
+        "FD-200Ap",
+        "MB-300AP",
+        "Other",
+        "VD-100Ae",
+        "vd-500Af-A1",
+        "VD-H200Np",
+        "WCB-100AP",
+        "WOB-100Ae"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel1"
+    },
+    {
+      "models": [
+        "CB-040Af-5d21",
+        "fd202",
+        "WCB-200AP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 5052,
+      "url": "/channel2"
+    },
+    {
+      "models": [
+        "CB-100",
+        "CB-100ap",
+        "MB300",
+        "MD-100A",
+        "MD-300Np-360C",
+        "MD-500AP-360-A1",
+        "OB-200AF",
+        "OB-300Af",
+        "OB-300Ap",
+        "Other",
+        "Panomorph Mini Dome",
+        "VD-500Af",
+        "WCB-100A",
+        "WCB-300AP",
+        "wmb 300ap"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "CB-100",
+        "CB-100AE",
+        "fb-100ae",
+        "Other",
+        "Panomorph Mini Dome"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/media.cgi?action=getSnapshot"
+    },
+    {
+      "models": [
+        "CB-100",
+        "MB-300Ap",
+        "OB-100AP",
+        "OB-300Af",
+        "Other",
+        "wcb-300ap",
+        "WFB-131Ap",
+        "WOB-100Ae",
+        "XX-100 RTSP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "CB-100AE",
+        "fb-100ae",
+        "FB-100AP",
+        "FD-130nP",
+        "FD-301Af",
+        "HD",
+        "MD-500Ap-360-A1",
+        "OB-100Ap",
+        "OB-130Np",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "FD-100Ae"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "OB-100Ap"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "OB-300Af"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel3"
+    },
+    {
+      "models": [
+        "OB-E200NF",
+        "Other",
+        "VD-130Ae"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "xx-100 RTSP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "stream/bidirect/channel[CHANNEL]"
+    }
+  ]
+}

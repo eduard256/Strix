@@ -1,0 +1,17 @@
+{
+  "brand": "Visortech",
+  "brand_id": "visortech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR NX-4575-675"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p="
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "brand": "Hdl",
+  "brand_id": "hdl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HMEG-70/70W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264/ch[CHANNEL]"
+    },
+    {
+      "models": [
+        "HMEG-70/70W (rtsp)"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "H264"
+    },
+    {
+      "models": [
+        "HMEG-70P/70DVIR",
+        "HMEG-80PIR",
+        "HMS1 Video Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HMEG-70P/70DVIR",
+        "HMEG-80PIR",
+        "HMS1 Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/stream.cgi?nowprofileid=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HMEG-70P/70DVIR",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

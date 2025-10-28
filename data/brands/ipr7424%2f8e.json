@@ -1,0 +1,17 @@
+{
+  "brand": "Ipr7424/8e",
+  "brand_id": "ipr7424%2f8e",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    }
+  ]
+}

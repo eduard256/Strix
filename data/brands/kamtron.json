@@ -1,0 +1,75 @@
+{
+  "brand": "Kamtron",
+  "brand_id": "kamtron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "826",
+        "f128"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "826",
+        "f300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "826",
+        "832-C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 7080,
+      "url": "/ccm/ccm_pic_get.js?dsess=1&dsess_nid=ME3UvaT9XL0M4HLe9ul46UZCESRjTvtM&dsess_sn=1jfiegbra36la&dtoken=p1_xxxxxxxxxx&dflag=2"
+    },
+    {
+      "models": [
+        "835",
+        "f300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "f128"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/ccm/ccm_pic_get.jpg?hfrom_handle=887330&dsess=1&dsess_nid=MHts.aNrHwnbJfxbeiKi8_hCF1VhBQ&dsess_sn=[USERNAME]&dtoken=p0_xxxxxxxxxx"
+    },
+    {
+      "models": [
+        "f300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "f300"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

@@ -1,0 +1,1453 @@
+{
+  "brand": "Reolink",
+  "brand_id": "reolink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "E1 Pro",
+        "110",
+        "410",
+        "410S",
+        "410W",
+        "420",
+        "510AW",
+        "510WA",
+        "511w",
+        "520",
+        "522",
+        "810A",
+        "811A",
+        "820a",
+        "822a",
+        "A822",
+        "ALL",
+        "Argus",
+        "Argus PT",
+        "B400",
+        "B500",
+        "B800",
+        "B820A",
+        "C1 PRO",
+        "c1pro",
+        "C1-Pro",
+        "C2 Pro",
+        "C2-Pro",
+        "CX810",
+        "D104",
+        "D800",
+        "Doorbell",
+        "Doorbell PoE",
+        "Duo",
+        "Duo (CAM 1)",
+        "Duo 2",
+        "Duo 2 POE",
+        "Duo 2 Security Light",
+        "Duo 2 Wifi",
+        "Duo 2 WiFi",
+        "duo 3",
+        "Duo 3 PoE",
+        "Duo Floodlight PoE",
+        "Duo PoE",
+        "E1 outdoor",
+        "E1 Outdoor SE",
+        "E1 pro",
+        "e1 pro PTZ",
+        "E1 pro sub",
+        "E1 Zomm",
+        "E1 Zoom",
+        "Ei Pro",
+        "FE-P",
+        "FE-W",
+        "Gar",
+        "Inside",
+        "Lumix Pro",
+        "Mijdrecht Reolink",
+        "nord",
+        "Other",
+        "P344",
+        "P850",
+        "POE",
+        "RC-840a",
+        "rcl-1240a",
+        "RCL-410",
+        "RCL-410-5MP",
+        "rcl-420",
+        "RCL-510WA",
+        "rcl-511",
+        "RCL-520",
+        "rcl-522",
+        "RCL-540A",
+        "RCL-810A",
+        "RCL-811A",
+        "RCL-823A",
+        "REOLINK C2",
+        "Reolink Duo 3 PoE",
+        "Reolink RCL-410",
+        "REOLINK RLC-423",
+        "Reolink Video Doorbell PoE",
+        "Reolink Video Doorbell WiFi",
+        "reolink: rlc-410-5mp",
+        "Reolink-820a",
+        "RLC",
+        "rlc 410w",
+        "RLC 482a",
+        "rlc 510",
+        "RLC 520",
+        "RLC 830A",
+        "RLC 842",
+        "RLC-1210a",
+        "RLC-1220A",
+        "RLC-1224A",
+        "RLC-1240a",
+        "RLC-410",
+        "rlc-410-5mp",
+        "RLC-410-5MP",
+        "RLC-410W",
+        "RLC-410WS",
+        "RLC-411",
+        "RLC-411WS",
+        "RLC-420",
+        "rlc-420-5mp",
+        "RLC-420-5MP-V2",
+        "RLC-422",
+        "RLC-423",
+        "RLC-423WS",
+        "RLC-510A",
+        "RLC-510AW",
+        "RLC-510WA",
+        "RLC-511",
+        "RLC-511W",
+        "RLC-520",
+        "RLC-520-5mp",
+        "rlc-520a",
+        "RLC-522",
+        "RLC-523WA",
+        "RLC-542WA",
+        "RLC-810",
+        "rlc-810a",
+        "rlc-810c",
+        "RLC-811A",
+        "RLC-812A",
+        "RLC-81MA",
+        "rlc-820a",
+        "rlc822a",
+        "RLC-822A",
+        "RLC-832A",
+        "RLC-833A",
+        "RLC840A",
+        "RLC-843A",
+        "RLN8-410",
+        "rls-410s",
+        "RTC-410",
+        "RWC-511",
+        "Trackmix POE",
+        "TrackMix WiFi",
+        "Video Doorbell PoE",
+        "Video Doorbell Wifi",
+        "w511",
+        "Wifi Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_sub"
+    },
+    {
+      "models": [
+        "E1 Pro",
+        "1010",
+        "1080p",
+        "1240A",
+        "250",
+        "3816M",
+        "410W",
+        "420",
+        "430",
+        "4k Dual-Lense",
+        "510",
+        "510A",
+        "510aw",
+        "510w",
+        "511W",
+        "511WA",
+        "520",
+        "522",
+        "523WA",
+        "540",
+        "5mp",
+        "810A",
+        "811a",
+        "81Ma",
+        "820A",
+        "8224",
+        "822a",
+        "823",
+        "823A",
+        "842-A",
+        "A1 Pro",
+        "A822",
+        "ALL",
+        "Argus",
+        "Argus 2",
+        "B1200",
+        "B400",
+        "B500",
+        "C1 Pro",
+        "C1-Pro",
+        "c2 pro",
+        "C2 PRO",
+        "C2-pro",
+        "C310",
+        "CX410",
+        "CX810",
+        "D340P",
+        "D340W",
+        "D400",
+        "D4K23",
+        "D4K30",
+        "DB_566128M5MP_P",
+        "Doorbell",
+        "Doorbell PoE",
+        "Doorbell WiFi",
+        "dual",
+        "Dual Lens",
+        "Duo",
+        "Duo (CAM 1)",
+        "Duo (CAM 2)",
+        "Duo 2",
+        "Duo 2 POE",
+        "Duo 3 PoE",
+        "Duo Floodlight PoE",
+        "Duo Poe",
+        "Duo WiFi",
+        "Duo2 Wifi",
+        "E1 Outdoor",
+        "E1 Outdoor POE",
+        "E1 Outdoor SE",
+        "E1 Outdoor SE PoE",
+        "E1 pro",
+        "E1 Pro",
+        "E1 Pro Outdoor",
+        "e1 pro PTZ",
+        "E1 Zomm",
+        "e1 zoom",
+        "E1Zoom",
+        "E330",
+        "FE-p",
+        "FloodLight",
+        "FP-E",
+        "F-W",
+        "inrit",
+        "Inside 2",
+        "IPC",
+        "Lumus",
+        "Mijdrecht Reolink",
+        "NVR",
+        "Other",
+        "Outdoor E1",
+        "P320",
+        "P324",
+        "P730",
+        "PoE",
+        "R1 Outdoor",
+        "R510",
+        "RCL410",
+        "RCL-410-5MP",
+        "rcl-410w",
+        "RCL-411W",
+        "rcl-420",
+        "RCL-510",
+        "RCL-510A",
+        "rcl-510wa",
+        "rcl-511",
+        "RCL-511WA",
+        "RCL-520",
+        "RCL-810A",
+        "RCL-811A",
+        "RCL-811WA",
+        "RCL-81MA",
+        "RCL-820A",
+        "RCL-823A",
+        "Reolink 520",
+        "Reolink Argus Eco",
+        "Reolink Duo 3 PoE",
+        "Reolink RCL-410",
+        "reolink: rlc-410-5mp",
+        "Reolink:833A",
+        "reolinkrlc-410w",
+        "RL-810A",
+        "rlc 410w",
+        "RLC 420",
+        "RLC 422W",
+        "rlc 510",
+        "RLC 510A",
+        "RLC 520",
+        "RLC 810A",
+        "RLC 842",
+        "RLC-%10WA",
+        "RLC-1212a",
+        "RLC-1220A",
+        "RLC-1224A",
+        "rlc-1240a",
+        "rlc-210w",
+        "RLC-243",
+        "RLC-410",
+        "RLC-410 (rtsp)",
+        "RLC-410-5MP",
+        "RLC-410W",
+        "RLC-420",
+        "rlc-420-5mp",
+        "RLC-420-5MP-V2",
+        "RLC-422W",
+        "RLC-423WS",
+        "rlc-432ws",
+        "RLC-510A with substream",
+        "RLC-510WA",
+        "RLC-511",
+        "RLC-511W",
+        "RLC-511WA",
+        "RLC-520",
+        "RLC-520-5mp",
+        "RLC-520A",
+        "rlc-522",
+        "RLC-542WA",
+        "RLC-810",
+        "rlc-810a",
+        "RLC-810WA",
+        "RLC-811A",
+        "RLC-812A",
+        "RLC-81MA",
+        "RLC-81PA",
+        "rlc-820a",
+        "RLC-8232S",
+        "RLC-823A",
+        "RLC-830A",
+        "RLC-832A",
+        "RLC-833A",
+        "RLC-833A 2",
+        "RLC840A",
+        "RLC-840A",
+        "RLC-840WA",
+        "RLC-842A",
+        "RLK8-410B",
+        "RLN16-410",
+        "rln36",
+        "RLN36-410",
+        "RLN8-410",
+        "Roaming Camera",
+        "rst-520",
+        "RTC-410",
+        "rtl-1224a",
+        "RTL-510WA",
+        "T1 Pro",
+        "TrackMix",
+        "Trackmix POE",
+        "TrackMix PoE",
+        "TrackMix WiFi",
+        "Trackmix-PoE",
+        "Video Doorbell",
+        "Video Doorbell PoE",
+        "Video Doorbell Wifi",
+        "Video Doorbell WiFi",
+        "VLC-410",
+        "Wifi Doorbell",
+        "Wifi Doorbell 5mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_main"
+    },
+    {
+      "models": [
+        "1080P",
+        "810A",
+        "822a",
+        "C2 Pro",
+        "C810",
+        "CX810",
+        "D340P",
+        "Doorbell",
+        "Doorbell WiFi",
+        "Duo 2 PoE",
+        "DUO PTZ WiFi",
+        "duo wifi",
+        "E1 pro",
+        "E1 Pro Outdoor",
+        "e1 pro PTZ",
+        "E1Zoom",
+        "FE-W",
+        "F-W",
+        "IPC_529SD78MP",
+        "Other",
+        "P320",
+        "P430",
+        "rcl-511",
+        "RCL-520",
+        "Reolink Duo 3 PoE",
+        "Reolink Video Doorbell WiFi",
+        "reolink: rlc-410-5mp",
+        "rlc 410w",
+        "RLC 423",
+        "RLC 482A",
+        "RLC 510-WA",
+        "RLC-1224A",
+        "RLC-1240a",
+        "rlc-410-5mp",
+        "RLC-423",
+        "RLC-510A",
+        "RLC-520-5mp",
+        "RLC-520A",
+        "rlc-522",
+        "RLC-810A",
+        "RLC-811",
+        "RLC-811A",
+        "RLC-81PA",
+        "RLC-82",
+        "rlc-820a",
+        "rlc-822a",
+        "RLC-823a",
+        "RLC-830A",
+        "RLC-840a",
+        "RLC-842A",
+        "Smart Video Doorbell",
+        "Trackmix POE",
+        "TrackMix WiFi",
+        "Trackmix-PoE",
+        "Video Doorbell",
+        "Video Doorbell PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "410",
+        "810a",
+        "811A",
+        "E1 OUTDOOR",
+        "E1 Zoom",
+        "RLC 510-WA",
+        "RLC-1224A",
+        "RLC-510A",
+        "RLC-510A WITH SUBSTREAM",
+        "RLC-511",
+        "RLC-811",
+        "RLC-842A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "410",
+        "E1 Zoom",
+        "Other",
+        "RLC-423",
+        "RLC-510A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]%20-map%200%20-an%20-dn%20-flags%20-global_header"
+    },
+    {
+      "models": [
+        "410",
+        "B820A",
+        "Duo",
+        "FE-P",
+        "RCL-810A",
+        "RLC-81MA",
+        "Trackmix POE",
+        "TrackMix Wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_02_main"
+    },
+    {
+      "models": [
+        "410",
+        "C1 Pro",
+        "D340P",
+        "DUO POE 2",
+        "E1 pro",
+        "RCL-511W",
+        "RCL-520",
+        "RCL-810A",
+        "Reolink 411",
+        "reolink: rlc-410-5mp",
+        "rlc-410-5mp",
+        "RLC-510A",
+        "RLC-520",
+        "RLC-520-5mp",
+        "rlc-810a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "410",
+        "420",
+        "510A",
+        "510WA",
+        "810A",
+        "All",
+        "C1",
+        "C1 Pro",
+        "C2",
+        "c2 pro",
+        "DB_566128M5MP_P",
+        "Doorbell PoE",
+        "E1 pro",
+        "E1 zoom",
+        "HIl",
+        "LivingRoom",
+        "Other",
+        "P320",
+        "PTZ",
+        "RC410",
+        "Rcl 410",
+        "RCL-410",
+        "rcl-420",
+        "RCL-520",
+        "RCL-810A",
+        "Reolink RCL-410",
+        "reolink: rlc-410-5mp",
+        "rlc 411s",
+        "rlc 420",
+        "RLC-410",
+        "RLC-410-5MP",
+        "RLC-410S",
+        "RLC-410W",
+        "RLC-410WS",
+        "RLC-411",
+        "RLC-411S",
+        "rlc-411ws",
+        "RLC-411WS",
+        "RLC-420",
+        "rlc-420-5mp",
+        "RLC-422",
+        "rlc-422w",
+        "rlc423",
+        "RLC-423",
+        "RLC-423WS",
+        "RLC-510A",
+        "RLC-510A with substream",
+        "RLC-510WA",
+        "RLC-511",
+        "RLC-511W",
+        "RLC-520",
+        "RLC-520-5mp",
+        "rlc-520a",
+        "rlc-522",
+        "rlc-810a",
+        "RLC-WS423WS",
+        "RLN8-410",
+        "rls-410",
+        "RWC-511",
+        "Video Doorbell PoE",
+        "Video Doorbell Wifi",
+        "W410S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0"
+    },
+    {
+      "models": [
+        "410",
+        "Argus Eco",
+        "Duo 2 PoE",
+        "E1 Outdoor",
+        "E1 Pro",
+        "e1 pro PTZ",
+        "NVR",
+        "RC410",
+        "RCL-410",
+        "RCL-810A",
+        "reolink: rlc-410-5mp",
+        "rlc 410w",
+        "rlc-410-5mp",
+        "rlc-411ws",
+        "RLC-423",
+        "RLC-510A",
+        "RLC-511",
+        "RLC-520",
+        "RLC-520-5mp",
+        "rlc-522",
+        "rlc-810a",
+        "RLN16-410",
+        "Trackmix POE",
+        "Video Doorbell Wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1"
+    },
+    {
+      "models": [
+        "411",
+        "b510",
+        "B820A",
+        "dvr",
+        "RLN36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_04_main"
+    },
+    {
+      "models": [
+        "4K 8MP PTZ",
+        "690",
+        "810A",
+        "833A",
+        "B800",
+        "Carport",
+        "CX410",
+        "CX410W",
+        "D340P",
+        "duo 2 POE",
+        "Duo 2 POE",
+        "duo 2v poe",
+        "E1 OUTDOOR",
+        "E1Zoom",
+        "FE-P",
+        "RCL-810A",
+        "RCL-81PA",
+        "Reolink Video Doorbell WiFi",
+        "RLC-1210A",
+        "RLC-1224A",
+        "RLC520",
+        "rlc-520a",
+        "RLC-523WA",
+        "RLC-810A",
+        "RLC-81MA",
+        "RLC-833A",
+        "RLN8-410",
+        "TrackMix PoE",
+        "TrackMix Wired LTE",
+        "Video Doorbell PoE",
+        "Video Doorbell WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "4K 8MP PTZ",
+        "810A",
+        "820a",
+        "Balcone 2RCL-811WA",
+        "Doorbell",
+        "Duo WiFi",
+        "E340",
+        "RCL-812A",
+        "Reolink Video Doorbell PoE",
+        "RLC-1210A",
+        "rlc-410-5mp",
+        "RLC-510WA",
+        "RTL-830A",
+        "TrackMix PoE",
+        "Trackmix-PoE",
+        "Video Doorbell"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h264Preview_01_sub"
+    },
+    {
+      "models": [
+        "510A",
+        "CX810",
+        "Lumis",
+        "RCL-510wa",
+        "RLC 510A",
+        "RLC 510-WA",
+        "RLC-510wa",
+        "RLC-520A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5MP PTZ",
+        "D340P",
+        "Doorbell PoE",
+        "Duo",
+        "Duo 3 PoE",
+        "E1 pro",
+        "e1 pro PTZ",
+        "e1 zoom",
+        "RCL-410-5MP",
+        "Reolink Video Doorbell PoE",
+        "RLC 520a",
+        "RLC-1220A",
+        "rlc-410-5mp",
+        "rlc-411ws",
+        "RLC-420",
+        "RLC-510A",
+        "rlc-520a",
+        "RLC-81MA",
+        "RLC-820A",
+        "RLC-823S1W",
+        "RLC-830A",
+        "RLC-840A",
+        "RLC-840WA",
+        "RLN36",
+        "Video Doorbell PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h264Preview_01_main"
+    },
+    {
+      "models": [
+        "800",
+        "810A",
+        "811A",
+        "822",
+        "Carport",
+        "D340P",
+        "Duo 2 Wifi",
+        "Duo 2 WiFi",
+        "E1 Outdoor",
+        "E1 Outdoor CX",
+        "E1 Outdoor Pro",
+        "E1 Outdoor SE PoE",
+        "E1 Zoom",
+        "E3 Pro",
+        "EI Outdoor",
+        "FE-P",
+        "IPC",
+        "P437",
+        "RCL-810A",
+        "RCL-812A",
+        "RLC 842",
+        "RLC-1210A",
+        "RLC-1224A",
+        "RLC-420",
+        "RLC-811A",
+        "RLC-81MA",
+        "RLC-81PA",
+        "RLC-820A",
+        "RLC-8232S",
+        "RLC-823A",
+        "RLC-830A",
+        "RLC-833A",
+        "rrr",
+        "RTL-830A",
+        "Tra",
+        "Trackmix POE",
+        "TrackMix WiFi",
+        "Traxmix POE",
+        "Video Doorbell PoE",
+        "Video Doorbell WiFi",
+        "wlc-823a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h265Preview_01_main"
+    },
+    {
+      "models": [
+        "810A",
+        "Argus3E",
+        "CX410",
+        "Lumus Pro",
+        "rlc 410w",
+        "RLC-811A",
+        "z1 zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "810A",
+        "RCL-810A",
+        "RLC-420 4MP",
+        "rlc-810a",
+        "TrackMix PoE",
+        "Video Doorbell WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "811A",
+        "843a",
+        "D4K30",
+        "Doorbell PoE",
+        "Duo 2",
+        "E1 Outdoor",
+        "RCL-810A",
+        "RCL-820A",
+        "RLC 510A",
+        "RLC-1210a",
+        "RLC-1224A",
+        "rlc-810a",
+        "RLC-811A",
+        "RLC-820A",
+        "RLC-822A",
+        "Trackmix-PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265Preview_01_main"
+    },
+    {
+      "models": [
+        "822A",
+        "E1 Zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Main_08_sub"
+    },
+    {
+      "models": [
+        "822A",
+        "E1 Zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_08_sub"
+    },
+    {
+      "models": [
+        "ARGUS 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "argus eco",
+        "Argus PT 2K",
+        "e1 zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO"
+    },
+    {
+      "models": [
+        "Argus pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?"
+    },
+    {
+      "models": [
+        "Argus Pro",
+        "c100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Argus Pro",
+        "E1 Zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "Argus Track",
+        "RLC-410W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "B800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Salon/mainstream"
+    },
+    {
+      "models": [
+        "B800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h264Preview_04_main"
+    },
+    {
+      "models": [
+        "B820A",
+        "D800",
+        "Duo",
+        "duo wifi",
+        "E320",
+        "RCL-810A",
+        "Trackmix POE",
+        "TrackMix WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_02_sub"
+    },
+    {
+      "models": [
+        "B820A",
+        "RCL-810A",
+        "RLN36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_03_main"
+    },
+    {
+      "models": [
+        "B820A",
+        "E320",
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_03_sub"
+    },
+    {
+      "models": [
+        "B820A",
+        "dvr",
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_04_sub"
+    },
+    {
+      "models": [
+        "C1-Pro",
+        "DUO POE 2",
+        "RLC-810A",
+        "rlc-822a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CX410",
+        "E1 Outdoor",
+        "e1 zoom",
+        "RLC-511",
+        "RLC-511W",
+        "RLC-520",
+        "rlc-520a",
+        "TrackMix PoE",
+        "Video Doorbell PoE",
+        "Video Doorbell WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CX810",
+        "Doorbell PoE",
+        "P324",
+        "P820A",
+        "RLC-510A",
+        "Trackmix",
+        "TrackMix PoE",
+        "traxmax",
+        "Video Doorbell WiFi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Preview_01_main"
+    },
+    {
+      "models": [
+        "CX810",
+        "D360p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "D4K30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_01_sup"
+    },
+    {
+      "models": [
+        "E1 pro",
+        "e1 zoom",
+        "RLC-1224A",
+        "RLC-820A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265Preview_01_sub"
+    },
+    {
+      "models": [
+        "e1 zoom",
+        "RLC-520"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoSub"
+    },
+    {
+      "models": [
+        "E1 Zoom",
+        "rlc-820a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "E1 Zoom",
+        "RCL-810A",
+        "RLC 842"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//h265Preview_01_sub"
+    },
+    {
+      "models": [
+        "E1 Zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/e1/subStream"
+    },
+    {
+      "models": [
+        "E1 Zoom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/e1/mainStream"
+    },
+    {
+      "models": [
+        "FP-E",
+        "Reolink Duo (CAM 1)",
+        "Reolink Video Doorbell WiFi",
+        "rlc-410-5mp",
+        "rlc-810a",
+        "Video Doorbell PoE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Lumus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/flv?port=1935&app=bcs&stream=channel1_main.bcs&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Lumus"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/flv?port=1935&app=bcs&stream=channel3_main.bcs&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Lumus(neolink Hack)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/livingroom/mainStream"
+    },
+    {
+      "models": [
+        "Lumus(neolink Hack)",
+        "Lumus(neolink)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/CarPort/mainStream"
+    },
+    {
+      "models": [
+        "rc510"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "rcl-410w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "rcl-410w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "rcl-420",
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_05_main"
+    },
+    {
+      "models": [
+        "rcl-420",
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_05_sub"
+    },
+    {
+      "models": [
+        "rcl-522"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=0"
+    },
+    {
+      "models": [
+        "rcl-522",
+        "RLC-510A with substream"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=1"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_09_sub"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_main.bcs&channel=0&stream=0"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_06_sub"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_07_sub"
+    },
+    {
+      "models": [
+        "RCL-810A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264Preview_07_main"
+    },
+    {
+      "models": [
+        "RCL-810A",
+        "RLC 830A",
+        "RLC-510A",
+        "RLC-823A",
+        "RLC-842A",
+        "Video Doorbell Wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Reolink Duo (CAM 2)",
+        "RLC-410"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/bcs/channel1_main.bcs?token=[TOKEN]&channel=0&stream=1"
+    },
+    {
+      "models": [
+        "RLC 843"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "RLC-1212a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s0"
+    },
+    {
+      "models": [
+        "RLC-1220A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "RLC-410",
+        "rlc-410-5mp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/flv?port=1935&app=bcs&stream=channel0_main.bcs&token=[TOKEN]"
+    },
+    {
+      "models": [
+        "RLC-410"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/:554/h264Preview_01_main"
+    },
+    {
+      "models": [
+        "RLC-410-5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "RLC-420-5MP-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/dome/subStream"
+    },
+    {
+      "models": [
+        "RLC-420-5MP-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/dome/mainStream"
+    },
+    {
+      "models": [
+        "RLC-510A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/cam.mjpeg"
+    },
+    {
+      "models": [
+        "RLC-510A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/media.sav"
+    },
+    {
+      "models": [
+        "rlc-510WA",
+        "RLC-822A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "RLC-510WA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "rlc-520a"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "RLC-840a"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": ""
+    },
+    {
+      "models": [
+        "RWC-511"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/flv?port=1935&app=bcs&stream=channel0_sub.bcs&token=[TOKEN]"
+    },
+    {
+      "models": [
+        "Trackmix",
+        "TrackMix Wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "TrackMix Wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/media/video1"
+    }
+  ]
+}

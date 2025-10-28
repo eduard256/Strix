@@ -1,0 +1,44 @@
+{
+  "brand": "Ip-camera",
+  "brand_id": "ip-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC 1.3.0"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "IPC 1.3.0"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "v380pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

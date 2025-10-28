@@ -1,0 +1,18 @@
+{
+  "brand": "Acm-v3002",
+  "brand_id": "acm-v3002",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Fine",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

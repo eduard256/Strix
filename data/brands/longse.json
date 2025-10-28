@@ -1,0 +1,187 @@
+{
+  "brand": "Longse",
+  "brand_id": "longse",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "105",
+        "2Mpx",
+        "LBH30SS500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "106",
+        "BMSDFG400W",
+        "LBF30S200",
+        "LBH30HSF200",
+        "LBH30S100W4",
+        "LBH30S400",
+        "LBH30SV500",
+        "lirdls100",
+        "LIRDNS200",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "112233",
+        "BMSDFG400W",
+        "CMSBFG200",
+        "CS-C60A200",
+        "Fixed 2MP",
+        "LBH24T200",
+        "LBH30FK500W",
+        "LBH30HFG200W",
+        "LIRDCS400",
+        "LIRDNTA200",
+        "LIRDT200",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "112233",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "1mp",
+        "2Mpx",
+        "LBH24A200",
+        "LICG24AD130S",
+        "LID40A200",
+        "LID90A300",
+        "LIRDGS200",
+        "LIRDNTA200",
+        "lizm40",
+        "LIZM40T100",
+        "LIZM40T200",
+        "Other",
+        "XVR2008D"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "BMSDF G400W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "BMSDFG400W",
+        "lbh30sv500",
+        "LBH30SV500",
+        "lhb30sv500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "BPSCFC4R-36PM",
+        "LBH30S100W4",
+        "LIRDCS130 ONVIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "FLI521Z-DYA5XJJ500",
+        "lbh30sv500",
+        "LBH30SV500",
+        "lbp60sf200",
+        "lirdnhtc200f",
+        "xvr2008d"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "LBH30sv500",
+        "LHB30SV500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "LBH30SV500",
+        "LIRDCS400",
+        "Other",
+        "xvr2008d"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "LHB30SV500",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "LIZMB20T200",
+        "LVWDB20T200",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    }
+  ]
+}

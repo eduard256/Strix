@@ -1,0 +1,52 @@
+{
+  "brand": "Brillcam",
+  "brand_id": "brillcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "20927/05",
+        "BRC-D150"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "20927/05"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "B780"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "//action/stream?subject=mjpeg&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "BRC-B750DV2",
+        "BRC-B752W",
+        "BRC-B782",
+        "BRC-B782W",
+        "BRC-D150",
+        "brc-s5194p2irwl",
+        "BRC-S8151P2",
+        "D150"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    }
+  ]
+}

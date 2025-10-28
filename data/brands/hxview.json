@@ -1,0 +1,28 @@
+{
+  "brand": "Hxview",
+  "brand_id": "hxview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "bu-e580"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "BU-E580",
+        "BU-H800",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

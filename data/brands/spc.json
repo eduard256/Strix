@@ -1,0 +1,20 @@
+{
+  "brand": "Spc",
+  "brand_id": "spc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720",
+        "DOME6340C28WD",
+        "KST4-1080P",
+        "streethome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mode=real&idc=1&ids=1"
+    }
+  ]
+}

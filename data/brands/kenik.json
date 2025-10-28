@@ -1,0 +1,45 @@
+{
+  "brand": "Kenik",
+  "brand_id": "kenik",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1301t",
+        "2036T",
+        "2042T",
+        "GS-1301T",
+        "KG-1301T",
+        "KG-2030D",
+        "KG-2036T",
+        "KG-2122D",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "2036T",
+        "2052T",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "KG-230DP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mode=real&idc=1&ids=1"
+    }
+  ]
+}

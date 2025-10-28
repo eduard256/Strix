@@ -1,0 +1,17 @@
+{
+  "brand": "Dizink",
+  "brand_id": "dizink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "930L"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "brand": "Onwote",
+  "brand_id": "onwote",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4K Bullet",
+        "h800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "5 MP POE IP Camera",
+        "5 MP POE Security Camera",
+        "5MP",
+        "NULL",
+        "Other",
+        "PoE 5 MP Camera",
+        "YC-9204K",
+        "YC-920AHZ37"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "5MP POE",
+        "YC-9204K",
+        "ym800n-n"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/0/h264.sdp"
+    },
+    {
+      "models": [
+        "5MP POE",
+        "IP Cameras",
+        "K9604-w",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "onw"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 30050,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240"
+    },
+    {
+      "models": [
+        "onw"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 30050,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "PA3010"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "pa3013-w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mp4"
+    }
+  ]
+}

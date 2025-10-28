@@ -1,0 +1,17 @@
+{
+  "brand": "Proline",
+  "brand_id": "proline",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "PR-ID2234FCX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp?real_stream"
+    }
+  ]
+}

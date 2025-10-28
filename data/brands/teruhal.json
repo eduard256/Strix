@@ -1,0 +1,19 @@
+{
+  "brand": "Teruhal",
+  "brand_id": "teruhal",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Intelligent Camera",
+        "TC55",
+        "TC56"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    }
+  ]
+}

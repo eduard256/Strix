@@ -1,0 +1,26 @@
+{
+  "brand": "Legrand",
+  "brand_id": "legrand",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "430632"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "cm7000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10110,
+      "url": "/0"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "brand": "Alarm.com",
+  "brand_id": "alarm.com",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "510",
+        "adc-520ir",
+        "ADC-620pt",
+        "ADC-V510",
+        "ADC-V520",
+        "adc-v520ir",
+        "ADC-V520IR",
+        "ADC-V610pt",
+        "adc-v620pt",
+        "adc-v700x",
+        "ADC-V700X",
+        "ADC-V720W",
+        "ADC-vs120",
+        "Other",
+        "v520ir"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8554,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "510IR",
+        "836",
+        "acd-v520",
+        "adc v520ir",
+        "ADC-520IR",
+        "ADC-620PT",
+        "adc-v510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "ADC-V522IR",
+        "adc-v52ir",
+        "ADC-V610PT",
+        "ADC-V700X",
+        "ADC-V720",
+        "ADC-V720W",
+        "ADC-V721W",
+        "ADC-V723",
+        "ADC-V820",
+        "ADC-VS120",
+        "ADV-51NR",
+        "v510",
+        "v723",
+        "V-HD300W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1026,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "ADC-520IR",
+        "ADC-620pt",
+        "ADC-V510",
+        "ADC-V520IR",
+        "ADC-V620PT",
+        "ADC-V721W",
+        "ALC-520IR",
+        "V-HD300W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "ADC-520IR",
+        "ADC-V510",
+        "ADC-V520",
+        "ADC-V520IR",
+        "ADC-V700X",
+        "ADC-V721W",
+        "CUBE",
+        "Other",
+        "v721w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "ADC-V520",
+        "ADC-V720",
+        "ADC-V723"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live3.sdp"
+    },
+    {
+      "models": [
+        "adc-v520ir",
+        "ADC-V520IR",
+        "ADC-V610PT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "ADC-V520IR",
+        "ADC-V720W",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "ADC-V520IR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "ADC-V520IR"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "ADC-V720W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

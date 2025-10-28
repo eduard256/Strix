@@ -1,0 +1,149 @@
+{
+  "brand": "Alibi",
+  "brand_id": "alibi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3014",
+        "ALI-2013VR",
+        "ALI-IPU3030R",
+        "ALI-NS1014VRB",
+        "ALI-NS2026R",
+        "Other",
+        "wl-ic8b"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "3022VR",
+        "3030R",
+        "ALI-NS1014VR",
+        "ALI-NS3022R",
+        "ali-nz60"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 7070,
+      "url": ""
+    },
+    {
+      "models": [
+        "3030R",
+        "3230R",
+        "ALI-2013VR",
+        "ALI-NS4025R",
+        "ALI-NZ60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "3030R",
+        "ALI-IPV3030R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "3130",
+        "Alibi 3.0",
+        "ALI-IPU3013R",
+        "ALI-IPU3030R",
+        "ALI-IPU3130R",
+        "ALI-IPU3230R",
+        "ALI-IPV3113R",
+        "ALI-IPV3130R",
+        "ALI-NS1014VR",
+        "ALI-NS3012R",
+        "ipu3030",
+        "IPU3030R",
+        "ksajfhshks"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "ALI-IP23013R",
+        "ALI-NP7012RT",
+        "ALI-NZ60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ALI-NS1034R",
+        "ALI-XD81-VUZAI",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "ALI-NS2016VR",
+        "ALI-NS4026R",
+        "ALI-NS4038RE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "ALI-NS4013R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ALI-NS4026R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "ALI-NS4038RE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "ALI-NS4038RE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.264"
+    }
+  ]
+}

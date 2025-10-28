@@ -1,0 +1,17 @@
+{
+  "brand": "Ipdom-hz0102",
+  "brand_id": "ipdom-hz0102",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Eyecam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live0.264"
+    }
+  ]
+}

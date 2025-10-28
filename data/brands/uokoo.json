@@ -1,0 +1,148 @@
+{
+  "brand": "Uokoo",
+  "brand_id": "uokoo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10809",
+        "1080P IP camera Black 620",
+        "1080white",
+        "201",
+        "309146-TGCHU",
+        "632kc",
+        "720",
+        "720P",
+        "720P IP CAMERA",
+        "ard",
+        "B01MZ14YWP",
+        "CHINA",
+        "EMENT",
+        "HD IP CAM",
+        "IP 720",
+        "IP Camera 1080p",
+        "IP/NETWORK CAMERA",
+        "mini",
+        "Mini IP",
+        "Mini IP Cam",
+        "Mini IP camera",
+        "NOA",
+        "Other",
+        "pan",
+        "smartp2p",
+        "wifi",
+        "X series",
+        "x series ip camera",
+        "X000WFZORD",
+        "X001AND3PV",
+        "XSERIES IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "10809",
+        "720P IP CAMERA",
+        "IP 720",
+        "IP CAMERA 1080P",
+        "lr pan",
+        "mini ip camera",
+        "view-279143-lybbh",
+        "x series",
+        "X Series IP Camera",
+        "X001AND3PV",
+        "Xseries ip camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "720p",
+        "720p IP Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "720P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "H02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "H02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "HD1080p"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "SMARTP2P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "view-30969-RRFR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    }
+  ]
+}

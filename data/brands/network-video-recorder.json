@@ -1,0 +1,17 @@
+{
+  "brand": "Network Video Recorder",
+  "brand_id": "network-video-recorder",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "NVR2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/101"
+    }
+  ]
+}

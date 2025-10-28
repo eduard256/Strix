@@ -1,0 +1,18 @@
+{
+  "brand": "Galaxy S4",
+  "brand_id": "galaxy-s4",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP WebCAM",
+        "My phone"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

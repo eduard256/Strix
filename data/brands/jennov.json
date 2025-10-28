@@ -1,0 +1,290 @@
+{
+  "brand": "Jennov",
+  "brand_id": "jennov",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10x",
+        "2.0MP",
+        "720P(Frank)",
+        "ALL",
+        "BULLET CAM",
+        "MMMM-076249-CEAAF",
+        "ONVIF",
+        "Other",
+        "P81WT20-3-FA",
+        "ppp582322bccas",
+        "PTZ",
+        "T-SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "10x",
+        "2.0MP",
+        "720p",
+        "720P",
+        "720p wifi",
+        "720pBullet",
+        "a54wt20-3-fa",
+        "a76wt20-4x-fa-16",
+        "A78WT20",
+        "a79wt10-3-f=16",
+        "bullet cam",
+        "IP-1OO",
+        "IP-402",
+        "IPCAM HIP2P",
+        "JE-A79WT10-3",
+        "MMMM-285146-BFCAB",
+        "Other",
+        "pttz",
+        "t series",
+        "T-Series",
+        "zzzz-480241-cefab",
+        "zzzz-607748-feccb"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "10x",
+        "2.0MP",
+        "720P WIFI",
+        "T-SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "10x",
+        "2.0MP",
+        "Other",
+        "T-SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "2.0mp",
+        "C6F0SqZ0N0P0L0",
+        "C9F0SgZ0N0P7L0"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "5MP PTZ"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "11"
+    },
+    {
+      "models": [
+        "720P",
+        "A73WG20-3-E",
+        "a73wg35-3-e",
+        "all",
+        "ip cam-100",
+        "IP-1OO",
+        "JMC800S_V2_AF",
+        "onvif"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "A54WT20-3-FA",
+        "a73wg20-3-e",
+        "A76WM55-4x-EA",
+        "IPD-E36Y0701",
+        "m300e100",
+        "Mini PTZ"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "a73wg20",
+        "MINI PTZ",
+        "Modelw"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "A73WG20-3-E",
+        "G-Series",
+        "PS6006",
+        "s25"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "A73WG20-3-E",
+        "IP-1OO",
+        "IPCAM-100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "A73WJ20-3-F"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A76WM55-4X-EA",
+        "IPC-1",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "A76WT20-4X-FA-16",
+        "A76WT55-4X-FA-32",
+        "A83WT20",
+        "C6F0SgZ0N0P0L0",
+        "C9F0SgZ0N0P7L0",
+        "IPCAM HIP2P",
+        "Mini PTZ",
+        "MINI PTZ",
+        "M-Series",
+        "ONVIF",
+        "Other",
+        "PTz",
+        "T-SERIES"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "A89WJ25-3-FA",
+        "J Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "C6F0SgZ3N0P6L2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=0"
+    },
+    {
+      "models": [
+        "ip cam-100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H.264"
+    },
+    {
+      "models": [
+        "P28HT20-3"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "P87HM85-30X-EAS",
+        "s25"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "PE4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    }
+  ]
+}

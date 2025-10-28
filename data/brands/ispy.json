@@ -1,0 +1,36 @@
+{
+  "brand": "Ispy",
+  "brand_id": "ispy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Agent DVR (all cameras)",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "Agent DVR (single channel)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?oids=[CHANNEL]&size=640x480&fitType=Zoom"
+    },
+    {
+      "models": [
+        "original"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/mjpegfeed?oid=1&full"
+    }
+  ]
+}

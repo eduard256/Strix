@@ -1,0 +1,35 @@
+{
+  "brand": "Evolveo",
+  "brand_id": "evolveo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Detective POE8 Smart"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1-1"
+    },
+    {
+      "models": [
+        "Detective POE8 Smart"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2-1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/SubStream"
+    }
+  ]
+}

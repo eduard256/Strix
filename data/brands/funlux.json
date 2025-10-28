@@ -1,0 +1,84 @@
+{
+  "brand": "Funlux",
+  "brand_id": "funlux",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720p",
+        "CH-S1A-WACS",
+        "NVR",
+        "ZH-IXA1D-WAC",
+        "ZP-IBI13-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "720P",
+        "ZH-IXA1D-WAC",
+        "ZP-IBI13-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CH-S1A-WACS",
+        "NVR",
+        "ZH-IXA15-WAC",
+        "ZH-IXA15-WC",
+        "ZP-IBI13-W",
+        "ZP-IBT15"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "CH-S1A-WACS",
+        "ZH-IXA15-WAC",
+        "ZH-IXA1D-WAC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "NVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "ZH-IXA15-WC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/udp/av0_0"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "brand": "Luma",
+  "brand_id": "luma",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "16Ch TVI",
+        "501",
+        "510",
+        "700-DOM-IPH WH",
+        "BUL-110",
+        "LUM-500-DOM-IP-WH",
+        "LUM-700-BUL-IPH-GR",
+        "nvr",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "500",
+        "501",
+        "8CH TVI",
+        "LUM-500-DVR-16CH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/201"
+    },
+    {
+      "models": [
+        "500",
+        "510",
+        "700-DOM-IPH WH",
+        "LUM-500-TUR-IP-WH",
+        "NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 65152,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "LUM-310-DOM-IP-BL",
+        "LUM-700-BUL-iPH-GR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

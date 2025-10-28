@@ -1,0 +1,17 @@
+{
+  "brand": "Tic",
+  "brand_id": "tic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.3MPX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/Streaming/channels/2"
+    }
+  ]
+}

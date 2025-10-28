@@ -1,0 +1,232 @@
+{
+  "brand": "Loosafe",
+  "brand_id": "loosafe",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "20HS Pro",
+        "50HS Pro",
+        "80HS",
+        "A50",
+        "brary",
+        "C9F0SeZ0N0P0L0",
+        "DS-I250",
+        "HS60",
+        "LS C4",
+        "LS-C6",
+        "LS-F2",
+        "LS-F2(HX)",
+        "LS-F2-720P",
+        "LS-F2-T",
+        "ls-h6837wi",
+        "LS-R2-P",
+        "ls-sc4",
+        "ls-sc4-wi",
+        "LS-SC4-WI 720P",
+        "ls-v8",
+        "Other",
+        "P2S-N8-SG",
+        "RA50X10",
+        "wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "50HS",
+        "BRARY",
+        "C9F0SEZ0N0P0L0",
+        "IP66",
+        "LH-R6100",
+        "LS C4",
+        "LS-C6",
+        "LS-F2",
+        "LS-F2(HX)",
+        "ls-f2-720p",
+        "LS-F2-T",
+        "LS-IP36CM",
+        "LS-SC4-WI",
+        "Other",
+        "RA50X10",
+        "RA50X20",
+        "ROBOT",
+        "WIFI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "80XM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "HS50",
+        "IP66",
+        "LS-C6-20",
+        "LS-F3",
+        "LS-SC4-WI 720P",
+        "Other",
+        "RA50X20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "HS60",
+        "IP66",
+        "LH-R6100",
+        "LS-R2600",
+        "RA50X10",
+        "zach"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IP66",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP66",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP66"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "IP66",
+        "LS-IPK15",
+        "wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "IPC",
+        "LS-F2",
+        "LS-QJ10 (VR)",
+        "LS-W-IPC4",
+        "WIFI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LS C4",
+        "LS-C6",
+        "LS-F2",
+        "LS-F2(HX)",
+        "LS-F2-T",
+        "LS-IP36CM",
+        "Other",
+        "WIFI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "LS-C6",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam3/mpeg4"
+    },
+    {
+      "models": [
+        "LS-IP36CM",
+        "WIFI"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "LS-IP601",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "LS-IPC2_A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=2&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "LS-QJ10",
+        "LS-QJ10 (VR)"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "LS-W-IPC1",
+        "LS-W-IPC4"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

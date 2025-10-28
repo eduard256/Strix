@@ -1,0 +1,26 @@
+{
+  "brand": "Tinycam",
+  "brand_id": "tinycam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 8083,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1"
+    },
+    {
+      "models": [
+        "server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    }
+  ]
+}

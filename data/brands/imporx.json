@@ -1,0 +1,87 @@
+{
+  "brand": "Imporx",
+  "brand_id": "imporx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8MP 4K 600X ZOOM",
+        "IMP-HC7P08",
+        "IMP-HD5MP73-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "GartenCam",
+        "IMP-HK6127C-20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "GARTENCAM",
+        "IMP-HC7286-K20X",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "HC7286-K20X",
+        "IMP-HC7286-K20x",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/RtspTranslator.25"
+    },
+    {
+      "models": [
+        "IMP-2MP755",
+        "IMP-HD5MP73-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "IMP-3MP98A-AMZ-H",
+        "IMP-3MP98A-H",
+        "imp3mp98-amz-l",
+        "IMP-HC7286-K20X",
+        "imp-scb405ip-v10",
+        "PTZ",
+        "YC-110AR",
+        "YC-HD785R-20X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "IMP-RH6116-IR-Z",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "brand": "Iegeek",
+  "brand_id": "iegeek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0184",
+        "1080P",
+        "1080p Bullet",
+        "1080P BULLET",
+        "1MP",
+        "2 bullet",
+        "2 Meg",
+        "2 mega pixels",
+        "2.0",
+        "2.0 Mega",
+        "2.0MEGA PIXELS IP CAM",
+        "2.0Mega Pixels IP Camera",
+        "2.0Megapixels IP Camera",
+        "2MP",
+        "2MPixel Model",
+        "720",
+        "720P",
+        "809",
+        "825",
+        "B01JLZKSD8",
+        "Bell J5",
+        "Black 720P",
+        "BULLET",
+        "Bullit",
+        "bullry",
+        "C1080",
+        "C6F0SEZ3N0P5L2",
+        "C6F0SeZ3N0P612",
+        "C6F0SEZ3N0P6L2",
+        "C6F0SFZ3N0P5L2",
+        "C6F0SGZ0N0P0L0",
+        "C6F0SgZ0N0P1L0",
+        "C6F0SGZ3N0P6L2",
+        "C6F0SgZ3N0P9L2",
+        "C6F0SgZ3N0PaL2",
+        "C6F0SgZ3N0PbL2",
+        "C6F0SgZ3N0PfL2",
+        "C6F0SgZ3N0PgL2",
+        "C6F0SgZ3N0Pil2",
+        "C6F0SgZ3N0PjL2",
+        "C9F0\\SgZ3N0P8L0",
+        "C9F0SGZ3N0P6L0",
+        "C9F0SgZ3N0P8L0",
+        "Cam1",
+        "CAM2.5",
+        "CT0184",
+        "CT0186",
+        "CT0223WHUK",
+        "ct-0247",
+        "CT0247",
+        "CT0247EU",
+        "CT0247UK",
+        "CT0247US",
+        "ct0250uk",
+        "CT0262",
+        "CT0262BKUK",
+        "CT0267BKUK",
+        "CT0267BKUS",
+        "CT0277BK",
+        "CT0281BKEU",
+        "CT0281BKUK",
+        "CT0281WHEU",
+        "CT0281WHUK",
+        "CT0323BK",
+        "CT0323BKEU",
+        "ct0323bkus",
+        "CT0323WHUS",
+        "ct0414bkuk",
+        "CT0414WHEU",
+        "CT0426BKUK",
+        "CT0426WHEU",
+        "CT0426WHUK",
+        "CT247UK",
+        "CTO281WHUK",
+        "eae",
+        "External",
+        "ffice",
+        "Giardino",
+        "hd megapixel",
+        "HD MEGAPIXEL IP CAMERA",
+        "HiPcam",
+        "HIPCAM",
+        "hqyd11117g",
+        "ie20",
+        "IE20",
+        "IE50",
+        "ie60",
+        "IE82",
+        "ieGeek 10",
+        "ieGeek CT0414BKUK",
+        "iegeekipcamera",
+        "ig20",
+        "IG20",
+        "IG62",
+        "IG80",
+        "IG82",
+        "IG90",
+        "IP66",
+        "IPCAM P2P",
+        "IPDHCP",
+        "IPGeek",
+        "megapixel",
+        "Other",
+        "Outdoor IP",
+        "PPPP-116400-FCBB",
+        "riv",
+        "TC0247UK",
+        "TC247UK",
+        "UKN",
+        "unl",
+        "wifihd 1080pcamera",
+        "wireless IP camera",
+        "ZZZZ-678699-FDCBA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080p",
+        "2.0Mega pixels ip cam",
+        "20210224D0280",
+        "826",
+        "BULLET",
+        "C6F0SgZ0N0P0L0",
+        "CT0223WHUK",
+        "CT0250UK",
+        "CT0262WHUS",
+        "CT0267BKUK",
+        "ig20",
+        "ig62",
+        "IPC_1823339",
+        "IPC_469257",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "1080p",
+        "1080P BULLET",
+        "184",
+        "184B",
+        "2 mega pixels",
+        "2.0Mega pixels ip cam",
+        "2.0MEGA PIXELS IP CAM",
+        "247",
+        "4331911062",
+        "720p",
+        "826",
+        "B01JLZKSD8",
+        "bullet",
+        "BULLET",
+        "bullit",
+        "C6F0SeZ0N0P0L0",
+        "c6f0sez0n0p3l0",
+        "C6F0SEZ3N0P5L2",
+        "C6F0SEZ3N0P6L2",
+        "C6F0SfZ3N0P5L2",
+        "C6F0SgZ3N0P6L2",
+        "C6F0SgZ3N0PgL2",
+        "CT0184",
+        "CT0186",
+        "CT0223WHUK",
+        "CT0247",
+        "CT0247uk",
+        "CT0247UK",
+        "CT0247US",
+        "ct024uk",
+        "CT026",
+        "ct0262",
+        "CT0262BKEU",
+        "CT0262BKUK",
+        "CT0262WHEU",
+        "CT0262WHUK",
+        "CT0262WHUS",
+        "CT0267BKUK",
+        "CT0277BK",
+        "CT027BK",
+        "CT0281BKUK",
+        "ct0281whuk",
+        "CT0281WHUK",
+        "ct0323bkuk",
+        "CT0414BKUK",
+        "ct0608qsukig",
+        "cto247us",
+        "CTO262WHUS",
+        "EEEE066313NVXBT",
+        "HD Megapixel",
+        "HD MEGAPIXEL IP CAMERA",
+        "House",
+        "ieGeek 10",
+        "ig82 Front",
+        "ink",
+        "ipcam bullet",
+        "IPCAM P2P",
+        "Model1",
+        "Other",
+        "T0262BKUK",
+        "UKN",
+        "White-720P",
+        "wireless IP camera"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080p",
+        "1080P",
+        "c6f0sgz3n0pgl2",
+        "IG80",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "1080P",
+        "B01JLZKSD8",
+        "B01K4DRKSM",
+        "BULLET",
+        "CAM1",
+        "CT0267BKUK",
+        "IE20",
+        "Other",
+        "TTTT-396838-BNDCL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080P BULLET",
+        "2.0Mega pixels ip cam",
+        "2.0MEGA PIXELS IP CAMERA",
+        "720p",
+        "C6F0SGZ3N0P6L2",
+        "c6f0sgz3n0pgl2",
+        "IE20",
+        "IE50",
+        "ig20",
+        "ig60",
+        "IG62",
+        "IG90",
+        "IPCAM P2P",
+        "Other",
+        "P31"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "109",
+        "113",
+        "720",
+        "720p",
+        "BLACK 720P",
+        "C6F0SeZ3N0P5L2",
+        "CAM1",
+        "garden",
+        "Hoi",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "2 Meg",
+        "2 mega pixels",
+        "IE20",
+        "IE50",
+        "ie60",
+        "ieGeek CT0414BKUK",
+        "ig20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "2.0Mega pixels ip cam",
+        "2MPixel Model",
+        "ie20",
+        "IE50",
+        "ig20",
+        "Other",
+        "x.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "2.0MegaPixels IP Camera",
+        "Bell J5",
+        "ZS-GX5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "720",
+        "720P",
+        "bullit",
+        "ct0281bkuk",
+        "IG20",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "826"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpeg"
+    },
+    {
+      "models": [
+        "826",
+        "ie82",
+        "IG62",
+        "TTTT-067378-BDMYZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "B01JLZKSD8",
+        "ct0281bkuk",
+        "Other",
+        "ukn",
+        "White-720P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "BULLET",
+        "CT0247UK",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "CCTV",
+        "ct0267",
+        "CT067BKUK"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "IE60"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1jfiegbr5yoeq_p0_FABRULIMVYCL"
+    },
+    {
+      "models": [
+        "ig20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg"
+    },
+    {
+      "models": [
+        "ig20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "UKN"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "wireless IP camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    }
+  ]
+}

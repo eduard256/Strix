@@ -1,0 +1,17 @@
+{
+  "brand": "Podofo",
+  "brand_id": "podofo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SH4AMPOD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Onvif/live/1/1"
+    }
+  ]
+}

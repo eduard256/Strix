@@ -1,0 +1,503 @@
+{
+  "brand": "Flir",
+  "brand_id": "flir",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "14TF3",
+        "6206",
+        "A310f",
+        "AX8",
+        "cm-6206",
+        "d33",
+        "DNB13TF2",
+        "ee3",
+        "KENYON",
+        "Lorex",
+        "N133ED",
+        "NVR",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "6202",
+        "CB-6408-21-1",
+        "CC-3103-01",
+        "cc-3308",
+        "CM-3102-11",
+        "CM-3202-11-I",
+        "FB 695",
+        "FH-669",
+        "FXV101-H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "6202",
+        "CM-3102-11"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "6206",
+        "A310f",
+        "D Series",
+        "DNB13TF2",
+        "F-313",
+        "FC-317-ID",
+        "FC-363-PAL",
+        "FC-645 S",
+        "Other",
+        "PT606"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0"
+    },
+    {
+      "models": [
+        "6206",
+        "Lorex",
+        "P143E4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=QWRtaW46MTIzNA=="
+    },
+    {
+      "models": [
+        "6206"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46OFM9KmdjI2c="
+    },
+    {
+      "models": [
+        "a310f"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "a310f",
+        "LNB4421B",
+        "LNE8950AB",
+        "LOREX",
+        "N258F5",
+        "NVR",
+        "Other",
+        "PE133E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "A400",
+        "A50",
+        "A70",
+        "A700",
+        "AX8",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/avc"
+    },
+    {
+      "models": [
+        "AX8",
+        "E75",
+        "LOREX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "D",
+        "F",
+        "FC-324-RN-NTSC",
+        "PT Series"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0"
+    },
+    {
+      "models": [
+        "DNB13TF2",
+        "DNE12TL2",
+        "LNB4421B",
+        "M3116EX-D",
+        "n133",
+        "N133BB",
+        "N233EE",
+        "N233zc",
+        "N336ZD1",
+        "NVR",
+        "Other",
+        "PE133",
+        "PE133E",
+        "PE133F",
+        "Players Ramp"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DNB13TF2",
+        "LOREX",
+        "N133BD",
+        "N233BE",
+        "N233EE",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DNB13TF2",
+        "LNB4321B",
+        "LOREX",
+        "m-3245",
+        "N133",
+        "N133BB",
+        "N133BD",
+        "n133eb",
+        "N133ED",
+        "N233EE",
+        "N233VE",
+        "N243EW2",
+        "N243vw4",
+        "N253V8",
+        "N336ZD1",
+        "N347VW4",
+        "nvr",
+        "Other",
+        "pe133f"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "DNE12TL2",
+        "LOREX",
+        "N233VE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch07/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch09/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch02/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch012/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch10/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch05"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch05/0"
+    },
+    {
+      "models": [
+        "Lorex"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch03/0"
+    },
+    {
+      "models": [
+        "LOREX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "LOREX",
+        "N233BE",
+        "Other",
+        "PT SERIES"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "M3108EX",
+        "N233zc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=2&subtype=0"
+    },
+    {
+      "models": [
+        "M364C LR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/ir.1"
+    },
+    {
+      "models": [
+        "M364C LR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/ir.0"
+    },
+    {
+      "models": [
+        "N133BB",
+        "N133ED",
+        "N253V8"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "N133BD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "N133BD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=0"
+    },
+    {
+      "models": [
+        "N133ED"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=0&resolution=320x240"
+    },
+    {
+      "models": [
+        "N133ED"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1&resolution=320x240"
+    },
+    {
+      "models": [
+        "N233BE",
+        "N233EE",
+        "PE133",
+        "PE133E"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "N233EE",
+        "PE133F"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "N233EE",
+        "ThermiCam 2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "N233zc"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=4&subtype=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "PB133F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true"
+    },
+    {
+      "models": [
+        "PE133F"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=&loginpas="
+    },
+    {
+      "models": [
+        "PTZ-35x140"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "vis"
+    },
+    {
+      "models": [
+        "PTZ-35x140"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "wfov"
+    },
+    {
+      "models": [
+        "Q-See"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch04/0"
+    }
+  ]
+}

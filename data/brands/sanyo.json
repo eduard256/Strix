@@ -1,0 +1,42 @@
+{
+  "brand": "Sanyo",
+  "brand_id": "sanyo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3300",
+        "Other",
+        "vcc-hd2500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    },
+    {
+      "models": [
+        "HD 5400",
+        "hd5400",
+        "hd-5400p",
+        "HD5600",
+        "VCC HD2500P",
+        "VCC-MCH5600P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/h264/1"
+    },
+    {
+      "models": [
+        "VDC-HD3300P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/VideoInput/1/h264/1"
+    }
+  ]
+}

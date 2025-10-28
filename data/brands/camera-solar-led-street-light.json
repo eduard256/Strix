@@ -1,0 +1,17 @@
+{
+  "brand": "Camera Solar Led Street Light",
+  "brand_id": "camera-solar-led-street-light",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LX-LD15W-S3C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

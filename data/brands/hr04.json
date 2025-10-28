@@ -1,0 +1,17 @@
+{
+  "brand": "Hr04",
+  "brand_id": "hr04",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jstream.cgi?chid=[CHANNEL]&cnt=0"
+    }
+  ]
+}

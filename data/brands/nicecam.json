@@ -1,0 +1,17 @@
+{
+  "brand": "Nicecam",
+  "brand_id": "nicecam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080LVD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    }
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "brand": "Sv3c",
+  "brand_id": "sv3c",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10-11080P PTZ",
+        "1080P HD",
+        "1080p hx",
+        "1080P HX2",
+        "1080P M",
+        "1080P POE",
+        "1080P PTZ",
+        "1080P VArifocal",
+        "1080p Wifi Cam",
+        "1080ps-hx",
+        "135",
+        "136SE42",
+        "1861080P PTZ",
+        "2031080P PTZ",
+        "3mp",
+        "4k Poe",
+        "4mp",
+        "5MP POE",
+        "720",
+        "960",
+        "960P",
+        "960P HD",
+        "AAA3",
+        "admin",
+        "B01P0E",
+        "B01POE",
+        "B01POE-1080P",
+        "B01POE-5MPL-A2",
+        "b01w",
+        "B01W-960P",
+        "B01W-960P-HX",
+        "b06",
+        "B06POE",
+        "B06POE-5MP-HX",
+        "B06W-5MP-HX",
+        "b06w720hx",
+        "B08POE-8MP-A",
+        "B08W",
+        "B08W-5MP-HX",
+        "B09W-5MP:",
+        "B16VW-3MP-HX",
+        "B16VW-5MP-HX",
+        "B8-3MP-HX",
+        "bp01",
+        "Bullet",
+        "c11",
+        "C25-UK",
+        "C6F0S",
+        "C6F0SoZ0N0PnL2",
+        "C6F0SoZ3N0PfL2",
+        "C6F0SoZ3N0PlL2",
+        "D02POE-1080P",
+        "D02POE-1080P-L",
+        "D05POE-1080P-HX",
+        "dome",
+        "HD 960P",
+        "HD WIFI",
+        "HI3518EV200",
+        "hp1900",
+        "HX Series (WiFi)",
+        "HX02",
+        "HX1080P",
+        "idk",
+        "L series",
+        "L Series",
+        "MMMM-231680-AFDAE",
+        "Other",
+        "poe",
+        "poe 1080",
+        "poe hx",
+        "POE1080P",
+        "POE1081P",
+        "Property Entry",
+        "Rea",
+        "SC-B01-POE-1080P",
+        "Sco",
+        "SD10W",
+        "SD5W-1080PS-HX",
+        "SD7POE-8MP-HX",
+        "SD7W-1080PS-HX",
+        "sd7w-5mp-hx",
+        "SD8POE-5MP-HX",
+        "SD9W-1080P",
+        "sd9w-1080p-hx",
+        "SUPER HD 5MP",
+        "SV3C 5MP PTZ",
+        "SV3C 720P WiFi Security Camera",
+        "SV3C-SV-B06W",
+        "SV-806W-1080P",
+        "SV-B01-1080PL",
+        "SV-B01POE-1080-L",
+        "SV-B01POE-1080P",
+        "sv-b01poe-1080p-l",
+        "SV-B01W",
+        "SV-B01W-1080P",
+        "SV-B01W-1080P-HX",
+        "SV-B01W-906P",
+        "SVB01W-960P",
+        "SV-B01W-960P",
+        "SV-B01W-960P-HX",
+        "SV-B06POE-1080P-A",
+        "SV-B06W",
+        "SV-B06W-1080P",
+        "SV-B06W-1080P-HX",
+        "SV-B06W-1080P-HX",
+        "SV-B06W-720P",
+        "sv-b06w-720p-hx",
+        "SV-B07W-1080P-HX",
+        "SV-B11VPOE-1080-L",
+        "SV-B11VPOE-1080P",
+        "SV-B11VPOE-1080P-L",
+        "SV-BO1POE",
+        "SV-BO1POE-1080P",
+        "sv-bo1w-960p-hx",
+        "SV-BO6W-1080P-HX",
+        "SV-BO6W-720P",
+        "sv-bo6w-720p-hx",
+        "sv-d02w-720p-hx",
+        "sv-do2poe-1080p",
+        "sv-do2poe-1080p-l",
+        "SV-SD5W-1080PS-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1048HD PoE",
+        "1080",
+        "1080P POE",
+        "1080P PTZ",
+        "1080poe",
+        "3mp",
+        "5MP",
+        "AO2 8mp",
+        "B06POE",
+        "B08POE",
+        "B08POE-5MPL-A",
+        "bo1poe-3mpl-A",
+        "D02POE-1080P",
+        "D02POE-3mpl-a",
+        "D1080POE",
+        "Other",
+        "sd9w-1080p",
+        "SV-B01POE-5MPL-A",
+        "SV-B08POE-5MPL-A",
+        "SV-DO2POE-1080P-L",
+        "sw9d"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "1080",
+        "1080p",
+        "1080P hd",
+        "1080P HX",
+        "1080P POE",
+        "1080P WIFI CAM",
+        "1080POE",
+        "5MP PTZ",
+        "720P",
+        "790p",
+        "960P",
+        "B02W-720P",
+        "B06",
+        "B06W",
+        "B06W HX",
+        "B06W-5MP-HX-2",
+        "b06w-720p",
+        "B08W-5MP-HX",
+        "B09W-5MP",
+        "BULLET",
+        "C6F0SEZ3N0P6L2",
+        "hd 960p",
+        "hd camera",
+        "HD WIFI",
+        "HX Series",
+        "HX1080p",
+        "Other",
+        "ptz",
+        "SD5W-1080PS-HX",
+        "SV-806W-1080P",
+        "SV-B01W",
+        "SV-B01W-906P",
+        "sv-b01w-960-p",
+        "SVB01W-960P",
+        "SV-B01W-960P",
+        "SV-B01W-960P ndm",
+        "SV-B02W",
+        "SV-B06POE-5MP HX",
+        "SV-B06w",
+        "SV-B06W-1080P-HX",
+        "SV-B06W-720P",
+        "SV-B06W-720P-HX",
+        "sv-b07",
+        "sv-bo1poe-1080pl"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080",
+        "5MP PTZ",
+        "B08POE-8MP-A",
+        "Dome",
+        "SD8W-5MP-HX",
+        "sv3c 5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream0"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P HD",
+        "1080P PTZ",
+        "B01P0E",
+        "HX1080P",
+        "Other",
+        "SV-B01POE-5MPL-A",
+        "SV-B06POE-4MP-A",
+        "SV-D02POE-5mp",
+        "SV-DO2POE-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIFI CAM",
+        "960P",
+        "abc",
+        "B08W",
+        "BULLET",
+        "HD WIFI",
+        "Other",
+        "ptz",
+        "SV-301W-960P-JP",
+        "sv3c HD 960p",
+        "SV-B01W",
+        "SV-B01W-1080o",
+        "SV-B01W-1080P",
+        "sv-b06w-720-hx",
+        "SV-B06W-720P",
+        "SV-B06W-720P-HX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080p hx",
+        "720P",
+        "B01POE-5MPL-A",
+        "B06W HX",
+        "B06W-5MP-HX",
+        "B08POE-8MP-A",
+        "B09W-5MP:",
+        "C10",
+        "C13-2",
+        "C15",
+        "C25-UK",
+        "HX02",
+        "mega pixel",
+        "N series",
+        "Other",
+        "SD10W-5MP",
+        "SD8W-5MP-HX",
+        "SD9W-1080P",
+        "SV3C 5MP",
+        "SV3C 5MP PTZ",
+        "SV-B01W-960P-HX",
+        "SV-B06w",
+        "sv-bo6w-720p-hx",
+        "SV-BO6W-720P-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "B06",
+        "SVB06POE",
+        "SV-D13POE-5MPL-A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "Other",
+        "SV-B01POE-5MPL-T"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "1080P POE",
+        "B01POE-5MPL-T",
+        "B08POE-5MPL-A",
+        "BO8POE",
+        "D02POE-1080P",
+        "Other",
+        "poe",
+        "sv-b06poe-1080p",
+        "SV-DO2POE-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "1080P POE",
+        "4MP",
+        "H.265",
+        "Other",
+        "sv-b01poe-5mpl-t",
+        "SV-BO1POE-1080P",
+        "SV-DO2POE-1080P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "1080P HD",
+        "B01POE-5MPL-T"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080p hx"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "Other",
+        "SD6W-1080ps-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/TTTT-748045-HBNGS:ChickensRock21/main"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "SD8W-5MP-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/IPCAM:Summer_2021/main"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "Super HD 5MP",
+        "SV-B01POE-5MPL-A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "sv3c HD 960p",
+        "SV-B01W-1080P-HX",
+        "sv-b06poe-1080p",
+        "SV-B06POE-1080P-A"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/control/faststream.jpg?stream=MxPEG&needlength&fps=6"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "SVB06POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "960P",
+        "L series",
+        "SV-B01W-960P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "960P",
+        "SV-B01W",
+        "SVB01W-960P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "B01POE-5MPL-A",
+        "B06POE",
+        "D02POE-3MPL-A",
+        "H.265",
+        "SV-B01POE-1080-L",
+        "SV-B01POE-5MPL-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "1080P POE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "hd wifi",
+        "SV-B01W",
+        "SV-B06W-720P-HX"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080P POE",
+        "1080P PTZ",
+        "HD06-1080p",
+        "l series",
+        "SD5W-1080PS-HX",
+        "SD8W-5MP-HX",
+        "SV-B06W",
+        "SV-B06W-720P"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "1080P PTZ",
+        "sv3c 5MP",
+        "SV-B01POE-5MPL-A",
+        "SV-D13POE-5MPL-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "2K WiFi Security Camera Outdoor",
+        "5MP PTZ",
+        "c16 cloud",
+        "c18",
+        "C19",
+        "PTZ 5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "720",
+        "SV-B01W-906P",
+        "SV-D02W-960P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "960P",
+        "SV-B01W-960P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "A series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "B01POE-5MPL-A2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "B08POE-8MP-A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "B10POE-5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "BULLET"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "Other",
+        "SV-B01POE-5MPL-T"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SD10W-5MP",
+        "SD8W-5MP-HX"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "SD8POE-5MP-HX",
+        "SV3C HX",
+        "SVB06POE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SV-301W-960P-JP",
+        "SV3C 720P WiFi Security Camera",
+        "SV3C-SV-B06W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "sv3c HD 960p"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0"
+    },
+    {
+      "models": [
+        "SV-B01W-960P"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "sv-b06poe-1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "sv-b06poe-1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

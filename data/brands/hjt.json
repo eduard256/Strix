@@ -1,0 +1,99 @@
+{
+  "brand": "Hjt",
+  "brand_id": "hjt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6100",
+        "6200",
+        "720",
+        "720p",
+        "AS-IP1250",
+        "C6F0SeZ0N0P0L0",
+        "HJT-IPC6100--B1W",
+        "IPC6200-B1W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "6200",
+        "AS-IP1250",
+        "aw0103010e05a",
+        "HJT-IPC6100--B1W",
+        "HJT-IPC6200-B1",
+        "Hongjuingtian",
+        "IP Camera2",
+        "IPC6200B1",
+        "IPC6200-B2W",
+        "IPC620-B2W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "AS-IP1250"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C6F0SgZ3NOPaL2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "IP C6500-B5"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC6200B1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

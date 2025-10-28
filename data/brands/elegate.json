@@ -1,0 +1,17 @@
+{
+  "brand": "Elegate",
+  "brand_id": "elegate",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "izazaga19_caja"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live1.264"
+    }
+  ]
+}

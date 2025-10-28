@@ -1,0 +1,17 @@
+{
+  "brand": "Homeviz",
+  "brand_id": "homeviz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ob10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8899,
+      "url": "/"
+    }
+  ]
+}

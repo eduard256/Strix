@@ -1,0 +1,41 @@
+{
+  "brand": "Dallmeier",
+  "brand_id": "dallmeier",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DDF4820",
+        "DDF4920",
+        "DDF4920IR",
+        "DF4510",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "DF4910HD-DN",
+        "DF5140HD",
+        "MDF4220HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "encoder[CHANNEL]"
+    }
+  ]
+}

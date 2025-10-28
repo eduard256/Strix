@@ -1,0 +1,185 @@
+{
+  "brand": "Siemens",
+  "brand_id": "siemens",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CCIC-1410-L",
+        "CCIC-1410-LA",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "CCIC-1410-ST",
+        "CCMC-1315-LP",
+        "CFMS-2025"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "CCIS1345"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "CCIS1345",
+        "CCIS1425",
+        "CCMX-1315",
+        "CFMC-1315LP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "livestream"
+    },
+    {
+      "models": [
+        "CCIS-1345"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "CCIS-1345"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "CCIS1425"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "CCIS-1425",
+        "CCMC-1315-LP",
+        "CCMS 2010-IR",
+        "CCMS-1315-LP",
+        "CFMS-2025",
+        "cvms2025-ir",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stilljpeg"
+    },
+    {
+      "models": [
+        "CCIS-1425",
+        "CFMS-2025"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/getstream.cgi?VideoType=3"
+    },
+    {
+      "models": [
+        "CCMC-1315-LP",
+        "CCMS-1315",
+        "CCMS-1315-LP",
+        "CFMC-1315LP",
+        "CFMS-2025",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "CCMD3025-DN18",
+        "CCMS-1315"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/getstream.cgi?VideoType=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CCMS2010-IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "CCMS2010-IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "CCMS-2025",
+        "CFMS-2025"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "CCMS-2025",
+        "CFMS2025",
+        "CVMS2025-IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/livestream/trackID=1"
+    },
+    {
+      "models": [
+        "CFMS-2025"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/getstream.cgi"
+    },
+    {
+      "models": [
+        "CVMW-3025",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    }
+  ]
+}

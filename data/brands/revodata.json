@@ -1,0 +1,46 @@
+{
+  "brand": "Revodata",
+  "brand_id": "revodata",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "I712-P-TS-RD",
+        "1706-P-A",
+        "1712-P-TS",
+        "5MP POE mini IP",
+        "Fisheye 180",
+        "I704-P-TS",
+        "I708-P-HS 1616P",
+        "I712-P-HS",
+        "MainStream",
+        "Other",
+        "PA4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "HD 5MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "I3006-P-Audio-FHW",
+        "SW2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    }
+  ]
+}

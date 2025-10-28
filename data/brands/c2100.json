@@ -1,0 +1,54 @@
+{
+  "brand": "C2100",
+  "brand_id": "c2100",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2rmo",
+        "Altan",
+        "camera1",
+        "CHUNGA",
+        "Other",
+        "tapo",
+        "Tapo C200",
+        "Tapo-c200",
+        "TPL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "Acam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel1"
+    },
+    {
+      "models": [
+        "c100",
+        "c210",
+        "TPlink"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream2"
+    },
+    {
+      "models": [
+        "c200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream8"
+    }
+  ]
+}

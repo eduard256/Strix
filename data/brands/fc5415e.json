@@ -1,0 +1,18 @@
+{
+  "brand": "Fc5415e",
+  "brand_id": "fc5415e",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "winbok",
+        "winbook"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 52623,
+      "url": "/videoMain"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "brand": "Cootli",
+  "brand_id": "cootli",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "R80XD30-PQ",
+        "R80XD550-PQ_8M",
+        "X4C-WQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "X4C-WQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    }
+  ]
+}

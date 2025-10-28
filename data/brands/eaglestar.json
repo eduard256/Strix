@@ -1,0 +1,17 @@
+{
+  "brand": "Eaglestar",
+  "brand_id": "eaglestar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EAGLESTAR PRO"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    }
+  ]
+}

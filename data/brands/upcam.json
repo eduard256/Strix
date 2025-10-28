@@ -1,0 +1,34 @@
+{
+  "brand": "Upcam",
+  "brand_id": "upcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cyclone",
+        "Cyclone HD",
+        "Cyclone HD s+",
+        "Horizon",
+        "Hurricane",
+        "Other",
+        "Tornado HD",
+        "Vortex HD Pro"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "Cyclone HD",
+        "TORNADO HD"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Fhd-2mp",
+  "brand_id": "fhd-2mp",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Senecta"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_0"
+    }
+  ]
+}

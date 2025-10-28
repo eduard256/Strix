@@ -1,0 +1,17 @@
+{
+  "brand": "Ipfd200",
+  "brand_id": "ipfd200",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPID-2MPIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream.sdp1"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "Webgate",
+  "brand_id": "webgate",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HTC1610H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 60010,
+      "url": "/ch5/stream2"
+    },
+    {
+      "models": [
+        "HTC1610H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 60010,
+      "url": "/ch1/stream2"
+    },
+    {
+      "models": [
+        "HTC1610H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 60010,
+      "url": "/ch2/stream2"
+    }
+  ]
+}

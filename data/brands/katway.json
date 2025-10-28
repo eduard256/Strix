@@ -1,0 +1,36 @@
+{
+  "brand": "Katway",
+  "brand_id": "katway",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3516C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264/sub"
+    },
+    {
+      "models": [
+        "3518C0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264/ch1/sub"
+    },
+    {
+      "models": [
+        "cam20-a-2",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

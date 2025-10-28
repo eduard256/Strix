@@ -1,0 +1,18 @@
+{
+  "brand": "Topway",
+  "brand_id": "topway",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4ch",
+        "DVR 4 CH"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    }
+  ]
+}

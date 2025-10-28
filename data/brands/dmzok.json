@@ -1,0 +1,21 @@
+{
+  "brand": "Dmzok",
+  "brand_id": "dmzok",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P WiFi Camera",
+        "DMW5820",
+        "Other",
+        "P105",
+        "PTZ1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

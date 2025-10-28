@@ -1,0 +1,26 @@
+{
+  "brand": "Soar",
+  "brand_id": "soar",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "971"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 85,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "971"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/media/video1"
+    }
+  ]
+}

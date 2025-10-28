@@ -1,0 +1,47 @@
+{
+  "brand": "Polyvision",
+  "brand_id": "polyvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-IP5ZWNF28PF",
+        "PVC-IP2Y-D1F2.8P",
+        "PVC-IP2Y-DV5PA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/sub"
+    },
+    {
+      "models": [
+        "Other",
+        "PD20-M2-B3",
+        "PD-3.6",
+        "PDL",
+        "PDL-IP2-V13P v.5.4.9",
+        "PDM-IP1",
+        "PN-IP2-B3.6",
+        "PNM-IP2-V12",
+        "PVC-IP2M",
+        "PVC-IP2M-DF2.8PA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "PVC-IP2Y-D1F2.8P",
+        "PVC-IP2Y-DV5PA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    }
+  ]
+}

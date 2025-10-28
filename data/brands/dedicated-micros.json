@@ -1,0 +1,49 @@
+{
+  "brand": "Dedicated Micros",
+  "brand_id": "dedicated-micros",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CamVu DN",
+        "dedicated micros eco dvr",
+        "DS2",
+        "eco dvr",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "display_pic.cgi?cam=[CHANNEL]&res=hi"
+    },
+    {
+      "models": [
+        "CamVu DN"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias[CHANNEL]"
+    },
+    {
+      "models": [
+        "CamVU DN",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    }
+  ]
+}

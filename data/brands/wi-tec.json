@@ -1,0 +1,17 @@
+{
+  "brand": "Wi-tec",
+  "brand_id": "wi-tec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "WI-2806BW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    }
+  ]
+}

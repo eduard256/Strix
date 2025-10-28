@@ -1,0 +1,37 @@
+{
+  "brand": "Blitzwolf",
+  "brand_id": "blitzwolf",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B1W",
+        "BW-SCI1",
+        "BW-SIC1",
+        "First",
+        "Other",
+        "SIC1",
+        "smart camera",
+        "smartcam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/1.3gp"
+    },
+    {
+      "models": [
+        "B1W",
+        "BW-SCI1",
+        "BW-SIC1",
+        "SIC1",
+        "smart camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/2.3gp"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Av12176dn-15",
+  "brand_id": "av12176dn-15",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "av12176dn"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264.sdp1"
+    },
+    {
+      "models": [
+        "av12176dn"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264.sdp2"
+    }
+  ]
+}

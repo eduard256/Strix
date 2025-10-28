@@ -1,0 +1,17 @@
+{
+  "brand": "Levscam",
+  "brand_id": "levscam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "551TF"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    }
+  ]
+}

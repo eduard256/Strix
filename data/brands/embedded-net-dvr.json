@@ -1,0 +1,238 @@
+{
+  "brand": "Embedded Net Dvr",
+  "brand_id": "embedded-net-dvr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1234",
+        "255",
+        "DVR",
+        "HAR304-16",
+        "HIKVISON"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/702"
+    },
+    {
+      "models": [
+        "126127985",
+        "255",
+        "7208",
+        "Bytek",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8002,
+      "url": "/Streaming/Unicast/channels/101"
+    },
+    {
+      "models": [
+        "126127985",
+        "255",
+        "Bytek"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8002,
+      "url": "/Streaming/Unicast/channels/301"
+    },
+    {
+      "models": [
+        "1604"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/1301"
+    },
+    {
+      "models": [
+        "255",
+        "bytek"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/401"
+    },
+    {
+      "models": [
+        "255",
+        "epcom"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/201"
+    },
+    {
+      "models": [
+        "255",
+        "7208",
+        "analog0",
+        "analog1",
+        "dvr",
+        "ev1016hdx",
+        "FFMPEG",
+        "HAR304-16",
+        "Other",
+        "SC16IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "255",
+        "anal2",
+        "analog1",
+        "HAR304-16",
+        "Other",
+        "SC16IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/201"
+    },
+    {
+      "models": [
+        "255",
+        "FFMPEG",
+        "HAR304-16",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/301"
+    },
+    {
+      "models": [
+        "255"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/501"
+    },
+    {
+      "models": [
+        "255"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/601"
+    },
+    {
+      "models": [
+        "255"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/701"
+    },
+    {
+      "models": [
+        "255"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Unicast/channels/801"
+    },
+    {
+      "models": [
+        "7104"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1024,
+      "url": "/Streaming/Unicast/channels/202"
+    },
+    {
+      "models": [
+        "dvr"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "ffmpeg",
+        "HAR304-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/402"
+    },
+    {
+      "models": [
+        "FFMPEG"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/202"
+    },
+    {
+      "models": [
+        "HAR304-16",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/401"
+    },
+    {
+      "models": [
+        "HAR304-16",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/501"
+    },
+    {
+      "models": [
+        "HAR304-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/601"
+    },
+    {
+      "models": [
+        "HAR304-16"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/channels/502"
+    },
+    {
+      "models": [
+        "PLBN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/802"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "brand": "Google",
+  "brand_id": "google",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "d820",
+        "Nexus",
+        "Nexus 4",
+        "Nexus 5",
+        "nexus 6",
+        "Nexus 7",
+        "nexus5",
+        "nexus7",
+        "Pixel",
+        "Pixel XL"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Nest"
+      ],
+      "type": "MJPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/get_image?uuid=8ce29a75e847488797e1a32122fb6fc8&public=0FFS3vFQ9I"
+    },
+    {
+      "models": [
+        "Pixel",
+        "Pixel 2XL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 8080,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Pixel"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/videofeed"
+    }
+  ]
+}

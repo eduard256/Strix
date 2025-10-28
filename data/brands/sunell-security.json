@@ -1,0 +1,26 @@
+{
+  "brand": "Sunell Security",
+  "brand_id": "sunell-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BD",
+        "BD-Z",
+        "CAM01IPR54/12ND",
+        "IPR54/12ND",
+        "IPR-5440APDN",
+        "IPS-56",
+        "IPV56/41ZDR/B",
+        "IPVv56/41ZDR/B",
+        "Other",
+        "sn-ipv57/02efdr/b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/snl/live/1/2"
+    }
+  ]
+}

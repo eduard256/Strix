@@ -1,0 +1,17 @@
+{
+  "brand": "Dali-tech",
+  "brand_id": "dali-tech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "D8X3NT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ONVIFMedia"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "brand": "Iqinvision",
+  "brand_id": "iqinvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "811",
+        "IQA32N",
+        "IQeye811"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg?snap=spush"
+    },
+    {
+      "models": [
+        "A10N"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "AZ032S",
+        "AZ765N",
+        "AZD075",
+        "iq765n",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg"
+    },
+    {
+      "models": [
+        "IQ032S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/now.jpg"
+    },
+    {
+      "models": [
+        "IQeye752"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/now.jpg?snap=spush"
+    }
+  ]
+}

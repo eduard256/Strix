@@ -1,0 +1,32 @@
+{
+  "brand": "Kingcam",
+  "brand_id": "kingcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "DS-F3",
+        "IP100",
+        "ip-cam 100",
+        "IPCAM-100",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "IPCAM-100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Xmate",
+  "brand_id": "xmate",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "vue"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "brand": "Compro",
+  "brand_id": "compro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CS40",
+        "CS400P",
+        "CS530",
+        "cs80",
+        "IP100",
+        "IP530",
+        "IP55",
+        "IP570",
+        "IP70",
+        "IP90",
+        "NC150/420/500",
+        "NC2200",
+        "NC2220",
+        "tn1600p",
+        "TN1600W",
+        "TN30",
+        "TN30W",
+        "TN50",
+        "TN500LR",
+        "TN500MR",
+        "TN500W",
+        "TN600",
+        "TN80",
+        "tn80w",
+        "tn900",
+        "tn920",
+        "TN95"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CS40",
+        "CS400P",
+        "IP50/70",
+        "IP540",
+        "IP540p",
+        "IP540P",
+        "IP55",
+        "IP55/60",
+        "IP550P",
+        "IP70",
+        "IP90P",
+        "NC3230",
+        "Other",
+        "TN1500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias[CHANNEL]"
+    },
+    {
+      "models": [
+        "CS400P",
+        "IP540P",
+        "IP55/60",
+        "IP70",
+        "IP90P"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "CS60",
+        "nc1200",
+        "TN80W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/medias2"
+    },
+    {
+      "models": [
+        "IP350",
+        "IP50/70",
+        "IP540",
+        "IP55/60",
+        "IP550P",
+        "IP70",
+        "IP70W",
+        "Other",
+        "TN1600W",
+        "TN30W",
+        "TN50",
+        "TN500W",
+        "TN50W",
+        "tn900"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP350",
+        "IP50/70",
+        "IP530",
+        "ip530w",
+        "IP540",
+        "IP55/60",
+        "IP570",
+        "IP70",
+        "IP70W",
+        "NC150/420/500",
+        "TN30W",
+        "tn80w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "IP350",
+        "IP50/70",
+        "IP530",
+        "IP540",
+        "IP55/60",
+        "IP570",
+        "IP70",
+        "NC150/420/500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpegStreamer.cgi"
+    },
+    {
+      "models": [
+        "IP50/70",
+        "IP540",
+        "IP55/60",
+        "IP570",
+        "IP70",
+        "NC2200",
+        "NC2220",
+        "TN920"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "IP50/70",
+        "IP530W",
+        "IP540",
+        "IP55/60",
+        "IP550P",
+        "IP570",
+        "IP70",
+        "IP70W",
+        "Main Entrance Int",
+        "Other",
+        "TN2200",
+        "TN30W",
+        "TN50",
+        "TN60",
+        "TN900",
+        "tn920",
+        "TN920"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias2"
+    },
+    {
+      "models": [
+        "IP570",
+        "TN30W",
+        "TN500W",
+        "tn80w",
+        "TN920"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP70",
+        "NC150/420/500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP70"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on"
+    },
+    {
+      "models": [
+        "IP70"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/mjpeg"
+    },
+    {
+      "models": [
+        "IP70"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/[CHANNEL]/media.amp"
+    },
+    {
+      "models": [
+        "NC150/420/500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "NC150/420/500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "NC150/420/500"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cgi-bin/rtspStream/[CHANNEL]"
+    },
+    {
+      "models": [
+        "TN 900R",
+        "tn900"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0"
+    },
+    {
+      "models": [
+        "TN600",
+        "tn600w",
+        "TN80W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot[CHANNEL].jpg"
+    }
+  ]
+}

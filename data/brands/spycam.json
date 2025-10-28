@@ -1,0 +1,26 @@
+{
+  "brand": "Spycam",
+  "brand_id": "spycam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Mini"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/hi3510/snap.cgi?&-getstream&-chn=2"
+    },
+    {
+      "models": [
+        "SQ29"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

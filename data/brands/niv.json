@@ -1,0 +1,17 @@
+{
+  "brand": "Niv",
+  "brand_id": "niv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "White"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    }
+  ]
+}

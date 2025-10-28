@@ -1,0 +1,19 @@
+{
+  "brand": "Electriq",
+  "brand_id": "electriq",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IQ-31FX",
+        "iq-51fx",
+        "IQ-51FX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

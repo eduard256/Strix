@@ -1,0 +1,36 @@
+{
+  "brand": "Fortinet",
+  "brand_id": "fortinet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FD40"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": "/"
+    },
+    {
+      "models": [
+        "FD40",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8008,
+      "url": ""
+    },
+    {
+      "models": [
+        "FortiCam-MD20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_1"
+    }
+  ]
+}

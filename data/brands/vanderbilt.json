@@ -1,0 +1,29 @@
+{
+  "brand": "Vanderbilt",
+  "brand_id": "vanderbilt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CVMS1310-IR",
+        "CVMS2011-IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "GATOTHER",
+        "Other",
+        "STANF OTHER"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/ch00_0"
+    }
+  ]
+}

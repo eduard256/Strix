@@ -1,0 +1,44 @@
+{
+  "brand": "Topodome",
+  "brand_id": "topodome",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP66",
+        "S503B",
+        "S50B",
+        "td10c",
+        "TD-J10A",
+        "TD-S10C",
+        "TD-S50B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "S40B",
+        "TD-J10A",
+        "TD-S10C",
+        "td-s50b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "TD-S10C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

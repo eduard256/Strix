@@ -1,0 +1,17 @@
+{
+  "brand": "Spetslab",
+  "brand_id": "spetslab",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "videoserv"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpg/1/video.mjpg"
+    }
+  ]
+}

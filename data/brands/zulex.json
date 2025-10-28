@@ -1,0 +1,18 @@
+{
+  "brand": "Zulex",
+  "brand_id": "zulex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC-1VB-E1.40",
+        "IPC-2MD-E1.28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif-stream1"
+    }
+  ]
+}

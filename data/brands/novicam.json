@@ -1,0 +1,47 @@
+{
+  "brand": "Novicam",
+  "brand_id": "novicam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "133",
+        "N12W",
+        "n22w",
+        "nc29wp",
+        "nc30",
+        "novicam n22w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "basic",
+        "basic 30",
+        "Basic30",
+        "NC13WP",
+        "NC24FP",
+        "PRO 22",
+        "pro 225"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "FR1208",
+        "NC49WP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

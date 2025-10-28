@@ -1,0 +1,21 @@
+{
+  "brand": "Isotect",
+  "brand_id": "isotect",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Genaric",
+        "h.265",
+        "K9608-W",
+        "Other",
+        "strong version"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

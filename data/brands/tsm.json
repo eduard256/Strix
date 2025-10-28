@@ -1,0 +1,27 @@
+{
+  "brand": "Tsm",
+  "brand_id": "tsm",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ipzd500",
+        "IPZW400"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "IPZW400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    }
+  ]
+}

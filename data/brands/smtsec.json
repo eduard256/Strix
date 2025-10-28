@@ -1,0 +1,19 @@
+{
+  "brand": "Smtsec",
+  "brand_id": "smtsec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "H15HP",
+        "SIP-E0312-178D",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    }
+  ]
+}

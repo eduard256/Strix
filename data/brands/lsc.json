@@ -1,0 +1,90 @@
+{
+  "brand": "Lsc",
+  "brand_id": "lsc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "802"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "Doorbell"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "Indoor smart camera",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Indoor smart IP Camera 1080p"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/main"
+    },
+    {
+      "models": [
+        "Indoor WEB Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "outdoor ip cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0&onvif=0.sdp?real_st"
+    },
+    {
+      "models": [
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live/ch0"
+    }
+  ]
+}

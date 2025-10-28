@@ -1,0 +1,35 @@
+{
+  "brand": "Docker Wyze Bridge",
+  "brand_id": "docker-wyze-bridge",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Flood Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/floodlight-cam"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtmp",
+      "port": 1935,
+      "url": "/sideway-cam"
+    },
+    {
+      "models": [
+        "Wyze"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/aurora"
+    }
+  ]
+}

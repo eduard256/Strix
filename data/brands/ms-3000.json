@@ -1,0 +1,17 @@
+{
+  "brand": "Ms 3000",
+  "brand_id": "ms-3000",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8081,
+      "url": "/"
+    }
+  ]
+}

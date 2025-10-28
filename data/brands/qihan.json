@@ -1,0 +1,67 @@
+{
+  "brand": "Qihan",
+  "brand_id": "qihan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "356",
+        "QH-NV534DS-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp_live/ch0_1"
+    },
+    {
+      "models": [
+        "ccd 104",
+        "Other",
+        "QH-IP130LL-WDR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "Other",
+        "QH-NV534DS-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/tcp_live/ch0_0"
+    },
+    {
+      "models": [
+        "Other",
+        "rp104"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "QCY-62401"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "QH-ND103AN1-WISM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

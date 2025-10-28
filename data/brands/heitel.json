@@ -1,0 +1,17 @@
+{
+  "brand": "Heitel",
+  "brand_id": "heitel",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "webclisession/image_req0?camera=[CHANNEL]"
+    }
+  ]
+}

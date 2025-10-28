@@ -1,0 +1,17 @@
+{
+  "brand": "Eu3c",
+  "brand_id": "eu3c",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/sf.cgi"
+    }
+  ]
+}

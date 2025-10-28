@@ -1,0 +1,39 @@
+{
+  "brand": "Concord",
+  "brand_id": "concord",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5mp",
+        "CNC5IDP-A",
+        "CNC5IDP-V2",
+        "CNC8IBP-A",
+        "CNCK",
+        "floodlight"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/1"
+    },
+    {
+      "models": [
+        "CDC5ABP-A",
+        "CNC5IBP-A",
+        "CNC5IDP-A",
+        "CNC5IDP-V2",
+        "CNC8IBPFA-V2",
+        "CNC8IDP-A",
+        "Concord 1080P",
+        "Concord 4K",
+        "RS-CM-317D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    }
+  ]
+}

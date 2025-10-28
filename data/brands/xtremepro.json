@@ -1,0 +1,17 @@
+{
+  "brand": "Xtremepro",
+  "brand_id": "xtremepro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ipw1-1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/videoMain"
+    }
+  ]
+}

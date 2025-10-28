@@ -1,0 +1,31 @@
+{
+  "brand": "Jalan",
+  "brand_id": "jalan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "JalanTunRazak"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "pelco",
+        "pelco1",
+        "pelco2",
+        "pelco3",
+        "pelco4",
+        "pelco5"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream2"
+    }
+  ]
+}

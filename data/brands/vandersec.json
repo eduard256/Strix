@@ -1,0 +1,35 @@
+{
+  "brand": "Vandersec",
+  "brand_id": "vandersec",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "QB07"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "QB07"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?size=-1x-1&download=yes"
+    },
+    {
+      "models": [
+        "VN-IKB50s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

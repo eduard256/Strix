@@ -1,0 +1,17 @@
+{
+  "brand": "Rstahl",
+  "brand_id": "rstahl",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EC-910-AFZ-I03-P00"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live1.sdp"
+    }
+  ]
+}

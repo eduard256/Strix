@@ -1,0 +1,27 @@
+{
+  "brand": "Ipg",
+  "brand_id": "ipg",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8150PSS",
+        "IPG-7920PSS-AI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/0/MAIN"
+    },
+    {
+      "models": [
+        "IPG-6220PSS-F30"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

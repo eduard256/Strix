@@ -1,0 +1,38 @@
+{
+  "brand": "Ipc-model",
+  "brand_id": "ipc-model",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "255"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "c2m",
+        "DOME",
+        "FOSCAM G2",
+        "ip2m-841"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 88,
+      "url": "/videoMain"
+    },
+    {
+      "models": [
+        "FI9828"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/videoSub"
+    }
+  ]
+}

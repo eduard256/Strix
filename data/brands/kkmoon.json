@@ -1,0 +1,525 @@
+{
+  "brand": "Kkmoon",
+  "brand_id": "kkmoon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "1080p 2.0 MP PoE",
+        "1080P Wireless WIFI PTZ HD IP Camera",
+        "1234",
+        "130W",
+        "2.0 MP POE",
+        "2MP",
+        "720",
+        "720p",
+        "801",
+        "805",
+        "806",
+        "808",
+        "809",
+        "810",
+        "816",
+        "D77W",
+        "GGGG-329603-FEACE",
+        "H264",
+        "HD 720P",
+        "HD001",
+        "HD720",
+        "hr06",
+        "LS-F2",
+        "Original",
+        "Other",
+        "p2p",
+        "PorchSD13W",
+        "ptz 1080p",
+        "PTZ 1080P",
+        "s435",
+        "sd13w",
+        "SD13W",
+        "SD27W",
+        "sn-hsp-4006w13",
+        "SN-HSP-4006W13",
+        "sn-ipc",
+        "hw11",
+        "sn-ipc-hw11",
+        "SN-IPC-HW11",
+        "SW17454955",
+        "the ball",
+        "TP-C549T",
+        "tp-c801",
+        "TP-C810FD",
+        "TP-DVR124",
+        "TV-T0404-LM-XM",
+        "v1.1 (The Ball)",
+        "Wifi 720P HD Camera",
+        "WIFI 720P HD CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P 2.0 MP POE",
+        "1Mp",
+        "4 cam",
+        "720P",
+        "alex",
+        "dvr 1108",
+        "DVR 1108",
+        "H264",
+        "H264 4CH Hi3520D chip",
+        "HD1080",
+        "HD720-stv",
+        "HI3518",
+        "Other",
+        "TP-HI100",
+        "TP-Hi100BY",
+        "TP-hi100wk",
+        "TPHi100WK",
+        "TP-Hi200yy",
+        "TP-MS200IPL",
+        "TV-T0404-LM-XM",
+        "xf-9408nf-lm",
+        "XF-9416NF-LM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "867W",
+        "B87W",
+        "DVR 1108",
+        "HI3518",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1080",
+        "1080P Wireless WIFI PTZ HD IP Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1108,
+      "url": "/snap.jpg?JpegCam=11"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "130w",
+        "1HD",
+        "1mp",
+        "1MP",
+        "2MP",
+        "720",
+        "720P",
+        "801",
+        "803",
+        "805",
+        "805/1",
+        "806",
+        "808",
+        "809",
+        "809809",
+        "810",
+        "818",
+        "867W",
+        "887w",
+        "d77w",
+        "D77W",
+        "DVR 1108",
+        "FI8918W",
+        "H264",
+        "HD 720P",
+        "HD1080",
+        "HD720",
+        "HD720-stv",
+        "hr06",
+        "HR06",
+        "ip1",
+        "jolly",
+        "LS-C6",
+        "Oma",
+        "Other",
+        "P2P",
+        "PTZ 1080P",
+        "s435",
+        "s435-45",
+        "S435-us",
+        "S600-UK",
+        "s600-us",
+        "sd13w",
+        "SD13W",
+        "SD17W",
+        "sd27",
+        "sd27w",
+        "SD27W",
+        "SN-HSP-4006W13",
+        "SN-IPC-HW01",
+        "sw13",
+        "TP C549T",
+        "TP-C537T",
+        "TP-C810FD",
+        "UKN",
+        "v1.1 (The Ball)",
+        "ZZZZZ-123020-AFDEA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "130W",
+        "1MP",
+        "720",
+        "720P",
+        "803",
+        "806",
+        "809",
+        "810",
+        "B87W",
+        "C6FOSgZONOPOLO",
+        "d77w",
+        "H264",
+        "Other",
+        "PTZ 1080P",
+        "SD13W",
+        "sd27w",
+        "sn-hsp-4006w13",
+        "TP-C537T",
+        "tp-c810",
+        "tp-c810fd",
+        "TV-TO404-LM-XM",
+        "V1.1 (THE BALL)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "1080P",
+        "130W",
+        "1MP",
+        "720P",
+        "801",
+        "803",
+        "805",
+        "805/1",
+        "D77W",
+        "HD 960P",
+        "HD720-stv",
+        "HZDX-003923-DEEFF",
+        "OMA",
+        "Other",
+        "PTZ",
+        "PTZ 1080P",
+        "SD13W",
+        "tp-c810",
+        "tp-c810fd",
+        "tp-ms-poe-1",
+        "TV-TO404-LM-XM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "1080p 2.0 MP PoE",
+        "2.0 MP PoE",
+        "TV-TO404 LX-LM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "1HD",
+        "Other",
+        "TP-DVR124"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1108,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "Kkmoon1HD",
+        "Other",
+        "TV-T0404-MLMX",
+        "TV-TO404-XL-XM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264-1"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "TP-C121",
+        "XM-102-02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=4_stream=1.sdp"
+    },
+    {
+      "models": [
+        "1080P WIRELESS WIFI PTZ HD IP CAMERA",
+        "DVR1080-8",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=2&stream=1.sdp"
+    },
+    {
+      "models": [
+        "1HD",
+        "803",
+        "805",
+        "808",
+        "809",
+        "903",
+        "H264",
+        "HD1",
+        "HI3518",
+        "Kkmoon1HD",
+        "Other",
+        "P2P camera",
+        "thing",
+        "TP-C537T",
+        "TV-TO404-LM-XM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "2.0 MP POE",
+        "803",
+        "808"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/1/mpeg4/1"
+    },
+    {
+      "models": [
+        "720P",
+        "H264",
+        "k9604-w",
+        "Other",
+        "P2P",
+        "PTZ 1080P",
+        "SD27W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "803",
+        "805",
+        "903",
+        "H264",
+        "Other",
+        "tp-ms200IPL",
+        "TP-MS400HPA"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "803",
+        "HI3518",
+        "IPC-4006W10",
+        "Other",
+        "XF-VR108A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "806",
+        "PTZ"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "809",
+        "DVR 1108"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "8106",
+        "Other",
+        "tp c549t",
+        "TP-HI100iRD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVR1080-8",
+        "HD1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=2&stream=0.sdp"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 553,
+      "url": "/stream0?"
+    },
+    {
+      "models": [
+        "Other",
+        "TP C549T",
+        "TP-JA960-3M",
+        "XF-VR108TA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "Other",
+        "XF-108TA",
+        "XF-VR108A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "p2p"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "SKYIPCAM500W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/mjpg/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "sn-hsp-4006w13"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "SN-IPC-HW01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot"
+    },
+    {
+      "models": [
+        "TP-C121",
+        "XM-102-2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=4_stream=0.sdp"
+    },
+    {
+      "models": [
+        "xf9608nf"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=80"
+    }
+  ]
+}

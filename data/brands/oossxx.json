@@ -1,0 +1,129 @@
+{
+  "brand": "Oossxx",
+  "brand_id": "oossxx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080P",
+        "5033SW",
+        "960",
+        "hd nvr",
+        "HD NVR",
+        "K8208-W",
+        "k9608",
+        "K9608-W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "5033SW",
+        "960",
+        "HD NVR",
+        "K8208-W",
+        "k9608",
+        "k9608-2w",
+        "K9608-2W",
+        "K9608-Home",
+        "K9608-W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5323-W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "HD IPCAM",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "Home",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "K8208-W",
+        "k9608-2w"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/sp.cgi?chn=1&quality=2500&rate=2500&u=[USERNAME]&p"
+    },
+    {
+      "models": [
+        "k9608",
+        "k9608-2w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=8&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "OSX-CAW10808"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 443,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/sp.cgi?chn=0&quality=2500&rate=2500&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/sp.cgi?chn=0&quality=1&rate=15&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

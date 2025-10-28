@@ -1,0 +1,66 @@
+{
+  "brand": "Vistacam",
+  "brand_id": "vistacam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1000",
+        "1101",
+        "700"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "1101",
+        "700"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "1101"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "1200",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "700"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "700"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

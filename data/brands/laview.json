@@ -1,0 +1,357 @@
+{
+  "brand": "Laview",
+  "brand_id": "laview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ASFNVR",
+        "CS-CV206-C0-3B2WFR-LAV(C19052349)",
+        "H.264D1DVR",
+        "LV PW65382",
+        "LV-D2104CS",
+        "LV-D2108CS",
+        "LV-KN984P44A4-T1",
+        "LV-N9808C8E",
+        "LV-PB1340WC",
+        "LV-PBK80804C",
+        "LV-PD50208",
+        "LV-PDB1520F1(165401782)",
+        "LV-PWB2020-W",
+        "LV-PWB2524-W",
+        "LV-PWF812B-U",
+        "LV-T9304YHS",
+        "LV-T9708MHS",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "CBP1334",
+        "CDP6034",
+        "CMIP3432",
+        "LV PW65382",
+        "LV-CBP1014",
+        "LV-CDP6014",
+        "LV-CDP6034",
+        "LV-CIP422X20-S",
+        "LV-N9808C8E",
+        "LV-PB3040WC",
+        "LV-PB3140WC",
+        "LV-PB9W",
+        "lv-pbk6180-vf",
+        "LV-PC902F2-w",
+        "LV-PC903F4-W",
+        "LV-PD50208",
+        "LV-PD51208C",
+        "LV-PD51402BC",
+        "LV-PWB2524-W",
+        "lv-pwf812-u",
+        "LV-PWR302",
+        "LV-WB933F4B",
+        "One",
+        "Other",
+        "pb3140",
+        "pb3140wc",
+        "PW65382"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "CBP-1334",
+        "LV-N9616D6E",
+        "LV-PWB2524-W",
+        "LV-PWB2624-W",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "Doorbell",
+        "LV-PB9W",
+        "LV-PD50208",
+        "LV-PTK66802",
+        "LV-PWB2524-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264/ch01/main/av_stream"
+    },
+    {
+      "models": [
+        "DOORBELL",
+        "H.264D1DVR",
+        "LV-050208",
+        "LV-HB732F3T",
+        "LV-N9504B-W",
+        "LV-N9808C8E",
+        "LV-PB912F4C",
+        "LV-PB932F4",
+        "LV-PWB2020-W",
+        "LV-PWB2524-W",
+        "LV-PWF1",
+        "LV-PWF1-K v5.3.4",
+        "Other",
+        "PWB10-K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "h.264d1dvr",
+        "LV-CBA2963B",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "LV=PB9W",
+        "LV-KN984P44A4-T1",
+        "LV-PWB2020-W",
+        "LV-PWB2524-W",
+        "lv-pwf1-k",
+        "LV-PWF812B-U",
+        "LV-PWF812-U",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "LV-CBP1014",
+        "LV-CDP6014",
+        "lv-pbk6180-vf",
+        "LV-PWB2524-W",
+        "LV-PWFL182U"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "LV-CBP1034",
+        "lv-pbk6180-vf"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ipcam.sdp"
+    },
+    {
+      "models": [
+        "LV-CDP6014",
+        "LV-PB932F4",
+        "lv-pbk6180-vf"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "LV-N9808C8E",
+        "LV-T9304YHS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/PSIA/streaming/channels/201"
+    },
+    {
+      "models": [
+        "LV-PB932F4",
+        "LV-PC902F2-W",
+        "Lv-pwf812-u",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "LV-PB932F4",
+        "LV-T9708MHS"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/201"
+    },
+    {
+      "models": [
+        "LV-PB9W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=0&subtype=00"
+    },
+    {
+      "models": [
+        "lv-pbk6180-vf",
+        "LV-PBM3940",
+        "LV-PC902F2-w",
+        "LV-PC902F2-W",
+        "LV-PW65382",
+        "LV-PWB2524-W",
+        "Lv-pwf812-u",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "LV-PWB2524-W",
+        "LV-PWR302",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "LV-PWB2524-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "LV-PWB2524-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=1"
+    },
+    {
+      "models": [
+        "LV-PWD50202-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "LV-PWF1",
+        "LV-PWR12W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "LV-PWF1",
+        "LV-PWR12W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "LV-PWF1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "LV-PWF2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101/?transportmode=unicast.sdp"
+    },
+    {
+      "models": [
+        "LV-PWF812B-U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "LV-PWL2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5543,
+      "url": "/live/channel0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "PD51208C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    }
+  ]
+}

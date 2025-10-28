@@ -1,0 +1,216 @@
+{
+  "brand": "Genbolt",
+  "brand_id": "genbolt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "102h102h",
+        "102s",
+        "200",
+        "2013",
+        "202h",
+        "600H",
+        "GB100",
+        "GB-100s",
+        "GB102",
+        "GB102H",
+        "gb102s",
+        "GB103K",
+        "GB1080P",
+        "GB2015",
+        "GB201H",
+        "GB201H-4G",
+        "GB-202H",
+        "GB203X",
+        "GB-208",
+        "gb209h",
+        "gb209k",
+        "GB209X",
+        "GB212H",
+        "GB213",
+        "GB-213",
+        "gb213h",
+        "GB-213H",
+        "GB213V",
+        "GB216",
+        "GB216D",
+        "GB216D-K",
+        "GB-217h",
+        "GB220",
+        "GB600",
+        "gb600h",
+        "GB600S",
+        "GB-600S",
+        "GS600H",
+        "GS600S",
+        "House",
+        "Other",
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1080 HD",
+        "720",
+        "GB106H",
+        "GB-202h",
+        "gb-206h",
+        "GB600H1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "201",
+        "202h",
+        "GB103K",
+        "GB201H",
+        "GB-202H",
+        "GB-206H",
+        "GB209h",
+        "GB212H",
+        "GB213",
+        "GB213X",
+        "gb216d",
+        "GB216D-K"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "600H",
+        "720",
+        "GB100",
+        "gb102h",
+        "GB102S",
+        "GB1080P",
+        "GB2015",
+        "GB-202h",
+        "GB203X",
+        "GB-209X",
+        "GB600",
+        "GB600H",
+        "GB600H1",
+        "GB-600S",
+        "gb800h",
+        "gkh602",
+        "gs600h",
+        "iiii-657982-BDCFD",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "720",
+        "GB100",
+        "GB1005",
+        "GB100s",
+        "GB-100S",
+        "GB-202h",
+        "GB600",
+        "GB600H",
+        "Other",
+        "X000R6XLAL"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "GB100",
+        "GB100S",
+        "HDCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/tcp/av0_0"
+    },
+    {
+      "models": [
+        "gb102h",
+        "GB-202H",
+        "NNNN-130108-CDAFF"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "gb102s",
+        "GB-202h"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "GB-202h"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/web/admin.html"
+    },
+    {
+      "models": [
+        "GB-202H"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 10554,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "gb600",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "gs100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "tit"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    }
+  ]
+}

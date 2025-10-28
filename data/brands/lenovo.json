@@ -1,0 +1,119 @@
+{
+  "brand": "Lenovo",
+  "brand_id": "lenovo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "132",
+        "720",
+        "Dome X5",
+        "JA-F10R-U",
+        "JA-F10T-U",
+        "Other",
+        "PTZ DOME LENOVO 100",
+        "X6T (Gimball)",
+        "XW1-U"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "2010"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "6010",
+        "A360",
+        "A369i",
+        "ANDROID_WEBCAM",
+        "Other",
+        "Table 8",
+        "TEL"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "7 Tab",
+        "a369i",
+        "a606",
+        "a850",
+        "Other",
+        "tel",
+        "zuk",
+        "Zuk"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "a7010a48"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "Easy Cam"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "out.jpg?id=0.5"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "USB2.0 UVC"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 7777,
+      "url": "/video?submenu=mjpg"
+    }
+  ]
+}

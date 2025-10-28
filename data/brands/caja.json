@@ -1,0 +1,17 @@
+{
+  "brand": "Caja",
+  "brand_id": "caja",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DSC-2103"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "dms?nowprofileid=2"
+    }
+  ]
+}

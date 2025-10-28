@@ -1,0 +1,17 @@
+{
+  "brand": "Gyration",
+  "brand_id": "gyration",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Cyberview 400b"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video1"
+    }
+  ]
+}

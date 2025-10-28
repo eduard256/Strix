@@ -1,0 +1,17 @@
+{
+  "brand": "Amsecu",
+  "brand_id": "amsecu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CA-IP-D28R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    }
+  ]
+}

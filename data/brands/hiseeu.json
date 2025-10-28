@@ -1,0 +1,471 @@
+{
+  "brand": "Hiseeu",
+  "brand_id": "hiseeu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "008",
+        "5323-w",
+        "BH312",
+        "c30",
+        "HB312",
+        "HB612",
+        "HB612-P",
+        "HS611",
+        "HSY-P2",
+        "NVR",
+        "Other",
+        "TZ-HB312",
+        "TZ-HB612",
+        "tz-hc913",
+        "whd303",
+        "WHD405",
+        "WTW-IPC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "121w1w2",
+        "fh2e",
+        "HC725-P",
+        "WHD612"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "28DGPOE4MP",
+        "50X10_32M",
+        "50x40-SW",
+        "akit-4ahbb12",
+        "B004-V2.0",
+        "BP215-P",
+        "FH1D",
+        "FH2C",
+        "FH2E",
+        "H.265",
+        "hb 215",
+        "hb 215-p",
+        "HB212",
+        "HB215-P",
+        "hb612",
+        "HB615-P",
+        "HB624",
+        "HB712-PZ",
+        "HC615-p",
+        "HC615-P",
+        "hc61x",
+        "HC725-P",
+        "HD115-PZ",
+        "HD812-P",
+        "HM110",
+        "HS614-P",
+        "hsy-a1008nm",
+        "hsy-hb215-p",
+        "hsy-hb612-p",
+        "HYS-HB612-P",
+        "Other",
+        "WHD103Z",
+        "WHD303",
+        "WHD312B",
+        "WHD313",
+        "WHD313B",
+        "WHD318",
+        "WHD612",
+        "WHD712",
+        "WHD812B",
+        "WHD818B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "2c90"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 80,
+      "url": "/ch2_0.264"
+    },
+    {
+      "models": [
+        "4hb611",
+        "hsy-fhy-1080p",
+        "K8208-W",
+        "Nvr",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5323-W",
+        "B07JQZQRVG",
+        "FJ2C",
+        "hb612",
+        "hsy-fhy-1080p",
+        "HSY-P2",
+        "Other",
+        "TZ-HB312",
+        "WHD303"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "5323-W",
+        "HB312",
+        "hb612-p",
+        "NVR",
+        "Other",
+        "TZ-HB312",
+        "TZ-HB612",
+        "whd303",
+        "WHD405"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5323-W",
+        "C3-S-A6",
+        "hb612",
+        "HC612",
+        "Other",
+        "OUTSIDE",
+        "PPunk",
+        "TZ-HB312",
+        "WHD303",
+        "WHD813B",
+        "WHDA14"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.264"
+    },
+    {
+      "models": [
+        "advr-10v-4",
+        "FH1C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=0"
+    },
+    {
+      "models": [
+        "B0BW9CSZDV",
+        "HB312",
+        "HB915B-PA",
+        "Other",
+        "WHD303"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=1"
+    },
+    {
+      "models": [
+        "C5-Q-AP",
+        "TZ-HB312"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "FH1D",
+        "HB215",
+        "hb613-p",
+        "HB-613P",
+        "HB615-P",
+        "HB815",
+        "hc61x",
+        "HD185-PZ",
+        "HD812-P",
+        "HD918-P",
+        "HD985-P",
+        "IP-1",
+        "IPC_NT98566_80N80PS-R_S38",
+        "kaka223",
+        "WHD812",
+        "WHD812B",
+        "WHD918B",
+        "XM-103"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "FH2C",
+        "R80X30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp"
+    },
+    {
+      "models": [
+        "fh2e",
+        "HD685-P",
+        "WHDC14"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "fv4",
+        "HC612",
+        "HD815-P",
+        "HD918-P",
+        "HI3516",
+        "Other",
+        "ptz",
+        "WHD312B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "HB215-P",
+        "NBD80S16S-KL",
+        "Other",
+        "WHD303",
+        "WHD312B",
+        "WHD812",
+        "WHD812B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HB215-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=1"
+    },
+    {
+      "models": [
+        "HB312-p",
+        "hd812-p",
+        "whd312",
+        "WHD712",
+        "WHD812B",
+        "WHD813B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream--rtp-caching=100"
+    },
+    {
+      "models": [
+        "HB612-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "HB615-P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?JpegCam=1"
+    },
+    {
+      "models": [
+        "HB615-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "HB848-P",
+        "k8208-3W",
+        "WHD315"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/main"
+    },
+    {
+      "models": [
+        "HB848-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/sub"
+    },
+    {
+      "models": [
+        "hsy-fhy-1080p",
+        "R80X20-PQ",
+        "WHD813B",
+        "WS318"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=2_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IP-1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "K8208-3W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "PPunk"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.264"
+    },
+    {
+      "models": [
+        "PPunk"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1&onvif=0.sdp?real_st"
+    },
+    {
+      "models": [
+        "PPUnk"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?size=-1x-1&download=yes"
+    },
+    {
+      "models": [
+        "R80X30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "VCAM2"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "WHD303"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "WHD312B",
+        "WHD612"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "WHD812B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    }
+  ]
+}

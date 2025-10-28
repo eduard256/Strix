@@ -1,0 +1,321 @@
+{
+  "brand": "Ipcam",
+  "brand_id": "ipcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "121",
+        "125",
+        "4444",
+        "458",
+        "569",
+        "720",
+        "963",
+        "belakang",
+        "C6F0SgZ3N0P6L2",
+        "C9F0SgZ3N0P8L0",
+        "camhi",
+        "DIUS",
+        "G02",
+        "III",
+        "jidycam",
+        "monitoring mgcc",
+        "Other",
+        "PK4",
+        "PK5",
+        "PM1",
+        "RW-C360HD-1080p-dz",
+        "SD CARD Mul",
+        "side",
+        "SN-IPC-5033SW-UK",
+        "th661",
+        "uuu",
+        "WAJAH PK5",
+        "WAJAH PM1",
+        "WAJAH PM3",
+        "wer"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "125",
+        "6024PB-HX131",
+        "7902",
+        "8810",
+        "asdasd",
+        "B6C-CAM-WIFI-1080P-22X",
+        "Boavision",
+        "boh",
+        "C1329DN4-H",
+        "C6F0SfZ3N0P6L2",
+        "C6F0SgZ0N0PfL2",
+        "C6F0SgZ3N0P6L2",
+        "C6F0SgZ3N0PcL2",
+        "c6fos",
+        "C9F0SeZ3N0P8L0",
+        "C9F0SeZ3NOP8LO",
+        "C9F0SgZ3N0P8L0",
+        "cambassa",
+        "CARS",
+        "chima",
+        "CTIPC-285C",
+        "escamg12",
+        "Genbolt",
+        "H254",
+        "HX.9.6",
+        "HX-HD50M28AS",
+        "iegek",
+        "KAMERA CCTV",
+        "lane",
+        "Other",
+        "otp",
+        "P1-4X",
+        "Pan-Tilt",
+        "RT2860",
+        "s3vc",
+        "SD CARD MDv",
+        "sn-ipc-5033sw-uk",
+        "soullife",
+        "SV-B01W-960P-HX",
+        "SVBC",
+        "sxs",
+        "szinocam",
+        "t8809",
+        "tonda",
+        "wh0026",
+        "Y4A-ZA2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "7links",
+        "ISNATCH",
+        "Sannce",
+        "WIBULL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 6554,
+      "url": "/stream_0"
+    },
+    {
+      "models": [
+        "C6F0SEZ0N0P0L0"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "C6F0SfZ3N0P6L2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "C6F0SgZ3N0P6L2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "C6F0SgZ3N0PdL2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "C9F0SeZ3N0P0L1",
+        "Other",
+        "wxh"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "CLOUD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "C-PO5"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "FI-362B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1jfiegbrqhd4q_p0_FUZGACFWEXMY"
+    },
+    {
+      "models": [
+        "kamtron 826"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1jfiegbrqop2a_p0_CNCOZJTHRMYP"
+    },
+    {
+      "models": [
+        "kt1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1jfiegbrqop2a_p0_LBRUMVRZOQXB"
+    },
+    {
+      "models": [
+        "KT1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/1jfiegbrqop2a_p0_ISUOFYIAJSWB"
+    },
+    {
+      "models": [
+        "onvif"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "onvif"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/HighResolutionVideo"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "OV2460"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/stream"
+    },
+    {
+      "models": [
+        "PE-5577"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.jpg"
+    },
+    {
+      "models": [
+        "PHD46F325AP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "VIG-us723A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video0.sdp"
+    }
+  ]
+}

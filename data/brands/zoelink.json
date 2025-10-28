@@ -1,0 +1,19 @@
+{
+  "brand": "Zoelink",
+  "brand_id": "zoelink",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "720P",
+        "ite 720p Camera 2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

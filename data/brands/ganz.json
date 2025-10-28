@@ -1,0 +1,121 @@
+{
+  "brand": "Ganz",
+  "brand_id": "ganz",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DR-16F45AT-3TB",
+        "ips400"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IIP-C3211",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "nvc-cgi/operator/snapshot.fcgi?channel=[CHANNEL]&name=snapshot&resolution=custom&quality=70&width=[WIDTH]&height=[HEIGHT]"
+    },
+    {
+      "models": [
+        "IIP-C3211",
+        "ZN-DT352VE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_unicast_firststream"
+    },
+    {
+      "models": [
+        "IIP-C3211"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/nvc-cgi/operator/snapshot.fcgi?channel=0&name=snapshot&resolution=custom&quality=70&width=640&height=480"
+    },
+    {
+      "models": [
+        "IIP-C3211"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/nvc-cgi/operator/snapshot.fcgi?channel=0&name=snapshot&resolution=custom&quality=70&width=320&height=240"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "ZN-C1M",
+        "ZN-C2M"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "gnz_media/main"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/gnz_media/main"
+    },
+    {
+      "models": [
+        "ZN\\1-N4NZN6-1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "ZN-DT352VE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/nvc-cgi/operator/snapshot.fcgi?channel=2&name=snapshot&resolution=custom&quality=70&width=320&height=240"
+    }
+  ]
+}

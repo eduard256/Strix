@@ -1,0 +1,192 @@
+{
+  "brand": "Huawei",
+  "brand_id": "huawei",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "560",
+        "8825",
+        "ascend",
+        "ascend q",
+        "bll-l22",
+        "G300",
+        "G740",
+        "Huawai",
+        "Impulse4g",
+        "Other",
+        "P20",
+        "P20 Lite",
+        "P20 Pro",
+        "p9lite",
+        "Phone",
+        "Phone1",
+        "U9200",
+        "y220",
+        "Y320"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "ascend q",
+        "fff",
+        "Other",
+        "P10 lite",
+        "y511",
+        "y541"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "CUN L-33",
+        "TE30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "CUN L-33",
+        "P20 Lite"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/video?640x480"
+    },
+    {
+      "models": [
+        "CUN L-33",
+        "Honor 7",
+        "Lis4"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video?profile=0"
+    },
+    {
+      "models": [
+        "DS-2CD2383G0-IU",
+        "IPC6225-VRZ",
+        "IPC-6232-IR",
+        "IPC6321-VF",
+        "IPC6331-IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "honor",
+        "mate2",
+        "TE30"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videofeed"
+    },
+    {
+      "models": [
+        "IPC6325-WD-VR",
+        "issv",
+        "M2150-10-EI"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LiveMedia/ch1/Media2"
+    },
+    {
+      "models": [
+        "IPC6625-Z30-S",
+        "M3250",
+        "TE60"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LiveMedia/ch1/Media1/trackID=1"
+    },
+    {
+      "models": [
+        "mediapad",
+        "Other",
+        "Y320",
+        "Y511"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/view[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "p elite"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "PHONE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "tablet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/live"
+    },
+    {
+      "models": [
+        "TE30"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg"
+    }
+  ]
+}

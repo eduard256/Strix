@@ -1,0 +1,72 @@
+{
+  "brand": "Safire",
+  "brand_id": "safire",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPCOUNT",
+        "SF-IPDM937ZAWHH-8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "Other",
+        "SF-IPCV220WH",
+        "SF-IPD836WA-4P-HV",
+        "SF-IPDM934-3W",
+        "SF-IPDM934WH-2W",
+        "SF-IPDM943WH-4",
+        "SF-IPMC103AWH-2",
+        "SF-IPSD4704IHA-4PW",
+        "sf-ipsd6625ita-4p",
+        "SF-IPT838UWHA-4US-AI2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "SF-IPCV220WH"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h265_stream"
+    },
+    {
+      "models": [
+        "SF-IPD820UWHA-8U-AI2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "SF-IPD820UWHA-8U-AI2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "SF-IPD820UWHA-8U-AI2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    }
+  ]
+}

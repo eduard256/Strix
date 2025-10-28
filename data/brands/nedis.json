@@ -1,0 +1,59 @@
+{
+  "brand": "Nedis",
+  "brand_id": "nedis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1920x1080",
+        "NEDIS WIFICO11xxx",
+        "SmartLife Doorbell",
+        "WIFICI07CBK",
+        "WIFICO20CWT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "IPCMO10CWT"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "NEDIS WIFICO11xxx",
+        "WIFICO11xxx",
+        "WIFICO20CWT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "WIFICO11CWT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "WIFICO40CBK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

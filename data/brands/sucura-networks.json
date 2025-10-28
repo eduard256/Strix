@@ -1,0 +1,27 @@
+{
+  "brand": "Sucura Networks",
+  "brand_id": "sucura-networks",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPCAM1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    },
+    {
+      "models": [
+        "IPCAM1080",
+        "Standard 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264/ch01/main/av_stream"
+    }
+  ]
+}

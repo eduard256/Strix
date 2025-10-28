@@ -1,0 +1,19 @@
+{
+  "brand": "Casio",
+  "brand_id": "casio",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "comm",
+        "GZ1",
+        "GzOne Commando"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

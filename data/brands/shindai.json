@@ -1,0 +1,17 @@
+{
+  "brand": "Shindai",
+  "brand_id": "shindai",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "sv-b06w-1080p-hx"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

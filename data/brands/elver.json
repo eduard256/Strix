@@ -1,0 +1,17 @@
+{
+  "brand": "Elver",
+  "brand_id": "elver",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "M24M-Sec-Night"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/control/faststream.jpg?stream=full&preview&previewsize=640x480&quality=40&fps=20.0"
+    }
+  ]
+}

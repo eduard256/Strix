@@ -1,0 +1,17 @@
+{
+  "brand": "Digivue",
+  "brand_id": "digivue",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EDV-EX Server"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "op?sid=0+type=203+busid=0+devid=0+chanid=[CHANNEL]"
+    }
+  ]
+}

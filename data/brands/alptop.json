@@ -1,0 +1,104 @@
+{
+  "brand": "Alptop",
+  "brand_id": "alptop",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1000w",
+        "at 1008w/200bw/500bw",
+        "at-100bw",
+        "AT-100BW",
+        "AT-200BW",
+        "at200dw",
+        "AT-200DW",
+        "AT200TW",
+        "at-500dw",
+        "AT-500DW",
+        "AT-500PW20",
+        "AT-B603W",
+        "AT-B603W HD 720P",
+        "ATLMDFS400",
+        "B608W",
+        "HD IP CAMERA",
+        "ips-1024vw",
+        "Other",
+        "Wireless"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "200at",
+        "500PW20",
+        "at-100",
+        "AT-100BW",
+        "at200bw",
+        "AT-200BW",
+        "AT-200DW",
+        "AT-200PW",
+        "AT-200RW",
+        "AT-800DZ",
+        "B603W",
+        "HD IP CAMERA",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "400",
+        "800dz",
+        "AT-200DW",
+        "AT-200PW",
+        "AT-800DZ",
+        "AT-LBH400",
+        "AT-LIR400",
+        "IP72-ONVIF-IPS",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "400",
+        "AT-1008w/200bw/500bw",
+        "AT-100bw",
+        "AT-100BW",
+        "AT-200B",
+        "AT-200BW",
+        "at-200rw",
+        "AT-500DW",
+        "at-lbh400",
+        "AT-LBH400",
+        "AT-LIR400",
+        "HD IP Camera",
+        "IP72-ONVIF-IPS",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AT-100BW"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    }
+  ]
+}

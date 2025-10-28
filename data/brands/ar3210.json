@@ -1,0 +1,17 @@
+{
+  "brand": "Ar3210",
+  "brand_id": "ar3210",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8557,
+      "url": "/Onvif/Streaming/2"
+    }
+  ]
+}

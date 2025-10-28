@@ -1,0 +1,18 @@
+{
+  "brand": "Ipvideo",
+  "brand_id": "ipvideo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ip9000",
+        "Network Video Server"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    }
+  ]
+}

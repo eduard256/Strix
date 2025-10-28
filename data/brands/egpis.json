@@ -1,0 +1,19 @@
+{
+  "brand": "Egpis",
+  "brand_id": "egpis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "EGPIS-IP1301HDNIR",
+        "EGPIS-IP1302HDNIR",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

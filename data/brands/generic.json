@@ -1,0 +1,286 @@
+{
+  "brand": "Generic",
+  "brand_id": "generic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0001",
+        "960P Audio Mini",
+        "as above",
+        "ave",
+        "CHINA CAM",
+        "Dave",
+        "Dome Camera",
+        "FrontDoor",
+        "Gen 1",
+        "ONVIF",
+        "Other",
+        "R80X20-PQ",
+        "Robot1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1000",
+        "Fluereon",
+        "Generic IP Cam",
+        "HES344-XBL",
+        "ONVIF",
+        "R80X20-PQ",
+        "R80X30-PQL",
+        "triple",
+        "UNLISTED"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "16CH"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Bseries"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1033,
+      "url": "/"
+    },
+    {
+      "models": [
+        "c6c-P",
+        "H.264",
+        "Other",
+        "R80X30-PQ",
+        "UNLISTED"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4cif"
+    },
+    {
+      "models": [
+        "DAHAUS"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 1935,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DF-ICAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "FOCUS 66",
+        "HIDVCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/media/?action=stream"
+    },
+    {
+      "models": [
+        "Gen 1",
+        "Generic IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "Generic IP Cam",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4"
+    },
+    {
+      "models": [
+        "Generic IP Cam",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 34567,
+      "url": "/onvif/dev%C4%B1ce_service"
+    },
+    {
+      "models": [
+        "Generic IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 6969,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "Generic IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/img/video.sav"
+    },
+    {
+      "models": [
+        "Generic IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_1"
+    },
+    {
+      "models": [
+        "Generic IP Cam",
+        "PTZ",
+        "Shenzhen"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "Generic IP Cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "IPC365"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "IPELA HD",
+        "Other",
+        "V380",
+        "white_salon"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "nolist"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=0"
+    },
+    {
+      "models": [
+        "ONVIF",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "ResX-IP-Cams"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=[USERNAME]&pwd="
+    },
+    {
+      "models": [
+        "PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "rtsp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/realmonitor?channel=0&stream=0.sdp"
+    },
+    {
+      "models": [
+        "rtsp"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    }
+  ]
+}

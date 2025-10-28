@@ -1,0 +1,48 @@
+{
+  "brand": "Faleemi",
+  "brand_id": "faleemi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "704",
+        "760",
+        "FCS 761",
+        "FSC 880",
+        "FSC760",
+        "FSC768",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    },
+    {
+      "models": [
+        "882",
+        "fsc750",
+        "FSC760",
+        "FSC768",
+        "FSC776A",
+        "FSC776B",
+        "FSC776v3.0",
+        "fsc776w",
+        "FSC850",
+        "FSC860",
+        "FSC861",
+        "FSC866",
+        "FSC880",
+        "fsc881",
+        "FSC883",
+        "FSC886",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Sprint Cctv",
+  "brand_id": "sprint-cctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SSC313"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    }
+  ]
+}

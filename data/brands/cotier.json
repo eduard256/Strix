@@ -1,0 +1,245 @@
+{
+  "brand": "Cotier",
+  "brand_id": "cotier",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2518T",
+        "3518T",
+        "534/T13",
+        "652",
+        "DM/G33",
+        "DM/G92",
+        "IP PTZ",
+        "IPc-631/T13",
+        "MEGA-PIXEL",
+        "Other",
+        "TV-534H/IP",
+        "TV-536W/IP",
+        "TV-652H/IP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "534/T13",
+        "631",
+        "FE-4L",
+        "FE-4L/IP",
+        "IPc-631",
+        "IPC-631/T13",
+        "Other",
+        "TV-536W/IP",
+        "tv-631 wip",
+        "tv-631w",
+        "TV-681H/IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4"
+    },
+    {
+      "models": [
+        "534/T13",
+        "631",
+        "IPc-3518",
+        "IPC-3518T",
+        "IPc-537/T13",
+        "IPc-631",
+        "IPc-631/T13",
+        "Other",
+        "TV-536W/IP",
+        "TV631",
+        "TV-631W",
+        "tv-638h2",
+        "TV-652H/IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "658",
+        "COTIER TV-631W",
+        "IPC",
+        "IPC-631/T",
+        "ipc-631/t13",
+        "Mega-Pixel",
+        "Other",
+        "StIan",
+        "TV 631WIP",
+        "tv-532W/IP",
+        "tv-631 w/ip",
+        "tv-632h2/ip",
+        "TV637H5",
+        "VN-H657"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    },
+    {
+      "models": [
+        "DM/G33"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/Streaming/2"
+    },
+    {
+      "models": [
+        "DM/G92",
+        "IPc-631/T13",
+        "Other",
+        "TV-653-IP69"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "DM/G92"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DM-G31-2S",
+        "IPC-537/T13"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "FE-2H5/IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "ipc",
+        "ipc-631/t13",
+        "TV-532W/IP",
+        "TV-631W/IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01_sub.264"
+    },
+    {
+      "models": [
+        "ipc-3518t",
+        "Other",
+        "TV-631W/IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "ipc-537/t13",
+        "IPc-537/T13"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam2/mpeg4"
+    },
+    {
+      "models": [
+        "IPc-631",
+        "tv-631w/ip",
+        "tv-631w/p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "IPc-631/T13",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other",
+        "TV-653"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other",
+        "TV-652",
+        "TV-652H/IP",
+        "TV-653"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TV-536W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "tv-631 wip",
+        "TV-638"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TV-653",
+        "tv-681h/ip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

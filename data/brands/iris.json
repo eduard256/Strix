@@ -1,0 +1,123 @@
+{
+  "brand": "Iris",
+  "brand_id": "iris",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0C830",
+        "IndoorOutdoor",
+        "NetCam",
+        "oc432",
+        "OC81D",
+        "OC821",
+        "oc8221",
+        "oc8821",
+        "Other",
+        "RC8221",
+        "SERCOMM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "AICN500",
+        "OC821",
+        "oc821D",
+        "oc8221",
+        "OC830",
+        "Other",
+        "rc8221",
+        "RC-8221",
+        "sercomm"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "AICN500/A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Indoor",
+        "Indoor / Outdoor",
+        "OC810",
+        "OC821",
+        "OC821D",
+        "oc8221",
+        "OC830",
+        "Other",
+        "Outdoor IP Camera",
+        "rc8221",
+        "RC-8221",
+        "rc8221d"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi"
+    },
+    {
+      "models": [
+        "indoorcam",
+        "rc-8221",
+        "RC8221"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "oc821",
+        "oc821D",
+        "RC-8221"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "oc821",
+        "RC8221"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "rc8221"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/img/video.mjpeg"
+    },
+    {
+      "models": [
+        "S460"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/img/media.sav"
+    }
+  ]
+}

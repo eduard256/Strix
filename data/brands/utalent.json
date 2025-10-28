@@ -1,0 +1,19 @@
+{
+  "brand": "Utalent",
+  "brand_id": "utalent",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Series X",
+        "Wireless Security Camera 720P",
+        "X Series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    }
+  ]
+}

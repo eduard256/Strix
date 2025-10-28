@@ -1,0 +1,20 @@
+{
+  "brand": "Mvs",
+  "brand_id": "mvs",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cam01",
+        "CAM04",
+        "ipeye",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    }
+  ]
+}

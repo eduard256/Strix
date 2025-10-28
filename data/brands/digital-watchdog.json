@@ -1,0 +1,197 @@
+{
+  "brand": "Digital Watchdog",
+  "brand_id": "digital-watchdog",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "192 . 168 . 1 . 198",
+        "DWC-MTT4Wi36"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "421",
+        "421TIR",
+        "DWC-MD421d",
+        "DWC-MF21M28T",
+        "DWC-MF21M4TIR",
+        "DWC-MF21MTIR",
+        "DWC-MPA20M",
+        "DWC-mpa2M",
+        "DWC-MV421D",
+        "DWM20P",
+        "MD421D",
+        "MF21",
+        "MF214TIR",
+        "MF21M28T DREAVEWAY",
+        "MF21M4",
+        "MF21M4TIR",
+        "MPA20M",
+        "MPTZ5X",
+        "MV421TIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "DWC-BVI2R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/rtsp/unicast/DefaultProfile-01"
+    },
+    {
+      "models": [
+        "DWC-MD7214V",
+        "DWC-MF21M28T",
+        "DWC-MV72i28V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/channel1"
+    },
+    {
+      "models": [
+        "DWC-MF21M28T",
+        "DWC-MF21M28T 128M",
+        "DWC-MPTZ5X",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mjpeg"
+    },
+    {
+      "models": [
+        "DWC-MV82WiA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile2"
+    },
+    {
+      "models": [
+        "dwc-mvh2i4wv"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "MD421TIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/stream1"
+    },
+    {
+      "models": [
+        "MF21M4TIR",
+        "MP20",
+        "MV421D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "MV82WiA"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/1/image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/video.mjpeg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/video.sav"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "img/media.sav"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Watchdog VMAX-D1 Mobile",
+        "WATCHDOG VMAX-D1 MOBİLE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/animate.cgi?[CHANNEL]"
+    }
+  ]
+}

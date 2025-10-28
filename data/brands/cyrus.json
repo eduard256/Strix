@@ -1,0 +1,26 @@
+{
+  "brand": "Cyrus",
+  "brand_id": "cyrus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "P2P IP Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/cif"
+    },
+    {
+      "models": [
+        "P2P IP Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/2/cif"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "brand": "Veezoom",
+  "brand_id": "veezoom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "WS-N151BS",
+        "WS-N180BS",
+        "WS-N180HZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "WS-N180BS",
+        "WS-N180HZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/1"
+    }
+  ]
+}

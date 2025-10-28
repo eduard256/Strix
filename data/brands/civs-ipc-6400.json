@@ -1,0 +1,18 @@
+{
+  "brand": "Civs-ipc-6400",
+  "brand_id": "civs-ipc-6400",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6400",
+        "onvif"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/StreamingSetting"
+    }
+  ]
+}

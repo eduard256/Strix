@@ -1,0 +1,32 @@
+{
+  "brand": "Abr",
+  "brand_id": "abr",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "6100",
+        "720p",
+        "ipc6100w"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "6100",
+        "6200",
+        "ABR-IPD6200W",
+        "IPC6100W",
+        "IPD6200W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

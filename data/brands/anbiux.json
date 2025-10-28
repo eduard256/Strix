@@ -1,0 +1,28 @@
+{
+  "brand": "Anbiux",
+  "brand_id": "anbiux",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4Mp",
+        "A8B",
+        "A8Q",
+        "A8SB",
+        "Ai08",
+        "Other",
+        "P3SB-8MP-EU",
+        "PTZ",
+        "x6c-weq",
+        "xm530",
+        "xm530_rh50x20_8m",
+        "xm530_rh80x20-PQ_8m"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

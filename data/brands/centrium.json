@@ -1,0 +1,19 @@
+{
+  "brand": "Centrium",
+  "brand_id": "centrium",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AVHN20H130C",
+        "Bullet",
+        "ONVIF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 37777,
+      "url": "/0"
+    }
+  ]
+}

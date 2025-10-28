@@ -1,0 +1,17 @@
+{
+  "brand": "Sq11",
+  "brand_id": "sq11",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Mini DV"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO"
+    }
+  ]
+}

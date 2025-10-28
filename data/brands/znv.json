@@ -1,0 +1,31 @@
+{
+  "brand": "Znv",
+  "brand_id": "znv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ZBIE-2020W",
+        "ZBIE-2151W-N3/4T-A",
+        "Zdie-2031u-n4t-s",
+        "ZNV-633"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    },
+    {
+      "models": [
+        "ZBIE-2020W-N4T",
+        "ZBIE-2151W-N3/4T-A",
+        "ZDIE-2010W-N3T-3.6"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

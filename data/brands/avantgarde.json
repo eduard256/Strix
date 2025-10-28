@@ -1,0 +1,42 @@
+{
+  "brand": "Avantgarde",
+  "brand_id": "avantgarde",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "123456",
+        "ip100",
+        "px-3720-675",
+        "pyle",
+        "S631",
+        "Sumpple",
+        "Sumpple S650"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "S610"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av1"
+    },
+    {
+      "models": [
+        "SUMPPLE",
+        "SUMPPLE S650"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

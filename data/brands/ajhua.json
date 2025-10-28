@@ -1,0 +1,119 @@
+{
+  "brand": "Ajhua",
+  "brand_id": "ajhua",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DHI-HCVR4108HS-S3"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "DHI-HCVR5104HS",
+        "DHI-HCVR7104/08/16H-4M",
+        "DH-IPC",
+        "DH-IPC-HDBW4421R-AS",
+        "DH-IPC-HFW1120SP",
+        "dh-ipc-hfw4421dp",
+        "DH-IPC-HFW4421E",
+        "dh-XVR4104HS-X1",
+        "dvr",
+        "hdw463.1c",
+        "N22AL12",
+        "VD-N22AL 12"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DH-IPC",
+        "DH-IPC-HDBW4421R-AS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "DH-IPC-HDBW4421R-AS",
+        "Dh-ipc-hdw2431tmp",
+        "DH-IPC-HFW2100SP-V2-0360B",
+        "DH-IPC-HFW4421E",
+        "dvr",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DH-IPC-HDPW7564N-SP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DH-IPC-HFW21DP",
+        "IPC-HFW4300S-V2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "DH-SD49225XA-HNR",
+        "dh-XVR4104HS-X1",
+        "Other",
+        "SD22204T-GN-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "DH-SD49225XA-HNR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0"
+    },
+    {
+      "models": [
+        "HDI-NVA4232"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "IPC-HDW4431C-A-V2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    }
+  ]
+}

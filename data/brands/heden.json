@@ -1,0 +1,265 @@
+{
+  "brand": "Heden",
+  "brand_id": "heden",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2.2.3",
+        "camcamh04ipw",
+        "CAMH04IPWE",
+        "CAMHED02IP",
+        "CAMHED04IPWN",
+        "Other",
+        "VisionCam",
+        "VISOCAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "2.2.3",
+        "CAMH04IPWE",
+        "CAMHD01FX0",
+        "CAMHD06MD0",
+        "CAMHED02IP",
+        "CAMHED04IP",
+        "CAMHED04IPWN",
+        "CAMHED05IPWN",
+        "int",
+        "Other",
+        "v5.5",
+        "VISIONCAM",
+        "visocam",
+        "VISOCAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "C5F0S7Z0N0P0L0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "CAMHED04IP",
+        "CAMHED04IPWN",
+        "CAMHED05IPWN",
+        "IP02",
+        "ip60w",
+        "Other",
+        "v5.5",
+        "VISIONCAM",
+        "visocam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "Crna",
+        "Other",
+        "v5.5",
+        "VISIONCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "CAMHED04IPWN",
+        "CAMHED05IPWN",
+        "Other",
+        "VisionCam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "CAMHED02IPW",
+        "CAMHED04IP",
+        "CAMHED04IPWN",
+        "CAMHEDIPWP",
+        "Other",
+        "VisionCam",
+        "visionCam 5.6"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "CAMHED02IP",
+        "CAMHED04IP",
+        "camhed04ipwn",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "CAMH04IPWE",
+        "dome",
+        "HEDP4IW"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "CAMHD03FX0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CAMHD05MD0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "CAMHED04IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CAMHED04IP",
+        "CAMHED05IPWB",
+        "CAMHED05IPWN",
+        "crna",
+        "VisionCam",
+        "visocam",
+        "VISOCAM_crna"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "CAMHED04IP",
+        "CAMHED04IPWN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "CAMHED04IPWN"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CAMHP71PWI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "hedp4ipwb"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "HEDP4IW",
+        "Other",
+        "visionCam 5.6"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "HEDP4IW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "visionCam 5.6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 1502,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "VisionCam 5.6"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    }
+  ]
+}

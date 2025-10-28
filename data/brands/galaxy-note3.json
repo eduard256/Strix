@@ -1,0 +1,17 @@
+{
+  "brand": "Galaxy Note3",
+  "brand_id": "galaxy-note3",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "samsung"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    }
+  ]
+}

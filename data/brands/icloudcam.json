@@ -1,0 +1,19 @@
+{
+  "brand": "Icloudcam",
+  "brand_id": "icloudcam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LS-ND321A-W",
+        "Other",
+        "VMS8000"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/stream.cgi?stream=MainStream&Audio=1"
+    }
+  ]
+}

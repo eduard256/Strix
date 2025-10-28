@@ -1,0 +1,19 @@
+{
+  "brand": "Cantek",
+  "brand_id": "cantek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CTW-IPSD3282D",
+        "GNC326G2-wda",
+        "NC304"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    }
+  ]
+}

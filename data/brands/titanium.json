@@ -1,0 +1,17 @@
+{
+  "brand": "Titanium",
+  "brand_id": "titanium",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP-5IRD5S44/28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1242,
+      "url": "/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Firetruck",
+  "brand_id": "firetruck",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "N99102"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264-1"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "brand": "Funxwe",
+  "brand_id": "funxwe",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "fw22",
+        "FW35",
+        "FW38",
+        "FW38-US"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "fg12-us",
+        "fg13",
+        "FW38",
+        "Other",
+        "x series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "fs01-0",
+        "FS30",
+        "FS39",
+        "FW35",
+        "FW36",
+        "FW38",
+        "hw38"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ptz"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch1"
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "brand": "Elro",
+  "brand_id": "elro",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4020",
+        "704IP",
+        "9031IP",
+        "903IP",
+        "C7031P",
+        "C703IP",
+        "C704IP",
+        "C704-ip 2",
+        "C704IP.2",
+        "C803IP",
+        "C903",
+        "c903ip",
+        "C903IP",
+        "C903IP.2",
+        "C904IP",
+        "hoy",
+        "Other",
+        "wert"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "700ip",
+        "900ip",
+        "901",
+        "c800ip",
+        "C801P",
+        "C900IP",
+        "C901IP",
+        "CS-280E2D-C901IP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "7031c",
+        "903i",
+        "903IP",
+        "9501",
+        "C403IP",
+        "c701",
+        "c703",
+        "C7031P",
+        "c703ip",
+        "C703IP",
+        "c704ip",
+        "C704IP",
+        "C704-ip 2",
+        "C803IP",
+        "C901IP",
+        "C903IP",
+        "C903IP.2",
+        "C904IP",
+        "dier",
+        "Elro C903ip",
+        "ip903",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "7031C",
+        "704IP",
+        "7401ip",
+        "901",
+        "901IP",
+        "903",
+        "903IP",
+        "C703IP",
+        "C704IP",
+        "c730ip",
+        "C803IP",
+        "C903ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "704IP",
+        "903i",
+        "903IP",
+        "C901IP",
+        "ELRO C903IP.2",
+        "IP903IP",
+        "Other",
+        "WIFI IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "704IP",
+        "9031IP",
+        "903IP",
+        "C703IP",
+        "C704-IP 2",
+        "C704IP.2",
+        "C803IP",
+        "c900",
+        "C901IP",
+        "c9031p",
+        "C9031p",
+        "C903IP",
+        "C903IP.2",
+        "Other",
+        "WIFI IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "704IP",
+        "C704ip",
+        "C704-IP 2",
+        "C704IP.2",
+        "C803IP",
+        "C904IP.2",
+        "Other",
+        "WIFI IP CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "704IP",
+        "C704IP",
+        "C704IP.2",
+        "C803IP",
+        "C903IP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "900IP",
+        "C800IP",
+        "C803IP",
+        "C901",
+        "C903IP",
+        "Other",
+        "WIFI IP Camera"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "901",
+        "903",
+        "903IP",
+        "C7031P",
+        "C703IP",
+        "C703IP.2",
+        "C704IP.2",
+        "C803IP",
+        "C903IP",
+        "C903IP.2",
+        "IP901",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "901",
+        "C800IP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "901",
+        "903IP",
+        "C704IP",
+        "C800",
+        "C800IP",
+        "C803IP",
+        "C901",
+        "C901IP",
+        "C903IP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "VIDEO.CGI"
+    },
+    {
+      "models": [
+        "901ip",
+        "9031IP",
+        "C7031P",
+        "C703IP",
+        "C704IP",
+        "C800",
+        "C800IP",
+        "C803IP",
+        "C901",
+        "C901IP",
+        "C903IP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi"
+    },
+    {
+      "models": [
+        "903",
+        "9031ip",
+        "903IP",
+        "c703ip",
+        "C704IP",
+        "C803IP",
+        "C903IP",
+        "C904IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "903",
+        "9031IP",
+        "903IP",
+        "C7031P",
+        "C705IP",
+        "C803IP",
+        "C903IP",
+        "C903IP.2",
+        "ip61"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "9031ip",
+        "903IP",
+        "c2110ip",
+        "C803IP",
+        "c900",
+        "C901IP",
+        "C903IP",
+        "C903IP.2",
+        "C930IP",
+        "DCS 932L",
+        "ELRO C903IP",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "9031ip",
+        "903IP",
+        "C704IP.2",
+        "C903",
+        "C903IP",
+        "C903IP.2",
+        "C904IP",
+        "Oprit",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "9031IP",
+        "903IP",
+        "C800",
+        "c800ip",
+        "C803IP",
+        "C900IP",
+        "C901",
+        "C903",
+        "C903IP",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "MJPEG.CGI"
+    },
+    {
+      "models": [
+        "9031IP",
+        "903IP",
+        "c2110ip",
+        "C703IP",
+        "C704IP",
+        "C704-ip 2",
+        "C803IP",
+        "C903IP",
+        "C903IP.2",
+        "C904IP",
+        "fishgrind"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "9031IP",
+        "C7031P",
+        "C703IP",
+        "C703IP.2",
+        "c703ip2",
+        "C801IP",
+        "C903IP",
+        "C903P",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "903I",
+        "903IP",
+        "C903IP.2",
+        "C904IP",
+        "C904IP.2",
+        "ip904",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?"
+    },
+    {
+      "models": [
+        "903IP",
+        "C403IP",
+        "C7031P",
+        "C703IP",
+        "C703IP2",
+        "C704IP",
+        "C704IP.2",
+        "C803IP",
+        "C903",
+        "C903IP",
+        "C903IP.2",
+        "C903IP.2-Pass",
+        "C904IP",
+        "C904IP.2",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "903IP",
+        "C903IP",
+        "C903IP.2 Pass",
+        "C904IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "903IP",
+        "C7031P",
+        "C703IP",
+        "c800ip",
+        "C900IP",
+        "C903",
+        "C903IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "c703ip",
+        "C704IP",
+        "c903ip",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c703ip",
+        "C703IP2",
+        "C904IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c703ip",
+        "C903IP.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240"
+    },
+    {
+      "models": [
+        "c703ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf"
+    },
+    {
+      "models": [
+        "C704IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 5000,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C723IP",
+        "WIFI IP CAMERA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/av0_1"
+    },
+    {
+      "models": [
+        "C724IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C800",
+        "C800IP",
+        "c801IP",
+        "C803IP",
+        "C900IP",
+        "C901",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "IMAGE.JPG"
+    },
+    {
+      "models": [
+        "c800ip"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "C802IP",
+        "c903"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "C803IP",
+        "C904IP",
+        "ELRO C903IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C803IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 83,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "C901IP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg.cgi"
+    },
+    {
+      "models": [
+        "c903ip"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi"
+    },
+    {
+      "models": [
+        "C903IP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "C903IP",
+        "C904IP.2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?"
+    },
+    {
+      "models": [
+        "C903IP.2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi"
+    },
+    {
+      "models": [
+        "C903IP.2"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "DVR 534"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Elro C903ip.2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "one"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/guest/Video.cgi?media=JPEG"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "current[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "brand": "Flashforge",
+  "brand_id": "flashforge",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Advanturer m5 Pro",
+        "adventurer 3",
+        "Adventurer3",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/?action=stream"
+    },
+    {
+      "models": [
+        "Creator 3",
+        "Creator 3 webcam"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "?action=stream"
+    },
+    {
+      "models": [
+        "Inventor"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    }
+  ]
+}

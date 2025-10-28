@@ -1,0 +1,26 @@
+{
+  "brand": "Iptz-h20xx",
+  "brand_id": "iptz-h20xx",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Drop Deiling"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile/profile01"
+    },
+    {
+      "models": [
+        "P14"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

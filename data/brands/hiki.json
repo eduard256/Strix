@@ -1,0 +1,53 @@
+{
+  "brand": "Hiki",
+  "brand_id": "hiki",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hike200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "hike200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/702"
+    },
+    {
+      "models": [
+        "hike200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "hike200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/Streaming/channels/201"
+    },
+    {
+      "models": [
+        "hike200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1935,
+      "url": "/Streaming/channels/101"
+    }
+  ]
+}

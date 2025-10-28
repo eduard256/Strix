@@ -1,0 +1,17 @@
+{
+  "brand": "Ikonic",
+  "brand_id": "ikonic",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IKE-D9004 w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    }
+  ]
+}

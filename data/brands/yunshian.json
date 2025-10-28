@@ -1,0 +1,18 @@
+{
+  "brand": "Yunshian",
+  "brand_id": "yunshian",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hg71",
+        "hg72"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "brand": "Besder",
+  "brand_id": "besder",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "001",
+        "1080F",
+        "1080P",
+        "1MP IP CAM",
+        "3024PB-I201",
+        "50x20-wg",
+        "50X50-WG",
+        "6004MW-HX201",
+        "6004MW-XMA201",
+        "6024",
+        "6024PB",
+        "6024PB XMA201 1080P",
+        "6024PB-HX201",
+        "6024PB-I201",
+        "6024PB-I20H1 2OMP",
+        "6024pb-jw201",
+        "6024PB-JW201-P",
+        "6024PB-XMA501",
+        "6024PW-HX131",
+        "6024pw-hx201",
+        "6024PW-JW131",
+        "6024PW-XMA201",
+        "6036MG",
+        "6036MG-POE",
+        "6036MG-POE-1080",
+        "60p36mw",
+        "60S36MW-HXA201",
+        "800W",
+        "8mp ptz",
+        "8mp-f1ww",
+        "8MP-F1WW",
+        "9015MW",
+        "9015MW-HX201A",
+        "9018mb",
+        "A33B",
+        "A8B",
+        "A8BQ-8MP-EU",
+        "A8SB",
+        "Bald Knob 01",
+        "BES-3024PB-IP201",
+        "Besder N8-WQ",
+        "BES-SD05WB",
+        "Bes-V01",
+        "C6004MW-1080P",
+        "C6F0SgZ3N0P5L2",
+        "C9F0SeZ3N0P6L0",
+        "C9F0SgZ3N0P8L0",
+        "hx-6036mg-ip201",
+        "HX-60S04",
+        "HX60S4",
+        "hx-60so4",
+        "hx-s04 1080p",
+        "IP_CAMERA",
+        "ip66",
+        "jw131",
+        "mmmm",
+        "Other",
+        "P3S",
+        "p3sb",
+        "Pro",
+        "R50X20",
+        "R6006MW-HX201",
+        "R6036MW",
+        "R6063MW",
+        "X6E-WEQ",
+        "XM530",
+        "xm530-R80x30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1024p",
+        "1080P",
+        "1080P BES-A8B",
+        "1MP IP CAM",
+        "50x20-wg",
+        "6004MW-HX201",
+        "6004mw-ip20h1",
+        "6004MW-XMA501",
+        "6024",
+        "6024PB XMA201 1080P",
+        "6024PB-HX101",
+        "6024pb-hx201",
+        "6024PB-IP20H1",
+        "6024PB-XM201-3.6",
+        "6024PB-XMA201",
+        "6024PB-XMA201A",
+        "6024PW-HX131",
+        "6024PW-IP20H1",
+        "9015MW",
+        "9015MW-HX201",
+        "9018MB",
+        "BE-6006MW-IP50H1",
+        "BES-3024PB-IP201",
+        "BES-A08",
+        "Besder6024P-XM201-3.6",
+        "C6F0SGZ3N0P6L2",
+        "IP_CAMERA",
+        "N703",
+        "Other",
+        "RA80X30-PQL",
+        "XM510"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1080F",
+        "1080P",
+        "1MP IP CAM",
+        "6024",
+        "6024PB-HX101",
+        "6024PB-I201",
+        "6024PB-XM201",
+        "9015mw",
+        "9015MW-HX201",
+        "9016MW-HX201",
+        "BES-3002PW-HX201",
+        "BES-9004MW-HXT201",
+        "C6F0SGZ3N0P6L2",
+        "C9F0SeZ3N0P3L0",
+        "hx-60so4",
+        "IP_camera",
+        "Other",
+        "SCNEW-02812"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080F",
+        "1080p",
+        "1080P",
+        "180",
+        "1MP IP CAM",
+        "50x20-wg",
+        "6002",
+        "6003",
+        "6004MW-HX201",
+        "6004mw-ip201",
+        "6004MW-IP20H01",
+        "6004mw-ip20h1",
+        "6004MW-XMA501",
+        "6024",
+        "6024-I101",
+        "6024PB XMA201 1080P",
+        "6024PB-HX101",
+        "6024PB-HX201",
+        "6024PB-I101",
+        "6024pb-i201",
+        "6024PB-i201",
+        "6024PB-I201 2.0MP",
+        "6024PB-I20H 2.0MP",
+        "6024PB-IP201",
+        "6024PB-IP20H1",
+        "6024PB-IP60H01",
+        "6024PB-l101",
+        "6024PB-XM201",
+        "6024PB-XMA201A",
+        "6024PW-101",
+        "6024PW-I101 720P",
+        "6024PW-IP131-8",
+        "6024PW-IP20H1",
+        "6024pwxma201",
+        "60V",
+        "6612mw-xma501",
+        "720P",
+        "720pPOE",
+        "800W",
+        "9012MW-IA30H1 3.0MP",
+        "9015mw",
+        "9016MW-HX201",
+        "9024",
+        "9024MW-I20H1",
+        "9024MW-IP101",
+        "960",
+        "BES-3006PW-IP203",
+        "BES-3024PB-IP201",
+        "C062105-IP5",
+        "C141216-IP012",
+        "C160407-P03",
+        "C6004MW-1080P",
+        "I201",
+        "IP_CAMERA",
+        "ipc",
+        "iptv",
+        "mw905-lw102",
+        "Other",
+        "RA50x10",
+        "RA50X10",
+        "XM510",
+        "XM530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "1080p",
+        "1080P",
+        "50x20-wg",
+        "6004MW-XMA201",
+        "6024PB-IA40H1",
+        "6024PW-HX101",
+        "6024PW-IP131-8",
+        "6024PW-XMA201",
+        "BES-6024MG-I40H",
+        "R50X20",
+        "RA50X20",
+        "x6-weq_8mp",
+        "XM530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "1080p",
+        "1080P",
+        "4dd1e57e2b45926f",
+        "6004MW-XMA201",
+        "6024MG-I201",
+        "60R18MB-XMT501",
+        "9015MW-HX201",
+        "B07Y31474X",
+        "Besder6024P-XM201-3.6",
+        "Other",
+        "x530",
+        "XM530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "131",
+        "1MP IP CAM",
+        "50x20-wg",
+        "6024",
+        "6024pb-hx201",
+        "6024PB-I20H1 2OMP",
+        "6024PB-IP20H1",
+        "6024PB-XMA501",
+        "6024PW-IP131-8",
+        "60S04MV-XMT601",
+        "7004MB",
+        "B07Y31474X",
+        "BES-3024PB-IP201",
+        "Dome",
+        "IP_CAMERA",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "1MP IP CAM",
+        "50x20-wg",
+        "6024PB-HX201",
+        "p3sb",
+        "RA50X20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "P3S-8MP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "Other",
+        "P05-7",
+        "p09-18"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/av0"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "Other",
+        "RA50X20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "6024",
+        "6024pb-mx101",
+        "R80X30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "B07Y31474X"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp"
+    },
+    {
+      "models": [
+        "50x20-wg",
+        "60S4MW-XMT501",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=1.sdp"
+    },
+    {
+      "models": [
+        "50x20-wg"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 554,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "6003MW",
+        "6024PB-I30H1",
+        "60S04MW-IP50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=0&stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "6004MW-XMA201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "6024PB-I101",
+        "6024PW-IP131-8",
+        "A22QQ",
+        "A80",
+        "BES-A08",
+        "CP11-68ENC",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "6024PW-IP131-8",
+        "A33"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "6612MW-IPA50H1",
+        "A8Q",
+        "P08-23",
+        "X0037"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "800W",
+        "A8Q",
+        "HK-P4",
+        "P3S",
+        "R80X30-PQ",
+        "XM530-R80X30-PQ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif/live/1"
+    },
+    {
+      "models": [
+        "a06",
+        "P3SB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "A33HS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0&onvif=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "A6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "H26",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP PTZ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snap.jpg?usr=&pwd="
+    },
+    {
+      "models": [
+        "oud"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp"
+    },
+    {
+      "models": [
+        "Sec"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    }
+  ]
+}

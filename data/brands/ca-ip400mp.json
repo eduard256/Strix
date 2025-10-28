@@ -1,0 +1,17 @@
+{
+  "brand": "Ca-ip400mp",
+  "brand_id": "ca-ip400mp",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP400MP"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    }
+  ]
+}

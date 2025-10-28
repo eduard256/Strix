@@ -1,0 +1,26 @@
+{
+  "brand": "Netis",
+  "brand_id": "netis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "634"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=3&u=[USERNAME]&p="
+    },
+    {
+      "models": [
+        "K9508-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/cgi-bin/snapshot.cgi?chn=3&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

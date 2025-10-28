@@ -1,0 +1,26 @@
+{
+  "brand": "Hd Ip Camera Depan",
+  "brand_id": "hd-ip-camera-depan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPCC N13NW"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 8557,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "IPCC-B15N-W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

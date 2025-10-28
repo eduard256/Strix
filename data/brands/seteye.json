@@ -1,0 +1,35 @@
+{
+  "brand": "Seteye",
+  "brand_id": "seteye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ANC-818GE"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.asp"
+    },
+    {
+      "models": [
+        "ANC-818GE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage?video=1&audio=0"
+    },
+    {
+      "models": [
+        "ANC-818GR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "imagep/picture.jpg"
+    }
+  ]
+}

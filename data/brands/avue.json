@@ -1,0 +1,18 @@
+{
+  "brand": "Avue",
+  "brand_id": "avue",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2m bullet ipcam",
+        "AVD552MIP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live1.sdp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Securicom Tunisie",
+  "brand_id": "securicom-tunisie",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Securicom dome"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

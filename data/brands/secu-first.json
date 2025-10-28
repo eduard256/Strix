@@ -1,0 +1,35 @@
+{
+  "brand": "Secu First",
+  "brand_id": "secu-first",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ip180"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "JSW P2P"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 26337,
+      "url": "/image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    }
+  ]
+}

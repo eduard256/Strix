@@ -1,0 +1,20 @@
+{
+  "brand": "Amity",
+  "brand_id": "amity",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "grounds",
+        "Other",
+        "parimeter",
+        "warehouse"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    }
+  ]
+}

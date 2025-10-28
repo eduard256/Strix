@@ -1,0 +1,27 @@
+{
+  "brand": "Desertwolfblackwidow606",
+  "brand_id": "desertwolfblackwidow606",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dltv",
+        "pt606"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch2"
+    },
+    {
+      "models": [
+        "thermal"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0"
+    }
+  ]
+}

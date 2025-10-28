@@ -1,0 +1,17 @@
+{
+  "brand": "Blackat",
+  "brand_id": "blackat",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ELC-FP215"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0/888888:888888/main"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "St (spacetechnology)",
+  "brand_id": "st-(spacetechnology)",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "181 ip home"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "ST - 177 IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264Preview_01_sub"
+    }
+  ]
+}

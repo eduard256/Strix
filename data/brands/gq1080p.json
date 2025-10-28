@@ -1,0 +1,17 @@
+{
+  "brand": "Gq1080p",
+  "brand_id": "gq1080p",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BE-IPWB200ZW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    }
+  ]
+}

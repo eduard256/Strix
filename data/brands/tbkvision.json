@@ -1,0 +1,17 @@
+{
+  "brand": "Tbkvision",
+  "brand_id": "tbkvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "TBK-BUL8841Z"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    }
+  ]
+}

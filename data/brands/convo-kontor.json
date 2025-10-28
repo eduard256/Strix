@@ -1,0 +1,17 @@
+{
+  "brand": "Convo Kontor",
+  "brand_id": "convo-kontor",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FE8171V"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    }
+  ]
+}

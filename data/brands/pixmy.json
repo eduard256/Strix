@@ -1,0 +1,28 @@
+{
+  "brand": "Pixmy",
+  "brand_id": "pixmy",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Shenzhen spy camera 1080",
+        "spy camera 1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1452d3fe69e9ddfb3023db6d76f2a75f_1"
+    },
+    {
+      "models": [
+        "spy cam 1080 shenzhen camera",
+        "spy camera 1080"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1452d3fe69e9ddfb3023db6d76f2a75f_0"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Oculus",
+  "brand_id": "oculus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CVIP2MVDFW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "MediaInput/mpeg4"
+    }
+  ]
+}

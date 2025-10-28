@@ -1,0 +1,17 @@
+{
+  "brand": "Gopro4",
+  "brand_id": "gopro4",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "silver"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    }
+  ]
+}

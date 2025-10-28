@@ -1,0 +1,17 @@
+{
+  "brand": "Cellinx-sth775",
+  "brand_id": "cellinx-sth775",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DY-IR2020HD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/AVStream1_1"
+    }
+  ]
+}

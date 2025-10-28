@@ -1,0 +1,17 @@
+{
+  "brand": "Suntek",
+  "brand_id": "suntek",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "S6211Y-WR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/qvga.jpg"
+    }
+  ]
+}

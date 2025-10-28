@@ -1,0 +1,17 @@
+{
+  "brand": "Pecan",
+  "brand_id": "pecan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "lpd120"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Shinsoft Co",
+  "brand_id": "shinsoft-co",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "I-315",
+        "SIS-T2001RE"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "v01"
+    }
+  ]
+}

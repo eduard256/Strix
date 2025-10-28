@@ -1,0 +1,111 @@
+{
+  "brand": "Cantonk",
+  "brand_id": "cantonk",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "200SR40N",
+        "IPDE20A600",
+        "KIP-100CZ40H",
+        "KIP-100R30N",
+        "KIP-130RT45H",
+        "KIP-130SHR30H",
+        "KIP-130SHV30H",
+        "KIP-130SL20H",
+        "KIP20040N",
+        "kip-200a40h",
+        "KIP-200CY60N",
+        "KIP-200HV20H",
+        "KIP-200PT40",
+        "KIP200PT40N",
+        "KIP-200SHR30N",
+        "KIP30-1080p-MX",
+        "Other",
+        "WFIP500R25F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "H.264/265 port 34567",
+        "KHJSL200W",
+        "KIP-130RT45H",
+        "KIP-200CZ60N",
+        "KIP-200PT40",
+        "KIP-200SHR30N",
+        "kip-200w25n",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "H.264/265 port 34567",
+        "KIP-300HV20A",
+        "kit200nf60"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "KIP-130RT45H",
+        "KIP-130SL20H",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "[CHANNEL]/[USERNAME]:[PASSWORD]/main"
+    },
+    {
+      "models": [
+        "KIP-130Y20",
+        "KIP-200PT40",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "KIP-200NF60N",
+        "KIP200PT40N"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "KIP-200SL20G"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "XM76"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Bioxo",
+  "brand_id": "bioxo",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "BF342506A-RS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    }
+  ]
+}

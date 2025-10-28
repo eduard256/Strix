@@ -1,0 +1,640 @@
+{
+  "brand": "Abus",
+  "brand_id": "abus",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "10550",
+        "Other",
+        "TV21550",
+        "TVIP10500",
+        "TVIP10550",
+        "TVIP11000",
+        "TVIP20000",
+        "TVIP21550",
+        "TVIP51550",
+        "TVIP52501"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "21501",
+        "Other",
+        "TVIP10001",
+        "TVIP10050",
+        "TVIP10051",
+        "TVIP21050",
+        "TVIP21500",
+        "TVIP31050",
+        "TVIP52501",
+        "tvip71000",
+        "TVIP71550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "2718",
+        "Digi-Lan TV7204",
+        "DIGI-LAN TV7219",
+        "Digi-Lan TV7230",
+        "DIGI-LAN TV7230 V2",
+        "Innenhof",
+        "Other",
+        "tv7202",
+        "TV7203",
+        "TV7210",
+        "TV7214",
+        "tv7216",
+        "tv7218",
+        "TV7240-LAN",
+        "TVIP51550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg"
+    },
+    {
+      "models": [
+        "ABUS: TVIP82100",
+        "IPCB64621",
+        "TVIP42561"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "casa",
+        "DIGI-LAN TV7230 V2",
+        "Other20550",
+        "TV7203",
+        "TV7220",
+        "TVIP41550",
+        "TVIP52500",
+        "TVIP52501"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "CF3",
+        "ipcb42501",
+        "IPCB54611B",
+        "IPCB74521",
+        "IPCB78520",
+        "IPCS84530",
+        "TVIP11560",
+        "TVIP41500",
+        "TVIP42561",
+        "TVIP42562",
+        "TVIP44510",
+        "TVIP60000",
+        "TVIP61500",
+        "TVIP61550",
+        "TVIP61560",
+        "TVIP62000",
+        "TVIP62560"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Digilan 7230",
+        "TV7204V2",
+        "tv7216",
+        "TV7230"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    },
+    {
+      "models": [
+        "DIGILAN 7230",
+        "Digi-Lan TV7204",
+        "Digi-Lan TV7230",
+        "DIGI-LAN TV7230",
+        "DIGI-LAN TV7230 V2",
+        "entree",
+        "foyer",
+        "Other",
+        "Other20550",
+        "TV7203",
+        "tv7204",
+        "TV7220",
+        "TV7240-LAN",
+        "TVIP11000",
+        "TVIP21550",
+        "TVIP41550_CAM1",
+        "TVIP52500",
+        "TVIP61560"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "Digi-Lan TV7204",
+        "Other",
+        "Other20550",
+        "TV7204v2",
+        "TV7222",
+        "TVIP41550",
+        "TVIP51550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Digi-Lan TV7206",
+        "Digi-Lan TV7230 v2",
+        "TVIP41550",
+        "tvip52500",
+        "tvip52501",
+        "TVIP52501",
+        "TVIP60550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "Digi-Lan TV7206",
+        "Digi-Lan TV7230 v2",
+        "FENIX",
+        "HD720p Dome",
+        "Other",
+        "Other20550",
+        "TIVP 31500",
+        "TV21550",
+        "TV7203",
+        "TVIP10000",
+        "TVIP10001",
+        "TVIP10055",
+        "TVIP11000",
+        "TVIP11502",
+        "TVIP11551",
+        "TVIP11552",
+        "TVIP21500",
+        "TVIP21550",
+        "tvip21551",
+        "tvip21552",
+        "TVIP21552",
+        "TVIP21560",
+        "TVIP31551",
+        "TVIP32500",
+        "TVIP41550",
+        "TVIP51550",
+        "TVIP71501",
+        "TVIP71551",
+        "TVIP717551",
+        "tvipem"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "DVR90001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Unicast/channels/101.sdp"
+    },
+    {
+      "models": [
+        "DVR9001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Unicast/channels/102.sdp"
+    },
+    {
+      "models": [
+        "DVR9001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Unicast/channels/202.sdp"
+    },
+    {
+      "models": [
+        "HDCC90001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Unicast/channels/201.sdp"
+    },
+    {
+      "models": [
+        "IP17550",
+        "IPS17550",
+        "IR 1080p",
+        "tvip10550",
+        "TVIP21500",
+        "tvip21551",
+        "tvip21552",
+        "TVIP52500",
+        "TVIP61550",
+        "TVIP62560",
+        "TVIP71501"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "IP4100",
+        "TVIP42561",
+        "TVIP92700"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "IP4100",
+        "IPCS34511A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "IPCA 62520",
+        "IPCB42515A",
+        "IPCB62510A",
+        "TVIP61560"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "IPCA 72500",
+        "IPCB42515A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/s2"
+    },
+    {
+      "models": [
+        "IPCA53000",
+        "IPCB42510B",
+        "IPCB44510A",
+        "IPCB64515B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "IPCB42550",
+        "IPCB78520",
+        "NVR10030",
+        "TVIP41500",
+        "TVIP52500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "IPCB54611B",
+        "TVIP44510",
+        "TVIP68510"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "IPCb64620",
+        "IPCB78520",
+        "IPCS84530",
+        "TVIP 21000",
+        "TVIP41500",
+        "TVIP60000",
+        "TVIP61500",
+        "TVIP61550",
+        "TVIP61560",
+        "TVIP62560"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "IPCB7250",
+        "IPCB74520",
+        "IPCB74521",
+        "IPCB78520",
+        "TVIP22500",
+        "TVIP31001",
+        "TVIP31501",
+        "TVIP32500",
+        "TVIP60000",
+        "TVIP71501",
+        "TVIP72500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.h264"
+    },
+    {
+      "models": [
+        "IPTV42560"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "IPTV605550",
+        "TVIP41550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "TVIP10000",
+        "TVIP20000",
+        "TVIP20050",
+        "TVIP21500",
+        "tvip21551"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    },
+    {
+      "models": [
+        "Other",
+        "TVIP20000",
+        "TVIP21500",
+        "TVIP717551"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other",
+        "PortCam",
+        "TV20550",
+        "TV21550",
+        "TV32500",
+        "TVIP10550",
+        "TVIP11560",
+        "TVIP20000",
+        "TVIP20550",
+        "TVIP21550",
+        "TVIP41500",
+        "TVIP41550",
+        "TVIP61500",
+        "TVIP71501"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "TIVP 31550",
+        "TVIP10001",
+        "TVIP10051",
+        "TVIP10055",
+        "TVIP11551",
+        "TVIP21501",
+        "TVIP21550",
+        "TVIP40000",
+        "TVIP41550",
+        "TVIP51500",
+        "TVIP51550",
+        "TVIP71550"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "TIVP41550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/viewer/video.jpg?resolution=320x240"
+    },
+    {
+      "models": [
+        "tv7203",
+        "TVIP41550"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "TVIP10055",
+        "tvip10055A",
+        "TVIP10055A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10001,
+      "url": "/jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "TVIP21000",
+        "tvip41560"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "TVIP21500"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mjpg"
+    },
+    {
+      "models": [
+        "TVIP22500",
+        "TVIP31001",
+        "TVIP32500",
+        "TVIP41560",
+        "TVIP62520"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.h264"
+    },
+    {
+      "models": [
+        "TVIP41500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "TVIP41500",
+        "TVIP41550_cam1",
+        "TVIP41550_cam2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "VideoInput/[CHANNEL]/h264/1"
+    },
+    {
+      "models": [
+        "TVIP41550"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video[USERNAME].mjpg"
+    },
+    {
+      "models": [
+        "tvip41560",
+        "TVIP61550"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "TVIP62000",
+        "TVIP62500"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpeg/pull"
+    },
+    {
+      "models": [
+        "TVIP72000"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/VideoInput/0/h264/1"
+    },
+    {
+      "models": [
+        "TVIP82561"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp?resolution=640x480"
+    }
+  ]
+}

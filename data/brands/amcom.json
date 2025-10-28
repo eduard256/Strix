@@ -1,0 +1,17 @@
+{
+  "brand": "Amcom",
+  "brand_id": "amcom",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "z32001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2600,
+      "url": "/"
+    }
+  ]
+}

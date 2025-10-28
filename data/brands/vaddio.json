@@ -1,0 +1,45 @@
+{
+  "brand": "Vaddio",
+  "brand_id": "vaddio",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ConferenceShot 10",
+        "ConferenceShot AV"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/vaddio-conferenceshot-stream"
+    },
+    {
+      "models": [
+        "primeshot"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "roboshot 12"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/vaddio-roboshot-usb-stream"
+    },
+    {
+      "models": [
+        "ROBOSHOT 30 HD-SDI WHITE"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/vaddio-roboshot-hd-sdi-stream"
+    }
+  ]
+}

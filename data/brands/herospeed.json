@@ -1,0 +1,249 @@
+{
+  "brand": "Herospeed",
+  "brand_id": "herospeed",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "00x",
+        "100",
+        "1080P",
+        "115VP",
+        "116VWZ",
+        "211VP",
+        "322",
+        "3516",
+        "3516CV300",
+        "3516D_OV4689",
+        "3516D_OV468g",
+        "3815c",
+        "4325",
+        "4516",
+        "4mp",
+        "777",
+        "AirLive POE-5010HD",
+        "AVHN20H100",
+        "b24a",
+        "b49b",
+        "BabyBullet",
+        "BS-BN24S200",
+        "bullet",
+        "cam-002",
+        "CHD-B1",
+        "china",
+        "Chris Cam",
+        "cinaX1",
+        "cornet 420",
+        "csd",
+        "D20M210",
+        "dds",
+        "Dome",
+        "ENTREE",
+        "eyecam",
+        "FH8856",
+        "fish",
+        "GV-003",
+        "Hero",
+        "hola",
+        "Horus",
+        "hs1",
+        "hs3245",
+        "HS3518",
+        "IDMF24IR",
+        "IP-100A40",
+        "IP54",
+        "ipc",
+        "iphd",
+        "ips",
+        "Iptronic ip720d2",
+        "iptronic1",
+        "iptronic2",
+        "ixtrima",
+        "Junk",
+        "KIP-100R20H",
+        "kip-200cd20h",
+        "kjbh",
+        "LIG40S200",
+        "liv60s400w",
+        "Longse",
+        "Longse LIZM40T200",
+        "MCI281D6",
+        "MCI281E6",
+        "MCI28Y9",
+        "mine",
+        "MW HD-CAM",
+        "MY1",
+        "Neview",
+        "NEXUS 154F",
+        "Nexus 219F",
+        "Novell",
+        "ONVIF",
+        "Other",
+        "Premio",
+        "provideo",
+        "S1010",
+        "S2L33M",
+        "S9811",
+        "S9829",
+        "SigmaStar",
+        "Speed",
+        "testhero",
+        "TI8099",
+        "U90VW",
+        "UVIC-5STB21M",
+        "VC-10IPBLFF2",
+        "videre"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "101",
+        "122",
+        "3231",
+        "720",
+        "CORNET",
+        "FH8856",
+        "H100",
+        "HS3245",
+        "icam",
+        "IPC",
+        "KHKHL200W",
+        "kip-100sl20h",
+        "longse",
+        "mine",
+        "MW HD-Cam",
+        "Other",
+        "S9829",
+        "SPZ",
+        "TI8099",
+        "VANDAL",
+        "XVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "132",
+        "HID-2031S",
+        "Other",
+        "XVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7000,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "3516"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "3516",
+        "4516",
+        "Dome",
+        "hs3245",
+        "Other",
+        "Panorama",
+        "S9811"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "gs-ip5s",
+        "IPC",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "HS3518",
+        "LONGSE LIZM40T200",
+        "ONVIF",
+        "Other",
+        "PREMIO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPC",
+        "KIP 578VR",
+        "LONGSE",
+        "Other",
+        "PREMIO"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "IPC",
+        "NEXUS 219F-GR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Onvif/live/1/1"
+    },
+    {
+      "models": [
+        "IPC",
+        "IPC2",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "IPC2",
+        "LONGSE",
+        "NOVELL",
+        "nvr",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 7000,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "ONVIF"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/avc.cgi?audiostream=[CHANNEL]"
+    }
+  ]
+}

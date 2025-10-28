@@ -1,0 +1,41 @@
+{
+  "brand": "Rtt",
+  "brand_id": "rtt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2220",
+        "RTT-3600",
+        "RTT-5300",
+        "RTT-5500",
+        "RTT-8300",
+        "RTT-8700",
+        "RTT-8800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "5300",
+        "IPCC-B17-1080P",
+        "Other",
+        "rtt-2400",
+        "RTT-3300",
+        "RTT-3600",
+        "RTT-5300",
+        "RTT-5900",
+        "RTT-8300",
+        "RTT-8800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Megapix",
+  "brand_id": "megapix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DWC_PB2M4TIR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile/profile01"
+    },
+    {
+      "models": [
+        "DWC_PB2M4TIR"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

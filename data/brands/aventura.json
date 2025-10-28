@@ -1,0 +1,47 @@
+{
+  "brand": "Aventura",
+  "brand_id": "aventura",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CAM-IPE-3D-3F-IRVP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "CAM-IPM-13D-IRVP",
+        "CAM-IPM-1D-212M-IRVP",
+        "CAM-IPM-3B-04IR"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "CAM-IPM-1B-04IR",
+        "CAM-IPM-1B-21IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/Streaming/Channels/102"
+    }
+  ]
+}

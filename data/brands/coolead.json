@@ -1,0 +1,40 @@
+{
+  "brand": "Coolead",
+  "brand_id": "coolead",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "541WS",
+        "L series",
+        "Other",
+        "RM-CAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "L Series",
+        "L SERIES",
+        "L610WS"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "videostream.cgi?"
+    }
+  ]
+}

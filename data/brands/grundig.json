@@ -1,0 +1,114 @@
+{
+  "brand": "Grundig",
+  "brand_id": "grundig",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "GCI:K1523D",
+        "GCI-F4616T",
+        "gci-f4616w",
+        "GCI-K0503B",
+        "GCI-K0589T",
+        "GCI-K2505B",
+        "GCI-K2812",
+        "GCI-K2812W",
+        "gec-d2201ar",
+        "IP - MJPEG",
+        "IP-Cam",
+        "IP-CAM",
+        "Other",
+        "QLS IP-CAM",
+        "QLsIP-CAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "jpeg"
+    },
+    {
+      "models": [
+        "GCI-F4626T",
+        "GCI-K0589T",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264"
+    },
+    {
+      "models": [
+        "GCI-H0522V",
+        "GCI-K0503B",
+        "GD-CI-AT8637T",
+        "GD-CI-BC2626V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/jpeg"
+    },
+    {
+      "models": [
+        "GCI-K1523V",
+        "GCI-K1527V",
+        "GCI-K1627D",
+        "GD-CI-BP4637T"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/h264"
+    },
+    {
+      "models": [
+        "IP - JPEG",
+        "IP - MJPEG",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "IP - MJPEG"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image.cgi?"
+    },
+    {
+      "models": [
+        "T6836W",
+        "T6836WITP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

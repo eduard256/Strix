@@ -1,0 +1,18 @@
+{
+  "brand": "Thingino",
+  "brand_id": "thingino",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "wuuk",
+        "Wyze 2 (Neos)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0"
+    }
+  ]
+}

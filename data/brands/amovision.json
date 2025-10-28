@@ -1,0 +1,205 @@
+{
+  "brand": "Amovision",
+  "brand_id": "amovision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2MP HD",
+        "AM-C739A",
+        "AM-C755R2-WIFI",
+        "am-c839",
+        "AM-CPT540",
+        "amov-q645r",
+        "AM-Q10325V",
+        "AM-Q1036",
+        "AM-Q1039",
+        "AM-Q1139",
+        "AM-Q630m",
+        "am-q6320-wifi",
+        "AM-Q855RV2",
+        "H.264",
+        "Other",
+        "Q10325V",
+        "Q1036",
+        "Q6300 WiFi",
+        "Q630M",
+        "Q6320",
+        "Q645R",
+        "Q6540",
+        "SCM-255664"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "2MP HD",
+        "am-C7310-WiFi",
+        "AM-C7342",
+        "AM-C734V2",
+        "AM-C735",
+        "AM-C736",
+        "AM-C736V",
+        "AM-C755R",
+        "AM-D640R",
+        "AM-H676",
+        "AM-HD3200",
+        "AM-Q1139",
+        "H.264",
+        "Other",
+        "QF605"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "AM-643R-WIFI",
+        "AM-C735"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AM-C7310-WIFI",
+        "AM-C7342",
+        "AM-C734V2",
+        "AM-C735",
+        "AM-C736",
+        "AM-C736V",
+        "AM-C739A",
+        "AM-C754R",
+        "AM-C755R",
+        "AM-C755R2-Wifi",
+        "AM-D640R",
+        "C739",
+        "cpt510",
+        "H.264",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AM-C736",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "AM-C736"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AM-C736"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "ipcam/mjpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "AM-C755R",
+        "AM-Q1159",
+        "H.264"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "AM-HD3300V"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "AM-Q1036",
+        "AM-Q1036 Deano",
+        "AM-Q1055R2",
+        "Other",
+        "Q11404R-WIFI",
+        "Q630",
+        "Q645R",
+        "V100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "AM-Q1036"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "AM-Q1039",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "AM-Q1039"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "AM-W736"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

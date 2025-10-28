@@ -1,0 +1,20 @@
+{
+  "brand": "Yunch",
+  "brand_id": "yunch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "yc-110ar",
+        "YC-110ar",
+        "yc-11ar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam2/mpeg4"
+    }
+  ]
+}

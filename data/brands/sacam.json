@@ -1,0 +1,31 @@
+{
+  "brand": "Sacam",
+  "brand_id": "sacam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "cn-72m1wl",
+        "CN-72M2WL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "CN-72M2WH",
+        "CN-72M2WL",
+        "p2p",
+        "p2p hd",
+        "SW27897964"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1.3gp"
+    }
+  ]
+}

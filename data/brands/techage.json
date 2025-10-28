@@ -1,0 +1,189 @@
+{
+  "brand": "Techage",
+  "brand_id": "techage",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3MP",
+        "8MP 4K",
+        "Other",
+        "XMEye"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5 MP POE",
+        "NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "508",
+        "BT508GV-20SC",
+        "east3.0",
+        "IPC",
+        "IPC_NT98566_80N50_S38",
+        "ipc-bt511sw-1.0",
+        "IPC-BT618-40",
+        "IPC-BT619W-2.0",
+        "NVR",
+        "Other",
+        "PT915",
+        "TA-520SB-20W",
+        "TA-608G-AI",
+        "TA-XM-605GP-AI-50",
+        "TA-XM-PT825G-80P",
+        "XM530",
+        "XM530_50X20-WG_8M",
+        "XM-IP508GV-20",
+        "XM-IP511SWTV-20-64G",
+        "XM-IP605GV-50",
+        "XM-IP608G-AI-20W",
+        "YN-IPC-511SW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "5MP POE PTZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "IPC",
+        "IPC-BT619W-10",
+        "ipc-bt619w-2.0",
+        "IPC-BT619W-2.0",
+        "JA-608GW-20",
+        "NVR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPC"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "IPC",
+        "IPC-BT511SW",
+        "ipc-bt618-40",
+        "NVR",
+        "TA-XM-605GP-AI-50",
+        "TA-XM-M29SP-AI-50N",
+        "XM530",
+        "XMEYE",
+        "xm-ip511swtv-20",
+        "XM-IP608G-AI-20W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "IPC-BT511SW-1.0",
+        "IPC-BT619W-2.0",
+        "NVR",
+        "NVS",
+        "Other",
+        "W4W4S-BT619AW-13",
+        "w4w4s-bt619aw-15"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IPC-BT618-20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "TA-605P-AI-50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "TA-JA-508GW-30"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=1"
+    },
+    {
+      "models": [
+        "TA-XM-DM13EP-50"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "vm-530"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8899,
+      "url": "/onvif/device_service"
+    }
+  ]
+}

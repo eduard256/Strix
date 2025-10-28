@@ -1,0 +1,18 @@
+{
+  "brand": "Lucem",
+  "brand_id": "lucem",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "LIP-579VR(G)",
+        "n732"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/H264"
+    }
+  ]
+}

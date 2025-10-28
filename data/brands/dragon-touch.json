@@ -1,0 +1,30 @@
+{
+  "brand": "Dragon Touch",
+  "brand_id": "dragon-touch",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "k4w10",
+        "kb10",
+        "kb810",
+        "od10",
+        "OD10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "k4w10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    }
+  ]
+}

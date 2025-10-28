@@ -1,0 +1,17 @@
+{
+  "brand": "Fern360",
+  "brand_id": "fern360",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FGSIP-B4TFA-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    }
+  ]
+}

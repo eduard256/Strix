@@ -1,0 +1,18 @@
+{
+  "brand": "Bitron",
+  "brand_id": "bitron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AV7002/0101",
+        "B-Focus Vari 2 AV7210/10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

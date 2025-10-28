@@ -1,0 +1,483 @@
+{
+  "brand": "Nvt",
+  "brand_id": "nvt",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "014",
+        "015",
+        "021",
+        "024",
+        "107",
+        "108",
+        "A3-X20RJ US",
+        "ABQ-A1",
+        "BNP-201",
+        "carcam",
+        "iCSee",
+        "ip572b",
+        "onfiv",
+        "Other",
+        "TechEge_XM-IP511SWTV-20",
+        "XM530 R80X50-PQ 8M",
+        "XM530_R50X20-PQ_8M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=1.sdp"
+    },
+    {
+      "models": [
+        "0173f6393fb22423",
+        "100m",
+        "102",
+        "102-Ulaz",
+        "1080",
+        "1080p",
+        "1080pHD",
+        "121",
+        "16032B",
+        "1882",
+        "212",
+        "2600",
+        "264",
+        "2MP",
+        "2mpDome",
+        "3024pb-120h1",
+        "555",
+        "5m-1",
+        "6024mw-ip202",
+        "6024PB-IP201",
+        "703ERC-T",
+        "7340",
+        "9048mw-I202",
+        "9204",
+        "ABQ-A1",
+        "ABQ-A8",
+        "Anbe 48 IR LED",
+        "ankke",
+        "Anran",
+        "APP",
+        "ar-24nr-wifi",
+        "AZISHN",
+        "Back Yard",
+        "baliecam",
+        "BC6-5MP-WFX",
+        "BES-6004MW",
+        "Besde",
+        "besder",
+        "Beseder",
+        "blas",
+        "BTEC",
+        "buiten 3",
+        "buiten 4",
+        "buiten1",
+        "buiten2",
+        "BulbCAM",
+        "bullet",
+        "CAM-08",
+        "cam1",
+        "CAM1",
+        "CameraRUA",
+        "CAMO!",
+        "CAMO1",
+        "Camoldalt",
+        "can line1",
+        "cbncgnb",
+        "CCTV",
+        "CEFCC",
+        "china",
+        "China",
+        "CMS",
+        "DEATTI",
+        "dvr",
+        "Egunooye",
+        "escam",
+        "ESCAM BRICK",
+        "escamqf500",
+        "Esquina",
+        "ezviz",
+        "F Pourch East",
+        "G-LENZ Security",
+        "H264",
+        "Haivision",
+        "HBD12-P",
+        "hc612",
+        "HD MEGAPIXIL",
+        "heanworld",
+        "HiSp1080",
+        "HiSpeed1080",
+        "hmp88B10",
+        "holtje",
+        "homemake",
+        "HP-55A20PE",
+        "HS1080",
+        "iCSee",
+        "ICSee",
+        "ICSEE",
+        "intelbras",
+        "ip camears zimol",
+        "IP-1000",
+        "IP66",
+        "IPC XIB 3 V 1.1",
+        "juch",
+        "K5-7110-F",
+        "kop",
+        "lato2",
+        "leaving",
+        "Liiketunnistin",
+        "LionVise",
+        "loosafe",
+        "lp cam",
+        "ltids-62drc-s",
+        "Magazijn",
+        "Misc poe Camera",
+        "Misecur",
+        "Model S",
+        "moja",
+        "Motoros",
+        "NCIP9",
+        "ONVIF Definition",
+        "Other",
+        "Outside",
+        "partizan_Hi",
+        "Pea  Shooter",
+        "pod",
+        "Poort",
+        "PST-IPC102CP",
+        "ptz",
+        "R80x20",
+        "R80X20-PQ",
+        "RC50H20",
+        "S39",
+        "sabrina",
+        "SC10IP",
+        "sg-5036",
+        "SMAR",
+        "smart",
+        "SP-014",
+        "sunba. me",
+        "sunba601",
+        "Sunluxy",
+        "Talos",
+        "Tantos",
+        "Techage \\",
+        "TECHE",
+        "Techege",
+        "Techview",
+        "top",
+        "TOP-201",
+        "TOP-308",
+        "Topcam1080p",
+        "TVPSii",
+        "unitoptek",
+        "uparta",
+        "USA-A1",
+        "USGDK7088HGPw",
+        "V4.02",
+        "vesta",
+        "Vesta5222v",
+        "VIP3230",
+        "W530-N100",
+        "wi-fi",
+        "Win 9373 IP",
+        "XM530_R80X20-PQ_8M",
+        "XM530_R80XD30-PQ_8M",
+        "xyz",
+        "ysy-3023i-1",
+        "YVV365"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "121212",
+        "236",
+        "39737",
+        "507",
+        "50H40PL",
+        "53X13_SWL",
+        "720",
+        "720pa",
+        "720pb",
+        "a aszx",
+        "AB-1",
+        "Abkalbe",
+        "ABQ-A1",
+        "Anran",
+        "B and W",
+        "baixa resol",
+        "baliecamer",
+        "BESDER",
+        "Button",
+        "china",
+        "China Cam",
+        "dff",
+        "Eghunooye",
+        "Fuluva",
+        "Game",
+        "G-LENZ SECURITY",
+        "H264",
+        "HBD12-P",
+        "heanworld",
+        "HEANWORLD",
+        "HI-2425-POI",
+        "homey",
+        "ICSEE",
+        "ip cam lo res",
+        "IP-005",
+        "jeremy",
+        "Liege",
+        "loosafe",
+        "LX-50H40PL",
+        "min",
+        "neto",
+        "NoName",
+        "NVTdunno",
+        "Other",
+        "partizan",
+        "Pavilhao N",
+        "QF003",
+        "R80",
+        "R80x20 low res",
+        "Rafiq2",
+        "sg-5036",
+        "sisview",
+        "unitoptek",
+        "V100",
+        "WiFi IP",
+        "XM530_50X30",
+        "XM530_R80X20-PQ_8M",
+        "Yes"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "720p",
+        "MISECU"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "8872",
+        "gw78",
+        "proyek"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mode=real&idc=1&ids=1"
+    },
+    {
+      "models": [
+        "ANKKE",
+        "ICSEE",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=0.sdp"
+    },
+    {
+      "models": [
+        "China",
+        "ICSee",
+        "ICSEE",
+        "misecu",
+        "Other",
+        "WS-TR2"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp"
+    },
+    {
+      "models": [
+        "China"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/streamtype=0"
+    },
+    {
+      "models": [
+        "F001",
+        "ICSEE",
+        "Other",
+        "XM530_50X50-WG_8M",
+        "XM530_R50X20-PQ_8M",
+        "XM530_R80X50-PQ_8M"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "ICSEE",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg4cif"
+    },
+    {
+      "models": [
+        "ICSEE",
+        "V380"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/user=admin_password=[PASSWORD]_channel=1_stream=1.sdp"
+    },
+    {
+      "models": [
+        "JA-A1K",
+        "jooan f4",
+        "lenovo"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "onwif"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "Other",
+        "POE"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/stream/0:1"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8899,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "poe"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1&protocol=unicast&onvif=0.sdp"
+    },
+    {
+      "models": [
+        "ta-xm"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0&protocol=unicast.sdp"
+    },
+    {
+      "models": [
+        "XM530 (China)"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream"
+    },
+    {
+      "models": [
+        "XM530 R80X50-PQ 8M"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "XM530_R50X20-PQ_8M"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]_password=[PASSWORD]_channel=0_stream=0.sdp?real_stream"
+    }
+  ]
+}

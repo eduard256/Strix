@@ -1,0 +1,86 @@
+{
+  "brand": "Ip Camera (android)",
+  "brand_id": "ip-camera-(android)",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "C6F0SGZ3N0P3L2",
+        "C9F0SfZ3N0P6L0",
+        "C9F0SgZ3N0PbL0",
+        "ssd"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "HKview"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "IP WEBCAM FOR ANDROID",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video"
+    },
+    {
+      "models": [
+        "IP WEBCAM FOR ANDROID"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-CAMERA"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "IP-CAMERA",
+        "XT1609"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 4747,
+      "url": "/video"
+    },
+    {
+      "models": [
+        "Pixel",
+        "Pro"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "TinyCam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "https",
+      "port": 8083,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=1"
+    }
+  ]
+}

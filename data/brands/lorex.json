@@ -1,0 +1,1113 @@
+{
+  "brand": "Lorex",
+  "brand_id": "lorex",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2020",
+        "4321",
+        "8921",
+        "D841A8",
+        "DV700",
+        "DV7041",
+        "DV908",
+        "DVR",
+        "E581CBB-Z",
+        "E841CAB",
+        "E861AB",
+        "e861abb",
+        "e891ab",
+        "E892AB",
+        "LBN3143-C",
+        "LBN4321-C",
+        "lbv2251-c",
+        "LEV2750AB",
+        "LHV1000",
+        "LHV2008-DFS3",
+        "LHV2016",
+        "LHV21081TU4",
+        "lhv5100",
+        "LHV5108W",
+        "LIVE PING",
+        "LN10802-84W",
+        "LNB3141-C",
+        "LNB3143B",
+        "LNB3143-C",
+        "LNB3143R-C",
+        "LNB3163",
+        "LNB3163B",
+        "LNB3373B",
+        "LNB3373-c",
+        "LNB3373SB",
+        "LNB3373S-C",
+        "LNB35733B",
+        "lnb4163b",
+        "LNB4173b",
+        "LNB4173SB",
+        "LNB4321",
+        "lnb4321b",
+        "LNB4371-C",
+        "lnb4421",
+        "lnb4613b",
+        "LNB8005",
+        "LNB8005-C",
+        "LNB8111",
+        "LNB8111B",
+        "LNB8921",
+        "LNB8921-C",
+        "LND3152",
+        "LND3374SB",
+        "LNE3322B",
+        "LNE4172SB",
+        "LNE4322",
+        "lne4422s-c",
+        "LNE8950A",
+        "LNE8950AB",
+        "LNE8974A",
+        "LNE8974AB",
+        "LNR110",
+        "LNR400",
+        "lnr6108",
+        "LNR6826K",
+        "lnw16xf",
+        "LNX IP CAMS",
+        "LNZ32P12",
+        "LNZ32P1212X",
+        "LNZ32P-4",
+        "LNZ3522-C",
+        "LNZ44P12",
+        "LW3211",
+        "mcnb3153",
+        "MCNB3153B",
+        "MPX822VW",
+        "N243MW2",
+        "N841",
+        "NR8141",
+        "nr9082",
+        "Other",
+        "w232ca"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "2K Doorbell",
+        "B451AJD",
+        "B451AJDBC-F",
+        "B862AJD-E",
+        "E893AB",
+        "LHA4216LC",
+        "LNB4421",
+        "LNB8005-C",
+        "lnb8963",
+        "LNB8963B 4K 8MP 4X Optical Zoom IP Bullet Camera",
+        "LNB8973B",
+        "LNE3142R",
+        "LNE3142RB",
+        "LNE9292B",
+        "LNR6108",
+        "mcnb3143",
+        "W482CAD",
+        "W881AA",
+        "W891uad"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor?channel=1&subtype=0"
+    },
+    {
+      "models": [
+        "321-C",
+        "lbn4321c",
+        "LBN4321-C",
+        "lnb 4321-C",
+        "LNB4321-C",
+        "LNB8111B",
+        "LNZ32p12",
+        "LNZ32P4",
+        "LNZ3522-C",
+        "NLBmpg",
+        "UNLISTED"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "3500",
+        "LHA2108LC-D",
+        "LHA4104",
+        "LHB926",
+        "lhwf1000",
+        "lkb343",
+        "LKB343C",
+        "LNK7216",
+        "Other",
+        "WireFree"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch01/0"
+    },
+    {
+      "models": [
+        "35000",
+        "L4248D-4AA4-E",
+        "LHA2108LC-D",
+        "LHA4216LC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch07/0"
+    },
+    {
+      "models": [
+        "4321",
+        "DVR",
+        "LBN3143-C",
+        "LBN4321-C",
+        "LNB3143R-C",
+        "LNB-3143R-CP",
+        "LNB3321B",
+        "LNB3321-C",
+        "lnb8111",
+        "LNB8111B",
+        "lne3142",
+        "LNE3322B",
+        "LNE4322",
+        "LNZ32P1212X",
+        "LNZ32P-4",
+        "LNZ32P4B",
+        "LNZ3522-C",
+        "MCNB3153",
+        "MCNB3153B",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "4321",
+        "D241A8",
+        "d861a8",
+        "DV908",
+        "DVR",
+        "e861abb",
+        "e892ab",
+        "ea8",
+        "FLIR",
+        "HD DVR",
+        "LBN4321-C",
+        "ldn4750ab",
+        "LEV2750AB",
+        "LHV1000",
+        "LHV2016",
+        "LHV21081TU4",
+        "LKB343C",
+        "LNB3143B",
+        "lnb4321b",
+        "LNB8005",
+        "LNB8005-C",
+        "LNB8111B",
+        "lnb8921",
+        "lnb8973",
+        "LNB8973",
+        "LNB8973B",
+        "LNB8973-C",
+        "LNB9292b",
+        "LND3374SB",
+        "lnd4750",
+        "LNE4172SB",
+        "LNE4422S-C",
+        "LNE8000",
+        "LNE8950",
+        "LNE8950AB",
+        "lnwhd",
+        "LNZ32P12",
+        "LNZ32P4",
+        "NR814-N",
+        "Other",
+        "OTHER-SCAN"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "8921",
+        "d861a8",
+        "DV908",
+        "DVR",
+        "E581CBB-Z",
+        "E861aBB",
+        "HD DVR",
+        "HD DVR d841",
+        "LBN4321-C",
+        "lbv2251-c",
+        "lhv",
+        "LHV1000",
+        "LHV5108W",
+        "LN10802-84W",
+        "LNB3143-C",
+        "LNB3143R-C",
+        "LNB-3143R-CP",
+        "LNB3163B",
+        "LNB3321B",
+        "LNB4321",
+        "LNB4321-C",
+        "LNB4421",
+        "LNB8005",
+        "LNB8005-C",
+        "LNB8111B",
+        "lnb8921",
+        "lnb8973",
+        "LNB8973B",
+        "LNB8973-C",
+        "LND3374SB",
+        "LND4750AB",
+        "LNE3322B",
+        "LNE4322",
+        "lne4422s-c",
+        "LNR114SP",
+        "LNR6108",
+        "lnw16xf",
+        "LNWZ533D3AFDAD3",
+        "LNWZ53557C32498",
+        "LNZ44P12B",
+        "LVH1000",
+        "MPX822VW",
+        "NLB111",
+        "Nr818",
+        "nr908x",
+        "Other",
+        "Other-Scan"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "9393",
+        "E841CA-E",
+        "E842CDB",
+        "HD DVR",
+        "LNB3143RB",
+        "LNB3163B",
+        "LNB4421B",
+        "LNB8105",
+        "lnb8963",
+        "LNZ44P4B",
+        "Other",
+        "W261AS",
+        "W462AQC-E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "a261as-z",
+        "W261AS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "B451AJD-F",
+        "MCND 2152"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0"
+    },
+    {
+      "models": [
+        "B862AJD-E",
+        "d861a8",
+        "LNB9252B",
+        "LNE9292B",
+        "LNZ32P4",
+        "LNZ32P4B",
+        "LNZ32P4-C",
+        "W261AS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1"
+    },
+    {
+      "models": [
+        "D1",
+        "D241A8",
+        "D841A6",
+        "LNB4173b",
+        "LNB4173SB",
+        "LNB4421",
+        "lnb8105x",
+        "LNB8105x-c",
+        "LNB8973B",
+        "LNE8950AB",
+        "LNR8105x",
+        "LNWCM22Y",
+        "LNWCX-C",
+        "LNWZ6A3DD2594F7",
+        "LNZ44P4B",
+        "LX1081-44ADR",
+        "Other",
+        "W282cad"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "D241A8",
+        "E895AB",
+        "E896DD",
+        "LHv0016S",
+        "lnb 8005-C",
+        "LNB3163B",
+        "LNB8005-C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?1"
+    },
+    {
+      "models": [
+        "D241A8",
+        "E892DD",
+        "HD DVR d841",
+        "lnb9292c"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 7000,
+      "url": "/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "d861a8",
+        "LH070",
+        "LHA4104"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=1;subtype:1"
+    },
+    {
+      "models": [
+        "d861a8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=8&subtype=1"
+    },
+    {
+      "models": [
+        "d861a8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=3&subtype=1"
+    },
+    {
+      "models": [
+        "DVR",
+        "LHB926",
+        "ln1100",
+        "LNE8950AB",
+        "LNR6108",
+        "LNR632",
+        "MPX",
+        "Other",
+        "Rea",
+        "ront"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=01"
+    },
+    {
+      "models": [
+        "DVR",
+        "LHA4216LC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch09/0"
+    },
+    {
+      "models": [
+        "E841CAB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]"
+    },
+    {
+      "models": [
+        "E893DD",
+        "LNB9252B",
+        "LND3374B",
+        "ND02",
+        "W281AAC-681F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/"
+    },
+    {
+      "models": [
+        "HD DVR",
+        "LHV1000",
+        "lmb",
+        "lnb8105x",
+        "lnb8973b",
+        "lnz",
+        "MCNB2151",
+        "MCNB2153"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "IP1240",
+        "IPSC Series",
+        "L23WD",
+        "Lorex IP1240"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "IPSC Series"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "showimg_pda.cgi?cam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IPSC SERIES",
+        "L23WD",
+        "LN 3003",
+        "ln3003",
+        "LNE1001",
+        "LNE3003",
+        "LNX IP CAMS",
+        "LNZ4001",
+        "LOREX IP1240",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "IPSC SERIES",
+        "L23WD",
+        "LIVE PING",
+        "lnb3143",
+        "LNE1001",
+        "LNE3003",
+        "LNX IP CAMS",
+        "LNZ4001",
+        "LOREX IP1240",
+        "MCND2152",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": ""
+    },
+    {
+      "models": [
+        "L23WD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LBH926",
+        "LHB926",
+        "LHV2008",
+        "LHV2108",
+        "ln1100",
+        "LNZ32P4",
+        "LVH1000",
+        "Other-Scan"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "LBN8111B",
+        "LNB3143RB",
+        "lnb8111",
+        "LNB8111B",
+        "NLB1111-c"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "LBV2531S-C"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 90,
+      "url": "/cgi-bin/net_jpeg.cgi?ch=0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch02/0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch03/0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch04/0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch05/0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch06/0"
+    },
+    {
+      "models": [
+        "LHA2108LC-D",
+        "LHA4216LC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch08/0"
+    },
+    {
+      "models": [
+        "LHA4216LC"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=12"
+    },
+    {
+      "models": [
+        "LHB926",
+        "LNB2153",
+        "MCNB2153",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "LHB926",
+        "LNB2153",
+        "LNB3143R-C",
+        "MCNB2152",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?"
+    },
+    {
+      "models": [
+        "lhv5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=11&subtype=1"
+    },
+    {
+      "models": [
+        "lhv5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=12&subtype=1"
+    },
+    {
+      "models": [
+        "lhv5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=13&subtype=1"
+    },
+    {
+      "models": [
+        "lhv5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=14&subtype=1"
+    },
+    {
+      "models": [
+        "lhv5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=15&subtype=1"
+    },
+    {
+      "models": [
+        "live ping",
+        "LNC-100",
+        "LNC104",
+        "LNC116",
+        "LNC-130",
+        "LNC204",
+        "LNC216",
+        "LNC226x",
+        "LNC230",
+        "LNC234",
+        "LNC254",
+        "LOREX IP1240",
+        "Lorex Ping",
+        "MCN2153",
+        "Other",
+        "v030409"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "live ping",
+        "LNC104",
+        "LNC116",
+        "LNC226X",
+        "lnc234",
+        "lnc254",
+        "LNx Ip Cams",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "live ping",
+        "LNC104",
+        "LNC116",
+        "lnc226",
+        "LNC226X",
+        "LNC226X(NEW)",
+        "lnc230",
+        "LNC234",
+        "LNC24",
+        "LOREX IP1240",
+        "mcnc100",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "live ping",
+        "LNC116",
+        "LNC130",
+        "Lorex LNC100",
+        "mcnc100",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "LN1001"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    },
+    {
+      "models": [
+        "ln3003",
+        "LNB2153",
+        "LNB2184",
+        "LNE1001",
+        "LNE3003",
+        "LNZ4001",
+        "MCNB2153",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "LNB2153",
+        "LNC204",
+        "MCN2153",
+        "MCNB2152",
+        "MCNB2153",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "LNB3143",
+        "LNB3143RB",
+        "LNB3321B",
+        "LNZ32P4-C",
+        "LNZ3522B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=0&resolution=320x240"
+    },
+    {
+      "models": [
+        "LNB3143B",
+        "LNB3163B",
+        "lnb8111",
+        "LNB8111B",
+        "LNZ32P1212X",
+        "LNZ32P12SB",
+        "LNZ32P4",
+        "mcnb3153"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "LNB-3143R-CP",
+        "LNB8005-C",
+        "MXP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "LNB3373SB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=&p="
+    },
+    {
+      "models": [
+        "LNB4421",
+        "lne4422s-c"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46U3RyYXRmb3JkMjAyMQ=="
+    },
+    {
+      "models": [
+        "LNB8005-C",
+        "lnb9292b"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?2"
+    },
+    {
+      "models": [
+        "LNB8105"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif"
+    },
+    {
+      "models": [
+        "lnb8105x"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]"
+    },
+    {
+      "models": [
+        "LNB8111",
+        "LNB8111B",
+        "LNZ32P4-C",
+        "PE133F"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi?camera=0"
+    },
+    {
+      "models": [
+        "LNB9232S",
+        "lnb9292b",
+        "LNB9393",
+        "NR916X",
+        "w282ca"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46Ymx1ZXByNTE2"
+    },
+    {
+      "models": [
+        "LNC204"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "LNC226x",
+        "w282ca"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "LNE3003"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "LNE8950AB",
+        "LNE8964AB"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1&subtype=00&authbasic=YWRtaW46RXdhVmFu"
+    },
+    {
+      "models": [
+        "LNx Ip Cams"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot"
+    },
+    {
+      "models": [
+        "LNx Ip Cams"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getimage"
+    },
+    {
+      "models": [
+        "LNZ44P12B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=1?subtype=0"
+    },
+    {
+      "models": [
+        "M5100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/cam/realmonitor?channel=2&subtype=0"
+    },
+    {
+      "models": [
+        "MCNB2152"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Video?Codec=MPEG4&Width=720&Height=576&Fps=30"
+    },
+    {
+      "models": [
+        "MCNB2153",
+        "MCND2152"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=2"
+    },
+    {
+      "models": [
+        "R910AB"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=lorexBeatz1251%21%24"
+    },
+    {
+      "models": [
+        "TD861818D6-F"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/GetData.cgi"
+    },
+    {
+      "models": [
+        "WS261AS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=0"
+    }
+  ]
+}

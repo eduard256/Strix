@@ -1,0 +1,424 @@
+{
+  "brand": "Szsinocam",
+  "brand_id": "szsinocam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1.0 ip",
+        "1.0 omp ip camera",
+        "2.0 MP IP CAMERA",
+        "720P",
+        "720p Wifi Onvif",
+        "794d6e",
+        "IPC-5030BSW-UK",
+        "Other",
+        "P2P IP",
+        "SN-IPC 5033SW-UK",
+        "sn-ipc-3008",
+        "SN-IPC-4015SW-UK",
+        "SN-IPC-5023CSWF",
+        "SN-IPC-5030BSW-AU",
+        "SN-IPC-5032CSW",
+        "SN-IPC-5033SW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ROH/channel/11"
+    },
+    {
+      "models": [
+        "1.0 IP",
+        "1.0 OMP IP CAMERA",
+        "1.0MP IP CAMERA",
+        "1mp",
+        "1MP CAM",
+        "1MP IP CAM",
+        "1MP IP CAMERA",
+        "2.0 MP IP CAMERA",
+        "2mp F20M",
+        "2MP F20M",
+        "5001s",
+        "5033SW",
+        "5033sw-uk",
+        "5033SWUS",
+        "562410",
+        "720P",
+        "720P WIFI ONVIF",
+        "C6F0SeZ3N0P5L0",
+        "C6F0SGZ0N0P0L0",
+        "C6F0SGZ3N0P6L2",
+        "C9F0SeZ3N0P8L0",
+        "H.264",
+        "H264",
+        "IPC-4024",
+        "IPC-4036SW",
+        "IPC-5030",
+        "IPC-5030BSW-EU",
+        "IPC-5030BSW-UK",
+        "IPC-5030CSW-UK",
+        "IPC-5033-SW-EU",
+        "IP-CAM",
+        "IPC-F20M",
+        "IPC-HR05",
+        "Other",
+        "P2P IP",
+        "PC-5033SW-UK",
+        "SN - IPC - 3009FCSW20",
+        "SN - IPC - HW07 - UK",
+        "SN- IPC 5033SW-W-UK",
+        "SN6408CW",
+        "SN-IPC 5033w",
+        "SN-IPC-4003",
+        "SN-IPC-4015SW-UK",
+        "sn-ipc-5030bsw-uk",
+        "SN-IPC-5030SW",
+        "SN-IPC-5033CSW-AU",
+        "SN-IPC-5033CSW-US",
+        "SN-IPC-5033SW",
+        "sn-IPC5033SW-eu",
+        "SN-IPC-5033SW-EU",
+        "SN-IPC-5033SW-UK",
+        "SN-IPC5034CSW-UK",
+        "sn-ipc-5034sw",
+        "SN-IPC-7042CSW-UK",
+        "SN-IPC-9031A-POE",
+        "SN-IPC-HW14",
+        "SN-IPC-HW16",
+        "sn-ipc-hw20",
+        "zzzz-531097-fbaec"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "1.0 IP",
+        "1.0 OMP IP CAMERA",
+        "1MP IP CAM",
+        "1MP IP CAMERA",
+        "2",
+        "0 ip",
+        "2.0 MP IP CAMERA",
+        "5033SW",
+        "5033SW-UK",
+        "720P",
+        "720P WIFI ONVIF",
+        "7889BF",
+        "C6F0SgZ0N0P0L0",
+        "C6F0SgZ3N0P6L2",
+        "gb-204",
+        "H.264",
+        "IP 2MP CAM",
+        "IPC-5030BSW-UK",
+        "IPC-5030CSW-UK",
+        "IPC-5033-SW",
+        "ONVI",
+        "Other",
+        "pc-5033sw-uk",
+        "SINOCAM",
+        "SN- IPC 5033SW-W-UK",
+        "SN",
+        "IPC.5030CSW-UK",
+        "SN.IPC.5030CSW.UK",
+        "SN.IPC.5030CSW-UK",
+        "SN-HSP-4007W20",
+        "SN-IPC",
+        "SN-IPC 5033SW-UK",
+        "SNIPC3010FCSW20-au",
+        "SNIPC3010FCSW20-UK",
+        "SN-IPC-3010FCSW-UK",
+        "SN-IPC-3010FCW20-UK",
+        "SN-IPC-4015SW-UK",
+        "SN-IPC-4036CSW-UK",
+        "SN-IPC-4036SW-AU",
+        "sn-ipc-5030bsw-uk",
+        "sn-ipc-5030csw",
+        "SN-IPC-5030CSW-UK",
+        "SN-IPC-5031CSW",
+        "SN-IPC-5033CSW-AU",
+        "SN-IPC-5033CSW-us",
+        "SN-IPC-5033SW",
+        "sn-IPC5033SW-eu",
+        "SN-IPC-5033SW-EU",
+        "sn-ipc-503530 uk",
+        "SN-IPC-HW14",
+        "SN-IPC-HW16",
+        "Wifi bullet cam"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1.0 IP",
+        "1MP IP CAMERA",
+        "5033",
+        "720P WIFI ONVIF",
+        "IPC-5033-SW",
+        "Other",
+        "SN-IPC-5033SW",
+        "SN-IPC-5033SW-EU",
+        "SN-IPC-5033SW-uk",
+        "sn-ipc-503530 uk"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1.0 IP",
+        "1.0 OMP IP CAMERA",
+        "1MP IP CAMERA",
+        "2.0 MP IP CAMERA",
+        "720P WIFI ONVIF",
+        "C6F0SgZ3N0P5L2",
+        "fullhd",
+        "IPC-5033-SW",
+        "IP-CAM",
+        "sn-hsp-ht05",
+        "SN-IPC 5033SW-UK",
+        "SN-IPC 5033SW-W-UK",
+        "SN-IPC-4015SW-UK",
+        "SN-IPC-5033SW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "1.0 IP",
+        "1.0 OMP IP CAMERA",
+        "IPC-HR01",
+        "SN - IPC - 3009FCSW20",
+        "SN-IPC 5033SW-UK",
+        "SN-IPC-3002FSW10",
+        "SN-IPC-6006e10",
+        "SN-IPC-HR01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "1.0 OMP IP CAMERA",
+        "1MP IP CAM",
+        "1MP IP CAMERA",
+        "2.0 MP IP CAMERA",
+        "4036",
+        "5024sw",
+        "5033SW",
+        "720p",
+        "720P WIFI ONVIF",
+        "7889BF",
+        "Cam5",
+        "cheap 2mp",
+        "gross",
+        "IP 2MP CAM",
+        "IPC-5029",
+        "IPC-5030BSW-EU",
+        "ipc-5030BSW-UK",
+        "ipc-5033-sw",
+        "IPC-5033-SW-EU",
+        "ONVI",
+        "Other",
+        "P2P IP",
+        "SN- IPC 5033SW-W-UK",
+        "SN IPC 5042CSW",
+        "sn-ipc 5033sw-uk",
+        "SN-IPC 5033SW-WI-UK",
+        "SN-IPC-3008FCW-AU",
+        "sn-ipc-4014sw-au",
+        "SN-IPC-4015SW-AU",
+        "SN-IPC-4015SW-UK",
+        "SN-IPC-4036SW-AU",
+        "sn-ipc-5033sw",
+        "SN-IPC5033SW-WI-UK",
+        "SN-IPC5034CSW-UK",
+        "SN-IPC-7042CSW-UK",
+        "sn-ipc-8107cs-uk",
+        "szscam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "1.0 OMP IP CAMERA",
+        "1MP IP CAM",
+        "IPC-5030BSW-UK",
+        "Other",
+        "sn-ipc-5033sw",
+        "sn-ipc-5033sw-us",
+        "sn-ipc-503530 uk",
+        "sn-ipc-5633sw-us"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "1MP CAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "1MP IP CAM",
+        "2.0 MP IP CAMERA",
+        "5033",
+        "5033SW",
+        "720P WIFI ONVIF",
+        "IP 2MP CAM",
+        "Other",
+        "SN- IPC 5033SW-W-UK",
+        "SN-IPC 5033SW-UK",
+        "SN-IPC 5033SW-WI-UK",
+        "SN-IPC-4015SW-UK",
+        "SN-IPC5030CSW-UK",
+        "SN-IPC-5033CSW-AU",
+        "SN-IPC-5033SW",
+        "SN-IPC5034CSW-UK",
+        "SN-IPC5034SW-UK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "1MP IP CAMERA",
+        "sn-ipc-5030bsw-uk",
+        "sn-ipc-5032csw"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "2.0 MP IP CAMERA",
+        "SN-IPC-6004E10",
+        "SZSCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "5033",
+        "5033SW",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=M"
+    },
+    {
+      "models": [
+        "C6F0SeZ0N0P3L0",
+        "IPC-3008FCSW20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/"
+    },
+    {
+      "models": [
+        "IP 2MP CAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam/realmonitor"
+    },
+    {
+      "models": [
+        "IPCA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "kw 905"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "SN - IPC - 3009FCSW20"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "SN-IPC-5033CSW-AU"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "sn-ipc-5033sw"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpg/1/video.mjpg"
+    },
+    {
+      "models": [
+        "sn-ipc-hr01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SZSCAM"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/1/video.mjpg"
+    }
+  ]
+}

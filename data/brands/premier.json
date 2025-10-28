@@ -1,0 +1,18 @@
+{
+  "brand": "Premier",
+  "brand_id": "premier",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Outdoor Camera",
+        "Outdoor Surveilance"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    }
+  ]
+}

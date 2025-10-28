@@ -1,0 +1,39 @@
+{
+  "brand": "Fuswlan",
+  "brand_id": "fuswlan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "B09POE-5MP",
+        "B09W-1080P",
+        "B09-W1080P",
+        "Other",
+        "PTZ IP Camera (HX WiFi Series)"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 1394,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "B09W-1080P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 1935,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "HX-WI"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    }
+  ]
+}

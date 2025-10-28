@@ -1,0 +1,17 @@
+{
+  "brand": "Visioncool Cctv",
+  "brand_id": "visioncool-cctv",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "VC-10IPBL"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "brand": "Jortan",
+  "brand_id": "jortan",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8165HP",
+        "EP-JNM02",
+        "EP-network",
+        "x4c-weq"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/realmonitor?channel=0&stream=0.sdp"
+    },
+    {
+      "models": [
+        "8167QP-2",
+        "EP-JNM02",
+        "JT-8167QP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=01"
+    },
+    {
+      "models": [
+        "8170QJ",
+        "8806zl3",
+        "Dual lens",
+        "JT-100BW-1",
+        "JT-160BW-3A",
+        "JT-8161QJ",
+        "JT-8171QJ",
+        "JT-8172HJ",
+        "JT-8176",
+        "JT9690PRO",
+        "oi vida",
+        "x4c-weq"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "82047WK",
+        "8806zl3",
+        "JORTAN-7701QJ-IP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "82047WK",
+        "jt-8016nvr",
+        "VR3D-1NVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg"
+    },
+    {
+      "models": [
+        "82047WK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0"
+    },
+    {
+      "models": [
+        "8806zl3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/onvif/device_service"
+    },
+    {
+      "models": [
+        "dvr 8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=08&stream=1.sdp"
+    },
+    {
+      "models": [
+        "EP-JNM02"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam/realmonitor?channel=0&subtype=02"
+    },
+    {
+      "models": [
+        "JORTAN-7701QJ-IP",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "jt-2021-12",
+        "JT-9697",
+        "RE-6146AHD-4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=01&stream=1.sdp"
+    },
+    {
+      "models": [
+        "RE-6146AHD-4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=[USERNAME]&password=[PASSWORD]&channel=01&stream=0.sdp"
+    }
+  ]
+}

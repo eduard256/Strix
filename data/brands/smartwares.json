@@ -1,0 +1,196 @@
+{
+  "brand": "Smartwares",
+  "brand_id": "smartwares",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "39218",
+        "blabla",
+        "C723IP",
+        "C924IP",
+        "CIP-37",
+        "cip-37186",
+        "CIP-37186",
+        "CIP-392",
+        "CIP-39218",
+        "cip39218at",
+        "CIP-39218AT",
+        "CIP-39218KL",
+        "CIP-3921AT",
+        "CIP-39220",
+        "Other",
+        "unknwn01"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "923ip",
+        "c177789",
+        "c923",
+        "C923ip",
+        "C923IP",
+        "CIP-39218AT",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "923IP",
+        "924IP",
+        "C723IP",
+        "c724ip",
+        "c923ip",
+        "c923IP",
+        "C923IP-KL",
+        "c924ip",
+        "vast",
+        "VAST"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c704 ip"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C721"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0?user=[USERNAME]&passwd=Djayden%2B2012"
+    },
+    {
+      "models": [
+        "c721IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "C721IP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "//live/av0?"
+    },
+    {
+      "models": [
+        "c724ip",
+        "C923IP",
+        "c924ip",
+        "CIP3390",
+        "CIP-39220",
+        "CIP39330"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0?user=[USERNAME]&passwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c724ip"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0?user=[USERNAME]&passwd=Atpq192000v!"
+    },
+    {
+      "models": [
+        "C923IP",
+        "CIP",
+        "CIP-37186",
+        "CIP-37186AT",
+        "CIP-392",
+        "CIP-39218",
+        "CIP-39218AT",
+        "CIP-39218KL",
+        "CIP39220",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "c928ip",
+        "cip",
+        "cip-37186",
+        "CIP-39218",
+        "CIP-39218AT",
+        "CIP-39218kl",
+        "CIP-39218KL",
+        "CIP39220",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?account=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CIP-37210at",
+        "CIP-37210AT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/av0"
+    },
+    {
+      "models": [
+        "CIP-37210AT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    },
+    {
+      "models": [
+        "CIP-37210AT"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/av0?"
+    },
+    {
+      "models": [
+        "CP35IP"
+      ],
+      "type": "VLC",
+      "protocol": "mms",
+      "port": 0,
+      "url": "img/video.asf"
+    }
+  ]
+}

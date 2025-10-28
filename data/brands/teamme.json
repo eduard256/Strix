@@ -1,0 +1,17 @@
+{
+  "brand": "Teamme",
+  "brand_id": "teamme",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HM206"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8001,
+      "url": "/H264/sub"
+    }
+  ]
+}

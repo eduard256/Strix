@@ -1,0 +1,17 @@
+{
+  "brand": "Redragon",
+  "brand_id": "redragon",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Fobos"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/webcam/?action=stream"
+    }
+  ]
+}

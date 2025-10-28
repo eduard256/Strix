@@ -1,0 +1,30 @@
+{
+  "brand": "Zeustech",
+  "brand_id": "zeustech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Floodlight Camera",
+        "floodlightcam",
+        "UNKOWN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "ipr-hd",
+        "zt_iproHD",
+        "zt-iprohd"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    }
+  ]
+}

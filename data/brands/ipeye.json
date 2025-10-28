@@ -1,0 +1,28 @@
+{
+  "brand": "Ipeye",
+  "brand_id": "ipeye",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "3802"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "B5-SNPR-2.8-12-13",
+        "D2-SUPR-2.8-12-01",
+        "TH38C4"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4"
+    }
+  ]
+}

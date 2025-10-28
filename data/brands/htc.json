@@ -1,0 +1,148 @@
+{
+  "brand": "Htc",
+  "brand_id": "htc",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "100",
+        "610",
+        "Android 4g BG",
+        "Cha Cha",
+        "Desire",
+        "Desire 1",
+        "Desire 510",
+        "Desire 650 IPWebcam",
+        "Desire HD",
+        "desire s",
+        "Desire X",
+        "Desire Z",
+        "desirex",
+        "droid",
+        "Droid DNA",
+        "DroidIncredible",
+        "EVO",
+        "EVO 3D",
+        "Evo 4G",
+        "Evo3D",
+        "G2",
+        "HD2",
+        "Hero",
+        "HTC ONE",
+        "incredible",
+        "Incredible",
+        "Incredible1",
+        "Incredible2",
+        "inspire 4G",
+        "one",
+        "ONE",
+        "One mini",
+        "one x",
+        "One X",
+        "OneM8",
+        "ONEX",
+        "Other",
+        "PersonalPhone",
+        "Samsung Galaxy S",
+        "Thunderbolt",
+        "Verizon Incredible",
+        "Wildfire",
+        "wildfire s",
+        "Xperia X10i"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Anroird",
+        "Desire 1",
+        "desire eye",
+        "desire s",
+        "EVO",
+        "G2",
+        "Incredible S",
+        "IP Camera APP",
+        "Kaiser",
+        "Nexus One",
+        "opcv1",
+        "Other",
+        "S"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "shot.jpg"
+    },
+    {
+      "models": [
+        "ANROIRD",
+        "cell",
+        "Desire 1",
+        "desiree",
+        "Evi",
+        "EVO 3D",
+        "HD2",
+        "Hero",
+        "Incredible2",
+        "One",
+        "One m8",
+        "One v Ipcam",
+        "Other",
+        "Sensation XE",
+        "Wildfire S"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?submenu=mjpg"
+    },
+    {
+      "models": [
+        "Desire X"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "now.jpg"
+    },
+    {
+      "models": [
+        "EVO",
+        "one",
+        "One M7",
+        "One m8",
+        "Other",
+        "Wildfire",
+        "Wildfire S 2012"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video?profile=[CHANNEL]"
+    },
+    {
+      "models": [
+        "HTC Sensation",
+        "one"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg"
+    },
+    {
+      "models": [
+        "one",
+        "SENSATION XE"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "brand": "Fosvision",
+  "brand_id": "fosvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "FS-3F48N-PLS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "FS-3F48N-PLS"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8090,
+      "url": "/video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "fs-6233w13",
+        "FS6233W13",
+        "FS-6488W30"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    }
+  ]
+}

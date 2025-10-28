@@ -1,0 +1,165 @@
+{
+  "brand": "Sharx Security",
+  "brand_id": "sharx-security",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2700",
+        "Other",
+        "SCNC-2601",
+        "SCNC-2606N",
+        "SCNC-2607",
+        "SCNC-2700",
+        "SCNC-3605N",
+        "SCNC-3606"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.asf"
+    },
+    {
+      "models": [
+        "2700-WP",
+        "Other",
+        "SCNC-2601",
+        "SCNC-2606N",
+        "SCNC-2700",
+        "SCNC3606",
+        "SCNC-3905"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "Other",
+        "SCNC-2900WP",
+        "SCNC-3604",
+        "SCNC-3606",
+        "SCNC3904W",
+        "SCNC-3905"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SCNC-3904-Wide"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot_3gp.jpg"
+    },
+    {
+      "models": [
+        "Other",
+        "SCNC-2601",
+        "SCNC-2900",
+        "SCNC-2900WP",
+        "SCNC-3605N",
+        "SCNC3904",
+        "SCNC-3904-WIDE",
+        "SCNC3905"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "scn3905",
+        "SCNC3905"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/stream.jpg"
+    },
+    {
+      "models": [
+        "SCNC-2601",
+        "SCNC-2606N",
+        "SCNC-3905"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.av"
+    },
+    {
+      "models": [
+        "SCNC-3604",
+        "SCNC3904"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "SCNC-3605N",
+        "SCNC3904"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live_mpeg4.sdp"
+    },
+    {
+      "models": [
+        "SCNC-3605N"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream1.asf"
+    },
+    {
+      "models": [
+        "scnc3905"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8150,
+      "url": "/live/0/mjpeg.jpg"
+    },
+    {
+      "models": [
+        "SCNC3905"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    }
+  ]
+}

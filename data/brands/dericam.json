@@ -1,0 +1,483 @@
+{
+  "brand": "Dericam",
+  "brand_id": "dericam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0009FB006BBD",
+        "801W",
+        "H503W",
+        "M2/6/8 Series",
+        "M601W",
+        "M801W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "0009FB006BBD",
+        "1080P",
+        "801W",
+        "B-1",
+        "B1 8GB",
+        "B2 16G",
+        "B2 32G",
+        "b23-16g",
+        "B2A",
+        "B-x",
+        "B-xe",
+        "DERICAM H502W",
+        "H201C",
+        "h206c",
+        "H218W",
+        "H501",
+        "H502W",
+        "H601W",
+        "M2/6/8 SERIES",
+        "M801W - 1",
+        "OHL",
+        "Other",
+        "P1/P2",
+        "P2 PTZ IP CAMERA",
+        "P2 WIFI PTP2Z IP CAMERA",
+        "S-1",
+        "S1 32G",
+        "S1 64G",
+        "S100",
+        "S1-16G",
+        "S1-16G WIFI PTZ IP CAMERA",
+        "S1-32G WiFi PTZ IP Camera",
+        "S1-N",
+        "S1x",
+        "S2-32G",
+        "S2A",
+        "S-x",
+        "Sx series",
+        "UNK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "1080P",
+        "1080Ptz",
+        "1536P",
+        "2MP",
+        "B-1",
+        "B1-16G",
+        "B2 32G",
+        "B2-16G",
+        "b2a",
+        "BBQ",
+        "BC2 and BC2A and B5",
+        "B-X",
+        "C6F0SgZ0N0P0L2",
+        "C6F0SgZ3N0P0L2",
+        "C6F2SlZ3N0P0L2",
+        "D73W",
+        "H206C",
+        "H206C-TM",
+        "H264",
+        "H306C-TM",
+        "H501",
+        "H502W",
+        "IP 2",
+        "model",
+        "Other",
+        "P1/P2",
+        "P2 PTZ IP CAMERA",
+        "P2 WIFI PTP2Z IP CAMERA",
+        "S-1",
+        "S1 32G",
+        "S1 32G2",
+        "S-1-16g",
+        "S1-16G",
+        "S1-16G WIFI PTZ IP CAMERA",
+        "S1-32G WIFI PTZ IP CAMERA",
+        "S1-N",
+        "S1X",
+        "S-2",
+        "S2-32G",
+        "S2C",
+        "S2E",
+        "sg1",
+        "Shed",
+        "unk",
+        "X0019FZ9DL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "206c",
+        "H201C",
+        "H601W",
+        "H602W",
+        "M801W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch0.h264"
+    },
+    {
+      "models": [
+        "206c"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "medias[CHANNEL]"
+    },
+    {
+      "models": [
+        "206c",
+        "H201D",
+        "H201WD",
+        "H204W",
+        "H502",
+        "H602W",
+        "s-2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "ch0_0.h264"
+    },
+    {
+      "models": [
+        "801w",
+        "DEPENDANCE",
+        "H216W",
+        "H501",
+        "H502",
+        "H502W",
+        "H504W",
+        "M2/6/8 SERIES",
+        "M201W",
+        "M204W",
+        "M205W",
+        "m206w",
+        "M501W",
+        "M502W",
+        "m601",
+        "M601W",
+        "M801W",
+        "MW801",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "801W",
+        "H216W",
+        "H264",
+        "M801W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "B-1",
+        "H218W",
+        "H501",
+        "M801W",
+        "Other",
+        "P2 WIFI PTP2Z IP CAMERA",
+        "S2A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg"
+    },
+    {
+      "models": [
+        "B2A",
+        "H218W",
+        "Other",
+        "S1-16G WIFI PTZ IP CAMERA",
+        "S1-32G WIFI PTZ IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "Dericam H502W",
+        "H204W",
+        "H502W",
+        "M501W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Dericam P1",
+        "S1-32G WiFi PTZ IP Camera",
+        "S2-32G",
+        "S2E"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    },
+    {
+      "models": [
+        "H201",
+        "H201D",
+        "H501",
+        "H502",
+        "M201W",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    },
+    {
+      "models": [
+        "H206C",
+        "H502W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ONVIF/channel2"
+    },
+    {
+      "models": [
+        "H206C-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "H216W",
+        "H2A6W",
+        "H502W",
+        "M801W",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "H216W",
+        "H502W",
+        "M502W",
+        "M601W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H216W",
+        "H502W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "H216W",
+        "H502W",
+        "H502W2",
+        "M205W",
+        "M801W"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H216W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "H218W",
+        "H502W",
+        "S1 32G",
+        "S1-32G WIFI PTZ IP CAMERA"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegSize=XL"
+    },
+    {
+      "models": [
+        "H501"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8074,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "H502",
+        "H502W",
+        "H503W",
+        "M501W",
+        "M601W",
+        "M801W",
+        "M801W-1",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "H502W",
+        "M801W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "H502W",
+        "H601W",
+        "M2/6/8 Series",
+        "M202W",
+        "M501W",
+        "M601W",
+        "M801W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "H502W",
+        "M01W",
+        "M2/6/8 Series",
+        "M601W",
+        "M801W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "H502W"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "H602W"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=1"
+    },
+    {
+      "models": [
+        "M204W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "M501W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 34567,
+      "url": "/snapshot.cgi"
+    },
+    {
+      "models": [
+        "M601W",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "M801W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "S2C"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch00_0"
+    }
+  ]
+}

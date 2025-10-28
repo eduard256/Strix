@@ -1,0 +1,17 @@
+{
+  "brand": "Surya-net",
+  "brand_id": "surya-net",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "ANC-606V"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.jpg?size=2"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "brand": "Hanwha",
+  "brand_id": "hanwha",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "8003",
+        "ANV-L6082R",
+        "ANV-L7012R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/profile02/media.smp"
+    },
+    {
+      "models": [
+        "IP-2000HW"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "IP-2000HW",
+        "Other",
+        "SNV-6013"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "PNM-9085RQZ1",
+        "xrn-810s"
+      ],
+      "type": "JPEG",
+      "protocol": "https",
+      "port": 443,
+      "url": "/stw-cgi/video.cgi?msubmenu=snapshot&action=view&channel=5&profile=1"
+    },
+    {
+      "models": [
+        "Qnd-7010r"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "QNO-6070-R"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/video.cgi?msubmenu=jpg"
+    },
+    {
+      "models": [
+        "QNV-7082R"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/stw-cgi/video.cgi?msubmenu=stream&action=view&Profile=1&CodecType=MJPEG&Resolution=1920x1080"
+    },
+    {
+      "models": [
+        "QNV-7082R"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10001,
+      "url": "/stw-cgi/video.cgi?msubmenu=snapshot&action=view"
+    },
+    {
+      "models": [
+        "QNV-7082R"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 10001,
+      "url": "/stw-cgi/video.cgi?msubmenu=mjpg"
+    },
+    {
+      "models": [
+        "QNV-8080R"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/0/profile4/media.smp"
+    },
+    {
+      "models": [
+        "wisenet"
+      ],
+      "type": "FFMPEG",
+      "protocol": "mms",
+      "port": 554,
+      "url": "/img/video.asf"
+    }
+  ]
+}

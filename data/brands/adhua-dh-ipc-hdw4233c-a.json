@@ -1,0 +1,17 @@
+{
+  "brand": "Adhua Dh-ipc-hdw4233c-a",
+  "brand_id": "adhua-dh-ipc-hdw4233c-a",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DH-IPC-HDW4233C-A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    }
+  ]
+}

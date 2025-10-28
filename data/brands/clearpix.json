@@ -1,0 +1,17 @@
+{
+  "brand": "Clearpix",
+  "brand_id": "clearpix",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CPX"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 5544,
+      "url": "cgi-bin/cmd/system?GET_STREAM&USER=[USERNAME]&PWD=[PASSWORD]"
+    }
+  ]
+}

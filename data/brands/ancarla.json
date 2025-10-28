@@ -1,0 +1,17 @@
+{
+  "brand": "Ancarla",
+  "brand_id": "ancarla",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "hd20m14hx-wifi"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    }
+  ]
+}

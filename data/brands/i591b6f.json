@@ -1,0 +1,26 @@
+{
+  "brand": "I591b6f",
+  "brand_id": "i591b6f",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "HIV6"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/record.sdp"
+    },
+    {
+      "models": [
+        "HIV67"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsp/mjpeg.sdp"
+    }
+  ]
+}

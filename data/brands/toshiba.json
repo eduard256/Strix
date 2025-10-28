@@ -1,0 +1,376 @@
+{
+  "brand": "Toshiba",
+  "brand_id": "toshiba",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "DT01ACA2"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8088,
+      "url": "/cgi-bin/net_jpeg.cgi?ch=0"
+    },
+    {
+      "models": [
+        "ik wb15a",
+        "IKWB-15",
+        "IKWB15A",
+        "ikwb21",
+        "IK-WB21A",
+        "toshiba IK-wb15a"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0"
+    },
+    {
+      "models": [
+        "IK-6420A",
+        "ik-wb16",
+        "IK-WB16A-W",
+        "IKWB-30A",
+        "IK-WB80A",
+        "ik-WP41A",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "IK-WB16a",
+        "IK-WB16A-W",
+        "ik-wb70a",
+        "IKWB-70A",
+        "IKWB-80A",
+        "IKWB-81A",
+        "IKWD-01A",
+        "IKWD05A",
+        "IK-WD31A",
+        "IK-WR12A",
+        "Other",
+        "TD05W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "IK-WB11A",
+        "IK-WB15A",
+        "IK-WB21A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "IK-WB11A",
+        "IK-WB15A",
+        "IK-WB16A-W",
+        "IK-WB21A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "__live.jpg?&&&"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "IK-WB11A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "__live.jpg?&&[USERNAME]&[PASSWORD]"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "IK-WB11A",
+        "IK-WB15A",
+        "IK-WB16A-W",
+        "IK-WB21A",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "getstream.cgi?10&10&&&10&0&0&0&0"
+    },
+    {
+      "models": [
+        "IK-WB01A",
+        "ikwb15a",
+        "IK-WB15A",
+        "IK-WB21A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "user/cgi-bin/getstream.cgi?10&&&&0&0&0&0&0"
+    },
+    {
+      "models": [
+        "IK-WB02A",
+        "IKWR-01A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "Jpeg/CamImg.jpg"
+    },
+    {
+      "models": [
+        "IK-WB02A",
+        "IKWR-01A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?Status=0"
+    },
+    {
+      "models": [
+        "IK-WB15A",
+        "IK-WB16A",
+        "IKWB-30A",
+        "IKWB-70A",
+        "IK-WB80A",
+        "IKWB-81A",
+        "IKWD-14A",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IK-WB15A",
+        "IK-WB161A",
+        "IK-WB16A",
+        "IKWB-80A",
+        "IK-WD31A",
+        "IK-WR04A",
+        "IK-WR12A",
+        "IK-WR14A",
+        "Other",
+        "WEBCAM HD"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/viewer/video.jpg?resolution=640x480"
+    },
+    {
+      "models": [
+        "IK-WB16",
+        "ik-wb16a",
+        "IK-WB16A",
+        "IK-WB16A-W",
+        "IK-WB21A",
+        "IKWB-70A",
+        "IKWB-80A",
+        "IKWD-01A",
+        "IKWD-12A",
+        "IKWD-14A",
+        "IKWP-41A",
+        "IKWR-01A",
+        "IKWR-04A",
+        "IK-WR12A",
+        "IK-WR14A",
+        "Other",
+        "VIVOTEK"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "IK-WB16A",
+        "IK-WB16A-W",
+        "IK-WB21A",
+        "IKWB-70A",
+        "IK-WB80A",
+        "IKWD-01A",
+        "IKWD-14A",
+        "IK-WR14A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IK-WB16A",
+        "IKWB-80A",
+        "IK-WR12A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "IK-WB16A-W",
+        "IKWB-70A",
+        "IKWD-12A",
+        "IKWD-14A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live2.sdp"
+    },
+    {
+      "models": [
+        "IK-WB21A",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "IKWB-70A",
+        "IKWD-01A"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video[USERNAME].mjpg"
+    },
+    {
+      "models": [
+        "IKWB-81A",
+        "IK-WR14A",
+        "WD04A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live4.sdp"
+    },
+    {
+      "models": [
+        "IK-WD04A",
+        "IKWD-12A",
+        "IKWD-14A",
+        "IKWR-05"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "IKWD-14A"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live3.sdp"
+    },
+    {
+      "models": [
+        "M-1060W"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image/jpeg.cgi"
+    },
+    {
+      "models": [
+        "Other",
+        "WebCam HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "Other",
+        "WEBCAM HD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videofeed"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "WVSC-385"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/mjpeg?stream=[CHANNEL]"
+    },
+    {
+      "models": [
+        "wv-sw155",
+        "WV-SW155"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/cgi-bin/mjpeg?stream=0"
+    },
+    {
+      "models": [
+        "WV-SW155"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/nphMotionJpeg?Resolution=1280x720&Quality=Standard"
+    }
+  ]
+}

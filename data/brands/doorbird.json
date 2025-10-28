@@ -1,0 +1,61 @@
+{
+  "brand": "Doorbird",
+  "brand_id": "doorbird",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "d101",
+        "D101",
+        "D101S",
+        "D1101V",
+        "D2101BV",
+        "D2101V",
+        "D2103V",
+        "DoorBird_D101",
+        "DOORBIRD_D101"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/mpeg/media.amp"
+    },
+    {
+      "models": [
+        "D101"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8557,
+      "url": "bha-api/image.cgi?http-user=[USERNAME]&http-password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "D204"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "D2101BV"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/bha-api/video.cgi"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8557,
+      "url": "bha-api/video.cgi?http-user=[USERNAME]&http-password=[PASSWORD]"
+    }
+  ]
+}

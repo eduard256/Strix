@@ -1,0 +1,19 @@
+{
+  "brand": "Tigersecu",
+  "brand_id": "tigersecu",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "2MP Super HD",
+        "Other",
+        "TS-M02308"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/net_jpeg.cgi?ch=[CHANNEL]"
+    }
+  ]
+}

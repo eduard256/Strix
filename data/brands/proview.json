@@ -1,0 +1,17 @@
+{
+  "brand": "Proview",
+  "brand_id": "proview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "SM-PR5036"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=admin_password=[PASSWORD]_channel=0_stream=0&onvif=0.sdp"
+    }
+  ]
+}

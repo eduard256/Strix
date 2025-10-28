@@ -1,0 +1,20 @@
+{
+  "brand": "Anbvision",
+  "brand_id": "anbvision",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "AB-2M8SP100087",
+        "AB-2N8SP100087",
+        "D9108-3",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    }
+  ]
+}

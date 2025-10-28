@@ -1,0 +1,29 @@
+{
+  "brand": "Camsee",
+  "brand_id": "camsee",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1080p",
+        "1080P Dome",
+        "GgCam",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/live0.264"
+    },
+    {
+      "models": [
+        "SOME_ONVIF"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "1/cif"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "Easytao",
+  "brand_id": "easytao",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "q29"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/user=admin_password=[PASSWORD]_channel=0_stream=0&onvif=0.sdp"
+    },
+    {
+      "models": [
+        "q29"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/channel=0_stream=0&onvif=0.sdp"
+    }
+  ]
+}

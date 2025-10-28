@@ -1,0 +1,18 @@
+{
+  "brand": "Digitech",
+  "brand_id": "digitech",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Other",
+        "outdoor wireless"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 2600,
+      "url": "/stream0"
+    }
+  ]
+}

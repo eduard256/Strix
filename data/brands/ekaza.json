@@ -1,0 +1,17 @@
+{
+  "brand": "Ekaza",
+  "brand_id": "ekaza",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Nuvem Dome"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/V_ENC_000"
+    }
+  ]
+}

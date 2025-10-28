@@ -1,0 +1,439 @@
+{
+  "brand": "Lts",
+  "brand_id": "lts",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "1048",
+        "3432",
+        "CIMP3042-28",
+        "CMIP 3122",
+        "CMIP3022-28",
+        "CMIP3032-28",
+        "CMIP3132-28",
+        "CMIP3432",
+        "CMIP3C42W-28M",
+        "CMIP7233-S",
+        "CMIP7342W-28M",
+        "CMIP7382NW-28M",
+        "CMIP7422-28M",
+        "CMIP7422-m",
+        "CMIP7422N-28M",
+        "CMIP7422W-M",
+        "CMIP7553W4-SZ8",
+        "CMIP7923WLPR-32R",
+        "CMIp8032",
+        "CMIP8212",
+        "cmip8342W-M",
+        "CMIP9142W",
+        "CMIP9532",
+        "CMIP9723-S",
+        "doorbell",
+        "LTCMIP8932-W",
+        "LTD8424T",
+        "Other",
+        "PTZIP204NW-X4IR",
+        "PTZIP512X20IR",
+        "Thermal",
+        "WH-CI5020-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "6800B"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "7442",
+        "cmip7422w-28m"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]"
+    },
+    {
+      "models": [
+        "830",
+        "CIP830MV-W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "830"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot_3gp.jpg"
+    },
+    {
+      "models": [
+        "830",
+        "CIP830MV-W"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stream.jpg"
+    },
+    {
+      "models": [
+        "b01jrqwjdi",
+        "CIMP3042-28",
+        "clouldIp",
+        "CMIP7223w-s",
+        "FFMPEG",
+        "ltsCMIP7562F-E",
+        "x-cam"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/ch0"
+    },
+    {
+      "models": [
+        "CIMP3042-28",
+        "CMIP",
+        "cmip 3342w-28m",
+        "CMIP3953",
+        "CMIP3C42W-28CMIP3C42W-28MM",
+        "cmip7042-28",
+        "CMIP7442-28M",
+        "CMIP7442WB-28M",
+        "CMIP8232"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5554,
+      "url": "HighResolutionVideo"
+    },
+    {
+      "models": [
+        "CIMP3042-28",
+        "CMIP3132-28",
+        "CMIP7422-28M",
+        "CMIP7432-28M",
+        "CMIP8212",
+        "CMIP8232",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5554,
+      "url": "cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "CMIP",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "LowResolutionVideo"
+    },
+    {
+      "models": [
+        "CMIP",
+        "CMIP3032-28"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "CMIP1142-28",
+        "CMIP7422W-M",
+        "DS-2CD2112-I",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/rtsph2641080p"
+    },
+    {
+      "models": [
+        "CMIP3042W-28",
+        "cmip7042-28",
+        "PTZIP762X20IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "CMIP3142NW-28S",
+        "CMIP3362W-28M",
+        "CMIP7422-28M",
+        "CMIP8032P",
+        "CMIP8342W-28M",
+        "PTZIP204WX4IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/HighResolutionVideo"
+    },
+    {
+      "models": [
+        "CMIP3152-28S",
+        "CMIP7253-SZ",
+        "CMIP7422N-28M",
+        "CMIP7422W-M",
+        "CMIP8932-W",
+        "CMIP9743W-S",
+        "LTD8316T-FT",
+        "Other",
+        "PTZ",
+        "Telescope"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "CMIP3243",
+        "CMIP3412-28",
+        "CMIP8212",
+        "CMIP8232",
+        "CMIP9743W-S",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.h264"
+    },
+    {
+      "models": [
+        "CMIP3382NVW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live.h264"
+    },
+    {
+      "models": [
+        "CMIP3412-28",
+        "CMIP8212"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "CMIP7043W-MZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "//Streaming/Channels/1"
+    },
+    {
+      "models": [
+        "cmip7122",
+        "CMIP7382NW-28M",
+        "CMIP7422-m"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/h264_stream"
+    },
+    {
+      "models": [
+        "CMIP7432",
+        "CMIP7442-28M",
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "channel[CHANNEL]"
+    },
+    {
+      "models": [
+        "CMIP7432W-6M",
+        "CMIP7923LPR-20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "CMIP7553W4-SZ8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/103"
+    },
+    {
+      "models": [
+        "CMIP7553W4-SZ8"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/301"
+    },
+    {
+      "models": [
+        "CMIP8032P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/LowResolutionVideo"
+    },
+    {
+      "models": [
+        "CMIP8212"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live3.sdp"
+    },
+    {
+      "models": [
+        "CMIP8222",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam/realmonitor?channel=[CHANNEL]&subtype=00"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "live.sdp"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "3gpp"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "hiQ.sdp"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "GetData.cgi"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "h264/ch1/sub/"
+    },
+    {
+      "models": [
+        "CMIP8232"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "av0_[CHANNEL]"
+    },
+    {
+      "models": [
+        "CMIP8232",
+        "doorbell",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "jpeg"
+    },
+    {
+      "models": [
+        "LTD2294HM w/ Web Port"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "stillimg[CHANNEL].jpg"
+    },
+    {
+      "models": [
+        "LXIP8542W-28MDA"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "cam[CHANNEL]/h264"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5554,
+      "url": "/Streaming/Unicast/channels/801"
+    }
+  ]
+}

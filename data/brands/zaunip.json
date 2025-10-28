@@ -1,0 +1,17 @@
+{
+  "brand": "Zaunip",
+  "brand_id": "zaunip",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "nvr-225"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ch01.264"
+    }
+  ]
+}

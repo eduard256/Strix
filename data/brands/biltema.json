@@ -1,0 +1,21 @@
+{
+  "brand": "Biltema",
+  "brand_id": "biltema",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "megapixel ip camera",
+        "motion v1",
+        "Other",
+        "piha",
+        "Vetej"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/11"
+    }
+  ]
+}

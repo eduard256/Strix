@@ -1,0 +1,17 @@
+{
+  "brand": "Teleste",
+  "brand_id": "teleste",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "MPX"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot/snapshot.esp?stream=videoport&type=jpeg&channel=[CHANNEL]"
+    }
+  ]
+}

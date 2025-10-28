@@ -1,0 +1,17 @@
+{
+  "brand": "Citysync",
+  "brand_id": "citysync",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "CS40"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif/live/2"
+    }
+  ]
+}

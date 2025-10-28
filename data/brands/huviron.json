@@ -1,0 +1,17 @@
+{
+  "brand": "Huviron",
+  "brand_id": "huviron",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "mip-823o2"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "PSIA/Streaming/channels/2?videoCodecType=H.264"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Fortis",
+  "brand_id": "fortis",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "S-CAM 5.0"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/H264/ch1/main/av_stream"
+    }
+  ]
+}

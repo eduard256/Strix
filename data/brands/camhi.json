@@ -1,0 +1,117 @@
+{
+  "brand": "Camhi",
+  "brand_id": "camhi",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "4S-B05W-720P",
+        "c9f0sgz0n0p7l0",
+        "CA-690C-R",
+        "CAMHI_E",
+        "flouren",
+        "IIII-338310-AEECA",
+        "IP02",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snap.jpg?JpegCam=[CHANNEL]"
+    },
+    {
+      "models": [
+        "4S-B05W-720P",
+        "CA-690C-R",
+        "F2-T",
+        "IIII-338310-AEECA",
+        "IIII-526059-aefca",
+        "ip02",
+        "IP03+",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "5.5.56",
+        "Other",
+        "TTTT-806651-VKNSP"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/cam1/onvif-h264"
+    },
+    {
+      "models": [
+        "at200dw",
+        "C6F0SgZ3N0P6L2",
+        "C9F0SgZ0N0P4L0",
+        "C9F0SGZ0N0P7L0",
+        "C9F0SgZ3N0P8L0",
+        "CA-690C-R",
+        "GS-GHXFSTCMA-POE",
+        "MEGAPIXEL IP CAMERA",
+        "NL4T12-8OH18WYP-30X-128G",
+        "Other",
+        "R-QS2510-HG20",
+        "SD13W",
+        "TTTT-362842-CJPLF"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "at200dw",
+        "Floureon SD27W"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8082,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "C6F0SoZ3N0PcL2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/2"
+    },
+    {
+      "models": [
+        "C6F0SoZ3N0PcL2",
+        "C6F0SoZ3N0PfL2",
+        "C6F0SoZ3N0PnL2",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "C9F0SgZ0N0P4L0",
+        "Other",
+        "Pro",
+        "ptz",
+        "SN-IPC-5033SW-EU"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/12"
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "brand": "Sricam",
+  "brand_id": "sricam",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "0001",
+        "004",
+        "AP0009ted",
+        "AP-001",
+        "AP002",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "ap006",
+        "AP-006",
+        "AP007",
+        "AP-009",
+        "AP009 TESTED",
+        "AP-011",
+        "ap05",
+        "ap1",
+        "AP-CAM",
+        "IPCAM my latest",
+        "Kilinski AP Cam",
+        "Other",
+        "SP006",
+        "sp008",
+        "sp013",
+        "sp014",
+        "SP015",
+        "SRICAM AP006",
+        "SRICAM SP",
+        "SRICAM SP004",
+        "SRICAM SP005",
+        "SRICAM SP006",
+        "SRICAM SP009",
+        "SRICAM SP011",
+        "SRICAM SP014",
+        "SRICAM1",
+        "VIEW-004964-CTETZ"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "0001",
+        "AP-003",
+        "AP003(WORKING)",
+        "CTO185",
+        "FLOUREON",
+        "ONIF",
+        "ONVIF",
+        "ONVIF SP013",
+        "Other",
+        "P2P-BLACK",
+        "smart wifi camera",
+        "SP006",
+        "SP-008",
+        "sp011",
+        "SP012",
+        "SP015",
+        "SP016",
+        "SP12"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "0001",
+        "005",
+        "A0009",
+        "A001",
+        "aj-c2wa-c118",
+        "AJ-C2WA-C118",
+        "AP SERIES IP CAMERS",
+        "ap0001",
+        "AP-001",
+        "AP-003",
+        "AP-004",
+        "AP-005",
+        "AP-009",
+        "ap1",
+        "AP-CAM",
+        "Cam1",
+        "IPC",
+        "Other",
+        "PAN TILT",
+        "SP005",
+        "SP008b",
+        "SP012",
+        "SP013",
+        "SP015",
+        "SRICAM SP006",
+        "SRICAM WIFI AP",
+        "SRICAM1"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "0001",
+        "013",
+        "A0009",
+        "AJ-C2WA-C118",
+        "ap-0001",
+        "AP0009",
+        "AP-001",
+        "AP003",
+        "AP-004",
+        "AP-004004",
+        "AP-005",
+        "AP006",
+        "AP007",
+        "AP-008",
+        "AP-009",
+        "AP009 TESTED",
+        "ap013",
+        "Canada",
+        "Canada2",
+        "Majas",
+        "my0210-IPcam",
+        "Other",
+        "P2P- Black",
+        "p2p black(frank)",
+        "P2P-BLACK",
+        "sp005",
+        "SP008b",
+        "sp013",
+        "SRICAM AP006",
+        "SRICAM AP009",
+        "SRICAM WIFI AP"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi/snapshot.cgi?action=getdata&channel.[CHANNEL].capture=true&channel.[CHANNEL].resolution=1"
+    },
+    {
+      "models": [
+        "0001",
+        "004",
+        "A001",
+        "AP 008",
+        "ap series ip camers",
+        "AP0006",
+        "AP-001",
+        "AP-004",
+        "AP006",
+        "AP-009",
+        "AP-CAM",
+        "h.264",
+        "ip008",
+        "Other",
+        "SP005",
+        "SP006",
+        "sp009",
+        "sp012",
+        "sp013",
+        "SP015",
+        "SP14",
+        "SRICAM SP014",
+        "xxc50100-ts"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "0001",
+        "004",
+        "AP-001",
+        "AP-004",
+        "IPC",
+        "Other",
+        "SP012",
+        "SRICAM SP006"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "0001",
+        "0004",
+        "003",
+        "004",
+        "004964",
+        "AP0001",
+        "AP0009",
+        "AP-006",
+        "AP-011",
+        "Other",
+        "PTZ",
+        "PTZ IP 008",
+        "SP008b",
+        "SP011",
+        "SP015_AK",
+        "SRICAM WIFI AP",
+        "yes"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi"
+    },
+    {
+      "models": [
+        "0001",
+        "A001",
+        "AP0001",
+        "AP001",
+        "ap004",
+        "AP009",
+        "apoo5",
+        "IPC",
+        "Other",
+        "SP005",
+        "SP008b",
+        "SRICAM1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "img/snapshot.cgi?img=vga"
+    },
+    {
+      "models": [
+        "0001",
+        "001",
+        "0014",
+        "002",
+        "003",
+        "A001",
+        "A003",
+        "AP 008",
+        "ap0005",
+        "AP001",
+        "AP-003",
+        "AP003B",
+        "AP-004",
+        "AP-005",
+        "AP006",
+        "AP-006",
+        "ap008",
+        "AP-008",
+        "AP-009",
+        "ap03",
+        "AP-03",
+        "Other",
+        "SP-008",
+        "SP014",
+        "SP015",
+        "SRICAM SP001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?rate=11"
+    },
+    {
+      "models": [
+        "0001",
+        "Other",
+        "SP012"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]"
+    },
+    {
+      "models": [
+        "0001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    },
+    {
+      "models": [
+        "0004",
+        "003",
+        "A006",
+        "AAP003",
+        "AP0001",
+        "AP0005",
+        "AP-001",
+        "AP004",
+        "AP-008",
+        "AP009 TESTED",
+        "AP03",
+        "AP-CAM",
+        "IPC",
+        "Other",
+        "P2P-BLACK",
+        "SP005",
+        "SP012",
+        "SRICAM1"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0"
+    },
+    {
+      "models": [
+        "0004",
+        "AP 008",
+        "AP004",
+        "AP-008",
+        "SP014"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?rate=0"
+    },
+    {
+      "models": [
+        "001",
+        "0014",
+        "485906",
+        "AP002",
+        "AP006",
+        "AP-012",
+        "IPCAM my latest",
+        "LS-Q11 PRO",
+        "Other",
+        "SH035",
+        "SP005",
+        "SP012",
+        "SP017",
+        "SP020"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/11"
+    },
+    {
+      "models": [
+        "003",
+        "005",
+        "A001",
+        "A003",
+        "AAP003",
+        "AP SERIES IP CAMERS",
+        "AP001",
+        "Ap003",
+        "AP-003",
+        "AP005",
+        "ap009",
+        "AP-012",
+        "ap05",
+        "Other",
+        "SP012"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "003",
+        "004",
+        "A006",
+        "AP002",
+        "ap003",
+        "AP-006",
+        "AP009 TESTED",
+        "ap05",
+        "SP012",
+        "Sricam006",
+        "sricm"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "004"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "004",
+        "720P",
+        "AP-001",
+        "AP-005",
+        "AP995",
+        "AP-CAM",
+        "Other",
+        "SP-008"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32"
+    },
+    {
+      "models": [
+        "004",
+        "A001",
+        "AP-001",
+        "AP002",
+        "AP-004",
+        "SRICAM AP007",
+        "SRICAM SP004"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?user=[USERNAME]&password=[PASSWORD]"
+    },
+    {
+      "models": [
+        "005",
+        "007",
+        "1080P",
+        "1174030",
+        "720P",
+        "AP001",
+        "AP002",
+        "ap003(working)",
+        "AP006C",
+        "AP-009",
+        "AP015",
+        "BV852",
+        "dome",
+        "Floureon",
+        "INNE CAM",
+        "ip015",
+        "IP14",
+        "IPC_441311 sp_15",
+        "IPC_708420",
+        "IPC_748484",
+        "IPC_794113",
+        "IPC_807757",
+        "IPC_819175",
+        "IPC_830435",
+        "onvif sp013",
+        "Other",
+        "Other(MY IP CAM)",
+        "P13",
+        "Pan Tilt",
+        "PTZ IP 008",
+        "S700",
+        "sp0009a",
+        "SP0017",
+        "SP005DG",
+        "sp-007",
+        "SP008",
+        "SP-009",
+        "SP009A",
+        "SP009C",
+        "SP012",
+        "sp013",
+        "SP013",
+        "SP014",
+        "sp015",
+        "SP015_AK",
+        "SP017",
+        "SP020",
+        "SP023",
+        "SP028",
+        "SP07",
+        "SP09",
+        "sp12",
+        "SP12",
+        "sp14",
+        "SP700",
+        "SQLodge",
+        "SRICAM AP006",
+        "Sricam ONVIF",
+        "SRICAM SP005",
+        "SRICAM SP011",
+        "who knows"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif1"
+    },
+    {
+      "models": [
+        "005",
+        "AP SERIES IP CAMERS",
+        "sh024",
+        "SH028",
+        "SH208"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 8080,
+      "url": "live/mpeg4"
+    },
+    {
+      "models": [
+        "027",
+        "SH028B",
+        "SH035",
+        "sh042",
+        "SH20",
+        "SP020",
+        "sp028",
+        "sp030"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile0"
+    },
+    {
+      "models": [
+        "1174030",
+        "FLOUREON",
+        "SP012"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/rtsp_live1"
+    },
+    {
+      "models": [
+        "720P",
+        "AP-006",
+        "AP006C",
+        "AP015",
+        "IPC",
+        "Other",
+        "sh017",
+        "SP0017",
+        "SP005",
+        "sp-007",
+        "SP008",
+        "SP012",
+        "SP013",
+        "SP015",
+        "SP017",
+        "SP020",
+        "SP07",
+        "who knows"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/onvif2"
+    },
+    {
+      "models": [
+        "A001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A001",
+        "AP-001"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "A04",
+        "AP SERIES IP CAMERS",
+        "AP0005",
+        "AP0009",
+        "AP-001",
+        "AP004",
+        "AP-005",
+        "ap006",
+        "AP-006",
+        "AP-009",
+        "AP-012",
+        "AP-CAM",
+        "Home",
+        "IPC",
+        "IPCAM1",
+        "IPCAM2",
+        "ONVIF SP013",
+        "Other",
+        "PTZ IP 008",
+        "SP013",
+        "SP015",
+        "SRICAM AP006",
+        "SRICAM SP"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AABEC",
+        "Other",
+        "P2P-BLACK"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "aap003",
+        "AP002",
+        "ap003",
+        "AP-005",
+        "AP-008",
+        "ptz",
+        "SP-002",
+        "SP015"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/11"
+    },
+    {
+      "models": [
+        "admin",
+        "AP001",
+        "AP002",
+        "ap009",
+        "IPCAM1",
+        "IPCAM2",
+        "Other",
+        "SRICAM AP009",
+        "SRICAM SP09",
+        "sricam wifi ap",
+        "Sricam006"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=2"
+    },
+    {
+      "models": [
+        "AP0009",
+        "AP001",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "user/videostream.cgi"
+    },
+    {
+      "models": [
+        "ap001"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AP002",
+        "E1A3000-W",
+        "Home",
+        "onvif sp013",
+        "Other",
+        "sh024",
+        "SH028",
+        "SH030"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/mpeg4"
+    },
+    {
+      "models": [
+        "AP002",
+        "onvif sp013"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/tmpfs/auto.jpg"
+    },
+    {
+      "models": [
+        "AP-003",
+        "AP004",
+        "SRICAM AP006"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 81,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "AP-004"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "img/snapshot.cgi?size=3"
+    },
+    {
+      "models": [
+        "AP005",
+        "Other",
+        "SP020",
+        "SRICAM SP006"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0"
+    },
+    {
+      "models": [
+        "AP-005"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 88,
+      "url": "cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&"
+    },
+    {
+      "models": [
+        "AP-008",
+        "onif",
+        "ONVIF",
+        "Other",
+        "Sp015"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/ucast/12"
+    },
+    {
+      "models": [
+        "dfasd",
+        "sh024",
+        "SH024",
+        "SH026",
+        "SH028",
+        "SH030",
+        "sp013",
+        "SP028"
+      ],
+      "type": "MJPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/1/h264major"
+    },
+    {
+      "models": [
+        "E1A3000-W",
+        "sh024"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4"
+    },
+    {
+      "models": [
+        "hs0024",
+        "SH024",
+        "SH028",
+        "SH031B"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "1/h264major"
+    },
+    {
+      "models": [
+        "IPCAM MY LATEST"
+      ],
+      "type": "VLC",
+      "protocol": "http",
+      "port": 0,
+      "url": "iphone/11?[USERNAME]:[PASSWORD]&"
+    },
+    {
+      "models": [
+        "onvif sp013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/1"
+    },
+    {
+      "models": [
+        "SH020",
+        "sh024",
+        "sh026",
+        "sh035"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "sh024"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/cam1/mpeg4?user=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "sh024",
+        "SP019"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/mpeg4/media.amp?resolution=640x480"
+    },
+    {
+      "models": [
+        "sh024"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/user/videostream.cgi"
+    },
+    {
+      "models": [
+        "sh029"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/"
+    },
+    {
+      "models": [
+        "SH029"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 5544,
+      "url": "/onvif-stream2"
+    },
+    {
+      "models": [
+        "sh035"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream1"
+    },
+    {
+      "models": [
+        "SH035"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/profile1"
+    },
+    {
+      "models": [
+        "sp-007"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "SP009"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf"
+    },
+    {
+      "models": [
+        "SP012"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT"
+    },
+    {
+      "models": [
+        "SP013"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]"
+    },
+    {
+      "models": [
+        "SP14",
+        "SRICAM AP006"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "videostream.cgi?resolution=8&rate=13"
+    },
+    {
+      "models": [
+        "SRICAM AP006"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8040,
+      "url": "/cgi-bin/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

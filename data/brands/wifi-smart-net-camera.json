@@ -1,0 +1,51 @@
+{
+  "brand": "Wifi Smart Net Camera",
+  "brand_id": "wifi-smart-net-camera",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IPC360",
+        "ipc-t3810-q6s",
+        "ork",
+        "Other",
+        "SMT529AB",
+        "SYMT529AB",
+        "v380"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "IPC-V380-Q10",
+        "XM83-P"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch00_0"
+    },
+    {
+      "models": [
+        "WANSCAM"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0"
+    },
+    {
+      "models": [
+        "WANSCAM"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 10554,
+      "url": "snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]"
+    }
+  ]
+}

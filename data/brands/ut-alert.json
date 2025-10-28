@@ -1,0 +1,17 @@
+{
+  "brand": "Ut Alert",
+  "brand_id": "ut-alert",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "x series"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/live/ch0"
+    }
+  ]
+}

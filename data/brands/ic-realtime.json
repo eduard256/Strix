@@ -1,0 +1,64 @@
+{
+  "brand": "Ic Realtime",
+  "brand_id": "ic-realtime",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "dw102"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "ic-i2a-df3w-ov",
+        "ICIP D3010IR-D",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]"
+    },
+    {
+      "models": [
+        "icip-b3732z"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi"
+    },
+    {
+      "models": [
+        "ICIPD5000AVIR1505W1B000012"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 1026,
+      "url": "/live.sdp"
+    },
+    {
+      "models": [
+        "ICIPD5000AVIR1505W1B000012"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 1026,
+      "url": "axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    }
+  ]
+}

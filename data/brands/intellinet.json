@@ -1,0 +1,331 @@
+{
+  "brand": "Intellinet",
+  "brand_id": "intellinet",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "5031277",
+        "503792",
+        "524421",
+        "5302468",
+        "550710",
+        "BVJH",
+        "ICD-862 HD",
+        "IDC-862",
+        "Int L200",
+        "INTELLINET CAMERA",
+        "INT-L10",
+        "INT-W200",
+        "L10",
+        "MNC-L10",
+        "N1000",
+        "NBC30",
+        "NBC30-IR",
+        "NCS18",
+        "NFC30",
+        "NFC30IR",
+        "NFC30-WG",
+        "nfc31",
+        "NFC31IR",
+        "NFC-WG",
+        "NFD30",
+        "NSC11",
+        "NSC11-WN",
+        "NSC15",
+        "NSC16-WG",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg"
+    },
+    {
+      "models": [
+        "503792",
+        "551106",
+        "l10",
+        "MNC-L10",
+        "NCS18",
+        "NSC18",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "temp/image.jpg"
+    },
+    {
+      "models": [
+        "503792",
+        "551106",
+        "NSC18",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi"
+    },
+    {
+      "models": [
+        "503792",
+        "550710",
+        "INT-L10",
+        "NSC18",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi"
+    },
+    {
+      "models": [
+        "5057231",
+        "5237001",
+        "550710",
+        "551106",
+        "Int L200",
+        "INTELLINET CAMERA",
+        "INT-L10",
+        "MNC-L10",
+        "NBC",
+        "NFC30",
+        "NFC-WG",
+        "NFD130-IR",
+        "nfd30",
+        "NSC16-WG",
+        "NSC18",
+        "Other",
+        "romanelli"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "jpg/image.jpg?size=3"
+    },
+    {
+      "models": [
+        "550710",
+        "551106",
+        "INT-L10",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.cgi"
+    },
+    {
+      "models": [
+        "550949",
+        "NFC30",
+        "NFC30-IR",
+        "NFC31",
+        "NFC31 IR",
+        "NSC15-WG",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/jpg/image"
+    },
+    {
+      "models": [
+        "550963",
+        "INTELLINET CAMERA",
+        "N1250",
+        "NFD130-IR",
+        "NFD30",
+        "NSC15",
+        "OLD"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mp4"
+    },
+    {
+      "models": [
+        "551106",
+        "intellinet camera",
+        "INT-L10",
+        "N1000",
+        "NCS18",
+        "NFC31",
+        "NFD130-IR",
+        "NFD30",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg"
+    },
+    {
+      "models": [
+        "551106",
+        "intellinet camera",
+        "NBC30-IR",
+        "NFC30",
+        "NFC30IR",
+        "NFC30-WG",
+        "NFC31",
+        "NFD30",
+        "NSC11-WN",
+        "NSC15",
+        "Other"
+      ],
+      "type": "VLC",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "video.mp4"
+    },
+    {
+      "models": [
+        "IBC-637IR",
+        "IDC-757IR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/video.pro1"
+    },
+    {
+      "models": [
+        "IBC-637IR",
+        "IDC-752IR",
+        "IDC-757IR",
+        "IDC-767IR",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/view/image?pro_[CHANNEL]"
+    },
+    {
+      "models": [
+        "ic-1500s",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
+    },
+    {
+      "models": [
+        "intellinet camera",
+        "int-w100"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.cgi"
+    },
+    {
+      "models": [
+        "INT-L10",
+        "MNC-L10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/jpg/image.jpg"
+    },
+    {
+      "models": [
+        "NCS18",
+        "NSC11",
+        "NSC11-WN",
+        "NSC18",
+        "NSC18-WN",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "NFC31",
+        "NFC31 IR"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.mjpg?q=30&fps=33&id=0.5"
+    },
+    {
+      "models": [
+        "NSC11",
+        "OLD"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/1/video.mjpg"
+    },
+    {
+      "models": [
+        "NSC11-WN",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "mjpg/video.mjpg"
+    },
+    {
+      "models": [
+        "NSC18"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "image.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "loginfree.jpg"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "video.cgi?resolution=VGA"
+    }
+  ]
+}

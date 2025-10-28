@@ -1,0 +1,19 @@
+{
+  "brand": "Nexsmart",
+  "brand_id": "nexsmart",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "Nr01",
+        "Other",
+        "View"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/live/main"
+    }
+  ]
+}

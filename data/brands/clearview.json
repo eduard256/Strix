@@ -1,0 +1,31 @@
+{
+  "brand": "Clearview",
+  "brand_id": "clearview",
+  "last_updated": "2025-10-17",
+  "source": "ispyconnect.com",
+  "entries": [
+    {
+      "models": [
+        "IP-70",
+        "IPPTZ-889",
+        "ipwifi"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "axis-cgi/mjpg/video.cgi?camera=[CHANNEL]"
+    },
+    {
+      "models": [
+        "IP-70",
+        "IP-72",
+        "ipd-80a",
+        "IPD92-A"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 0,
+      "url": "cgi-bin/snapshot.cgi?1"
+    }
+  ]
+}
