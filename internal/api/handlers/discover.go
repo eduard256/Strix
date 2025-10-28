@@ -107,14 +107,6 @@ func (h *DiscoverHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Send final summary
-	streamWriter.SendJSON("summary", map[string]interface{}{
-		"total_tested":  result.TotalTested,
-		"total_found":   result.TotalFound,
-		"duration":      result.Duration.Seconds(),
-		"streams_count": len(result.Streams),
-	})
-
 	h.logger.Info("discovery completed",
 		"target", req.Target,
 		"tested", result.TotalTested,

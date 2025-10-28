@@ -39,6 +39,16 @@ type BuildContext struct {
 
 // BuildURL builds a complete URL from an entry and context
 func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
+	b.logger.Debug("BuildURL called",
+		"entry_type", entry.Type,
+		"entry_url", entry.URL,
+		"entry_port", entry.Port,
+		"entry_protocol", entry.Protocol,
+		"ctx_ip", ctx.IP,
+		"ctx_port", ctx.Port,
+		"ctx_username", ctx.Username,
+		"ctx_channel", ctx.Channel)
+
 	// Set defaults
 	if ctx.Width == 0 {
 		ctx.Width = 640
@@ -50,6 +60,30 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 	// Use entry's port if not specified
 	if ctx.Port == 0 {
 		ctx.Port = entry.Port
+
+		// If entry port is also 0, use default port for the protocol
+		if ctx.Port == 0 {
+			// Use entry's protocol if not specified for port determination
+			protocol := ctx.Protocol
+			if protocol == "" {
+				protocol = entry.Protocol
+			}
+
+			switch protocol {
+			case "http":
+				ctx.Port = 80
+			case "https":
+				ctx.Port = 443
+			case "rtsp", "rtsps":
+				ctx.Port = 554
+			default:
+				ctx.Port = 80 // Default to 80 if unknown
+			}
+
+			b.logger.Debug("using default port for protocol",
+				"protocol", protocol,
+				"default_port", ctx.Port)
+		}
 	}
 
 	// Use entry's protocol if not specified
@@ -59,12 +93,14 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 
 	// Replace placeholders in URL path
 	path := b.replacePlaceholders(entry.URL, ctx)
+	b.logger.Debug("placeholders replaced", "original", entry.URL, "after_replacement", path)
 
 	// Build the complete URL
 	var fullURL string
 
 	// Check if the URL already contains authentication parameters
 	hasAuthInURL := b.hasAuthenticationParams(path)
+	b.logger.Debug("auth params detection", "has_auth_in_url", hasAuthInURL, "path", path)
 
 	switch ctx.Protocol {
 	case "rtsp":
@@ -112,7 +148,13 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 	// Clean up double slashes (except after protocol://)
 	fullURL = b.cleanURL(fullURL)
 
-	b.logger.Debug("built stream URL", "url", fullURL, "entry", entry.Type)
+	b.logger.Debug("BuildURL complete",
+		"final_url", fullURL,
+		"entry_type", entry.Type,
+		"entry_url_pattern", entry.URL,
+		"protocol", ctx.Protocol,
+		"port", ctx.Port,
+		"has_auth_in_url", hasAuthInURL)
 
 	return fullURL
 }
@@ -282,6 +324,7 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 
 	// Build main URL
 	mainURL := b.BuildURL(entry, ctx)
+	b.logger.Debug("BuildURLsFromEntry: main URL built", "url", mainURL, "entry_type", entry.Type)
 	urls = append(urls, mainURL)
 
 	// For NVR systems, try multiple channels
@@ -316,6 +359,12 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 			}
 		}
 	}
+
+	b.logger.Debug("BuildURLsFromEntry complete",
+		"entry_url_pattern", entry.URL,
+		"entry_type", entry.Type,
+		"total_urls_generated", len(urls),
+		"urls", urls)
 
 	return urls
 }

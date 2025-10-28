@@ -334,5 +334,10 @@ func (sw *StreamWriter) SendProgress(current, total int, message string) error {
 
 // Close closes the stream writer
 func (sw *StreamWriter) Close() {
+	// Perform final flush if possible
+	if flusher, ok := sw.client.Response.(http.Flusher); ok {
+		flusher.Flush()
+	}
+
 	sw.client.Cancel()
 }

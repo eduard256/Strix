@@ -143,6 +143,14 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 		Duration:    result.Duration.Seconds(),
 	})
 
+	// Send final done event to signal proper stream closure
+	streamWriter.SendJSON("done", map[string]interface{}{
+		"message": "Stream discovery finished",
+	})
+
+	// Small delay to ensure all data is flushed to client
+	time.Sleep(100 * time.Millisecond)
+
 	s.logger.Info("stream discovery completed",
 		"tested", result.TotalTested,
 		"found", result.TotalFound,
@@ -175,6 +183,7 @@ func (s *Scanner) scanDirectStream(ctx context.Context, req models.StreamDiscove
 			Type:       testResult.Type,
 			Protocol:   testResult.Protocol,
 			Working:    true,
+			AuthMethod: string(testResult.AuthMethod),
 			Resolution: testResult.Resolution,
 			Codec:      testResult.Codec,
 			FPS:        testResult.FPS,
@@ -226,6 +235,13 @@ func (s *Scanner) extractIP(target string) string {
 func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryRequest, ip string) ([]string, error) {
 	var allURLs []string
 	urlMap := make(map[string]bool) // For deduplication
+	var onvifCount, modelCount, popularCount int
+
+	s.logger.Debug("collectURLs started",
+		"ip", ip,
+		"model", req.Model,
+		"username", req.Username,
+		"channel", req.Channel)
 
 	// Build context for URL generation
 	buildCtx := stream.BuildContext{
@@ -236,7 +252,7 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 	}
 
 	// 1. ONVIF discovery (always first)
-	s.logger.Debug("starting ONVIF discovery")
+	s.logger.Debug("phase 1: starting ONVIF discovery", "ip", ip)
 	onvifStreams, err := s.onvif.DiscoverStreamsForIP(ctx, ip, req.Username, req.Password)
 	if err != nil {
 		s.logger.Error("ONVIF discovery failed", err)
@@ -245,13 +261,19 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 			if !urlMap[stream.URL] {
 				allURLs = append(allURLs, stream.URL)
 				urlMap[stream.URL] = true
+				onvifCount++
 			}
 		}
+		s.logger.Debug("ONVIF discovery completed",
+			"streams_found", len(onvifStreams),
+			"unique_urls_added", onvifCount)
 	}
 
 	// 2. Model-specific patterns
 	if req.Model != "" {
-		s.logger.Debug("searching model-specific patterns", "model", req.Model)
+		s.logger.Debug("phase 2: searching model-specific patterns",
+			"model", req.Model,
+			"limit", req.ModelLimit)
 
 		// Search for similar models
 		cameras, err := s.searchEngine.SearchByModel(req.Model, 0.8, req.ModelLimit)
@@ -264,6 +286,10 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 				entries = append(entries, camera.Entries...)
 			}
 
+			s.logger.Debug("model entries collected",
+				"cameras_matched", len(cameras),
+				"total_entries", len(entries))
+
 			// Build URLs from entries
 			for _, entry := range entries {
 				buildCtx.Port = entry.Port
@@ -274,18 +300,24 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 					if !urlMap[url] {
 						allURLs = append(allURLs, url)
 						urlMap[url] = true
+						modelCount++
 					}
 				}
 			}
+
+			s.logger.Debug("model patterns URLs built",
+				"total_unique_model_urls", modelCount)
 		}
 	}
 
 	// 3. Popular patterns (always add as fallback)
-	s.logger.Debug("adding popular patterns")
+	s.logger.Debug("phase 3: adding popular patterns")
 	patterns, err := s.loader.LoadPopularPatterns()
 	if err != nil {
 		s.logger.Error("failed to load popular patterns", err)
 	} else {
+		s.logger.Debug("popular patterns loaded", "count", len(patterns))
+
 		for _, pattern := range patterns {
 			entry := models.CameraEntry{
 				Type:     pattern.Type,
@@ -301,11 +333,21 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 			if !urlMap[url] {
 				allURLs = append(allURLs, url)
 				urlMap[url] = true
+				popularCount++
 			}
 		}
 	}
 
-	s.logger.Debug("collected unique URLs", "count", len(allURLs))
+	totalBeforeDedup := onvifCount + modelCount + popularCount
+	duplicatesRemoved := totalBeforeDedup - len(allURLs)
+
+	s.logger.Debug("URL collection complete",
+		"total_unique_urls", len(allURLs),
+		"from_onvif", onvifCount,
+		"from_model_patterns", modelCount,
+		"from_popular_patterns", popularCount,
+		"total_before_dedup", totalBeforeDedup,
+		"duplicates_removed", duplicatesRemoved)
 
 	return allURLs, nil
 }
@@ -320,6 +362,35 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 	sem := make(chan struct{}, s.config.WorkerPoolSize)
 	streamsChan := make(chan models.DiscoveredStream, 100)
 
+	// Start periodic progress updates
+	progressCtx, cancelProgress := context.WithCancel(ctx)
+	defer cancelProgress()
+
+	go func() {
+		ticker := time.NewTicker(3 * time.Second)
+		defer ticker.Stop()
+
+		lastTested := int32(0)
+
+		for {
+			select {
+			case <-progressCtx.Done():
+				return
+			case <-ticker.C:
+				currentTested := atomic.LoadInt32(&tested)
+				// Only send if there's been progress
+				if currentTested != lastTested {
+					streamWriter.SendJSON("progress", models.ProgressMessage{
+						Tested:    int(currentTested),
+						Found:     int(atomic.LoadInt32(&found)),
+						Remaining: len(urls) - int(currentTested),
+					})
+					lastTested = currentTested
+				}
+			}
+		}
+	}()
+
 	// Start result collector
 	go func() {
 		for stream := range streamsChan {
@@ -330,7 +401,7 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 				"stream": stream,
 			})
 
-			// Send progress
+			// Send progress (immediate update when stream is found)
 			streamWriter.SendJSON("progress", models.ProgressMessage{
 				Tested:    int(atomic.LoadInt32(&tested)),
 				Found:     int(atomic.LoadInt32(&found)),
@@ -379,6 +450,7 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 					Protocol:   testResult.Protocol,
 					Port:       0, // Will be extracted from URL if needed
 					Working:    true,
+					AuthMethod: string(testResult.AuthMethod),
 					Resolution: testResult.Resolution,
 					Codec:      testResult.Codec,
 					FPS:        testResult.FPS,
