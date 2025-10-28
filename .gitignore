@@ -1,5 +1,6 @@
 # Binaries
 bin/
+strix
 *.exe
 *.exe~
 *.dll

@@ -3,6 +3,7 @@ package config
 import (
 	"log/slog"
 	"os"
+	"path/filepath"
 	"time"
 )
 
@@ -41,6 +42,10 @@ type ScannerConfig struct {
 	FFProbeTimeout    time.Duration
 	RetryAttempts     int
 	RetryDelay        time.Duration
+	// Validation settings
+	StrictValidation  bool // Enable strict validation mode
+	MinImageSize      int  // Minimum bytes for valid image (JPEG/PNG)
+	MinVideoStreams   int  // Minimum video streams required
 }
 
 // LoggerConfig contains logging settings
@@ -51,6 +56,8 @@ type LoggerConfig struct {
 
 // Load returns configuration with defaults
 func Load() *Config {
+	dataPath := getEnv("STRIX_DATA_PATH", "./data")
+
 	return &Config{
 		Server: ServerConfig{
 			Host:         getEnv("STRIX_HOST", "0.0.0.0"),
@@ -59,10 +66,10 @@ func Load() *Config {
 			WriteTimeout: 30 * time.Second,
 		},
 		Database: DatabaseConfig{
-			DataPath:       getEnv("STRIX_DATA_PATH", "/home/dev/Strix/data"),
-			BrandsPath:     "/home/dev/Strix/data/brands",
-			PatternsPath:   "/home/dev/Strix/data/popular_stream_patterns.json",
-			ParametersPath: "/home/dev/Strix/data/query_parameters.json",
+			DataPath:       dataPath,
+			BrandsPath:     filepath.Join(dataPath, "brands"),
+			PatternsPath:   filepath.Join(dataPath, "popular_stream_patterns.json"),
+			ParametersPath: filepath.Join(dataPath, "query_parameters.json"),
 			CacheEnabled:   true,
 			CacheTTL:       5 * time.Minute,
 		},
@@ -71,9 +78,13 @@ func Load() *Config {
 			MaxStreams:       10,
 			ModelSearchLimit: 6,
 			WorkerPoolSize:   20,
-			FFProbeTimeout:   5 * time.Second,
+			FFProbeTimeout:   30 * time.Second,
 			RetryAttempts:    2,
 			RetryDelay:       500 * time.Millisecond,
+			// Strict validation enabled by default
+			StrictValidation: true,
+			MinImageSize:     5120,  // 5KB minimum for valid images
+			MinVideoStreams:  1,     // At least 1 video stream required
 		},
 		Logger: LoggerConfig{
 			Level:  getEnv("STRIX_LOG_LEVEL", "info"),

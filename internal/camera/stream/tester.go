@@ -23,7 +23,7 @@ type Tester struct {
 func NewTester(ffprobeTimeout time.Duration, logger interface{ Debug(string, ...any); Error(string, error, ...any) }) *Tester {
 	return &Tester{
 		httpClient: &http.Client{
-			Timeout: 10 * time.Second,
+			Timeout: 30 * time.Second,
 		},
 		ffprobeTimeout: ffprobeTimeout,
 		logger:         logger,
@@ -264,6 +264,11 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL, username, password str
 
 		// Try to probe with ffprobe for more details
 		t.probeHTTPVideo(ctx, streamURL, username, password, result)
+
+	case strings.Contains(contentType, "text/html"), strings.Contains(contentType, "text/plain"):
+		// Ignore web interfaces and plain text responses
+		result.Working = false
+		result.Error = "web interface, not a video stream"
 
 	default:
 		result.Type = "HTTP_UNKNOWN"

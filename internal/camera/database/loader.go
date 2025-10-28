@@ -78,6 +78,10 @@ func (l *Loader) ListBrands() ([]string, error) {
 	var brands []string
 	for _, file := range files {
 		if !file.IsDir() && strings.HasSuffix(file.Name(), ".json") {
+			// Skip index files
+			if file.Name() == "index.json" || file.Name() == "indexa.json" {
+				continue
+			}
 			brandID := strings.TrimSuffix(file.Name(), ".json")
 			brands = append(brands, brandID)
 		}
@@ -154,6 +158,11 @@ func (l *Loader) StreamingSearch(searchFunc func(*models.Camera) bool) ([]*model
 	var results []*models.Camera
 	for _, file := range files {
 		if file.IsDir() || !strings.HasSuffix(file.Name(), ".json") {
+			continue
+		}
+
+		// Skip index.json as it contains brand list, not camera data
+		if file.Name() == "index.json" || file.Name() == "indexa.json" {
 			continue
 		}
 
