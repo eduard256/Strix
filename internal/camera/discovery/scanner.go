@@ -178,8 +178,12 @@ func (s *Scanner) scanDirectStream(ctx context.Context, req models.StreamDiscove
 
 	if testResult.Working {
 		result.TotalFound = 1
+
+		// Embed credentials in URL for basic_auth and combined methods
+		finalURL := s.embedCredentialsInURL(testResult.URL, req.Username, req.Password, string(testResult.AuthMethod))
+
 		discoveredStream := models.DiscoveredStream{
-			URL:        testResult.URL,
+			URL:        finalURL,
 			Type:       testResult.Type,
 			Protocol:   testResult.Protocol,
 			Working:    true,
@@ -229,6 +233,46 @@ func (s *Scanner) extractIP(target string) string {
 	}
 
 	return target
+}
+
+// embedCredentialsInURL embeds username and password in URL for basic_auth and combined methods
+func (s *Scanner) embedCredentialsInURL(streamURL, username, password, authMethod string) string {
+	// Only apply for basic_auth and combined methods
+	if authMethod != "basic_auth" && authMethod != "combined" {
+		return streamURL
+	}
+
+	// Check if credentials are provided
+	if username == "" || password == "" {
+		return streamURL
+	}
+
+	// Parse URL
+	u, err := url.Parse(streamURL)
+	if err != nil {
+		s.logger.Debug("failed to parse URL for credential embedding",
+			"url", streamURL,
+			"error", err.Error())
+		return streamURL
+	}
+
+	// Check if credentials already exist in URL
+	if u.User != nil {
+		s.logger.Debug("credentials already exist in URL, skipping embedding",
+			"url", streamURL)
+		return streamURL
+	}
+
+	// Embed credentials
+	u.User = url.UserPassword(username, password)
+	embeddedURL := u.String()
+
+	s.logger.Debug("credentials embedded in URL",
+		"original_url", streamURL,
+		"embedded_url", embeddedURL,
+		"auth_method", authMethod)
+
+	return embeddedURL
 }
 
 // collectURLs collects all URLs to test
@@ -444,8 +488,11 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 			if testResult.Working {
 				atomic.AddInt32(&found, 1)
 
+				// Embed credentials in URL for basic_auth and combined methods
+				finalURL := s.embedCredentialsInURL(testResult.URL, req.Username, req.Password, string(testResult.AuthMethod))
+
 				discoveredStream := models.DiscoveredStream{
-					URL:        testResult.URL,
+					URL:        finalURL,
 					Type:       testResult.Type,
 					Protocol:   testResult.Protocol,
 					Port:       0, // Will be extracted from URL if needed
