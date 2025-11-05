@@ -1,6 +1,7 @@
 package stream
 
 import (
+	"encoding/base64"
 	"fmt"
 	"net/url"
 	"regexp"
@@ -56,6 +57,8 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 	if ctx.Height == 0 {
 		ctx.Height = 480
 	}
+	// NOTE: Channel default is 0 - will only be used for [CHANNEL] placeholder replacement
+	// Literal channel values in URLs (like "channel=1") are preserved as-is
 
 	// Use entry's port if not specified
 	if ctx.Port == 0 {
@@ -163,6 +166,12 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 	result := urlPath
 
+	// Generate base64 auth for [AUTH] placeholder
+	auth := ""
+	if ctx.Username != "" && ctx.Password != "" {
+		auth = base64.StdEncoding.EncodeToString([]byte(ctx.Username + ":" + ctx.Password))
+	}
+
 	// Common placeholders
 	replacements := map[string]string{
 		"[CHANNEL]":  strconv.Itoa(ctx.Channel),
@@ -187,6 +196,8 @@ func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 		"[ip]":       ctx.IP,
 		"[PORT]":     strconv.Itoa(ctx.Port),
 		"[port]":     strconv.Itoa(ctx.Port),
+		"[AUTH]":     auth, // base64(username:password) for basic auth
+		"[auth]":     auth,
 		"[TOKEN]":    "", // Empty for now
 		"[token]":    "",
 	}
@@ -196,41 +207,12 @@ func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 		result = strings.ReplaceAll(result, placeholder, value)
 	}
 
-	// Handle {var} style placeholders
-	result = b.replaceVarPlaceholders(result, ctx)
-
-	// Handle query parameter placeholders
+	// Handle query parameter placeholders (only for auth params)
 	result = b.replaceQueryParams(result, ctx)
 
 	return result
 }
 
-// replaceVarPlaceholders replaces {var} style placeholders
-func (b *Builder) replaceVarPlaceholders(urlPath string, ctx BuildContext) string {
-	varPattern := regexp.MustCompile(`\{([^}]+)\}`)
-
-	return varPattern.ReplaceAllStringFunc(urlPath, func(match string) string {
-		key := strings.Trim(match, "{}")
-		switch strings.ToLower(key) {
-		case "username", "user":
-			return ctx.Username
-		case "password", "pass", "pwd":
-			return ctx.Password
-		case "ip":
-			return ctx.IP
-		case "port":
-			return strconv.Itoa(ctx.Port)
-		case "channel", "chn", "ch":
-			return strconv.Itoa(ctx.Channel)
-		case "width":
-			return strconv.Itoa(ctx.Width)
-		case "height":
-			return strconv.Itoa(ctx.Height)
-		default:
-			return match // Keep original if not recognized
-		}
-	})
-}
 
 // replaceQueryParams handles query parameter replacements
 func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
@@ -249,24 +231,17 @@ func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
 		return urlPath
 	}
 
-	// Replace known parameter values
+	// ONLY replace authentication parameters
+	// DO NOT replace channel, width, height - they should stay as-is from URL patterns
 	for key := range params {
 		lowerKey := strings.ToLower(key)
 
-		// Check if this is a known parameter from our list
-		if b.isKnownParameter(lowerKey) {
-			switch lowerKey {
-			case "user", "username", "usr", "loginuse":
-				params.Set(key, ctx.Username)
-			case "password", "pass", "pwd", "loginpas", "passwd":
-				params.Set(key, ctx.Password)
-			case "channel", "chn", "ch":
-				params.Set(key, strconv.Itoa(ctx.Channel))
-			case "width":
-				params.Set(key, strconv.Itoa(ctx.Width))
-			case "height":
-				params.Set(key, strconv.Itoa(ctx.Height))
-			}
+		switch lowerKey {
+		case "user", "username", "usr", "loginuse":
+			params.Set(key, ctx.Username)
+		case "password", "pass", "pwd", "loginpas", "passwd":
+			params.Set(key, ctx.Password)
+		// Removed: channel, width, height replacements - they were breaking working URLs
 		}
 	}
 
@@ -274,15 +249,6 @@ func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
 	return basePath + "?" + params.Encode()
 }
 
-// isKnownParameter checks if a parameter is in our known list
-func (b *Builder) isKnownParameter(param string) bool {
-	for _, known := range b.queryParams {
-		if strings.ToLower(known) == param {
-			return true
-		}
-	}
-	return false
-}
 
 // hasAuthenticationParams checks if URL contains auth parameters
 func (b *Builder) hasAuthenticationParams(urlPath string) bool {
