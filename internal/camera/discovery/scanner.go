@@ -113,25 +113,25 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 		return result, err
 	}
 
-	// Collect all URLs to test
-	urls, err := s.collectURLs(scanCtx, req, ip)
+	// Collect all streams to test (includes metadata like type)
+	streams, err := s.collectStreams(scanCtx, req, ip)
 	if err != nil {
 		streamWriter.SendError(err)
 		result.Error = err
 		return result, err
 	}
 
-	s.logger.Info("collected URLs for testing", "count", len(urls))
+	s.logger.Info("collected streams for testing", "count", len(streams))
 
 	// Send progress update
 	streamWriter.SendJSON("progress", models.ProgressMessage{
 		Tested:    0,
 		Found:     0,
-		Remaining: len(urls),
+		Remaining: len(streams),
 	})
 
-	// Test URLs concurrently
-	s.testURLsConcurrently(scanCtx, urls, req, streamWriter, result)
+	// Test streams concurrently
+	s.testStreamsConcurrently(scanCtx, streams, req, streamWriter, result)
 
 	// Calculate duration
 	result.Duration = time.Since(startTime)
@@ -275,13 +275,13 @@ func (s *Scanner) embedCredentialsInURL(streamURL, username, password, authMetho
 	return embeddedURL
 }
 
-// collectURLs collects all URLs to test
-func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryRequest, ip string) ([]string, error) {
-	var allURLs []string
+// collectStreams collects all streams to test with their metadata
+func (s *Scanner) collectStreams(ctx context.Context, req models.StreamDiscoveryRequest, ip string) ([]models.DiscoveredStream, error) {
+	var allStreams []models.DiscoveredStream
 	urlMap := make(map[string]bool) // For deduplication
 	var onvifCount, modelCount, popularCount int
 
-	s.logger.Debug("collectURLs started",
+	s.logger.Debug("collectStreams started",
 		"ip", ip,
 		"model", req.Model,
 		"username", req.Username,
@@ -296,22 +296,48 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 	}
 
 	// 1. ONVIF discovery (always first)
-	s.logger.Debug("phase 1: starting ONVIF discovery", "ip", ip)
+	s.logger.Debug("========================================")
+	s.logger.Debug("PHASE 1: STARTING ONVIF DISCOVERY")
+	s.logger.Debug("========================================")
+	s.logger.Debug("ONVIF parameters",
+		"ip", ip,
+		"username", req.Username,
+		"password_len", len(req.Password),
+		"channel", req.Channel)
+
+	startTime := time.Now()
 	onvifStreams, err := s.onvif.DiscoverStreamsForIP(ctx, ip, req.Username, req.Password)
+	elapsed := time.Since(startTime)
+
 	if err != nil {
-		s.logger.Error("ONVIF discovery failed", err)
+		s.logger.Error("❌ ONVIF discovery FAILED", err,
+			"elapsed", elapsed.String())
 	} else {
-		for _, stream := range onvifStreams {
+		s.logger.Debug("✅ ONVIF discovery returned",
+			"streams_count", len(onvifStreams),
+			"elapsed", elapsed.String())
+
+		for i, stream := range onvifStreams {
+			s.logger.Debug("ONVIF stream returned",
+				"index", i+1,
+				"url", stream.URL,
+				"type", stream.Type,
+				"source", stream.Metadata["source"])
+
 			if !urlMap[stream.URL] {
-				allURLs = append(allURLs, stream.URL)
+				allStreams = append(allStreams, stream)
 				urlMap[stream.URL] = true
 				onvifCount++
+				s.logger.Debug("  ✓ Added to stream list (unique)")
+			} else {
+				s.logger.Debug("  ✗ Skipped (duplicate)")
 			}
 		}
-		s.logger.Debug("ONVIF discovery completed",
-			"streams_found", len(onvifStreams),
-			"unique_urls_added", onvifCount)
+		s.logger.Debug("ONVIF phase completed",
+			"total_streams_returned", len(onvifStreams),
+			"unique_streams_added", onvifCount)
 	}
+	s.logger.Debug("========================================\n")
 
 	// 2. Model-specific patterns
 	if req.Model != "" {
@@ -334,7 +360,7 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 				"cameras_matched", len(cameras),
 				"total_entries", len(entries))
 
-			// Build URLs from entries
+			// Build streams from entries
 			for _, entry := range entries {
 				buildCtx.Port = entry.Port
 				buildCtx.Protocol = entry.Protocol
@@ -342,15 +368,21 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 				urls := s.builder.BuildURLsFromEntry(entry, buildCtx)
 				for _, url := range urls {
 					if !urlMap[url] {
-						allURLs = append(allURLs, url)
+						allStreams = append(allStreams, models.DiscoveredStream{
+							URL:      url,
+							Type:     entry.Type,
+							Protocol: entry.Protocol,
+							Port:     entry.Port,
+							Working:  false, // Will be tested
+						})
 						urlMap[url] = true
 						modelCount++
 					}
 				}
 			}
 
-			s.logger.Debug("model patterns URLs built",
-				"total_unique_model_urls", modelCount)
+			s.logger.Debug("model patterns streams built",
+				"total_unique_model_streams", modelCount)
 		}
 	}
 
@@ -375,7 +407,13 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 
 			url := s.builder.BuildURL(entry, buildCtx)
 			if !urlMap[url] {
-				allURLs = append(allURLs, url)
+				allStreams = append(allStreams, models.DiscoveredStream{
+					URL:      url,
+					Type:     pattern.Type,
+					Protocol: pattern.Protocol,
+					Port:     pattern.Port,
+					Working:  false, // Will be tested
+				})
 				urlMap[url] = true
 				popularCount++
 			}
@@ -383,21 +421,21 @@ func (s *Scanner) collectURLs(ctx context.Context, req models.StreamDiscoveryReq
 	}
 
 	totalBeforeDedup := onvifCount + modelCount + popularCount
-	duplicatesRemoved := totalBeforeDedup - len(allURLs)
+	duplicatesRemoved := totalBeforeDedup - len(allStreams)
 
-	s.logger.Debug("URL collection complete",
-		"total_unique_urls", len(allURLs),
+	s.logger.Debug("stream collection complete",
+		"total_unique_streams", len(allStreams),
 		"from_onvif", onvifCount,
 		"from_model_patterns", modelCount,
 		"from_popular_patterns", popularCount,
 		"total_before_dedup", totalBeforeDedup,
 		"duplicates_removed", duplicatesRemoved)
 
-	return allURLs, nil
+	return allStreams, nil
 }
 
-// testURLsConcurrently tests URLs concurrently
-func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req models.StreamDiscoveryRequest, streamWriter *sse.StreamWriter, result *ScanResult) {
+// testStreamsConcurrently tests streams concurrently
+func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.DiscoveredStream, req models.StreamDiscoveryRequest, streamWriter *sse.StreamWriter, result *ScanResult) {
 	var wg sync.WaitGroup
 	var tested int32
 	var found int32
@@ -427,7 +465,7 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 					streamWriter.SendJSON("progress", models.ProgressMessage{
 						Tested:    int(currentTested),
 						Found:     int(atomic.LoadInt32(&found)),
-						Remaining: len(urls) - int(currentTested),
+						Remaining: len(streams) - int(currentTested),
 					})
 					lastTested = currentTested
 				}
@@ -449,7 +487,7 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 			streamWriter.SendJSON("progress", models.ProgressMessage{
 				Tested:    int(atomic.LoadInt32(&tested)),
 				Found:     int(atomic.LoadInt32(&found)),
-				Remaining: len(urls) - int(atomic.LoadInt32(&tested)),
+				Remaining: len(streams) - int(atomic.LoadInt32(&tested)),
 			})
 
 			// Check if we've found enough streams
@@ -459,8 +497,8 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 		}
 	}()
 
-	// Test each URL
-	for _, url := range urls {
+	// Test each stream
+	for _, streamToTest := range streams {
 		// Check if context is done or max streams reached
 		select {
 		case <-ctx.Done():
@@ -474,15 +512,24 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 		}
 
 		wg.Add(1)
-		go func(url string) {
+		go func(stream models.DiscoveredStream) {
 			defer wg.Done()
 
 			// Acquire semaphore
 			sem <- struct{}{}
 			defer func() { <-sem }()
 
+			// Special handling for ONVIF device service - skip testing, already verified
+			if stream.Type == "ONVIF" && stream.Working {
+				atomic.AddInt32(&tested, 1)
+				atomic.AddInt32(&found, 1)
+				streamsChan <- stream
+				s.logger.Debug("ONVIF device service added without testing", "url", stream.URL)
+				return
+			}
+
 			// Test the stream
-			testResult := s.tester.TestStream(ctx, url, req.Username, req.Password)
+			testResult := s.tester.TestStream(ctx, stream.URL, req.Username, req.Password)
 			atomic.AddInt32(&tested, 1)
 
 			if testResult.Working {
@@ -509,9 +556,9 @@ func (s *Scanner) testURLsConcurrently(ctx context.Context, urls []string, req m
 
 				streamsChan <- discoveredStream
 			} else {
-				s.logger.Debug("stream test failed", "url", url, "error", testResult.Error)
+				s.logger.Debug("stream test failed", "url", stream.URL, "error", testResult.Error)
 			}
-		}(url)
+		}(streamToTest)
 	}
 
 	// Wait for all tests to complete
