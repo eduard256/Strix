@@ -1,0 +1,13 @@
+{
+  "brand": "Auto",
+  "brand_id": "auto",
+  "last_updated": "2025-01-01",
+  "source": "strix",
+  "website": "",
+  "cameras": [
+    {
+      "model": "Automatic Detection",
+      "entries": []
+    }
+  ]
+}

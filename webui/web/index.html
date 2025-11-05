@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Camera Stream Discovery</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Screen 1: Initial Address Input -->
+        <div id="screen-address" class="screen active">
+            <div class="container">
+                <div class="hero">
+                    <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 20c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="18" cy="18" r="2" fill="currentColor"/>
+                        <circle cx="30" cy="18" r="2" fill="currentColor"/>
+                        <path d="M20 28l4-2 4 2v8l-4-2-4 2z" fill="currentColor"/>
+                    </svg>
+                    <h1 class="title">STRIX</h1>
+                    <p class="subtitle">Camera Stream Discovery</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="network-address" class="label">Network Address</label>
+                    <input
+                        type="text"
+                        id="network-address"
+                        class="input input-large"
+                        placeholder="192.168.1.100"
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+                    <p class="hint">IP, hostname or full stream URL</p>
+                </div>
+
+                <button id="btn-check-address" class="btn btn-primary btn-large">
+                    Check Address
+                </button>
+
+                <div class="examples">
+                    <p class="examples-title">Examples</p>
+                    <ul class="examples-list">
+                        <li>192.168.1.100</li>
+                        <li>camera.local</li>
+                        <li>rtsp://user:pass@192.168.1.100/stream</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 2: Configuration Form -->
+        <div id="screen-config" class="screen">
+            <div class="container">
+                <button id="btn-back-to-address" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Back
+                </button>
+
+                <h2 class="screen-title">Camera Configuration</h2>
+
+                <div class="form-group">
+                    <label for="address-validated" class="label">Network Address</label>
+                    <div class="input-validated">
+                        <input
+                            type="text"
+                            id="address-validated"
+                            class="input"
+                            readonly
+                        >
+                        <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="camera-model" class="label">Camera Model <span class="optional">(optional)</span></label>
+                    <div class="autocomplete-wrapper">
+                        <input
+                            type="text"
+                            id="camera-model"
+                            class="input"
+                            placeholder="Start typing..."
+                            autocomplete="off"
+                            spellcheck="false"
+                        >
+                        <div id="autocomplete-dropdown" class="autocomplete-dropdown hidden"></div>
+                    </div>
+                    <p id="model-disabled-hint" class="hint hidden">Detected from URL, continue below</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="username" class="label">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        class="input"
+                        placeholder="admin"
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="label">Password</label>
+                    <div class="input-password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            class="input"
+                            placeholder="••••••••"
+                            autocomplete="off"
+                        >
+                        <button type="button" class="btn-toggle-password" aria-label="Toggle password visibility">
+                            <svg class="icon-eye" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M2 10c1.5-4 4-6.5 8-6.5s6.5 2.5 8 6.5c-1.5 4-4 6.5-8 6.5S3.5 14 2 10z" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <details class="advanced-section">
+                    <summary class="advanced-toggle">Advanced</summary>
+                    <div class="advanced-content">
+                        <div class="form-group">
+                            <label for="channel" class="label">Channel</label>
+                            <input
+                                type="number"
+                                id="channel"
+                                class="input"
+                                value="0"
+                                min="0"
+                                max="255"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label">Resolution <span class="optional">(optional)</span></label>
+                            <div class="input-row">
+                                <input
+                                    type="number"
+                                    id="width"
+                                    class="input"
+                                    placeholder="Width"
+                                >
+                                <span class="input-separator">×</span>
+                                <input
+                                    type="number"
+                                    id="height"
+                                    class="input"
+                                    placeholder="Height"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="max-streams" class="label">Max Streams</label>
+                            <input
+                                type="number"
+                                id="max-streams"
+                                class="input"
+                                value="10"
+                                min="1"
+                                max="50"
+                            >
+                        </div>
+                    </div>
+                </details>
+
+                <button id="btn-discover" class="btn btn-primary btn-large">
+                    Discover Streams
+                </button>
+            </div>
+        </div>
+
+        <!-- Screen 3: Stream Discovery -->
+        <div id="screen-discovery" class="screen">
+            <div class="container">
+                <button id="btn-back-to-config" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Back to Configuration
+                </button>
+
+                <h2 class="screen-title">Discovering Streams</h2>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <p id="progress-text" class="progress-text">Starting scan...</p>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="stat-tested">0</span>
+                        <span class="stat-label">Tested</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value stat-primary" id="stat-found">0</span>
+                        <span class="stat-label">Found</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="stat-remaining">0</span>
+                        <span class="stat-label">Remaining</span>
+                    </div>
+                </div>
+
+                <div id="streams-section" class="streams-section hidden">
+                    <h3 class="section-title">Found Connections</h3>
+
+                    <div class="carousel">
+                        <button id="carousel-prev" class="carousel-arrow carousel-arrow-left" aria-label="Previous stream">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+
+                        <div id="carousel-track" class="carousel-track"></div>
+
+                        <button id="carousel-next" class="carousel-arrow carousel-arrow-right" aria-label="Next stream">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="carousel-info">
+                        <p id="carousel-counter" class="carousel-counter">Stream 1 of 1</p>
+                        <div id="carousel-dots" class="carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screen 4: Configuration Output -->
+        <div id="screen-output" class="screen">
+            <div class="container">
+                <button id="btn-back-to-streams" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Back to Streams
+                </button>
+
+                <h2 class="screen-title">Stream Configuration</h2>
+
+                <div class="selected-stream-info">
+                    <p id="selected-stream-type" class="selected-type"></p>
+                    <p id="selected-stream-url" class="selected-url"></p>
+                </div>
+
+                <div class="tabs">
+                    <div class="tabs-scroll">
+                        <button class="tab active" data-tab="url">URL</button>
+                        <button class="tab" data-tab="go2rtc">Go2RTC</button>
+                        <button class="tab" data-tab="frigate">Frigate</button>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" data-pane="url">
+                        <pre id="config-url" class="config-code"></pre>
+                    </div>
+                    <div class="tab-pane" data-pane="go2rtc">
+                        <pre id="config-go2rtc" class="config-code"></pre>
+                    </div>
+                    <div class="tab-pane" data-pane="frigate">
+                        <pre id="config-frigate" class="config-code"></pre>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="btn-copy-config" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="6" y="6" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M4 4h10v2H5v9H4V4z" fill="currentColor"/>
+                        </svg>
+                        Copy
+                    </button>
+                    <button id="btn-download-config" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 3v10m0 0l-4-4m4 4l4-4M4 17h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Download
+                    </button>
+                </div>
+
+                <button id="btn-new-search" class="btn btn-outline">
+                    Add Another Camera
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

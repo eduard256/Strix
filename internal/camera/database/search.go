@@ -58,21 +58,71 @@ func (s *SearchEngine) Search(query string, limit int) (*models.CameraSearchResp
 		return results[i].Score > results[j].Score
 	})
 
-	// Apply limit
-	if len(results) > limit {
-		results = results[:limit]
+	// Expand each camera into individual model entries with model-specific scores
+	type ModelResult struct {
+		Camera models.Camera
+		Score  float64
+	}
+	var modelResults []ModelResult
+
+	for _, result := range results {
+		camera := result.Camera
+
+		// Collect unique models with their scores
+		modelScores := make(map[string]float64)
+		for _, entry := range camera.Entries {
+			for _, model := range entry.Models {
+				if model != "" && model != "Other" {
+					// Calculate model-specific score
+					modelScore := s.calculateModelScore(model, modelTokens, normalizedQuery)
+					if modelScore > modelScores[model] {
+						modelScores[model] = modelScore
+					}
+				}
+			}
+		}
+
+		// Create a separate camera entry for each unique model
+		for model, modelScore := range modelScores {
+			// Combine brand score with model score
+			finalScore := result.Score*0.3 + modelScore*0.7
+
+			expandedCamera := models.Camera{
+				Brand:       camera.Brand,
+				BrandID:     camera.BrandID,
+				Model:       model,
+				LastUpdated: camera.LastUpdated,
+				Source:      camera.Source,
+				Website:     camera.Website,
+				Entries:     camera.Entries,
+				MatchScore:  finalScore,
+			}
+			modelResults = append(modelResults, ModelResult{
+				Camera: expandedCamera,
+				Score:  finalScore,
+			})
+		}
 	}
 
-	// Convert to response
-	cameras := make([]models.Camera, len(results))
-	for i, result := range results {
-		cameras[i] = *result.Camera
-		cameras[i].MatchScore = result.Score
+	// Sort by final score (best matches first)
+	sort.Slice(modelResults, func(i, j int) bool {
+		return modelResults[i].Score > modelResults[j].Score
+	})
+
+	// Apply limit
+	if len(modelResults) > limit {
+		modelResults = modelResults[:limit]
+	}
+
+	// Convert to camera slice
+	cameras := make([]models.Camera, len(modelResults))
+	for i, result := range modelResults {
+		cameras[i] = result.Camera
 	}
 
 	return &models.CameraSearchResponse{
 		Cameras:  cameras,
-		Total:    len(results),
+		Total:    len(cameras),
 		Returned: len(cameras),
 	}, nil
 }

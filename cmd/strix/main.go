@@ -13,6 +13,7 @@ import (
 	"github.com/strix-project/strix/internal/api"
 	"github.com/strix-project/strix/internal/config"
 	"github.com/strix-project/strix/internal/utils/logger"
+	"github.com/strix-project/strix/webui"
 )
 
 const (
@@ -67,7 +68,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Create HTTP server
+	// Create Web UI server
+	webuiServer := webui.NewServer(log)
+
+	// Create API HTTP server
 	httpServer := &http.Server{
 		Addr:         fmt.Sprintf("%s:%s", cfg.Server.Host, cfg.Server.Port),
 		Handler:      apiServer,
@@ -76,20 +80,41 @@ func main() {
 		IdleTimeout:  120 * time.Second,
 	}
 
-	// Start server in goroutine
+	// Create Web UI HTTP server
+	webuiHTTPServer := &http.Server{
+		Addr:         fmt.Sprintf("%s:4567", cfg.Server.Host),
+		Handler:      webuiServer,
+		ReadTimeout:  cfg.Server.ReadTimeout,
+		WriteTimeout: cfg.Server.WriteTimeout,
+		IdleTimeout:  120 * time.Second,
+	}
+
+	// Start API server in goroutine
 	go func() {
-		log.Info("HTTP server starting",
+		log.Info("API server starting",
 			slog.String("address", httpServer.Addr),
 			slog.String("api_version", "v1"),
 		)
 
 		if err := httpServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Error("HTTP server failed", err)
+			log.Error("API server failed", err)
 			os.Exit(1)
 		}
 	}()
 
-	// Print API endpoints
+	// Start Web UI server in goroutine
+	go func() {
+		log.Info("Web UI server starting",
+			slog.String("address", webuiHTTPServer.Addr),
+		)
+
+		if err := webuiHTTPServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+			log.Error("Web UI server failed", err)
+			os.Exit(1)
+		}
+	}()
+
+	// Print endpoints
 	printEndpoints(cfg.Server.Host, cfg.Server.Port)
 
 	// Wait for interrupt signal
@@ -103,12 +128,19 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 
+	// Shutdown API server
 	if err := httpServer.Shutdown(ctx); err != nil {
-		log.Error("server shutdown failed", err)
+		log.Error("API server shutdown failed", err)
 		os.Exit(1)
 	}
 
-	log.Info("server stopped gracefully")
+	// Shutdown Web UI server
+	if err := webuiHTTPServer.Shutdown(ctx); err != nil {
+		log.Error("Web UI server shutdown failed", err)
+		os.Exit(1)
+	}
+
+	log.Info("servers stopped gracefully")
 }
 
 // checkFFProbe checks if ffprobe is available
@@ -142,6 +174,13 @@ func printEndpoints(host, port string) {
 	}
 
 	baseURL := fmt.Sprintf("http://%s:%s", host, port)
+
+	webuiURL := fmt.Sprintf("http://%s:4567", host)
+
+	fmt.Println("\n🌐 Web Interface:")
+	fmt.Println("────────────────────────────────────────────────")
+	fmt.Printf("  Open in browser: %s\n", webuiURL)
+	fmt.Println("────────────────────────────────────────────────")
 
 	fmt.Println("\n🚀 API Endpoints:")
 	fmt.Println("────────────────────────────────────────────────")
