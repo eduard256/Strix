@@ -16,7 +16,9 @@ class StrixApp {
 
         this.currentAddress = '';
         this.currentStreams = [];
-        this.currentStream = null;
+        this.selectedMainStream = null;
+        this.selectedSubStream = null;
+        this.isSelectingSubStream = false;
 
         this.init();
     }
@@ -94,11 +96,16 @@ class StrixApp {
 
         // Screen 4: Configuration output
         document.getElementById('btn-back-to-streams').addEventListener('click', () => {
+            this.isSelectingSubStream = false;
             this.showScreen('discovery');
         });
 
         document.getElementById('btn-copy-config').addEventListener('click', () => this.copyConfig());
         document.getElementById('btn-download-config').addEventListener('click', () => this.downloadConfig());
+
+        document.getElementById('btn-add-sub-stream').addEventListener('click', () => this.addSubStream());
+        document.getElementById('btn-remove-sub').addEventListener('click', () => this.removeSubStream());
+
         document.getElementById('btn-new-search').addEventListener('click', () => {
             this.reset();
             this.showScreen('address');
@@ -171,9 +178,16 @@ class StrixApp {
     async searchCameraModels(query, limit = 10, append = false) {
         const dropdown = document.getElementById('autocomplete-dropdown');
 
+        // Keep dropdown open and show loading state smoothly
         if (!append) {
-            dropdown.innerHTML = '<div class="autocomplete-loading">Searching...</div>';
-            dropdown.classList.remove('hidden');
+            const isOpen = !dropdown.classList.contains('hidden');
+            if (!isOpen) {
+                dropdown.classList.remove('hidden');
+            }
+            // Show loading only if dropdown was empty or closed
+            if (!isOpen || dropdown.children.length === 0) {
+                dropdown.innerHTML = '<div class="autocomplete-loading">Searching...</div>';
+            }
         }
 
         try {
@@ -316,9 +330,52 @@ class StrixApp {
     }
 
     selectStream(stream, index) {
-        this.currentStream = stream;
-        this.configPanel.render(stream);
-        this.showScreen('output');
+        if (!this.isSelectingSubStream) {
+            // Selecting main stream
+            this.selectedMainStream = stream;
+            this.selectedSubStream = null;
+            this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
+            this.updateSubStreamUI();
+            this.showScreen('output');
+        } else {
+            // Selecting sub stream
+            this.selectedSubStream = stream;
+            this.isSelectingSubStream = false;
+            this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
+            this.updateSubStreamUI();
+            this.showScreen('output');
+        }
+    }
+
+    addSubStream() {
+        if (this.currentStreams.length === 0) {
+            showToast('No streams available to select');
+            return;
+        }
+
+        this.isSelectingSubStream = true;
+        showToast('Select a sub stream from available streams');
+        this.showScreen('discovery');
+    }
+
+    removeSubStream() {
+        this.selectedSubStream = null;
+        this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
+        this.updateSubStreamUI();
+        showToast('Sub stream removed');
+    }
+
+    updateSubStreamUI() {
+        const subStreamInfo = document.getElementById('sub-stream-info');
+        const addSubStreamBtn = document.getElementById('btn-add-sub-stream');
+
+        if (this.selectedSubStream) {
+            subStreamInfo.classList.remove('hidden');
+            addSubStreamBtn.style.display = 'none';
+        } else {
+            subStreamInfo.classList.add('hidden');
+            addSubStreamBtn.style.display = 'inline-flex';
+        }
     }
 
     switchTab(tabName) {
@@ -336,12 +393,22 @@ class StrixApp {
         const configElement = document.getElementById(`config-${activeTab}`);
         const text = configElement.textContent;
 
-        navigator.clipboard.writeText(text).then(() => {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+            document.execCommand('copy');
             showToast('Copied to clipboard!');
-        }).catch(err => {
+        } catch (err) {
             showToast('Failed to copy');
             console.error('Copy error:', err);
-        });
+        } finally {
+            document.body.removeChild(textarea);
+        }
     }
 
     downloadConfig() {
@@ -364,7 +431,9 @@ class StrixApp {
     reset() {
         this.currentAddress = '';
         this.currentStreams = [];
-        this.currentStream = null;
+        this.selectedMainStream = null;
+        this.selectedSubStream = null;
+        this.isSelectingSubStream = false;
 
         document.getElementById('network-address').value = '';
         document.getElementById('camera-model').value = '';

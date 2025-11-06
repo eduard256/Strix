@@ -217,14 +217,16 @@
                 <div id="streams-section" class="streams-section hidden">
                     <h3 class="section-title">Found Connections</h3>
 
-                    <div class="carousel">
+                    <div class="carousel-wrapper">
                         <button id="carousel-prev" class="carousel-arrow carousel-arrow-left" aria-label="Previous stream">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                             </svg>
                         </button>
 
-                        <div id="carousel-track" class="carousel-track"></div>
+                        <div class="carousel">
+                            <div id="carousel-track" class="carousel-track"></div>
+                        </div>
 
                         <button id="carousel-next" class="carousel-arrow carousel-arrow-right" aria-label="Next stream">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -253,9 +255,19 @@
 
                 <h2 class="screen-title">Stream Configuration</h2>
 
-                <div class="selected-stream-info">
-                    <p id="selected-stream-type" class="selected-type"></p>
-                    <p id="selected-stream-url" class="selected-url"></p>
+                <div class="stream-selection-container">
+                    <div class="selected-stream-info">
+                        <p class="stream-label">Main Stream</p>
+                        <p id="selected-main-type" class="selected-type"></p>
+                        <p id="selected-main-url" class="selected-url"></p>
+                    </div>
+
+                    <div id="sub-stream-info" class="selected-stream-info sub-stream hidden">
+                        <p class="stream-label">Sub Stream</p>
+                        <p id="selected-sub-type" class="selected-type"></p>
+                        <p id="selected-sub-url" class="selected-url"></p>
+                        <button id="btn-remove-sub" class="btn-remove-sub">Remove Sub Stream</button>
+                    </div>
                 </div>
 
                 <div class="tabs">
@@ -294,9 +306,17 @@
                     </button>
                 </div>
 
-                <button id="btn-new-search" class="btn btn-outline">
-                    Add Another Camera
-                </button>
+                <div class="secondary-actions">
+                    <button id="btn-add-sub-stream" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Add Sub Stream
+                    </button>
+                    <button id="btn-new-search" class="btn btn-outline">
+                        Add Another Camera
+                    </button>
+                </div>
             </div>
         </div>
     </div>
