@@ -53,104 +53,115 @@ type TestResult struct {
 func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 	contentType := resp.Header.Get("Content-Type")
 	result.Metadata["content_type"] = contentType
+	urlPath := strings.ToLower(resp.Request.URL.Path)
 
 	t.logger.Debug("validating HTTP stream",
 		"url", resp.Request.URL.String(),
 		"content_type", contentType,
 		"status_code", resp.StatusCode)
 
-	// Parse URL to check extension (some cameras don't set Content-Type correctly)
-	urlPath := strings.ToLower(resp.Request.URL.Path)
+	// Read first bytes to check magic bytes (up to 512 bytes for MJPEG boundary detection)
+	buffer := make([]byte, 512)
+	n, _ := resp.Body.Read(buffer)
 
-	// Check URL extension first for cameras that don't set Content-Type
-	if strings.Contains(urlPath, ".jpg") || strings.Contains(urlPath, ".jpeg") || strings.Contains(urlPath, "snapshot") {
-		// Likely a JPEG snapshot - verify with magic bytes
-		buffer := make([]byte, 3)
-		n, _ := resp.Body.Read(buffer)
-		t.logger.Debug("JPEG detection by URL",
-			"url", urlPath,
-			"bytes_read", n,
-			"valid_magic_bytes", n >= 3 && buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF)
-		if n >= 3 && buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF {
+	// Check for JPEG magic bytes (FF D8 FF)
+	hasJPEGMagic := n >= 3 && buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF
+	// Check for MJPEG boundary
+	hasMJPEGBoundary := n > 0 && bytes.Contains(buffer[:n], []byte("--"))
+
+	t.logger.Debug("stream content analysis",
+		"bytes_read", n,
+		"has_jpeg_magic", hasJPEGMagic,
+		"has_mjpeg_boundary", hasMJPEGBoundary)
+
+	// 1. Check Content-Type for multipart (MJPEG)
+	if strings.Contains(contentType, "multipart") {
+		result.Type = "MJPEG"
+		result.Working = hasMJPEGBoundary
+		if !hasMJPEGBoundary {
+			result.Error = "no MJPEG boundary found"
+		}
+		t.logger.Debug("detected MJPEG by content-type", "working", result.Working)
+		return
+	}
+
+	// 2. Check for JPEG by magic bytes (most reliable)
+	if hasJPEGMagic {
+		// Verify it's not MJPEG
+		if hasMJPEGBoundary {
+			result.Type = "MJPEG"
+			result.Working = true
+			t.logger.Debug("detected MJPEG by magic bytes and boundary")
+		} else {
 			result.Type = "JPEG"
 			result.Working = true
-			t.logger.Debug("stream validated as JPEG by URL extension", "url", urlPath)
+			t.logger.Debug("detected JPEG by magic bytes")
+		}
+		return
+	}
+
+	// 3. Check Content-Type for image/jpeg
+	if strings.Contains(contentType, "image/jpeg") || strings.Contains(contentType, "image/jpg") {
+		result.Type = "JPEG"
+		result.Working = true
+		t.logger.Debug("detected JPEG by content-type")
+		return
+	}
+
+	// 4. Check URL patterns for JPEG (fallback for cameras with wrong Content-Type)
+	jpegPatterns := []string{".jpg", ".jpeg", "snapshot", "image", "picture", "snap", "photo", "capture"}
+	for _, pattern := range jpegPatterns {
+		if strings.Contains(urlPath, pattern) {
+			result.Type = "JPEG"
+			result.Working = true
+			t.logger.Debug("detected JPEG by URL pattern", "pattern", pattern, "url", urlPath)
+			result.Metadata["detection_method"] = "url_pattern"
 			return
 		}
 	}
 
-	if strings.Contains(urlPath, ".m3u8") {
-		result.Type = "HLS"
-		result.Working = true
-		return
-	}
-
-	if strings.Contains(urlPath, ".mpd") {
-		result.Type = "MPEG-DASH"
-		result.Working = true
-		return
-	}
-
+	// 5. Check for MJPEG by extension
 	if strings.Contains(urlPath, ".mjpg") || strings.Contains(urlPath, ".mjpeg") {
 		result.Type = "MJPEG"
 		result.Working = true
+		t.logger.Debug("detected MJPEG by URL extension")
 		return
 	}
 
-	// Determine stream type based on content type
-	switch {
-	case strings.Contains(contentType, "multipart"):
-		result.Type = "MJPEG"
-		result.Working = true
-
-		// Read first few bytes to verify
-		buffer := make([]byte, 512)
-		n, _ := resp.Body.Read(buffer)
-		if n > 0 {
-			// Check for MJPEG boundary
-			if bytes.Contains(buffer[:n], []byte("--")) {
-				result.Working = true
-			}
-		}
-
-	case strings.Contains(contentType, "image/jpeg"), strings.Contains(contentType, "image/jpg"):
-		result.Type = "JPEG"
-		result.Working = true
-
-		// Read first few bytes to verify JPEG magic bytes
-		buffer := make([]byte, 3)
-		n, _ := resp.Body.Read(buffer)
-		if n >= 3 && buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF {
-			result.Working = true
-		} else {
-			result.Working = false
-			result.Error = "invalid JPEG data"
-		}
-
-	case strings.Contains(contentType, "video"):
-		result.Type = "HTTP_VIDEO"
-		result.Working = true
-
-	case strings.Contains(contentType, "application/vnd.apple.mpegurl"), strings.Contains(contentType, "application/x-mpegurl"):
-		// HLS stream
+	// 6. Check for HLS
+	if strings.Contains(urlPath, ".m3u8") ||
+		strings.Contains(contentType, "application/vnd.apple.mpegurl") ||
+		strings.Contains(contentType, "application/x-mpegurl") {
 		result.Type = "HLS"
 		result.Working = true
+		return
+	}
 
-	case strings.Contains(contentType, "application/dash+xml"):
-		// MPEG-DASH stream
+	// 7. Check for MPEG-DASH
+	if strings.Contains(urlPath, ".mpd") || strings.Contains(contentType, "application/dash+xml") {
 		result.Type = "MPEG-DASH"
 		result.Working = true
+		return
+	}
 
-	case strings.Contains(contentType, "text/html"), strings.Contains(contentType, "text/plain"):
-		// Ignore web interfaces and plain text responses
+	// 8. Check for video content type
+	if strings.Contains(contentType, "video") {
+		result.Type = "HTTP_VIDEO"
+		result.Working = true
+		return
+	}
+
+	// 9. Check for web interface
+	if strings.Contains(contentType, "text/html") || strings.Contains(contentType, "text/plain") {
 		result.Working = false
 		result.Error = "web interface, not a video stream"
-
-	default:
-		result.Type = "HTTP_UNKNOWN"
-		result.Working = true // Assume it works if we got 200 OK
-		result.Metadata["note"] = "unknown content type, may still be valid"
+		return
 	}
+
+	// 10. Unknown - but still working if we got 200 OK
+	result.Type = "HTTP_UNKNOWN"
+	result.Working = true
+	result.Metadata["note"] = "unknown content type, may still be valid"
 }
 
 // TestStream tests if a stream URL is working
@@ -333,56 +344,12 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL string, result *TestRes
 		return
 	}
 
-	// Check content type
-	contentType := resp.Header.Get("Content-Type")
-	result.Metadata["content_type"] = contentType
+	// Use validateHTTPStream to determine stream type
+	t.validateHTTPStream(resp, result)
 
-	// Determine stream type based on content type
-	switch {
-	case strings.Contains(contentType, "multipart"):
-		result.Type = "MJPEG"
-		result.Working = true
-
-		// Read first few bytes to verify
-		buffer := make([]byte, 512)
-		n, _ := resp.Body.Read(buffer)
-		if n > 0 {
-			// Check for MJPEG boundary
-			if bytes.Contains(buffer[:n], []byte("--")) {
-				result.Working = true
-			}
-		}
-
-	case strings.Contains(contentType, "image/jpeg"):
-		result.Type = "JPEG"
-		result.Working = true
-
-		// Read first few bytes to verify JPEG magic bytes
-		buffer := make([]byte, 3)
-		n, _ := resp.Body.Read(buffer)
-		if n >= 3 && buffer[0] == 0xFF && buffer[1] == 0xD8 && buffer[2] == 0xFF {
-			result.Working = true
-		} else {
-			result.Working = false
-			result.Error = "invalid JPEG data"
-		}
-
-	case strings.Contains(contentType, "video"):
-		result.Type = "HTTP_VIDEO"
-		result.Working = true
-
-		// Try to probe with ffprobe for more details
+	// Try to probe with ffprobe for HTTP_VIDEO type for more details
+	if result.Type == "HTTP_VIDEO" && result.Working {
 		t.probeHTTPVideo(ctx, streamURL, result)
-
-	case strings.Contains(contentType, "text/html"), strings.Contains(contentType, "text/plain"):
-		// Ignore web interfaces and plain text responses
-		result.Working = false
-		result.Error = "web interface, not a video stream"
-
-	default:
-		result.Type = "HTTP_UNKNOWN"
-		result.Working = true // Assume it works if we got 200 OK
-		result.Metadata["note"] = "unknown content type, may still be valid"
 	}
 }
 
