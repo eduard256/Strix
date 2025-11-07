@@ -127,6 +127,16 @@ func (o *ONVIFDiscovery) discoverViaONVIF(ctx context.Context, ip, username, pas
 		if len(profileStreams) > 0 {
 			// Add ONVIF device service endpoint
 			deviceServiceURL := fmt.Sprintf("http://%s/onvif/device_service", xaddr)
+
+			// Embed credentials in URL if provided
+			if username != "" && password != "" {
+				u, err := url.Parse(deviceServiceURL)
+				if err == nil {
+					u.User = url.UserPassword(username, password)
+					deviceServiceURL = u.String()
+				}
+			}
+
 			streams = append(streams, models.DiscoveredStream{
 				URL:      deviceServiceURL,
 				Type:     "ONVIF",
