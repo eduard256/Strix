@@ -362,17 +362,20 @@ func (s *Scanner) collectStreams(ctx context.Context, req models.StreamDiscovery
 			buildCtx.Port = pattern.Port
 			buildCtx.Protocol = pattern.Protocol
 
-			url := s.builder.BuildURL(entry, buildCtx)
-			if !urlMap[url] {
-				allStreams = append(allStreams, models.DiscoveredStream{
-					URL:      url,
-					Type:     pattern.Type,
+			// Generate all URL variants for this pattern
+			urls := s.builder.BuildURLsFromEntry(entry, buildCtx)
+			for _, url := range urls {
+				if !urlMap[url] {
+					allStreams = append(allStreams, models.DiscoveredStream{
+						URL:      url,
+						Type:     pattern.Type,
 					Protocol: pattern.Protocol,
 					Port:     pattern.Port,
 					Working:  false, // Will be tested
 				})
-				urlMap[url] = true
-				popularCount++
+					urlMap[url] = true
+					popularCount++
+				}
 			}
 		}
 	}

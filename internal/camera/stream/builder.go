@@ -300,41 +300,95 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 	switch entry.Protocol {
 	case "rtsp", "rtsps":
 		// For RTSP: generate with and without credentials
-		// 1. With credentials (if provided)
 		if ctx.Username != "" && ctx.Password != "" {
 			addURL(b.BuildURL(entry, ctx))
 		}
-
-		// 2. Without credentials (for open cameras)
+		// Without credentials (for open cameras)
 		ctxNoAuth := ctx
 		ctxNoAuth.Username = ""
 		ctxNoAuth.Password = ""
 		addURL(b.BuildURL(entry, ctxNoAuth))
 
 	case "http", "https":
-		// For HTTP/JPEG/MJPEG: generate multiple auth variants
-		if entry.Type == "JPEG" || entry.Type == "MJPEG" {
-			// Check if URL has auth placeholders
-			hasAuthPlaceholders := strings.Contains(entry.URL, "[USERNAME]") ||
-								  strings.Contains(entry.URL, "[PASSWORD]") ||
-								  strings.Contains(entry.URL, "[AUTH]")
+		// For HTTP/HTTPS: ALWAYS generate 4 authentication variants
+		if ctx.Username != "" && ctx.Password != "" {
+			// 1. No authentication
+			ctxNoAuth := ctx
+			ctxNoAuth.Username = ""
+			ctxNoAuth.Password = ""
+			urlNoAuth := b.BuildURL(entry, ctxNoAuth)
+			addURL(urlNoAuth)
 
-			if hasAuthPlaceholders {
-				// 1. URL with credentials in parameters (replaced placeholders)
-				addURL(b.BuildURL(entry, ctx))
+			// 2. Basic Auth only (embedded credentials)
+			urlBasic := b.BuildURL(entry, ctxNoAuth) // Use clean URL
+			if u, err := url.Parse(urlBasic); err == nil {
+				u.User = url.UserPassword(ctx.Username, ctx.Password)
+				addURL(u.String())
+			}
 
-				// 2. URL without credentials (for cameras that don't require auth)
-				ctxNoAuth := ctx
-				ctxNoAuth.Username = ""
-				ctxNoAuth.Password = ""
-				addURL(b.BuildURL(entry, ctxNoAuth))
+			// 3. Query parameters only
+			urlWithParams := b.BuildURL(entry, ctx) // This will replace placeholders if any
+
+			// If URL has auth placeholders, they're already replaced
+			if strings.Contains(entry.URL, "[USERNAME]") || strings.Contains(entry.URL, "[PASSWORD]") {
+				addURL(urlWithParams)
 			} else {
-				// URL without placeholders - will use Basic Auth in headers
-				// Generate only one URL, auth will be in headers
-				addURL(b.BuildURL(entry, ctx))
+				// No placeholders - add query params for auth (don't overwrite existing params)
+				if u, err := url.Parse(urlWithParams); err == nil {
+					q := u.Query()
+
+					// Add user/pwd if not already present
+					if !q.Has("user") && !q.Has("usr") && !q.Has("username") {
+						q.Set("user", ctx.Username)
+					}
+					if !q.Has("pwd") && !q.Has("password") && !q.Has("pass") {
+						q.Set("pwd", ctx.Password)
+					}
+					u.RawQuery = q.Encode()
+					addURL(u.String())
+
+					// Try alternative names too
+					q2 := url.Values{}
+					for k, v := range u.Query() {
+						q2[k] = v
+					}
+					if !q2.Has("username") && !q2.Has("user") && !q2.Has("usr") {
+						q2.Set("username", ctx.Username)
+					}
+					if !q2.Has("password") && !q2.Has("pwd") && !q2.Has("pass") {
+						q2.Set("password", ctx.Password)
+					}
+					u.RawQuery = q2.Encode()
+					addURL(u.String())
+				}
+			}
+
+			// 4. Basic Auth + Query parameters (combined)
+			if strings.Contains(entry.URL, "[USERNAME]") || strings.Contains(entry.URL, "[PASSWORD]") {
+				// URL has placeholders - add Basic Auth to the URL with replaced params
+				if u, err := url.Parse(urlWithParams); err == nil {
+					u.User = url.UserPassword(ctx.Username, ctx.Password)
+					addURL(u.String())
+				}
+			} else {
+				// No placeholders - add both Basic Auth and query params (without overwriting existing)
+				if u, err := url.Parse(urlNoAuth); err == nil {
+					u.User = url.UserPassword(ctx.Username, ctx.Password)
+					q := u.Query()
+
+					// Add auth params only if not already present
+					if !q.Has("user") && !q.Has("usr") && !q.Has("username") {
+						q.Set("user", ctx.Username)
+					}
+					if !q.Has("pwd") && !q.Has("password") && !q.Has("pass") {
+						q.Set("pwd", ctx.Password)
+					}
+					u.RawQuery = q.Encode()
+					addURL(u.String())
+				}
 			}
 		} else {
-			// Other HTTP types - single URL
+			// No credentials provided - just one URL
 			addURL(b.BuildURL(entry, ctx))
 		}
 
@@ -343,25 +397,6 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 		addURL(b.BuildURL(entry, ctx))
 	}
 
-	// For NVR systems, try multiple channels
-	if ctx.Channel == 0 && strings.Contains(strings.ToLower(entry.Notes), "channel") {
-		for ch := 1; ch <= 4; ch++ {
-			altCtx := ctx
-			altCtx.Channel = ch
-
-			// Regenerate with different channel
-			if entry.Protocol == "rtsp" || entry.Protocol == "rtsps" {
-				if ctx.Username != "" && ctx.Password != "" {
-					addURL(b.BuildURL(entry, altCtx))
-				}
-				altCtx.Username = ""
-				altCtx.Password = ""
-				addURL(b.BuildURL(entry, altCtx))
-			} else {
-				addURL(b.BuildURL(entry, altCtx))
-			}
-		}
-	}
 
 	b.logger.Debug("BuildURLsFromEntry complete",
 		"entry_url_pattern", entry.URL,
