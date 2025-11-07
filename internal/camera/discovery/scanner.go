@@ -173,21 +173,17 @@ func (s *Scanner) isDirectStreamURL(target string) bool {
 func (s *Scanner) scanDirectStream(ctx context.Context, req models.StreamDiscoveryRequest, streamWriter *sse.StreamWriter, result *ScanResult) (*ScanResult, error) {
 	s.logger.Debug("testing direct stream URL", "url", req.Target)
 
-	testResult := s.tester.TestStream(ctx, req.Target, req.Username, req.Password)
+	testResult := s.tester.TestStream(ctx, req.Target)
 	result.TotalTested = 1
 
 	if testResult.Working {
 		result.TotalFound = 1
 
-		// Embed credentials in URL for basic_auth and combined methods
-		finalURL := s.embedCredentialsInURL(testResult.URL, req.Username, req.Password, string(testResult.AuthMethod))
-
 		discoveredStream := models.DiscoveredStream{
-			URL:        finalURL,
+			URL:        testResult.URL,
 			Type:       testResult.Type,
 			Protocol:   testResult.Protocol,
 			Working:    true,
-			AuthMethod: string(testResult.AuthMethod),
 			Resolution: testResult.Resolution,
 			Codec:      testResult.Codec,
 			FPS:        testResult.FPS,
@@ -235,45 +231,6 @@ func (s *Scanner) extractIP(target string) string {
 	return target
 }
 
-// embedCredentialsInURL embeds username and password in URL for basic_auth and combined methods
-func (s *Scanner) embedCredentialsInURL(streamURL, username, password, authMethod string) string {
-	// Only apply for basic_auth and combined methods
-	if authMethod != "basic_auth" && authMethod != "combined" {
-		return streamURL
-	}
-
-	// Check if credentials are provided
-	if username == "" || password == "" {
-		return streamURL
-	}
-
-	// Parse URL
-	u, err := url.Parse(streamURL)
-	if err != nil {
-		s.logger.Debug("failed to parse URL for credential embedding",
-			"url", streamURL,
-			"error", err.Error())
-		return streamURL
-	}
-
-	// Check if credentials already exist in URL
-	if u.User != nil {
-		s.logger.Debug("credentials already exist in URL, skipping embedding",
-			"url", streamURL)
-		return streamURL
-	}
-
-	// Embed credentials
-	u.User = url.UserPassword(username, password)
-	embeddedURL := u.String()
-
-	s.logger.Debug("credentials embedded in URL",
-		"original_url", streamURL,
-		"embedded_url", embeddedURL,
-		"auth_method", authMethod)
-
-	return embeddedURL
-}
 
 // collectStreams collects all streams to test with their metadata
 func (s *Scanner) collectStreams(ctx context.Context, req models.StreamDiscoveryRequest, ip string) ([]models.DiscoveredStream, error) {
@@ -529,22 +486,18 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 			}
 
 			// Test the stream
-			testResult := s.tester.TestStream(ctx, stream.URL, req.Username, req.Password)
+			testResult := s.tester.TestStream(ctx, stream.URL)
 			atomic.AddInt32(&tested, 1)
 
 			if testResult.Working {
 				atomic.AddInt32(&found, 1)
 
-				// Embed credentials in URL for basic_auth and combined methods
-				finalURL := s.embedCredentialsInURL(testResult.URL, req.Username, req.Password, string(testResult.AuthMethod))
-
 				discoveredStream := models.DiscoveredStream{
-					URL:        finalURL,
+					URL:        testResult.URL,
 					Type:       testResult.Type,
 					Protocol:   testResult.Protocol,
 					Port:       0, // Will be extracted from URL if needed
 					Working:    true,
-					AuthMethod: string(testResult.AuthMethod),
 					Resolution: testResult.Resolution,
 					Codec:      testResult.Codec,
 					FPS:        testResult.FPS,

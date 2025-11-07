@@ -12,23 +12,6 @@ import (
 	"time"
 )
 
-// AuthMethod represents an authentication method
-type AuthMethod string
-
-const (
-	// AuthNone - no authentication
-	AuthNone AuthMethod = "no_auth"
-	// AuthBasicHeader - HTTP Basic Auth header only
-	AuthBasicHeader AuthMethod = "basic_auth"
-	// AuthQueryParams - credentials in query string parameters
-	AuthQueryParams AuthMethod = "query_params"
-	// AuthCombined - both Basic Auth header and query params (ZOSI requirement)
-	AuthCombined AuthMethod = "combined"
-	// AuthDigest - HTTP Digest authentication
-	AuthDigest AuthMethod = "digest"
-	// AuthURLEmbedded - credentials embedded in URL (rtsp://user:pass@host)
-	AuthURLEmbedded AuthMethod = "url_embedded"
-)
 
 // Tester validates stream URLs
 type Tester struct {
@@ -54,7 +37,6 @@ type TestResult struct {
 	Working    bool
 	Protocol   string
 	Type       string
-	AuthMethod AuthMethod
 	Resolution string
 	Codec      string
 	FPS        int
@@ -65,278 +47,7 @@ type TestResult struct {
 	Metadata   map[string]interface{}
 }
 
-// TestStreamWithAuthChain tests a stream URL with multiple authentication methods using smart fallback chain
-func (t *Tester) TestStreamWithAuthChain(ctx context.Context, streamURL, username, password string) TestResult {
-	startTime := time.Now()
 
-	t.logger.Debug("TestStreamWithAuthChain started",
-		"url", streamURL,
-		"username", username,
-		"has_password", password != "")
-
-	// Parse URL to determine protocol
-	u, err := url.Parse(streamURL)
-	if err != nil {
-		return TestResult{
-			URL:      streamURL,
-			Error:    fmt.Sprintf("invalid URL: %v", err),
-			TestTime: time.Since(startTime),
-			Metadata: make(map[string]interface{}),
-		}
-	}
-
-	// For RTSP, use the original single-method approach (embedded credentials)
-	if u.Scheme == "rtsp" || u.Scheme == "rtsps" {
-		result := t.testWithAuthMethod(ctx, streamURL, username, password, AuthURLEmbedded)
-		result.TestTime = time.Since(startTime)
-		return result
-	}
-
-	// For HTTP/HTTPS, use smart auth chain
-	if u.Scheme == "http" || u.Scheme == "https" {
-		// Determine if URL already has auth parameters
-		hasAuthParams := t.hasAuthenticationParams(streamURL)
-
-		// Smart priority chain based on URL characteristics
-		var authChain []AuthMethod
-
-		if hasAuthParams {
-			// URL has auth params - prioritize methods that use them
-			authChain = []AuthMethod{
-				AuthCombined,      // Try combined first (ZOSI fix!)
-				AuthQueryParams,   // Query params only
-				AuthBasicHeader,   // Basic Auth header only
-				AuthNone,          // No auth (some cameras ignore auth)
-			}
-		} else {
-			// URL doesn't have auth params - standard chain
-			authChain = []AuthMethod{
-				AuthNone,          // Try without auth first (fast)
-				AuthBasicHeader,   // Most common method
-				AuthDigest,        // Some older cameras
-			}
-		}
-
-		t.logger.Debug("auth chain determined",
-			"url", streamURL,
-			"has_auth_params", hasAuthParams,
-			"auth_chain", authChain,
-			"chain_length", len(authChain))
-
-		// Try each auth method
-		for i, method := range authChain {
-			t.logger.Debug("trying auth method",
-				"method", method,
-				"url", streamURL,
-				"attempt", i+1,
-				"of", len(authChain))
-
-			result := t.testWithAuthMethod(ctx, streamURL, username, password, method)
-
-			if result.Working {
-				// Success! Return immediately
-				result.TestTime = time.Since(startTime)
-				t.logger.Debug("auth method SUCCEEDED",
-					"url", streamURL,
-					"method", method,
-					"attempt", i+1,
-					"of", len(authChain),
-					"type", result.Type,
-					"protocol", result.Protocol)
-				return result
-			}
-
-			// Log failed attempt
-			t.logger.Debug("auth method FAILED",
-				"url", streamURL,
-				"method", method,
-				"attempt", i+1,
-				"of", len(authChain),
-				"error", result.Error)
-
-			// Special cases: if we get certain errors, might want to continue or stop
-			if result.Error != "" {
-				// If 401 Unauthorized, definitely try next auth method
-				if strings.Contains(result.Error, "401") || strings.Contains(result.Error, "authentication") {
-					continue
-				}
-
-				// If connection refused, timeout, or other network errors, no point trying other auth methods
-				if strings.Contains(result.Error, "connection refused") ||
-				   strings.Contains(result.Error, "timeout") ||
-				   strings.Contains(result.Error, "no route to host") {
-					result.TestTime = time.Since(startTime)
-					return result
-				}
-			}
-		}
-
-		// All methods failed, return last result
-		result := TestResult{
-			URL:      streamURL,
-			Protocol: u.Scheme,
-			Error:    fmt.Sprintf("all authentication methods failed"),
-			TestTime: time.Since(startTime),
-			Metadata: make(map[string]interface{}),
-		}
-		return result
-	}
-
-	// Unsupported protocol
-	return TestResult{
-		URL:      streamURL,
-		Protocol: u.Scheme,
-		Error:    fmt.Sprintf("unsupported protocol: %s", u.Scheme),
-		TestTime: time.Since(startTime),
-		Metadata: make(map[string]interface{}),
-	}
-}
-
-// hasAuthenticationParams checks if URL contains auth parameters
-func (t *Tester) hasAuthenticationParams(streamURL string) bool {
-	authParams := []string{
-		"user=", "username=", "usr=", "loginuse=",
-		"password=", "pass=", "pwd=", "loginpas=", "passwd=",
-	}
-
-	lowerURL := strings.ToLower(streamURL)
-	for _, param := range authParams {
-		if strings.Contains(lowerURL, param) {
-			return true
-		}
-	}
-	return false
-}
-
-// testWithAuthMethod tests a stream with a specific authentication method
-func (t *Tester) testWithAuthMethod(ctx context.Context, streamURL, username, password string, method AuthMethod) TestResult {
-	result := TestResult{
-		URL:        streamURL,
-		AuthMethod: method,
-		Metadata:   make(map[string]interface{}),
-	}
-
-	// Parse URL
-	u, err := url.Parse(streamURL)
-	if err != nil {
-		result.Error = fmt.Sprintf("invalid URL: %v", err)
-		return result
-	}
-
-	result.Protocol = u.Scheme
-
-	// Handle based on protocol and auth method
-	switch u.Scheme {
-	case "rtsp", "rtsps":
-		t.testRTSPWithAuth(ctx, streamURL, username, password, method, &result)
-	case "http", "https":
-		t.testHTTPWithAuth(ctx, streamURL, username, password, method, &result)
-	default:
-		result.Error = fmt.Sprintf("unsupported protocol: %s", u.Scheme)
-	}
-
-	return result
-}
-
-// testRTSPWithAuth tests RTSP stream with specific auth method
-func (t *Tester) testRTSPWithAuth(ctx context.Context, streamURL, username, password string, method AuthMethod, result *TestResult) {
-	// For RTSP, we only support embedded credentials
-	if method == AuthURLEmbedded && username != "" && password != "" {
-		u, _ := url.Parse(streamURL)
-		u.User = url.UserPassword(username, password)
-		streamURL = u.String()
-	}
-
-	// Use existing RTSP testing logic
-	t.testRTSP(ctx, streamURL, username, password, result)
-}
-
-// testHTTPWithAuth tests HTTP stream with specific authentication method
-func (t *Tester) testHTTPWithAuth(ctx context.Context, streamURL, username, password string, method AuthMethod, result *TestResult) {
-	// Create request
-	req, err := http.NewRequestWithContext(ctx, "GET", streamURL, nil)
-	if err != nil {
-		result.Error = fmt.Sprintf("failed to create request: %v", err)
-		return
-	}
-
-	// Apply authentication based on method
-	switch method {
-	case AuthNone:
-		// No authentication - do nothing
-
-	case AuthBasicHeader:
-		// Basic Auth header only
-		if username != "" && password != "" {
-			req.SetBasicAuth(username, password)
-		}
-
-	case AuthQueryParams:
-		// Query params only (already in URL)
-		// No additional action needed
-
-	case AuthCombined:
-		// Both Basic Auth header AND query params (ZOSI fix!)
-		if username != "" && password != "" {
-			req.SetBasicAuth(username, password)
-		}
-		// Query params already in URL
-
-	case AuthDigest:
-		// Digest auth requires a challenge-response flow
-		// For now, we'll try basic auth and let the camera upgrade if needed
-		if username != "" && password != "" {
-			req.SetBasicAuth(username, password)
-		}
-	}
-
-	// Add headers
-	req.Header.Set("User-Agent", "Strix/1.0")
-
-	t.logger.Debug("sending HTTP request",
-		"url", streamURL,
-		"method", method,
-		"has_basic_auth_header", req.Header.Get("Authorization") != "",
-		"user_agent", req.Header.Get("User-Agent"))
-
-	// Send request
-	resp, err := t.httpClient.Do(req)
-	if err != nil {
-		result.Error = fmt.Sprintf("HTTP request failed: %v", err)
-		t.logger.Debug("HTTP request failed",
-			"url", streamURL,
-			"method", method,
-			"error", err)
-		return
-	}
-	defer resp.Body.Close()
-
-	t.logger.Debug("HTTP response received",
-		"url", streamURL,
-		"status_code", resp.StatusCode,
-		"status", resp.Status,
-		"content_type", resp.Header.Get("Content-Type"),
-		"content_length", resp.Header.Get("Content-Length"),
-		"www_authenticate", resp.Header.Get("WWW-Authenticate"))
-
-	// Check status code
-	if resp.StatusCode != http.StatusOK {
-		result.Error = fmt.Sprintf("HTTP %d: %s", resp.StatusCode, resp.Status)
-		t.logger.Debug("HTTP non-200 response",
-			"url", streamURL,
-			"status_code", resp.StatusCode,
-			"error", result.Error)
-
-		// Special handling for 401
-		if resp.StatusCode == http.StatusUnauthorized {
-			result.Error = "authentication required"
-		}
-		return
-	}
-
-	// Check content type and validate stream
-	t.validateHTTPStream(resp, result)
-}
 
 // validateHTTPStream validates the HTTP response as a valid stream
 func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
@@ -442,33 +153,53 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 	}
 }
 
-// TestStream tests if a stream URL is working (legacy method, now uses auth chain)
-func (t *Tester) TestStream(ctx context.Context, streamURL, username, password string) TestResult {
-	// Delegate to the new auth chain method for better coverage
-	return t.TestStreamWithAuthChain(ctx, streamURL, username, password)
+// TestStream tests if a stream URL is working
+func (t *Tester) TestStream(ctx context.Context, streamURL string) TestResult {
+	startTime := time.Now()
+
+	result := TestResult{
+		URL:      streamURL,
+		Metadata: make(map[string]interface{}),
+	}
+
+	// Parse URL to determine protocol
+	u, err := url.Parse(streamURL)
+	if err != nil {
+		result.Error = fmt.Sprintf("invalid URL: %v", err)
+		result.TestTime = time.Since(startTime)
+		return result
+	}
+
+	result.Protocol = u.Scheme
+
+	// Test based on protocol
+	switch u.Scheme {
+	case "rtsp", "rtsps":
+		t.testRTSP(ctx, streamURL, &result)
+	case "http", "https":
+		t.testHTTP(ctx, streamURL, &result)
+	default:
+		result.Error = fmt.Sprintf("unsupported protocol: %s", u.Scheme)
+	}
+
+	result.TestTime = time.Since(startTime)
+	return result
 }
 
 // testRTSP tests an RTSP stream using ffprobe
-func (t *Tester) testRTSP(ctx context.Context, streamURL, username, password string, result *TestResult) {
+func (t *Tester) testRTSP(ctx context.Context, streamURL string, result *TestResult) {
 	// Build ffprobe command
 	cmdCtx, cancel := context.WithTimeout(ctx, t.ffprobeTimeout)
 	defer cancel()
 
-	// Build URL with credentials if provided
-	testURL := streamURL
-	if username != "" && password != "" {
-		u, _ := url.Parse(streamURL)
-		u.User = url.UserPassword(username, password)
-		testURL = u.String()
-	}
-
+	// Use URL as-is - credentials already embedded if needed
 	args := []string{
 		"-v", "quiet",
 		"-print_format", "json",
 		"-show_streams",
 		"-show_format",
 		"-rtsp_transport", "tcp",
-		testURL,
+		streamURL,
 	}
 
 	cmd := exec.CommandContext(cmdCtx, "ffprobe", args...)
@@ -557,7 +288,7 @@ func (t *Tester) testRTSP(ctx context.Context, streamURL, username, password str
 }
 
 // testHTTP tests an HTTP stream
-func (t *Tester) testHTTP(ctx context.Context, streamURL, username, password string, result *TestResult) {
+func (t *Tester) testHTTP(ctx context.Context, streamURL string, result *TestResult) {
 	// Create request
 	req, err := http.NewRequestWithContext(ctx, "GET", streamURL, nil)
 	if err != nil {
@@ -565,9 +296,17 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL, username, password str
 		return
 	}
 
-	// Add Basic Auth if credentials provided
-	if username != "" && password != "" {
-		req.SetBasicAuth(username, password)
+	// Extract credentials from URL if present
+	u, _ := url.Parse(streamURL)
+	if u.User != nil {
+		username := u.User.Username()
+		password, _ := u.User.Password()
+		if username != "" && password != "" {
+			req.SetBasicAuth(username, password)
+			// Remove credentials from URL for logging
+			u.User = nil
+			streamURL = u.String()
+		}
 	}
 
 	// Add headers
@@ -633,7 +372,7 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL, username, password str
 		result.Working = true
 
 		// Try to probe with ffprobe for more details
-		t.probeHTTPVideo(ctx, streamURL, username, password, result)
+		t.probeHTTPVideo(ctx, streamURL, result)
 
 	case strings.Contains(contentType, "text/html"), strings.Contains(contentType, "text/plain"):
 		// Ignore web interfaces and plain text responses
@@ -648,23 +387,17 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL, username, password str
 }
 
 // probeHTTPVideo uses ffprobe to get more details about HTTP video stream
-func (t *Tester) probeHTTPVideo(ctx context.Context, streamURL, username, password string, result *TestResult) {
+func (t *Tester) probeHTTPVideo(ctx context.Context, streamURL string, result *TestResult) {
 	cmdCtx, cancel := context.WithTimeout(ctx, t.ffprobeTimeout)
 	defer cancel()
 
-	// Build URL with credentials if needed
-	testURL := streamURL
-	if username != "" && password != "" && !strings.Contains(streamURL, "@") {
-		u, _ := url.Parse(streamURL)
-		u.User = url.UserPassword(username, password)
-		testURL = u.String()
-	}
+	// Use URL as-is - credentials already in URL if needed
 
 	args := []string{
 		"-v", "quiet",
 		"-print_format", "json",
 		"-show_streams",
-		testURL,
+		streamURL,
 	}
 
 	cmd := exec.CommandContext(cmdCtx, "ffprobe", args...)
@@ -694,7 +427,7 @@ func (t *Tester) probeHTTPVideo(ctx context.Context, streamURL, username, passwo
 }
 
 // TestMultiple tests multiple URLs concurrently
-func (t *Tester) TestMultiple(ctx context.Context, urls []string, username, password string, maxConcurrent int) []TestResult {
+func (t *Tester) TestMultiple(ctx context.Context, urls []string, maxConcurrent int) []TestResult {
 	if maxConcurrent <= 0 {
 		maxConcurrent = 10
 	}
@@ -709,7 +442,7 @@ func (t *Tester) TestMultiple(ctx context.Context, urls []string, username, pass
 		go func() {
 			defer func() { <-sem }() // Release semaphore
 
-			results[i] = t.TestStream(ctx, url, username, password)
+			results[i] = t.TestStream(ctx, url)
 		}()
 	}
 

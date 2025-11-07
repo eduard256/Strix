@@ -67,7 +67,6 @@ type DiscoveredStream struct {
 	Protocol   string                 `json:"protocol"`
 	Port       int                    `json:"port"`
 	Working    bool                   `json:"working"`
-	AuthMethod string                 `json:"auth_method,omitempty"` // no_auth, basic_auth, query_params, combined, digest
 	Resolution string                 `json:"resolution,omitempty"`
 	Codec      string                 `json:"codec,omitempty"`
 	FPS        int                    `json:"fps,omitempty"`

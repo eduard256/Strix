@@ -286,42 +286,79 @@ func (b *Builder) cleanURL(fullURL string) string {
 
 // BuildURLsFromEntry generates all possible URLs from a camera entry
 func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext) []string {
+	urlMap := make(map[string]bool)
 	var urls []string
 
-	// Build main URL
-	mainURL := b.BuildURL(entry, ctx)
-	b.logger.Debug("BuildURLsFromEntry: main URL built", "url", mainURL, "entry_type", entry.Type)
-	urls = append(urls, mainURL)
+	// Helper to add unique URLs
+	addURL := func(url string) {
+		if !urlMap[url] {
+			urls = append(urls, url)
+			urlMap[url] = true
+		}
+	}
+
+	switch entry.Protocol {
+	case "rtsp", "rtsps":
+		// For RTSP: generate with and without credentials
+		// 1. With credentials (if provided)
+		if ctx.Username != "" && ctx.Password != "" {
+			addURL(b.BuildURL(entry, ctx))
+		}
+
+		// 2. Without credentials (for open cameras)
+		ctxNoAuth := ctx
+		ctxNoAuth.Username = ""
+		ctxNoAuth.Password = ""
+		addURL(b.BuildURL(entry, ctxNoAuth))
+
+	case "http", "https":
+		// For HTTP/JPEG/MJPEG: generate multiple auth variants
+		if entry.Type == "JPEG" || entry.Type == "MJPEG" {
+			// Check if URL has auth placeholders
+			hasAuthPlaceholders := strings.Contains(entry.URL, "[USERNAME]") ||
+								  strings.Contains(entry.URL, "[PASSWORD]") ||
+								  strings.Contains(entry.URL, "[AUTH]")
+
+			if hasAuthPlaceholders {
+				// 1. URL with credentials in parameters (replaced placeholders)
+				addURL(b.BuildURL(entry, ctx))
+
+				// 2. URL without credentials (for cameras that don't require auth)
+				ctxNoAuth := ctx
+				ctxNoAuth.Username = ""
+				ctxNoAuth.Password = ""
+				addURL(b.BuildURL(entry, ctxNoAuth))
+			} else {
+				// URL without placeholders - will use Basic Auth in headers
+				// Generate only one URL, auth will be in headers
+				addURL(b.BuildURL(entry, ctx))
+			}
+		} else {
+			// Other HTTP types - single URL
+			addURL(b.BuildURL(entry, ctx))
+		}
+
+	default:
+		// Other protocols - single URL
+		addURL(b.BuildURL(entry, ctx))
+	}
 
 	// For NVR systems, try multiple channels
 	if ctx.Channel == 0 && strings.Contains(strings.ToLower(entry.Notes), "channel") {
 		for ch := 1; ch <= 4; ch++ {
 			altCtx := ctx
 			altCtx.Channel = ch
-			altURL := b.BuildURL(entry, altCtx)
-			if altURL != mainURL {
-				urls = append(urls, altURL)
-			}
-		}
-	}
 
-	// Try different resolutions for snapshot URLs
-	if entry.Type == "JPEG" || entry.Type == "MJPEG" {
-		resolutions := [][2]int{
-			{640, 480},
-			{1280, 720},
-			{1920, 1080},
-		}
-
-		for _, res := range resolutions {
-			if res[0] != ctx.Width || res[1] != ctx.Height {
-				altCtx := ctx
-				altCtx.Width = res[0]
-				altCtx.Height = res[1]
-				altURL := b.BuildURL(entry, altCtx)
-				if altURL != mainURL {
-					urls = append(urls, altURL)
+			// Regenerate with different channel
+			if entry.Protocol == "rtsp" || entry.Protocol == "rtsps" {
+				if ctx.Username != "" && ctx.Password != "" {
+					addURL(b.BuildURL(entry, altCtx))
 				}
+				altCtx.Username = ""
+				altCtx.Password = ""
+				addURL(b.BuildURL(entry, altCtx))
+			} else {
+				addURL(b.BuildURL(entry, altCtx))
 			}
 		}
 	}
@@ -329,6 +366,7 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 	b.logger.Debug("BuildURLsFromEntry complete",
 		"entry_url_pattern", entry.URL,
 		"entry_type", entry.Type,
+		"entry_protocol", entry.Protocol,
 		"total_urls_generated", len(urls),
 		"urls", urls)
 
