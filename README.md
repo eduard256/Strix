@@ -2,7 +2,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![API Version](https://img.shields.io/badge/API-v1-green.svg)](https://github.com/strix-project/strix)
+[![API Version](https://img.shields.io/badge/API-v1-green.svg)](https://github.com/eduard256/Strix)
 
 Strix is an intelligent IP camera stream discovery system that acts as a bridge between users and streaming servers like go2rtc. It automatically discovers and validates camera streams, eliminating the need for manual URL configuration.
 
@@ -28,7 +28,7 @@ Strix is an intelligent IP camera stream discovery system that acts as a bridge 
 
 ```bash
 # Clone the repository
-git clone https://github.com/strix-project/strix
+git clone https://github.com/eduard256/Strix
 cd strix
 
 # Install dependencies

@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/strix-project/strix/internal/camera/discovery"
-	"github.com/strix-project/strix/internal/models"
-	"github.com/strix-project/strix/pkg/sse"
+	"github.com/eduard256/Strix/internal/camera/discovery"
+	"github.com/eduard256/Strix/internal/models"
+	"github.com/eduard256/Strix/pkg/sse"
 )
 
 // DiscoverHandler handles stream discovery requests

@@ -5,12 +5,12 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/strix-project/strix/internal/api/handlers"
-	"github.com/strix-project/strix/internal/camera/database"
-	"github.com/strix-project/strix/internal/camera/discovery"
-	"github.com/strix-project/strix/internal/camera/stream"
-	"github.com/strix-project/strix/internal/config"
-	"github.com/strix-project/strix/pkg/sse"
+	"github.com/eduard256/Strix/internal/api/handlers"
+	"github.com/eduard256/Strix/internal/camera/database"
+	"github.com/eduard256/Strix/internal/camera/discovery"
+	"github.com/eduard256/Strix/internal/camera/stream"
+	"github.com/eduard256/Strix/internal/config"
+	"github.com/eduard256/Strix/pkg/sse"
 )
 
 // Server represents the API server

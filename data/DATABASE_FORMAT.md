@@ -509,8 +509,8 @@ To add or update camera models:
 ## 📞 Support
 
 For questions about the database format:
-- GitHub Issues: https://github.com/your-repo/issues
-- Documentation: https://docs.your-project.com
+- GitHub Issues: https://github.com/eduard256/Strix/issues
+- Documentation: https://github.com/eduard256/Strix#readme
 
 ---
 

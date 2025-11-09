@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/lithammer/fuzzysearch/fuzzy"
-	"github.com/strix-project/strix/internal/models"
+	"github.com/eduard256/Strix/internal/models"
 )
 
 // SearchEngine handles intelligent camera searching

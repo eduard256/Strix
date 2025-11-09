@@ -10,10 +10,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/strix-project/strix/internal/api"
-	"github.com/strix-project/strix/internal/config"
-	"github.com/strix-project/strix/internal/utils/logger"
-	"github.com/strix-project/strix/webui"
+	"github.com/eduard256/Strix/internal/api"
+	"github.com/eduard256/Strix/internal/config"
+	"github.com/eduard256/Strix/internal/utils/logger"
+	"github.com/eduard256/Strix/webui"
 )
 
 const (
@@ -213,6 +213,6 @@ func printEndpoints(host, port string) {
 	fmt.Printf("   curl %s/api/v1/health\n", baseURL)
 
 	fmt.Println("\n────────────────────────────────────────────────")
-	fmt.Println("📚 Documentation: https://github.com/strix-project/strix")
+	fmt.Println("📚 Documentation: https://github.com/eduard256/Strix")
 	fmt.Println("────────────────────────────────────────────────\n")
 }

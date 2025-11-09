@@ -12,7 +12,7 @@ import (
 	"github.com/IOTechSystems/onvif"
 	"github.com/IOTechSystems/onvif/media"
 	xsdonvif "github.com/IOTechSystems/onvif/xsd/onvif"
-	"github.com/strix-project/strix/internal/models"
+	"github.com/eduard256/Strix/internal/models"
 )
 
 // ONVIFDiscovery handles ONVIF device discovery and stream detection

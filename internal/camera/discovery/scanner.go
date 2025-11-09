@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/strix-project/strix/internal/camera/database"
-	"github.com/strix-project/strix/internal/camera/stream"
-	"github.com/strix-project/strix/internal/models"
-	"github.com/strix-project/strix/pkg/sse"
+	"github.com/eduard256/Strix/internal/camera/database"
+	"github.com/eduard256/Strix/internal/camera/stream"
+	"github.com/eduard256/Strix/internal/models"
+	"github.com/eduard256/Strix/pkg/sse"
 )
 
 // Scanner orchestrates stream discovery

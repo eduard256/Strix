@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/strix-project/strix/internal/camera/database"
-	"github.com/strix-project/strix/internal/models"
+	"github.com/eduard256/Strix/internal/camera/database"
+	"github.com/eduard256/Strix/internal/models"
 )
 
 // SearchHandler handles camera search requests

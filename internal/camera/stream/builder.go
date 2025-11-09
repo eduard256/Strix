@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/strix-project/strix/internal/models"
+	"github.com/eduard256/Strix/internal/models"
 )
 
 // Builder handles stream URL construction
