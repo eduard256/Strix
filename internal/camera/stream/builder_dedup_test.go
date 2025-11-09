@@ -63,7 +63,7 @@ func TestCurrentDeduplicationProblems(t *testing.T) {
 			description:      "PROBLEM: Placeholder replacement + auth variants = duplicates",
 		},
 		{
-			name: "RTSP with/without credentials",
+			name: "RTSP with credentials - now FIXED",
 			entry: models.CameraEntry{
 				Type:     "FFMPEG",
 				Protocol: "rtsp",
@@ -76,9 +76,9 @@ func TestCurrentDeduplicationProblems(t *testing.T) {
 				Password: "12345",
 				Port:     554,
 			},
-			expectedURLCount: 2, // С credentials и без
+			expectedURLCount: 1, // FIXED: только с credentials
 			realUniqueCount:  1, // Это один поток
-			description:      "PROBLEM: RTSP with and without credentials are both generated",
+			description:      "FIXED: RTSP with credentials generates ONLY auth URL",
 		},
 		{
 			name: "RTSP without credentials - only one URL",
@@ -123,6 +123,8 @@ func TestCurrentDeduplicationProblems(t *testing.T) {
 				t.Logf("\n⚠️  PROBLEM: %d semantic duplicates generated", duplicateCount)
 				t.Logf("These are different URL strings pointing to the SAME stream!")
 				t.Logf("Waste: %d unnecessary tests", duplicateCount)
+			} else if len(urls) == tt.realUniqueCount && tt.expectedURLCount == tt.realUniqueCount {
+				t.Logf("\n✓ NO DUPLICATES: All URLs are unique (FIXED!)")
 			}
 
 			// Показать канонические URL

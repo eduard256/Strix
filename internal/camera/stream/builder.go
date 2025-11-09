@@ -323,15 +323,17 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 		}
 
 	case "rtsp", "rtsps":
-		// For RTSP: generate with and without credentials
+		// For RTSP: generate ONLY with credentials if provided, otherwise without
 		if ctx.Username != "" && ctx.Password != "" {
+			// Credentials provided - generate ONLY URL with auth
 			addURL(b.BuildURL(entry, ctx))
+		} else {
+			// No credentials - generate ONLY URL without auth
+			ctxNoAuth := ctx
+			ctxNoAuth.Username = ""
+			ctxNoAuth.Password = ""
+			addURL(b.BuildURL(entry, ctxNoAuth))
 		}
-		// Without credentials (for open cameras)
-		ctxNoAuth := ctx
-		ctxNoAuth.Username = ""
-		ctxNoAuth.Password = ""
-		addURL(b.BuildURL(entry, ctxNoAuth))
 
 	case "http", "https":
 		// For HTTP/HTTPS: ALWAYS generate 4 authentication variants
