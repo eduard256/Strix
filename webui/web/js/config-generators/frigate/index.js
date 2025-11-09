@@ -144,6 +144,21 @@ export class FrigateGenerator {
             }
         }
 
+        // Handle BUBBLE protocol - convert to bubble:// format for go2rtc
+        if (stream.type === 'BUBBLE') {
+            try {
+                const urlObj = new URL(stream.url);
+                const username = urlObj.username || 'admin';
+                const password = urlObj.password || '';
+                const host = urlObj.hostname;
+                const port = urlObj.port || '80';
+                const path = urlObj.pathname + urlObj.search;
+                return `bubble://${username}:${password}@${host}:${port}${path}#video=copy`;
+            } catch (e) {
+                return stream.url;
+            }
+        }
+
         // For all other types (RTSP, MJPEG, HLS, HTTP-FLV, RTMP, etc.): use direct URL
         // Go2RTC handles these formats natively
         return stream.url;

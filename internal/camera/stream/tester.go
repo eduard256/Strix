@@ -74,7 +74,24 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		"has_jpeg_magic", hasJPEGMagic,
 		"has_mjpeg_boundary", hasMJPEGBoundary)
 
-	// 1. Check Content-Type for multipart (MJPEG)
+	// 1. Check for BUBBLE protocol (highest priority for this specific type)
+	if contentType == "video/bubble" {
+		result.Type = "BUBBLE"
+		result.Working = true
+
+		// Extract stream type from full URL (not just path) for metadata
+		fullURL := resp.Request.URL.String()
+		if strings.Contains(fullURL, "stream=1") {
+			result.Metadata["stream_type"] = "sub"
+		} else {
+			result.Metadata["stream_type"] = "main"
+		}
+
+		t.logger.Debug("detected BUBBLE stream", "stream_type", result.Metadata["stream_type"], "url", fullURL)
+		return
+	}
+
+	// 2. Check Content-Type for multipart (MJPEG)
 	if strings.Contains(contentType, "multipart") {
 		result.Type = "MJPEG"
 		result.Working = hasMJPEGBoundary
@@ -85,7 +102,7 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		return
 	}
 
-	// 2. Check for JPEG by magic bytes (most reliable)
+	// 3. Check for JPEG by magic bytes (most reliable)
 	if hasJPEGMagic {
 		// Verify it's not MJPEG
 		if hasMJPEGBoundary {
@@ -100,7 +117,7 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		return
 	}
 
-	// 3. Check Content-Type for image/jpeg
+	// 4. Check Content-Type for image/jpeg
 	if strings.Contains(contentType, "image/jpeg") || strings.Contains(contentType, "image/jpg") {
 		result.Type = "JPEG"
 		result.Working = true
@@ -108,7 +125,7 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		return
 	}
 
-	// 4. Check URL patterns for JPEG (fallback for cameras with wrong Content-Type)
+	// 5. Check URL patterns for JPEG (fallback for cameras with wrong Content-Type)
 	jpegPatterns := []string{".jpg", ".jpeg", "snapshot", "image", "picture", "snap", "photo", "capture"}
 	for _, pattern := range jpegPatterns {
 		if strings.Contains(urlPath, pattern) {
@@ -120,7 +137,7 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		}
 	}
 
-	// 5. Check for MJPEG by extension
+	// 6. Check for MJPEG by extension
 	if strings.Contains(urlPath, ".mjpg") || strings.Contains(urlPath, ".mjpeg") {
 		result.Type = "MJPEG"
 		result.Working = true
@@ -128,7 +145,7 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		return
 	}
 
-	// 6. Check for HLS
+	// 7. Check for HLS
 	if strings.Contains(urlPath, ".m3u8") ||
 		strings.Contains(contentType, "application/vnd.apple.mpegurl") ||
 		strings.Contains(contentType, "application/x-mpegurl") {
@@ -137,28 +154,28 @@ func (t *Tester) validateHTTPStream(resp *http.Response, result *TestResult) {
 		return
 	}
 
-	// 7. Check for MPEG-DASH
+	// 8. Check for MPEG-DASH
 	if strings.Contains(urlPath, ".mpd") || strings.Contains(contentType, "application/dash+xml") {
 		result.Type = "MPEG-DASH"
 		result.Working = true
 		return
 	}
 
-	// 8. Check for video content type
+	// 9. Check for video content type
 	if strings.Contains(contentType, "video") {
 		result.Type = "HTTP_VIDEO"
 		result.Working = true
 		return
 	}
 
-	// 9. Check for web interface
+	// 10. Check for web interface
 	if strings.Contains(contentType, "text/html") || strings.Contains(contentType, "text/plain") {
 		result.Working = false
 		result.Error = "web interface, not a video stream"
 		return
 	}
 
-	// 10. Unknown - but still working if we got 200 OK
+	// 11. Unknown - but still working if we got 200 OK
 	result.Type = "HTTP_UNKNOWN"
 	result.Working = true
 	result.Metadata["note"] = "unknown content type, may still be valid"

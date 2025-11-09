@@ -60,6 +60,11 @@ export class Go2RTCGenerator {
             return this.generateONVIFSource(stream);
         }
 
+        // Handle BUBBLE protocol
+        if (stream.type === 'BUBBLE') {
+            return this.generateBubbleSource(stream);
+        }
+
         // For all other types: use direct URL
         return stream.url;
     }
@@ -96,6 +101,25 @@ export class Go2RTCGenerator {
             const host = urlObj.hostname;
             const port = urlObj.port || '80';
             return `onvif://${username}:${password}@${host}:${port}`;
+        } catch (e) {
+            return stream.url;
+        }
+    }
+
+    /**
+     * Generate BUBBLE source
+     * Converts HTTP BUBBLE endpoint to bubble:// format for go2rtc
+     * Format: bubble://user:pass@host:port/bubble/live?ch=X&stream=Y#video=copy
+     */
+    static generateBubbleSource(stream) {
+        try {
+            const urlObj = new URL(stream.url);
+            const username = urlObj.username || 'admin';
+            const password = urlObj.password || '';
+            const host = urlObj.hostname;
+            const port = urlObj.port || '80';
+            const path = urlObj.pathname + urlObj.search;
+            return `bubble://${username}:${password}@${host}:${port}${path}#video=copy`;
         } catch (e) {
             return stream.url;
         }

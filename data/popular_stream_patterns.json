@@ -1630,5 +1630,21 @@
     "port": 554,
     "notes": "",
     "model_count": 111
+  },
+  {
+    "url": "/bubble/live?ch={channel}&stream=0",
+    "type": "BUBBLE",
+    "protocol": "bubble",
+    "port": 80,
+    "notes": "Bubble Protocol main stream (XMeye/HiSilicon NVR/DVR - ZOSI, SANNCE, ANNKE, FLOUREON)",
+    "model_count": 5000
+  },
+  {
+    "url": "/bubble/live?ch={channel}&stream=1",
+    "type": "BUBBLE",
+    "protocol": "bubble",
+    "port": 80,
+    "notes": "Bubble Protocol sub stream (XMeye/HiSilicon NVR/DVR - lower quality)",
+    "model_count": 5000
   }
 ]

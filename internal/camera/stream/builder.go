@@ -176,6 +176,8 @@ func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 	replacements := map[string]string{
 		"[CHANNEL]":  strconv.Itoa(ctx.Channel),
 		"[channel]":  strconv.Itoa(ctx.Channel),
+		"{channel}":  strconv.Itoa(ctx.Channel), // BUBBLE protocol uses {channel}
+		"{CHANNEL}":  strconv.Itoa(ctx.Channel),
 		"[WIDTH]":    strconv.Itoa(ctx.Width),
 		"[width]":    strconv.Itoa(ctx.Width),
 		"[HEIGHT]":   strconv.Itoa(ctx.Height),
@@ -298,6 +300,28 @@ func (b *Builder) BuildURLsFromEntry(entry models.CameraEntry, ctx BuildContext)
 	}
 
 	switch entry.Protocol {
+	case "bubble":
+		// BUBBLE protocol: proprietary Chinese NVR/DVR protocol
+		// Always use HTTP with embedded credentials
+		if ctx.Username != "" && ctx.Password != "" {
+			// Build HTTP URL with credentials embedded
+			ctxHTTP := ctx
+			ctxHTTP.Protocol = "http"
+
+			baseURL := b.BuildURL(entry, ctxHTTP)
+
+			// Parse and add credentials to URL
+			if u, err := url.Parse(baseURL); err == nil {
+				u.User = url.UserPassword(ctx.Username, ctx.Password)
+				addURL(u.String())
+			}
+		} else {
+			// No credentials - try anyway (some cameras might work)
+			ctxHTTP := ctx
+			ctxHTTP.Protocol = "http"
+			addURL(b.BuildURL(entry, ctxHTTP))
+		}
+
 	case "rtsp", "rtsps":
 		// For RTSP: generate with and without credentials
 		if ctx.Username != "" && ctx.Password != "" {

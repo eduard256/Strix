@@ -6,6 +6,38 @@
   "entries": [
     {
       "models": [
+        "NVR",
+        "DVR",
+        "H.264",
+        "H.265",
+        "HiSilicon",
+        "Other"
+      ],
+      "type": "BUBBLE",
+      "protocol": "bubble",
+      "port": 80,
+      "url": "/bubble/live?ch={channel}&stream=0",
+      "auth_required": true,
+      "notes": "Bubble Protocol - main stream (works with go2rtc bubble:// source)"
+    },
+    {
+      "models": [
+        "NVR",
+        "DVR",
+        "H.264",
+        "H.265",
+        "HiSilicon",
+        "Other"
+      ],
+      "type": "BUBBLE",
+      "protocol": "bubble",
+      "port": 80,
+      "url": "/bubble/live?ch={channel}&stream=1",
+      "auth_required": true,
+      "notes": "Bubble Protocol - sub stream (lower quality)"
+    },
+    {
+      "models": [
         "1080",
         "DM523H",
         "DM523HK",
