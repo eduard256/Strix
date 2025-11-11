@@ -1,115 +1,365 @@
 /**
  * Frigate NVR Configuration Generator
- * Generates unified Frigate + Go2RTC YAML configs
- * All cameras are routed through Frigate's built-in go2rtc for optimal performance
+ * Adds cameras to existing Frigate configuration
+ * Based on frigate-conf-generate logic
  */
 export class FrigateGenerator {
     /**
-     * Generate complete Frigate config with embedded Go2RTC
-     * @param {Object} mainStream - Main stream object (used for recording)
-     * @param {Object} subStream - Optional sub stream object (used for detection if provided)
+     * Main entry point - generates config (new or adds to existing)
+     * @param {string} existingConfig - Existing YAML config text (or empty string)
+     * @param {Object} mainStream - Main stream object
+     * @param {Object} subStream - Optional sub stream object
      * @returns {string} YAML configuration string
      */
-    static generate(mainStream, subStream = null) {
-        const cameraName = this.generateCameraName(mainStream);
-        const config = [];
-
-        // MQTT Configuration
-        config.push('mqtt:');
-        config.push('  enabled: false');
-        config.push('');
-
-        // Global Record Configuration
-        config.push('# Global Recording Settings');
-        config.push('record:');
-        config.push('  enabled: true');
-        config.push('  retain:');
-        config.push('    days: 7');
-        config.push('    mode: motion  # Record only on motion detection');
-        config.push('');
-
-        // Generate Go2RTC section
-        config.push('# Go2RTC Configuration (Frigate built-in)');
-        config.push('go2rtc:');
-        config.push('  streams:');
-
-        // Main stream configuration
-        const mainStreamName = this.generateStreamName(mainStream, 'main');
-        const mainSource = this.generateGo2RTCSource(mainStream);
-        config.push(`    '${mainStreamName}':`);
-        config.push(`      - ${mainSource}`);
-
-        // Sub stream configuration if provided
-        if (subStream) {
-            config.push('');
-            const subStreamName = this.generateStreamName(subStream, 'sub');
-            const subSource = this.generateGo2RTCSource(subStream);
-            config.push(`    '${subStreamName}':`);
-            config.push(`      - ${subSource}`);
+    static generate(existingConfig, mainStream, subStream = null) {
+        if (!existingConfig || existingConfig.trim() === '') {
+            // Create new config from scratch
+            return this.createNewConfig(mainStream, subStream);
         }
 
-        config.push('');
+        // Add to existing config
+        return this.addToExistingConfig(existingConfig, mainStream, subStream);
+    }
 
-        // Generate Frigate cameras section
-        config.push('# Frigate Camera Configuration');
-        config.push('cameras:');
-        config.push(`  ${cameraName}:`);
-        config.push('    ffmpeg:');
-        config.push('      inputs:');
+    /**
+     * Add camera to existing config (text-based, preserves everything)
+     */
+    static addToExistingConfig(existingConfig, mainStream, subStream) {
+        const lines = existingConfig.split('\n');
 
+        // Find existing camera names and stream names to avoid duplicates
+        const existingCameras = this.findExistingCameras(lines);
+        const existingStreams = this.findExistingStreams(lines);
+
+        // Generate unique camera info
+        const cameraInfo = this.generateUniqueCameraInfo(mainStream, subStream, existingCameras, existingStreams);
+
+        // Find insertion points
+        const go2rtcStreamIndex = this.findGo2rtcStreamsInsertionPoint(lines);
+        const camerasInsertIndex = this.findCamerasInsertionPoint(lines);
+
+        if (go2rtcStreamIndex === -1 || camerasInsertIndex === -1) {
+            throw new Error('Could not find go2rtc streams or cameras section in config');
+        }
+
+        // Generate new stream lines
+        const streamLines = this.generateStreamLines(cameraInfo);
+
+        // Generate new camera lines
+        const cameraLines = this.generateCameraLines(cameraInfo);
+
+        // Insert streams into go2rtc section
+        lines.splice(go2rtcStreamIndex, 0, ...streamLines);
+
+        // Insert camera into cameras section (adjust index after first insertion)
+        const adjustedCameraIndex = camerasInsertIndex + streamLines.length;
+        lines.splice(adjustedCameraIndex, 0, ...cameraLines);
+
+        return lines.join('\n');
+    }
+
+    /**
+     * Find existing camera names
+     */
+    static findExistingCameras(lines) {
+        const cameras = new Set();
+        let inCamerasSection = false;
+
+        for (const line of lines) {
+            if (line.match(/^cameras:/)) {
+                inCamerasSection = true;
+                continue;
+            }
+
+            if (inCamerasSection && line.match(/^[a-z]/)) {
+                break; // Next top-level section
+            }
+
+            if (inCamerasSection && line.match(/^\s{2}(\w+):/)) {
+                const match = line.match(/^\s{2}(\w+):/);
+                cameras.add(match[1]);
+            }
+        }
+
+        return cameras;
+    }
+
+    /**
+     * Find existing stream names
+     */
+    static findExistingStreams(lines) {
+        const streams = new Set();
+        let inStreamsSection = false;
+
+        for (const line of lines) {
+            if (line.match(/^\s{2}streams:/)) {
+                inStreamsSection = true;
+                continue;
+            }
+
+            if (inStreamsSection && line.match(/^[a-z]/)) {
+                break; // Next top-level section
+            }
+
+            if (inStreamsSection && line.match(/^\s{4}'?(\w+)'?:/)) {
+                const match = line.match(/^\s{4}'?(\w+)'?:/);
+                streams.add(match[1]);
+            }
+        }
+
+        return streams;
+    }
+
+    /**
+     * Find where to insert new streams in go2rtc section
+     */
+    static findGo2rtcStreamsInsertionPoint(lines) {
+        let inStreamsSection = false;
+        let lastStreamIndex = -1;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+
+            if (line.match(/^\s{2}streams:/)) {
+                inStreamsSection = true;
+                continue;
+            }
+
+            if (inStreamsSection) {
+                // Check if this is a stream definition or its content
+                if (line.match(/^\s{4,}/)) {
+                    lastStreamIndex = i;
+                } else if (line.match(/^[a-z#]/)) {
+                    // Found next section - insert before empty line if it exists
+                    if (lastStreamIndex >= 0 && lines[lastStreamIndex + 1]?.trim() === '') {
+                        return lastStreamIndex + 2; // After existing empty line
+                    }
+                    return lastStreamIndex + 1;
+                }
+            }
+        }
+
+        return lastStreamIndex + 1;
+    }
+
+    /**
+     * Find where to insert new camera in cameras section
+     */
+    static findCamerasInsertionPoint(lines) {
+        let inCamerasSection = false;
+        let lastCameraLineIndex = -1;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+
+            if (line.match(/^cameras:/)) {
+                inCamerasSection = true;
+                continue;
+            }
+
+            if (inCamerasSection) {
+                // Check if we're still in a camera definition
+                if (line.match(/^\s{2}\w+:/)) {
+                    // New camera starting
+                    lastCameraLineIndex = i;
+                } else if (line.match(/^\s{2,}\S/)) {
+                    // Still inside camera definition
+                    lastCameraLineIndex = i;
+                } else if (line.match(/^[a-z]/) && !line.match(/^cameras:/)) {
+                    // Found next top-level section
+                    // Skip any empty lines before it
+                    let insertIndex = lastCameraLineIndex + 1;
+                    while (insertIndex < lines.length && lines[insertIndex].trim() === '') {
+                        insertIndex++;
+                    }
+                    return insertIndex;
+                } else if (line.match(/^version:/)) {
+                    // Insert before version, skip empty lines
+                    let insertIndex = i;
+                    while (insertIndex > 0 && lines[insertIndex - 1].trim() === '') {
+                        insertIndex--;
+                    }
+                    return insertIndex;
+                }
+            }
+        }
+
+        // If we reach end of file, insert at end
+        return lines.length;
+    }
+
+    /**
+     * Generate unique camera info avoiding duplicates
+     */
+    static generateUniqueCameraInfo(mainStream, subStream, existingCameras, existingStreams) {
+        const ip = this.extractIP(mainStream.url);
+        const baseName = ip ? `camera_${ip.replace(/\./g, '_').replace(/:/g, '_')}` : 'camera';
+        const streamBaseName = ip ? ip.replace(/\./g, '_').replace(/:/g, '_') : 'stream';
+
+        // Find unique camera name
+        let cameraName = baseName;
+        let suffix = 0;
+        while (existingCameras.has(cameraName)) {
+            suffix++;
+            cameraName = `${baseName}_${suffix}`;
+        }
+
+        // Find unique stream names
+        let mainStreamName = `${streamBaseName}_main${suffix ? `_${suffix}` : ''}`;
+        while (existingStreams.has(mainStreamName)) {
+            suffix++;
+            mainStreamName = `${streamBaseName}_main_${suffix}`;
+        }
+
+        let subStreamName = null;
         if (subStream) {
-            // If sub stream exists: use it for detection, main for recording
-            const subStreamName = this.generateStreamName(subStream, 'sub');
-            config.push(`        - path: rtsp://127.0.0.1:8554/${subStreamName}`);
-            config.push('          input_args: preset-rtsp-restream');
-            config.push('          roles:');
-            config.push('            - detect');
-            config.push(`        - path: rtsp://127.0.0.1:8554/${mainStreamName}`);
-            config.push('          input_args: preset-rtsp-restream');
-            config.push('          roles:');
-            config.push('            - record');
+            subStreamName = `${streamBaseName}_sub${suffix ? `_${suffix}` : ''}`;
+            while (existingStreams.has(subStreamName)) {
+                suffix++;
+                subStreamName = `${streamBaseName}_sub_${suffix}`;
+            }
+        }
+
+        return {
+            cameraName,
+            mainStreamName,
+            subStreamName,
+            mainStream,
+            subStream
+        };
+    }
+
+    /**
+     * Generate stream lines for go2rtc section
+     */
+    static generateStreamLines(cameraInfo) {
+        const lines = [];
+
+        // Add main stream
+        const mainSource = this.generateGo2RTCSource(cameraInfo.mainStream);
+        lines.push(`    '${cameraInfo.mainStreamName}':`);
+        lines.push(`      - ${mainSource}`);
+
+        // Add sub stream if provided
+        if (cameraInfo.subStream) {
+            lines.push('');
+            const subSource = this.generateGo2RTCSource(cameraInfo.subStream);
+            lines.push(`    '${cameraInfo.subStreamName}':`);
+            lines.push(`      - ${subSource}`);
+        }
+
+        lines.push('');
+        return lines;
+    }
+
+    /**
+     * Generate camera lines for cameras section
+     */
+    static generateCameraLines(cameraInfo) {
+        const lines = [];
+
+        lines.push(`  ${cameraInfo.cameraName}:`);
+        lines.push('    ffmpeg:');
+        lines.push('      inputs:');
+
+        if (cameraInfo.subStream) {
+            // Use sub for detect, main for record
+            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.subStreamName}`);
+            lines.push('          input_args: preset-rtsp-restream');
+            lines.push('          roles:');
+            lines.push('            - detect');
+            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.mainStreamName}`);
+            lines.push('          input_args: preset-rtsp-restream');
+            lines.push('          roles:');
+            lines.push('            - record');
+
+            // Add live view configuration
+            lines.push('    live:');
+            lines.push('      streams:');
+            lines.push(`        Main Stream: ${cameraInfo.mainStreamName}    # HD для просмотра`);
+            lines.push(`        Sub Stream: ${cameraInfo.subStreamName}      # Низкое разрешение (опционально)`);
         } else {
-            // No sub stream: use main for both detection and recording
-            config.push(`        - path: rtsp://127.0.0.1:8554/${mainStreamName}`);
-            config.push('          input_args: preset-rtsp-restream');
-            config.push('          roles:');
-            config.push('            - detect');
-            config.push('            - record');
+            // Use main for both detect and record
+            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.mainStreamName}`);
+            lines.push('          input_args: preset-rtsp-restream');
+            lines.push('          roles:');
+            lines.push('            - detect');
+            lines.push('            - record');
         }
 
-        // Live view configuration
-        if (subStream) {
-            config.push('    live:');
-            config.push('      streams:');
-            config.push(`        Main Stream: ${mainStreamName}    # HD для просмотра`);
-            config.push(`        Sub Stream: ${this.generateStreamName(subStream, 'sub')}      # Низкое разрешение (опционально)`);
+        // Add objects configuration
+        lines.push('    objects:');
+        lines.push('      track:');
+        lines.push('        - person');
+        lines.push('        - car');
+        lines.push('        - cat');
+        lines.push('        - dog');
+
+        // Add record configuration
+        lines.push('    record:');
+        lines.push('      enabled: true');
+        lines.push('');
+
+        return lines;
+    }
+
+    /**
+     * Create new configuration from scratch
+     */
+    static createNewConfig(mainStream, subStream) {
+        const cameraInfo = this.generateUniqueCameraInfo(mainStream, subStream, new Set(), new Set());
+        const lines = [];
+
+        // MQTT
+        lines.push('mqtt:');
+        lines.push('  enabled: false');
+        lines.push('');
+
+        // Record
+        lines.push('# Global Recording Settings');
+        lines.push('record:');
+        lines.push('  enabled: true');
+        lines.push('  retain:');
+        lines.push('    days: 7');
+        lines.push('    mode: motion  # Record only on motion detection');
+        lines.push('');
+
+        // Go2RTC
+        lines.push('# Go2RTC Configuration (Frigate built-in)');
+        lines.push('go2rtc:');
+        lines.push('  streams:');
+        lines.push(...this.generateStreamLines(cameraInfo));
+
+        // Cameras
+        lines.push('# Frigate Camera Configuration');
+        lines.push('cameras:');
+        lines.push(...this.generateCameraLines(cameraInfo));
+
+        // Version
+        lines.push('version: 0.16-0');
+
+        return lines.join('\n');
+    }
+
+    /**
+     * Extract IP address from URL
+     */
+    static extractIP(url) {
+        try {
+            const urlObj = new URL(url);
+            return urlObj.hostname;
+        } catch (e) {
+            // Try to extract IP with regex
+            const match = url.match(/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/);
+            return match ? match[1] : null;
         }
-
-        // Object detection configuration
-        config.push('    objects:');
-        config.push('      track:');
-        config.push('        - person');
-        config.push('        - car');
-        config.push('        - cat');
-        config.push('        - dog');
-
-        // Recording configuration
-        config.push('    record:');
-        config.push('      enabled: true');
-
-        config.push('');
-        config.push('version: 0.16-0');
-
-        return config.join('\n');
     }
 
     /**
      * Generate Go2RTC source configuration based on stream type
-     * Returns the source string for go2rtc streams section
      */
     static generateGo2RTCSource(stream) {
         // Handle JPEG snapshots with exec:ffmpeg conversion
-        // Uses full path to ffmpeg and {{output}} for Frigate template escaping
         if (stream.type === 'JPEG') {
             return [
                 'exec:/usr/lib/ffmpeg/7.0/bin/ffmpeg',
@@ -122,7 +372,7 @@ export class FrigateGenerator {
                 '-preset ultrafast',
                 '-tune zerolatency',
                 '-g 20',
-                '-f rtsp {{output}}'  // Double braces for Frigate template escaping
+                '-f rtsp {{output}}'
             ].join(' ');
         }
 
@@ -130,16 +380,12 @@ export class FrigateGenerator {
         if (stream.type === 'ONVIF') {
             try {
                 const urlObj = new URL(stream.url);
-                // Extract credentials and host from HTTP URL
                 const username = urlObj.username || 'admin';
                 const password = urlObj.password || '';
                 const host = urlObj.hostname;
                 const port = urlObj.port || '80';
-
-                // Generate onvif:// URL
                 return `onvif://${username}:${password}@${host}:${port}`;
             } catch (e) {
-                // If URL parsing fails, return as-is
                 return stream.url;
             }
         }
@@ -159,36 +405,7 @@ export class FrigateGenerator {
             }
         }
 
-        // For all other types (RTSP, MJPEG, HLS, HTTP-FLV, RTMP, etc.): use direct URL
-        // Go2RTC handles these formats natively
+        // For all other types: use direct URL
         return stream.url;
-    }
-
-    /**
-     * Generate camera name from IP address
-     * Format: "camera_192_168_1_100"
-     */
-    static generateCameraName(stream) {
-        try {
-            const urlObj = new URL(stream.url);
-            const ip = urlObj.hostname.replace(/\./g, '_').replace(/:/g, '_');
-            return `camera_${ip}`;
-        } catch (e) {
-            return 'camera';
-        }
-    }
-
-    /**
-     * Generate stream name for Go2RTC reference
-     * Format: "192_168_1_100_main" or "192_168_1_100_sub"
-     */
-    static generateStreamName(stream, suffix) {
-        try {
-            const urlObj = new URL(stream.url);
-            const ip = urlObj.hostname.replace(/\./g, '_').replace(/:/g, '_');
-            return `${ip}_${suffix}`;
-        } catch (e) {
-            return `camera_stream_${suffix}`;
-        }
     }
 }

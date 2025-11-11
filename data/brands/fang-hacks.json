@@ -1,0 +1,44 @@
+{
+  "brand": "fang-hacks",
+  "brand_id": "fang-hacks",
+  "last_updated": "2025-11-11",
+  "source": "github.com/samtap/fang-hacks",
+  "website": "https://github.com/samtap/fang-hacks",
+  "entries": [
+    {
+      "models": [
+        "XIAOFANG ARM PROCESSOR",
+        "XiaoFang ARM",
+        "Classic XiaoFang",
+        "ARM926EJ-S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast",
+      "notes": "Classic XiaoFang with ARM processor (not Ingenic)"
+    },
+    {
+      "models": [
+        "XIAOMI XIAOFANG",
+        "Xiaofang",
+        "XiaoFang"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast",
+      "notes": "Xiaomi Xiaofang camera with fang-hacks"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/unicast",
+      "notes": "Generic fang-hacks installation"
+    }
+  ]
+}

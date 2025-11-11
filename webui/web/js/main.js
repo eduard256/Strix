@@ -3,6 +3,7 @@ import { StreamDiscoveryAPI } from './api/stream-discovery.js';
 import { SearchForm } from './ui/search-form.js';
 import { StreamCarousel } from './ui/stream-carousel.js';
 import { ConfigPanel } from './ui/config-panel.js';
+import { FrigateGenerator } from './config-generators/frigate/index.js';
 import { showToast } from './utils/toast.js';
 
 class StrixApp {
@@ -105,6 +106,9 @@ class StrixApp {
 
         document.getElementById('btn-add-sub-stream').addEventListener('click', () => this.addSubStream());
         document.getElementById('btn-remove-sub').addEventListener('click', () => this.removeSubStream());
+
+        // Frigate config generation
+        document.getElementById('btn-generate-frigate').addEventListener('click', () => this.generateFrigateConfig());
 
         document.getElementById('btn-new-search').addEventListener('click', () => {
             this.reset();
@@ -354,6 +358,11 @@ class StrixApp {
         }
 
         this.isSelectingSubStream = true;
+
+        // Clear Frigate output section (but NOT the user's input textarea)
+        document.getElementById('frigate-output-section').classList.add('hidden');
+        document.getElementById('config-frigate').textContent = '';
+
         showToast('Select a sub stream from available streams');
         this.showScreen('discovery');
     }
@@ -363,6 +372,40 @@ class StrixApp {
         this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
         this.updateSubStreamUI();
         showToast('Sub stream removed');
+    }
+
+    /**
+     * Generate Frigate config by adding camera to existing config
+     */
+    generateFrigateConfig() {
+        const existingConfig = document.getElementById('existing-frigate-config').value;
+        const mainStream = this.selectedMainStream;
+        const subStream = this.selectedSubStream;
+
+        if (!mainStream) {
+            showToast('No main stream selected', 'error');
+            return;
+        }
+
+        try {
+            // Generate config using FrigateGenerator
+            const newConfig = FrigateGenerator.generate(existingConfig, mainStream, subStream);
+
+            // Show result
+            document.getElementById('config-frigate').textContent = newConfig;
+            document.getElementById('frigate-output-section').classList.remove('hidden');
+
+            // Scroll to result
+            document.getElementById('frigate-output-section').scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+
+            showToast('Config generated successfully!');
+        } catch (error) {
+            showToast(`Error: ${error.message}`, 'error');
+            console.error('Config generation error:', error);
+        }
     }
 
     updateSubStreamUI() {

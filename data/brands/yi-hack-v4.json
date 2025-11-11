@@ -1,0 +1,187 @@
+{
+  "brand": "yi-hack-v4",
+  "brand_id": "yi-hack-v4",
+  "last_updated": "2025-11-11",
+  "source": "github.com/TheCrypt0/yi-hack-v4",
+  "website": "https://github.com/TheCrypt0/yi-hack-v4",
+  "entries": [
+    {
+      "models": [
+        "YI HOME 720P",
+        "Yi Home 720p",
+        "17CN",
+        "27US",
+        "47CN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Home 720p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI HOME 720P",
+        "Yi Home 720p",
+        "17CN",
+        "27US",
+        "47CN"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Home 720p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "YI DOME 720P",
+        "Yi Dome 720p",
+        "43US",
+        "63US",
+        "Generic Dome 720p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Dome 720p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI DOME 720P",
+        "Yi Dome 720p",
+        "43US",
+        "63US",
+        "Generic Dome 720p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Dome 720p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "YI HOME 1080P",
+        "Yi Home 1080p",
+        "48US",
+        "Version 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Home 1080p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI HOME 1080P",
+        "Yi Home 1080p",
+        "48US",
+        "Version 1"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Home 1080p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P",
+        "Yi Dome 1080p",
+        "45US",
+        "65US",
+        "Generic Dome 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Dome 1080p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P",
+        "Yi Dome 1080p",
+        "45US",
+        "65US",
+        "Generic Dome 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Dome 1080p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "YI CLOUD DOME 1080P",
+        "Yi Cloud Dome 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Cloud Dome 1080p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI CLOUD DOME 1080P",
+        "Yi Cloud Dome 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Cloud Dome 1080p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "YI OUTDOOR 1080P",
+        "Yi Outdoor 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Outdoor 1080p - Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "YI OUTDOOR 1080P",
+        "Yi Outdoor 1080p"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Outdoor 1080p - Hi3518e chipset - SD stream"
+    },
+    {
+      "models": [
+        "HI3518E CHIPSET",
+        "Generic Hi3518e",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Generic Yi camera with Hi3518e chipset - HD stream"
+    },
+    {
+      "models": [
+        "HI3518E CHIPSET",
+        "Generic Hi3518e",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Generic Yi camera with Hi3518e chipset - SD stream"
+    }
+  ]
+}

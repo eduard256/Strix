@@ -1,8 +1,9 @@
 {
   "brand": "Thingino",
   "brand_id": "thingino",
-  "last_updated": "2025-10-17",
-  "source": "ispyconnect.com",
+  "last_updated": "2025-11-11",
+  "source": "ispyconnect.com, thingino.com",
+  "website": "https://github.com/themactep/thingino-firmware",
   "entries": [
     {
       "models": [
@@ -13,6 +14,148 @@
       "protocol": "rtsp",
       "port": 554,
       "url": "/ch0"
+    },
+    {
+      "models": [
+        "INGENIC T31",
+        "T31",
+        "T31X",
+        "T31ZX",
+        "T31A",
+        "Generic T31"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0",
+      "notes": "Main stream 1080p - Ingenic T31 series SoC"
+    },
+    {
+      "models": [
+        "INGENIC T31",
+        "T31",
+        "T31X",
+        "T31ZX",
+        "T31A",
+        "Generic T31"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1",
+      "notes": "Sub stream 360p - Ingenic T31 series SoC"
+    },
+    {
+      "models": [
+        "INGENIC T20",
+        "T20",
+        "T20X",
+        "T20L",
+        "Generic T20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0",
+      "notes": "Main stream 1080p - Ingenic T20 series SoC"
+    },
+    {
+      "models": [
+        "INGENIC T20",
+        "T20",
+        "T20X",
+        "T20L",
+        "Generic T20"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1",
+      "notes": "Sub stream 360p - Ingenic T20 series SoC"
+    },
+    {
+      "models": [
+        "INGENIC T10",
+        "T10",
+        "Generic T10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0",
+      "notes": "Main stream - Ingenic T10 SoC"
+    },
+    {
+      "models": [
+        "INGENIC T10",
+        "T10",
+        "Generic T10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1",
+      "notes": "Sub stream - Ingenic T10 SoC"
+    },
+    {
+      "models": [
+        "INGENIC S3L",
+        "S3L",
+        "Generic S3L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0",
+      "notes": "Main stream - Ingenic S3L SoC"
+    },
+    {
+      "models": [
+        "Generic",
+        "Other",
+        "Xiaomi Dafang",
+        "Xiaomi Xiaofang"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0",
+      "notes": "Main stream 1080p - Generic Thingino installation"
+    },
+    {
+      "models": [
+        "Generic",
+        "Other",
+        "Xiaomi Dafang",
+        "Xiaomi Xiaofang"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch1",
+      "notes": "Sub stream 360p - Generic Thingino installation"
+    },
+    {
+      "models": [
+        "Generic",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.jpg",
+      "notes": "JPEG snapshot"
+    },
+    {
+      "models": [
+        "Generic",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/",
+      "notes": "MJPEG stream via HTTP"
     }
   ]
 }

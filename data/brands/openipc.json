@@ -1,0 +1,257 @@
+{
+  "brand": "OpenIPC",
+  "brand_id": "openipc",
+  "last_updated": "2025-11-11",
+  "source": "openipc.org",
+  "website": "https://openipc.org",
+  "entries": [
+    {
+      "models": [
+        "MAJESTIC STREAMER",
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "Main stream (video0) - Majestic streamer default"
+    },
+    {
+      "models": [
+        "MAJESTIC STREAMER",
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1",
+      "notes": "Sub stream (video1) - Majestic streamer"
+    },
+    {
+      "models": [
+        "HISILICON",
+        "Hi3516EV200",
+        "Hi3516EV300",
+        "Hi3516CV500",
+        "Hi3516DV300",
+        "Hi3518EV200",
+        "Hi3518EV300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "HiSilicon SoC main stream"
+    },
+    {
+      "models": [
+        "HISILICON",
+        "Hi3516EV200",
+        "Hi3516EV300",
+        "Hi3516CV500",
+        "Hi3516DV300",
+        "Hi3518EV200",
+        "Hi3518EV300"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1",
+      "notes": "HiSilicon SoC sub stream"
+    },
+    {
+      "models": [
+        "GOKE",
+        "GK7205V200",
+        "GK7205V300",
+        "GK7605V100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "Goke SoC main stream"
+    },
+    {
+      "models": [
+        "GOKE",
+        "GK7205V200",
+        "GK7205V300",
+        "GK7605V100"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1",
+      "notes": "Goke SoC sub stream"
+    },
+    {
+      "models": [
+        "INGENIC",
+        "T31",
+        "T30",
+        "T20",
+        "T10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "Ingenic SoC main stream"
+    },
+    {
+      "models": [
+        "INGENIC",
+        "T31",
+        "T30",
+        "T20",
+        "T10"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1",
+      "notes": "Ingenic SoC sub stream"
+    },
+    {
+      "models": [
+        "SIGMASTAR",
+        "SSC325",
+        "SSC335",
+        "SSC337",
+        "SSC338Q"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "SigmaStar SoC main stream"
+    },
+    {
+      "models": [
+        "SIGMASTAR",
+        "SSC325",
+        "SSC335",
+        "SSC337",
+        "SSC338Q"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=1",
+      "notes": "SigmaStar SoC sub stream"
+    },
+    {
+      "models": [
+        "NOVATEK",
+        "NT98562",
+        "NT98566"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "Novatek SoC main stream"
+    },
+    {
+      "models": [
+        "XIONGMAI",
+        "XM530",
+        "XM550"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "XiongMai SoC main stream"
+    },
+    {
+      "models": [
+        "AMBARELLA",
+        "S2L",
+        "S3L"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/stream=0",
+      "notes": "Ambarella SoC main stream"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/image.jpg",
+      "notes": "JPEG snapshot"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "MJPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/mjpeg.html",
+      "notes": "MJPEG stream"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/video.mp4",
+      "notes": "Fragmented MP4 video"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/audio.opus",
+      "notes": "Opus audio stream"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/audio.mp3",
+      "notes": "MP3 audio stream"
+    },
+    {
+      "models": [
+        "Generic",
+        "Majestic",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "http",
+      "port": 80,
+      "url": "/audio.m4a",
+      "notes": "AAC audio stream"
+    }
+  ]
+}

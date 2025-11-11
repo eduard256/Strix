@@ -1,0 +1,139 @@
+{
+  "brand": "yi-hack-MStar",
+  "brand_id": "yi-hack-mstar",
+  "last_updated": "2025-11-11",
+  "source": "github.com/roleoroleo/yi-hack-MStar",
+  "website": "https://github.com/roleoroleo/yi-hack-MStar",
+  "entries": [
+    {
+      "models": [
+        "MSTAR INFINITY CHIPSET",
+        "MStar",
+        "Yi Home MStar",
+        "Yi Dome MStar",
+        "Generic MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "MStar Infinity chipset - High resolution video"
+    },
+    {
+      "models": [
+        "MSTAR INFINITY CHIPSET",
+        "MStar",
+        "Yi Home MStar",
+        "Yi Dome MStar",
+        "Generic MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "MStar Infinity chipset - Low resolution video"
+    },
+    {
+      "models": [
+        "MSTAR INFINITY CHIPSET",
+        "MStar",
+        "Yi Home MStar",
+        "Yi Dome MStar",
+        "Generic MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_2.h264",
+      "notes": "MStar Infinity chipset - Audio only"
+    },
+    {
+      "models": [
+        "YI HOME 1080P MSTAR",
+        "Yi 1080p MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Home 1080p MStar - HD stream"
+    },
+    {
+      "models": [
+        "YI HOME 1080P MSTAR",
+        "Yi 1080p MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Home 1080p MStar - SD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P MSTAR",
+        "Yi Dome MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Dome 1080p MStar - HD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P MSTAR",
+        "Yi Dome MStar"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Dome 1080p MStar - SD stream"
+    },
+    {
+      "models": [
+        "AQARA CAMERA G2H",
+        "Aqara G2H",
+        "G2H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Aqara Camera G2H with yi-hack-MStar - HD stream"
+    },
+    {
+      "models": [
+        "AQARA CAMERA G2H",
+        "Aqara G2H",
+        "G2H"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Aqara Camera G2H with yi-hack-MStar - SD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Generic MStar based camera - HD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Generic MStar based camera - SD stream"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "brand": "yi-hack-Allwinner",
+  "brand_id": "yi-hack-allwinner",
+  "last_updated": "2025-11-11",
+  "source": "github.com/roleoroleo/yi-hack-Allwinner",
+  "website": "https://github.com/roleoroleo/yi-hack-Allwinner",
+  "entries": [
+    {
+      "models": [
+        "ALLWINNER PLATFORM",
+        "Yi 1080p Allwinner",
+        "Generic Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Allwinner platform - High resolution video"
+    },
+    {
+      "models": [
+        "ALLWINNER PLATFORM",
+        "Yi 1080p Allwinner",
+        "Generic Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Allwinner platform - Low resolution video"
+    },
+    {
+      "models": [
+        "ALLWINNER PLATFORM",
+        "Yi 1080p Allwinner",
+        "Generic Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_2.h264",
+      "notes": "Allwinner platform - Audio only"
+    },
+    {
+      "models": [
+        "YI HOME 1080P ALLWINNER",
+        "Yi Home Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Home 1080p Allwinner - HD stream"
+    },
+    {
+      "models": [
+        "YI HOME 1080P ALLWINNER",
+        "Yi Home Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Home 1080p Allwinner - SD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P ALLWINNER",
+        "Yi Dome Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Dome 1080p Allwinner - HD stream"
+    },
+    {
+      "models": [
+        "YI DOME 1080P ALLWINNER",
+        "Yi Dome Allwinner"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Dome 1080p Allwinner - SD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Generic Allwinner camera - HD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Generic Allwinner camera - SD stream"
+    }
+  ]
+}

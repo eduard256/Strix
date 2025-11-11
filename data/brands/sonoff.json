@@ -1,8 +1,9 @@
 {
   "brand": "Sonoff",
   "brand_id": "sonoff",
-  "last_updated": "2025-10-17",
-  "source": "ispyconnect.com",
+  "last_updated": "2025-11-11",
+  "source": "ispyconnect.com, github.com/roleoroleo/sonoff-hack",
+  "website": "https://github.com/roleoroleo/sonoff-hack",
   "entries": [
     {
       "models": [
@@ -73,6 +74,43 @@
       "protocol": "rtsp",
       "port": 0,
       "url": "live/ch00_0"
+    },
+    {
+      "models": [
+        "SONOFF-HACK GOKE GK7205V200",
+        "GK-200MP2-B with sonoff-hack",
+        "Goke GK7205V200",
+        "sonoff-hack"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch0",
+      "notes": "Sonoff-hack custom firmware - Main stream"
+    },
+    {
+      "models": [
+        "SONOFF-HACK",
+        "GK-200MP2-B with sonoff-hack",
+        "sonoff-hack"
+      ],
+      "type": "JPEG",
+      "protocol": "http",
+      "port": 8080,
+      "url": "/snapshot.jpg",
+      "notes": "Sonoff-hack custom firmware - JPEG snapshot (port 8080)"
+    },
+    {
+      "models": [
+        "SONOFF-HACK GOKE GK7205V300",
+        "GK7205V300",
+        "Goke chipset"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/av_stream/ch0",
+      "notes": "Sonoff-hack for Goke GK7205V300 chipset"
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "brand": "OpenMiko",
+  "brand_id": "openmiko",
+  "last_updated": "2025-11-11",
+  "source": "github.com/openmiko/openmiko",
+  "website": "https://github.com/openmiko/openmiko",
+  "entries": [
+    {
+      "models": [
+        "WYZE CAM V2",
+        "WyzeCam V2",
+        "Wyze V2",
+        "WYZEC1-JZ"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/video3_unicast",
+      "notes": "WyzeCam V2 with OpenMiko firmware - NON-STANDARD PORT 8554"
+    },
+    {
+      "models": [
+        "XIAOMI XIAOFANG 1S",
+        "Xiaofang 1S",
+        "XiaoFang 1S"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/video3_unicast",
+      "notes": "Xiaomi Xiaofang 1S with OpenMiko - NON-STANDARD PORT 8554"
+    },
+    {
+      "models": [
+        "ISMARTALARM SPOT+",
+        "iSmartAlarm Spot+",
+        "Spot+"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/video3_unicast",
+      "notes": "iSmartAlarm Spot+ with OpenMiko - NON-STANDARD PORT 8554"
+    },
+    {
+      "models": [
+        "INGENIC T20",
+        "Generic T20",
+        "T20 based",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 8554,
+      "url": "/video3_unicast",
+      "notes": "Generic Ingenic T20 based cameras - NON-STANDARD PORT 8554"
+    }
+  ]
+}

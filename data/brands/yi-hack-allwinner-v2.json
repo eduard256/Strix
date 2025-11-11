@@ -1,0 +1,90 @@
+{
+  "brand": "yi-hack-Allwinner-v2",
+  "brand_id": "yi-hack-allwinner-v2",
+  "last_updated": "2025-11-11",
+  "source": "github.com/roleoroleo/yi-hack-Allwinner-v2",
+  "website": "https://github.com/roleoroleo/yi-hack-Allwinner-v2",
+  "entries": [
+    {
+      "models": [
+        "ALLWINNER V2 PLATFORM",
+        "Yi Allwinner v2",
+        "Different flash layout",
+        "Tovendor Mini Smart Home Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Allwinner v2 platform (different flash layout) - High resolution"
+    },
+    {
+      "models": [
+        "ALLWINNER V2 PLATFORM",
+        "Yi Allwinner v2",
+        "Different flash layout",
+        "Tovendor Mini Smart Home Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Allwinner v2 platform (different flash layout) - Low resolution"
+    },
+    {
+      "models": [
+        "ALLWINNER V2 PLATFORM",
+        "Yi Allwinner v2",
+        "Different flash layout",
+        "Tovendor Mini Smart Home Camera"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_2.h264",
+      "notes": "Allwinner v2 platform (different flash layout) - Audio only"
+    },
+    {
+      "models": [
+        "YI HOME CAMERA 3",
+        "Yi Home Camera 3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Yi Home Camera 3 - HD stream"
+    },
+    {
+      "models": [
+        "YI HOME CAMERA 3",
+        "Yi Home Camera 3"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Yi Home Camera 3 - SD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Generic Allwinner v2 camera - HD stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Generic Allwinner v2 camera - SD stream"
+    }
+  ]
+}

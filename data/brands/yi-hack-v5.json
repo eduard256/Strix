@@ -1,0 +1,81 @@
+{
+  "brand": "yi-hack-v5",
+  "brand_id": "yi-hack-v5",
+  "last_updated": "2025-11-11",
+  "source": "github.com/alienatedsec/yi-hack-v5",
+  "website": "https://github.com/alienatedsec/yi-hack-v5",
+  "entries": [
+    {
+      "models": [
+        "HI3518EV200 CHIPSET",
+        "Yi Home",
+        "Yi Dome",
+        "Generic Hi3518ev200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Hi3518ev200 chipset - HD video stream"
+    },
+    {
+      "models": [
+        "HI3518EV200 CHIPSET",
+        "Yi Home",
+        "Yi Dome",
+        "Generic Hi3518ev200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Hi3518ev200 chipset - SD video stream"
+    },
+    {
+      "models": [
+        "HI3518EV200 CHIPSET",
+        "Yi Home",
+        "Yi Dome",
+        "Generic Hi3518ev200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_2.h264",
+      "notes": "Hi3518ev200 chipset - Audio only stream"
+    },
+    {
+      "models": [
+        "HI3518EV200 CHIPSET",
+        "Yi Home",
+        "Yi Dome",
+        "Generic Hi3518ev200"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_3.h264",
+      "notes": "Hi3518ev200 chipset - Audio only stream (alternative)"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_0.h264",
+      "notes": "Generic - HD video stream"
+    },
+    {
+      "models": [
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ch0_1.h264",
+      "notes": "Generic - SD video stream"
+    }
+  ]
+}
