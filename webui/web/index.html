@@ -13,13 +13,21 @@
         <div id="screen-address" class="screen active">
             <div class="container">
                 <div class="hero">
-                    <svg class="logo" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 20c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="18" cy="18" r="2" fill="currentColor"/>
-                        <circle cx="30" cy="18" r="2" fill="currentColor"/>
-                        <path d="M20 28l4-2 4 2v8l-4-2-4 2z" fill="currentColor"/>
-                    </svg>
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 512.001 512.001" xml:space="preserve">
+<g>
+    <path style="fill:#7E57C2;" d="M124.477,378.183L9.347,495.779c21.628,21.628,56.695,21.628,78.324,0L119,464.45   c21.628,21.628,56.696,21.628,78.324,0l28.375-28.375C187.373,426.203,151.825,405.106,124.477,378.183z"/>
+    <path style="fill:#7E57C2;" d="M447.27,55.383h-55.383V177.22c0.002-40.997,22.277-76.788,55.383-95.939   c16.293-9.425,35.207-14.822,55.383-14.822c0-6.982,0-11.077,0-11.077V0C472.065,0,447.27,24.796,447.27,55.383z"/>
+</g>
+<path style="fill:#9575CD;" d="M336.504,55.383C336.504,24.796,311.708,0,281.121,0v66.46c20.176,0,39.091,5.397,55.383,14.822  c33.107,19.153,55.383,54.946,55.383,95.945V55.383H336.504z"/>
+<path style="fill:#E8E0F5;" d="M391.887,209.772v-27.116c0-3.312,0-5.432,0-5.432c0-40.997-22.276-76.791-55.383-95.942  c-16.293-9.425-35.207-14.822-55.383-14.822v155.073C311.213,191.443,357.554,187.532,391.887,209.772z M314.351,143.996  c0-12.234,9.918-22.153,22.153-22.153s22.153,9.919,22.153,22.153c0,12.235-9.918,22.153-22.153,22.153  S314.351,156.231,314.351,143.996z"/>
+<path style="fill:#D1C4E9;" d="M391.887,177.221v32.551c5.151,3.336,10.037,7.246,14.55,11.76h96.216V66.46  c-20.176,0-39.091,5.397-55.383,14.822C414.164,100.434,391.888,136.225,391.887,177.221z M469.423,143.996  c0,12.235-9.918,22.153-22.153,22.153s-22.153-9.918-22.153-22.153c0-12.234,9.918-22.153,22.153-22.153  C459.504,121.843,469.423,131.762,469.423,143.996z"/>
+<path style="fill:#9575CD;" d="M281.121,221.532l-10.2,10.2L281.121,221.532z"/>
+<path style="fill:#B39DDB;" d="M406.438,221.533c34.606,34.606,34.606,90.712,0,125.319c-69.21,69.21-181.422,69.21-250.633,0.002  l-31.329,31.33c27.348,26.923,62.896,48.02,101.221,57.892c17.714,4.562,36.285,6.989,55.423,6.989  c122.349,0,221.532-99.182,221.532-221.531C502.653,221.533,406.437,221.532,406.438,221.533z"/>
+<path style="fill:#9575CD;" d="M281.121,221.532l125.318,125.319c34.606-34.606,34.606-90.713,0-125.319  c-4.515-4.514-9.401-8.425-14.551-11.761C357.554,187.532,311.213,191.443,281.121,221.532z"/>
+<path style="fill:#7E57C2;" d="M406.438,346.851L281.12,221.533l-10.199,10.2L155.802,346.851  C225.017,416.062,337.228,416.061,406.438,346.851z"/>
+<circle style="fill:#9575CD;" cx="336.507" cy="143.996" r="22.153"/>
+<circle style="fill:#7E57C2;" cx="447.274" cy="143.996" r="22.153"/>
+</svg>
                     <h1 class="title">STRIX</h1>
                     <p class="subtitle">Camera Stream Discovery</p>
                 </div>
@@ -286,7 +294,29 @@
                         <pre id="config-go2rtc" class="config-code"></pre>
                     </div>
                     <div class="tab-pane" data-pane="frigate">
-                        <pre id="config-frigate" class="config-code"></pre>
+                        <!-- Input section for existing config -->
+                        <div class="frigate-input-section">
+                            <label class="frigate-label">
+                                Your Current Frigate Config
+                                <span class="hint">Paste your existing config.yml or leave the example below</span>
+                            </label>
+                            <textarea
+                                id="existing-frigate-config"
+                                class="textarea frigate-config-input"
+                                rows="12"
+                                placeholder="Paste your existing Frigate config here..."></textarea>
+                        </div>
+
+                        <!-- Generate button -->
+                        <button id="btn-generate-frigate" class="btn btn-primary btn-generate">
+                            Generate Config
+                        </button>
+
+                        <!-- Output section (hidden by default) -->
+                        <div id="frigate-output-section" class="frigate-output-section hidden">
+                            <label class="frigate-label">Updated Config (Camera Added)</label>
+                            <pre id="config-frigate" class="config-code"></pre>
+                        </div>
                     </div>
                 </div>
 
