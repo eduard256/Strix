@@ -1,9 +1,8 @@
 export class StreamDiscoveryAPI {
     constructor(baseURL = null) {
-        // Auto-detect API URL based on current host
+        // Use relative URLs since API and UI are on the same port
         if (!baseURL) {
-            const currentHost = window.location.hostname;
-            this.baseURL = `http://${currentHost}:8080`;
+            this.baseURL = '';
         } else {
             this.baseURL = baseURL;
         }

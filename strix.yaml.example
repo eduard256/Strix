@@ -1,0 +1,25 @@
+# Strix Configuration Example
+# Copy this file to strix.yaml and modify as needed
+
+# API Server Configuration
+api:
+  # Listen address in format ":port" or "host:port"
+  # Default: ":4567"
+  listen: ":4567"
+
+  # Examples:
+  # listen: ":4567"           # Listen on all interfaces, port 4567 (default)
+  # listen: "0.0.0.0:4567"    # Explicitly listen on all interfaces
+  # listen: "127.0.0.1:4567"  # Listen only on localhost (secure local-only access)
+  # listen: ":8080"           # Custom port on all interfaces
+
+# Configuration Priority (highest to lowest):
+# 1. Environment variable: STRIX_API_LISTEN
+# 2. This file: strix.yaml
+# 3. Default value: :4567
+
+# Quick Start:
+# 1. Copy this file: cp strix.yaml.example strix.yaml
+# 2. Edit the listen address if needed
+# 3. Run strix: ./strix
+# 4. Or set via environment: STRIX_API_LISTEN=":8080" ./strix

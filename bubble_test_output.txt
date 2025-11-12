@@ -1,57 +1,0 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   324    0   157  100   167    209    222 --:--:-- --:--:-- --:--:--   431100   324    0   157  100   167     89     95  0:00:01  0:00:01 --:--:--   184100   324    0   157  100   167     57     60  0:00:02  0:00:02 --:--:--   117100  1075    0   908  100   167    242     44  0:00:03  0:00:03 --:--:--   286100  1752    0  1585  100   167    296     31  0:00:05  0:00:05 --:--:--   327100  1752    0  1585  100   167    249     26  0:00:06  0:00:06 --:--:--   255100  1816    0  1649  100   167    244     24  0:00:06  0:00:06 --:--:--   298100  1816    0  1649  100   167    212     21  0:00:07  0:00:07 --:--:--   298100  2163    0  1996  100   167    228     19  0:00:08  0:00:08 --:--:--   218100  2163    0  1996  100   167    204     17  0:00:09  0:00:09 --:--:--    93100  2227    0  2060  100   167    191     15  0:00:11  0:00:10  0:00:01   107100  2227    0  2060  100   167    175     14  0:00:11  0:00:11 --:--:--    82100  2291    0  2124  100   167    166     13  0:00:12  0:00:12 --:--:--    95100  2291    0  2124  100   167    154     12  0:00:13  0:00:13 --:--:--    25100  2291    0  2124  100   167    143     11  0:00:15  0:00:14  0:00:01    25100  2353    0  2186  100   167    138     10  0:00:16  0:00:15  0:00:01    25100  2353    0  2186  100   167    130      9  0:00:18  0:00:16  0:00:02    25100  2353    0  2186  100   167    123      9  0:00:18  0:00:17  0:00:01    12100  2353    0  2186  100   167    116      8  0:00:20  0:00:18  0:00:02    12100  2353    0  2186  100   167    110      8  0:00:20  0:00:19  0:00:01    12100  2353    0  2186  100   167    105      8  0:00:20  0:00:20 --:--:--     0100  2353    0  2186  100   167    100      7  0:00:23  0:00:21  0:00:02     0100  2353    0  2186  100   167     96      7  0:00:23  0:00:22  0:00:01     0100  2353    0  2186  100   167     92      7  0:00:23  0:00:23 --:--:--     0100  2353    0  2186  100   167     88      6  0:00:27  0:00:24  0:00:03     0100  2353    0  2186  100   167     84      6  0:00:27  0:00:25  0:00:02     0100  2353    0  2186  100   167     81      6  0:00:27  0:00:26  0:00:01     0100  2353    0  2186  100   167     78      6  0:00:27  0:00:27 --:--:--     0100  2353    0  2186  100   167     76      5  0:00:33  0:00:28  0:00:05     0100  2353    0  2186  100   167     73      5  0:00:33  0:00:29  0:00:04     0100  2353    0  2186  100   167     71      5  0:00:33  0:00:30  0:00:03     0100  2353    0  2186  100   167     68      5  0:00:33  0:00:31  0:00:02     0100  2353    0  2186  100   167     66      5  0:00:33  0:00:32  0:00:01     0100  2353    0  2186  100   167     64      4  0:00:41  0:00:33  0:00:08     0100  2353    0  2186  100   167     64      4  0:00:41  0:00:33  0:00:08     0
-curl: (18) transfer closed with outstanding read data remaining
-event: scan_started
-data: {"max_streams":5,"model":"NVR","target":"10.0.20.110","timeout":60}
-
-event: progress
-data: {"tested":0,"found":0,"remaining":959}
-
-event: stream_found
-data: {"stream":{"url":"http://admin:5f8a5b7s9m@10.0.20.110/bubble/live?ch=0\u0026stream=1","type":"BUBBLE","protocol":"http","port":0,"working":true,"has_audio":false,"test_time_ms":11294107,"metadata":{"content_type":"video/bubble","stream_type":"main"}}}
-
-event: progress
-data: {"tested":226,"found":1,"remaining":733}
-
-event: stream_found
-data: {"stream":{"url":"http://admin:5f8a5b7s9m@10.0.20.110/bubble/live?ch=0\u0026stream=0","type":"BUBBLE","protocol":"http","port":0,"working":true,"has_audio":false,"test_time_ms":212128072,"metadata":{"content_type":"video/bubble","stream_type":"main"}}}
-
-event: progress
-data: {"tested":232,"found":2,"remaining":727}
-
-event: progress
-data: {"tested":323,"found":2,"remaining":636}
-
-event: stream_found
-data: {"stream":{"url":"http://admin:5f8a5b7s9m@10.0.20.110/cgi-bin/snapshot.cgi?chn=0\u0026p=5f8a5b7s9m\u0026u=admin","type":"JPEG","protocol":"http","port":0,"working":true,"has_audio":false,"test_time_ms":1692728991,"metadata":{"content_type":"image/jpeg"}}}
-
-event: progress
-data: {"tested":334,"found":3,"remaining":625}
-
-event: stream_found
-data: {"stream":{"url":"http://10.0.20.110/cgi-bin/snapshot.cgi?chn=0\u0026p=5f8a5b7s9m\u0026u=admin","type":"JPEG","protocol":"http","port":0,"working":true,"has_audio":false,"test_time_ms":2027069571,"metadata":{"content_type":"image/jpeg"}}}
-
-event: progress
-data: {"tested":357,"found":4,"remaining":602}
-
-event: progress
-data: {"tested":457,"found":4,"remaining":502}
-
-event: stream_found
-data: {"stream":{"url":"http://admin:5f8a5b7s9m@10.0.20.110/cgi-bin/snapshot.cgi?chn=8\u0026p=5f8a5b7s9m\u0026u=admin","type":"JPEG","protocol":"http","port":0,"working":true,"has_audio":false,"test_time_ms":1236955428,"metadata":{"content_type":"image/jpeg"}}}
-
-event: progress
-data: {"tested":631,"found":5,"remaining":328}
-
-event: progress
-data: {"tested":688,"found":5,"remaining":271}
-
-event: progress
-data: {"tested":828,"found":5,"remaining":131}
-
-event: progress
-data: {"tested":950,"found":5,"remaining":9}
-
-curl: (3) URL using bad/illegal format or missing URL
-curl: (3) URL using bad/illegal format or missing URL

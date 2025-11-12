@@ -14,6 +14,7 @@ import (
 	"github.com/eduard256/Strix/internal/config"
 	"github.com/eduard256/Strix/internal/utils/logger"
 	"github.com/eduard256/Strix/webui"
+	"github.com/go-chi/chi/v5"
 )
 
 const (
@@ -52,8 +53,7 @@ func main() {
 	log.Info("starting Strix",
 		slog.String("version", Version),
 		slog.String("go_version", os.Getenv("GO_VERSION")),
-		slog.String("host", cfg.Server.Host),
-		slog.String("port", cfg.Server.Port),
+		slog.String("listen", cfg.Server.Listen),
 	)
 
 	// Check if ffprobe is available
@@ -71,51 +71,39 @@ func main() {
 	// Create Web UI server
 	webuiServer := webui.NewServer(log)
 
-	// Create API HTTP server
+	// Create unified router combining API and WebUI
+	unifiedRouter := chi.NewRouter()
+
+	// Mount API routes at /api/v1/*
+	unifiedRouter.Mount("/api/v1", apiServer.GetRouter())
+
+	// Mount WebUI routes at /* (serves everything else including root)
+	unifiedRouter.Mount("/", webuiServer.GetRouter())
+
+	// Create unified HTTP server
 	httpServer := &http.Server{
-		Addr:         fmt.Sprintf("%s:%s", cfg.Server.Host, cfg.Server.Port),
-		Handler:      apiServer,
+		Addr:         cfg.Server.Listen,
+		Handler:      unifiedRouter,
 		ReadTimeout:  cfg.Server.ReadTimeout,
 		WriteTimeout: cfg.Server.WriteTimeout,
 		IdleTimeout:  120 * time.Second,
 	}
 
-	// Create Web UI HTTP server
-	webuiHTTPServer := &http.Server{
-		Addr:         fmt.Sprintf("%s:4567", cfg.Server.Host),
-		Handler:      webuiServer,
-		ReadTimeout:  cfg.Server.ReadTimeout,
-		WriteTimeout: cfg.Server.WriteTimeout,
-		IdleTimeout:  120 * time.Second,
-	}
-
-	// Start API server in goroutine
+	// Start server in goroutine
 	go func() {
-		log.Info("API server starting",
+		log.Info("server starting",
 			slog.String("address", httpServer.Addr),
 			slog.String("api_version", "v1"),
 		)
 
 		if err := httpServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Error("API server failed", err)
-			os.Exit(1)
-		}
-	}()
-
-	// Start Web UI server in goroutine
-	go func() {
-		log.Info("Web UI server starting",
-			slog.String("address", webuiHTTPServer.Addr),
-		)
-
-		if err := webuiHTTPServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Error("Web UI server failed", err)
+			log.Error("server failed", err)
 			os.Exit(1)
 		}
 	}()
 
 	// Print endpoints
-	printEndpoints(cfg.Server.Host, cfg.Server.Port)
+	printEndpoints(cfg.Server.Listen)
 
 	// Wait for interrupt signal
 	quit := make(chan os.Signal, 1)
@@ -128,19 +116,13 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 
-	// Shutdown API server
+	// Shutdown server
 	if err := httpServer.Shutdown(ctx); err != nil {
-		log.Error("API server shutdown failed", err)
+		log.Error("server shutdown failed", err)
 		os.Exit(1)
 	}
 
-	// Shutdown Web UI server
-	if err := webuiHTTPServer.Shutdown(ctx); err != nil {
-		log.Error("Web UI server shutdown failed", err)
-		os.Exit(1)
-	}
-
-	log.Info("servers stopped gracefully")
+	log.Info("server stopped gracefully")
 }
 
 // checkFFProbe checks if ffprobe is available
@@ -167,19 +149,38 @@ func checkFFProbe() error {
 	return fmt.Errorf("ffprobe not found in common locations")
 }
 
-// printEndpoints prints available API endpoints
-func printEndpoints(host, port string) {
-	if host == "0.0.0.0" || host == "" {
-		host = "localhost"
+// printEndpoints prints available endpoints
+func printEndpoints(listen string) {
+	// Parse listen address to get host and port
+	host := "localhost"
+	port := "4567"
+
+	// Extract port from listen address
+	if len(listen) > 0 {
+		if listen[0] == ':' {
+			port = listen[1:]
+		} else {
+			// Parse host:port format
+			for i := len(listen) - 1; i >= 0; i-- {
+				if listen[i] == ':' {
+					port = listen[i+1:]
+					if i > 0 {
+						host = listen[:i]
+						if host == "0.0.0.0" || host == "" {
+							host = "localhost"
+						}
+					}
+					break
+				}
+			}
+		}
 	}
 
 	baseURL := fmt.Sprintf("http://%s:%s", host, port)
 
-	webuiURL := fmt.Sprintf("http://%s:4567", host)
-
 	fmt.Println("\n🌐 Web Interface:")
 	fmt.Println("────────────────────────────────────────────────")
-	fmt.Printf("  Open in browser: %s\n", webuiURL)
+	fmt.Printf("  Open in browser: %s\n", baseURL)
 	fmt.Println("────────────────────────────────────────────────")
 
 	fmt.Println("\n🚀 API Endpoints:")

@@ -1,6 +1,7 @@
 # Binaries
 bin/
 strix
+main
 *.exe
 *.exe~
 *.dll
@@ -38,3 +39,8 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+*.dump
+*_output.txt
+
+# Configuration (user-specific)
+strix.yaml

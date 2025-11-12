@@ -118,31 +118,15 @@ func (s *Server) setupRoutes() {
 		})
 	})
 
-	// API version 1 routes
-	s.router.Route("/api/v1", func(r chi.Router) {
-		// Health check
-		r.Get("/health", handlers.NewHealthHandler("1.0.0", s.logger).ServeHTTP)
+	// API routes (mounted at /api/v1 in main.go)
+	// Health check
+	s.router.Get("/health", handlers.NewHealthHandler("1.0.0", s.logger).ServeHTTP)
 
-		// Camera search
-		r.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
+	// Camera search
+	s.router.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
 
-		// Stream discovery (SSE)
-		r.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.logger).ServeHTTP)
-	})
-
-	// Root health check
-	s.router.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/json")
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"name":"Strix","version":"1.0.0","api":"v1"}`))
-	})
-
-	// 404 handler
-	s.router.NotFound(func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/json")
-		w.WriteHeader(http.StatusNotFound)
-		w.Write([]byte(`{"error":"Not found"}`))
-	})
+	// Stream discovery (SSE)
+	s.router.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.logger).ServeHTTP)
 }
 
 // ServeHTTP implements http.Handler

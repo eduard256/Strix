@@ -39,6 +39,9 @@ make build
 
 # Run the application
 make run
+
+# The server will start on http://localhost:4567
+# Open your browser and navigate to http://localhost:4567
 ```
 
 ## 📡 API Endpoints
@@ -105,13 +108,52 @@ strix/
 
 ## 🛠️ Configuration
 
-Environment variables:
+Strix can be configured via `strix.yaml` file or environment variables.
+
+### Configuration File (strix.yaml)
+
+Create a `strix.yaml` file in the same directory as the binary:
+
+```yaml
+# API Server Configuration
+api:
+  listen: ":4567"  # Format: ":port" or "host:port"
+```
+
+Examples:
+```yaml
+api:
+  listen: ":4567"           # All interfaces, port 4567 (default)
+  # listen: "127.0.0.1:4567"  # Localhost only
+  # listen: ":8080"           # Custom port
+```
+
+### Environment Variables
+
+Environment variables override config file values:
 
 ```bash
-STRIX_HOST=0.0.0.0          # Server host (default: 0.0.0.0)
-STRIX_PORT=8080             # Server port (default: 8080)
+STRIX_API_LISTEN=":4567"    # Server listen address (overrides strix.yaml)
 STRIX_LOG_LEVEL=info        # Log level: debug, info, warn, error
 STRIX_LOG_FORMAT=json       # Log format: json, text
+```
+
+### Configuration Priority
+
+1. **Environment variable** `STRIX_API_LISTEN` (highest priority)
+2. **Config file** `strix.yaml`
+3. **Default value** `:4567` (lowest priority)
+
+### Quick Start with Custom Port
+
+```bash
+# Using environment variable
+STRIX_API_LISTEN=":8080" ./strix
+
+# Or using config file
+cp strix.yaml.example strix.yaml
+# Edit strix.yaml, then:
+./strix
 ```
 
 ## 📊 Camera Database
