@@ -95,5 +95,5 @@ func (h *SearchHandler) sendErrorResponse(w http.ResponseWriter, message string,
 		"code":    statusCode,
 	}
 
-	json.NewEncoder(w).Encode(response)
+	_ = json.NewEncoder(w).Encode(response)
 }

@@ -92,7 +92,7 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 	)
 
 	// Send initial message
-	streamWriter.SendJSON("scan_started", map[string]interface{}{
+	_ = streamWriter.SendJSON("scan_started", map[string]interface{}{
 		"target":      req.Target,
 		"model":       req.Model,
 		"max_streams": req.MaxStreams,
@@ -108,7 +108,7 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 	ip := s.extractIP(req.Target)
 	if ip == "" {
 		err := fmt.Errorf("invalid target IP: %s", req.Target)
-		streamWriter.SendError(err)
+		_ = streamWriter.SendError(err)
 		result.Error = err
 		return result, err
 	}
@@ -116,7 +116,7 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 	// Collect all streams to test (includes metadata like type)
 	streams, err := s.collectStreams(scanCtx, req, ip)
 	if err != nil {
-		streamWriter.SendError(err)
+		_ = streamWriter.SendError(err)
 		result.Error = err
 		return result, err
 	}
@@ -124,7 +124,7 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 	s.logger.Info("collected streams for testing", "count", len(streams))
 
 	// Send progress update
-	streamWriter.SendJSON("progress", models.ProgressMessage{
+	_ = streamWriter.SendJSON("progress", models.ProgressMessage{
 		Tested:    0,
 		Found:     0,
 		Remaining: len(streams),
@@ -137,14 +137,14 @@ func (s *Scanner) Scan(ctx context.Context, req models.StreamDiscoveryRequest, s
 	result.Duration = time.Since(startTime)
 
 	// Send completion message
-	streamWriter.SendJSON("complete", models.CompleteMessage{
+	_ = streamWriter.SendJSON("complete", models.CompleteMessage{
 		TotalTested: result.TotalTested,
 		TotalFound:  result.TotalFound,
 		Duration:    result.Duration.Seconds(),
 	})
 
 	// Send final done event to signal proper stream closure
-	streamWriter.SendJSON("done", map[string]interface{}{
+	_ = streamWriter.SendJSON("done", map[string]interface{}{
 		"message": "Stream discovery finished",
 	})
 
@@ -196,11 +196,11 @@ func (s *Scanner) scanDirectStream(ctx context.Context, req models.StreamDiscove
 		result.Streams = append(result.Streams, discoveredStream)
 
 		// Send to SSE
-		streamWriter.SendJSON("stream_found", map[string]interface{}{
+		_ = streamWriter.SendJSON("stream_found", map[string]interface{}{
 			"stream": discoveredStream,
 		})
 	} else {
-		streamWriter.SendJSON("stream_failed", map[string]interface{}{
+		_ = streamWriter.SendJSON("stream_failed", map[string]interface{}{
 			"url":   req.Target,
 			"error": testResult.Error,
 		})
@@ -422,7 +422,7 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 				currentTested := atomic.LoadInt32(&tested)
 				// Only send if there's been progress
 				if currentTested != lastTested {
-					streamWriter.SendJSON("progress", models.ProgressMessage{
+					_ = streamWriter.SendJSON("progress", models.ProgressMessage{
 						Tested:    int(currentTested),
 						Found:     int(atomic.LoadInt32(&found)),
 						Remaining: len(streams) - int(currentTested),
@@ -439,12 +439,12 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 			result.Streams = append(result.Streams, stream)
 
 			// Send to SSE
-			streamWriter.SendJSON("stream_found", map[string]interface{}{
+			_ = streamWriter.SendJSON("stream_found", map[string]interface{}{
 				"stream": stream,
 			})
 
 			// Send progress (immediate update when stream is found)
-			streamWriter.SendJSON("progress", models.ProgressMessage{
+			_ = streamWriter.SendJSON("progress", models.ProgressMessage{
 				Tested:    int(atomic.LoadInt32(&tested)),
 				Found:     int(atomic.LoadInt32(&found)),
 				Remaining: len(streams) - int(atomic.LoadInt32(&tested)),
@@ -458,12 +458,13 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 	}()
 
 	// Test each stream
+TestLoop:
 	for _, streamToTest := range streams {
 		// Check if context is done or max streams reached
 		select {
 		case <-ctx.Done():
 			s.logger.Debug("scan cancelled or timeout")
-			break
+			break TestLoop
 		default:
 		}
 

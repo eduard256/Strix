@@ -103,7 +103,7 @@ func (h *DiscoverHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	result, err := h.scanner.Scan(r.Context(), req, streamWriter)
 	if err != nil {
 		h.logger.Error("discovery failed", err)
-		streamWriter.SendError(err)
+		_ = streamWriter.SendError(err)
 		return
 	}
 
@@ -126,5 +126,5 @@ func (h *DiscoverHandler) sendErrorResponse(w http.ResponseWriter, message strin
 		"code":    statusCode,
 	}
 
-	json.NewEncoder(w).Encode(response)
+	_ = json.NewEncoder(w).Encode(response)
 }

@@ -278,7 +278,8 @@ func (t *Tester) testRTSP(ctx context.Context, streamURL string, result *TestRes
 	result.Type = "FFMPEG"
 
 	for _, stream := range probeResult.Streams {
-		if stream.CodecType == "video" {
+		switch stream.CodecType {
+		case "video":
 			result.Codec = stream.CodecName
 			result.Resolution = fmt.Sprintf("%dx%d", stream.Width, stream.Height)
 
@@ -288,26 +289,26 @@ func (t *Tester) testRTSP(ctx context.Context, streamURL string, result *TestRes
 				if len(parts) == 2 {
 					// Calculate FPS from fraction
 					var num, den int
-					fmt.Sscanf(parts[0], "%d", &num)
-					fmt.Sscanf(parts[1], "%d", &den)
-					if den > 0 {
-						result.FPS = num / den
+					if n, _ := fmt.Sscanf(parts[0], "%d", &num); n == 1 {
+						if n, _ := fmt.Sscanf(parts[1], "%d", &den); n == 1 && den > 0 {
+							result.FPS = num / den
+						}
 					}
 				}
 			}
 
 			// Parse bitrate
 			if stream.BitRate != "" {
-				fmt.Sscanf(stream.BitRate, "%d", &result.Bitrate)
+				_, _ = fmt.Sscanf(stream.BitRate, "%d", &result.Bitrate)
 			}
-		} else if stream.CodecType == "audio" {
+		case "audio":
 			result.HasAudio = true
 		}
 	}
 
 	// Use format bitrate if stream bitrate not available
 	if result.Bitrate == 0 && probeResult.Format.BitRate != "" {
-		fmt.Sscanf(probeResult.Format.BitRate, "%d", &result.Bitrate)
+		_, _ = fmt.Sscanf(probeResult.Format.BitRate, "%d", &result.Bitrate)
 	}
 
 	if !result.Working {
@@ -348,7 +349,7 @@ func (t *Tester) testHTTP(ctx context.Context, streamURL string, result *TestRes
 		result.Error = fmt.Sprintf("HTTP request failed: %v", err)
 		return
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	// Check status code
 	if resp.StatusCode != http.StatusOK {

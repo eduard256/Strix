@@ -15,7 +15,6 @@ import (
 type SearchEngine struct {
 	loader *Loader
 	logger interface{ Debug(string, ...any); Error(string, error, ...any) }
-	mu     sync.RWMutex
 }
 
 // NewSearchEngine creates a new search engine

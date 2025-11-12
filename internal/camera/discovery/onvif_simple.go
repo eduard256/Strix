@@ -198,7 +198,7 @@ func (o *ONVIFDiscovery) getProfileStreams(ctx context.Context, dev *onvif.Devic
 			"elapsed", elapsed.String())
 		return streams
 	}
-	defer profilesResp.Body.Close()
+	defer func() { _ = profilesResp.Body.Close() }()
 
 	o.logger.Debug("✅ GetProfiles call successful",
 		"elapsed", elapsed.String(),
@@ -311,7 +311,7 @@ func (o *ONVIFDiscovery) getStreamURI(dev *onvif.Device, profileToken string) st
 			"elapsed", elapsed.String())
 		return ""
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	o.logger.Debug("✅ GetStreamUri call successful",
 		"profile", profileToken,

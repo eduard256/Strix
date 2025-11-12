@@ -52,7 +52,7 @@ func (l *Loader) LoadBrand(brandID string) (*models.Camera, error) {
 		}
 		return nil, fmt.Errorf("failed to open brand file: %w", err)
 	}
-	defer file.Close()
+	defer func() { _ = file.Close() }()
 
 	var camera models.Camera
 	decoder := json.NewDecoder(file)
@@ -104,7 +104,7 @@ func (l *Loader) LoadPopularPatterns() ([]models.StreamPattern, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to open patterns file: %w", err)
 	}
-	defer file.Close()
+	defer func() { _ = file.Close() }()
 
 	var patterns []models.StreamPattern
 	decoder := json.NewDecoder(file)
@@ -133,7 +133,7 @@ func (l *Loader) LoadQueryParameters() ([]string, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to open parameters file: %w", err)
 	}
-	defer file.Close()
+	defer func() { _ = file.Close() }()
 
 	var params []string
 	decoder := json.NewDecoder(file)
@@ -187,7 +187,7 @@ func (l *Loader) loadCameraFromFile(filePath string) (*models.Camera, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer file.Close()
+	defer func() { _ = file.Close() }()
 
 	var camera models.Camera
 	decoder := json.NewDecoder(file)
