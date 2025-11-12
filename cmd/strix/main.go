@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
+	"net"
 	"net/http"
 	"os"
 	"os/signal"
@@ -149,13 +150,28 @@ func checkFFProbe() error {
 	return fmt.Errorf("ffprobe not found in common locations")
 }
 
+// getLocalIP returns the local IP address of the machine
+func getLocalIP() string {
+	addrs, err := net.InterfaceAddrs()
+	if err != nil {
+		return "localhost"
+	}
+
+	for _, addr := range addrs {
+		if ipnet, ok := addr.(*net.IPNet); ok && !ipnet.IP.IsLoopback() {
+			if ipnet.IP.To4() != nil {
+				return ipnet.IP.String()
+			}
+		}
+	}
+
+	return "localhost"
+}
+
 // printEndpoints prints available endpoints
 func printEndpoints(listen string) {
-	// Parse listen address to get host and port
-	host := "localhost"
-	port := "4567"
-
 	// Extract port from listen address
+	port := "4567"
 	if len(listen) > 0 {
 		if listen[0] == ':' {
 			port = listen[1:]
@@ -164,56 +180,23 @@ func printEndpoints(listen string) {
 			for i := len(listen) - 1; i >= 0; i-- {
 				if listen[i] == ':' {
 					port = listen[i+1:]
-					if i > 0 {
-						host = listen[:i]
-						if host == "0.0.0.0" || host == "" {
-							host = "localhost"
-						}
-					}
 					break
 				}
 			}
 		}
 	}
 
-	baseURL := fmt.Sprintf("http://%s:%s", host, port)
+	// Get local IP
+	localIP := getLocalIP()
+	url := fmt.Sprintf("http://%s:%s", localIP, port)
+
+	// ANSI escape codes for clickable link (OSC 8 hyperlink)
+	clickableURL := fmt.Sprintf("\033]8;;%s\033\\%s\033]8;;\033\\", url, url)
 
 	fmt.Println("\n🌐 Web Interface:")
 	fmt.Println("────────────────────────────────────────────────")
-	fmt.Printf("  Open in browser: %s\n", baseURL)
+	fmt.Printf("  Open in browser: %s\n", clickableURL)
 	fmt.Println("────────────────────────────────────────────────")
 
-	fmt.Println("\n🚀 API Endpoints:")
-	fmt.Println("────────────────────────────────────────────────")
-	fmt.Printf("  Health Check:     GET  %s/api/v1/health\n", baseURL)
-	fmt.Printf("  Camera Search:    POST %s/api/v1/cameras/search\n", baseURL)
-	fmt.Printf("  Stream Discovery: POST %s/api/v1/streams/discover (SSE)\n", baseURL)
-	fmt.Println("────────────────────────────────────────────────")
-
-	fmt.Println("\n📝 Example Requests:")
-	fmt.Println("\n1. Search for cameras:")
-	fmt.Printf(`   curl -X POST %s/api/v1/cameras/search \
-     -H "Content-Type: application/json" \
-     -d '{"query": "zosi zg23213m", "limit": 10}'
-`, baseURL)
-
-	fmt.Println("\n2. Discover streams (SSE):")
-	fmt.Printf(`   curl -X POST %s/api/v1/streams/discover \
-     -H "Content-Type: application/json" \
-     -d '{
-       "target": "192.168.1.100",
-       "model": "zosi zg23213m",
-       "username": "admin",
-       "password": "password",
-       "timeout": 240,
-       "max_streams": 10
-     }'
-`, baseURL)
-
-	fmt.Println("\n3. Check health:")
-	fmt.Printf("   curl %s/api/v1/health\n", baseURL)
-
-	fmt.Println("\n────────────────────────────────────────────────")
-	fmt.Println("📚 Documentation: https://github.com/eduard256/Strix")
-	fmt.Println("────────────────────────────────────────────────")
+	fmt.Println("\n📚 Documentation: https://github.com/eduard256/Strix")
 }
