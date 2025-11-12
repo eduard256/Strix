@@ -44,3 +44,7 @@ temp/
 
 # Configuration (user-specific)
 strix.yaml
+
+# Node.js / NPM
+node_modules/
+package-lock.json

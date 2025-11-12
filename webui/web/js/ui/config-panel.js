@@ -1,5 +1,5 @@
 import { Go2RTCGenerator } from '../config-generators/go2rtc/index.js';
-import { FrigateGenerator } from '../config-generators/frigate/index.js';
+// import { FrigateGenerator } from '../config-generators/frigate/index.js'; // Reserved for future use
 
 export class ConfigPanel {
     constructor() {

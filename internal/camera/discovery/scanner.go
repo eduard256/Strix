@@ -434,9 +434,14 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 	}()
 
 	// Start result collector
+	var collectorWg sync.WaitGroup
+	collectorWg.Add(1)
 	go func() {
+		defer collectorWg.Done()
 		for stream := range streamsChan {
 			result.Streams = append(result.Streams, stream)
+
+			s.logger.Info("sending stream_found event", "url", stream.URL, "type", stream.Type)
 
 			// Send to SSE
 			_ = streamWriter.SendJSON("stream_found", map[string]interface{}{
@@ -521,6 +526,9 @@ TestLoop:
 	// Wait for all tests to complete
 	wg.Wait()
 	close(streamsChan)
+
+	// Wait for result collector to finish processing all streams
+	collectorWg.Wait()
 
 	// Update final counts
 	result.TotalTested = int(atomic.LoadInt32(&tested))

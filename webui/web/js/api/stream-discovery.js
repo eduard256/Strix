@@ -12,7 +12,7 @@ export class StreamDiscoveryAPI {
     discover(request, callbacks) {
         this.close();
 
-        const url = new URL(`${this.baseURL}/api/v1/streams/discover`);
+        const url = new URL(`${this.baseURL}/api/v1/streams/discover`, window.location.origin);
 
         fetch(url, {
             method: 'POST',
@@ -39,7 +39,8 @@ export class StreamDiscoveryAPI {
 
                 for (const line of lines) {
                     if (line.startsWith('event:')) {
-                        const eventType = line.substring(6).trim();
+                        // Parse event type (not currently used, but available for future features)
+                        // const eventType = line.substring(6).trim();
                         continue;
                     }
 

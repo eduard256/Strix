@@ -45,7 +45,7 @@ export class StreamCarousel {
                 <div class="stream-url">${this.truncateURL(stream.url)}</div>
                 ${stream.resolution ? `<div class="stream-meta">Resolution: ${stream.resolution}</div>` : ''}
                 ${stream.codec ? `<div class="stream-meta">Codec: ${stream.codec}${stream.fps ? ` • ${stream.fps} fps` : ''}${stream.bitrate ? ` • ${Math.round(stream.bitrate / 1000)} Kbps` : ''}</div>` : ''}
-                ${stream.has_audio ? `<div class="stream-meta">Audio: Yes</div>` : ''}
+                ${stream.has_audio ? '<div class="stream-meta">Audio: Yes</div>' : ''}
                 <div class="stream-actions">
                     <button class="btn btn-primary btn-use" data-index="${index}">Use Stream</button>
                 </div>
