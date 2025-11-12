@@ -1,0 +1,93 @@
+version: '3.8'
+
+# Full home automation stack: Strix + go2rtc + Frigate
+# This configuration shows how to use Strix together with go2rtc and Frigate
+
+services:
+  # Strix - Camera Stream Discovery
+  strix:
+    image: eduard256/strix:latest
+    container_name: strix
+    restart: unless-stopped
+    ports:
+      - "4567:4567"
+    environment:
+      - STRIX_LOG_LEVEL=info
+      - STRIX_LOG_FORMAT=json
+    networks:
+      - cameras
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:4567/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # go2rtc - Universal Stream Server
+  go2rtc:
+    image: alexxit/go2rtc:latest
+    container_name: go2rtc
+    restart: unless-stopped
+    ports:
+      - "1984:1984"   # Web UI
+      - "8554:8554"   # RTSP
+      - "8555:8555"   # WebRTC
+    volumes:
+      - ./go2rtc.yaml:/config/go2rtc.yaml:ro
+    networks:
+      - cameras
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:1984"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frigate - NVR with Object Detection
+  frigate:
+    image: ghcr.io/blakeblackshear/frigate:stable
+    container_name: frigate
+    restart: unless-stopped
+    privileged: true
+    shm_size: "256mb"
+    ports:
+      - "5000:5000"     # Web UI
+      - "8971:8971"     # Go2RTC internal
+      - "1935:1935"     # RTMP
+    volumes:
+      - ./frigate.yml:/config/config.yml:ro
+      - frigate-media:/media/frigate
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - FRIGATE_RTSP_PASSWORD=password
+    networks:
+      - cameras
+    depends_on:
+      - go2rtc
+
+networks:
+  cameras:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/24
+
+volumes:
+  frigate-media:
+    driver: local
+
+# Usage workflow:
+# 1. Use Strix to discover camera streams: http://localhost:4567
+# 2. Copy discovered stream URLs to go2rtc.yaml
+# 3. Configure go2rtc streams: http://localhost:1984
+# 4. Add streams to Frigate config: frigate.yml
+# 5. View recordings and detections: http://localhost:5000
+#
+# Network communication:
+# - Strix discovers streams from cameras (external network)
+# - go2rtc receives streams from cameras and re-streams
+# - Frigate receives streams from go2rtc (internal network)
+#
+# All services can communicate using container names:
+# - http://strix:4567
+# - http://go2rtc:1984
+# - http://frigate:5000

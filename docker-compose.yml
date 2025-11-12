@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  strix:
+    image: eduard256/strix:latest
+    # Or build locally:
+    # build: .
+    container_name: strix
+    restart: unless-stopped
+
+    ports:
+      - "4567:4567"
+
+    environment:
+      # Logging configuration
+      - STRIX_LOG_LEVEL=info
+      - STRIX_LOG_FORMAT=json
+
+      # Optional: Override default port
+      # - STRIX_API_LISTEN=:4567
+
+      # Optional: Custom data path
+      # - STRIX_DATA_PATH=/app/data
+
+    # volumes:
+      # Optional: Mount custom configuration
+      # - ./strix.yaml:/app/strix.yaml:ro
+
+      # Optional: Mount custom camera database
+      # - ./data:/app/data:ro
+
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:4567/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+    # Optional: Resource limits
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '1.0'
+    #       memory: 512M
+    #     reservations:
+    #       cpus: '0.5'
+    #       memory: 256M
+
+# Usage:
+# 1. Start: docker-compose up -d
+# 2. View logs: docker-compose logs -f strix
+# 3. Stop: docker-compose down
+# 4. Restart: docker-compose restart strix
+#
+# Access WebUI: http://localhost:4567
+# Access API: http://localhost:4567/api/v1/health

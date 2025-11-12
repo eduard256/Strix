@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+.github
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Build artifacts
+bin/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test files
+*.test
+*_test.go
+coverage.*
+*.out
+
+# Logs
+*.log
+strix.log
+
+# Config files (user-specific)
+strix.yaml
+test_*.yaml
+config.yaml
+
+# Temporary files
+tmp/
+temp/
+*.dump
+*_output.txt
+
+# Documentation (included in image metadata instead)
+*.md
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Development
+.env
+.env.local
