@@ -1,5 +1,7 @@
 # 🦉 Strix - Smart IP Camera Stream Discovery System
 
+![Strix Demo](assets/main.gif)
+
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![API Version](https://img.shields.io/badge/API-v1-green.svg)](https://github.com/eduard256/Strix)
