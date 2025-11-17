@@ -5,6 +5,13 @@ All notable changes to this Home Assistant add-on will be documented in this fil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-11-17
+
+### Fixed
+- GitHub Actions permissions for publishing Docker images to ghcr.io
+- Added `packages: write` permission to build job
+- Added `contents: write` permission to update-repository job
+
 ## [1.0.0] - 2025-01-15
 
 ### Added

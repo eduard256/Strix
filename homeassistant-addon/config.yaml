@@ -1,5 +1,5 @@
 name: Strix - Camera Stream Discovery
-version: "1.0.0"
+version: "1.0.1"
 slug: strix
 description: Smart IP camera stream discovery system with ONVIF support and comprehensive camera database
 url: https://github.com/eduard256/Strix
