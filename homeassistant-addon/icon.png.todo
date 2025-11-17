@@ -1,0 +1,6 @@
+TODO: Add 128x128px PNG icon for the add-on
+The icon should represent Strix (owl/camera theme)
+Recommended: Use a simple owl silhouette or camera icon in Home Assistant style
+Place the file as: homeassistant-addon/icon.png
+
+For now, you can use any 128x128 PNG image as a placeholder.

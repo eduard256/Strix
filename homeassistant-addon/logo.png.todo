@@ -1,0 +1,6 @@
+TODO: Add 256x256px PNG logo for the add-on
+The logo should represent Strix branding
+Recommended: Higher resolution version of the icon
+Place the file as: homeassistant-addon/logo.png
+
+For now, you can use any 256x256 PNG image as a placeholder.

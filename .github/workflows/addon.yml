@@ -1,0 +1,150 @@
+name: Home Assistant Add-on
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'homeassistant-addon/**'
+      - 'cmd/**'
+      - 'internal/**'
+      - 'pkg/**'
+      - 'data/**'
+      - 'webui/**'
+      - 'go.mod'
+      - 'go.sum'
+      - 'Makefile'
+      - '.github/workflows/addon.yml'
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+env:
+  BUILD_NAME: strix
+
+jobs:
+  build:
+    name: Build Add-on
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: [aarch64, amd64, armv7]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Get version
+        id: version
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION="dev-$(git rev-parse --short HEAD)"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+
+      - name: Build binary for ${{ matrix.arch }}
+        run: |
+          case "${{ matrix.arch }}" in
+            aarch64)
+              GOARCH=arm64
+              ;;
+            amd64)
+              GOARCH=amd64
+              ;;
+            armv7)
+              GOARCH=arm
+              GOARM=7
+              ;;
+          esac
+
+          CGO_ENABLED=0 GOOS=linux GOARCH=$GOARCH GOARM=${GOARM:-} go build \
+            -ldflags="-s -w -X main.Version=${{ steps.version.outputs.version }}" \
+            -o homeassistant-addon/strix \
+            cmd/strix/main.go
+
+      - name: Copy required files
+        run: |
+          cp -r data homeassistant-addon/
+          cp -r webui homeassistant-addon/
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: ./homeassistant-addon
+          file: ./homeassistant-addon/Dockerfile
+          platforms: linux/${{ matrix.arch == 'aarch64' && 'arm64' || matrix.arch == 'amd64' && 'amd64' || 'arm/v7' }}
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/strix-addon-${{ matrix.arch }}:latest
+            ghcr.io/${{ github.repository_owner }}/strix-addon-${{ matrix.arch }}:${{ steps.version.outputs.version }}
+          build-args: |
+            BUILD_FROM=ghcr.io/home-assistant/${{ matrix.arch }}-base:3.20
+            STRIX_VERSION=${{ steps.version.outputs.version }}
+          cache-from: type=gha,scope=${{ matrix.arch }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.arch }}
+
+  update-repository:
+    name: Update Repository File
+    needs: build
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get version
+        id: version
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION="dev-$(git rev-parse --short HEAD)"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update config.yaml version
+        run: |
+          sed -i "s/^version:.*/version: \"${{ steps.version.outputs.version }}\"/" homeassistant-addon/config.yaml
+
+      - name: Create/Update repository.yaml
+        run: |
+          cat > repository.yaml <<EOF
+          name: Strix Home Assistant Add-ons
+          url: https://github.com/${{ github.repository }}
+          maintainer: ${{ github.repository_owner }}
+          EOF
+
+      - name: Commit changes
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add homeassistant-addon/config.yaml repository.yaml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update add-on to version ${{ steps.version.outputs.version }}"
+
+      - name: Push changes
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

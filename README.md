@@ -21,12 +21,45 @@ Strix is an intelligent IP camera stream discovery system that acts as a bridge 
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Home Assistant Add-on (Recommended)
 
+The easiest way to use Strix is as a Home Assistant Add-on:
+
+1. Add this repository to your Home Assistant:
+   - Go to **Supervisor** → **Add-on Store**
+   - Click **⋮** (menu) → **Repositories**
+   - Add: `https://github.com/eduard256/Strix`
+
+2. Install the **Strix Camera Discovery** add-on
+
+3. Start the add-on and open the Web UI
+
+4. Start discovering your cameras!
+
+For detailed installation instructions, see [Home Assistant Add-on Documentation](homeassistant-addon/DOCS.md).
+
+### Docker
+
+```bash
+# Using Docker Compose (recommended)
+docker-compose up -d
+
+# Or using Docker directly
+docker run -d \
+  --name strix \
+  -p 4567:4567 \
+  eduard256/strix:latest
+
+# Access at http://localhost:4567
+```
+
+See [Docker documentation](DOCKER.md) for more options.
+
+### Build from Source
+
+Prerequisites:
 - Go 1.21 or higher
 - ffprobe (optional, for enhanced stream validation)
-
-### Installation
 
 ```bash
 # Clone the repository
