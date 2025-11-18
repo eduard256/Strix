@@ -1,4 +1,6 @@
 # Strix
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
 
 ## Spent 2 years googling URL for your Chinese camera?
 
@@ -7,9 +9,6 @@
 - **67,288** camera models
 - **3,636** brands (from Hikvision to AliExpress no-name)
 - **102,787** URL patterns (RTSP, HTTP, MJPEG, JPEG, BUBBLE)
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
 
 ![Demo](assets/main.gif)
 
