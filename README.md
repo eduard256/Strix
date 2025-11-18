@@ -1,4 +1,5 @@
 # Strix
+[![GitHub Stars](https://img.shields.io/github/stars/eduard256/strix?style=social)](https://github.com/eduard256/strix/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
 
