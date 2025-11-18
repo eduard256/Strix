@@ -9,7 +9,7 @@ export class CameraSearchAPI {
     }
 
     async search(query, limit = 10) {
-        const response = await fetch(`${this.baseURL}/api/v1/cameras/search`, {
+        const response = await fetch(`${this.baseURL}api/v1/cameras/search`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

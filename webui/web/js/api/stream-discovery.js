@@ -12,7 +12,7 @@ export class StreamDiscoveryAPI {
     discover(request, callbacks) {
         this.close();
 
-        const url = new URL(`${this.baseURL}/api/v1/streams/discover`, window.location.origin);
+        const url = new URL(`${this.baseURL}api/v1/streams/discover`, window.location.origin);
 
         fetch(url, {
             method: 'POST',
