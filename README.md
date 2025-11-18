@@ -1,7 +1,5 @@
 # Strix
 
-![Demo](assets/main.gif)
-
 ## Spent 2 years googling RTSP URL for your Chinese camera?
 
 **Strix finds working streams automatically. In 30 seconds.**
@@ -12,6 +10,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
+
+![Demo](assets/main.gif)
 
 ---
 
