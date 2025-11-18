@@ -12,9 +12,7 @@ export class StreamDiscoveryAPI {
     discover(request, callbacks) {
         this.close();
 
-        const url = new URL(`${this.baseURL}api/v1/streams/discover`, window.location.origin);
-
-        fetch(url, {
+        fetch(`${this.baseURL}api/v1/streams/discover`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
