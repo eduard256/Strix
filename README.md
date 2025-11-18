@@ -1,6 +1,6 @@
 # Strix
 
-## Spent 2 years googling RTSP URL for your Chinese camera?
+## Spent 2 years googling URL for your Chinese camera?
 
 **Strix finds working streams automatically. In 30 seconds.**
 
@@ -25,11 +25,11 @@
 
 ## Solution
 
-✅ **Auto-discovery** - tests 102,787 URL variations in parallel
-✅ **Any protocol** - No RTSP? Finds HTTP MJPEG
-✅ **Config generation** - ready Frigate.yml in 2 minutes
-✅ **Sub/Main streams** - CPU from 70% → 8%
-✅ **Smart merging** - adds camera to existing config with 500+ cameras
+- ✅ **Auto-discovery** - tests 102,787 URL variations in parallel
+- ✅ **Any protocol** - No RTSP? Finds HTTP MJPEG
+- ✅ **Config generation** - ready Frigate.yml in 2 minutes
+- ✅ **Sub/Main streams** - CPU from 70% → 8%
+- ✅ **Smart merging** - adds camera to existing config with 500+ cameras
 
 ---
 
