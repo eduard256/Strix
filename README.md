@@ -28,7 +28,7 @@
 - ✅ **Auto-discovery** - tests 102,787 URL variations in parallel
 - ✅ **Any protocol** - No RTSP? Finds HTTP MJPEG
 - ✅ **Config generation** - ready Frigate.yml in 2 minutes
-- ✅ **Sub/Main streams** - CPU from 70% → 8%
+- ✅ **Sub/Main streams** - CPU from 30% → 8%
 - ✅ **Smart merging** - adds camera to existing config with 500+ cameras
 
 ---
