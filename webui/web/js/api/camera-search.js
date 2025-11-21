@@ -1,14 +1,23 @@
+import { MockCameraSearch } from '../mock/mock-data.js';
+
 export class CameraSearchAPI {
-    constructor(baseURL = null) {
+    constructor(baseURL = null, useMock = false) {
         // Use relative URLs since API and UI are on the same port
         if (!baseURL) {
             this.baseURL = '';
         } else {
             this.baseURL = baseURL;
         }
+        this.useMock = useMock;
+        this.mockAPI = useMock ? new MockCameraSearch() : null;
     }
 
     async search(query, limit = 10) {
+        // Use mock API if enabled
+        if (this.useMock) {
+            return await this.mockAPI.search(query, limit);
+        }
+
         const response = await fetch(`${this.baseURL}api/v1/cameras/search`, {
             method: 'POST',
             headers: {
