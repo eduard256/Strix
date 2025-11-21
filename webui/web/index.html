@@ -82,7 +82,26 @@
                 <h2 class="screen-title">Camera Configuration</h2>
 
                 <div class="form-group">
-                    <label for="address-validated" class="label">Network Address</label>
+                    <label for="address-validated" class="label label-with-info">
+                        Network Address
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip tooltip-down">
+                                <div class="tooltip-title">Network Address</div>
+                                <p class="tooltip-text">The IP address, hostname, or full RTSP URL of your camera. This is the network location where the camera can be reached.</p>
+                                <div class="tooltip-examples">
+                                    <div class="tooltip-examples-title">Examples:</div>
+                                    <code class="tooltip-example">192.168.1.100</code>
+                                    <code class="tooltip-example">camera.local</code>
+                                    <code class="tooltip-example">rtsp://admin:pass@192.168.1.100</code>
+                                </div>
+                                <p class="tooltip-text">Find it in your camera's network settings or router's device list (DHCP leases).</p>
+                            </div>
+                        </span>
+                    </label>
                     <div class="input-validated">
                         <input
                             type="text"
@@ -97,7 +116,27 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="camera-model" class="label">Camera Model <span class="optional">(optional)</span></label>
+                    <label for="camera-model" class="label label-with-info">
+                        Camera Model <span class="optional">(optional)</span>
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip tooltip-down">
+                                <div class="tooltip-title">Camera Model</div>
+                                <p class="tooltip-text">The manufacturer and model of your IP camera. This helps the system use optimized stream paths for your specific camera brand.</p>
+                                <div class="tooltip-examples">
+                                    <div class="tooltip-examples-title">Examples:</div>
+                                    <code class="tooltip-example">Hikvision: DS-2CD2142FWD</code>
+                                    <code class="tooltip-example">Dahua: IPC-HDW4433C</code>
+                                    <code class="tooltip-example">Amcrest: IP4M-1041</code>
+                                    <code class="tooltip-example">Reolink: RLC-410</code>
+                                </div>
+                                <p class="tooltip-text">Find it on the camera label, in the camera's web interface (Device Info), or in your purchase documentation. Leave empty for auto-detection.</p>
+                            </div>
+                        </span>
+                    </label>
                     <div class="autocomplete-wrapper">
                         <input
                             type="text"
@@ -113,7 +152,26 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="username" class="label">Username</label>
+                    <label for="username" class="label label-with-info">
+                        Username
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Username</div>
+                                <p class="tooltip-text">The authentication username for accessing your camera's RTSP stream. This is required for most IP cameras to access video feeds.</p>
+                                <div class="tooltip-examples">
+                                    <div class="tooltip-examples-title">Common defaults:</div>
+                                    <code class="tooltip-example">admin</code>
+                                    <code class="tooltip-example">root</code>
+                                    <code class="tooltip-example">user</code>
+                                </div>
+                                <p class="tooltip-text">Find it in your camera setup documentation or the camera's web interface under User Management. Change default credentials for security.</p>
+                            </div>
+                        </span>
+                    </label>
                     <input
                         type="text"
                         id="username"
@@ -124,7 +182,21 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password" class="label">Password</label>
+                    <label for="password" class="label label-with-info">
+                        Password
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Password</div>
+                                <p class="tooltip-text">The authentication password for your camera's RTSP stream. This credential is used together with the username to access the video feed.</p>
+                                <p class="tooltip-text">For security reasons, always use a strong, unique password and avoid default passwords like "12345" or "password".</p>
+                                <p class="tooltip-text">Find it in your camera's documentation, setup guide, or change it via the camera's web interface under Security/User Management settings.</p>
+                            </div>
+                        </span>
+                    </label>
                     <div class="input-password-wrapper">
                         <input
                             type="password"
@@ -143,23 +215,65 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <label for="channel" class="label label-with-info">
+                        Channel
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Channel Number</div>
+                                <p class="tooltip-text">The channel number identifies which specific camera or video input to access on the device.</p>
+                                <p class="tooltip-text"><strong>For standalone IP cameras:</strong> Always use 0 (default). Single cameras don't use channel numbers.</p>
+                                <p class="tooltip-text"><strong>For NVR/DVR systems ONLY:</strong> Each connected camera has its own channel number. Channel numbering typically starts from 0.</p>
+                                <div class="tooltip-examples">
+                                    <div class="tooltip-examples-title">NVR/DVR channel values:</div>
+                                    <code class="tooltip-example">0 - First camera on NVR/DVR</code>
+                                    <code class="tooltip-example">1 - Second camera on NVR/DVR</code>
+                                    <code class="tooltip-example">2-15 - Additional cameras (for 4, 8, 16-channel NVRs)</code>
+                                </div>
+                                <p class="tooltip-text">Check your NVR's camera list in the device web interface to see the correct channel assignment for each camera.</p>
+                            </div>
+                        </span>
+                    </label>
+                    <input
+                        type="number"
+                        id="channel"
+                        class="input"
+                        value="0"
+                        min="0"
+                        max="255"
+                    >
+                </div>
+
                 <details class="advanced-section">
                     <summary class="advanced-toggle">Advanced</summary>
                     <div class="advanced-content">
-                        <div class="form-group">
-                            <label for="channel" class="label">Channel</label>
-                            <input
-                                type="number"
-                                id="channel"
-                                class="input"
-                                value="0"
-                                min="0"
-                                max="255"
-                            >
-                        </div>
 
                         <div class="form-group">
-                            <label class="label">Resolution <span class="optional">(optional)</span></label>
+                            <label class="label label-with-info">
+                                Resolution <span class="optional">(optional)</span>
+                                <span class="info-icon">
+                                    <svg viewBox="0 0 16 16" fill="none">
+                                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip-title">Resolution Filter</div>
+                                        <p class="tooltip-text">Optionally filter discovered streams by specific resolution. Leave empty to find all available resolutions. Use this to target specific stream qualities.</p>
+                                        <div class="tooltip-examples">
+                                            <div class="tooltip-examples-title">Common resolutions:</div>
+                                            <code class="tooltip-example">1920 × 1080 - Full HD (main stream)</code>
+                                            <code class="tooltip-example">1280 × 720 - HD (sub stream)</code>
+                                            <code class="tooltip-example">640 × 480 - VGA (low quality)</code>
+                                            <code class="tooltip-example">3840 × 2160 - 4K Ultra HD</code>
+                                        </div>
+                                        <p class="tooltip-text">Tip: Leave empty for initial discovery, then use specific values to find particular stream types (main vs sub streams).</p>
+                                    </div>
+                                </span>
+                            </label>
                             <div class="input-row">
                                 <input
                                     type="number"
@@ -178,7 +292,26 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="max-streams" class="label">Max Streams</label>
+                            <label for="max-streams" class="label label-with-info">
+                                Max Streams
+                                <span class="info-icon">
+                                    <svg viewBox="0 0 16 16" fill="none">
+                                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip-title">Maximum Streams</div>
+                                        <p class="tooltip-text">The maximum number of stream URLs to test during discovery. Higher values increase scan time but may find more stream variants. Lower values speed up discovery.</p>
+                                        <div class="tooltip-examples">
+                                            <div class="tooltip-examples-title">Recommended values:</div>
+                                            <code class="tooltip-example">5 - Quick scan (faster)</code>
+                                            <code class="tooltip-example">10 - Balanced (default)</code>
+                                            <code class="tooltip-example">20-50 - Thorough scan (slower)</code>
+                                        </div>
+                                        <p class="tooltip-text">Purpose: Controls how many different RTSP URL patterns are tested. Most cameras have 2-5 valid streams (main, sub, mobile, etc.).</p>
+                                    </div>
+                                </span>
+                            </label>
                             <input
                                 type="number"
                                 id="max-streams"
