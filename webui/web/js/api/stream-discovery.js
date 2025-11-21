@@ -1,5 +1,7 @@
+import { MockStreamDiscovery } from '../mock/mock-data.js';
+
 export class StreamDiscoveryAPI {
-    constructor(baseURL = null) {
+    constructor(baseURL = null, useMock = false) {
         // Use relative URLs since API and UI are on the same port
         if (!baseURL) {
             this.baseURL = '';
@@ -7,10 +9,18 @@ export class StreamDiscoveryAPI {
             this.baseURL = baseURL;
         }
         this.eventSource = null;
+        this.useMock = useMock;
+        this.mockAPI = useMock ? new MockStreamDiscovery() : null;
     }
 
     discover(request, callbacks) {
         this.close();
+
+        // Use mock API if enabled
+        if (this.useMock) {
+            this.mockAPI.discover(request, callbacks);
+            return;
+        }
 
         fetch(`${this.baseURL}api/v1/streams/discover`, {
             method: 'POST',
@@ -91,6 +101,9 @@ export class StreamDiscoveryAPI {
     }
 
     close() {
+        if (this.useMock && this.mockAPI) {
+            this.mockAPI.close();
+        }
         if (this.eventSource) {
             this.eventSource.close();
             this.eventSource = null;
