@@ -79,6 +79,37 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== MOCK MODE BADGE ===== */
+.mock-badge {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid var(--warning);
+    border-radius: 6px;
+    color: var(--warning);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeIn var(--transition-base);
+}
+
+.mock-badge svg {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
 /* ===== LAYOUT ===== */
 #app {
     min-height: 100vh;

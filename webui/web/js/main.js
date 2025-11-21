@@ -1,5 +1,7 @@
 import { CameraSearchAPI } from './api/camera-search.js';
 import { StreamDiscoveryAPI } from './api/stream-discovery.js';
+import { MockCameraAPI } from './mock/mock-camera-api.js';
+import { MockStreamAPI } from './mock/mock-stream-api.js';
 import { SearchForm } from './ui/search-form.js';
 import { StreamCarousel } from './ui/stream-carousel.js';
 import { ConfigPanel } from './ui/config-panel.js';
@@ -8,12 +10,24 @@ import { showToast } from './utils/toast.js';
 
 class StrixApp {
     constructor() {
-        // Check if mock mode is enabled via URL parameter (?mock=true)
+        // Check if mock mode is enabled via URL parameter
         const urlParams = new URLSearchParams(window.location.search);
-        const useMock = urlParams.get('mock') === 'true';
+        const isMockMode = urlParams.get('mock') === 'true';
 
-        this.cameraAPI = new CameraSearchAPI(null, useMock);
-        this.streamAPI = new StreamDiscoveryAPI(null, useMock);
+        if (isMockMode) {
+            console.log('🎭 Mock mode enabled - using fake data');
+            this.cameraAPI = new MockCameraAPI();
+            this.streamAPI = new MockStreamAPI();
+
+            // Show mock mode badge
+            const mockBadge = document.getElementById('mock-mode-badge');
+            if (mockBadge) {
+                mockBadge.classList.remove('hidden');
+            }
+        } else {
+            this.cameraAPI = new CameraSearchAPI();
+            this.streamAPI = new StreamDiscoveryAPI();
+        }
 
         this.searchForm = new SearchForm();
         this.carousel = new StreamCarousel();
@@ -24,7 +38,6 @@ class StrixApp {
         this.selectedMainStream = null;
         this.selectedSubStream = null;
         this.isSelectingSubStream = false;
-        this.useMock = useMock;
 
         this.init();
     }
@@ -32,31 +45,6 @@ class StrixApp {
     init() {
         this.setupEventListeners();
         this.showScreen('address');
-
-        // Show mock mode indicator if enabled
-        if (this.useMock) {
-            this.showMockIndicator();
-        }
-    }
-
-    showMockIndicator() {
-        const indicator = document.createElement('div');
-        indicator.id = 'mock-indicator';
-        indicator.style.cssText = `
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: #7E57C2;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        `;
-        indicator.textContent = 'MOCK MODE';
-        document.body.appendChild(indicator);
     }
 
     setupEventListeners() {
