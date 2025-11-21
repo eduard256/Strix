@@ -1110,6 +1110,29 @@ body {
     height: 18px;
 }
 
+/* Info icon inside stream type badge */
+.info-icon-stream {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-left: var(--space-2);
+    cursor: help;
+    color: var(--text-tertiary);
+    transition: color var(--transition-fast);
+}
+
+.info-icon-stream:hover {
+    color: var(--purple-primary);
+}
+
+.info-icon-stream svg {
+    width: 16px;
+    height: 16px;
+}
+
 .frigate-output-section {
     margin-top: var(--space-6);
     padding-top: var(--space-6);

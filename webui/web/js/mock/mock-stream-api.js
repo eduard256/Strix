@@ -53,14 +53,14 @@ export class MockStreamAPI {
                 has_audio: false
             },
             {
-                url: "rtsp://192.168.1.100:554/Streaming/Channels/102",
-                path: "/Streaming/Channels/102",
-                type: "FFMPEG",
-                resolution: "640x480",
+                url: "bubble://192.168.1.100:34567/bubble/live?ch=0&stream=0",
+                path: "/bubble/live?ch=0&stream=0",
+                type: "BUBBLE",
+                resolution: "1920x1080",
                 codec: "H.264",
-                fps: 15,
-                bitrate: 512000,
-                has_audio: false
+                fps: 25,
+                bitrate: 3072000,
+                has_audio: true
             },
             {
                 url: "rtsp://192.168.1.100:554/cam/realmonitor?channel=1&subtype=0",
@@ -70,36 +70,6 @@ export class MockStreamAPI {
                 codec: "H.265",
                 fps: 30,
                 bitrate: 6144000,
-                has_audio: true
-            },
-            {
-                url: "rtsp://192.168.1.100:554/h264Preview_01_main",
-                path: "/h264Preview_01_main",
-                type: "FFMPEG",
-                resolution: "1920x1080",
-                codec: "H.264",
-                fps: 20,
-                bitrate: 3072000,
-                has_audio: true
-            },
-            {
-                url: "rtsp://192.168.1.100:554/live/ch0",
-                path: "/live/ch0",
-                type: "ONVIF",
-                resolution: "2688x1520",
-                codec: "H.265",
-                fps: 25,
-                bitrate: 5120000,
-                has_audio: true
-            },
-            {
-                url: "rtsp://192.168.1.100:554/stream1",
-                path: "/stream1",
-                type: "FFMPEG",
-                resolution: "3840x2160",
-                codec: "H.265",
-                fps: 30,
-                bitrate: 8192000,
                 has_audio: true
             }
         ];
