@@ -774,6 +774,9 @@ body {
 }
 
 .stream-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
     font-size: var(--text-xs);
     font-weight: 600;
     color: var(--text-tertiary);
@@ -1030,6 +1033,81 @@ body {
 
 .btn-generate:active {
     transform: translateY(0);
+}
+
+/* Button with tooltip wrapper */
+.button-with-tooltip {
+    position: relative;
+    width: 100%;
+}
+
+.button-with-tooltip .btn-generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+/* Button with tooltip in secondary-actions */
+.secondary-actions .button-with-tooltip {
+    flex: 1.2;
+    width: auto;
+}
+
+.secondary-actions .button-with-tooltip .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+.secondary-actions .button-with-tooltip:last-child {
+    flex: 0.8;
+}
+
+/* Info icon inside button */
+.info-icon-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    cursor: help;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition-fast);
+}
+
+.info-icon-button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.info-icon-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Info icon inside outline button */
+.info-icon-button-outline {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    cursor: help;
+    color: var(--text-tertiary);
+    transition: color var(--transition-fast);
+}
+
+.info-icon-button-outline:hover {
+    color: var(--purple-primary);
+}
+
+.info-icon-button-outline svg {
+    width: 18px;
+    height: 18px;
 }
 
 .frigate-output-section {

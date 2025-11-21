@@ -38,13 +38,39 @@ class StrixApp {
         this.selectedMainStream = null;
         this.selectedSubStream = null;
         this.isSelectingSubStream = false;
+        this.frigateConfigGenerated = false; // Track if Frigate config has been generated
 
         this.init();
     }
 
     init() {
         this.setupEventListeners();
+        this.prefillNetworkAddress();
         this.showScreen('address');
+    }
+
+    /**
+     * Pre-fill network address input with smart default based on server IP
+     */
+    prefillNetworkAddress() {
+        const hostname = window.location.hostname;
+        const input = document.getElementById('network-address');
+
+        // Skip if localhost or empty
+        if (!hostname || hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '0.0.0.0') {
+            return;
+        }
+
+        // Check if hostname is an IP address (matches pattern like 192.168.1.1)
+        const ipPattern = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
+        const match = hostname.match(ipPattern);
+
+        if (match) {
+            // Extract first three octets (e.g., "192.168.1." from "192.168.1.254")
+            const networkPrefix = `${match[1]}.${match[2]}.${match[3]}.`;
+            input.value = networkPrefix;
+            input.placeholder = `${networkPrefix}100`;
+        }
     }
 
     setupEventListeners() {
@@ -155,10 +181,12 @@ class StrixApp {
         try {
             const urlObj = new URL(url);
 
-            // Extract credentials
+            // Extract credentials (only override if provided in URL)
             if (urlObj.username) {
                 document.getElementById('username').value = urlObj.username;
             }
+            // If no username in URL, keep the default "admin" value
+
             if (urlObj.password) {
                 document.getElementById('password').value = urlObj.password;
             }
@@ -332,16 +360,22 @@ class StrixApp {
             // Selecting main stream
             this.selectedMainStream = stream;
             this.selectedSubStream = null;
+            this.frigateConfigGenerated = false; // Reset Frigate config state
             this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
             this.updateSubStreamUI();
             this.showScreen('output');
+            // Hide action buttons initially since Frigate tab is active by default
+            document.querySelector('.actions').style.display = 'none';
         } else {
             // Selecting sub stream
             this.selectedSubStream = stream;
             this.isSelectingSubStream = false;
+            this.frigateConfigGenerated = false; // Reset Frigate config state
             this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
             this.updateSubStreamUI();
             this.showScreen('output');
+            // Hide action buttons initially since Frigate tab is active by default
+            document.querySelector('.actions').style.display = 'none';
         }
     }
 
@@ -363,8 +397,16 @@ class StrixApp {
 
     removeSubStream() {
         this.selectedSubStream = null;
+        this.frigateConfigGenerated = false; // Reset Frigate config state when sub stream is removed
         this.configPanel.render(this.selectedMainStream, this.selectedSubStream);
         this.updateSubStreamUI();
+
+        // Hide action buttons if on Frigate tab
+        const activeTab = document.querySelector('.tab.active').dataset.tab;
+        if (activeTab === 'frigate') {
+            document.querySelector('.actions').style.display = 'none';
+        }
+
         showToast('Sub stream removed');
     }
 
@@ -388,6 +430,10 @@ class StrixApp {
             // Show result
             document.getElementById('config-frigate').textContent = newConfig;
             document.getElementById('frigate-output-section').classList.remove('hidden');
+
+            // Mark as generated and show action buttons
+            this.frigateConfigGenerated = true;
+            document.querySelector('.actions').style.display = 'flex';
 
             // Scroll to result
             document.getElementById('frigate-output-section').scrollIntoView({
@@ -423,6 +469,16 @@ class StrixApp {
         // Update tab panes
         document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
         document.querySelector(`.tab-pane[data-pane="${tabName}"]`).classList.add('active');
+
+        // Show/hide action buttons based on tab and Frigate config state
+        const actionsContainer = document.querySelector('.actions');
+        if (tabName === 'frigate' && !this.frigateConfigGenerated) {
+            // Hide buttons on Frigate tab until config is generated
+            actionsContainer.style.display = 'none';
+        } else {
+            // Show buttons for other tabs or after Frigate config is generated
+            actionsContainer.style.display = 'flex';
+        }
     }
 
     copyConfig() {
@@ -476,7 +532,7 @@ class StrixApp {
         document.getElementById('camera-model').value = '';
         document.getElementById('camera-model').disabled = false;
         document.getElementById('camera-model').placeholder = 'Start typing...';
-        document.getElementById('username').value = '';
+        document.getElementById('username').value = 'admin'; // Reset to default value
         document.getElementById('password').value = '';
         document.getElementById('channel').value = '0';
         document.getElementById('max-streams').value = '10';

@@ -42,7 +42,30 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="network-address" class="label">Network Address</label>
+                    <label for="network-address" class="label label-with-info">
+                        Network Address
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip tooltip-down">
+                                <div class="tooltip-title">Network Address</div>
+                                <p class="tooltip-text">Enter the network location of your IP camera. This can be an IP address, hostname, or a complete RTSP URL.</p>
+
+                                <div class="tooltip-examples">
+                                    <div class="tooltip-examples-title">Accepted formats:</div>
+                                    <code class="tooltip-example">192.168.1.100 - IP address only</code>
+                                    <code class="tooltip-example">camera.local - Hostname/mDNS</code>
+                                    <code class="tooltip-example">rtsp://user:pass@192.168.1.100/stream - Full URL</code>
+                                </div>
+
+                                <p class="tooltip-text"><strong>Where to find it:</strong><br>Check your camera's web interface, router's DHCP leases page, or network scanner app. Most cameras use addresses in the 192.168.x.x range.</p>
+
+                                <p class="tooltip-text"><strong>Next steps:</strong><br>After entering the address, click "Check Address" to validate the camera connection and proceed to stream discovery.</p>
+                            </div>
+                        </span>
+                    </label>
                     <input
                         type="text"
                         id="network-address"
@@ -176,6 +199,7 @@
                         type="text"
                         id="username"
                         class="input"
+                        value="admin"
                         placeholder="admin"
                         autocomplete="off"
                     >
@@ -372,13 +396,51 @@
 
                 <div class="stream-selection-container">
                     <div class="selected-stream-info">
-                        <p class="stream-label">Main Stream</p>
+                        <div class="stream-label">
+                            <span>Main Stream</span>
+                            <span class="info-icon">
+                                <svg viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <div class="tooltip tooltip-down">
+                                    <div class="tooltip-title">Main Stream</div>
+                                    <p class="tooltip-text">The primary high-resolution video stream from your camera. This stream is typically used for recording and high-quality viewing.</p>
+                                    <div class="tooltip-examples">
+                                        <div class="tooltip-examples-title">Common uses:</div>
+                                        <code class="tooltip-example">Recording to disk</code>
+                                        <code class="tooltip-example">Live HD viewing</code>
+                                        <code class="tooltip-example">High-quality playback</code>
+                                    </div>
+                                    <p class="tooltip-text">Resolution is usually 1080p (1920×1080) or higher. Higher resolution means better quality but requires more bandwidth and storage.</p>
+                                </div>
+                            </span>
+                        </div>
                         <p id="selected-main-type" class="selected-type"></p>
                         <p id="selected-main-url" class="selected-url"></p>
                     </div>
 
                     <div id="sub-stream-info" class="selected-stream-info sub-stream hidden">
-                        <p class="stream-label">Sub Stream</p>
+                        <div class="stream-label">
+                            <span>Sub Stream</span>
+                            <span class="info-icon">
+                                <svg viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <div class="tooltip tooltip-down">
+                                    <div class="tooltip-title">Sub Stream</div>
+                                    <p class="tooltip-text">A secondary lower-resolution video stream from your camera. This stream is optimized for object detection and reduces CPU usage.</p>
+                                    <div class="tooltip-examples">
+                                        <div class="tooltip-examples-title">Common uses:</div>
+                                        <code class="tooltip-example">Motion detection</code>
+                                        <code class="tooltip-example">Object detection (person, car)</code>
+                                        <code class="tooltip-example">Low-bandwidth monitoring</code>
+                                    </div>
+                                    <p class="tooltip-text">Resolution is usually 640×480 or 720p. Using a sub stream for detection significantly improves performance while maintaining recording quality on the main stream.</p>
+                                </div>
+                            </span>
+                        </div>
                         <p id="selected-sub-type" class="selected-type"></p>
                         <p id="selected-sub-url" class="selected-url"></p>
                         <button id="btn-remove-sub" class="btn-remove-sub">Remove Sub Stream</button>
@@ -387,24 +449,41 @@
 
                 <div class="tabs">
                     <div class="tabs-scroll">
-                        <button class="tab active" data-tab="url">URL</button>
+                        <button class="tab active" data-tab="frigate">Frigate</button>
                         <button class="tab" data-tab="go2rtc">Go2RTC</button>
-                        <button class="tab" data-tab="frigate">Frigate</button>
+                        <button class="tab" data-tab="url">URL</button>
                     </div>
                 </div>
 
                 <div class="tab-content">
-                    <div class="tab-pane active" data-pane="url">
-                        <pre id="config-url" class="config-code"></pre>
-                    </div>
-                    <div class="tab-pane" data-pane="go2rtc">
-                        <pre id="config-go2rtc" class="config-code"></pre>
-                    </div>
-                    <div class="tab-pane" data-pane="frigate">
+                    <div class="tab-pane active" data-pane="frigate">
                         <!-- Input section for existing config -->
                         <div class="frigate-input-section">
-                            <label class="frigate-label">
-                                Your Current Frigate Config
+                            <label class="frigate-label label-with-info">
+                                Your Current Frigate Config <span class="optional">(optional)</span>
+                                <span class="info-icon">
+                                    <svg viewBox="0 0 16 16" fill="none">
+                                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="tooltip tooltip-down">
+                                        <div class="tooltip-title">Frigate Configuration</div>
+                                        <p class="tooltip-text">You can either create a new Frigate config or add this camera to your existing configuration.</p>
+
+                                        <p class="tooltip-text"><strong>Option 1: New Config (Recommended for beginners)</strong><br>Leave the example config below as-is, and the system will generate a complete working configuration for you.</p>
+
+                                        <p class="tooltip-text"><strong>Option 2: Add to Existing Config</strong><br>If you already have Frigate running, paste your current config.yml here. The system will intelligently add this camera without breaking your existing setup.</p>
+
+                                        <div class="tooltip-examples">
+                                            <div class="tooltip-examples-title">Where to find your config.yml:</div>
+                                            <code class="tooltip-example">Docker: /config/config.yml</code>
+                                            <code class="tooltip-example">Home Assistant addon: /config/frigate.yml</code>
+                                            <code class="tooltip-example">Standalone: /etc/frigate/config.yml</code>
+                                        </div>
+
+                                        <p class="tooltip-text">The generator will preserve all your existing cameras and settings, only adding the new camera configuration.</p>
+                                    </div>
+                                </span>
                                 <span class="hint">Paste your existing config.yml or leave the example below</span>
                             </label>
                             <textarea
@@ -415,15 +494,71 @@
                         </div>
 
                         <!-- Generate button -->
-                        <button id="btn-generate-frigate" class="btn btn-primary btn-generate">
-                            Generate Config
-                        </button>
+                        <div class="button-with-tooltip">
+                            <button id="btn-generate-frigate" class="btn btn-primary btn-generate">
+                                Generate Config
+                                <span class="info-icon info-icon-button">
+                                    <svg viewBox="0 0 16 16" fill="none">
+                                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="tooltip">
+                                        <div class="tooltip-title">Generate Configuration</div>
+                                        <p class="tooltip-text">This button will process your camera streams and generate a ready-to-use Frigate configuration.</p>
+
+                                        <p class="tooltip-text"><strong>What happens:</strong></p>
+                                        <div class="tooltip-examples">
+                                            <div class="tooltip-examples-title">Configuration includes:</div>
+                                            <code class="tooltip-example">Go2RTC streams setup</code>
+                                            <code class="tooltip-example">Camera with detect & record roles</code>
+                                            <code class="tooltip-example">Object tracking (person, car, etc.)</code>
+                                            <code class="tooltip-example">Recording settings</code>
+                                        </div>
+
+                                        <p class="tooltip-text">If you provided an existing config, your camera will be added to it. Otherwise, a complete new configuration will be created.</p>
+
+                                        <p class="tooltip-text">After generation, use Copy or Download buttons to save your config.</p>
+                                    </div>
+                                </span>
+                            </button>
+                        </div>
 
                         <!-- Output section (hidden by default) -->
                         <div id="frigate-output-section" class="frigate-output-section hidden">
-                            <label class="frigate-label">Updated Config (Camera Added)</label>
+                            <label class="frigate-label label-with-info">
+                                Updated Config (Camera Added)
+                                <span class="info-icon">
+                                    <svg viewBox="0 0 16 16" fill="none">
+                                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="tooltip tooltip-down">
+                                        <div class="tooltip-title">Generated Configuration</div>
+                                        <p class="tooltip-text">This is your complete Frigate configuration with the camera successfully added.</p>
+
+                                        <p class="tooltip-text"><strong>What's included:</strong></p>
+                                        <div class="tooltip-examples">
+                                            <div class="tooltip-examples-title">Configuration sections:</div>
+                                            <code class="tooltip-example">go2rtc: Stream definitions</code>
+                                            <code class="tooltip-example">cameras: Camera with roles</code>
+                                            <code class="tooltip-example">objects: Person, car tracking</code>
+                                            <code class="tooltip-example">record: Recording settings</code>
+                                        </div>
+
+                                        <p class="tooltip-text"><strong>How to use:</strong><br>Copy or download this configuration and save it as <code>config.yml</code> in your Frigate directory. Restart Frigate to apply the changes.</p>
+
+                                        <p class="tooltip-text">If you added to existing config, your previous cameras and settings are preserved - only the new camera was added.</p>
+                                    </div>
+                                </span>
+                            </label>
                             <pre id="config-frigate" class="config-code"></pre>
                         </div>
+                    </div>
+                    <div class="tab-pane" data-pane="go2rtc">
+                        <pre id="config-go2rtc" class="config-code"></pre>
+                    </div>
+                    <div class="tab-pane" data-pane="url">
+                        <pre id="config-url" class="config-code"></pre>
                     </div>
                 </div>
 
@@ -444,15 +579,65 @@
                 </div>
 
                 <div class="secondary-actions">
-                    <button id="btn-add-sub-stream" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        Add Sub Stream
-                    </button>
-                    <button id="btn-new-search" class="btn btn-outline">
-                        Add Another Camera
-                    </button>
+                    <div class="button-with-tooltip">
+                        <button id="btn-add-sub-stream" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Add Sub Stream
+                            <span class="info-icon info-icon-button">
+                                <svg viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <div class="tooltip">
+                                    <div class="tooltip-title">Add Sub Stream</div>
+                                    <p class="tooltip-text">Add a secondary lower-resolution stream for efficient object detection and motion monitoring.</p>
+
+                                    <p class="tooltip-text"><strong>Why add a sub stream?</strong></p>
+                                    <div class="tooltip-examples">
+                                        <div class="tooltip-examples-title">Benefits:</div>
+                                        <code class="tooltip-example">Reduces CPU usage by 50-70%</code>
+                                        <code class="tooltip-example">Faster object detection</code>
+                                        <code class="tooltip-example">Lower bandwidth consumption</code>
+                                        <code class="tooltip-example">Main stream quality preserved</code>
+                                    </div>
+
+                                    <p class="tooltip-text"><strong>How it works:</strong><br>After clicking, you'll return to the stream list where you can select a lower-resolution stream (usually 640×480 or 720p). Frigate will use this for detection while recording the main stream in full quality.</p>
+
+                                    <p class="tooltip-text"><strong>Recommended:</strong> Most IP cameras support multiple streams. Using a sub stream is highly recommended for optimal Frigate performance.</p>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="button-with-tooltip">
+                        <button id="btn-new-search" class="btn btn-outline">
+                            Add Another Camera
+                            <span class="info-icon info-icon-button-outline">
+                                <svg viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <div class="tooltip">
+                                    <div class="tooltip-title">Add Another Camera</div>
+                                    <p class="tooltip-text">Start the configuration process for a new camera from the beginning.</p>
+
+                                    <p class="tooltip-text"><strong>⚠️ Important - Save First!</strong><br>Before clicking this button, make sure to save your current configuration using Copy or Download buttons above. This will reset the form.</p>
+
+                                    <p class="tooltip-text"><strong>What happens:</strong></p>
+                                    <div class="tooltip-examples">
+                                        <div class="tooltip-examples-title">The process will:</div>
+                                        <code class="tooltip-example">1. Return to address input screen</code>
+                                        <code class="tooltip-example">2. Clear current camera settings</code>
+                                        <code class="tooltip-example">3. Start fresh discovery</code>
+                                        <code class="tooltip-example">4. Generate new config for next camera</code>
+                                    </div>
+
+                                    <p class="tooltip-text">You can then add the new camera to your saved Frigate config by pasting it in the config field.</p>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
