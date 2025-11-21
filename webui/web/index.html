@@ -216,46 +216,11 @@
                     <p id="progress-text" class="progress-text">Starting scan...</p>
                 </div>
 
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-value" id="stat-tested">0</span>
-                        <span class="stat-label">Tested</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value stat-primary" id="stat-found">0</span>
-                        <span class="stat-label">Found</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value" id="stat-remaining">0</span>
-                        <span class="stat-label">Remaining</span>
-                    </div>
-                </div>
 
                 <div id="streams-section" class="streams-section hidden">
                     <h3 class="section-title">Found Connections</h3>
 
-                    <div class="carousel-wrapper">
-                        <button id="carousel-prev" class="carousel-arrow carousel-arrow-left" aria-label="Previous stream">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-
-                        <div class="carousel">
-                            <div id="carousel-track" class="carousel-track"></div>
-                        </div>
-
-                        <button id="carousel-next" class="carousel-arrow carousel-arrow-right" aria-label="Next stream">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="carousel-info">
-                        <p id="carousel-counter" class="carousel-counter">Stream 1 of 1</p>
-                        <div id="carousel-dots" class="carousel-dots"></div>
-                    </div>
+                    <div id="streams-list" class="streams-list"></div>
                 </div>
             </div>
         </div>

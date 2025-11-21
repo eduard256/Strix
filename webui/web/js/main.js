@@ -3,7 +3,7 @@ import { StreamDiscoveryAPI } from './api/stream-discovery.js';
 import { MockCameraAPI } from './mock/mock-camera-api.js';
 import { MockStreamAPI } from './mock/mock-stream-api.js';
 import { SearchForm } from './ui/search-form.js';
-import { StreamCarousel } from './ui/stream-carousel.js';
+import { StreamList } from './ui/stream-list.js';
 import { ConfigPanel } from './ui/config-panel.js';
 import { FrigateGenerator } from './config-generators/frigate/index.js';
 import { showToast } from './utils/toast.js';
@@ -30,7 +30,7 @@ class StrixApp {
         }
 
         this.searchForm = new SearchForm();
-        this.carousel = new StreamCarousel();
+        this.streamList = new StreamList();
         this.configPanel = new ConfigPanel();
 
         this.currentAddress = '';
@@ -93,24 +93,6 @@ class StrixApp {
         document.getElementById('btn-back-to-config').addEventListener('click', () => {
             this.streamAPI.close();
             this.showScreen('config');
-        });
-
-        // Carousel navigation
-        document.getElementById('carousel-prev').addEventListener('click', () => {
-            this.carousel.prev();
-        });
-
-        document.getElementById('carousel-next').addEventListener('click', () => {
-            this.carousel.next();
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            const currentScreen = document.querySelector('.screen.active').id;
-            if (currentScreen === 'screen-discovery') {
-                if (e.key === 'ArrowLeft') this.carousel.prev();
-                if (e.key === 'ArrowRight') this.carousel.next();
-            }
         });
 
         // Screen 4: Configuration output
@@ -303,9 +285,6 @@ class StrixApp {
     resetDiscoveryUI() {
         document.getElementById('progress-fill').style.width = '0%';
         document.getElementById('progress-text').textContent = 'Starting scan...';
-        document.getElementById('stat-tested').textContent = '0';
-        document.getElementById('stat-found').textContent = '0';
-        document.getElementById('stat-remaining').textContent = '0';
         document.getElementById('streams-section').classList.add('hidden');
         this.currentStreams = [];
     }
@@ -316,9 +295,6 @@ class StrixApp {
 
         document.getElementById('progress-fill').style.width = `${percentage}%`;
         document.getElementById('progress-text').textContent = `Testing streams... ${Math.round(percentage)}%`;
-        document.getElementById('stat-tested').textContent = data.tested;
-        document.getElementById('stat-found').textContent = data.found;
-        document.getElementById('stat-remaining').textContent = data.remaining;
     }
 
     handleStreamFound(data) {
@@ -330,8 +306,8 @@ class StrixApp {
             streamsSection.classList.remove('hidden');
         }
 
-        // Update carousel
-        this.carousel.render(this.currentStreams, (stream, index) => {
+        // Update stream list
+        this.streamList.render(this.currentStreams, (stream, index) => {
             this.selectStream(stream, index);
         });
     }
