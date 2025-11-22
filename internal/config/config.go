@@ -73,7 +73,7 @@ func Load() *Config {
 		Server: ServerConfig{
 			Listen:       ":4567", // Default listen address
 			ReadTimeout:  30 * time.Second,
-			WriteTimeout: 30 * time.Second,
+			WriteTimeout: 5 * time.Minute, // Increased for SSE long-polling
 		},
 		Database: DatabaseConfig{
 			DataPath:       dataPath,
