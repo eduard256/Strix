@@ -409,26 +409,20 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 	defer cancelProgress()
 
 	go func() {
-		ticker := time.NewTicker(3 * time.Second)
+		ticker := time.NewTicker(1 * time.Second)
 		defer ticker.Stop()
-
-		lastTested := int32(0)
 
 		for {
 			select {
 			case <-progressCtx.Done():
 				return
 			case <-ticker.C:
-				currentTested := atomic.LoadInt32(&tested)
-				// Only send if there's been progress
-				if currentTested != lastTested {
-					_ = streamWriter.SendJSON("progress", models.ProgressMessage{
-						Tested:    int(currentTested),
-						Found:     int(atomic.LoadInt32(&found)),
-						Remaining: len(streams) - int(currentTested),
-					})
-					lastTested = currentTested
-				}
+				// Send progress every second to prevent WriteTimeout
+				_ = streamWriter.SendJSON("progress", models.ProgressMessage{
+					Tested:    int(atomic.LoadInt32(&tested)),
+					Found:     int(atomic.LoadInt32(&found)),
+					Remaining: len(streams) - int(atomic.LoadInt32(&tested)),
+				})
 			}
 		}
 	}()
