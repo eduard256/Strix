@@ -5,6 +5,41 @@
   "source": "ispyconnect.com",
   "entries": [
     {
+      "models": ["ALL"],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": ["ALL"],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": ["ALL"],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": ["ALL"],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": ["ALL"],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL]"
+    },
+    {
       "models": [
         "040",
         "114w",
