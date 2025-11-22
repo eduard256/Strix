@@ -3866,15 +3866,6 @@
     },
     {
       "models": [
-        "Bullet-4K"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/102/%09rtsp://huntertech:Superuser01!@10.0.55.11:554/Streaming/Channels/101/"
-    },
-    {
-      "models": [
         "CHINA",
         "DS-2CD1141-I",
         "DS-2CD1221-I3",
