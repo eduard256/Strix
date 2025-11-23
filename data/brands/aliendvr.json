@@ -6,6 +6,24 @@
   "entries": [
     {
       "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
         "mega216"
       ],
       "type": "FFMPEG",

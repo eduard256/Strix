@@ -6,6 +6,42 @@
   "entries": [
     {
       "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": [
         "NVR",
         "DVR",
         "H.264",
@@ -219,55 +255,6 @@
       "protocol": "http",
       "port": 0,
       "url": "snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]"
-    },
-    {
-      "models": [
-        "141CS",
-        "151DB",
-        "151de",
-        "151dj",
-        "151DM",
-        "191BS",
-        "2MP",
-        "4MP Bullet",
-        "4MP DOME",
-        "720P",
-        "AC500",
-        "AK-N48PIA0-68DT",
-        "c500",
-        "C800",
-        "DE81GB",
-        "DN41R",
-        "DN81R",
-        "DVR",
-        "DW81KD",
-        "i15dx",
-        "i51dm",
-        "I51DS",
-        "I51DX",
-        "I61BK",
-        "I61DR",
-        "I61FC",
-        "I61G",
-        "I91BD",
-        "I91BF",
-        "I91BM",
-        "I91F",
-        "l51DM",
-        "N481Y",
-        "N48PI",
-        "NC400",
-        "NC800",
-        "NCPT500",
-        "Other",
-        "P01",
-        "POE",
-        "VIEW"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 0,
-      "url": "/Streaming/Channels/101"
     },
     {
       "models": [
@@ -500,39 +487,6 @@
     },
     {
       "models": [
-        "191BS",
-        "AC500",
-        "c800",
-        "C800-4k",
-        "I51DX",
-        "I91BF",
-        "NC800"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/102"
-    },
-    {
-      "models": [
-        "191df"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/channels/102"
-    },
-    {
-      "models": [
-        "191df"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/channels/101"
-    },
-    {
-      "models": [
         "2MP",
         "i21an"
       ],
@@ -658,15 +612,6 @@
       "protocol": "http",
       "port": 80,
       "url": "/cgi-bin/snapshot.cgi?chn=4&u=[USERNAME]&p=[PASSWORD]"
-    },
-    {
-      "models": [
-        "DVR"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 0,
-      "url": "/Streaming/Channels/201"
     },
     {
       "models": [
@@ -851,6 +796,97 @@
       "protocol": "rtsp",
       "port": 0,
       "url": "/h264/ch1/main/av_stream"
+    },
+    {
+      "models": [
+        "141CS",
+        "151DB",
+        "151de",
+        "151dj",
+        "151DM",
+        "191BS",
+        "2MP",
+        "4MP Bullet",
+        "4MP DOME",
+        "720P",
+        "AC500",
+        "AK-N48PIA0-68DT",
+        "c500",
+        "C800",
+        "DE81GB",
+        "DN41R",
+        "DN81R",
+        "DVR",
+        "DW81KD",
+        "i15dx",
+        "i51dm",
+        "I51DS",
+        "I51DX",
+        "I61BK",
+        "I61DR",
+        "I61FC",
+        "I61G",
+        "I91BD",
+        "I91BF",
+        "I91BM",
+        "I91F",
+        "l51DM",
+        "N481Y",
+        "N48PI",
+        "NC400",
+        "NC800",
+        "NCPT500",
+        "Other",
+        "P01",
+        "POE",
+        "VIEW"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "191BS",
+        "AC500",
+        "c800",
+        "C800-4k",
+        "I51DX",
+        "I91BF",
+        "NC800"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "191df"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/102"
+    },
+    {
+      "models": [
+        "191df"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "DVR"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/201"
     }
   ]
 }

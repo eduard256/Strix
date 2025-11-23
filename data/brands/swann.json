@@ -6,6 +6,42 @@
   "entries": [
     {
       "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": [
         "005FTCD",
         "440-IPC",
         "ADS-440",
@@ -590,58 +626,6 @@
     },
     {
       "models": [
-        "7-12",
-        "8ch 3MP NVR",
-        "dv8-3425",
-        "DVR w/ Web Port",
-        "DVR W/ WEB PORT",
-        "DVR4 4350",
-        "DVR8",
-        "DVR8-4900",
-        "DVR8-8050",
-        "DVR8-8075",
-        "HDR8050",
-        "lv-9808",
-        "NHD-850CAM",
-        "NHH-880CAM",
-        "nvr16-7090",
-        "NVR-7200",
-        "Other",
-        "SWIFI-FLOCAM2",
-        "swifi-spotcam",
-        "SWIFI-XTRCAM",
-        "SWWHD-OUTCAM",
-        "T855"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 0,
-      "url": "/Streaming/Channels/101"
-    },
-    {
-      "models": [
-        "880",
-        "DVR4 4350",
-        "DVR8-1500",
-        "DVR8-1525",
-        "DVR8-4500",
-        "DVR8-4900",
-        "HDR8050",
-        "lv-9808",
-        "NHD-850CAM",
-        "nvr16-7090",
-        "NVR-7200",
-        "Other",
-        "SPOTCAM",
-        "WIFI-PT"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 0,
-      "url": "/Streaming/Channels/102"
-    },
-    {
-      "models": [
         "887"
       ],
       "type": "JPEG",
@@ -876,37 +860,6 @@
     },
     {
       "models": [
-        "DVR W/ WEB PORT",
-        "DVR4 4350",
-        "DVR8-8075",
-        "lv-9808",
-        "Other"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 0,
-      "url": "/Streaming/channels/101"
-    },
-    {
-      "models": [
-        "DVR-1500"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/701"
-    },
-    {
-      "models": [
-        "DVR-1500"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/601"
-    },
-    {
-      "models": [
         "DVR4",
         "DVR8-4500"
       ],
@@ -941,15 +894,6 @@
       "protocol": "http",
       "port": 80,
       "url": "/?action=stream"
-    },
-    {
-      "models": [
-        "DVR8-4500"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/301"
     },
     {
       "models": [
@@ -1314,6 +1258,98 @@
       "protocol": "rtsp",
       "port": 0,
       "url": "/Streaming/Channels/2"
+    },
+    {
+      "models": [
+        "7-12",
+        "8ch 3MP NVR",
+        "dv8-3425",
+        "DVR w/ Web Port",
+        "DVR W/ WEB PORT",
+        "DVR4 4350",
+        "DVR8",
+        "DVR8-4900",
+        "DVR8-8050",
+        "DVR8-8075",
+        "HDR8050",
+        "lv-9808",
+        "NHD-850CAM",
+        "NHH-880CAM",
+        "nvr16-7090",
+        "NVR-7200",
+        "Other",
+        "SWIFI-FLOCAM2",
+        "swifi-spotcam",
+        "SWIFI-XTRCAM",
+        "SWWHD-OUTCAM",
+        "T855"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "880",
+        "DVR4 4350",
+        "DVR8-1500",
+        "DVR8-1525",
+        "DVR8-4500",
+        "DVR8-4900",
+        "HDR8050",
+        "lv-9808",
+        "NHD-850CAM",
+        "nvr16-7090",
+        "NVR-7200",
+        "Other",
+        "SPOTCAM",
+        "WIFI-PT"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "DVR W/ WEB PORT",
+        "DVR4 4350",
+        "DVR8-8075",
+        "lv-9808",
+        "Other"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/channels/101"
+    },
+    {
+      "models": [
+        "DVR-1500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/701"
+    },
+    {
+      "models": [
+        "DVR-1500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/601"
+    },
+    {
+      "models": [
+        "DVR8-4500"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/301"
     }
   ]
 }
