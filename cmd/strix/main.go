@@ -20,7 +20,7 @@ import (
 
 const (
 	// Version is the application version
-	Version = "1.0.4"
+	Version = "1.0.7"
 
 	// Banner is the application banner
 	Banner = `
