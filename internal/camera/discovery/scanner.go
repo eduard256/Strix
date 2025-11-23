@@ -302,11 +302,13 @@ func (s *Scanner) collectStreams(ctx context.Context, req models.StreamDiscovery
 			"model", req.Model,
 			"limit", req.ModelLimit)
 
-		// Search for similar models
-		cameras, err := s.searchEngine.SearchByModel(req.Model, 0.8, req.ModelLimit)
+		// Search for cameras using intelligent brand+model search
+		searchResp, err := s.searchEngine.Search(req.Model, req.ModelLimit)
 		if err != nil {
 			s.logger.Error("model search failed", err)
 		} else {
+			cameras := searchResp.Cameras
+
 			// Collect entries from all matching cameras
 			var entries []models.CameraEntry
 			for _, camera := range cameras {
