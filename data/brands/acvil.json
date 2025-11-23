@@ -6,6 +6,24 @@
   "entries": [
     {
       "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL+1]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 0,
+      "url": "/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": [
         "WIFI-5MP-30"
       ],
       "type": "FFMPEG",

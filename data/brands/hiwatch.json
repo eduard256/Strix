@@ -5,35 +5,117 @@
   "source": "ispyconnect.com",
   "entries": [
     {
-      "models": ["ALL"],
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 554,
       "url": "/Streaming/Channels/[CHANNEL]01"
     },
     {
-      "models": ["ALL"],
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL+1]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 554,
       "url": "/Streaming/Channels/[CHANNEL]02"
     },
     {
-      "models": ["ALL"],
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 554,
       "url": "/ISAPI/Streaming/Channels/[CHANNEL]01"
     },
     {
-      "models": ["ALL"],
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL+1]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 554,
       "url": "/ISAPI/Streaming/Channels/[CHANNEL]02"
     },
     {
-      "models": ["ALL"],
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/[CHANNEL]02"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 554,
@@ -81,69 +163,6 @@
       "protocol": "rtsp",
       "port": 554,
       "url": "/Streaming/Channels/1"
-    },
-    {
-      "models": [
-        "ALL",
-        "B220",
-        "C6T",
-        "D110",
-        "DS-H216Q",
-        "DS-I102",
-        "DS-I113",
-        "DS-I114",
-        "DS-I114W",
-        "DS-i126",
-        "ds-i200",
-        "DS-I200(D)",
-        "ds-i203",
-        "DS-I213",
-        "ds-i214",
-        "DS-I214(B)",
-        "ds-i214w(b)",
-        "ds-i223",
-        "DS-I400(C)",
-        "ds-l122",
-        "ds-n241w",
-        "i100",
-        "i110",
-        "I114",
-        "i114w",
-        "I120",
-        "IPC-B120-I",
-        "IPC-B140",
-        "IPC-B622-G2/ZS",
-        "IPC-D082-G2/S",
-        "IPC-D120",
-        "IPC-T640-Z",
-        "l110",
-        "Other",
-        "VDP-D2201",
-        "VDP-D2211W(B)",
-        "watch"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/Streaming/Channels/101"
-    },
-    {
-      "models": [
-        "ALL",
-        "DS-I102",
-        "ds-i200",
-        "Ds-i203",
-        "DS-I214(B)",
-        "DS-I214W(B)",
-        "DS-I253",
-        "ds-i458",
-        "HiWatch DS-N208(C)",
-        "i450s"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/ISAPI/Streaming/Channels/101"
     },
     {
       "models": [
@@ -258,32 +277,12 @@
     },
     {
       "models": [
-        "ds-i200",
-        "VDP-D2201"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 555,
-      "url": "/Streaming/Channels/102"
-    },
-    {
-      "models": [
         "Ds-i203"
       ],
       "type": "FFMPEG",
       "protocol": "rtsp",
       "port": 8000,
       "url": "/"
-    },
-    {
-      "models": [
-        "DS-I214(B)",
-        "DS-I405"
-      ],
-      "type": "FFMPEG",
-      "protocol": "rtsp",
-      "port": 554,
-      "url": "/ISAPI/Streaming/Channels/102"
     },
     {
       "models": [
@@ -345,6 +344,89 @@
       "protocol": "rtsp",
       "port": 554,
       "url": "/onvif1"
+    },
+    {
+      "models": [
+        "ALL",
+        "B220",
+        "C6T",
+        "D110",
+        "DS-H216Q",
+        "DS-I102",
+        "DS-I113",
+        "DS-I114",
+        "DS-I114W",
+        "DS-i126",
+        "ds-i200",
+        "DS-I200(D)",
+        "ds-i203",
+        "DS-I213",
+        "ds-i214",
+        "DS-I214(B)",
+        "ds-i214w(b)",
+        "ds-i223",
+        "DS-I400(C)",
+        "ds-l122",
+        "ds-n241w",
+        "i100",
+        "i110",
+        "I114",
+        "i114w",
+        "I120",
+        "IPC-B120-I",
+        "IPC-B140",
+        "IPC-B622-G2/ZS",
+        "IPC-D082-G2/S",
+        "IPC-D120",
+        "IPC-T640-Z",
+        "l110",
+        "Other",
+        "VDP-D2201",
+        "VDP-D2211W(B)",
+        "watch"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ALL",
+        "DS-I102",
+        "ds-i200",
+        "Ds-i203",
+        "DS-I214(B)",
+        "DS-I214W(B)",
+        "DS-I253",
+        "ds-i458",
+        "HiWatch DS-N208(C)",
+        "i450s"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/101"
+    },
+    {
+      "models": [
+        "ds-i200",
+        "VDP-D2201"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 555,
+      "url": "/Streaming/Channels/102"
+    },
+    {
+      "models": [
+        "DS-I214(B)",
+        "DS-I405"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 554,
+      "url": "/ISAPI/Streaming/Channels/102"
     }
   ]
 }

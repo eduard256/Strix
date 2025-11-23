@@ -6,6 +6,24 @@
   "entries": [
     {
       "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/Channels/[CHANNEL+1]01"
+    },
+    {
+      "models": [
+        "ALL"
+      ],
+      "type": "FFMPEG",
+      "protocol": "rtsp",
+      "port": 10554,
+      "url": "/Streaming/Channels/[CHANNEL]01"
+    },
+    {
+      "models": [
         "801",
         "HR06-E TH",
         "Other"

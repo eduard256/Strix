@@ -32,6 +32,54 @@
     "model_count": 9998
   },
   {
+    "url": "/Streaming/Channels/[CHANNEL+1]01",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision main stream - 0-based channel input (channel 0 -> 101, 1 -> 201)",
+    "model_count": 9500
+  },
+  {
+    "url": "/Streaming/Channels/[CHANNEL]01",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision main stream - 1-based channel input (channel 1 -> 101, 2 -> 201)",
+    "model_count": 9490
+  },
+  {
+    "url": "/Streaming/Channels/[CHANNEL+1]02",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision sub stream - 0-based channel input (channel 0 -> 102, 1 -> 202)",
+    "model_count": 9480
+  },
+  {
+    "url": "/Streaming/Channels/[CHANNEL]02",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision sub stream - 1-based channel input (channel 1 -> 102, 2 -> 202)",
+    "model_count": 9470
+  },
+  {
+    "url": "/Streaming/Channels/[CHANNEL+1]03",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision third stream - 0-based channel input (channel 0 -> 103, 1 -> 203)",
+    "model_count": 9460
+  },
+  {
+    "url": "/Streaming/Channels/[CHANNEL]03",
+    "type": "FFMPEG",
+    "protocol": "rtsp",
+    "port": 554,
+    "notes": "Hikvision third stream - 1-based channel input (channel 1 -> 103, 2 -> 203)",
+    "model_count": 9450
+  },
+  {
     "url": "/ch2",
     "type": "FFMPEG",
     "protocol": "rtsp",

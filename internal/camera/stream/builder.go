@@ -174,34 +174,38 @@ func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 
 	// Common placeholders
 	replacements := map[string]string{
-		"[CHANNEL]":  strconv.Itoa(ctx.Channel),
-		"[channel]":  strconv.Itoa(ctx.Channel),
-		"{channel}":  strconv.Itoa(ctx.Channel), // BUBBLE protocol uses {channel}
-		"{CHANNEL}":  strconv.Itoa(ctx.Channel),
-		"[WIDTH]":    strconv.Itoa(ctx.Width),
-		"[width]":    strconv.Itoa(ctx.Width),
-		"[HEIGHT]":   strconv.Itoa(ctx.Height),
-		"[height]":   strconv.Itoa(ctx.Height),
-		"[USERNAME]": ctx.Username,
-		"[username]": ctx.Username,
-		"[PASSWORD]": ctx.Password,
-		"[password]": ctx.Password,
-		"[PASWORD]":  ctx.Password, // Handle typo in database
-		"[pasword]":  ctx.Password,
-		"[USER]":     ctx.Username,
-		"[user]":     ctx.Username,
-		"[PASS]":     ctx.Password,
-		"[pass]":     ctx.Password,
-		"[PWD]":      ctx.Password,
-		"[pwd]":      ctx.Password,
-		"[IP]":       ctx.IP,
-		"[ip]":       ctx.IP,
-		"[PORT]":     strconv.Itoa(ctx.Port),
-		"[port]":     strconv.Itoa(ctx.Port),
-		"[AUTH]":     auth, // base64(username:password) for basic auth
-		"[auth]":     auth,
-		"[TOKEN]":    "", // Empty for now
-		"[token]":    "",
+		"[CHANNEL]":   strconv.Itoa(ctx.Channel),
+		"[channel]":   strconv.Itoa(ctx.Channel),
+		"[CHANNEL+1]": strconv.Itoa(ctx.Channel + 1), // For Hikvision-style channels (101, 201, 301...)
+		"[channel+1]": strconv.Itoa(ctx.Channel + 1),
+		"{CHANNEL}":   strconv.Itoa(ctx.Channel),     // BUBBLE protocol uses {channel}
+		"{channel}":   strconv.Itoa(ctx.Channel),
+		"{CHANNEL+1}": strconv.Itoa(ctx.Channel + 1),
+		"{channel+1}": strconv.Itoa(ctx.Channel + 1),
+		"[WIDTH]":     strconv.Itoa(ctx.Width),
+		"[width]":     strconv.Itoa(ctx.Width),
+		"[HEIGHT]":    strconv.Itoa(ctx.Height),
+		"[height]":    strconv.Itoa(ctx.Height),
+		"[USERNAME]":  ctx.Username,
+		"[username]":  ctx.Username,
+		"[PASSWORD]":  ctx.Password,
+		"[password]":  ctx.Password,
+		"[PASWORD]":   ctx.Password, // Handle typo in database
+		"[pasword]":   ctx.Password,
+		"[USER]":      ctx.Username,
+		"[user]":      ctx.Username,
+		"[PASS]":      ctx.Password,
+		"[pass]":      ctx.Password,
+		"[PWD]":       ctx.Password,
+		"[pwd]":       ctx.Password,
+		"[IP]":        ctx.IP,
+		"[ip]":        ctx.IP,
+		"[PORT]":      strconv.Itoa(ctx.Port),
+		"[port]":      strconv.Itoa(ctx.Port),
+		"[AUTH]":      auth, // base64(username:password) for basic auth
+		"[auth]":      auth,
+		"[TOKEN]":     "", // Empty for now
+		"[token]":     "",
 	}
 
 	// Replace all placeholders
