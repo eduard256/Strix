@@ -7,9 +7,7 @@ services:
     # build: .
     container_name: strix
     restart: unless-stopped
-
-    ports:
-      - "4567:4567"
+    network_mode: host
 
     environment:
       # Logging configuration

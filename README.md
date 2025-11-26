@@ -38,7 +38,7 @@
 ### Ubuntu / Debian
 
 ```bash
-sudo apt update && command -v docker >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sudo sh && docker run -d --name strix -p 4567:4567 --restart unless-stopped eduard256/strix:latest
+sudo apt update && command -v docker >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sudo sh && docker run -d --name strix --network host --restart unless-stopped eduard256/strix:latest
 ```
 
 Open **http://YOUR_SERVER_IP:4567**
