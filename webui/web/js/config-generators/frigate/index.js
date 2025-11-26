@@ -253,6 +253,15 @@ export class FrigateGenerator {
     }
 
     /**
+     * Build RTSP path with optional ?mp4 suffix for BUBBLE streams
+     */
+    static buildRtspPath(streamName, streamType) {
+        const basePath = `rtsp://127.0.0.1:8554/${streamName}`;
+        // Add ?mp4 parameter only for BUBBLE streams to enable recording in Frigate
+        return streamType === 'BUBBLE' ? `${basePath}?mp4` : basePath;
+    }
+
+    /**
      * Generate camera lines for cameras section
      */
     static generateCameraLines(cameraInfo) {
@@ -264,11 +273,14 @@ export class FrigateGenerator {
 
         if (cameraInfo.subStream) {
             // Use sub for detect, main for record
-            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.subStreamName}`);
+            const subPath = this.buildRtspPath(cameraInfo.subStreamName, cameraInfo.subStream.type);
+            const mainPath = this.buildRtspPath(cameraInfo.mainStreamName, cameraInfo.mainStream.type);
+
+            lines.push(`        - path: ${subPath}`);
             lines.push('          input_args: preset-rtsp-restream');
             lines.push('          roles:');
             lines.push('            - detect');
-            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.mainStreamName}`);
+            lines.push(`        - path: ${mainPath}`);
             lines.push('          input_args: preset-rtsp-restream');
             lines.push('          roles:');
             lines.push('            - record');
@@ -280,7 +292,9 @@ export class FrigateGenerator {
             lines.push(`        Sub Stream: ${cameraInfo.subStreamName}      # Низкое разрешение (опционально)`);
         } else {
             // Use main for both detect and record
-            lines.push(`        - path: rtsp://127.0.0.1:8554/${cameraInfo.mainStreamName}`);
+            const mainPath = this.buildRtspPath(cameraInfo.mainStreamName, cameraInfo.mainStream.type);
+
+            lines.push(`        - path: ${mainPath}`);
             lines.push('          input_args: preset-rtsp-restream');
             lines.push('          roles:');
             lines.push('            - detect');
