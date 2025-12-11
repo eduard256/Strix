@@ -315,6 +315,11 @@ class StrixApp {
         document.getElementById('progress-text').textContent = 'Starting scan...';
         document.getElementById('streams-section').classList.add('hidden');
         this.currentStreams = [];
+        // Reset stream list state for fresh discovery
+        this.streamList.selectionMode = 'main';
+        this.streamList.collapsedGroups.clear();
+        this.streamList.collapsedSubgroups.clear();
+        this.streamList.needsSmartDefaults = true;
     }
 
     handleProgress(data) {
@@ -334,7 +339,7 @@ class StrixApp {
             streamsSection.classList.remove('hidden');
         }
 
-        // Update stream list
+        // Update stream list (smart defaults applied automatically on first render)
         this.streamList.render(this.currentStreams, (stream, index) => {
             this.selectStream(stream, index);
         });
@@ -390,6 +395,12 @@ class StrixApp {
         // Clear Frigate output section (but NOT the user's input textarea)
         document.getElementById('frigate-output-section').classList.add('hidden');
         document.getElementById('config-frigate').textContent = '';
+
+        // Set stream list to sub selection mode (will collapse Main, show Sub)
+        this.streamList.setSelectionMode('sub');
+        this.streamList.render(this.currentStreams, (stream, index) => {
+            this.selectStream(stream, index);
+        });
 
         showToast('Select a sub stream from available streams');
         this.showScreen('discovery');

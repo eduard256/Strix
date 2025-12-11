@@ -411,7 +411,14 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 	defer cancelProgress()
 
 	go func() {
-		ticker := time.NewTicker(1 * time.Second)
+		// Use longer interval for Ingress mode to reduce traffic (padding is ~64KB per event)
+		// Normal mode: 1 second, Ingress mode: 3 seconds
+		progressInterval := 1 * time.Second
+		if streamWriter.IsIngress() {
+			progressInterval = 3 * time.Second
+		}
+
+		ticker := time.NewTicker(progressInterval)
 		defer ticker.Stop()
 
 		for {
@@ -419,7 +426,7 @@ func (s *Scanner) testStreamsConcurrently(ctx context.Context, streams []models.
 			case <-progressCtx.Done():
 				return
 			case <-ticker.C:
-				// Send progress every second to prevent WriteTimeout
+				// Send progress to prevent WriteTimeout and show scanning activity
 				_ = streamWriter.SendJSON("progress", models.ProgressMessage{
 					Tested:    int(atomic.LoadInt32(&tested)),
 					Found:     int(atomic.LoadInt32(&found)),
