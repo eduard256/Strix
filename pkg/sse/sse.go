@@ -5,7 +5,18 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 	"time"
+)
+
+const (
+	// IngressPaddingSize is the padding size for Home Assistant Ingress mode.
+	// HA Supervisor uses aiohttp with 64KB buffer for StreamResponse.
+	// We need to fill this buffer to force immediate delivery of SSE events.
+	IngressPaddingSize = 64 * 1024 // 64KB
+
+	// IngressHeader is the header that Home Assistant Ingress adds to requests
+	IngressHeader = "X-Ingress-Path"
 )
 
 // Event represents a Server-Sent Event
@@ -253,8 +264,9 @@ func generateClientID() string {
 
 // StreamWriter provides a simple interface for writing SSE events
 type StreamWriter struct {
-	client *Client
-	server *Server
+	client    *Client
+	server    *Server
+	isIngress bool // True when running through Home Assistant Ingress proxy
 }
 
 // NewStreamWriter creates a new stream writer for a client
@@ -275,6 +287,9 @@ func (s *Server) NewStreamWriter(w http.ResponseWriter, r *http.Request) (*Strea
 	// Send initial flush to establish connection
 	flusher.Flush()
 
+	// Detect Home Assistant Ingress mode by checking for X-Ingress-Path header
+	isIngress := r.Header.Get(IngressHeader) != ""
+
 	// Create client
 	ctx, cancel := context.WithCancel(r.Context())
 	client := &Client{
@@ -287,8 +302,9 @@ func (s *Server) NewStreamWriter(w http.ResponseWriter, r *http.Request) (*Strea
 	}
 
 	return &StreamWriter{
-		client: client,
-		server: s,
+		client:    client,
+		server:    s,
+		isIngress: isIngress,
 	}, nil
 }
 
@@ -304,12 +320,58 @@ func (sw *StreamWriter) SendEvent(eventType string, data interface{}) error {
 		return fmt.Errorf("response does not support flushing")
 	}
 
-	return sw.server.writeEvent(sw.client.Response, flusher, event)
+	// Use Ingress-aware write method
+	return sw.writeEventWithIngress(sw.client.Response, flusher, event)
+}
+
+// writeEventWithIngress writes an event and adds padding for Ingress mode
+func (sw *StreamWriter) writeEventWithIngress(w http.ResponseWriter, flusher http.Flusher, event Event) error {
+	// Write the event using standard method
+	if err := sw.server.writeEvent(w, flusher, event); err != nil {
+		return err
+	}
+
+	// In Ingress mode, add padding to fill the 64KB buffer and force immediate delivery
+	if sw.isIngress {
+		if err := sw.writePadding(w, flusher); err != nil {
+			return err
+		}
+	}
+
+	return nil
+}
+
+// writePadding writes SSE comment padding to fill proxy buffers.
+// SSE comments (lines starting with ':') are ignored by clients.
+func (sw *StreamWriter) writePadding(w http.ResponseWriter, flusher http.Flusher) error {
+	// Create padding using SSE comments which are ignored by clients
+	// Each line is ": " + padding content + "\n"
+	// We need ~64KB to fill the aiohttp StreamResponse buffer
+	const lineSize = 1024 // 1KB per line
+	const numLines = 64   // 64 lines = 64KB
+
+	paddingLine := ": " + strings.Repeat(".", lineSize-4) + "\n" // -4 for ": " and "\n"
+
+	for i := 0; i < numLines; i++ {
+		if _, err := fmt.Fprint(w, paddingLine); err != nil {
+			return err
+		}
+	}
+
+	// Flush the padding
+	flusher.Flush()
+
+	return nil
 }
 
 // SendJSON sends JSON data as an event
 func (sw *StreamWriter) SendJSON(eventType string, v interface{}) error {
 	return sw.SendEvent(eventType, v)
+}
+
+// IsIngress returns true if running through Home Assistant Ingress proxy
+func (sw *StreamWriter) IsIngress() bool {
+	return sw.isIngress
 }
 
 // SendMessage sends a simple message
