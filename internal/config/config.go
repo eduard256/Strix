@@ -33,6 +33,7 @@ type DatabaseConfig struct {
 	BrandsPath     string
 	PatternsPath   string
 	ParametersPath string
+	OUIPath        string
 	CacheEnabled   bool
 	CacheTTL       time.Duration
 }
@@ -80,6 +81,7 @@ func Load() *Config {
 			BrandsPath:     filepath.Join(dataPath, "brands"),
 			PatternsPath:   filepath.Join(dataPath, "popular_stream_patterns.json"),
 			ParametersPath: filepath.Join(dataPath, "query_parameters.json"),
+			OUIPath:        filepath.Join(dataPath, "camera_oui.json"),
 			CacheEnabled:   true,
 			CacheTTL:       5 * time.Minute,
 		},

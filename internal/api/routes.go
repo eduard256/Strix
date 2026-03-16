@@ -20,6 +20,7 @@ type Server struct {
 	loader       *database.Loader
 	searchEngine *database.SearchEngine
 	scanner      *discovery.Scanner
+	probeService *discovery.ProbeService
 	sseServer    *sse.Server
 	logger       interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) }
 }
@@ -75,6 +76,22 @@ func NewServer(
 	// Initialize SSE server
 	sseServer := sse.NewServer(logger)
 
+	// Initialize OUI database for vendor identification
+	ouiDB := discovery.NewOUIDatabase()
+	if err := ouiDB.LoadFromFile(cfg.Database.OUIPath); err != nil {
+		logger.Error("failed to load OUI database, vendor lookup will be unavailable", err)
+	} else {
+		logger.Info("OUI database loaded", "entries", ouiDB.Size())
+	}
+
+	// Initialize ProbeService with all probers
+	probers := []discovery.Prober{
+		&discovery.DNSProber{},
+		discovery.NewARPProber(ouiDB),
+		&discovery.MDNSProber{},
+	}
+	probeService := discovery.NewProbeService(probers, logger)
+
 	// Create server
 	server := &Server{
 		router:       chi.NewRouter(),
@@ -82,6 +99,7 @@ func NewServer(
 		loader:       loader,
 		searchEngine: searchEngine,
 		scanner:      scanner,
+		probeService: probeService,
 		sseServer:    sseServer,
 		logger:       logger,
 	}
@@ -127,6 +145,9 @@ func (s *Server) setupRoutes() {
 
 	// Stream discovery (SSE)
 	s.router.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.logger).ServeHTTP)
+
+	// Device probe (ping + DNS + ARP/OUI + mDNS)
+	s.router.Get("/probe", handlers.NewProbeHandler(s.probeService, s.logger).ServeHTTP)
 }
 
 // ServeHTTP implements http.Handler
