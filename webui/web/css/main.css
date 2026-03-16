@@ -1093,6 +1093,70 @@ body {
     display: none;
 }
 
+/* ===== MODAL ===== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    padding: var(--space-4);
+}
+
+.modal-overlay.show {
+    opacity: 1;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: var(--space-8);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+    transform: scale(0.95);
+    transition: transform var(--transition-base);
+    text-align: center;
+}
+
+.modal-overlay.show .modal {
+    transform: scale(1);
+}
+
+.modal-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--error);
+    margin-bottom: var(--space-4);
+}
+
+.modal-message {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-8);
+    line-height: 1.6;
+}
+
+.modal-actions {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.modal-actions .btn {
+    flex: 1;
+    padding: var(--space-4);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
     from {
