@@ -146,6 +146,10 @@ func (s *ProbeService) Probe(ctx context.Context, ip string) *models.ProbeRespon
 			if v, ok := r.data.(*models.MDNSProbeResult); ok {
 				response.Probes.MDNS = v
 			}
+		case "http":
+			if v, ok := r.data.(*models.HTTPProbeResult); ok {
+				response.Probes.HTTP = v
+			}
 		}
 	}
 

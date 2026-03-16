@@ -89,6 +89,7 @@ func NewServer(
 		&discovery.DNSProber{},
 		discovery.NewARPProber(ouiDB),
 		&discovery.MDNSProber{},
+		&discovery.HTTPProber{},
 	}
 	probeService := discovery.NewProbeService(probers, logger)
 

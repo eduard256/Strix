@@ -20,6 +20,14 @@ type ProbeResults struct {
 	DNS  *DNSProbeResult  `json:"dns"`
 	ARP  *ARPProbeResult  `json:"arp"`
 	MDNS *MDNSProbeResult `json:"mdns"`
+	HTTP *HTTPProbeResult `json:"http"`
+}
+
+// HTTPProbeResult contains HTTP server identification from port 80.
+type HTTPProbeResult struct {
+	Port       int    `json:"port"`
+	StatusCode int    `json:"status_code"`
+	Server     string `json:"server"`
 }
 
 // DNSProbeResult contains reverse DNS lookup result.
