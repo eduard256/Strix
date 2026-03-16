@@ -49,9 +49,7 @@ Open **http://YOUR_SERVER_IP:4567**
 sudo apt update && command -v docker >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sudo sh && command -v docker-compose >/dev/null 2>&1 || { sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose; } && curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.yml -o docker-compose.yml && docker-compose up -d
 ```
 
-### Home Assistant Add-on (Beta)
-
-⚠️ **Status:** Experimental (SSE has bugs, Docker recommended)
+### Home Assistant Add-on
 
 **Installation:**
 
@@ -62,10 +60,6 @@ sudo apt update && command -v docker >/dev/null 2>&1 || curl -fsSL https://get.d
 5. Click **Install**
 6. Enable **"Start on boot"** and **"Show in sidebar"**
 7. Click **Start**
-
-**Known Issues:**
-- Real-time progress may not display (Ingress SSE limitation)
-- Use Docker installation for better experience
 
 ---
 
