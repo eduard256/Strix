@@ -87,6 +87,12 @@ class StrixApp {
 
         // Screen 2: Configuration form
         document.getElementById('btn-back-to-address').addEventListener('click', () => {
+            // Clear probe-filled fields so stale data doesn't persist
+            document.getElementById('camera-model').value = '';
+            document.getElementById('camera-model').disabled = false;
+            document.getElementById('camera-model').placeholder = 'Start typing...';
+            document.getElementById('model-disabled-hint').classList.add('hidden');
+            this.probeResult = null;
             this.showScreen('address');
         });
 

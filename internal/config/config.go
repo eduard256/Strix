@@ -1,6 +1,7 @@
 package config
 
 import (
+	"encoding/json"
 	"fmt"
 	"log/slog"
 	"os"
@@ -14,6 +15,7 @@ import (
 
 // Config holds application configuration
 type Config struct {
+	Version  string // Application version, set by caller after Load()
 	Server   ServerConfig
 	Database DatabaseConfig
 	Scanner  ScannerConfig
@@ -104,8 +106,14 @@ func Load() *Config {
 		},
 	}
 
-	// Load from strix.yaml if exists
+	// Load from Home Assistant options.json if running as HA add-on
+	// Priority: defaults < HA options < strix.yaml < ENV
 	configSource := "default"
+	if err := loadHAOptions(cfg); err == nil {
+		configSource = "/data/options.json (Home Assistant)"
+	}
+
+	// Load from strix.yaml if exists (overrides HA options)
 	if err := loadYAML(cfg); err == nil {
 		configSource = "strix.yaml"
 	}
@@ -146,6 +154,42 @@ func loadYAML(cfg *Config) error {
 	if yamlCfg.API.Listen != "" {
 		cfg.Server.Listen = yamlCfg.API.Listen
 	}
+
+	return nil
+}
+
+// haOptions represents the structure of Home Assistant /data/options.json.
+// When Strix runs as a Home Assistant add-on, HA creates this file from the
+// add-on configuration UI. Fields are optional -- zero values are ignored.
+type haOptions struct {
+	LogLevel string `json:"log_level"`
+	Port     int    `json:"port"`
+}
+
+// loadHAOptions loads configuration from Home Assistant's /data/options.json.
+// This file only exists when running inside the HA add-on environment.
+// Returns an error if the file doesn't exist or can't be parsed (callers
+// should treat errors as "not running in HA" and silently continue).
+func loadHAOptions(cfg *Config) error {
+	data, err := os.ReadFile("/data/options.json")
+	if err != nil {
+		return err
+	}
+
+	var opts haOptions
+	if err := json.Unmarshal(data, &opts); err != nil {
+		return fmt.Errorf("failed to parse /data/options.json: %w", err)
+	}
+
+	if opts.LogLevel != "" {
+		cfg.Logger.Level = opts.LogLevel
+	}
+	if opts.Port > 0 {
+		cfg.Server.Listen = fmt.Sprintf(":%d", opts.Port)
+	}
+
+	// Home Assistant add-on always uses JSON logging for the HA log viewer
+	cfg.Logger.Format = "json"
 
 	return nil
 }

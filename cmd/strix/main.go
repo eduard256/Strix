@@ -18,12 +18,12 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-const (
-	// Version is the application version
-	Version = "1.0.9"
+// Version is set at build time via ldflags:
+//
+//	go build -ldflags="-X main.Version=1.0.10" ./cmd/strix
+var Version = "dev"
 
-	// Banner is the application banner
-	Banner = `
+const Banner = `
 ███████╗████████╗██████╗ ██╗██╗  ██╗
 ██╔════╝╚══██╔══╝██╔══██╗██║╚██╗██╔╝
 ███████╗   ██║   ██████╔╝██║ ╚███╔╝
@@ -34,7 +34,6 @@ const (
 Smart IP Camera Stream Discovery System
 Version: %s
 `
-)
 
 func main() {
 	// Print banner
@@ -43,6 +42,7 @@ func main() {
 
 	// Load configuration
 	cfg := config.Load()
+	cfg.Version = Version
 
 	// Setup logger
 	slogger := cfg.SetupLogger()

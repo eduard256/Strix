@@ -139,7 +139,7 @@ func (s *Server) setupRoutes() {
 
 	// API routes (mounted at /api/v1 in main.go)
 	// Health check
-	s.router.Get("/health", handlers.NewHealthHandler("1.0.0", s.logger).ServeHTTP)
+	s.router.Get("/health", handlers.NewHealthHandler(s.config.Version, s.logger).ServeHTTP)
 
 	// Camera search
 	s.router.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
