@@ -4,6 +4,8 @@
 # Stage 1: Builder
 FROM golang:1.24-alpine AS builder
 
+ARG VERSION=dev
+
 WORKDIR /build
 
 # Install build dependencies
@@ -18,7 +20,7 @@ COPY . .
 
 # Build static binary
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=${TARGETARCH} go build \
-    -ldflags="-s -w -X main.Version=docker" \
+    -ldflags="-s -w -X main.Version=${VERSION}" \
     -o strix \
     cmd/strix/main.go
 

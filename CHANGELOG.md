@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.10] - 2026-03-17
+
+### Added
+- Device probe endpoint (GET /api/v1/probe) for network device inspection
+- HTTP prober for detecting camera web interfaces
+- mDNS discovery for local network devices
+- ARP/OUI vendor identification with camera OUI database (2,400+ entries)
+- Probe integration into frontend with modal UI
+- Added Trassir and ZOSI to OUI database
+
+### Changed
+- Removed CI/CD pipelines (GitHub Actions), replaced with local Docker builds
+- Removed GoReleaser, unified Docker image for Docker Hub and HA add-on
+- Application version now injected at build time via ldflags
+- HA add-on reads /data/options.json natively (no more entrypoint script)
+- Optimized mDNS discovery timeout
+
+### Fixed
+- Removed experimental SSE warning from Home Assistant Add-on documentation
+- Clear probe-filled fields when navigating back in frontend
+
 ## [1.0.9] - 2025-12-11
 
 ### Fixed

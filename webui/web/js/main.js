@@ -1,5 +1,6 @@
 import { CameraSearchAPI } from './api/camera-search.js';
 import { StreamDiscoveryAPI } from './api/stream-discovery.js';
+import { ProbeAPI } from './api/probe.js';
 import { MockCameraAPI } from './mock/mock-camera-api.js';
 import { MockStreamAPI } from './mock/mock-stream-api.js';
 import { SearchForm } from './ui/search-form.js';
@@ -7,6 +8,7 @@ import { StreamList } from './ui/stream-list.js';
 import { ConfigPanel } from './ui/config-panel.js';
 import { FrigateGenerator } from './config-generators/frigate/index.js';
 import { showToast } from './utils/toast.js';
+import { showModal } from './ui/modal.js';
 
 class StrixApp {
     constructor() {
@@ -28,6 +30,9 @@ class StrixApp {
             this.cameraAPI = new CameraSearchAPI();
             this.streamAPI = new StreamDiscoveryAPI();
         }
+
+        this.probeAPI = new ProbeAPI();
+        this.probeResult = null;
 
         this.searchForm = new SearchForm();
         this.streamList = new StreamList();
@@ -82,6 +87,12 @@ class StrixApp {
 
         // Screen 2: Configuration form
         document.getElementById('btn-back-to-address').addEventListener('click', () => {
+            // Clear probe-filled fields so stale data doesn't persist
+            document.getElementById('camera-model').value = '';
+            document.getElementById('camera-model').disabled = false;
+            document.getElementById('camera-model').placeholder = 'Start typing...';
+            document.getElementById('model-disabled-hint').classList.add('hidden');
+            this.probeResult = null;
             this.showScreen('address');
         });
 
@@ -170,7 +181,88 @@ class StrixApp {
             document.getElementById('address-validated').value = address;
         }
 
-        this.showScreen('config');
+        // Extract IP for probe (from full URL or raw input)
+        const probeIP = this.extractIPForProbe(address);
+
+        // Probe the device before proceeding
+        const btn = document.getElementById('btn-check-address');
+        const originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Checking...';
+
+        try {
+            this.probeResult = await this.probeAPI.probe(probeIP);
+
+            if (this.probeResult.reachable) {
+                // Auto-fill vendor into Camera Model if found
+                if (this.probeResult.probes.arp && this.probeResult.probes.arp.vendor) {
+                    const modelInput = document.getElementById('camera-model');
+                    if (!modelInput.disabled && !modelInput.value) {
+                        modelInput.value = this.probeResult.probes.arp.vendor;
+                    }
+                }
+
+                this.showScreen('config');
+            } else {
+                // Device unreachable -- show modal
+                const result = await showModal({
+                    title: 'Device Unreachable',
+                    message: `The device at ${probeIP} is not responding. It may be offline, on a different network, or the IP address may be incorrect.`,
+                    buttons: [
+                        { id: 'change', label: 'Change IP', style: 'primary' },
+                        { id: 'continue', label: 'Continue Anyway', style: 'outline' }
+                    ]
+                });
+
+                if (result === 'continue') {
+                    this.showScreen('config');
+                } else {
+                    // 'change' or null (overlay click) -- stay on address screen
+                    input.focus();
+                    input.select();
+                }
+            }
+        } catch (error) {
+            // Network/server error -- show modal
+            const result = await showModal({
+                title: 'Connection Error',
+                message: `Could not check the device: ${error.message}`,
+                buttons: [
+                    { id: 'change', label: 'Change IP', style: 'primary' },
+                    { id: 'continue', label: 'Continue Anyway', style: 'outline' }
+                ]
+            });
+
+            if (result === 'continue') {
+                this.showScreen('config');
+            } else {
+                input.focus();
+            }
+        } finally {
+            btn.disabled = false;
+            btn.textContent = originalText;
+        }
+    }
+
+    /**
+     * Extract IP address from input for probe API call.
+     * Handles plain IPs and full URLs like rtsp://user:pass@192.168.1.50/stream
+     */
+    extractIPForProbe(address) {
+        if (this.isFullURL(address)) {
+            try {
+                const urlObj = new URL(address);
+                return urlObj.hostname;
+            } catch (e) {
+                return address;
+            }
+        }
+        // Remove port if present (e.g., "192.168.1.50:554")
+        const colonIndex = address.lastIndexOf(':');
+        if (colonIndex > 0) {
+            return address.substring(0, colonIndex);
+        }
+        return address;
     }
 
     isFullURL(str) {

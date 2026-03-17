@@ -20,6 +20,7 @@ type Server struct {
 	loader       *database.Loader
 	searchEngine *database.SearchEngine
 	scanner      *discovery.Scanner
+	probeService *discovery.ProbeService
 	sseServer    *sse.Server
 	logger       interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) }
 }
@@ -75,6 +76,23 @@ func NewServer(
 	// Initialize SSE server
 	sseServer := sse.NewServer(logger)
 
+	// Initialize OUI database for vendor identification
+	ouiDB := discovery.NewOUIDatabase()
+	if err := ouiDB.LoadFromFile(cfg.Database.OUIPath); err != nil {
+		logger.Error("failed to load OUI database, vendor lookup will be unavailable", err)
+	} else {
+		logger.Info("OUI database loaded", "entries", ouiDB.Size())
+	}
+
+	// Initialize ProbeService with all probers
+	probers := []discovery.Prober{
+		&discovery.DNSProber{},
+		discovery.NewARPProber(ouiDB),
+		&discovery.MDNSProber{},
+		&discovery.HTTPProber{},
+	}
+	probeService := discovery.NewProbeService(probers, logger)
+
 	// Create server
 	server := &Server{
 		router:       chi.NewRouter(),
@@ -82,6 +100,7 @@ func NewServer(
 		loader:       loader,
 		searchEngine: searchEngine,
 		scanner:      scanner,
+		probeService: probeService,
 		sseServer:    sseServer,
 		logger:       logger,
 	}
@@ -120,13 +139,16 @@ func (s *Server) setupRoutes() {
 
 	// API routes (mounted at /api/v1 in main.go)
 	// Health check
-	s.router.Get("/health", handlers.NewHealthHandler("1.0.0", s.logger).ServeHTTP)
+	s.router.Get("/health", handlers.NewHealthHandler(s.config.Version, s.logger).ServeHTTP)
 
 	// Camera search
 	s.router.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
 
 	// Stream discovery (SSE)
 	s.router.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.logger).ServeHTTP)
+
+	// Device probe (ping + DNS + ARP/OUI + mDNS)
+	s.router.Get("/probe", handlers.NewProbeHandler(s.probeService, s.logger).ServeHTTP)
 }
 
 // ServeHTTP implements http.Handler
