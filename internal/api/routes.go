@@ -138,8 +138,10 @@ func (s *Server) setupRoutes() {
 	})
 
 	// API routes (mounted at /api/v1 in main.go)
-	// Health check
-	s.router.Get("/health", handlers.NewHealthHandler(s.config.Version, s.logger).ServeHTTP)
+	// Health check (GET + HEAD for Docker/CasaOS healthcheck compatibility)
+	healthHandler := handlers.NewHealthHandler(s.config.Version, s.logger).ServeHTTP
+	s.router.Get("/health", healthHandler)
+	s.router.Head("/health", healthHandler)
 
 	// Camera search
 	s.router.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
