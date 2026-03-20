@@ -10,6 +10,7 @@ import (
 	"github.com/eduard256/Strix/internal/camera/discovery"
 	"github.com/eduard256/Strix/internal/camera/stream"
 	"github.com/eduard256/Strix/internal/config"
+	logutil "github.com/eduard256/Strix/internal/utils/logger"
 	"github.com/eduard256/Strix/pkg/sse"
 )
 
@@ -22,12 +23,14 @@ type Server struct {
 	scanner      *discovery.Scanner
 	probeService *discovery.ProbeService
 	sseServer    *sse.Server
+	secrets      *logutil.SecretStore
 	logger       interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) }
 }
 
 // NewServer creates a new API server
 func NewServer(
 	cfg *config.Config,
+	secrets *logutil.SecretStore,
 	logger interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) },
 ) (*Server, error) {
 	// Initialize database loader
@@ -102,6 +105,7 @@ func NewServer(
 		scanner:      scanner,
 		probeService: probeService,
 		sseServer:    sseServer,
+		secrets:      secrets,
 		logger:       logger,
 	}
 
@@ -147,7 +151,7 @@ func (s *Server) setupRoutes() {
 	s.router.Post("/cameras/search", handlers.NewSearchHandler(s.searchEngine, s.logger).ServeHTTP)
 
 	// Stream discovery (SSE)
-	s.router.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.logger).ServeHTTP)
+	s.router.Post("/streams/discover", handlers.NewDiscoverHandler(s.scanner, s.sseServer, s.secrets, s.logger).ServeHTTP)
 
 	// Device probe (ping + DNS + ARP/OUI + mDNS)
 	s.router.Get("/probe", handlers.NewProbeHandler(s.probeService, s.logger).ServeHTTP)

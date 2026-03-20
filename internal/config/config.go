@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/eduard256/Strix/internal/utils/logger"
 	"gopkg.in/yaml.v3"
 )
 
@@ -225,8 +226,10 @@ func validateListen(listen string) error {
 	return nil
 }
 
-// SetupLogger configures the global logger
-func (c *Config) SetupLogger() *slog.Logger {
+// SetupLogger configures the global logger. It returns the logger and a
+// SecretStore that can be used to register credentials for automatic masking
+// in all log output.
+func (c *Config) SetupLogger() (*slog.Logger, *logger.SecretStore) {
 	var level slog.Level
 	switch c.Logger.Level {
 	case "debug":
@@ -250,7 +253,10 @@ func (c *Config) SetupLogger() *slog.Logger {
 		handler = slog.NewTextHandler(os.Stdout, opts)
 	}
 
-	return slog.New(handler)
+	secrets := logger.NewSecretStore()
+	maskedHandler := logger.NewSecretMaskingHandler(handler, secrets)
+
+	return slog.New(maskedHandler), secrets
 }
 
 func getEnv(key, defaultValue string) string {

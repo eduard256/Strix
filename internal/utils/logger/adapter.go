@@ -5,11 +5,12 @@ import "log/slog"
 // Adapter wraps slog.Logger to match our interface
 type Adapter struct {
 	*slog.Logger
+	Secrets *SecretStore
 }
 
 // NewAdapter creates a new logger adapter
-func NewAdapter(logger *slog.Logger) *Adapter {
-	return &Adapter{Logger: logger}
+func NewAdapter(logger *slog.Logger, secrets *SecretStore) *Adapter {
+	return &Adapter{Logger: logger, Secrets: secrets}
 }
 
 // Debug logs a debug message

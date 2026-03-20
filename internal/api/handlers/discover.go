@@ -7,6 +7,7 @@ import (
 	"github.com/go-playground/validator/v10"
 	"github.com/eduard256/Strix/internal/camera/discovery"
 	"github.com/eduard256/Strix/internal/models"
+	"github.com/eduard256/Strix/internal/utils/logger"
 	"github.com/eduard256/Strix/pkg/sse"
 )
 
@@ -15,6 +16,7 @@ type DiscoverHandler struct {
 	scanner   *discovery.Scanner
 	sseServer *sse.Server
 	validator *validator.Validate
+	secrets   *logger.SecretStore
 	logger    interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) }
 }
 
@@ -22,11 +24,13 @@ type DiscoverHandler struct {
 func NewDiscoverHandler(
 	scanner *discovery.Scanner,
 	sseServer *sse.Server,
+	secrets *logger.SecretStore,
 	logger interface{ Debug(string, ...any); Error(string, error, ...any); Info(string, ...any) },
 ) *DiscoverHandler {
 	return &DiscoverHandler{
 		scanner:   scanner,
 		sseServer: sseServer,
+		secrets:   secrets,
 		validator: validator.New(),
 		logger:    logger,
 	}
@@ -63,6 +67,13 @@ func (h *DiscoverHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		h.logger.Error("discovery request validation failed", err)
 		h.sendErrorResponse(w, "Validation failed: "+err.Error(), http.StatusBadRequest)
 		return
+	}
+
+	// Register password as a secret so it gets masked in all log output.
+	// The secret is automatically unregistered when the request completes.
+	if req.Password != "" {
+		h.secrets.Add(req.Password)
+		defer h.secrets.Remove(req.Password)
 	}
 
 	h.logger.Info("stream discovery requested",

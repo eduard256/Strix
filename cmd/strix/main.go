@@ -45,11 +45,11 @@ func main() {
 	cfg.Version = Version
 
 	// Setup logger
-	slogger := cfg.SetupLogger()
+	slogger, secrets := cfg.SetupLogger()
 	slog.SetDefault(slogger)
 
 	// Create adapter for our interface
-	log := logger.NewAdapter(slogger)
+	log := logger.NewAdapter(slogger, secrets)
 
 	log.Info("starting Strix",
 		slog.String("version", Version),
@@ -63,7 +63,7 @@ func main() {
 	}
 
 	// Create API server
-	apiServer, err := api.NewServer(cfg, log)
+	apiServer, err := api.NewServer(cfg, secrets, log)
 	if err != nil {
 		log.Error("failed to create API server", err)
 		os.Exit(1)
