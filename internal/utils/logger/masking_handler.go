@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log/slog"
+	"net/url"
 	"strings"
 	"sync"
 )
@@ -24,13 +25,19 @@ func NewSecretStore() *SecretStore {
 }
 
 // Add registers a secret string to be masked in all future log output.
-// Empty strings are ignored.
+// Empty strings are ignored. Both the plain text and URL-encoded forms
+// are registered, because credentials may appear percent-encoded in URLs
+// (e.g. "p@ss" becomes "p%40ss" via url.QueryEscape or url.UserPassword).
 func (s *SecretStore) Add(secret string) {
 	if secret == "" {
 		return
 	}
 	s.mu.Lock()
 	s.secrets[secret] = struct{}{}
+	encoded := url.QueryEscape(secret)
+	if encoded != secret {
+		s.secrets[encoded] = struct{}{}
+	}
 	s.mu.Unlock()
 }
 
@@ -41,6 +48,10 @@ func (s *SecretStore) Remove(secret string) {
 	}
 	s.mu.Lock()
 	delete(s.secrets, secret)
+	encoded := url.QueryEscape(secret)
+	if encoded != secret {
+		delete(s.secrets, encoded)
+	}
 	s.mu.Unlock()
 }
 

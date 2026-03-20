@@ -184,6 +184,65 @@ func TestSecretMaskingHandler_Enabled(t *testing.T) {
 	}
 }
 
+func TestSecretMaskingHandler_SpecialCharsPassword(t *testing.T) {
+	var buf bytes.Buffer
+	store := NewSecretStore()
+	store.Add("p@ss:w0rd#1")
+
+	inner := slog.NewJSONHandler(&buf, &slog.HandlerOptions{Level: slog.LevelDebug})
+	handler := NewSecretMaskingHandler(inner, store)
+	log := slog.New(handler)
+
+	// Simulate URLs built by builder.go and onvif_simple.go
+	// 1. RTSP with url.QueryEscape (onvif_simple.go:395)
+	log.Debug("testing RTSP stream", "url", "rtsp://admin:p%40ss%3Aw0rd%231@192.168.1.10:554/stream1")
+
+	// 2. HTTP with url.UserPassword (builder.go:355) -- Go encodes special chars
+	log.Debug("testing HTTP stream", "url", "http://admin:p%40ss%3Aw0rd%231@192.168.1.10/snap.jpg")
+
+	// 3. Query params with url.Values.Encode (builder.go:377)
+	log.Debug("testing HTTP stream", "url", "http://192.168.1.10/snap.jpg?pwd=p%40ss%3Aw0rd%231&user=admin")
+
+	// 4. Error from Go http.Client (contains encoded URL)
+	log.Debug("stream test failed",
+		"url", "http://admin:p%40ss%3Aw0rd%231@192.168.1.10/camera",
+		"error", `HTTP request failed: Get "http://admin:***@192.168.1.10/camera": connection refused`)
+
+	output := buf.String()
+	t.Logf("Output:\n%s", output)
+
+	if strings.Contains(output, "p@ss:w0rd#1") {
+		t.Errorf("plain text password should be masked: %s", output)
+	}
+	if strings.Contains(output, "p%40ss%3Aw0rd%231") {
+		t.Errorf("URL-encoded password should be masked: %s", output)
+	}
+}
+
+func TestSecretMaskingHandler_PlainPassword(t *testing.T) {
+	var buf bytes.Buffer
+	store := NewSecretStore()
+	store.Add("simplepass123")
+
+	inner := slog.NewJSONHandler(&buf, &slog.HandlerOptions{Level: slog.LevelDebug})
+	handler := NewSecretMaskingHandler(inner, store)
+	log := slog.New(handler)
+
+	// Plain password without special chars -- no encoding difference
+	log.Debug("testing RTSP stream", "url", "rtsp://admin:simplepass123@192.168.1.10:554/stream")
+	log.Debug("testing HTTP stream", "url", "http://192.168.1.10/snap.jpg?pwd=simplepass123&user=admin")
+	log.Debug("stream test failed",
+		"url", "http://admin:simplepass123@192.168.1.10/camera",
+		"error", `HTTP request failed: Get "http://192.168.1.10/snap.jpg?pwd=simplepass123&user=admin": connection refused`)
+
+	output := buf.String()
+	t.Logf("Output:\n%s", output)
+
+	if strings.Contains(output, "simplepass123") {
+		t.Errorf("password should be masked everywhere: %s", output)
+	}
+}
+
 func TestSecretMaskingHandler_WithAttrs(t *testing.T) {
 	var buf bytes.Buffer
 	store := NewSecretStore()
