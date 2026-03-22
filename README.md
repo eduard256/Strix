@@ -49,6 +49,14 @@ Open **http://YOUR_SERVER_IP:4567**
 sudo apt update && command -v docker >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sudo sh && command -v docker-compose >/dev/null 2>&1 || { sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose; } && curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.yml -o docker-compose.yml && docker-compose up -d
 ```
 
+### Podman
+
+```bash
+sudo podman run -d --name strix --network host --cap-add=NET_RAW --cap-add=NET_ADMIN --restart unless-stopped eduard256/strix:latest
+```
+
+Strix uses network scanning to discover cameras. Podman blocks this by default, so `NET_RAW` and `NET_ADMIN` capabilities are required. Must run as root (`sudo`). See [DOCKER.md](DOCKER.md) for Podman Compose and Quadlet (systemd) setup.
+
 ### Home Assistant Add-on
 
 **Installation:**
