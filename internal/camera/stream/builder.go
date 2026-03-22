@@ -4,7 +4,6 @@ import (
 	"encoding/base64"
 	"fmt"
 	"net/url"
-	"regexp"
 	"strconv"
 	"strings"
 
@@ -94,62 +93,52 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 		ctx.Protocol = entry.Protocol
 	}
 
-	// Replace placeholders in URL path
+	// Replace placeholders in URL path (credentials are handled separately
+	// to ensure proper encoding depending on their position in the URL).
 	path := b.replacePlaceholders(entry.URL, ctx)
 	b.logger.Debug("placeholders replaced", "original", entry.URL, "after_replacement", path)
 
-	// Build the complete URL
+	// Build the complete URL using url.URL struct for correct encoding
 	var fullURL string
 
 	// Check if the URL already contains authentication parameters
 	hasAuthInURL := b.hasAuthenticationParams(path)
 	b.logger.Debug("auth params detection", "has_auth_in_url", hasAuthInURL, "path", path)
 
+	// Determine host string (omit default port for cleaner URLs)
+	host := b.buildHost(ctx.IP, ctx.Port, ctx.Protocol)
+
+	// Split path and query for url.URL (it expects them separately)
+	pathPart, queryPart := b.splitPathQuery(path)
+
+	// Ensure path starts with exactly one slash
+	if !strings.HasPrefix(pathPart, "/") {
+		pathPart = "/" + pathPart
+	}
+
+	u := &url.URL{
+		Scheme:   ctx.Protocol,
+		Host:     host,
+		Path:     pathPart,
+		RawQuery: queryPart,
+	}
+
 	switch ctx.Protocol {
-	case "rtsp":
+	case "rtsp", "rtsps":
 		if ctx.Username != "" && ctx.Password != "" && !hasAuthInURL {
-			// Standard ports can be omitted
-			if ctx.Port == 554 {
-				fullURL = fmt.Sprintf("rtsp://%s:%s@%s/%s",
-					ctx.Username, ctx.Password, ctx.IP, path)
-			} else {
-				fullURL = fmt.Sprintf("rtsp://%s:%s@%s:%d/%s",
-					ctx.Username, ctx.Password, ctx.IP, ctx.Port, path)
-			}
-		} else {
-			if ctx.Port == 554 {
-				fullURL = fmt.Sprintf("rtsp://%s/%s", ctx.IP, path)
-			} else {
-				fullURL = fmt.Sprintf("rtsp://%s:%d/%s", ctx.IP, ctx.Port, path)
-			}
+			u.User = url.UserPassword(ctx.Username, ctx.Password)
 		}
 
 	case "http", "https":
-		// For HTTP, check if auth should be in URL or parameters
-		if ctx.Username != "" && ctx.Password != "" && !hasAuthInURL {
-			// Don't put auth in URL for HTTP, will use Basic Auth header
-			if (ctx.Protocol == "http" && ctx.Port == 80) ||
-			   (ctx.Protocol == "https" && ctx.Port == 443) {
-				fullURL = fmt.Sprintf("%s://%s/%s", ctx.Protocol, ctx.IP, path)
-			} else {
-				fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
-			}
-		} else {
-			if (ctx.Protocol == "http" && ctx.Port == 80) ||
-			   (ctx.Protocol == "https" && ctx.Port == 443) {
-				fullURL = fmt.Sprintf("%s://%s/%s", ctx.Protocol, ctx.IP, path)
-			} else {
-				fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
-			}
-		}
+		// For HTTP, credentials are NOT embedded in the URL by BuildURL.
+		// BuildURLsFromEntry handles auth variants (userinfo, query params, etc.)
+		// separately with url.UserPassword for proper encoding.
 
 	default:
-		// Generic URL construction
-		fullURL = fmt.Sprintf("%s://%s:%d/%s", ctx.Protocol, ctx.IP, ctx.Port, path)
+		// Generic: no credentials in URL
 	}
 
-	// Clean up double slashes (except after protocol://)
-	fullURL = b.cleanURL(fullURL)
+	fullURL = u.String()
 
 	b.logger.Debug("BuildURL complete",
 		"final_url", fullURL,
@@ -162,23 +151,42 @@ func (b *Builder) BuildURL(entry models.CameraEntry, ctx BuildContext) string {
 	return fullURL
 }
 
-// replacePlaceholders replaces all placeholders in the URL
+// credentialPlaceholders lists all placeholder strings that represent
+// username or password values. These must NOT be replaced via simple string
+// substitution because they require context-aware encoding (different for
+// query parameters, path segments, and userinfo).
+var credentialPlaceholders = []string{
+	"[USERNAME]", "[username]", "[USER]", "[user]",
+	"[PASSWORD]", "[password]", "[PASWORD]", "[pasword]",
+	"[PASS]", "[pass]", "[PWD]", "[pwd]",
+}
+
+// replacePlaceholders replaces all placeholders in the URL.
+//
+// Credential placeholders ([USERNAME], [PASSWORD], etc.) are handled in two
+// phases to ensure correct encoding:
+//  1. Non-credential placeholders (channel, resolution, IP, etc.) are replaced
+//     first — these contain only safe characters.
+//  2. Credential placeholders are then replaced with proper encoding:
+//     - In query strings: via url.Values.Set + Encode (automatic encoding)
+//     - In path segments: via url.PathEscape
 func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 	result := urlPath
 
-	// Generate base64 auth for [AUTH] placeholder
+	// Generate base64 auth for [AUTH] placeholder (already safe — base64 has no
+	// characters that need URL encoding)
 	auth := ""
 	if ctx.Username != "" && ctx.Password != "" {
 		auth = base64.StdEncoding.EncodeToString([]byte(ctx.Username + ":" + ctx.Password))
 	}
 
-	// Common placeholders
-	replacements := map[string]string{
+	// Phase 1: Replace non-credential placeholders (all values are safe strings)
+	safeReplacements := map[string]string{
 		"[CHANNEL]":   strconv.Itoa(ctx.Channel),
 		"[channel]":   strconv.Itoa(ctx.Channel),
-		"[CHANNEL+1]": strconv.Itoa(ctx.Channel + 1), // For Hikvision-style channels (101, 201, 301...)
+		"[CHANNEL+1]": strconv.Itoa(ctx.Channel + 1),
 		"[channel+1]": strconv.Itoa(ctx.Channel + 1),
-		"{CHANNEL}":   strconv.Itoa(ctx.Channel),     // BUBBLE protocol uses {channel}
+		"{CHANNEL}":   strconv.Itoa(ctx.Channel),
 		"{channel}":   strconv.Itoa(ctx.Channel),
 		"{CHANNEL+1}": strconv.Itoa(ctx.Channel + 1),
 		"{channel+1}": strconv.Itoa(ctx.Channel + 1),
@@ -186,43 +194,35 @@ func (b *Builder) replacePlaceholders(urlPath string, ctx BuildContext) string {
 		"[width]":     strconv.Itoa(ctx.Width),
 		"[HEIGHT]":    strconv.Itoa(ctx.Height),
 		"[height]":    strconv.Itoa(ctx.Height),
-		"[USERNAME]":  ctx.Username,
-		"[username]":  ctx.Username,
-		"[PASSWORD]":  ctx.Password,
-		"[password]":  ctx.Password,
-		"[PASWORD]":   ctx.Password, // Handle typo in database
-		"[pasword]":   ctx.Password,
-		"[USER]":      ctx.Username,
-		"[user]":      ctx.Username,
-		"[PASS]":      ctx.Password,
-		"[pass]":      ctx.Password,
-		"[PWD]":       ctx.Password,
-		"[pwd]":       ctx.Password,
 		"[IP]":        ctx.IP,
 		"[ip]":        ctx.IP,
 		"[PORT]":      strconv.Itoa(ctx.Port),
 		"[port]":      strconv.Itoa(ctx.Port),
-		"[AUTH]":      auth, // base64(username:password) for basic auth
+		"[AUTH]":      auth,
 		"[auth]":      auth,
-		"[TOKEN]":     "", // Empty for now
+		"[TOKEN]":     "",
 		"[token]":     "",
 	}
 
-	// Replace all placeholders
-	for placeholder, value := range replacements {
+	for placeholder, value := range safeReplacements {
 		result = strings.ReplaceAll(result, placeholder, value)
 	}
 
-	// Handle query parameter placeholders (only for auth params)
-	result = b.replaceQueryParams(result, ctx)
+	// Phase 2: Replace credential placeholders with proper encoding.
+	// First handle query parameters (via url.Values for safe encoding),
+	// then handle any remaining credential placeholders in the path.
+	result = b.replaceQueryCredentials(result, ctx)
+	result = b.replacePathCredentials(result, ctx)
 
 	return result
 }
 
-
-// replaceQueryParams handles query parameter replacements
-func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
-	// Parse URL to handle query params
+// replaceQueryCredentials handles credential replacement in query parameters.
+// It parses the query string while credential placeholders are still intact
+// (safe ASCII strings like "[PASSWORD]"), replaces them with real values via
+// url.Values.Set, and re-encodes. This ensures special characters in passwords
+// are always properly percent-encoded.
+func (b *Builder) replaceQueryCredentials(urlPath string, ctx BuildContext) string {
 	parts := strings.SplitN(urlPath, "?", 2)
 	if len(parts) < 2 {
 		return urlPath
@@ -231,28 +231,101 @@ func (b *Builder) replaceQueryParams(urlPath string, ctx BuildContext) string {
 	basePath := parts[0]
 	queryString := parts[1]
 
-	// Parse query parameters
+	// Parse the query string — placeholders like [PASSWORD] are safe to parse
+	// because they contain no special URL characters.
 	params, err := url.ParseQuery(queryString)
 	if err != nil {
 		return urlPath
 	}
 
-	// ONLY replace authentication parameters
-	// DO NOT replace channel, width, height - they should stay as-is from URL patterns
-	for key := range params {
-		lowerKey := strings.ToLower(key)
+	// Username placeholder values that should be replaced
+	usernamePlaceholders := map[string]bool{
+		"[USERNAME]": true, "[username]": true,
+		"[USER]": true, "[user]": true,
+	}
 
+	// Password placeholder values that should be replaced
+	passwordPlaceholders := map[string]bool{
+		"[PASSWORD]": true, "[password]": true,
+		"[PASWORD]": true, "[pasword]": true,
+		"[PASS]": true, "[pass]": true,
+		"[PWD]": true, "[pwd]": true,
+	}
+
+	changed := false
+	for key, values := range params {
+		for _, val := range values {
+			if usernamePlaceholders[val] {
+				params.Set(key, ctx.Username)
+				changed = true
+			} else if passwordPlaceholders[val] {
+				params.Set(key, ctx.Password)
+				changed = true
+			}
+		}
+
+		// Also handle auth-named keys whose values are still placeholders
+		// or already contain the raw value from a previous step.
+		// This covers patterns like "?user=admin&pwd=12345" that come from
+		// replaceQueryParams in the old code.
+		lowerKey := strings.ToLower(key)
 		switch lowerKey {
 		case "user", "username", "usr", "loginuse":
-			params.Set(key, ctx.Username)
+			if params.Get(key) == "" || isCredentialPlaceholder(params.Get(key)) {
+				params.Set(key, ctx.Username)
+				changed = true
+			}
 		case "password", "pass", "pwd", "loginpas", "passwd":
-			params.Set(key, ctx.Password)
-		// Removed: channel, width, height replacements - they were breaking working URLs
+			if params.Get(key) == "" || isCredentialPlaceholder(params.Get(key)) {
+				params.Set(key, ctx.Password)
+				changed = true
+			}
 		}
 	}
 
-	// Rebuild URL
+	if !changed {
+		return urlPath
+	}
+
+	// params.Encode() automatically percent-encodes all values
 	return basePath + "?" + params.Encode()
+}
+
+// replacePathCredentials replaces any remaining credential placeholders in the
+// path portion of the URL using url.PathEscape for safe encoding.
+func (b *Builder) replacePathCredentials(urlPath string, ctx BuildContext) string {
+	// Map of credential placeholders to their escaped values for use in paths
+	pathReplacements := map[string]string{
+		"[USERNAME]": url.PathEscape(ctx.Username),
+		"[username]": url.PathEscape(ctx.Username),
+		"[USER]":     url.PathEscape(ctx.Username),
+		"[user]":     url.PathEscape(ctx.Username),
+		"[PASSWORD]": url.PathEscape(ctx.Password),
+		"[password]": url.PathEscape(ctx.Password),
+		"[PASWORD]":  url.PathEscape(ctx.Password),
+		"[pasword]":  url.PathEscape(ctx.Password),
+		"[PASS]":     url.PathEscape(ctx.Password),
+		"[pass]":     url.PathEscape(ctx.Password),
+		"[PWD]":      url.PathEscape(ctx.Password),
+		"[pwd]":      url.PathEscape(ctx.Password),
+	}
+
+	for placeholder, value := range pathReplacements {
+		urlPath = strings.ReplaceAll(urlPath, placeholder, value)
+	}
+
+	return urlPath
+}
+
+// isCredentialPlaceholder checks if a string is one of the known credential
+// placeholder tokens.
+func isCredentialPlaceholder(s string) bool {
+	for _, p := range credentialPlaceholders {
+		if s == p {
+			return true
+		}
+	}
+	return false
 }
 
 
@@ -273,21 +346,27 @@ func (b *Builder) hasAuthenticationParams(urlPath string) bool {
 	return false
 }
 
-// cleanURL cleans up the URL
-func (b *Builder) cleanURL(fullURL string) string {
-	// Remove double slashes except after protocol://
-	protocolEnd := strings.Index(fullURL, "://")
-	if protocolEnd > 0 {
-		protocol := fullURL[:protocolEnd+3]
-		rest := fullURL[protocolEnd+3:]
+// buildHost returns the host:port string, omitting the port when it matches
+// the default for the given protocol.
+func (b *Builder) buildHost(ip string, port int, protocol string) string {
+	isDefault := (protocol == "http" && port == 80) ||
+		(protocol == "https" && port == 443) ||
+		(protocol == "rtsp" && port == 554) ||
+		(protocol == "rtsps" && port == 322)
 
-		// Replace multiple slashes with single slash
-		rest = regexp.MustCompile(`/{2,}`).ReplaceAllString(rest, "/")
-
-		return protocol + rest
+	if isDefault || port == 0 {
+		return ip
 	}
+	return fmt.Sprintf("%s:%d", ip, port)
+}
 
-	return fullURL
+// splitPathQuery splits a path string into path and raw query components.
+// The input may contain "?" separating the path from the query string.
+func (b *Builder) splitPathQuery(path string) (string, string) {
+	if idx := strings.IndexByte(path, '?'); idx >= 0 {
+		return path[:idx], path[idx+1:]
+	}
+	return path, ""
 }
 
 // BuildURLsFromEntry generates all possible URLs from a camera entry
