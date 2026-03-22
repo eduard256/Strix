@@ -69,8 +69,10 @@ type yamlConfig struct {
 	} `yaml:"api"`
 }
 
-// Load returns configuration with defaults
-func Load() *Config {
+// Load returns configuration with defaults. The provided logger is used for
+// all startup messages so that output format stays consistent (JSON or text)
+// with the rest of the application logs.
+func Load(log *slog.Logger) *Config {
 	dataPath := getEnv("STRIX_DATA_PATH", "./data")
 
 	cfg := &Config{
@@ -127,14 +129,19 @@ func Load() *Config {
 
 	// Validate listen address
 	if err := validateListen(cfg.Server.Listen); err != nil {
-		fmt.Fprintf(os.Stderr, "ERROR: Invalid listen address '%s': %v\n", cfg.Server.Listen, err)
-		fmt.Fprintf(os.Stderr, "Using default: :4567\n")
+		log.Error("invalid listen address, using default :4567",
+			slog.String("address", cfg.Server.Listen),
+			slog.String("error", err.Error()),
+		)
 		cfg.Server.Listen = ":4567"
 		configSource = "default (validation failed)"
 	}
 
 	// Log configuration source
-	fmt.Printf("INFO: API listen address '%s' loaded from %s\n", cfg.Server.Listen, configSource)
+	log.Info("configuration loaded",
+		slog.String("listen", cfg.Server.Listen),
+		slog.String("source", configSource),
+	)
 
 	return cfg
 }
@@ -226,12 +233,30 @@ func validateListen(listen string) error {
 	return nil
 }
 
-// SetupLogger configures the global logger. It returns the logger and a
-// SecretStore that can be used to register credentials for automatic masking
-// in all log output.
-func (c *Config) SetupLogger() (*slog.Logger, *logger.SecretStore) {
+// SetupLogger creates the application logger by reading log configuration
+// from environment variables and Home Assistant options. It must be called
+// before Load() so that all startup messages use a consistent output format.
+//
+// Configuration priority: defaults < HA options < environment variables.
+func SetupLogger() (*slog.Logger, *logger.SecretStore) {
+	// Read log settings from environment (same defaults as Config)
+	logLevel := getEnv("STRIX_LOG_LEVEL", "info")
+	logFormat := getEnv("STRIX_LOG_FORMAT", "json")
+
+	// Apply Home Assistant overrides if running as HA add-on
+	if data, err := os.ReadFile("/data/options.json"); err == nil {
+		var opts haOptions
+		if err := json.Unmarshal(data, &opts); err == nil {
+			if opts.LogLevel != "" {
+				logLevel = opts.LogLevel
+			}
+			// Home Assistant add-on always uses JSON logging for the HA log viewer
+			logFormat = "json"
+		}
+	}
+
 	var level slog.Level
-	switch c.Logger.Level {
+	switch logLevel {
 	case "debug":
 		level = slog.LevelDebug
 	case "warn":
@@ -242,15 +267,15 @@ func (c *Config) SetupLogger() (*slog.Logger, *logger.SecretStore) {
 		level = slog.LevelInfo
 	}
 
-	opts := &slog.HandlerOptions{
+	handlerOpts := &slog.HandlerOptions{
 		Level: level,
 	}
 
 	var handler slog.Handler
-	if c.Logger.Format == "json" {
-		handler = slog.NewJSONHandler(os.Stdout, opts)
+	if logFormat == "json" {
+		handler = slog.NewJSONHandler(os.Stdout, handlerOpts)
 	} else {
-		handler = slog.NewTextHandler(os.Stdout, opts)
+		handler = slog.NewTextHandler(os.Stdout, handlerOpts)
 	}
 
 	secrets := logger.NewSecretStore()

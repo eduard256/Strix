@@ -36,17 +36,17 @@ Version: %s
 `
 
 func main() {
-	// Print banner
-	fmt.Printf(Banner, Version)
-	fmt.Println()
+	// Print banner to stderr so it doesn't mix with structured log output on stdout
+	fmt.Fprintf(os.Stderr, Banner, Version)
+	fmt.Fprintln(os.Stderr)
 
-	// Load configuration
-	cfg := config.Load()
-	cfg.Version = Version
-
-	// Setup logger
-	slogger, secrets := cfg.SetupLogger()
+	// Setup logger first, before anything else, so all messages use consistent format
+	slogger, secrets := config.SetupLogger()
 	slog.SetDefault(slogger)
+
+	// Load configuration (uses the logger for startup messages)
+	cfg := config.Load(slogger)
+	cfg.Version = Version
 
 	// Create adapter for our interface
 	log := logger.NewAdapter(slogger, secrets)
@@ -193,10 +193,10 @@ func printEndpoints(listen string) {
 	// ANSI escape codes for clickable link (OSC 8 hyperlink)
 	clickableURL := fmt.Sprintf("\033]8;;%s\033\\%s\033]8;;\033\\", url, url)
 
-	fmt.Println("\n🌐 Web Interface:")
-	fmt.Println("────────────────────────────────────────────────")
-	fmt.Printf("  Open in browser: %s\n", clickableURL)
-	fmt.Println("────────────────────────────────────────────────")
+	fmt.Fprintln(os.Stderr, "\nWeb Interface:")
+	fmt.Fprintln(os.Stderr, "────────────────────────────────────────────────")
+	fmt.Fprintf(os.Stderr, "  Open in browser: %s\n", clickableURL)
+	fmt.Fprintln(os.Stderr, "────────────────────────────────────────────────")
 
-	fmt.Println("\n📚 Documentation: https://github.com/eduard256/Strix")
+	fmt.Fprintln(os.Stderr, "\nDocumentation: https://github.com/eduard256/Strix")
 }
