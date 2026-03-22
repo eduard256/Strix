@@ -67,6 +67,88 @@ Services:
 - go2rtc: http://localhost:1984
 - Frigate: http://localhost:5000
 
+## Podman
+
+Strix uses raw sockets for network scanning. Podman drops these capabilities by default,
+so you need to add them explicitly. Rootless mode does not support host network scanning —
+run with `sudo`.
+
+### Using Podman Run
+
+```bash
+sudo podman run -d \
+  --name strix \
+  --network host \
+  --cap-add=NET_RAW \
+  --cap-add=NET_ADMIN \
+  --restart unless-stopped \
+  eduard256/strix:latest
+```
+
+- `NET_RAW` — required for network scanning (ARP, ICMP) to discover cameras
+- `NET_ADMIN` — required for network interface and routing operations
+
+### Using Podman Compose
+
+```yaml
+version: '3'
+
+services:
+  strix:
+    image: eduard256/strix:latest
+    container_name: strix
+    restart: unless-stopped
+    network_mode: host
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    environment:
+      - STRIX_LOG_LEVEL=info
+      - STRIX_LOG_FORMAT=json
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:4567/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+```
+
+```bash
+sudo podman-compose up -d
+```
+
+### Using Quadlet (systemd)
+
+Recommended for production. Create `/etc/containers/systemd/strix.container`:
+
+```ini
+[Unit]
+Description=Strix Camera Stream Discovery
+After=network-online.target
+Wants=network-online.target
+
+[Container]
+Image=docker.io/eduard256/strix:latest
+ContainerName=strix
+Network=host
+AddCapability=CAP_NET_RAW CAP_NET_ADMIN
+Environment=STRIX_LOG_LEVEL=info
+Environment=STRIX_LOG_FORMAT=json
+AutoUpdate=registry
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now strix
+sudo systemctl status strix
+```
+
+Quadlet auto-generates a systemd service from the `.container` file.
+The container starts on boot and restarts on failure automatically.
+
 ## Building Locally
 
 ```bash
