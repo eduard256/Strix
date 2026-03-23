@@ -13,6 +13,8 @@
 
 ![Demo](assets/main.gif)
 
+**Your camera is not in the database?** [Add it here](https://gostrix.github.io/#/contribute) -- takes 30 seconds.
+
 ---
 
 ## Your Problem?
@@ -506,14 +508,7 @@ Timeout: 120       (instead of 240)
 
 ### Add Your Camera
 
-Found working stream for camera not in database?
-
-1. [Create Issue](https://github.com/eduard256/Strix/issues)
-2. Provide:
-   - Camera brand and model
-   - Working URL pattern
-   - Protocol (RTSP/HTTP/etc)
-3. We'll add to database
+Found working stream for camera not in database? [Add it here](https://gostrix.github.io/#/contribute).
 
 ### Report Bugs
 
