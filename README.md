@@ -13,7 +13,7 @@
 
 ![Demo](assets/main.gif)
 
-**Your camera is not in the database?** [Add it here](https://gostrix.github.io/#/contribute) -- takes 30 seconds.
+**Check if your camera is supported:** [Browse the database](https://gostrix.github.io/#/brands) | **Not listed?** [Add it here](https://gostrix.github.io/#/contribute)
 
 ---
 
