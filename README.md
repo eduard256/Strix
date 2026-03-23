@@ -13,7 +13,7 @@
 
 ![Demo](assets/main.gif)
 
-**Check if your camera is supported:** [Browse the database](https://gostrix.github.io/#/brands) | **Not listed?** [Add it here](https://gostrix.github.io/#/contribute)
+**Check if your camera is supported:** [Browse the database](https://gostrix.github.io/) | **Not listed?** [Add it here](https://gostrix.github.io/#/contribute)
 
 ---
 
