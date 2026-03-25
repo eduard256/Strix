@@ -40,6 +40,7 @@ func apiCheck(w http.ResponseWriter, r *http.Request) {
 		result["detection"] = "env"
 	} else if os.Getenv("SUPERVISOR_TOKEN") != "" {
 		result["detection"] = "supervisor"
+		result["supervisor_token_len"] = len(os.Getenv("SUPERVISOR_TOKEN"))
 		// show what addons we found
 		addons, frigateSlug := listHAAddons()
 		result["ha_addons"] = addons
@@ -141,7 +142,7 @@ func findFrigateAddon(token string) string {
 	return ""
 }
 
-// listHAAddons returns raw JSON from Supervisor API for debug
+// listHAAddons returns raw response from Supervisor API for debug
 func listHAAddons() (any, string) {
 	token := os.Getenv("SUPERVISOR_TOKEN")
 	if token == "" {
@@ -163,9 +164,10 @@ func listHAAddons() (any, string) {
 	defer resp.Body.Close()
 
 	var raw any
-	if err = json.NewDecoder(resp.Body).Decode(&raw); err != nil {
-		return map[string]string{"error": err.Error()}, ""
-	}
+	json.NewDecoder(resp.Body).Decode(&raw)
 
-	return raw, ""
+	return map[string]any{
+		"status_code": resp.StatusCode,
+		"body":        raw,
+	}, ""
 }
