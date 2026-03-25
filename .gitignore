@@ -1,50 +1,7 @@
-# Binaries
-bin/
+# Binary
 strix
-main
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
 
-# Test binaries
-*.test
-
-# Output of the go coverage tool
-*.out
-coverage.html
-
-# Go workspace file
-go.work
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-
-# Temporary files
-tmp/
-temp/
-*.dump
-*_output.txt
-
-# Configuration (user-specific)
-strix.yaml
-
-# Node.js / NPM
-node_modules/
-package-lock.json
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
