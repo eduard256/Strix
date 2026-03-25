@@ -141,8 +141,8 @@ func findFrigateAddon(token string) string {
 	return ""
 }
 
-// listHAAddons returns addon list for debug purposes
-func listHAAddons() ([]map[string]string, string) {
+// listHAAddons returns raw JSON from Supervisor API for debug
+func listHAAddons() (any, string) {
 	token := os.Getenv("SUPERVISOR_TOKEN")
 	if token == "" {
 		return nil, ""
@@ -152,44 +152,20 @@ func listHAAddons() ([]map[string]string, string) {
 
 	req, err := http.NewRequest("GET", "http://supervisor/addons", nil)
 	if err != nil {
-		return nil, ""
+		return map[string]string{"error": err.Error()}, ""
 	}
 	req.Header.Set("Authorization", "Bearer "+token)
 
 	resp, err := client.Do(req)
 	if err != nil {
-		return []map[string]string{{"error": err.Error()}}, ""
+		return map[string]string{"error": err.Error()}, ""
 	}
 	defer resp.Body.Close()
 
-	var body struct {
-		Data struct {
-			Addons []struct {
-				Slug     string `json:"slug"`
-				Name     string `json:"name"`
-				State    string `json:"state"`
-				Hostname string `json:"hostname"`
-			} `json:"addons"`
-		} `json:"data"`
+	var raw any
+	if err = json.NewDecoder(resp.Body).Decode(&raw); err != nil {
+		return map[string]string{"error": err.Error()}, ""
 	}
 
-	if err = json.NewDecoder(resp.Body).Decode(&body); err != nil {
-		return []map[string]string{{"error": err.Error()}}, ""
-	}
-
-	var addons []map[string]string
-	var frigateSlug string
-	for _, a := range body.Data.Addons {
-		addons = append(addons, map[string]string{
-			"slug":     a.Slug,
-			"name":     a.Name,
-			"state":    a.State,
-			"hostname": a.Hostname,
-		})
-		if a.Slug == "ccab4aaf_frigate" || a.Slug == "frigate" {
-			frigateSlug = a.Slug
-		}
-	}
-
-	return addons, frigateSlug
+	return raw, ""
 }
