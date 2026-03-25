@@ -3,7 +3,6 @@ package frigate
 import (
 	"io"
 	"net/http"
-	"os"
 	"sync"
 	"time"
 
@@ -30,7 +29,7 @@ const requestTimeout = 5 * time.Second
 func Init() {
 	log = app.GetLogger("frigate")
 
-	if url := os.Getenv("STRIX_FRIGATE_URL"); url != "" {
+	if url := app.Env("STRIX_FRIGATE_URL", ""); url != "" {
 		frigateURL = url
 		log.Info().Str("url", frigateURL).Msg("[frigate] using STRIX_FRIGATE_URL")
 	}
