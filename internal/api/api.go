@@ -108,7 +108,7 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 func apiHealth(w http.ResponseWriter, r *http.Request) {
 	ResponseJSON(w, map[string]any{
 		"version": app.Version,
-		"uptime":  time.Since(app.StartTime).String(),
+		"uptime":  time.Since(app.StartTime).Truncate(time.Second).String(),
 	})
 }
 

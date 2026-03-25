@@ -29,7 +29,7 @@ func Init() {
 	log = app.GetLogger("probe")
 
 	var err error
-	db, err = sql.Open("sqlite3", app.DB+"?mode=ro")
+	db, err = sql.Open("sqlite3", "file:"+app.DB+"?mode=ro&immutable=1")
 	if err != nil {
 		log.Error().Err(err).Msg("[probe] db open")
 	}

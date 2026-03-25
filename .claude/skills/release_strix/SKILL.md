@@ -121,7 +121,7 @@ Verify the new version tag exists and both amd64 and arm64 platforms are present
 ```bash
 docker run --rm -d --name strix-smoke-test -p 14567:4567 eduard256/strix:$VERSION
 sleep 5
-curl -s http://localhost:14567/api/v1/health | jq '.version'
+curl -s http://localhost:14567/api | jq '.version'
 docker stop strix-smoke-test
 ```
 

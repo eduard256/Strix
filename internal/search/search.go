@@ -21,7 +21,7 @@ func Init() {
 	log = app.GetLogger("search")
 
 	var err error
-	db, err = sql.Open("sqlite3", app.DB+"?mode=ro")
+	db, err = sql.Open("sqlite3", "file:"+app.DB+"?mode=ro&immutable=1")
 	if err != nil {
 		log.Fatal().Err(err).Msg("[search] db open")
 	}

@@ -3,8 +3,8 @@ package camdb
 import (
 	"database/sql"
 	"encoding/base64"
-	"errors"
 	"fmt"
+	"net/url"
 	"strconv"
 	"strings"
 )
@@ -125,26 +125,6 @@ func BuildStreams(db *sql.DB, p *StreamParams) ([]string, error) {
 	return streams, nil
 }
 
-// ValidateID checks if id format is valid
-func ValidateID(id string) error {
-	switch {
-	case strings.HasPrefix(id, "b:"):
-		if len(id) < 3 {
-			return errors.New("camdb: empty brand id")
-		}
-	case strings.HasPrefix(id, "m:"):
-		if strings.Count(id, ":") < 2 {
-			return fmt.Errorf("camdb: invalid model id: %s", id)
-		}
-	case strings.HasPrefix(id, "p:"):
-		if len(id) < 3 {
-			return errors.New("camdb: empty preset id")
-		}
-	default:
-		return fmt.Errorf("camdb: unknown prefix: %s", id)
-	}
-	return nil
-}
 
 // internals
 
@@ -153,7 +133,7 @@ func buildURL(protocol, path, ip string, port int, user, pass string, channel in
 
 	var auth string
 	if user != "" {
-		auth = user + ":" + pass + "@"
+		auth = url.PathEscape(user) + ":" + url.PathEscape(pass) + "@"
 	}
 
 	host := ip
@@ -174,6 +154,10 @@ func replacePlaceholders(s, ip string, port int, user, pass string, channel int)
 		auth = base64.StdEncoding.EncodeToString([]byte(user + ":" + pass))
 	}
 
+	// URL-encode credentials for safe use in query parameters
+	encUser := url.QueryEscape(user)
+	encPass := url.QueryEscape(pass)
+
 	pairs := []string{
 		"[CHANNEL]", strconv.Itoa(channel),
 		"[channel]", strconv.Itoa(channel),
@@ -183,12 +167,12 @@ func replacePlaceholders(s, ip string, port int, user, pass string, channel int)
 		"[channel+1]", strconv.Itoa(channel + 1),
 		"{CHANNEL+1}", strconv.Itoa(channel + 1),
 		"{channel+1}", strconv.Itoa(channel + 1),
-		"[USERNAME]", user, "[username]", user,
-		"[USER]", user, "[user]", user,
-		"[PASSWORD]", pass, "[password]", pass,
-		"[PASWORD]", pass, "[pasword]", pass,
-		"[PASS]", pass, "[pass]", pass,
-		"[PWD]", pass, "[pwd]", pass,
+		"[USERNAME]", encUser, "[username]", encUser,
+		"[USER]", encUser, "[user]", encUser,
+		"[PASSWORD]", encPass, "[password]", encPass,
+		"[PASWORD]", encPass, "[pasword]", encPass,
+		"[PASS]", encPass, "[pass]", encPass,
+		"[PWD]", encPass, "[pwd]", encPass,
 		"[WIDTH]", "640", "[width]", "640",
 		"[HEIGHT]", "480", "[height]", "480",
 		"[IP]", ip, "[ip]", ip,
