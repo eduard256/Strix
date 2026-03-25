@@ -1,8 +1,10 @@
 package frigate
 
 import (
+	"io"
 	"net/http"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/eduard256/strix/internal/api"
@@ -11,62 +13,137 @@ import (
 )
 
 var log zerolog.Logger
+
+// resolved Frigate URL, cached after first successful probe
 var frigateURL string
+var frigateOnce sync.Once
+
+// candidates to try when no explicit URL is set
+var candidates = []string{
+	"http://localhost:5000",
+	"http://ccab4aaf-frigate:5000",
+}
+
+const probeTimeout = 50 * time.Millisecond
+const requestTimeout = 5 * time.Second
 
 func Init() {
 	log = app.GetLogger("frigate")
 
-	frigateURL = detectFrigateURL()
-
-	log.Info().Str("url", frigateURL).Msg("[frigate] target")
-
-	api.HandleFunc("api/frigate/check", apiCheck)
-}
-
-func apiCheck(w http.ResponseWriter, r *http.Request) {
-	client := &http.Client{Timeout: 3 * time.Second}
-
-	result := map[string]any{
-		"url":       frigateURL,
-		"detection": detectMethod(),
+	if url := os.Getenv("STRIX_FRIGATE_URL"); url != "" {
+		frigateURL = url
+		log.Info().Str("url", frigateURL).Msg("[frigate] using STRIX_FRIGATE_URL")
 	}
 
-	resp, err := client.Get(frigateURL + "/api/config")
-	if err != nil {
-		result["connected"] = false
-		result["error"] = err.Error()
-		api.ResponseJSON(w, result)
+	api.HandleFunc("api/frigate/config", apiConfig)
+	api.HandleFunc("api/frigate/config/save", apiConfigSave)
+}
+
+// getFrigateURL returns resolved Frigate URL. Probes candidates on first call.
+func getFrigateURL() string {
+	if frigateURL != "" {
+		return frigateURL
+	}
+
+	frigateOnce.Do(func() {
+		frigateURL = probeFrigate()
+		if frigateURL != "" {
+			log.Info().Str("url", frigateURL).Msg("[frigate] discovered")
+		} else {
+			log.Warn().Msg("[frigate] not found on any candidate")
+		}
+	})
+
+	return frigateURL
+}
+
+// probeFrigate tries candidates sequentially with short timeout, returns first that responds
+func probeFrigate() string {
+	client := &http.Client{Timeout: probeTimeout}
+
+	for _, url := range candidates {
+		resp, err := client.Get(url + "/api/config")
+		if err != nil {
+			continue
+		}
+		resp.Body.Close()
+		if resp.StatusCode == 200 {
+			return url
+		}
+	}
+
+	return ""
+}
+
+// GET /api/frigate/config -- proxy Frigate config
+func apiConfig(w http.ResponseWriter, r *http.Request) {
+	url := getFrigateURL()
+	if url == "" {
+		api.ResponseJSON(w, map[string]any{
+			"connected": false,
+			"config":    "",
+		})
 		return
 	}
-	resp.Body.Close()
 
-	result["connected"] = true
-	result["status_code"] = resp.StatusCode
-	api.ResponseJSON(w, result)
+	client := &http.Client{Timeout: requestTimeout}
+	resp, err := client.Get(url + "/api/config/raw")
+	if err != nil {
+		api.ResponseJSON(w, map[string]any{
+			"connected": false,
+			"error":     err.Error(),
+			"config":    "",
+		})
+		return
+	}
+	defer resp.Body.Close()
+
+	body, _ := io.ReadAll(resp.Body)
+
+	api.ResponseJSON(w, map[string]any{
+		"connected": true,
+		"url":       url,
+		"config":    string(body),
+	})
 }
 
-// detectFrigateURL determines Frigate URL:
-// 1. STRIX_FRIGATE_URL env
-// 2. HA addon -- known hostname ccab4aaf-frigate:5000
-// 3. fallback localhost:5000
-func detectFrigateURL() string {
-	if url := os.Getenv("STRIX_FRIGATE_URL"); url != "" {
-		return url
+// POST /api/frigate/config/save?save_option=restart -- proxy config save to Frigate
+func apiConfigSave(w http.ResponseWriter, r *http.Request) {
+	if r.Method != "POST" {
+		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+		return
 	}
 
-	if os.Getenv("SUPERVISOR_TOKEN") != "" {
-		return "http://ccab4aaf-frigate:5000"
+	url := getFrigateURL()
+	if url == "" {
+		http.Error(w, "frigate not connected", http.StatusBadGateway)
+		return
 	}
 
-	return "http://localhost:5000"
-}
+	saveOption := r.URL.Query().Get("save_option")
+	if saveOption == "" {
+		saveOption = "saveonly"
+	}
 
-func detectMethod() string {
-	if os.Getenv("STRIX_FRIGATE_URL") != "" {
-		return "env"
+	client := &http.Client{Timeout: 30 * time.Second}
+
+	req, err := http.NewRequest("POST", url+"/api/config/save?save_option="+saveOption, r.Body)
+	if err != nil {
+		api.Error(w, err, http.StatusInternalServerError)
+		return
 	}
-	if os.Getenv("SUPERVISOR_TOKEN") != "" {
-		return "ha"
+	req.Header.Set("Content-Type", "text/plain")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		api.Error(w, err, http.StatusBadGateway)
+		return
 	}
-	return "localhost"
+	defer resp.Body.Close()
+
+	body, _ := io.ReadAll(resp.Body)
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(resp.StatusCode)
+	w.Write(body)
 }
