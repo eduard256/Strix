@@ -22,21 +22,29 @@ git rev-parse --short HEAD
 
 Store this as COMMIT_HASH (e.g. `fe93aa3`).
 
-## Step 2: Build Docker image
+## Step 2: Download latest camera database
+
+```bash
+cd /home/user/Strix
+gh release download latest --repo eduard256/StrixCamDB --pattern "cameras.db" --clobber
+ls -lh cameras.db
+```
+
+## Step 3: Build Docker image
 
 ```bash
 cd /home/user/Strix
 docker build --build-arg VERSION=dev-$COMMIT_HASH -t eduard256/strix:dev -t eduard256/strix:dev-$COMMIT_HASH .
 ```
 
-## Step 3: Push to Docker Hub
+## Step 4: Push to Docker Hub
 
 ```bash
 docker push eduard256/strix:dev
 docker push eduard256/strix:dev-$COMMIT_HASH
 ```
 
-## Step 4: Update hassio-strix
+## Step 5: Update hassio-strix
 
 ```bash
 cd /home/user/hassio-strix
@@ -52,7 +60,7 @@ git commit -m "Dev build dev-$COMMIT_HASH"
 git push origin main
 ```
 
-## Step 5: Report
+## Step 6: Report
 
 Output a summary:
 
