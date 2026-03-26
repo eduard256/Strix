@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/AlexxIT/go2rtc/pkg/core"
-	"github.com/AlexxIT/go2rtc/pkg/h264"
 	"github.com/AlexxIT/go2rtc/pkg/magic"
 )
 
@@ -67,31 +66,18 @@ func testURL(s *Session, rawURL string) {
 	latency := time.Since(start).Milliseconds()
 
 	var codecs []string
-	var width, height uint16
-
 	for _, media := range prod.GetMedias() {
 		if media.Direction != core.DirectionRecvonly {
 			continue
 		}
 		for _, codec := range media.Codecs {
 			codecs = append(codecs, codec.Name)
-
-			// extract resolution from first video codec SPS
-			if width == 0 && codec.Name == core.CodecH264 {
-				if spsBytes, _ := h264.GetParameterSet(codec.FmtpLine); spsBytes != nil {
-					if sps := h264.DecodeSPS(spsBytes); sps != nil {
-						width, height = sps.Width(), sps.Height()
-					}
-				}
-			}
 		}
 	}
 
 	r := &Result{
 		Source:    rawURL,
 		Codecs:   codecs,
-		Width:    width,
-		Height:   height,
 		LatencyMs: latency,
 	}
 
@@ -110,6 +96,7 @@ func testURL(s *Session, rawURL string) {
 		if jpeg != nil {
 			idx := s.AddScreenshot(jpeg)
 			r.Screenshot = fmt.Sprintf("/api/test/screenshot?id=%s&i=%d", s.ID, idx)
+			r.Width, r.Height = jpegSize(jpeg)
 		}
 	}
 
@@ -165,6 +152,27 @@ matched:
 	}
 
 	return once.Buffer(), cons.CodecName()
+}
+
+// jpegSize extracts width and height from JPEG SOF0/SOF2 marker
+func jpegSize(data []byte) (int, int) {
+	for i := 2; i < len(data)-9; {
+		if data[i] != 0xFF {
+			return 0, 0
+		}
+		marker := data[i+1]
+		size := int(data[i+2])<<8 | int(data[i+3])
+
+		// SOF0 (0xC0) or SOF2 (0xC2) -- baseline or progressive
+		if marker == 0xC0 || marker == 0xC2 {
+			h := int(data[i+5])<<8 | int(data[i+6])
+			w := int(data[i+7])<<8 | int(data[i+8])
+			return w, h
+		}
+
+		i += 2 + size
+	}
+	return 0, 0
 }
 
 func toJPEG(raw []byte) []byte {

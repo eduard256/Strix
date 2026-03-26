@@ -27,8 +27,8 @@ type Result struct {
 	Source     string   `json:"source"`
 	Screenshot string   `json:"screenshot,omitempty"`
 	Codecs     []string `json:"codecs,omitempty"`
-	Width      uint16   `json:"width,omitempty"`
-	Height     uint16   `json:"height,omitempty"`
+	Width      int      `json:"width,omitempty"`
+	Height     int      `json:"height,omitempty"`
 	LatencyMs  int64    `json:"latency_ms,omitempty"`
 	Skipped    bool     `json:"skipped,omitempty"`
 }

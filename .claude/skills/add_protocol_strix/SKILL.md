@@ -70,7 +70,7 @@ func rtspHandler(rawURL string) (core.Producer, error) {
 }
 ```
 
-**Data flow**: URL -> GetHandler(url) -> handler(url) -> core.Producer -> GetMedias() -> codecs, latency -> getScreenshot() -> Result
+**Data flow**: URL -> GetHandler(url) -> handler(url) -> core.Producer -> GetMedias() -> codecs, latency -> getScreenshot() -> jpegSize() -> Result (with width, height)
 
 **Key**: The handler ONLY needs to return a `core.Producer`. Everything else (codecs extraction, screenshot capture, session management) is handled automatically by `worker.go`.
 
@@ -491,7 +491,7 @@ The tester uses:
 2. `GetTrack()` + `Start()` -- to capture screenshot (keyframe)
 3. `Stop()` -- to clean up
 
-### How screenshot works (pkg/tester/worker.go)
+### How screenshot and resolution work (pkg/tester/worker.go)
 
 1. `getScreenshot(prod)` is called after successful Dial
 2. Creates `magic.NewKeyframe()` consumer
@@ -501,8 +501,26 @@ The tester uses:
 6. Waits for first keyframe via `cons.WriteTo()` with 10s timeout
 7. If H264/H265 -- converts to JPEG via ffmpeg
 8. If already JPEG -- uses as-is
+9. `jpegSize(jpeg)` extracts width and height from JPEG SOF0/SOF2 marker
+10. Resolution stored in `Result.Width` and `Result.Height`
 
-This works automatically for ANY protocol that returns a valid `core.Producer`. You do NOT need to implement screenshot logic per protocol.
+This works automatically for ANY protocol that returns a valid `core.Producer`. You do NOT need to implement screenshot or resolution logic per protocol.
+
+### Result struct (pkg/tester/session.go)
+
+```go
+type Result struct {
+    Source     string   `json:"source"`
+    Screenshot string   `json:"screenshot,omitempty"`
+    Codecs     []string `json:"codecs,omitempty"`
+    Width      int      `json:"width,omitempty"`      // from JPEG screenshot
+    Height     int      `json:"height,omitempty"`      // from JPEG screenshot
+    LatencyMs  int64    `json:"latency_ms,omitempty"`
+    Skipped    bool     `json:"skipped,omitempty"`
+}
+```
+
+Resolution is extracted from the JPEG screenshot, not from SDP or protocol-specific data. This means width/height are only available when a screenshot was successfully captured. The frontend uses these values to classify streams as Main (HD) or Sub (SD).
 
 ### magic.NewKeyframe() (pkg/magic/keyframe.go)
 
