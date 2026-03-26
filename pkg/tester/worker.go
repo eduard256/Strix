@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/AlexxIT/go2rtc/pkg/h264"
 	"github.com/AlexxIT/go2rtc/pkg/magic"
 )
 
@@ -66,18 +67,31 @@ func testURL(s *Session, rawURL string) {
 	latency := time.Since(start).Milliseconds()
 
 	var codecs []string
+	var width, height uint16
+
 	for _, media := range prod.GetMedias() {
 		if media.Direction != core.DirectionRecvonly {
 			continue
 		}
 		for _, codec := range media.Codecs {
 			codecs = append(codecs, codec.Name)
+
+			// extract resolution from first video codec SPS
+			if width == 0 && codec.Name == core.CodecH264 {
+				if spsBytes, _ := h264.GetParameterSet(codec.FmtpLine); spsBytes != nil {
+					if sps := h264.DecodeSPS(spsBytes); sps != nil {
+						width, height = sps.Width(), sps.Height()
+					}
+				}
+			}
 		}
 	}
 
 	r := &Result{
 		Source:    rawURL,
 		Codecs:   codecs,
+		Width:    width,
+		Height:   height,
 		LatencyMs: latency,
 	}
 

@@ -1,9 +1,7 @@
 package api
 
 import (
-	"embed"
 	"encoding/json"
-	"io/fs"
 	"net"
 	"net/http"
 	"time"
@@ -25,10 +23,7 @@ func Init() {
 	HandleFunc("api/health", apiHealth)
 	HandleFunc("api/log", apiLog)
 
-	// serve frontend from embedded web/ directory
-	if sub, err := fs.Sub(webFS, "web"); err == nil {
-		http.Handle("/", http.FileServer(http.FS(sub)))
-	}
+	initStatic()
 
 	Handler = middlewareCORS(http.DefaultServeMux)
 
@@ -38,9 +33,6 @@ func Init() {
 
 	go listen_serve("tcp", listen)
 }
-
-//go:embed web
-var webFS embed.FS
 
 func listen_serve(network, address string) {
 	ln, err := net.Listen(network, address)

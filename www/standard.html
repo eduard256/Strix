@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Camera Configuration</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --text-disabled: #404050;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --border-focus: rgba(139, 92, 246, 0.5);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .screen {
+            min-height: 100vh; padding: 1.5rem;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container { max-width: 480px; margin: 0 auto; width: 100%; }
+
+        @media (min-width: 768px) {
+            .screen { padding: 3rem 1.5rem; }
+            .container { max-width: 540px; }
+        }
+
+        /* Back button */
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none;
+            color: var(--text-secondary); font-size: 0.875rem;
+            font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0; margin-bottom: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .screen-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 2rem; }
+
+        /* Form */
+        .form-group { margin-bottom: 1.5rem; }
+
+        .label {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.875rem; font-weight: 500;
+            color: var(--text-secondary); margin-bottom: 0.5rem;
+        }
+
+        .optional { color: var(--text-tertiary); font-weight: 400; }
+
+        .input {
+            width: 100%; padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem; font-family: var(--font-primary);
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .input:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .input::placeholder { color: var(--text-tertiary); }
+        .input:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .hint { margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-tertiary); }
+
+        /* Validated input with checkmark */
+        .input-validated { position: relative; }
+        .input-validated .input { padding-right: 3rem; }
+        .icon-check {
+            position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+            color: var(--success);
+        }
+
+        /* Password toggle */
+        .input-password { position: relative; }
+        .input-password .input { padding-right: 3rem; }
+        .btn-toggle-pass {
+            position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%);
+            background: none; border: none; padding: 0.5rem; cursor: pointer;
+            color: var(--text-tertiary); display: flex;
+            transition: color var(--transition-fast);
+        }
+        .btn-toggle-pass:hover { color: var(--purple-primary); }
+
+        /* Info icon + tooltip */
+        .info-icon {
+            position: relative; display: inline-flex;
+            align-items: center; justify-content: center;
+            width: 16px; height: 16px; cursor: help;
+            color: var(--text-tertiary); transition: color var(--transition-fast);
+        }
+        .info-icon:hover { color: var(--purple-primary); }
+        .info-icon svg { width: 16px; height: 16px; }
+
+        .tooltip {
+            position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-elevated);
+            border: 1px solid var(--purple-primary);
+            border-radius: 8px; padding: 1rem;
+            width: 320px; max-width: 90vw;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--purple-glow);
+            z-index: 1000; opacity: 0; visibility: hidden;
+            transition: opacity var(--transition-fast), visibility var(--transition-fast);
+            pointer-events: none;
+        }
+        .tooltip::after {
+            content: ''; position: absolute; bottom: 100%; left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent; border-bottom-color: var(--purple-primary);
+        }
+        .info-icon:hover .tooltip { opacity: 1; visibility: visible; }
+        .tooltip-title { font-weight: 600; color: var(--purple-primary); margin-bottom: 0.5rem; font-size: 0.875rem; }
+        .tooltip-text { font-size: 0.75rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .tooltip-text:last-child { margin-bottom: 0; }
+
+        /* Autocomplete dropdown */
+        .autocomplete-wrapper { position: relative; }
+
+        .autocomplete-dropdown {
+            position: absolute; top: 100%; left: 0; right: 0;
+            margin-top: 0.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 300px; overflow-y: auto;
+            z-index: 100; box-shadow: var(--shadow-lg);
+            display: none;
+        }
+
+        .autocomplete-dropdown.open { display: block; }
+
+        .autocomplete-item {
+            padding: 0.75rem 1rem; cursor: pointer;
+            transition: background-color var(--transition-fast);
+            font-size: 0.875rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .autocomplete-item:hover { background: var(--bg-tertiary); }
+        .autocomplete-item.selected { background: var(--bg-tertiary); border-left: 2px solid var(--purple-primary); }
+        .autocomplete-item.disabled { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
+
+        .autocomplete-item.contribute {
+            color: var(--purple-light); font-size: 0.8125rem;
+            border-bottom: 1px solid var(--border-color);
+            gap: 0.375rem;
+        }
+        .autocomplete-item.contribute:hover { background: rgba(139, 92, 246, 0.1); }
+        .autocomplete-item.contribute svg { width: 14px; height: 14px; flex-shrink: 0; }
+        .autocomplete-item:first-child { border-radius: 8px 8px 0 0; }
+        .autocomplete-item:last-child { border-radius: 0 0 8px 8px; }
+
+        .autocomplete-item .item-type {
+            font-size: 0.6875rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            padding: 0.125rem 0.375rem; border-radius: 3px;
+            flex-shrink: 0; min-width: 48px; text-align: center;
+        }
+
+        .item-type-preset { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .item-type-brand { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+        .item-type-model { background: rgba(139, 92, 246, 0.15); color: var(--purple-primary); }
+
+        .autocomplete-loading {
+            padding: 1rem; text-align: center;
+            color: var(--text-tertiary); font-size: 0.875rem;
+        }
+
+        /* Selected tags inside dropdown */
+        .dropdown-tags {
+            display: flex; flex-wrap: wrap; gap: 0.375rem;
+            padding: 0.625rem 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tag {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.625rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.75rem; color: var(--text-primary);
+        }
+
+        .tag .tag-type {
+            font-size: 0.625rem; font-weight: 600;
+            text-transform: uppercase; color: var(--text-tertiary);
+        }
+
+        .tag .tag-remove {
+            background: none; border: none; cursor: pointer;
+            color: var(--text-tertiary); padding: 0;
+            display: flex; align-items: center;
+            transition: color var(--transition-fast);
+        }
+
+        .tag .tag-remove:hover { color: var(--error); }
+
+        /* Advanced section */
+        .advanced-section { margin-bottom: 1.5rem; }
+
+        .advanced-toggle {
+            display: flex; align-items: center; gap: 0.5rem;
+            cursor: pointer; user-select: none;
+            font-size: 1rem; font-weight: 500;
+            color: var(--text-secondary);
+            padding: 0.75rem 0;
+            transition: color var(--transition-fast);
+        }
+        .advanced-toggle:hover { color: var(--purple-primary); }
+
+        .advanced-chevron {
+            transition: transform var(--transition-fast);
+            width: 12px; height: 12px;
+        }
+        .advanced-section[open] .advanced-chevron { transform: rotate(90deg); }
+
+        .advanced-content { padding-top: 1rem; }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--purple-glow-strong);
+        }
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-large { width: 100%; padding: 1.5rem; font-size: 1.125rem; }
+
+        /* Toast */
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px; box-shadow: var(--shadow-lg);
+            font-size: 0.875rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="container">
+        <button class="btn-back" id="btn-back">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Back
+        </button>
+
+        <h2 class="screen-title">Camera Configuration</h2>
+
+        <!-- IP (readonly, from params) -->
+        <div class="form-group">
+            <label class="label">
+                Network Address
+                <span class="info-icon">
+                    <svg viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="tooltip">
+                        <div class="tooltip-title">Network Address</div>
+                        <p class="tooltip-text">Detected from the previous probe. This is the IP address of your camera.</p>
+                    </div>
+                </span>
+            </label>
+            <div class="input-validated">
+                <input type="text" id="f-ip" class="input" readonly>
+                <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Camera search -->
+        <div class="form-group">
+            <label class="label">
+                Camera Model <span class="optional">(optional)</span>
+                <span class="info-icon">
+                    <svg viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="tooltip">
+                        <div class="tooltip-title">Camera Model</div>
+                        <p class="tooltip-text">Search for your camera brand, model, or use a preset. You can select multiple items to combine stream patterns.</p>
+                    </div>
+                </span>
+            </label>
+            <div class="autocomplete-wrapper">
+                <input type="text" id="f-model" class="input" placeholder="Search brand, model or preset..." autocomplete="off" spellcheck="false">
+                <div id="dropdown" class="autocomplete-dropdown"></div>
+            </div>
+        </div>
+
+        <!-- Username -->
+        <div class="form-group">
+            <label class="label">Username</label>
+            <input type="text" id="f-user" class="input" value="admin" autocomplete="off" spellcheck="false">
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label class="label">Password</label>
+            <div class="input-password">
+                <input type="password" id="f-pass" class="input" placeholder="Camera password" autocomplete="off">
+                <button class="btn-toggle-pass" id="btn-toggle-pass" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Advanced -->
+        <details class="advanced-section" id="advanced">
+            <summary class="advanced-toggle">
+                <svg class="advanced-chevron" viewBox="0 0 12 12" fill="none">
+                    <path d="M4.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                Advanced
+            </summary>
+            <div class="advanced-content">
+                <div class="form-group">
+                    <label class="label">Channel</label>
+                    <input type="text" id="f-channel" class="input" value="0" autocomplete="off">
+                    <p class="hint">Camera channel number (0 for most cameras, 1+ for NVR)</p>
+                </div>
+                <div class="form-group">
+                    <label class="label">Ports Filter <span class="optional">(optional)</span></label>
+                    <input type="text" id="f-ports" class="input" placeholder="e.g. 554,80" autocomplete="off">
+                    <p class="hint">Only test streams on these ports. Leave empty to test all.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- Discover button -->
+        <button id="btn-discover" class="btn btn-primary btn-large">Discover Streams</button>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    // parse URL params
+    var params = new URLSearchParams(location.search);
+    var probeIP = params.get('ip') || '';
+    var probePorts = params.get('ports') || '';
+    var probeMAC = params.get('mac') || '';
+    var probeVendor = params.get('vendor') || '';
+    var probeServer = params.get('server') || '';
+    var probeHostname = params.get('hostname') || '';
+    var probeLatency = params.get('latency') || '';
+
+    // fill fields from params
+    document.getElementById('f-ip').value = probeIP;
+    if (probePorts) document.getElementById('f-ports').value = probePorts;
+
+    // if vendor from OUI, prefill search
+    if (probeVendor) {
+        document.getElementById('f-model').value = probeVendor;
+        // trigger search after load
+        setTimeout(function() { searchModels(probeVendor); }, 300);
+    }
+
+    // back button
+    document.getElementById('btn-back').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+
+    // password toggle
+    document.getElementById('btn-toggle-pass').addEventListener('click', function() {
+        var input = document.getElementById('f-pass');
+        input.type = input.type === 'password' ? 'text' : 'password';
+    });
+
+    // advanced toggle (details/summary handles it natively)
+
+    // -- search / autocomplete --
+    var selected = new Map(); // id -> {type, name}
+
+    // default: top-1000 preset
+    selected.set('p:top-1000', { type: 'preset', name: 'Top 1000 Stream Patterns' });
+    var searchTimer = null;
+    var modelInput = document.getElementById('f-model');
+    var dropdown = document.getElementById('dropdown');
+
+    modelInput.addEventListener('input', function() {
+        clearTimeout(searchTimer);
+        var q = modelInput.value.trim();
+        if (q.length >= 1) {
+            searchTimer = setTimeout(function() { searchModels(q); }, 150);
+        } else {
+            dropdown.classList.remove('open');
+        }
+    });
+
+    modelInput.addEventListener('focus', function() {
+        if (modelInput.value.trim().length >= 1) {
+            searchModels(modelInput.value.trim());
+        }
+    });
+
+    // close dropdown on outside click
+    var dropdownClicked = false;
+
+    dropdown.addEventListener('mousedown', function() {
+        dropdownClicked = true;
+    });
+
+    document.addEventListener('click', function(e) {
+        if (dropdownClicked) {
+            dropdownClicked = false;
+            return;
+        }
+        if (!e.target.closest('.autocomplete-wrapper')) {
+            dropdown.classList.remove('open');
+        }
+    });
+
+    async function searchModels(q) {
+        try {
+            var r = await fetch('api/search?q=' + encodeURIComponent(q));
+            var data = await r.json();
+            renderDropdown(data.results || []);
+        } catch (e) {
+            dropdown.classList.remove('open');
+        }
+    }
+
+    var lastResults = []; // cache for re-rendering
+
+    function renderDropdown(results) {
+        lastResults = results;
+        rebuildDropdown();
+    }
+
+    function rebuildDropdown() {
+        while (dropdown.firstChild) dropdown.removeChild(dropdown.firstChild);
+
+        // render tags inside dropdown if any selected
+        if (selected.size > 0) {
+            var tagsDiv = document.createElement('div');
+            tagsDiv.className = 'dropdown-tags';
+
+            selected.forEach(function(item, id) {
+                var tag = document.createElement('span');
+                tag.className = 'tag';
+
+                var type = document.createElement('span');
+                type.className = 'tag-type';
+                type.textContent = item.type;
+                tag.appendChild(type);
+
+                tag.appendChild(document.createTextNode(item.name));
+
+                var btn = document.createElement('button');
+                btn.className = 'tag-remove';
+                btn.type = 'button';
+                var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', '12');
+                svg.setAttribute('height', '12');
+                svg.setAttribute('viewBox', '0 0 12 12');
+                svg.setAttribute('fill', 'none');
+                var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M3 3l6 6M9 3l-6 6');
+                path.setAttribute('stroke', 'currentColor');
+                path.setAttribute('stroke-width', '1.5');
+                path.setAttribute('stroke-linecap', 'round');
+                svg.appendChild(path);
+                btn.appendChild(svg);
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    selected.delete(id);
+                    rebuildDropdown();
+                });
+
+                tag.appendChild(btn);
+                tagsDiv.appendChild(tag);
+            });
+
+            dropdown.appendChild(tagsDiv);
+        }
+
+        // "Add new model" link -- always first
+        var contribItem = document.createElement('div');
+        contribItem.className = 'autocomplete-item contribute';
+        var contribSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        contribSvg.setAttribute('viewBox', '0 0 16 16');
+        contribSvg.setAttribute('fill', 'none');
+        var contribPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        contribPath.setAttribute('d', 'M8 3v10M3 8h10');
+        contribPath.setAttribute('stroke', 'currentColor');
+        contribPath.setAttribute('stroke-width', '1.5');
+        contribPath.setAttribute('stroke-linecap', 'round');
+        contribSvg.appendChild(contribPath);
+        contribItem.appendChild(contribSvg);
+        contribItem.appendChild(document.createTextNode('Add new model to Strix DB'));
+        contribItem.addEventListener('click', function() {
+            var p = new URLSearchParams();
+            var q = modelInput.value.trim();
+            if (q) p.set('model', q);
+            if (probeVendor) p.set('brand', probeVendor);
+            if (probeMAC && probeMAC.length >= 8) p.set('mac_prefix', probeMAC.substring(0, 8));
+            if (probeServer) p.set('comment', 'Server: ' + probeServer);
+            window.open('https://gostrix.github.io/#/contribute?' + p.toString(), '_blank');
+        });
+        dropdown.appendChild(contribItem);
+
+        if (lastResults.length === 0 && selected.size === 0) {
+            var empty = document.createElement('div');
+            empty.className = 'autocomplete-loading';
+            empty.textContent = 'No results found in database';
+            dropdown.appendChild(empty);
+            dropdown.classList.add('open');
+            return;
+        }
+
+        // collect selected brand IDs to disable their models
+        var selectedBrands = new Set();
+        selected.forEach(function(item, id) {
+            if (item.type === 'brand') selectedBrands.add(id.slice(2));
+        });
+
+        lastResults.forEach(function(r) {
+            var isSelected = selected.has(r.id);
+            var isDisabled = r.type === 'model' && selectedBrands.has(r.id.split(':')[1]);
+
+            var item = document.createElement('div');
+            item.className = 'autocomplete-item';
+            if (isSelected) item.classList.add('selected');
+            if (isDisabled) item.classList.add('disabled');
+
+            var badge = document.createElement('span');
+            badge.className = 'item-type item-type-' + r.type;
+            badge.textContent = r.type;
+            item.appendChild(badge);
+
+            item.appendChild(document.createTextNode(r.name));
+
+            if (!isDisabled) {
+                item.addEventListener('click', function() {
+                    toggleItem(r);
+                });
+            }
+
+            dropdown.appendChild(item);
+        });
+
+        dropdown.classList.add('open');
+    }
+
+    function toggleItem(r) {
+        if (selected.has(r.id)) {
+            // deselect
+            selected.delete(r.id);
+        } else {
+            // if selecting brand, remove its individual models
+            if (r.type === 'brand') {
+                var prefix = 'm:' + r.id.slice(2) + ':';
+                selected.forEach(function(_, id) {
+                    if (id.indexOf(prefix) === 0) selected.delete(id);
+                });
+            }
+            selected.set(r.id, { type: r.type, name: r.name });
+        }
+
+        rebuildDropdown();
+    }
+
+
+    // -- discover button -> navigate to create.html --
+    document.getElementById('btn-discover').addEventListener('click', function() {
+        if (selected.size === 0) {
+            showToast('Select at least one preset, brand or model');
+            return;
+        }
+
+        var ids = Array.from(selected.keys()).join(',');
+        var ip = document.getElementById('f-ip').value.trim();
+        var user = document.getElementById('f-user').value.trim();
+        var pass = document.getElementById('f-pass').value;
+        var channel = document.getElementById('f-channel').value.trim();
+        var portsVal = document.getElementById('f-ports').value.trim();
+
+        if (!ip) { showToast('IP address is required'); return; }
+
+        var p = new URLSearchParams();
+        p.set('ip', ip);
+        p.set('ids', ids);
+        if (user) p.set('user', user);
+        if (pass) p.set('pass', pass);
+        if (channel && channel !== '0') p.set('channel', channel);
+        if (portsVal) p.set('ports', portsVal);
+        if (probeMAC) p.set('mac', probeMAC);
+        if (probeVendor) p.set('vendor', probeVendor);
+        if (probeServer) p.set('server', probeServer);
+        if (probeHostname) p.set('hostname', probeHostname);
+
+        // pass selected model name if exactly one model/brand selected
+        var names = [];
+        selected.forEach(function(item) {
+            if (item.type === 'model' || item.type === 'brand') names.push(item.name);
+        });
+        if (names.length > 0) p.set('model', names.join(', '));
+
+        window.location.href = 'create.html?' + p.toString();
+    });
+
+    // -- toast --
+    function showToast(msg, duration) {
+        var t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.remove('hidden');
+        t.classList.add('show');
+        setTimeout(function() {
+            t.classList.remove('show');
+            setTimeout(function() { t.classList.add('hidden'); }, 250);
+        }, duration || 3000);
+    }
+</script>
+
+</body>
+</html>
