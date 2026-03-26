@@ -1,6 +1,7 @@
 package frigate
 
 import (
+	"encoding/json"
 	"io"
 	"net/http"
 	"sync"
@@ -99,10 +100,17 @@ func apiConfig(w http.ResponseWriter, r *http.Request) {
 
 	body, _ := io.ReadAll(resp.Body)
 
+	// Frigate /api/config/raw returns JSON-encoded string, unquote it
+	config := string(body)
+	var unquoted string
+	if err := json.Unmarshal(body, &unquoted); err == nil {
+		config = unquoted
+	}
+
 	api.ResponseJSON(w, map[string]any{
 		"connected": true,
 		"url":       url,
-		"config":    string(body),
+		"config":    config,
 	})
 }
 

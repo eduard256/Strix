@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Add to go2rtc</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --error: #ef4444;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.5; min-height: 100vh; }
+
+        .screen { padding: 1.5rem; animation: fadeIn var(--transition-base); }
+        .container { max-width: 600px; margin: 0 auto; width: 100%; }
+
+        @media (min-width: 768px) { .screen { padding: 3rem 1.5rem; } }
+
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none; color: var(--text-secondary);
+            font-size: 0.875rem; font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0; margin-bottom: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .page-title { font-size: 1.375rem; font-weight: 600; margin-bottom: 2rem; }
+
+        .stream-card {
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; margin-bottom: 1.5rem;
+        }
+        .stream-label {
+            font-size: 0.625rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 0.375rem;
+        }
+        .stream-url {
+            font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--text-secondary); word-break: break-all;
+        }
+        .stream-url .scheme { color: var(--purple-light); }
+
+        .form-group { margin-bottom: 1.25rem; }
+
+        .field-label {
+            font-size: 0.8125rem; font-weight: 500; color: var(--text-secondary);
+            margin-bottom: 0.375rem;
+        }
+
+        .field-hint { font-size: 0.6875rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+        .input {
+            width: 100%; padding: 0.875rem 1rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; color: var(--text-primary);
+            font-size: 0.9375rem; font-family: var(--font-primary);
+            outline: none; transition: all var(--transition-fast);
+        }
+        .input:focus { border-color: var(--purple-primary); box-shadow: 0 0 0 3px var(--purple-glow); }
+        .input::placeholder { color: var(--text-tertiary); }
+        .input-mono { font-family: var(--font-mono); font-size: 0.8125rem; }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none; width: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+        .btn-primary:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 20px var(--purple-glow-strong); }
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .result {
+            margin-top: 1.25rem; padding: 1rem;
+            border-radius: 8px; font-size: 0.875rem;
+        }
+        .result-ok { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--success); }
+        .result-err { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--error); }
+
+        .result-ok a {
+            color: var(--purple-light); text-decoration: none;
+            font-weight: 600;
+        }
+        .result-ok a:hover { text-decoration: underline; }
+
+        .btn-add-sub {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.75rem; background: var(--bg-tertiary);
+            border: 1px solid var(--border-color); border-radius: 6px;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 500;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: all var(--transition-fast); margin-bottom: 0.75rem;
+        }
+        .btn-add-sub:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        .section-divider { height: 1px; background: var(--border-color); margin: 1.5rem 0; }
+
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 0.75rem 1.25rem; background: var(--bg-elevated);
+            border: 1px solid var(--border-color); border-radius: 8px;
+            box-shadow: var(--shadow-lg); font-size: 0.8125rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="container">
+        <button class="btn-back" id="btn-back">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Back
+        </button>
+
+        <h2 class="page-title">Add to go2rtc</h2>
+
+        <!-- Main stream -->
+        <div id="main-card" class="stream-card"></div>
+
+        <!-- Sub stream -->
+        <div id="sub-card" class="stream-card" style="display:none"></div>
+
+        <button class="btn-add-sub" id="btn-add-sub" style="display:none">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Add Sub Stream
+        </button>
+
+        <div class="section-divider"></div>
+
+        <!-- Main stream name -->
+        <div class="form-group">
+            <div class="field-label">Main Stream Name</div>
+            <input class="input input-mono" id="f-main-name" autocomplete="off" spellcheck="false">
+            <div class="field-hint">Name used in go2rtc config and Frigate</div>
+        </div>
+
+        <!-- Sub stream name -->
+        <div class="form-group" id="sub-name-group" style="display:none">
+            <div class="field-label">Sub Stream Name</div>
+            <input class="input input-mono" id="f-sub-name" autocomplete="off" spellcheck="false">
+        </div>
+
+        <button class="btn btn-primary" id="btn-add">Add Streams to go2rtc</button>
+
+        <div id="result-area"></div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    var params = new URLSearchParams(location.search);
+    var mainStream = params.get('main') || '';
+    var subStream = params.get('sub') || '';
+    var ip = params.get('ip') || '';
+    var sessionId = params.get('session') || '';
+
+    // default names from IP
+    var sanitized = ip ? ip.replace(/\./g, '_') : 'camera';
+    document.getElementById('f-main-name').value = sanitized + '_main';
+    if (subStream) document.getElementById('f-sub-name').value = sanitized + '_sub';
+
+    // render stream cards
+    renderCard('main-card', 'Main Stream', mainStream);
+    if (subStream) {
+        renderCard('sub-card', 'Sub Stream', subStream);
+        document.getElementById('sub-card').style.display = '';
+        document.getElementById('sub-name-group').style.display = '';
+    }
+
+    // add sub stream button
+    if (!subStream && sessionId) {
+        document.getElementById('btn-add-sub').style.display = 'inline-flex';
+    }
+    document.getElementById('btn-add-sub').addEventListener('click', function() {
+        var p = new URLSearchParams();
+        p.set('id', sessionId);
+        p.set('mode', 'sub');
+        p.set('main', mainStream);
+        if (ip) p.set('ip', ip);
+        window.location.href = 'test.html?' + p.toString();
+    });
+
+    // check go2rtc availability -- if not found, redirect to urls.html
+    checkGo2rtc();
+
+    async function checkGo2rtc() {
+        try {
+            // try adding with empty name to test connectivity
+            var r = await fetch('api/go2rtc/streams?name=_probe&src=_probe', { method: 'PUT' });
+            var data = await r.json();
+            // if go2rtc not found, redirect
+            if (!data.success && data.error && data.error.indexOf('not found') >= 0) {
+                navigateUrls();
+            }
+        } catch (e) {
+            navigateUrls();
+        }
+    }
+
+    function navigateUrls() {
+        var p = new URLSearchParams();
+        if (mainStream) p.set('main', mainStream);
+        if (subStream) p.set('sub', subStream);
+        if (ip) p.set('ip', ip);
+        if (sessionId) p.set('session', sessionId);
+        window.location.href = 'urls.html?' + p.toString();
+    }
+
+    // back
+    document.getElementById('btn-back').addEventListener('click', function() { history.back(); });
+
+    // add
+    document.getElementById('btn-add').addEventListener('click', addStreams);
+
+    async function addStreams() {
+        var btn = document.getElementById('btn-add');
+        var mainName = document.getElementById('f-main-name').value.trim();
+        if (!mainName) { showToast('Main stream name is required'); return; }
+
+        btn.disabled = true;
+        btn.textContent = 'Adding...';
+
+        var results = [];
+
+        // add main
+        var r1 = await addOne(mainName, mainStream);
+        results.push({ name: mainName, success: r1.success, error: r1.error });
+
+        // add sub
+        if (subStream) {
+            var subName = document.getElementById('f-sub-name').value.trim();
+            if (subName) {
+                var r2 = await addOne(subName, subStream);
+                results.push({ name: subName, success: r2.success, error: r2.error });
+            }
+        }
+
+        // render results
+        var area = document.getElementById('result-area');
+        area.textContent = '';
+
+        var allOk = results.every(function(r) { return r.success; });
+
+        if (allOk) {
+            var div = document.createElement('div');
+            div.className = 'result result-ok';
+
+            var lines = results.map(function(r) { return r.name; });
+            div.textContent = 'Added to go2rtc: ' + lines.join(', ') + '. ';
+
+            var link = document.createElement('a');
+            link.href = 'http://' + location.hostname + ':1984/';
+            link.target = '_blank';
+            link.textContent = 'Open go2rtc UI';
+            div.appendChild(link);
+
+            area.appendChild(div);
+            btn.textContent = 'Added';
+        } else {
+            results.forEach(function(r) {
+                if (!r.success) {
+                    var div = document.createElement('div');
+                    div.className = 'result result-err';
+                    div.textContent = r.name + ': ' + (r.error || 'Unknown error');
+                    area.appendChild(div);
+                }
+            });
+            btn.disabled = false;
+            btn.textContent = 'Add Streams to go2rtc';
+        }
+    }
+
+    async function addOne(name, src) {
+        try {
+            var url = 'api/go2rtc/streams?name=' + encodeURIComponent(name) + '&src=' + encodeURIComponent(src);
+            var r = await fetch(url, { method: 'PUT' });
+            return await r.json();
+        } catch (e) {
+            return { success: false, error: e.message };
+        }
+    }
+
+    function renderCard(id, label, url) {
+        var card = document.getElementById(id);
+        var lbl = document.createElement('div'); lbl.className = 'stream-label'; lbl.textContent = label;
+        card.appendChild(lbl);
+        var v = document.createElement('div'); v.className = 'stream-url';
+        var i = url.indexOf('://');
+        if (i > 0) {
+            var s = document.createElement('span'); s.className = 'scheme'; s.textContent = url.substring(0, i + 3);
+            v.appendChild(s); v.appendChild(document.createTextNode(url.substring(i + 3)));
+        } else {
+            v.textContent = url;
+        }
+        card.appendChild(v);
+    }
+
+    function showToast(msg) {
+        var t = document.getElementById('toast'); t.textContent = msg;
+        t.classList.remove('hidden'); t.classList.add('show');
+        setTimeout(function() { t.classList.remove('show'); setTimeout(function() { t.classList.add('hidden'); }, 250); }, 3000);
+    }
+</script>
+
+</body>
+</html>

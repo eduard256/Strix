@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Configuration</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.5; min-height: 100vh; }
+
+        .screen { padding: 1.5rem; max-width: 1400px; margin: 0 auto; animation: fadeIn var(--transition-base); }
+
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none; color: var(--text-secondary);
+            font-size: 0.875rem; font-family: var(--font-primary);
+            cursor: pointer; padding: 0.5rem 0; margin-bottom: 1rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .page-title { font-size: 1.375rem; font-weight: 600; margin-bottom: 1.5rem; }
+
+        /* Mobile tabs */
+        .tabs { display: none; margin-bottom: 1rem; }
+
+        .tabs-row {
+            display: flex; gap: 0;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; padding: 3px; overflow: hidden;
+        }
+
+        .tab-btn {
+            flex: 1; padding: 0.625rem; text-align: center;
+            background: none; border: none; border-radius: 6px;
+            font-size: 0.8125rem; font-weight: 600; font-family: var(--font-primary);
+            color: var(--text-tertiary); cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        .tab-btn.active { background: var(--purple-primary); color: white; }
+
+        /* Two-column layout */
+        .columns { display: flex; gap: 1.5rem; align-items: flex-start; }
+
+        .col-settings { flex: 1; min-width: 0; }
+        .col-config { flex: 1; min-width: 0; position: sticky; top: 1.5rem; }
+
+        @media (max-width: 768px) {
+            .tabs { display: block; }
+            .columns { flex-direction: column; }
+            .col-settings, .col-config { width: 100%; }
+            .col-config { position: static; }
+            .col-settings.hidden, .col-config.hidden { display: none; }
+        }
+
+        /* Stream info */
+        .stream-card {
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; margin-bottom: 0.5rem;
+        }
+        .stream-label {
+            font-size: 0.625rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 0.25rem;
+        }
+        .stream-val { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-secondary); word-break: break-all; }
+        .stream-val .scheme { color: var(--purple-light); }
+        .stream-meta { font-family: var(--font-mono); font-size: 0.625rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+        .btn-add-sub {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.75rem; background: var(--bg-tertiary);
+            border: 1px solid var(--border-color); border-radius: 6px;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 500;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: all var(--transition-fast); margin-bottom: 1.5rem;
+        }
+        .btn-add-sub:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* Form fields */
+        .section-divider { height: 1px; background: var(--border-color); margin: 1.5rem 0; }
+
+        .form-group { margin-bottom: 1rem; }
+
+        .field-label {
+            font-size: 0.75rem; font-weight: 500; color: var(--text-secondary);
+            margin-bottom: 0.375rem; display: flex; align-items: center; gap: 0.375rem;
+        }
+
+        .field-hint { font-size: 0.6875rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+        .input {
+            width: 100%; padding: 0.625rem 0.75rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 6px; color: var(--text-primary);
+            font-size: 0.8125rem; font-family: var(--font-primary);
+            outline: none; transition: all var(--transition-fast);
+        }
+        .input:focus { border-color: var(--purple-primary); box-shadow: 0 0 0 2px var(--purple-glow); }
+        .input::placeholder { color: var(--text-tertiary); }
+        .input-sm { max-width: 120px; }
+        .input-mono { font-family: var(--font-mono); font-size: 0.75rem; }
+
+        .row { display: flex; gap: 0.75rem; }
+        .row > .form-group { flex: 1; }
+
+        select.input { cursor: pointer; appearance: none; padding-right: 2rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23606070' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 0.75rem center;
+        }
+
+        /* Toggle */
+        .toggle-row {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.5rem 0;
+        }
+        .toggle-label { font-size: 0.8125rem; color: var(--text-primary); }
+
+        .toggle {
+            width: 36px; height: 20px; border-radius: 10px;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            cursor: pointer; position: relative; transition: all var(--transition-fast);
+            flex-shrink: 0;
+        }
+        .toggle.on { background: var(--purple-primary); border-color: var(--purple-primary); }
+        .toggle::after {
+            content: ''; position: absolute; top: 2px; left: 2px;
+            width: 14px; height: 14px; border-radius: 50%;
+            background: white; transition: transform var(--transition-fast);
+        }
+        .toggle.on::after { transform: translateX(16px); }
+
+        /* Expand buttons */
+        .expand-btn {
+            display: flex; align-items: center; gap: 0.5rem;
+            width: 100%; padding: 0.75rem 0; background: none; border: none;
+            color: var(--text-secondary); font-size: 0.8125rem; font-weight: 600;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .expand-btn:hover { color: var(--purple-primary); }
+        .expand-btn .chevron { transition: transform var(--transition-fast); width: 12px; height: 12px; }
+        .expand-btn.open .chevron { transform: rotate(90deg); }
+
+        .expandable { display: none; }
+        .expandable.open { display: block; }
+
+        .section-title {
+            font-size: 0.6875rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.06em; color: var(--text-tertiary);
+            padding-bottom: 0.5rem; margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Config panel */
+        .config-panel {
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; overflow: hidden;
+        }
+
+        .config-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color);
+        }
+        .config-title { font-size: 0.8125rem; font-weight: 600; }
+        .config-actions { display: flex; gap: 0.5rem; }
+
+        .btn-sm {
+            padding: 0.25rem 0.625rem; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; border: 1px solid var(--border-color);
+            background: var(--bg-tertiary); color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
+        .btn-sm:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        .config-code {
+            padding: 1rem; font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary); line-height: 1.7;
+            max-height: 75vh; overflow-y: auto; white-space: pre;
+        }
+        .config-code::-webkit-scrollbar { width: 5px; }
+        .config-code::-webkit-scrollbar-track { background: transparent; }
+        .config-code::-webkit-scrollbar-thumb { background: var(--purple-primary); border-radius: 3px; }
+
+        .diff-added { color: var(--success); }
+        .diff-context { color: var(--text-secondary); }
+        .diff-line-num { color: var(--text-tertiary); display: inline-block; width: 3ch; text-align: right; margin-right: 1ch; user-select: none; opacity: 0.4; }
+
+        .config-footer {
+            padding: 0.75rem 1rem; border-top: 1px solid var(--border-color);
+            display: flex; gap: 0.5rem;
+        }
+
+        .save-settings { margin-top: 1.5rem; }
+
+        @media (min-width: 769px) {
+            .config-footer { display: none !important; }
+        }
+        @media (max-width: 768px) {
+            .save-settings { display: none !important; }
+        }
+
+        .btn-save {
+            flex: 1; padding: 0.625rem; border-radius: 6px;
+            background: var(--success); color: #000; border: none;
+            font-size: 0.8125rem; font-weight: 700; font-family: var(--font-primary);
+            cursor: pointer; transition: opacity var(--transition-fast);
+        }
+        .btn-save:hover:not(:disabled) { opacity: 0.9; }
+        .btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        /* Notice */
+        .notice {
+            padding: 1rem; background: rgba(139, 92, 246, 0.06);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 8px; margin-bottom: 1.5rem;
+        }
+        .notice-title { font-size: 0.875rem; font-weight: 600; color: var(--purple-light); margin-bottom: 0.375rem; }
+        .notice-text { font-size: 0.75rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem; }
+        .notice-code { font-family: var(--font-mono); font-size: 0.6875rem; background: var(--bg-secondary); padding: 0.375rem 0.625rem; border-radius: 4px; color: var(--purple-light); display: block; margin-top: 0.375rem; }
+        .notice-close { float: right; background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0; font-size: 1.25rem; line-height: 1; }
+
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 0.75rem 1.25rem; background: var(--bg-elevated);
+            border: 1px solid var(--border-color); border-radius: 8px;
+            box-shadow: var(--shadow-lg); font-size: 0.8125rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <button class="btn-back" id="btn-back">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Back
+    </button>
+    <h2 class="page-title">Frigate Configuration</h2>
+
+    <div id="notice-area"></div>
+
+    <div class="tabs" id="tabs">
+        <div class="tabs-row">
+            <button class="tab-btn active" data-tab="settings">Settings</button>
+            <button class="tab-btn" data-tab="config">Config</button>
+        </div>
+    </div>
+
+    <div class="columns">
+        <!-- LEFT: settings -->
+        <div class="col-settings" id="col-settings">
+            <!-- streams -->
+            <div class="stream-card" id="main-card"></div>
+            <div class="stream-card" id="sub-card" style="display:none"></div>
+            <button class="btn-add-sub" id="btn-add-sub" style="display:none">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Add Sub Stream
+            </button>
+
+            <!-- Level 1: Basic -->
+            <div class="form-group">
+                <div class="field-label">Camera Name</div>
+                <input class="input" id="f-name" placeholder="camera_name" autocomplete="off" spellcheck="false">
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Level 2: Settings -->
+            <button class="expand-btn" id="btn-l2">
+                <svg class="chevron" viewBox="0 0 12 12" fill="none"><path d="M4.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Settings
+            </button>
+            <div class="expandable" id="level2">
+
+                <div class="section-title">Detect</div>
+                <div class="toggle-row"><span class="toggle-label">Enabled</span><div class="toggle on" id="t-detect"></div></div>
+                <div class="row">
+                    <div class="form-group"><div class="field-label">FPS</div><input class="input input-sm" id="f-detect-fps" type="number" placeholder="5"></div>
+                    <div class="form-group"><div class="field-label">Width</div><input class="input input-sm" id="f-detect-w" type="number" placeholder="auto"></div>
+                    <div class="form-group"><div class="field-label">Height</div><input class="input input-sm" id="f-detect-h" type="number" placeholder="auto"></div>
+                </div>
+
+                <div class="section-title">Record</div>
+                <div class="toggle-row"><span class="toggle-label">Enabled</span><div class="toggle on" id="t-record"></div></div>
+
+                <div class="section-title">Objects</div>
+                <div class="form-group">
+                    <input class="input" id="f-objects" value="person" placeholder="person, car, dog" autocomplete="off">
+                    <div class="field-hint">Comma-separated list of objects to track</div>
+                </div>
+
+                <div class="section-title">Motion</div>
+                <div class="toggle-row"><span class="toggle-label">Enabled</span><div class="toggle" id="t-motion"></div></div>
+                <div class="row">
+                    <div class="form-group"><div class="field-label">Threshold</div><input class="input input-sm" id="f-motion-thresh" type="number" placeholder="30"></div>
+                    <div class="form-group"><div class="field-label">Contour Area</div><input class="input input-sm" id="f-motion-contour" type="number" placeholder="10"></div>
+                </div>
+
+                <div class="section-title">Other</div>
+                <div class="toggle-row"><span class="toggle-label">Snapshots</span><div class="toggle" id="t-snapshots"></div></div>
+                <div class="toggle-row"><span class="toggle-label">Audio Detection</span><div class="toggle" id="t-audio"></div></div>
+                <div class="form-group" id="audio-filters-group" style="display:none">
+                    <div class="field-label">Audio Filters</div>
+                    <input class="input" id="f-audio-filters" placeholder="bark, speech, fire_alarm" autocomplete="off">
+                </div>
+                <div class="toggle-row"><span class="toggle-label">Notifications</span><div class="toggle" id="t-notifications"></div></div>
+
+                <div class="section-divider"></div>
+
+                <!-- Level 3: Advanced -->
+                <button class="expand-btn" id="btn-l3">
+                    <svg class="chevron" viewBox="0 0 12 12" fill="none"><path d="M4.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Advanced
+                </button>
+                <div class="expandable" id="level3">
+
+                    <div class="section-title">FFmpeg</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">HW Accel</div>
+                            <select class="input" id="f-hwaccel"><option value="">auto</option><option value="preset-vaapi">VAAPI</option><option value="preset-nvidia-h264">NVIDIA H264</option><option value="preset-nvidia-h265">NVIDIA H265</option><option value="preset-rpi-64-h264">RPi 64 H264</option></select>
+                        </div>
+                        <div class="form-group"><div class="field-label">GPU</div><input class="input input-sm" id="f-gpu" type="number" placeholder="0"></div>
+                    </div>
+
+                    <div class="section-title">Live View</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">Height</div><input class="input input-sm" id="f-live-h" type="number" placeholder="auto"></div>
+                        <div class="form-group"><div class="field-label">Quality (1-31)</div><input class="input input-sm" id="f-live-q" type="number" placeholder="8"></div>
+                    </div>
+
+                    <div class="section-title">Birdseye</div>
+                    <div class="toggle-row"><span class="toggle-label">Enabled</span><div class="toggle" id="t-birdseye"></div></div>
+                    <div class="form-group"><div class="field-label">Mode</div>
+                        <select class="input" id="f-birdseye-mode"><option value="">default</option><option value="continuous">continuous</option><option value="motion">motion</option><option value="objects">objects</option></select>
+                    </div>
+
+                    <div class="section-title">ONVIF</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">Host</div><input class="input" id="f-onvif-host" placeholder="" autocomplete="off"></div>
+                        <div class="form-group"><div class="field-label">Port</div><input class="input input-sm" id="f-onvif-port" type="number" placeholder="80"></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">User</div><input class="input" id="f-onvif-user" autocomplete="off"></div>
+                        <div class="form-group"><div class="field-label">Password</div><input class="input" id="f-onvif-pass" autocomplete="off"></div>
+                    </div>
+                    <div class="toggle-row"><span class="toggle-label">Auto-tracking</span><div class="toggle" id="t-onvif-track"></div></div>
+
+                    <div class="section-title">PTZ</div>
+                    <div class="toggle-row"><span class="toggle-label">Enabled</span><div class="toggle" id="t-ptz"></div></div>
+
+                    <div class="section-title">UI</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">Order</div><input class="input input-sm" id="f-ui-order" type="number" placeholder="0"></div>
+                    </div>
+                    <div class="toggle-row"><span class="toggle-label">Dashboard</span><div class="toggle on" id="t-ui-dash"></div></div>
+
+                    <div class="section-title">Go2RTC Overrides</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">Main Stream Name</div><input class="input input-mono" id="f-g2r-main-name" autocomplete="off"></div>
+                        <div class="form-group"><div class="field-label">Sub Stream Name</div><input class="input input-mono" id="f-g2r-sub-name" autocomplete="off"></div>
+                    </div>
+                    <div class="form-group"><div class="field-label">Main Source Override</div><input class="input input-mono" id="f-g2r-main-src" autocomplete="off"></div>
+                    <div class="form-group"><div class="field-label">Sub Source Override</div><input class="input input-mono" id="f-g2r-sub-src" autocomplete="off"></div>
+
+                    <div class="section-title">Frigate Overrides</div>
+                    <div class="form-group"><div class="field-label">Main Path</div><input class="input input-mono" id="f-fri-main-path" autocomplete="off"></div>
+                    <div class="form-group"><div class="field-label">Sub Path</div><input class="input input-mono" id="f-fri-sub-path" autocomplete="off"></div>
+                    <div class="form-group"><div class="field-label">Main Input Args</div><input class="input input-mono" id="f-fri-main-args" autocomplete="off"></div>
+                    <div class="form-group"><div class="field-label">Sub Input Args</div><input class="input input-mono" id="f-fri-sub-args" autocomplete="off"></div>
+                </div>
+            </div>
+
+            <div class="save-settings" id="save-settings" style="display:none">
+                <button class="btn-save" id="btn-save-settings" style="width:100%">Save to Frigate & Restart</button>
+            </div>
+        </div>
+
+        <!-- RIGHT: config -->
+        <div class="col-config" id="col-config">
+            <div class="config-panel">
+                <div class="config-header">
+                    <span class="config-title">Generated Config</span>
+                    <div class="config-actions">
+                        <button class="btn-sm" id="btn-copy">Copy</button>
+                        <button class="btn-sm" id="btn-download">Download</button>
+                    </div>
+                </div>
+                <div class="config-code" id="config-code">Loading...</div>
+                <div class="config-footer" id="config-footer" style="display:none">
+                    <button class="btn-save" id="btn-save">Save to Frigate & Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    var params = new URLSearchParams(location.search);
+    var mainStream = params.get('main') || '';
+    var subStream = params.get('sub') || '';
+    var sessionId = params.get('session') || '';
+    var ip = params.get('ip') || '';
+    var mac = params.get('mac') || '';
+    var vendor = params.get('vendor') || '';
+    var model = params.get('model') || '';
+    var server = params.get('server') || '';
+    var hostname = params.get('hostname') || '';
+    var ports = params.get('ports') || '';
+    var userParam = params.get('user') || '';
+    var channel = params.get('channel') || '';
+    var ids = params.get('ids') || '';
+    var mainWidth = params.get('main_width') || '';
+    var mainHeight = params.get('main_height') || '';
+
+    var frigateConnected = false;
+    var existingConfig = '';
+    var generatedConfig = '';
+    var addedLines = {};
+    var abortCtrl = null;
+    var debounceTimer = null;
+
+    // -- init --
+    document.getElementById('btn-back').addEventListener('click', function() { history.back(); });
+
+    // stream cards
+    renderStreamCard('main-card', 'Main Stream', mainStream, mainWidth, mainHeight);
+    if (subStream) {
+        renderStreamCard('sub-card', 'Sub Stream', subStream, '', '');
+        document.getElementById('sub-card').style.display = '';
+    }
+    if (!subStream && sessionId) document.getElementById('btn-add-sub').style.display = '';
+
+    document.getElementById('btn-add-sub').addEventListener('click', function() {
+        var p = new URLSearchParams();
+        p.set('id', sessionId); p.set('mode', 'sub'); p.set('main', mainStream);
+        ['ip','mac','vendor','model','server','hostname','ports','user','channel','ids'].forEach(function(k) {
+            if (params.get(k)) p.set(k, params.get(k));
+        });
+        window.location.href = 'test.html?' + p.toString();
+    });
+
+    // default name from IP
+    var defaultName = ip ? 'camera_' + ip.replace(/\./g, '_') : 'camera';
+    document.getElementById('f-name').value = defaultName;
+
+    // prefill ONVIF from probe
+    if (ip) document.getElementById('f-onvif-host').value = ip;
+    if (userParam) document.getElementById('f-onvif-user').value = userParam;
+
+    // -- tabs (mobile) --
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var tab = btn.dataset.tab;
+            document.getElementById('col-settings').classList.toggle('hidden', tab !== 'settings');
+            document.getElementById('col-config').classList.toggle('hidden', tab !== 'config');
+        });
+    });
+
+    // -- expand buttons --
+    ['btn-l2', 'btn-l3'].forEach(function(id) {
+        document.getElementById(id).addEventListener('click', function() {
+            this.classList.toggle('open');
+            var target = id === 'btn-l2' ? 'level2' : 'level3';
+            document.getElementById(target).classList.toggle('open');
+        });
+    });
+
+    // -- toggles --
+    document.querySelectorAll('.toggle').forEach(function(el) {
+        el.addEventListener('click', function() {
+            el.classList.toggle('on');
+            if (el.id === 't-audio') {
+                document.getElementById('audio-filters-group').style.display = el.classList.contains('on') ? '' : 'none';
+            }
+            scheduleGenerate(0);
+        });
+    });
+
+    // -- inputs: debounced regeneration --
+    document.querySelectorAll('.input').forEach(function(el) {
+        el.addEventListener('input', function() { scheduleGenerate(300); });
+    });
+    document.querySelectorAll('select.input').forEach(function(el) {
+        el.addEventListener('change', function() { scheduleGenerate(0); });
+    });
+
+    // -- copy / download --
+    document.getElementById('btn-copy').addEventListener('click', function() {
+        var ta = document.createElement('textarea');
+        ta.value = generatedConfig; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('Copied');
+    });
+    document.getElementById('btn-download').addEventListener('click', function() {
+        var blob = new Blob([generatedConfig], { type: 'text/plain' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a'); a.href = url; a.download = 'frigate-config.yaml'; a.click();
+        URL.revokeObjectURL(url);
+    });
+
+    // -- save --
+    document.getElementById('btn-save').addEventListener('click', function() { saveFrigate(); });
+    document.getElementById('btn-save-settings').addEventListener('click', function() { saveFrigate(); });
+
+    // -- start: load frigate config then generate --
+    loadFrigate();
+
+    async function loadFrigate() {
+        try {
+            var r = await fetch('api/frigate/config');
+            var data = await r.json();
+            if (data.connected && data.config) {
+                frigateConnected = true;
+                existingConfig = data.config;
+                document.getElementById('config-footer').style.display = '';
+                document.getElementById('save-settings').style.display = '';
+            } else {
+                navigateGo2rtc();
+                return;
+            }
+        } catch (e) {
+            navigateGo2rtc();
+            return;
+        }
+        generate();
+    }
+
+    function scheduleGenerate(delay) {
+        clearTimeout(debounceTimer);
+        if (delay <= 0) { generate(); return; }
+        debounceTimer = setTimeout(generate, delay);
+    }
+
+    function buildRequest() {
+        var req = { mainStream: mainStream };
+        if (subStream) req.subStream = subStream;
+        if (existingConfig) req.existingConfig = existingConfig;
+
+        var name = val('f-name');
+        if (name && name !== defaultName) req.name = name;
+
+        // objects
+        var obj = val('f-objects');
+        if (obj && obj !== 'person') {
+            req.objects = obj.split(',').map(function(s) { return s.trim(); }).filter(Boolean);
+        }
+
+        // detect
+        if (tog('t-detect') || ival('f-detect-fps') || ival('f-detect-w') || ival('f-detect-h')) {
+            req.detect = { enabled: tog('t-detect') };
+            if (ival('f-detect-fps')) req.detect.fps = ival('f-detect-fps');
+            if (ival('f-detect-w')) req.detect.width = ival('f-detect-w');
+            if (ival('f-detect-h')) req.detect.height = ival('f-detect-h');
+        }
+
+        // record
+        if (!tog('t-record')) req.record = { enabled: false };
+
+        // motion
+        if (tog('t-motion')) {
+            req.motion = { enabled: true };
+            if (ival('f-motion-thresh')) req.motion.threshold = ival('f-motion-thresh');
+            if (ival('f-motion-contour')) req.motion.contour_area = ival('f-motion-contour');
+        }
+
+        // snapshots
+        if (tog('t-snapshots')) req.snapshots = { enabled: true };
+
+        // audio
+        if (tog('t-audio')) {
+            req.audio = { enabled: true };
+            var filters = val('f-audio-filters');
+            if (filters) req.audio.filters = filters.split(',').map(function(s) { return s.trim(); }).filter(Boolean);
+        }
+
+        // notifications
+        if (tog('t-notifications')) req.notifications = { enabled: true };
+
+        // ffmpeg
+        var hw = val('f-hwaccel'), gpu = ival('f-gpu');
+        if (hw || gpu) { req.ffmpeg = {}; if (hw) req.ffmpeg.hwaccel = hw; if (gpu) req.ffmpeg.gpu = gpu; }
+
+        // live
+        var lh = ival('f-live-h'), lq = ival('f-live-q');
+        if (lh || lq) { req.live = {}; if (lh) req.live.height = lh; if (lq) req.live.quality = lq; }
+
+        // birdseye
+        if (tog('t-birdseye')) {
+            req.birdseye = { enabled: true };
+            var bm = val('f-birdseye-mode'); if (bm) req.birdseye.mode = bm;
+        }
+
+        // onvif
+        var oh = val('f-onvif-host');
+        if (oh) {
+            req.onvif = { host: oh };
+            var op = ival('f-onvif-port'); if (op) req.onvif.port = op;
+            var ou = val('f-onvif-user'); if (ou) req.onvif.user = ou;
+            var opass = val('f-onvif-pass'); if (opass) req.onvif.password = opass;
+            if (tog('t-onvif-track')) req.onvif.autotracking = true;
+        }
+
+        // ptz
+        if (tog('t-ptz')) req.ptz = { enabled: true };
+
+        // ui
+        var uiOrd = ival('f-ui-order');
+        if (uiOrd || !tog('t-ui-dash')) {
+            req.ui = {};
+            if (uiOrd) req.ui.order = uiOrd;
+            if (!tog('t-ui-dash')) req.ui.dashboard = false;
+        }
+
+        // go2rtc overrides
+        var g2mn = val('f-g2r-main-name'), g2sn = val('f-g2r-sub-name'), g2ms = val('f-g2r-main-src'), g2ss = val('f-g2r-sub-src');
+        if (g2mn || g2sn || g2ms || g2ss) {
+            req.go2rtc = {};
+            if (g2mn) req.go2rtc.mainStreamName = g2mn;
+            if (g2sn) req.go2rtc.subStreamName = g2sn;
+            if (g2ms) req.go2rtc.mainStreamSource = g2ms;
+            if (g2ss) req.go2rtc.subStreamSource = g2ss;
+        }
+
+        // frigate overrides
+        var fmp = val('f-fri-main-path'), fsp = val('f-fri-sub-path'), fma = val('f-fri-main-args'), fsa = val('f-fri-sub-args');
+        if (fmp || fsp || fma || fsa) {
+            req.frigate = {};
+            if (fmp) req.frigate.mainStreamPath = fmp;
+            if (fsp) req.frigate.subStreamPath = fsp;
+            if (fma) req.frigate.mainStreamInputArgs = fma;
+            if (fsa) req.frigate.subStreamInputArgs = fsa;
+        }
+
+        return req;
+    }
+
+    async function generate() {
+        if (abortCtrl) abortCtrl.abort();
+        abortCtrl = new AbortController();
+
+        try {
+            var r = await fetch('api/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(buildRequest()),
+                signal: abortCtrl.signal
+            });
+            if (!r.ok) { renderCode('Error: ' + await r.text()); return; }
+            var data = await r.json();
+            generatedConfig = data.config;
+
+            addedLines = {};
+            if (data.added) data.added.forEach(function(n) { addedLines[n] = true; });
+
+            renderConfigView();
+        } catch (e) {
+            if (e.name !== 'AbortError') renderCode('Error: ' + e.message);
+        }
+    }
+
+    function renderConfigView() {
+        var el = document.getElementById('config-code');
+        el.textContent = '';
+
+        var lines = generatedConfig.split('\n');
+        lines.forEach(function(text, i) {
+            var row = document.createElement('div');
+            var num = document.createElement('span');
+            num.className = 'diff-line-num';
+            num.textContent = i + 1;
+            row.appendChild(num);
+            var span = document.createElement('span');
+            span.className = addedLines[i + 1] ? 'diff-added' : 'diff-context';
+            span.textContent = text;
+            row.appendChild(span);
+            el.appendChild(row);
+        });
+    }
+
+    function renderCode(text) {
+        var el = document.getElementById('config-code');
+        el.textContent = text;
+    }
+
+    function allSaveBtns() { return [document.getElementById('btn-save'), document.getElementById('btn-save-settings')]; }
+
+    async function saveFrigate() {
+        var btns = allSaveBtns();
+        btns.forEach(function(b) { b.disabled = true; b.textContent = 'Saving...'; });
+        try {
+            var r = await fetch('api/frigate/config/save?save_option=restart', {
+                method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: generatedConfig
+            });
+            var data = await r.json();
+            if (data.success) {
+                btns.forEach(function(b) { b.textContent = 'Saved'; });
+                var seconds = 60;
+                function tick() {
+                    if (seconds > 0) { showToast('Frigate is restarting... ' + seconds + 's', 1500); seconds--; setTimeout(tick, 1000); }
+                    else showToast('Done! Open Frigate to see your camera.', 10000);
+                }
+                tick();
+            } else {
+                showToast(data.message || 'Save failed');
+                btns.forEach(function(b) { b.disabled = false; b.textContent = 'Save to Frigate & Restart'; });
+            }
+        } catch (e) {
+            showToast('Error: ' + e.message);
+            btns.forEach(function(b) { b.disabled = false; b.textContent = 'Save to Frigate & Restart'; });
+        }
+    }
+
+    function navigateGo2rtc() {
+        var p = new URLSearchParams();
+        if (mainStream) p.set('main', mainStream);
+        if (subStream) p.set('sub', subStream);
+        if (ip) p.set('ip', ip);
+        if (sessionId) p.set('session', sessionId);
+        window.location.href = 'go2rtc.html?' + p.toString();
+    }
+
+    function showNotice() {
+        var area = document.getElementById('notice-area');
+        area.textContent = '';
+        var n = document.createElement('div'); n.className = 'notice';
+        var close = document.createElement('button'); close.className = 'notice-close'; close.textContent = 'x';
+        close.addEventListener('click', function() { n.remove(); }); n.appendChild(close);
+        var t = document.createElement('div'); t.className = 'notice-title'; t.textContent = 'Frigate NVR not detected'; n.appendChild(t);
+        var p1 = document.createElement('div'); p1.className = 'notice-text';
+        p1.textContent = 'If you have Frigate NVR, we recommend running Strix on the same server for automatic config management.'; n.appendChild(p1);
+        var p2 = document.createElement('div'); p2.className = 'notice-text'; p2.textContent = 'Or set the Frigate URL:';
+        var code = document.createElement('code'); code.className = 'notice-code'; code.textContent = 'STRIX_FRIGATE_URL=http://frigate:5000';
+        p2.appendChild(code); n.appendChild(p2);
+
+        // go2rtc link
+        var p3 = document.createElement('div'); p3.className = 'notice-text'; p3.style.marginTop = '0.75rem';
+        p3.textContent = 'You can also add streams directly to go2rtc:';
+        var g2link = document.createElement('a');
+        var g2p = new URLSearchParams();
+        if (mainStream) g2p.set('main', mainStream);
+        if (subStream) g2p.set('sub', subStream);
+        if (ip) g2p.set('ip', ip);
+        g2link.href = 'go2rtc.html?' + g2p.toString();
+        g2link.style.cssText = 'display:inline-flex; align-items:center; gap:0.375rem; margin-top:0.5rem; padding:0.5rem 0.75rem; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:6px; color:var(--purple-light); text-decoration:none; font-size:0.8125rem; font-weight:600; transition:all 150ms;';
+        g2link.textContent = 'Add to go2rtc instead';
+        g2link.onmouseover = function() { g2link.style.borderColor = 'var(--purple-primary)'; };
+        g2link.onmouseout = function() { g2link.style.borderColor = 'var(--border-color)'; };
+        p3.appendChild(document.createElement('br'));
+        p3.appendChild(g2link);
+        n.appendChild(p3);
+
+        area.appendChild(n);
+    }
+
+    function renderStreamCard(id, label, url, w, h) {
+        var card = document.getElementById(id);
+        var lbl = document.createElement('div'); lbl.className = 'stream-label'; lbl.textContent = label; card.appendChild(lbl);
+        var v = document.createElement('div'); v.className = 'stream-val';
+        var i = url.indexOf('://');
+        if (i > 0) { var s = document.createElement('span'); s.className = 'scheme'; s.textContent = url.substring(0, i + 3); v.appendChild(s); v.appendChild(document.createTextNode(url.substring(i + 3))); }
+        else v.textContent = url;
+        card.appendChild(v);
+        if (w && h) { var m = document.createElement('div'); m.className = 'stream-meta'; m.textContent = w + 'x' + h; card.appendChild(m); }
+    }
+
+    // helpers
+    function val(id) { return document.getElementById(id).value.trim(); }
+    function ival(id) { return parseInt(val(id)) || 0; }
+    function tog(id) { return document.getElementById(id).classList.contains('on'); }
+
+    var toastTimer = null;
+    function showToast(msg, dur) {
+        var t = document.getElementById('toast'); t.textContent = msg;
+        t.classList.remove('hidden'); t.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function() { t.classList.remove('show'); setTimeout(function() { t.classList.add('hidden'); }, 250); }, dur || 3000);
+    }
+</script>
+
+</body>
+</html>

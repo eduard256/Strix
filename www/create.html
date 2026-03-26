@@ -359,7 +359,11 @@
 
             var data = await r.json();
             dbStreams = data.streams || [];
-            renderAll();
+            if (dbStreams.length === 0 && customStreams.length === 0) {
+                renderEmpty();
+            } else {
+                renderAll();
+            }
         } catch (e) {
             renderError('Connection error: ' + e.message);
         }
@@ -516,6 +520,99 @@
         div.className = 'error-box';
         div.textContent = msg;
         content.appendChild(div);
+    }
+
+    function renderEmpty() {
+        var content = document.getElementById('content');
+        while (content.firstChild) content.removeChild(content.firstChild);
+
+        var box = document.createElement('div');
+        box.style.cssText = 'text-align:center; padding:2.5rem 1.5rem; background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:8px;';
+
+        var title = document.createElement('div');
+        title.style.cssText = 'font-size:1.125rem; font-weight:600; color:var(--text-primary); margin-bottom:0.75rem;';
+        title.textContent = 'No streams found for this camera';
+
+        var msg = document.createElement('div');
+        msg.style.cssText = 'font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin-bottom:1.5rem;';
+        msg.textContent = 'The Strix database does not have stream patterns for this device yet. You can help by adding your camera model to the database.';
+
+        var link = document.createElement('a');
+        var p = new URLSearchParams();
+        if (vendor) p.set('brand', vendor);
+        if (model) p.set('model', model);
+        if (mac && mac.length >= 8) p.set('mac_prefix', mac.substring(0, 8));
+        link.href = 'https://gostrix.github.io/#/contribute?' + p.toString();
+        link.target = '_blank';
+        link.style.cssText = 'display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; background:var(--purple-primary); color:white; border-radius:8px; text-decoration:none; font-size:0.875rem; font-weight:600; transition:opacity 150ms;';
+        link.textContent = 'Add your camera to Strix DB';
+        link.onmouseover = function() { link.style.opacity = '0.85'; };
+        link.onmouseout = function() { link.style.opacity = '1'; };
+
+        var issueLink = document.createElement('a');
+        issueLink.href = 'https://github.com/eduard256/Strix/issues';
+        issueLink.target = '_blank';
+        issueLink.style.cssText = 'display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; background:var(--bg-tertiary); color:var(--text-secondary); border:1px solid var(--border-color); border-radius:8px; text-decoration:none; font-size:0.875rem; font-weight:600; transition:all 150ms;';
+        issueLink.textContent = 'Report Issue';
+        issueLink.onmouseover = function() { issueLink.style.borderColor = 'var(--purple-primary)'; issueLink.style.color = 'var(--purple-light)'; };
+        issueLink.onmouseout = function() { issueLink.style.borderColor = 'var(--border-color)'; issueLink.style.color = 'var(--text-secondary)'; };
+
+        var btns = document.createElement('div');
+        btns.style.cssText = 'display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;';
+        btns.appendChild(link);
+        btns.appendChild(issueLink);
+
+        var or = document.createElement('div');
+        or.style.cssText = 'margin:1.25rem 0; color:var(--text-tertiary); font-size:0.75rem;';
+        or.textContent = 'or add a custom stream URL below';
+
+        box.appendChild(title);
+        box.appendChild(msg);
+        box.appendChild(btns);
+        box.appendChild(or);
+        content.appendChild(box);
+
+        // still show add section below
+        renderAddSection(content);
+        updateButton();
+    }
+
+    function renderAddSection(content) {
+        var addSection = document.createElement('div');
+        addSection.className = 'add-section';
+        var addRow = document.createElement('div');
+        addRow.className = 'add-row';
+        var addInput = document.createElement('input');
+        addInput.className = 'add-input';
+        addInput.type = 'text';
+        addInput.placeholder = 'rtsp://user:pass@host/path or bubble://...';
+        addInput.spellcheck = false;
+        addInput.value = pendingInput;
+        var addBtn = document.createElement('button');
+        addBtn.className = 'btn-add';
+        addBtn.type = 'button';
+        addBtn.textContent = '+';
+
+        function addCustom() {
+            var v = addInput.value.trim();
+            if (!v) return;
+            if (v.indexOf('://') === -1) { showToast('URL must include protocol (rtsp://, http://, bubble://, ...)'); return; }
+            if (customStreams.indexOf(v) !== -1 || dbStreams.indexOf(v) !== -1) { showToast('This URL is already in the list'); return; }
+            customStreams.push(v);
+            pendingInput = '';
+            renderAll();
+            var newInput = document.querySelector('.add-input');
+            if (newInput) newInput.focus();
+            showContributeBanner(v);
+        }
+
+        addBtn.addEventListener('click', addCustom);
+        addInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') addCustom(); });
+        addInput.addEventListener('input', function() { pendingInput = addInput.value; });
+        addRow.appendChild(addInput);
+        addRow.appendChild(addBtn);
+        addSection.appendChild(addRow);
+        content.appendChild(addSection);
     }
 
     // test button

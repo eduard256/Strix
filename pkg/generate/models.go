@@ -106,12 +106,6 @@ type UIConfig struct {
 }
 
 type Response struct {
-	Config string     `json:"config"`
-	Diff   []DiffLine `json:"diff"`
-}
-
-type DiffLine struct {
-	Line int    `json:"line"`
-	Text string `json:"text"`
-	Type string `json:"type"` // context, added, removed
+	Config string `json:"config"`
+	Added  []int  `json:"added"` // 1-based line numbers of added lines
 }

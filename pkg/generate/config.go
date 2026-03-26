@@ -26,9 +26,17 @@ func Generate(req *Request) (*Response, error) {
 		}
 	}
 
-	if strings.TrimSpace(req.ExistingConfig) == "" {
+	existing := strings.TrimSpace(req.ExistingConfig)
+
+	// generate from scratch if no config or config has no go2rtc streams section
+	if existing == "" || !strings.Contains(existing, "go2rtc:") {
 		config := newConfig(info, req)
-		return &Response{Config: config, Diff: fullDiff(config)}, nil
+		lines := strings.Count(config, "\n") + 1
+		added := make([]int, lines)
+		for i := range added {
+			added[i] = i + 1
+		}
+		return &Response{Config: config, Added: added}, nil
 	}
 
 	return addToConfig(req.ExistingConfig, info, req)
@@ -124,7 +132,7 @@ func newConfig(info *cameraInfo, req *Request) string {
 	var b strings.Builder
 
 	b.WriteString("mqtt:\n  enabled: false\n\n")
-	b.WriteString("record:\n  enabled: true\n  retain:\n    days: 7\n    mode: motion\n\n")
+	b.WriteString("record:\n  enabled: true\n\n")
 
 	b.WriteString("go2rtc:\n  streams:\n")
 	writeStreamLines(&b, info)
@@ -132,7 +140,7 @@ func newConfig(info *cameraInfo, req *Request) string {
 	b.WriteString("cameras:\n")
 	writeCameraBlock(&b, info, req)
 
-	b.WriteString("version: 0.18-0\n")
+	b.WriteString("version: 0.17-0\n")
 	return b.String()
 }
 

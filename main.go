@@ -5,6 +5,7 @@ import (
 	"github.com/eduard256/strix/internal/app"
 	"github.com/eduard256/strix/internal/frigate"
 	"github.com/eduard256/strix/internal/generate"
+	"github.com/eduard256/strix/internal/go2rtc"
 	"github.com/eduard256/strix/internal/probe"
 	"github.com/eduard256/strix/internal/search"
 	"github.com/eduard256/strix/internal/test"
@@ -26,6 +27,7 @@ func main() {
 		{"probe", probe.Init},
 		{"generate", generate.Init},
 		{"frigate", frigate.Init},
+		{"go2rtc", go2rtc.Init},
 	}
 
 	for _, m := range modules {

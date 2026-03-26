@@ -65,8 +65,15 @@ func addToConfig(existing string, info *cameraInfo, req *Request) (*Response, er
 	result = append(result, rest[split:]...)
 
 	config := strings.Join(result, "\n")
-	diff := diffWithContext(result, added, 3)
-	return &Response{Config: config, Diff: diff}, nil
+
+	addedLines := make([]int, 0, len(added))
+	for i := range result {
+		if added[i] {
+			addedLines = append(addedLines, i+1)
+		}
+	}
+
+	return &Response{Config: config, Added: addedLines}, nil
 }
 
 func dedup(info *cameraInfo, cams, streams map[string]bool) *cameraInfo {
