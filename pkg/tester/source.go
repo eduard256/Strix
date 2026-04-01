@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/AlexxIT/go2rtc/pkg/bubble"
 	"github.com/AlexxIT/go2rtc/pkg/core"
 	"github.com/AlexxIT/go2rtc/pkg/rtsp"
 )
@@ -28,6 +29,13 @@ func init() {
 	RegisterSource("rtsp", rtspHandler)
 	RegisterSource("rtsps", rtspHandler)
 	RegisterSource("rtspx", rtspHandler)
+	RegisterSource("bubble", bubbleHandler)
+}
+
+// bubbleHandler -- Dial handles TCP connect, HTTP handshake, XML parsing, and auth.
+// ex. "bubble://admin:pass@192.168.1.100:80/bubble/live?ch=0&stream=0"
+func bubbleHandler(rawURL string) (core.Producer, error) {
+	return bubble.Dial(rawURL)
 }
 
 // rtspHandler -- Dial + Describe. Proves: port open, RTSP responds, auth OK, SDP received.

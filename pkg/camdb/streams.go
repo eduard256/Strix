@@ -11,7 +11,7 @@ import (
 
 var defaultPorts = map[string]int{
 	"rtsp": 554, "rtsps": 322, "http": 80, "https": 443,
-	"rtmp": 1935, "mms": 554, "rtp": 5004,
+	"rtmp": 1935, "mms": 554, "rtp": 5004, "bubble": 80,
 }
 
 type StreamParams struct {
