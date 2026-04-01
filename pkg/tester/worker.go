@@ -95,7 +95,7 @@ func testURL(s *Session, rawURL string) {
 
 		if jpeg != nil {
 			idx := s.AddScreenshot(jpeg)
-			r.Screenshot = fmt.Sprintf("/api/test/screenshot?id=%s&i=%d", s.ID, idx)
+			r.Screenshot = fmt.Sprintf("api/test/screenshot?id=%s&i=%d", s.ID, idx)
 			r.Width, r.Height = jpegSize(jpeg)
 		}
 	}
