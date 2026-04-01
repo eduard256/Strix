@@ -14,6 +14,11 @@ var defaultPorts = map[string]int{
 	"rtmp": 1935, "mms": 554, "rtp": 5004, "bubble": 80,
 }
 
+// protocols where port must always be explicit in URL (raw TCP dial without default port logic)
+var portRequired = map[string]bool{
+	"bubble": true,
+}
+
 type StreamParams struct {
 	IDs     string
 	IP      string
@@ -137,7 +142,7 @@ func buildURL(protocol, path, ip string, port int, user, pass string, channel in
 	}
 
 	host := ip
-	if p, ok := defaultPorts[protocol]; !ok || p != port {
+	if p, ok := defaultPorts[protocol]; (!ok || p != port) || portRequired[protocol] {
 		host = ip + ":" + strconv.Itoa(port)
 	}
 
