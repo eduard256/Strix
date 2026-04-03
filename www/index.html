@@ -257,7 +257,7 @@
                 </span>
             </label>
             <input type="text" id="ip" class="input input-large" placeholder="192.168.1.100" autocomplete="off" spellcheck="false">
-            <p class="hint">IP address of the camera</p>
+            <p class="hint">IP address or stream URL (rtsp://, http://, ...)</p>
         </div>
 
         <button id="btn-check" class="btn btn-primary btn-large">Check Address</button>
@@ -295,7 +295,13 @@
 
     async function checkAddress() {
         const ip = ipInput.value.trim();
-        if (!ip) { showToast('Enter an IP address'); return; }
+        if (!ip) { showToast('Enter an IP address or stream URL'); return; }
+
+        // Direct stream URL — skip probe, go straight to create.html
+        if (ip.indexOf('://') !== -1) {
+            window.location.href = 'create.html?url=' + encodeURIComponent(ip);
+            return;
+        }
 
         btnCheck.disabled = true;
         btnCheck.textContent = 'Checking...';

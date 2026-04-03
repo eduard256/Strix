@@ -326,8 +326,16 @@
     var dbStreams = [];    // from /api/streams
     var customStreams = []; // user-added
 
+    // Pre-populate custom streams from "url" query parameter (supports multiple)
+    params.getAll('url').forEach(function(u) {
+        u = u.trim();
+        if (u && u.indexOf('://') !== -1 && customStreams.indexOf(u) === -1) {
+            customStreams.push(u);
+        }
+    });
+
     // subtitle
-    document.getElementById('subtitle').textContent = ip ? 'Target: ' + ip : '';
+    document.getElementById('subtitle').textContent = ip ? 'Target: ' + ip : 'Add stream URLs manually';
 
     // back
     document.getElementById('btn-back').addEventListener('click', function() {
@@ -339,7 +347,8 @@
 
     async function loadStreams() {
         if (!ids || !ip) {
-            renderError('Missing required parameters (ids, ip)');
+            // No parameters — show empty list with add section
+            renderAll();
             return;
         }
 
@@ -359,11 +368,7 @@
 
             var data = await r.json();
             dbStreams = data.streams || [];
-            if (dbStreams.length === 0 && customStreams.length === 0) {
-                renderEmpty();
-            } else {
-                renderAll();
-            }
+            renderAll();
         } catch (e) {
             renderError('Connection error: ' + e.message);
         }
