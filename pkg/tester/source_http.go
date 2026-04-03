@@ -1,10 +1,12 @@
 package tester
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"net/http"
 	"strings"
+	"time"
 
 	"github.com/AlexxIT/go2rtc/pkg/core"
 	"github.com/AlexxIT/go2rtc/pkg/hls"
@@ -27,21 +29,28 @@ func init() {
 func httpHandler(rawURL string) (core.Producer, error) {
 	rawURL, _, _ = strings.Cut(rawURL, "#")
 
-	// httpx -> https with insecure TLS (handled inside tcp.Do)
-	req, err := http.NewRequest("GET", rawURL, nil)
+	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
+
+	req, err := http.NewRequestWithContext(ctx, "GET", rawURL, nil)
 	if err != nil {
+		cancel()
 		return nil, fmt.Errorf("http: request: %w", err)
 	}
 
 	res, err := tcp.Do(req)
 	if err != nil {
+		cancel()
 		return nil, fmt.Errorf("http: dial: %w", err)
 	}
 
 	if res.StatusCode != http.StatusOK {
+		cancel()
 		tcp.Close(res)
 		return nil, errors.New("http: " + res.Status)
 	}
+
+	// cancel on success is not called -- context expires naturally,
+	// connection lifetime is managed by prod.Stop()
 
 	ct := res.Header.Get("Content-Type")
 	if i := strings.IndexByte(ct, ';'); i > 0 {
