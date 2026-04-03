@@ -12,6 +12,7 @@ import (
 var defaultPorts = map[string]int{
 	"rtsp": 554, "rtsps": 322, "http": 80, "https": 443,
 	"rtmp": 1935, "mms": 554, "rtp": 5004, "bubble": 80,
+	"dvrip": 34567,
 }
 
 // protocols where port must always be explicit in URL (raw TCP dial without default port logic)

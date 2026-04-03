@@ -6,6 +6,7 @@ import (
 
 	"github.com/AlexxIT/go2rtc/pkg/bubble"
 	"github.com/AlexxIT/go2rtc/pkg/core"
+	"github.com/AlexxIT/go2rtc/pkg/dvrip"
 	"github.com/AlexxIT/go2rtc/pkg/rtmp"
 	"github.com/AlexxIT/go2rtc/pkg/rtsp"
 )
@@ -34,6 +35,13 @@ func init() {
 	RegisterSource("rtmp", rtmpHandler)
 	RegisterSource("rtmps", rtmpHandler)
 	RegisterSource("rtmpx", rtmpHandler)
+	RegisterSource("dvrip", dvripHandler)
+}
+
+// dvripHandler -- Dial handles TCP connect, Sofia MD5 auth, and OPMonitor stream negotiation.
+// ex. "dvrip://admin:pass@192.168.1.100:34567?channel=0&subtype=0"
+func dvripHandler(rawURL string) (core.Producer, error) {
+	return dvrip.Dial(rawURL)
 }
 
 // bubbleHandler -- Dial handles TCP connect, HTTP handshake, XML parsing, and auth.
