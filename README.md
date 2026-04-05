@@ -122,6 +122,7 @@ STRIX_LISTEN=:4567 ./strix-linux-amd64
 | RTMP | 1935 | Some Chinese NVRs |
 | Bubble | 80 | XMeye/NetSurveillance cameras |
 | DVRIP | 34567 | Sofia protocol DVR/NVR |
+| HomeKit | 51826 | Apple HomeKit cameras via HAP |
 
 ## Configuration
 
@@ -148,4 +149,4 @@ Camera not in the database? [Add it here](https://gostrix.github.io/#/contribute
 
 **Developers:** integrate [Strix HTTP API](DEVELOPERS.md) into your smart home platform.
 
-**Testing:** [StrixCamFake](https://github.com/eduard256/StrixCamFake) - IP camera emulator for development and testing.
+**Testing:** [StrixCamFake](https://github.com/eduard256/StrixCamFake) - IP camera emulator for development and testing. [StrixAHKCamFake](https://github.com/eduard256/StrixAHKCamFake) - Apple HomeKit camera emulator.
