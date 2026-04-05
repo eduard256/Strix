@@ -14,7 +14,7 @@
 
 Camera stream discovery and Frigate config generator.
 
-- 3,600+ camera brands with 100,000+ [URL patterns](#camera-database) in SQLite database
+- 3,600+ camera brands with 100,000+ [URL patterns](#streams) in SQLite database
 - automatic device [probing](#probe) in 100ms: ports, ARP/OUI, mDNS/HomeKit, HTTP
 - 20 parallel workers [test every URL](#testing) with live screenshots
 - supports [RTSP, HTTP, RTMP, Bubble, DVRIP](#supported-protocols) and more
@@ -51,17 +51,25 @@ Open `http://YOUR_IP:4567`
 
 ## How it works
 
+<a id="probe"></a>
+
 Enter camera IP. Strix probes the device -- open ports, MAC vendor, mDNS, HTTP server.
 
 ![](https://github.com/eduard256/Strix/releases/download/v2.0.0/01-enter-ip.png)
+
+<a id="search"></a>
 
 Search camera model in database. Enter credentials if needed.
 
 ![](https://github.com/eduard256/Strix/releases/download/v2.0.0/02-camera-config.png)
 
+<a id="streams"></a>
+
 Strix builds all possible stream URLs from database patterns.
 
 ![](https://github.com/eduard256/Strix/releases/download/v2.0.0/03-stream-urls.png)
+
+<a id="testing"></a>
 
 20 parallel workers test every URL. Live screenshots, codecs, resolution, latency.
 
@@ -70,6 +78,8 @@ Strix builds all possible stream URLs from database patterns.
 Pick main and sub streams from results.
 
 ![](https://github.com/eduard256/Strix/releases/download/v2.0.0/05-results.png)
+
+<a id="config-generation"></a>
 
 Generate ready Frigate config. Copy, download, or save directly to Frigate.
 
