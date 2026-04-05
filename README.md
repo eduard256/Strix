@@ -4,8 +4,6 @@
   <a href="https://github.com/eduard256/Strix/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <br><br>
   <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="96">
-  <br>
-  <b>Strix</b>
 </p>
 
 Finds working camera streams. Generates Frigate config. 30 seconds.
