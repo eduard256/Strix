@@ -2,7 +2,7 @@
   <a href="https://github.com/eduard256/Strix">
     <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="64" alt="Strix" valign="middle">
   </a>
-  &nbsp;
+  &nbsp;|&nbsp;
   STRIX
 </h1>
 <p align="center">
