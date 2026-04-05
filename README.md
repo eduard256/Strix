@@ -1,12 +1,25 @@
-<img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="48" align="left">
+<h1 align="center">
+  <a href="https://github.com/eduard256/Strix">
+    <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="96" alt="Strix">
+  </a>
+</h1>
+<p align="center">
+  <a href="https://github.com/eduard256/strix/stargazers"><img src="https://img.shields.io/github/stars/eduard256/strix?style=flat-square&logo=github" alt="GitHub Stars"></a>
+  <a href="https://hub.docker.com/r/eduard256/strix"><img src="https://img.shields.io/docker/pulls/eduard256/strix?style=flat-square&logo=docker&logoColor=white&label=pulls" alt="Docker Pulls"></a>
+  <a href="https://github.com/eduard256/Strix/releases"><img src="https://img.shields.io/github/downloads/eduard256/Strix/total?color=blue&style=flat-square&logo=github" alt="GitHub Downloads"></a>
+  <a href="https://github.com/eduard256/Strix/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
+</p>
 
-[![GitHub Stars](https://img.shields.io/github/stars/eduard256/strix?style=social)](https://github.com/eduard256/strix/stargazers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/eduard256/Strix/blob/main/LICENSE)
+Camera stream discovery and Frigate config generator.
 
-Finds working camera streams. Generates Frigate config. 30 seconds.
-
-3,600+ brands. 100,000+ URL patterns. RTSP, HTTP, RTMP, Bubble, DVRIP.
+- 3,600+ camera brands with 100,000+ [URL patterns](#camera-database) in SQLite database
+- automatic device [probing](#probe) in 100ms: ports, ARP/OUI, mDNS/HomeKit, HTTP
+- 20 parallel workers [test every URL](#testing) with live screenshots
+- supports [RTSP, HTTP, RTMP, Bubble, DVRIP](#supported-protocols) and more
+- ready [Frigate config](#config-generation) with smart merge into existing setup
+- auto-discovery of Frigate and [go2rtc](https://github.com/AlexxIT/go2rtc) on local network
+- zero-dependency static [binary](#binary) for Linux amd64/arm64
+- can be used as [standalone app](#binary), [Docker](#docker), or [Home Assistant add-on](#home-assistant-add-on)
 
 <a href="https://youtu.be/JgVWsl4NApE">
   <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/demo.gif" width="100%">
