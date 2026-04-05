@@ -393,6 +393,8 @@
             if (probes.mdns.model) p.set('mdns_model', probes.mdns.model);
             if (probes.mdns.category) p.set('mdns_category', probes.mdns.category);
             if (probes.mdns.device_id) p.set('mdns_device_id', probes.mdns.device_id);
+            if (probes.mdns.port) p.set('mdns_port', probes.mdns.port);
+            p.set('mdns_paired', probes.mdns.paired ? '1' : '0');
         }
 
         window.location.href = 'homekit.html?' + p.toString();

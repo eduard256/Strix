@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#0a0a0f">
-    <title>Strix - HomeKit Device</title>
+    <title>Strix - HomeKit Pairing</title>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,6 +21,8 @@
             --text-primary: #e0e0e8;
             --text-secondary: #a0a0b0;
             --text-tertiary: #606070;
+            --success: #10b981;
+            --error: #ef4444;
             --border-color: rgba(139, 92, 246, 0.15);
             --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
             --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
@@ -93,16 +95,6 @@
             margin-bottom: 1.5rem;
         }
 
-        .card-text {
-            font-size: 0.9375rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-            text-align: left;
-        }
-
-        .card-text strong { color: var(--text-primary); }
-
         .device-info {
             background: var(--bg-tertiary);
             border: 1px solid var(--border-color);
@@ -125,45 +117,99 @@
         .device-label { color: var(--text-tertiary); }
         .device-value { color: var(--text-primary); font-family: var(--font-mono); font-size: 0.75rem; }
 
-        .contact-links {
-            display: flex; flex-direction: column; gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
+        /* PIN input */
+        .pin-section { margin-bottom: 1.5rem; }
+
+        .pin-label {
+            font-size: 0.875rem; font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
         }
 
-        .contact-link {
-            display: flex; align-items: center; gap: 0.5rem;
-            padding: 0.75rem 1rem;
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            color: var(--purple-light);
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: all var(--transition-fast);
+        .pin-hint {
+            font-size: 0.75rem; color: var(--text-tertiary);
+            margin-top: 0.625rem;
         }
 
-        .contact-link:hover {
-            border-color: var(--purple-primary);
-            background: rgba(139, 92, 246, 0.08);
+        .pin-row {
+            display: flex; align-items: center; justify-content: center;
+            gap: 0;
         }
 
-        .contact-link svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .pin-group {
+            display: flex; gap: 0.375rem;
+        }
 
-        .divider {
-            display: flex; align-items: center; gap: 1rem;
-            margin: 1.5rem 0;
+        .pin-separator {
+            font-size: 1.5rem; font-weight: 300;
             color: var(--text-tertiary);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+            padding: 0 0.5rem;
+            line-height: 1;
+            user-select: none;
         }
 
-        .divider::before, .divider::after {
-            content: ''; flex: 1; height: 1px;
-            background: var(--border-color);
+        .pin-digit {
+            width: 44px; height: 56px;
+            background: var(--bg-primary);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 1.375rem; font-weight: 600;
+            text-align: center;
+            outline: none;
+            transition: all var(--transition-fast);
+            caret-color: var(--purple-primary);
+            -moz-appearance: textfield;
         }
 
+        .pin-digit::-webkit-inner-spin-button,
+        .pin-digit::-webkit-outer-spin-button {
+            -webkit-appearance: none; margin: 0;
+        }
+
+        .pin-digit:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .pin-digit.filled {
+            border-color: var(--purple-light);
+            background: rgba(139, 92, 246, 0.06);
+        }
+
+        .pin-digit.error {
+            border-color: var(--error);
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+            animation: shake 0.4s ease;
+        }
+
+        .pin-digit.success {
+            border-color: var(--success);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+        }
+
+        @media (max-width: 400px) {
+            .pin-digit { width: 36px; height: 48px; font-size: 1.125rem; }
+            .pin-separator { padding: 0 0.25rem; font-size: 1.25rem; }
+            .pin-group { gap: 0.25rem; }
+        }
+
+        /* Error message */
+        .error-msg {
+            margin-top: 1rem; padding: 0.75rem 1rem;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            font-size: 0.8125rem; color: var(--error);
+            text-align: left;
+            display: none;
+            animation: fadeIn var(--transition-fast);
+        }
+
+        .error-msg.visible { display: block; }
+
+        /* Buttons */
         .btn {
             display: inline-flex; align-items: center; justify-content: center;
             gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
@@ -176,11 +222,12 @@
             background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
             color: white; box-shadow: 0 4px 12px var(--purple-glow);
         }
-        .btn-primary:hover {
+        .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
             box-shadow: 0 8px 20px var(--purple-glow-strong);
         }
-        .btn-primary:active { transform: translateY(0); }
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
 
         .btn-outline {
             background: transparent; color: var(--text-secondary);
@@ -189,7 +236,22 @@
         }
         .btn-outline:hover { border-color: var(--purple-primary); color: var(--purple-light); }
 
+        /* Pairing state */
+        .pairing-spinner {
+            width: 20px; height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-4px); }
+            40%, 80% { transform: translateX(4px); }
+        }
     </style>
 </head>
 <body>
@@ -209,42 +271,29 @@
                 <polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
 
-            <h2 class="card-title">HomeKit Device Detected</h2>
+            <h2 class="card-title" id="card-title">HomeKit Camera</h2>
             <div class="card-badge">Apple HomeKit</div>
 
             <div id="device-info" class="device-info"></div>
 
-            <p class="card-text">
-                We are working on adding <strong>Apple HomeKit camera support</strong> to Strix, but we don't have HomeKit cameras available for testing.
-            </p>
-            <p class="card-text">
-                The device at this IP supports HomeKit protocol. If you'd like to help us add support for HomeKit cameras, please reach out. Your contribution would be greatly appreciated.
-            </p>
+            <div class="pin-section">
+                <div class="pin-label">Enter the 8-digit code from your camera</div>
 
-            <div class="contact-links">
-                <a class="contact-link" href="mailto:ceo@webaweba.com">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="2" y="4" width="20" height="16" rx="2"/>
-                        <path d="M22 4l-10 8L2 4"/>
-                    </svg>
-                    ceo@webaweba.com
-                </a>
-                <a class="contact-link" href="https://github.com/eduard256/Strix/issues/new/choose" target="_blank">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
-                    </svg>
-                    Create GitHub Issue
-                </a>
+                <div class="pin-row" id="pin-row">
+                    <div class="pin-group" id="group-0"></div>
+                    <span class="pin-separator">-</span>
+                    <div class="pin-group" id="group-1"></div>
+                    <span class="pin-separator">-</span>
+                    <div class="pin-group" id="group-2"></div>
+                </div>
+
+                <div class="pin-hint">Printed on the camera or in the manual</div>
             </div>
 
-            <div class="divider">or</div>
+            <div class="error-msg" id="error-msg"></div>
 
-            <button class="btn btn-primary" id="btn-standard">
-                Try Standard Discovery
-            </button>
-            <button class="btn btn-outline" id="btn-skip">
-                Back to Home
-            </button>
+            <button class="btn btn-primary" id="btn-pair" disabled>Pair Device</button>
+            <button class="btn btn-outline" id="btn-standard">Try Standard Discovery</button>
         </div>
     </div>
 </div>
@@ -252,7 +301,6 @@
 <script>
     var params = new URLSearchParams(location.search);
 
-    // all probe data passed through
     var ip = params.get('ip') || '';
     var ports = params.get('ports') || '';
     var mac = params.get('mac') || '';
@@ -263,32 +311,31 @@
     var mdnsName = params.get('mdns_name') || '';
     var mdnsModel = params.get('mdns_model') || '';
     var mdnsCategory = params.get('mdns_category') || '';
+    var mdnsPort = params.get('mdns_port') || '';
+    var mdnsPaired = params.get('mdns_paired') || '';
+    var mdnsDeviceId = params.get('mdns_device_id') || '';
 
-    // render device info
+    // title
+    if (mdnsName) document.getElementById('card-title').textContent = mdnsName;
+
+    // device info
     var infoDiv = document.getElementById('device-info');
     var rows = [];
     if (ip) rows.push(['IP Address', ip]);
-    if (mdnsName) rows.push(['Device Name', mdnsName]);
     if (mdnsModel) rows.push(['Model', mdnsModel]);
     if (mdnsCategory) rows.push(['Category', mdnsCategory]);
     if (vendor) rows.push(['Vendor', vendor]);
     if (mac) rows.push(['MAC', mac]);
-    if (hostname) rows.push(['Hostname', hostname]);
-    if (latency) rows.push(['Latency', latency + 'ms']);
-    if (ports) rows.push(['Open Ports', ports]);
 
     rows.forEach(function(r) {
         var row = document.createElement('div');
         row.className = 'device-row';
-
         var label = document.createElement('span');
         label.className = 'device-label';
         label.textContent = r[0];
-
         var value = document.createElement('span');
         value.className = 'device-value';
         value.textContent = r[1];
-
         row.appendChild(label);
         row.appendChild(value);
         infoDiv.appendChild(row);
@@ -296,16 +343,207 @@
 
     if (rows.length === 0) infoDiv.style.display = 'none';
 
-    // back
+    // PIN input -- 8 digits: 3-2-3
+    var pinGroups = [3, 2, 3];
+    var inputs = [];
+
+    pinGroups.forEach(function(count, gi) {
+        var group = document.getElementById('group-' + gi);
+        for (var i = 0; i < count; i++) {
+            var input = document.createElement('input');
+            input.type = 'text';
+            input.inputMode = 'numeric';
+            input.pattern = '[0-9]';
+            input.maxLength = 1;
+            input.className = 'pin-digit';
+            input.autocomplete = 'off';
+            group.appendChild(input);
+            inputs.push(input);
+        }
+    });
+
+    inputs.forEach(function(input, idx) {
+        input.addEventListener('input', function(e) {
+            var v = input.value.replace(/\D/g, '');
+            input.value = v ? v[0] : '';
+
+            hideError();
+
+            if (v && idx < inputs.length - 1) {
+                inputs[idx + 1].focus();
+            }
+
+            updateState();
+        });
+
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Backspace') {
+                if (input.value === '' && idx > 0) {
+                    inputs[idx - 1].focus();
+                    inputs[idx - 1].value = '';
+                    updateState();
+                    e.preventDefault();
+                }
+            }
+
+            if (e.key === 'ArrowLeft' && idx > 0) {
+                inputs[idx - 1].focus();
+                e.preventDefault();
+            }
+            if (e.key === 'ArrowRight' && idx < inputs.length - 1) {
+                inputs[idx + 1].focus();
+                e.preventDefault();
+            }
+
+            if (e.key === 'Enter') {
+                doPair();
+            }
+        });
+
+        input.addEventListener('focus', function() {
+            input.select();
+        });
+
+        // paste support -- distribute digits across fields
+        input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            var text = (e.clipboardData || window.clipboardData).getData('text');
+            var digits = text.replace(/\D/g, '');
+
+            for (var i = 0; i < digits.length && idx + i < inputs.length; i++) {
+                inputs[idx + i].value = digits[i];
+            }
+
+            var next = Math.min(idx + digits.length, inputs.length - 1);
+            inputs[next].focus();
+            updateState();
+        });
+    });
+
+    function getPin() {
+        var pin = '';
+        for (var i = 0; i < inputs.length; i++) {
+            pin += inputs[i].value;
+        }
+        return pin;
+    }
+
+    function updateState() {
+        var pin = getPin();
+        document.getElementById('btn-pair').disabled = pin.length !== 8;
+
+        inputs.forEach(function(input) {
+            if (input.value) {
+                input.classList.add('filled');
+            } else {
+                input.classList.remove('filled');
+            }
+            input.classList.remove('error');
+            input.classList.remove('success');
+        });
+    }
+
+    function showError(msg) {
+        var el = document.getElementById('error-msg');
+        el.textContent = msg;
+        el.classList.add('visible');
+        inputs.forEach(function(input) { input.classList.add('error'); });
+    }
+
+    function hideError() {
+        document.getElementById('error-msg').classList.remove('visible');
+    }
+
+    function showSuccess() {
+        inputs.forEach(function(input) {
+            input.classList.remove('error');
+            input.classList.add('success');
+        });
+    }
+
+    // pair
+    var btnPair = document.getElementById('btn-pair');
+    btnPair.addEventListener('click', doPair);
+
+    async function doPair() {
+        var pin = getPin();
+        if (pin.length !== 8) return;
+
+        var port = parseInt(mdnsPort, 10);
+        if (!ip || !port || !mdnsDeviceId) {
+            showError('Missing device information. Go back and re-probe.');
+            return;
+        }
+
+        hideError();
+
+        btnPair.disabled = true;
+        var origText = btnPair.textContent;
+        btnPair.textContent = '';
+
+        var spinner = document.createElement('div');
+        spinner.className = 'pairing-spinner';
+        btnPair.appendChild(spinner);
+
+        var label = document.createTextNode(' Pairing...');
+        btnPair.appendChild(label);
+
+        inputs.forEach(function(input) { input.disabled = true; });
+
+        try {
+            var r = await fetch('api/homekit/pair', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    ip: ip,
+                    port: port,
+                    device_id: mdnsDeviceId,
+                    pin: pin
+                })
+            });
+
+            if (!r.ok) {
+                var text = await r.text();
+                inputs.forEach(function(input) { input.disabled = false; });
+                btnPair.textContent = origText;
+                updateState();
+                showError(text || 'Pairing failed (HTTP ' + r.status + ')');
+                inputs[0].focus();
+                return;
+            }
+
+            var data = await r.json();
+
+            showSuccess();
+            btnPair.textContent = '';
+            var check = document.createTextNode('Paired!');
+            btnPair.appendChild(check);
+
+            // redirect to create.html with the homekit URL
+            setTimeout(function() {
+                var p = new URLSearchParams();
+                p.set('url', data.url);
+                if (ip) p.set('ip', ip);
+                if (mac) p.set('mac', mac);
+                if (vendor) p.set('vendor', vendor);
+                if (mdnsName) p.set('model', mdnsName);
+                if (hostname) p.set('hostname', hostname);
+                window.location.href = 'create.html?' + p.toString();
+            }, 800);
+
+        } catch (e) {
+            inputs.forEach(function(input) { input.disabled = false; });
+            btnPair.textContent = origText;
+            updateState();
+            showError('Connection error: ' + e.message);
+        }
+    }
+
+    // navigation
     document.getElementById('btn-back').addEventListener('click', function() {
         window.location.href = 'index.html';
     });
 
-    document.getElementById('btn-skip').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-
-    // try standard discovery -- pass all params to standard.html
     document.getElementById('btn-standard').addEventListener('click', function() {
         var p = new URLSearchParams();
         if (ip) p.set('ip', ip);
@@ -317,6 +555,9 @@
         if (latency) p.set('latency', latency);
         window.location.href = 'standard.html?' + p.toString();
     });
+
+    // autofocus first input
+    inputs[0].focus();
 </script>
 
 </body>

@@ -35,7 +35,7 @@ func Init() {
 	ports = loadPorts()
 	// HomeKit detector
 	detectors = append(detectors, func(r *probe.Response) string {
-		if r.Probes.MDNS != nil && !r.Probes.MDNS.Paired {
+		if r.Probes.MDNS != nil {
 			if r.Probes.MDNS.Category == "camera" || r.Probes.MDNS.Category == "doorbell" {
 				return "homekit"
 			}
