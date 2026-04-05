@@ -741,6 +741,33 @@ healthcheck() {
 }
 
 # ---------------------------------------------------------------------------
+# Detect LAN IP address
+# ---------------------------------------------------------------------------
+detect_lan_ip() {
+    local ip=""
+
+    # Method 1: ip route (most reliable on modern Linux)
+    ip=$(ip route get 1.1.1.1 2>/dev/null | grep -oP 'src \K\S+' | head -1)
+
+    # Method 2: hostname -I
+    if [[ -z "$ip" ]]; then
+        ip=$(hostname -I 2>/dev/null | awk '{print $1}')
+    fi
+
+    # Method 3: ifconfig fallback
+    if [[ -z "$ip" ]]; then
+        ip=$(ifconfig 2>/dev/null | grep -oP 'inet \K[0-9.]+' | grep -v '127.0.0.1' | head -1)
+    fi
+
+    # Fallback to localhost
+    if [[ -z "$ip" ]]; then
+        ip="localhost"
+    fi
+
+    echo "$ip"
+}
+
+# ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
 show_summary() {
@@ -756,6 +783,10 @@ show_summary() {
     local sp
     sp=$(printf "%*s" "$pad" "")
 
+    local lan_ip
+    lan_ip=$(detect_lan_ip)
+    local open_url="http://${lan_ip}:${STRIX_PORT}"
+
     echo -e "${sp}${C_GREEN}┌─ ${C_WHITE}${C_BOLD}Complete${C_RESET} ${C_GREEN}${line:11}┐${C_RESET}"
     echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
     echo -e "${sp}${C_GREEN}│${C_RESET}  Mode:     ${C_WHITE}${C_BOLD}${INSTALL_MODE}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#INSTALL_MODE} )) "")${C_GREEN}│${C_RESET}"
@@ -766,7 +797,7 @@ show_summary() {
     echo -e "${sp}${C_GREEN}│${C_RESET}  Config:   ${C_DIM}${STRIX_DIR}/${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#STRIX_DIR} - 1 )) "")${C_GREEN}│${C_RESET}"
     echo -e "${sp}${C_GREEN}│${C_RESET}  Log:      ${C_DIM}${LOG_FILE}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#LOG_FILE} )) "")${C_GREEN}│${C_RESET}"
     echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  ${C_CYAN}Open: ${C_WHITE}${C_BOLD}http://localhost:${STRIX_PORT}${C_RESET}$(printf "%*s" $(( box_w - 30 - ${#STRIX_PORT} )) "")${C_GREEN}│${C_RESET}"
+    echo -e "${sp}${C_GREEN}│${C_RESET}  ${C_CYAN}Open: ${C_WHITE}${C_BOLD}${open_url}${C_RESET}$(printf "%*s" $(( box_w - 9 - ${#open_url} )) "")${C_GREEN}│${C_RESET}"
     echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
     echo -e "${sp}${C_GREEN}└${line}┘${C_RESET}"
     echo ""
