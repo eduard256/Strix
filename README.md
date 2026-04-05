@@ -1,7 +1,5 @@
 <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="48" align="left">
 
-# Strix
-
 [![GitHub Stars](https://img.shields.io/github/stars/eduard256/strix?style=social)](https://github.com/eduard256/strix/stargazers)
 [![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/eduard256/Strix/blob/main/LICENSE)
