@@ -23,6 +23,8 @@ Camera stream discovery and Frigate config generator.
 - zero-dependency static [binary](#binary) for Linux amd64/arm64
 - can be used as [standalone app](#binary), [Docker](#docker), or [Home Assistant add-on](#home-assistant-add-on)
 
+---
+
 <a href="https://youtu.be/JgVWsl4NApE">
   <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/demo.gif" width="100%">
 </a>
