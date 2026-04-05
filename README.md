@@ -1,7 +1,9 @@
 <h1 align="center">
   <a href="https://github.com/eduard256/Strix">
-    <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="96" alt="Strix">
+    <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="64" alt="Strix" valign="middle">
   </a>
+  &nbsp;
+  STRIX
 </h1>
 <p align="center">
   <a href="https://github.com/eduard256/strix/stargazers"><img src="https://img.shields.io/github/stars/eduard256/strix?style=flat-square&logo=github" alt="GitHub Stars"></a>
