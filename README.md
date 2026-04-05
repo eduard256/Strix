@@ -147,3 +147,5 @@ Three entity types:
 Camera not in the database? [Add it here](https://gostrix.github.io/#/contribute).
 
 **Developers:** integrate [Strix HTTP API](DEVELOPERS.md) into your smart home platform.
+
+**Testing:** [StrixCamFake](https://github.com/eduard256/StrixCamFake) -- IP camera emulator for development and testing.
