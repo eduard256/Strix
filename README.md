@@ -32,6 +32,8 @@ Camera stream discovery and Frigate config generator.
 <p align="center">
   <a href="https://gostrix.github.io/demo.html"><b>Live Demo</b></a>
   &nbsp;&bull;&nbsp;
+  <a href="https://gostrix.github.io/"><b>Supported Cameras</b></a>
+  &nbsp;&bull;&nbsp;
   <a href="https://youtu.be/JgVWsl4NApE"><b>Video</b></a>
   &nbsp;&bull;&nbsp;
   <a href="DEVELOPERS.md"><b>API Docs</b></a>
