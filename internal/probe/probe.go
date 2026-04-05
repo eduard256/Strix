@@ -21,8 +21,6 @@ const probeTimeout = 100 * time.Millisecond
 var log zerolog.Logger
 var db *sql.DB
 var ports []int
-var hasICMP bool
-
 var detectors []func(*probe.Response) string
 
 func Init() {
@@ -35,14 +33,6 @@ func Init() {
 	}
 
 	ports = loadPorts()
-	hasICMP = probe.CanICMP()
-
-	if hasICMP {
-		log.Info().Msg("[probe] ICMP available")
-	} else {
-		log.Info().Msg("[probe] ICMP not available, using port scan only")
-	}
-
 	// HomeKit detector
 	detectors = append(detectors, func(r *probe.Response) string {
 		if r.Probes.MDNS != nil && !r.Probes.MDNS.Paired {
@@ -123,26 +113,10 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 		mu.Unlock()
 	})
 
-	if hasICMP {
-		run(func() {
-			r, _ := probe.Ping(ctx, ip)
-			mu.Lock()
-			resp.Probes.Ping = r
-			mu.Unlock()
-		})
-	}
-
 	wg.Wait()
 
 	// determine reachable
 	resp.Reachable = resp.Probes.Ports != nil && len(resp.Probes.Ports.Open) > 0
-	if !resp.Reachable && resp.Probes.Ping != nil {
-		resp.Reachable = true
-	}
-
-	if resp.Reachable && resp.Probes.Ping != nil {
-		resp.LatencyMs = resp.Probes.Ping.LatencyMs
-	}
 
 	// determine type
 	resp.Type = "standard"
@@ -184,10 +158,11 @@ func loadPorts() []int {
 		return defaultPorts()
 	}
 
+	result = append(result, 51826)
 	log.Info().Int("count", len(result)).Msg("[probe] loaded ports from db")
 	return result
 }
 
 func defaultPorts() []int {
-	return []int{554, 80, 8080, 443, 8554, 5544, 10554, 1935, 81, 88, 8090, 8001, 8081, 7070, 7447, 34567}
+	return []int{554, 80, 8080, 443, 8554, 5544, 10554, 1935, 81, 88, 8090, 8001, 8081, 7070, 7447, 34567, 51826}
 }

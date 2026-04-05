@@ -3,23 +3,17 @@ package probe
 type Response struct {
 	IP        string  `json:"ip"`
 	Reachable bool    `json:"reachable"`
-	LatencyMs float64 `json:"latency_ms,omitempty"`
-	Type      string  `json:"type"` // "unreachable", "standard", "homekit"
+	Type string `json:"type"` // "unreachable", "standard", "homekit"
 	Error     string  `json:"error,omitempty"`
 	Probes    Probes  `json:"probes"`
 }
 
 type Probes struct {
-	Ping  *PingResult  `json:"ping"`
 	Ports *PortsResult `json:"ports"`
 	DNS   *DNSResult   `json:"dns"`
 	ARP   *ARPResult   `json:"arp"`
 	MDNS  *MDNSResult  `json:"mdns"`
 	HTTP  *HTTPResult  `json:"http"`
-}
-
-type PingResult struct {
-	LatencyMs float64 `json:"latency_ms"`
 }
 
 type PortsResult struct {
