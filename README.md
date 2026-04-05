@@ -53,7 +53,7 @@ Open `http://YOUR_IP:4567`
 
 <a id="probe"></a>
 
-Enter camera IP. Strix probes the device -- open ports, MAC vendor, mDNS, HTTP server.
+Enter camera IP. Strix probes the device - open ports, MAC vendor, mDNS, HTTP server.
 
 ![](https://github.com/eduard256/Strix/releases/download/v2.0.0/01-enter-ip.png)
 
@@ -137,15 +137,15 @@ STRIX_LISTEN=:4567 ./strix-linux-amd64
 
 SQLite database with 3,600+ brands and 100,000+ URL patterns. Maintained separately in [StrixCamDB](https://github.com/eduard256/StrixCamDB). Database is embedded in Docker image and bundled with binary releases.
 
-[Browse supported cameras](https://gostrix.github.io/) -- search by brand or model to check if your camera is in the database.
+[Browse supported cameras](https://gostrix.github.io/) - search by brand or model to check if your camera is in the database.
 
 Three entity types:
-- **Presets** -- curated sets of popular URL patterns (e.g. "ONVIF", "Popular RTSP")
-- **Brands** -- all URL patterns for a brand (e.g. "Hikvision", "Dahua")
-- **Models** -- URL patterns for a specific model within a brand
+- **Presets** - curated sets of popular URL patterns (e.g. "ONVIF", "Popular RTSP")
+- **Brands** - all URL patterns for a brand (e.g. "Hikvision", "Dahua")
+- **Models** - URL patterns for a specific model within a brand
 
 Camera not in the database? [Add it here](https://gostrix.github.io/#/contribute).
 
 **Developers:** integrate [Strix HTTP API](DEVELOPERS.md) into your smart home platform.
 
-**Testing:** [StrixCamFake](https://github.com/eduard256/StrixCamFake) -- IP camera emulator for development and testing.
+**Testing:** [StrixCamFake](https://github.com/eduard256/StrixCamFake) - IP camera emulator for development and testing.
