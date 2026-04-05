@@ -27,6 +27,14 @@ Camera stream discovery and Frigate config generator.
   <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/demo.gif" width="100%">
 </a>
 
+<p align="center">
+  <a href="https://gostrix.github.io/demo.html"><b>Live Demo</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="https://youtu.be/JgVWsl4NApE"><b>Video</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="DEVELOPERS.md"><b>API Docs</b></a>
+</p>
+
 ## Install
 
 Any Linux, one command:
