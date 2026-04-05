@@ -1,0 +1,12 @@
+# Strix standalone
+# Usage: docker compose up -d
+
+services:
+  strix:
+    container_name: strix
+    image: eduard256/strix:latest
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      STRIX_LISTEN: ":4567"
+      # STRIX_LOG_LEVEL: debug

@@ -1,0 +1,42 @@
+# Strix + Frigate
+# Usage: docker compose -f docker-compose.frigate.yml up -d
+
+services:
+  strix:
+    container_name: strix
+    image: eduard256/strix:latest
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      STRIX_LISTEN: ":4567"
+      STRIX_FRIGATE_URL: "http://localhost:8971"
+      # STRIX_LOG_LEVEL: debug
+    depends_on:
+      - frigate
+
+  frigate:
+    container_name: frigate
+    image: ghcr.io/blakeblackshear/frigate:stable
+    privileged: true
+    restart: unless-stopped
+    stop_grace_period: 30s
+    shm_size: "512mb"
+    # devices:
+    #   - /dev/bus/usb:/dev/bus/usb          # USB Coral
+    #   - /dev/apex_0:/dev/apex_0            # PCIe Coral
+    #   - /dev/dri/renderD128:/dev/dri/renderD128  # Intel/AMD GPU
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./frigate/config:/config
+      - ./frigate/storage:/media/frigate
+      - type: tmpfs
+        target: /tmp/cache
+        tmpfs:
+          size: 1000000000
+    ports:
+      - "8971:8971"
+      - "8554:8554"
+      - "8555:8555/tcp"
+      - "8555:8555/udp"
+    environment:
+      FRIGATE_RTSP_PASSWORD: "password"

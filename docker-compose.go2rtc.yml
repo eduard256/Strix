@@ -1,0 +1,27 @@
+# Strix + go2rtc
+# Usage: docker compose -f docker-compose.go2rtc.yml up -d
+
+services:
+  strix:
+    container_name: strix
+    image: eduard256/strix:latest
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      STRIX_LISTEN: ":4567"
+      STRIX_GO2RTC_URL: "http://localhost:1984"
+      # STRIX_LOG_LEVEL: debug
+    depends_on:
+      - go2rtc
+
+  go2rtc:
+    container_name: go2rtc
+    image: alexxit/go2rtc
+    restart: unless-stopped
+    volumes:
+      - ./go2rtc:/config
+    ports:
+      - "1984:1984"
+      - "8554:8554"
+      - "8555:8555/tcp"
+      - "8555:8555/udp"

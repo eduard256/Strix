@@ -97,6 +97,29 @@ Camera works in Frigate. Done.
 docker run -d --name strix --network host --restart unless-stopped eduard256/strix:latest
 ```
 
+### Docker Compose
+
+Strix only:
+
+```bash
+curl -O https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.yml
+docker compose up -d
+```
+
+Strix + [Frigate](https://github.com/blakeblackshear/frigate):
+
+```bash
+curl -O https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.frigate.yml
+docker compose -f docker-compose.frigate.yml up -d
+```
+
+Strix + [go2rtc](https://github.com/AlexxIT/go2rtc):
+
+```bash
+curl -O https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.go2rtc.yml
+docker compose -f docker-compose.go2rtc.yml up -d
+```
+
 ### Home Assistant Add-on
 
 1. **Settings** > **Add-ons** > **Add-on Store**
