@@ -1,6 +1,6 @@
 ---
 name: release_strix
-description: Full release of Strix -- merge develop to main, tag, build multiarch Docker image, push to Docker Hub, update hassio-strix, create GitHub Release.
+description: Full release of Strix -- merge develop to main, tag, build multiarch Docker image, build static binaries, push to Docker Hub, update hassio-strix, create GitHub Release with binaries attached.
 disable-model-invocation: true
 ---
 
@@ -12,6 +12,10 @@ You are performing a full release of Strix. Follow every step exactly. Do NOT sk
 
 - Strix: `/home/user/Strix`
 - hassio-strix: `/home/user/hassio-strix`
+
+## Versioning
+
+Version is injected at build time via ldflags (`-X main.version=$VERSION`). There is NO hardcoded version in the source code -- `main.go` has `var version = "dev"` as default. The Dockerfile passes `--build-arg VERSION` which maps to the same ldflags. Do NOT edit `main.go` to set the version.
 
 ## Step 1: Gather information
 
@@ -64,7 +68,7 @@ ls -lh cameras.db
 ```bash
 cd /home/user/Strix
 go test ./...
-go build ./...
+CGO_ENABLED=0 go build ./...
 ```
 
 If tests or build fail -- STOP and report the error. Do not continue.
@@ -157,17 +161,40 @@ git commit -m "Release v$VERSION"
 git push origin main
 ```
 
-## Step 11: GitHub Release
+## Step 11: Build static binaries
+
+Build static binaries for both platforms:
+
+```bash
+cd /home/user/Strix
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-s -w -X main.version=$VERSION" -o strix-linux-amd64 .
+CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -ldflags "-s -w -X main.version=$VERSION" -o strix-linux-arm64 .
+```
+
+Verify both binaries are statically linked:
+```bash
+file strix-linux-amd64 strix-linux-arm64
+```
+
+## Step 12: GitHub Release
+
+Create the release and attach binaries:
 
 ```bash
 cd /home/user/Strix
 PREV_TAG=$(git tag --sort=-version:refname | sed -n '2p')
 gh release create v$VERSION \
   --title "v$VERSION" \
-  --notes "$(git log --oneline ${PREV_TAG}..v$VERSION)"
+  --notes "$(git log --oneline ${PREV_TAG}..v$VERSION)" \
+  strix-linux-amd64 strix-linux-arm64
 ```
 
-## Step 12: Final report
+Clean up binaries after upload:
+```bash
+rm -f strix-linux-amd64 strix-linux-arm64
+```
+
+## Step 13: Final report
 
 Output a summary:
 
@@ -176,6 +203,7 @@ Release v$VERSION complete:
 - Git: tag v$VERSION pushed to main
 - Docker Hub: eduard256/strix:$VERSION (amd64 + arm64)
 - Health check: version "$VERSION" verified
+- Binaries: strix-linux-amd64, strix-linux-arm64 attached to GitHub Release
 - hassio-strix: config.json updated to $VERSION, pushed to main
 - GitHub Release: <URL from gh release create>
 ```

@@ -11,7 +11,7 @@ import (
 	"github.com/eduard256/strix/pkg/camdb"
 	"github.com/rs/zerolog"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 var log zerolog.Logger
@@ -21,7 +21,7 @@ func Init() {
 	log = app.GetLogger("search")
 
 	var err error
-	db, err = sql.Open("sqlite3", "file:"+app.DB+"?mode=ro&immutable=1")
+	db, err = sql.Open("sqlite", "file:"+app.DB+"?mode=ro&immutable=1")
 	if err != nil {
 		log.Fatal().Err(err).Msg("[search] db open")
 	}

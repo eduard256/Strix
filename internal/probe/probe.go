@@ -13,7 +13,7 @@ import (
 	"github.com/eduard256/strix/pkg/probe"
 	"github.com/rs/zerolog"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 const probeTimeout = 100 * time.Millisecond
@@ -29,7 +29,7 @@ func Init() {
 	log = app.GetLogger("probe")
 
 	var err error
-	db, err = sql.Open("sqlite3", "file:"+app.DB+"?mode=ro&immutable=1")
+	db, err = sql.Open("sqlite", "file:"+app.DB+"?mode=ro&immutable=1")
 	if err != nil {
 		log.Error().Err(err).Msg("[probe] db open")
 	}

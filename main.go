@@ -11,8 +11,13 @@ import (
 	"github.com/eduard256/strix/internal/test"
 )
 
+// version is set at build time via ldflags:
+//
+//	go build -ldflags "-X main.version=2.0.0"
+var version = "dev"
+
 func main() {
-	app.Version = "2.0.0"
+	app.Version = version
 
 	type module struct {
 		name string
