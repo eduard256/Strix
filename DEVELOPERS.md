@@ -2,7 +2,7 @@
 
 Strix is a single static binary with embedded web UI and SQLite camera database. No config files, no external dependencies (except optional `ffmpeg` for H264/H265 screenshot conversion). Designed to run alongside your project the same way [go2rtc](https://github.com/AlexxIT/go2rtc) does.
 
-For development and testing without real cameras, use [StrixCamFake](https://github.com/eduard256/StrixCamFake) -- IP camera emulator with RTSP, HTTP, RTMP, Bubble and more.
+For development and testing without real cameras, use [StrixCamFake](https://github.com/eduard256/StrixCamFake) - IP camera emulator with RTSP, HTTP, RTMP, Bubble and more.
 
 ## Binary
 
@@ -251,7 +251,7 @@ curl -X POST localhost:4567/api/generate -d '{
 - `config`: complete Frigate YAML
 - `added`: 1-based line numbers of new lines (for highlighting in UI)
 
-**Merge into existing config** -- pass `existingConfig` field:
+**Merge into existing config** - pass `existingConfig` field:
 
 ```json
 {
