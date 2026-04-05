@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"os/exec"
+	"strings"
 	"time"
 
 	"github.com/AlexxIT/go2rtc/pkg/core"
@@ -49,6 +50,11 @@ func RunWorkers(s *Session, urls []string) {
 
 func testURL(s *Session, rawURL string) {
 	defer s.AddTested()
+
+	if strings.HasPrefix(rawURL, "homekit://") {
+		testHomeKit(s, rawURL)
+		return
+	}
 
 	handler := GetHandler(rawURL)
 	if handler == nil {
