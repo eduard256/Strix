@@ -1,11 +1,11 @@
 <p align="center">
+  <a href="https://github.com/eduard256/strix/stargazers"><img src="https://img.shields.io/github/stars/eduard256/strix?style=social" alt="GitHub Stars"></a>
+  <a href="https://hub.docker.com/r/eduard256/strix"><img src="https://img.shields.io/docker/pulls/eduard256/strix" alt="Docker Pulls"></a>
+  <br><br>
   <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="96">
   <br>
   <b>Strix</b>
 </p>
-
-[![GitHub Stars](https://img.shields.io/github/stars/eduard256/strix?style=social)](https://github.com/eduard256/strix/stargazers)
-[![Docker Pulls](https://img.shields.io/docker/pulls/eduard256/strix)](https://hub.docker.com/r/eduard256/strix)
 
 Finds working camera streams. Generates Frigate config. 30 seconds.
 
