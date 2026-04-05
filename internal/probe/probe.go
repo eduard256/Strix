@@ -16,7 +16,7 @@ import (
 	_ "modernc.org/sqlite"
 )
 
-const probeTimeout = 100 * time.Millisecond
+const probeTimeout = 120 * time.Millisecond
 
 var log zerolog.Logger
 var db *sql.DB
@@ -78,14 +78,17 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 		}()
 	}
 
+	fastCtx, fastCancel := context.WithTimeout(ctx, 100*time.Millisecond)
+	defer fastCancel()
+
 	run(func() {
-		r, _ := probe.ScanPorts(ctx, ip, ports)
+		r, _ := probe.ScanPorts(fastCtx, ip, ports)
 		mu.Lock()
 		resp.Probes.Ports = r
 		mu.Unlock()
 	})
 	run(func() {
-		r, _ := probe.ReverseDNS(ctx, ip)
+		r, _ := probe.ReverseDNS(fastCtx, ip)
 		mu.Lock()
 		resp.Probes.DNS = r
 		mu.Unlock()
@@ -107,7 +110,7 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 		mu.Unlock()
 	})
 	run(func() {
-		r, _ := probe.ProbeHTTP(ctx, ip, nil)
+		r, _ := probe.ProbeHTTP(fastCtx, ip, nil)
 		mu.Lock()
 		resp.Probes.HTTP = r
 		mu.Unlock()
@@ -116,7 +119,8 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 	wg.Wait()
 
 	// determine reachable
-	resp.Reachable = resp.Probes.Ports != nil && len(resp.Probes.Ports.Open) > 0
+	resp.Reachable = (resp.Probes.Ports != nil && len(resp.Probes.Ports.Open) > 0) ||
+		resp.Probes.MDNS != nil
 
 	// determine type
 	resp.Type = "standard"

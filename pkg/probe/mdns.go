@@ -22,8 +22,11 @@ const (
 	categoryDoorbell = "18"
 )
 
-// QueryHAP sends unicast mDNS query to ip:5353 for HomeKit service.
-// Returns nil if device is not a HomeKit camera/doorbell.
+var multicastAddr = &net.UDPAddr{IP: net.IP{224, 0, 0, 251}, Port: 5353}
+
+// QueryHAP sends multicast mDNS query for HomeKit service and waits
+// for a response from the specified ip. Returns nil if device is not
+// a HomeKit camera/doorbell.
 func QueryHAP(ctx context.Context, ip string) (*MDNSResult, error) {
 	msg := &dns.Msg{
 		Question: []dns.Question{
@@ -36,7 +39,7 @@ func QueryHAP(ctx context.Context, ip string) (*MDNSResult, error) {
 		return nil, err
 	}
 
-	conn, err := net.ListenPacket("udp4", ":0")
+	conn, err := net.ListenMulticastUDP("udp4", nil, multicastAddr)
 	if err != nil {
 		return nil, err
 	}
@@ -44,27 +47,34 @@ func QueryHAP(ctx context.Context, ip string) (*MDNSResult, error) {
 
 	deadline, ok := ctx.Deadline()
 	if !ok {
-		deadline = time.Now().Add(100 * time.Millisecond)
+		deadline = time.Now().Add(time.Second)
 	}
 	_ = conn.SetDeadline(deadline)
 
-	addr := &net.UDPAddr{IP: net.ParseIP(ip), Port: 5353}
-	if _, err = conn.WriteTo(query, addr); err != nil {
+	if _, err = conn.WriteTo(query, multicastAddr); err != nil {
 		return nil, err
 	}
 
+	targetIP := net.ParseIP(ip)
 	buf := make([]byte, 1500)
-	n, _, err := conn.ReadFrom(buf)
-	if err != nil {
-		return nil, nil // timeout = not a HomeKit device
-	}
 
-	var resp dns.Msg
-	if err = resp.Unpack(buf[:n]); err != nil {
-		return nil, nil
-	}
+	for {
+		n, from, err := conn.ReadFrom(buf)
+		if err != nil {
+			return nil, nil // timeout
+		}
 
-	return parseHAPResponse(&resp)
+		if !from.(*net.UDPAddr).IP.Equal(targetIP) {
+			continue
+		}
+
+		var resp dns.Msg
+		if err = resp.Unpack(buf[:n]); err != nil {
+			continue
+		}
+
+		return parseHAPResponse(&resp)
+	}
 }
 
 // internals
