@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon.svg" width="96">
+  <img src="https://github.com/eduard256/Strix/releases/download/v2.0.0/icon-192.png" width="96">
   <br>
   <b>Strix</b>
 </p>
