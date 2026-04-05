@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Camera Stream Discovery</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --border-focus: rgba(139, 92, 246, 0.5);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .screen {
+            min-height: 100vh;
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container { max-width: 480px; width: 100%; margin-top: 8vh; }
+
+        @media (min-width: 768px) {
+            .screen { padding: 3rem 1.5rem; }
+            .container { max-width: 540px; }
+        }
+
+        .hero { text-align: center; margin-bottom: 3rem; }
+
+        .logo {
+            width: 64px; height: 64px;
+            color: var(--purple-primary);
+            margin: 0 auto 1rem;
+            filter: drop-shadow(0 4px 12px var(--purple-glow));
+        }
+
+        .title {
+            font-size: 2rem; font-weight: 700;
+            letter-spacing: 0.05em; margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--purple-light), var(--purple-primary));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle { font-size: 0.875rem; color: var(--text-secondary); }
+
+        .form-group { margin-bottom: 1.5rem; }
+
+        .label {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.875rem; font-weight: 500;
+            color: var(--text-secondary); margin-bottom: 0.5rem;
+        }
+
+        .input {
+            width: 100%; padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem; font-family: var(--font-primary);
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .input:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .input::placeholder { color: var(--text-tertiary); }
+        .input-large { padding: 1.5rem; font-size: 1.125rem; }
+
+        .hint { margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-tertiary); }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--purple-glow-strong);
+        }
+
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-large { width: 100%; padding: 1.5rem; font-size: 1.125rem; }
+
+        .info-icon {
+            position: relative; display: inline-flex;
+            align-items: center; justify-content: center;
+            width: 16px; height: 16px; cursor: help;
+            color: var(--text-tertiary); transition: color var(--transition-fast);
+        }
+
+        .info-icon:hover { color: var(--purple-primary); }
+        .info-icon svg { width: 16px; height: 16px; }
+
+        .tooltip {
+            position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-elevated);
+            border: 1px solid var(--purple-primary);
+            border-radius: 8px; padding: 1rem;
+            width: 320px; max-width: 90vw;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--purple-glow);
+            z-index: 1000; opacity: 0; visibility: hidden;
+            transition: opacity var(--transition-fast), visibility var(--transition-fast);
+            pointer-events: none;
+        }
+
+        .tooltip::after {
+            content: ''; position: absolute; bottom: 100%; left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent; border-bottom-color: var(--purple-primary);
+        }
+
+        .info-icon:hover .tooltip { opacity: 1; visibility: visible; }
+
+        .tooltip-title { font-weight: 600; color: var(--purple-primary); margin-bottom: 0.5rem; font-size: 0.875rem; }
+        .tooltip-text { font-size: 0.75rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .tooltip-text:last-child { margin-bottom: 0; }
+        .tooltip-examples { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); }
+        .tooltip-examples-title { font-weight: 600; color: var(--text-primary); font-size: 0.75rem; margin-bottom: 0.5rem; }
+        .tooltip-example {
+            font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--purple-light); background: var(--bg-secondary);
+            padding: 0.25rem 0.5rem; border-radius: 4px;
+            margin-bottom: 0.25rem; display: block;
+        }
+
+        .examples { margin-top: 3rem; text-align: center; }
+        .examples-title { font-size: 0.875rem; color: var(--text-tertiary); margin-bottom: 0.75rem; font-weight: 500; }
+        .examples-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+        .examples-list li { font-size: 0.875rem; color: var(--text-secondary); font-family: var(--font-mono); }
+
+        .probe-result {
+            margin-top: 1.5rem; padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--text-secondary);
+            white-space: pre-wrap; word-break: break-all;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .probe-result.visible { display: block; animation: fadeIn var(--transition-base); }
+
+        .type-badge {
+            display: inline-block; padding: 0.125rem 0.5rem;
+            border-radius: 4px; font-weight: 600; font-size: 0.6875rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .type-standard { background: var(--success); color: #000; }
+        .type-homekit { background: var(--purple-primary); color: #fff; }
+        .type-unreachable { background: var(--error); color: #fff; }
+
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px; box-shadow: var(--shadow-lg);
+            font-size: 0.875rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="container">
+        <div class="hero">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001">
+                <g><path style="fill:#7E57C2;" d="M124.477,378.183L9.347,495.779c21.628,21.628,56.695,21.628,78.324,0L119,464.45c21.628,21.628,56.696,21.628,78.324,0l28.375-28.375C187.373,426.203,151.825,405.106,124.477,378.183z"/><path style="fill:#7E57C2;" d="M447.27,55.383h-55.383V177.22c0.002-40.997,22.277-76.788,55.383-95.939c16.293-9.425,35.207-14.822,55.383-14.822c0-6.982,0-11.077,0-11.077V0C472.065,0,447.27,24.796,447.27,55.383z"/></g>
+                <path style="fill:#9575CD;" d="M336.504,55.383C336.504,24.796,311.708,0,281.121,0v66.46c20.176,0,39.091,5.397,55.383,14.822c33.107,19.153,55.383,54.946,55.383,95.945V55.383H336.504z"/>
+                <path style="fill:#E8E0F5;" d="M391.887,209.772v-27.116c0-3.312,0-5.432,0-5.432c0-40.997-22.276-76.791-55.383-95.942c-16.293-9.425-35.207-14.822-55.383-14.822v155.073C311.213,191.443,357.554,187.532,391.887,209.772z M314.351,143.996c0-12.234,9.918-22.153,22.153-22.153s22.153,9.919,22.153,22.153c0,12.235-9.918,22.153-22.153,22.153S314.351,156.231,314.351,143.996z"/>
+                <path style="fill:#D1C4E9;" d="M391.887,177.221v32.551c5.151,3.336,10.037,7.246,14.55,11.76h96.216V66.46c-20.176,0-39.091,5.397-55.383,14.822C414.164,100.434,391.888,136.225,391.887,177.221z M469.423,143.996c0,12.235-9.918,22.153-22.153,22.153s-22.153-9.918-22.153-22.153c0-12.234,9.918-22.153,22.153-22.153C459.504,121.843,469.423,131.762,469.423,143.996z"/>
+                <path style="fill:#B39DDB;" d="M406.438,221.533c34.606,34.606,34.606,90.712,0,125.319c-69.21,69.21-181.422,69.21-250.633,0.002l-31.329,31.33c27.348,26.923,62.896,48.02,101.221,57.892c17.714,4.562,36.285,6.989,55.423,6.989c122.349,0,221.532-99.182,221.532-221.531C502.653,221.533,406.437,221.532,406.438,221.533z"/>
+                <path style="fill:#9575CD;" d="M281.121,221.532l125.318,125.319c34.606-34.606,34.606-90.713,0-125.319c-4.515-4.514-9.401-8.425-14.551-11.761C357.554,187.532,311.213,191.443,281.121,221.532z"/>
+                <path style="fill:#7E57C2;" d="M406.438,346.851L281.12,221.533l-10.199,10.2L155.802,346.851C225.017,416.062,337.228,416.061,406.438,346.851z"/>
+                <circle style="fill:#9575CD;" cx="336.507" cy="143.996" r="22.153"/>
+                <circle style="fill:#7E57C2;" cx="447.274" cy="143.996" r="22.153"/>
+            </svg>
+            <h1 class="title">STRIX</h1>
+            <p class="subtitle">Camera Stream Discovery</p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">
+                Network Address
+                <span class="info-icon">
+                    <svg viewBox="0 0 16 16" fill="none">
+                        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="tooltip">
+                        <div class="tooltip-title">Network Address</div>
+                        <p class="tooltip-text">Enter the IP address of your camera. Strix will probe the device to detect its type and capabilities.</p>
+                        <div class="tooltip-examples">
+                            <div class="tooltip-examples-title">Accepted formats:</div>
+                            <code class="tooltip-example">192.168.1.100</code>
+                            <code class="tooltip-example">10.0.0.50</code>
+                        </div>
+                    </div>
+                </span>
+            </label>
+            <input type="text" id="ip" class="input input-large" placeholder="192.168.1.100" autocomplete="off" spellcheck="false">
+            <p class="hint">IP address or stream URL (rtsp://, http://, ...)</p>
+        </div>
+
+        <button id="btn-check" class="btn btn-primary btn-large">Check Address</button>
+
+        <div id="probe-result" class="probe-result"></div>
+
+        <div class="examples">
+            <p class="examples-title">Examples</p>
+            <ul class="examples-list">
+                <li>192.168.1.100</li>
+                <li>10.0.0.50</li>
+                <li>172.16.0.10</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    const ipInput = document.getElementById('ip');
+    const btnCheck = document.getElementById('btn-check');
+    const probeResult = document.getElementById('probe-result');
+
+    // prefill network prefix from server IP
+    (function() {
+        const h = location.hostname;
+        if (!h || h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0') return;
+        const m = h.match(/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.)\d{1,3}$/);
+        if (m) { ipInput.value = m[1]; ipInput.placeholder = m[1] + '100'; }
+    })();
+
+    ipInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') checkAddress(); });
+    btnCheck.addEventListener('click', checkAddress);
+
+    async function checkAddress() {
+        const ip = ipInput.value.trim();
+        if (!ip) { showToast('Enter an IP address or stream URL'); return; }
+
+        // Direct stream URL — skip probe, go straight to create.html
+        if (ip.indexOf('://') !== -1) {
+            window.location.href = 'create.html?url=' + encodeURIComponent(ip);
+            return;
+        }
+
+        btnCheck.disabled = true;
+        btnCheck.textContent = 'Checking...';
+        probeResult.classList.remove('visible');
+
+        try {
+            const r = await fetch('api/probe?ip=' + encodeURIComponent(ip));
+            if (!r.ok) {
+                const text = await r.text();
+                showToast(text || 'Error ' + r.status);
+                return;
+            }
+
+            const data = await r.json();
+
+            if (data.type === 'standard' || (data.reachable && data.type !== 'homekit')) {
+                navigateStandard(ip, data);
+                return;
+            }
+
+            if (data.type === 'homekit') {
+                navigateHomeKit(ip, data);
+                return;
+            }
+
+            if (data.type === 'unreachable') {
+                showUnreachable(ip);
+                return;
+            }
+
+        } catch (e) {
+            showToast('Connection error: ' + e.message);
+        } finally {
+            btnCheck.disabled = false;
+            btnCheck.textContent = 'Check Address';
+        }
+    }
+
+    function navigateStandard(ip, data) {
+        var p = new URLSearchParams();
+        p.set('ip', ip);
+
+        var probes = data.probes || {};
+
+        if (probes.ports && probes.ports.open && probes.ports.open.length) {
+            p.set('ports', probes.ports.open.join(','));
+        }
+        if (probes.arp) {
+            if (probes.arp.mac) p.set('mac', probes.arp.mac);
+            if (probes.arp.vendor) p.set('vendor', probes.arp.vendor);
+        }
+        if (probes.http && probes.http.server) {
+            p.set('server', probes.http.server);
+        }
+        if (probes.dns && probes.dns.hostname) {
+            p.set('hostname', probes.dns.hostname);
+        }
+        if (probes.ping && probes.ping.latency_ms) {
+            p.set('latency', Math.round(probes.ping.latency_ms));
+        }
+
+        window.location.href = 'standard.html?' + p.toString();
+    }
+
+    function navigateHomeKit(ip, data) {
+        var p = new URLSearchParams();
+        p.set('ip', ip);
+
+        var probes = data.probes || {};
+
+        if (probes.ports && probes.ports.open && probes.ports.open.length) {
+            p.set('ports', probes.ports.open.join(','));
+        }
+        if (probes.arp) {
+            if (probes.arp.mac) p.set('mac', probes.arp.mac);
+            if (probes.arp.vendor) p.set('vendor', probes.arp.vendor);
+        }
+        if (probes.http && probes.http.server) {
+            p.set('server', probes.http.server);
+        }
+        if (probes.dns && probes.dns.hostname) {
+            p.set('hostname', probes.dns.hostname);
+        }
+        if (probes.ping && probes.ping.latency_ms) {
+            p.set('latency', Math.round(probes.ping.latency_ms));
+        }
+        if (probes.mdns) {
+            if (probes.mdns.name) p.set('mdns_name', probes.mdns.name);
+            if (probes.mdns.model) p.set('mdns_model', probes.mdns.model);
+            if (probes.mdns.category) p.set('mdns_category', probes.mdns.category);
+            if (probes.mdns.device_id) p.set('mdns_device_id', probes.mdns.device_id);
+        }
+
+        window.location.href = 'homekit.html?' + p.toString();
+    }
+
+    function showUnreachable(ip) {
+        probeResult.textContent = '';
+        probeResult.classList.add('visible');
+
+        var box = document.createElement('div');
+        box.style.cssText = 'text-align:center; padding:1.5rem 0;';
+
+        var title = document.createElement('div');
+        title.style.cssText = 'font-size:1.125rem; font-weight:600; color:var(--error); margin-bottom:0.75rem;';
+        title.textContent = 'Device Unreachable';
+
+        var msg = document.createElement('div');
+        msg.style.cssText = 'font-size:0.875rem; color:var(--text-secondary); margin-bottom:1.5rem; line-height:1.6;';
+        msg.textContent = 'The device at ' + ip + ' is not responding. It may be offline, on a different network, or the IP address may be incorrect.';
+
+        var actions = document.createElement('div');
+        actions.style.cssText = 'display:flex; gap:0.75rem; justify-content:center;';
+
+        var btnRetry = document.createElement('button');
+        btnRetry.className = 'btn btn-primary';
+        btnRetry.style.cssText = 'padding:0.75rem 1.5rem; font-size:0.875rem;';
+        btnRetry.textContent = 'Try Again';
+        btnRetry.addEventListener('click', function() {
+            probeResult.classList.remove('visible');
+            ipInput.focus();
+            ipInput.select();
+        });
+
+        var btnContinue = document.createElement('button');
+        btnContinue.style.cssText = 'padding:0.75rem 1.5rem; font-size:0.875rem; background:var(--bg-tertiary); border:1px solid var(--border-color); border-radius:8px; color:var(--text-secondary); cursor:pointer; font-family:var(--font-primary); font-weight:600; transition:all 150ms;';
+        btnContinue.textContent = 'Continue Anyway';
+        btnContinue.addEventListener('click', function() {
+            var p = new URLSearchParams();
+            p.set('ip', ip);
+            window.location.href = 'standard.html?' + p.toString();
+        });
+
+        actions.appendChild(btnRetry);
+        actions.appendChild(btnContinue);
+
+        box.appendChild(title);
+        box.appendChild(msg);
+        box.appendChild(actions);
+        probeResult.appendChild(box);
+    }
+
+    function showToast(msg, duration) {
+        var t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.remove('hidden');
+        t.classList.add('show');
+        setTimeout(function() {
+            t.classList.remove('show');
+            setTimeout(function() { t.classList.add('hidden'); }, 250);
+        }, duration || 3000);
+    }
+</script>
+
+</body>
+</html>

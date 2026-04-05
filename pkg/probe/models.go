@@ -1,0 +1,51 @@
+package probe
+
+type Response struct {
+	IP        string  `json:"ip"`
+	Reachable bool    `json:"reachable"`
+	LatencyMs float64 `json:"latency_ms,omitempty"`
+	Type      string  `json:"type"` // "unreachable", "standard", "homekit"
+	Error     string  `json:"error,omitempty"`
+	Probes    Probes  `json:"probes"`
+}
+
+type Probes struct {
+	Ping  *PingResult  `json:"ping"`
+	Ports *PortsResult `json:"ports"`
+	DNS   *DNSResult   `json:"dns"`
+	ARP   *ARPResult   `json:"arp"`
+	MDNS  *MDNSResult  `json:"mdns"`
+	HTTP  *HTTPResult  `json:"http"`
+}
+
+type PingResult struct {
+	LatencyMs float64 `json:"latency_ms"`
+}
+
+type PortsResult struct {
+	Open []int `json:"open"`
+}
+
+type DNSResult struct {
+	Hostname string `json:"hostname"`
+}
+
+type ARPResult struct {
+	MAC    string `json:"mac"`
+	Vendor string `json:"vendor"`
+}
+
+type MDNSResult struct {
+	Name     string `json:"name"`
+	DeviceID string `json:"device_id"`
+	Model    string `json:"model"`
+	Category string `json:"category"` // "camera", "doorbell"
+	Paired   bool   `json:"paired"`
+	Port     int    `json:"port"`
+}
+
+type HTTPResult struct {
+	Port       int    `json:"port"`
+	StatusCode int    `json:"status_code"`
+	Server     string `json:"server"`
+}

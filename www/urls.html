@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Stream URLs</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.5; min-height: 100vh; }
+
+        .screen { padding: 1.5rem; animation: fadeIn var(--transition-base); }
+        .container { max-width: 600px; margin: 0 auto; width: 100%; }
+
+        @media (min-width: 768px) { .screen { padding: 3rem 1.5rem; } }
+
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none; color: var(--text-secondary);
+            font-size: 0.875rem; font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0; margin-bottom: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .page-title { font-size: 1.375rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .page-subtitle { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+        .stream-card {
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; margin-bottom: 0.75rem;
+        }
+
+        .stream-label {
+            font-size: 0.625rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 0.375rem;
+        }
+
+        .stream-url-box {
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .stream-url {
+            flex: 1; font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--text-secondary); word-break: break-all; line-height: 1.5;
+        }
+        .stream-url .scheme { color: var(--purple-light); }
+
+        .btn-copy-sm {
+            flex-shrink: 0; padding: 0.375rem;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            border-radius: 4px; cursor: pointer; color: var(--text-tertiary);
+            display: flex; transition: all var(--transition-fast);
+        }
+        .btn-copy-sm:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+        .btn-copy-sm svg { width: 14px; height: 14px; }
+
+        .section-divider { height: 1px; background: var(--border-color); margin: 1.5rem 0; }
+
+        .info-box {
+            padding: 1rem; background: rgba(139, 92, 246, 0.06);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 8px; margin-bottom: 1.5rem;
+        }
+        .info-title { font-size: 0.875rem; font-weight: 600; color: var(--purple-light); margin-bottom: 0.5rem; }
+        .info-text { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6; }
+
+        .config-example {
+            margin-top: 1rem; padding: 1rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        .config-label { font-size: 0.6875rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .config-code {
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary); line-height: 1.7;
+            white-space: pre; overflow-x: auto;
+        }
+        .config-code .key { color: var(--purple-light); }
+
+        .btn-copy-block {
+            margin-top: 0.75rem; padding: 0.5rem 1rem;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            border-radius: 6px; cursor: pointer;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 600;
+            font-family: var(--font-primary); transition: all var(--transition-fast);
+        }
+        .btn-copy-block:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        .btn-add-sub {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.75rem; background: var(--bg-tertiary);
+            border: 1px solid var(--border-color); border-radius: 6px;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 500;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: all var(--transition-fast); margin-bottom: 0.75rem;
+        }
+        .btn-add-sub:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 0.75rem 1.25rem; background: var(--bg-elevated);
+            border: 1px solid var(--border-color); border-radius: 8px;
+            box-shadow: var(--shadow-lg); font-size: 0.8125rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="container">
+        <button class="btn-back" id="btn-back">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Back
+        </button>
+
+        <h2 class="page-title">Your Stream URLs</h2>
+        <p class="page-subtitle">Copy these URLs to use in your NVR, media player, or streaming software.</p>
+
+        <div id="streams"></div>
+
+        <button class="btn-add-sub" id="btn-add-sub" style="display:none">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Add Sub Stream
+        </button>
+
+        <div class="section-divider"></div>
+
+        <div class="info-box">
+            <div class="info-title">How to use</div>
+            <div class="info-text">Add these URLs to your NVR software (Frigate, Blue Iris, Shinobi, etc.) or stream player (VLC, go2rtc). The main stream is high resolution for recording, the sub stream is lower resolution for real-time detection.</div>
+        </div>
+
+        <div id="config-examples"></div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    var params = new URLSearchParams(location.search);
+    var mainStream = params.get('main') || '';
+    var subStream = params.get('sub') || '';
+    var ip = params.get('ip') || '';
+    var sessionId = params.get('session') || '';
+
+    var sanitized = ip ? ip.replace(/\./g, '_') : 'camera';
+    var mainName = sanitized + '_main';
+    var subName = sanitized + '_sub';
+
+    document.getElementById('btn-back').addEventListener('click', function() { history.back(); });
+
+    // add sub stream button
+    if (!subStream && sessionId) {
+        document.getElementById('btn-add-sub').style.display = 'inline-flex';
+    }
+    document.getElementById('btn-add-sub').addEventListener('click', function() {
+        var p = new URLSearchParams();
+        p.set('id', sessionId);
+        p.set('mode', 'sub');
+        p.set('main', mainStream);
+        if (ip) p.set('ip', ip);
+        window.location.href = 'test.html?' + p.toString();
+    });
+
+    // render stream cards
+    var container = document.getElementById('streams');
+
+    if (mainStream) renderStreamCard(container, 'Main Stream', mainStream);
+    if (subStream) renderStreamCard(container, 'Sub Stream', subStream);
+
+    // render config examples
+    var examples = document.getElementById('config-examples');
+
+    // go2rtc config
+    var g2cfg = 'streams:\n';
+    if (mainStream) g2cfg += "  '" + mainName + "':\n    - " + mainStream + '\n';
+    if (subStream) g2cfg += "  '" + subName + "':\n    - " + subStream + '\n';
+    renderConfigBlock(examples, 'go2rtc.yaml', g2cfg);
+
+    // frigate config snippet
+    var fcfg = 'go2rtc:\n  streams:\n';
+    if (mainStream) fcfg += "    '" + mainName + "':\n      - " + mainStream + '\n';
+    if (subStream) fcfg += "    '" + subName + "':\n      - " + subStream + '\n';
+    fcfg += '\ncameras:\n  camera_' + sanitized + ':\n    ffmpeg:\n      inputs:\n';
+    if (subStream) {
+        fcfg += '        - path: rtsp://127.0.0.1:8554/' + subName + '\n          input_args: preset-rtsp-restream\n          roles:\n            - detect\n';
+        fcfg += '        - path: rtsp://127.0.0.1:8554/' + mainName + '\n          input_args: preset-rtsp-restream\n          roles:\n            - record\n';
+    } else if (mainStream) {
+        fcfg += '        - path: rtsp://127.0.0.1:8554/' + mainName + '\n          input_args: preset-rtsp-restream\n          roles:\n            - detect\n            - record\n';
+    }
+    renderConfigBlock(examples, 'Frigate config snippet', fcfg);
+
+    function renderStreamCard(parent, label, url) {
+        var card = document.createElement('div');
+        card.className = 'stream-card';
+
+        var lbl = document.createElement('div');
+        lbl.className = 'stream-label';
+        lbl.textContent = label;
+        card.appendChild(lbl);
+
+        var row = document.createElement('div');
+        row.className = 'stream-url-box';
+
+        var urlEl = document.createElement('div');
+        urlEl.className = 'stream-url';
+        var i = url.indexOf('://');
+        if (i > 0) {
+            var s = document.createElement('span');
+            s.className = 'scheme';
+            s.textContent = url.substring(0, i + 3);
+            urlEl.appendChild(s);
+            urlEl.appendChild(document.createTextNode(url.substring(i + 3)));
+        } else {
+            urlEl.textContent = url;
+        }
+        row.appendChild(urlEl);
+
+        var btn = document.createElement('button');
+        btn.className = 'btn-copy-sm';
+        btn.type = 'button';
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 16 16');
+        svg.setAttribute('fill', 'none');
+        var p1 = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        p1.setAttribute('x', '5'); p1.setAttribute('y', '5');
+        p1.setAttribute('width', '9'); p1.setAttribute('height', '9');
+        p1.setAttribute('rx', '1'); p1.setAttribute('stroke', 'currentColor');
+        p1.setAttribute('stroke-width', '1.5');
+        var p2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        p2.setAttribute('d', 'M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2');
+        p2.setAttribute('stroke', 'currentColor');
+        p2.setAttribute('stroke-width', '1.5');
+        svg.appendChild(p1);
+        svg.appendChild(p2);
+        btn.appendChild(svg);
+        btn.addEventListener('click', function() {
+            copyText(url);
+            showToast('Copied');
+        });
+        row.appendChild(btn);
+
+        card.appendChild(row);
+        parent.appendChild(card);
+    }
+
+    function renderConfigBlock(parent, label, code) {
+        var block = document.createElement('div');
+        block.className = 'config-example';
+
+        var lbl = document.createElement('div');
+        lbl.className = 'config-label';
+        lbl.textContent = label;
+        block.appendChild(lbl);
+
+        var codeEl = document.createElement('div');
+        codeEl.className = 'config-code';
+        codeEl.textContent = code;
+        block.appendChild(codeEl);
+
+        var btn = document.createElement('button');
+        btn.className = 'btn-copy-block';
+        btn.type = 'button';
+        btn.textContent = 'Copy';
+        btn.addEventListener('click', function() {
+            copyText(code);
+            showToast('Copied');
+        });
+        block.appendChild(btn);
+
+        parent.appendChild(block);
+    }
+
+    function copyText(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+        document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+        var t = document.getElementById('toast'); t.textContent = msg;
+        t.classList.remove('hidden'); t.classList.add('show');
+        setTimeout(function() { t.classList.remove('show'); setTimeout(function() { t.classList.add('hidden'); }, 250); }, 3000);
+    }
+</script>
+
+</body>
+</html>

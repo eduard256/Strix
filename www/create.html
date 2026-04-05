@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Stream URLs</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding-bottom: 5rem;
+        }
+
+        .screen { padding: 1.5rem; animation: fadeIn var(--transition-base); }
+        .container { max-width: 600px; margin: 0 auto; width: 100%; }
+
+        @media (min-width: 768px) {
+            .screen { padding: 3rem 1.5rem; }
+            .container { max-width: 700px; }
+        }
+
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none;
+            color: var(--text-secondary); font-size: 0.875rem;
+            font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0; margin-bottom: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .screen-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+
+        .screen-subtitle {
+            font-size: 0.875rem; color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .screen-subtitle span { color: var(--purple-light); font-family: var(--font-mono); }
+
+        /* Loading */
+        .loading {
+            text-align: center; padding: 3rem;
+            color: var(--text-tertiary); font-size: 0.875rem;
+        }
+
+        .loading-spinner {
+            width: 24px; height: 24px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--purple-primary);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Stream list */
+        .stream-count {
+            font-size: 0.75rem; color: var(--text-tertiary);
+            font-family: var(--font-mono);
+            margin-bottom: 0.75rem;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+
+        .streams-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 60vh; overflow-y: auto;
+        }
+
+        .stream-url {
+            padding: 0.5rem 0.75rem;
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.07);
+            word-break: break-all; line-height: 1.5;
+        }
+
+        .stream-url:last-child { border-bottom: none; }
+
+        .stream-url .scheme { color: var(--purple-light); }
+        .stream-url .creds { color: var(--text-tertiary); }
+
+        .stream-url.custom {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 0.5rem;
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .stream-url.custom .url-text { flex: 1; min-width: 0; }
+
+        .btn-remove-url {
+            background: none; border: none; cursor: pointer;
+            color: var(--text-tertiary); padding: 0.25rem;
+            display: flex; flex-shrink: 0;
+            transition: color var(--transition-fast);
+        }
+        .btn-remove-url:hover { color: var(--error); }
+
+        /* Custom scrollbar */
+        .streams-box::-webkit-scrollbar { width: 6px; }
+        .streams-box::-webkit-scrollbar-track { background: transparent; }
+        .streams-box::-webkit-scrollbar-thumb { background: var(--purple-primary); border-radius: 3px; }
+
+        /* Add custom stream */
+        .add-section { margin-top: 1rem; }
+
+        .add-row {
+            display: flex; gap: 0.5rem;
+        }
+
+        .add-input {
+            flex: 1; padding: 0.75rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.875rem; font-family: var(--font-mono);
+            outline: none;
+            transition: all var(--transition-fast);
+        }
+
+        .add-input:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .add-input::placeholder { color: var(--text-tertiary); }
+
+        .btn-add {
+            padding: 0.75rem 1rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--purple-primary);
+            font-size: 1.125rem; font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .btn-add:hover { border-color: var(--purple-primary); background: var(--bg-elevated); }
+
+        /* Error */
+        .error-box {
+            padding: 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: var(--error);
+            font-size: 0.875rem;
+        }
+
+        /* Sticky bottom bar */
+        .bottom-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            padding: 1rem 1.5rem;
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            display: flex; justify-content: center;
+            z-index: 100;
+        }
+
+        .bottom-bar .btn {
+            max-width: 700px; width: 100%;
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--purple-glow-strong);
+        }
+
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .btn-count {
+            font-size: 0.75rem; opacity: 0.8;
+            font-weight: 400;
+        }
+
+        /* Contribute banner */
+        .contribute-banner {
+            margin-top: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 8px;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .contribute-text {
+            font-size: 0.8125rem; color: var(--text-secondary);
+            margin-bottom: 0.625rem; line-height: 1.5;
+        }
+
+        .contribute-actions {
+            display: flex; gap: 0.5rem;
+        }
+
+        .contribute-actions button {
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem; font-weight: 600;
+            font-family: var(--font-primary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border: none;
+        }
+
+        .btn-contribute-yes {
+            background: var(--purple-primary); color: white;
+        }
+        .btn-contribute-yes:hover { background: var(--purple-light); }
+
+        .btn-contribute-no {
+            background: var(--bg-tertiary); color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+        .btn-contribute-no:hover { color: var(--text-primary); }
+
+        /* Toast */
+        .toast {
+            position: fixed; bottom: 5.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px; box-shadow: var(--shadow-lg);
+            font-size: 0.875rem; color: var(--text-primary);
+            z-index: 1001; transition: transform var(--transition-base);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="container">
+        <button class="btn-back" id="btn-back">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Back
+        </button>
+
+        <h2 class="screen-title">Stream URLs</h2>
+        <p class="screen-subtitle" id="subtitle"></p>
+
+        <div id="content">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                Building stream URLs...
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom-bar">
+    <button class="btn btn-primary" id="btn-test" disabled>
+        Test Streams <span class="btn-count" id="btn-count"></span>
+    </button>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    var params = new URLSearchParams(location.search);
+    var ip = params.get('ip') || '';
+    var ids = params.get('ids') || '';
+    var user = params.get('user') || '';
+    var pass = params.get('pass') || '';
+    var channel = params.get('channel') || '';
+    var ports = params.get('ports') || '';
+    var mac = params.get('mac') || '';
+    var vendor = params.get('vendor') || '';
+    var model = params.get('model') || '';
+    var server = params.get('server') || '';
+    var hostname = params.get('hostname') || '';
+
+    var dbStreams = [];    // from /api/streams
+    var customStreams = []; // user-added
+
+    // Pre-populate custom streams from "url" query parameter (supports multiple)
+    params.getAll('url').forEach(function(u) {
+        u = u.trim();
+        if (u && u.indexOf('://') !== -1 && customStreams.indexOf(u) === -1) {
+            customStreams.push(u);
+        }
+    });
+
+    // subtitle
+    document.getElementById('subtitle').textContent = ip ? 'Target: ' + ip : 'Add stream URLs manually';
+
+    // back
+    document.getElementById('btn-back').addEventListener('click', function() {
+        history.back();
+    });
+
+    // load streams on open
+    loadStreams();
+
+    async function loadStreams() {
+        if (!ids || !ip) {
+            // No parameters — show empty list with add section
+            renderAll();
+            return;
+        }
+
+        var url = 'api/streams?ids=' + encodeURIComponent(ids) + '&ip=' + encodeURIComponent(ip);
+        if (user) url += '&user=' + encodeURIComponent(user);
+        if (pass) url += '&pass=' + encodeURIComponent(pass);
+        if (channel) url += '&channel=' + encodeURIComponent(channel);
+        if (ports) url += '&ports=' + encodeURIComponent(ports);
+
+        try {
+            var r = await fetch(url);
+            if (!r.ok) {
+                var text = await r.text();
+                renderError(text || 'Error ' + r.status);
+                return;
+            }
+
+            var data = await r.json();
+            dbStreams = data.streams || [];
+            renderAll();
+        } catch (e) {
+            renderError('Connection error: ' + e.message);
+        }
+    }
+
+    // keep input value across re-renders
+    var pendingInput = '';
+
+    function renderAll() {
+        var content = document.getElementById('content');
+        while (content.firstChild) content.removeChild(content.firstChild);
+
+        var total = dbStreams.length + customStreams.length;
+
+        // add custom section (top)
+        var addSection = document.createElement('div');
+        addSection.className = 'add-section';
+
+        var addRow = document.createElement('div');
+        addRow.className = 'add-row';
+
+        var addInput = document.createElement('input');
+        addInput.className = 'add-input';
+        addInput.type = 'text';
+        addInput.placeholder = 'rtsp://user:pass@host/path or bubble://...';
+        addInput.spellcheck = false;
+        addInput.value = pendingInput;
+
+        var addBtn = document.createElement('button');
+        addBtn.className = 'btn-add';
+        addBtn.type = 'button';
+        addBtn.textContent = '+';
+
+        function addCustom() {
+            var v = addInput.value.trim();
+            if (!v) return;
+            if (v.indexOf('://') === -1) {
+                showToast('URL must include protocol (rtsp://, http://, bubble://, ...)');
+                return;
+            }
+            if (customStreams.indexOf(v) !== -1 || dbStreams.indexOf(v) !== -1) {
+                showToast('This URL is already in the list');
+                return;
+            }
+            customStreams.push(v);
+            pendingInput = '';
+            renderAll();
+            // focus input for next entry
+            var newInput = content.querySelector('.add-input');
+            if (newInput) newInput.focus();
+            // show contribute banner
+            showContributeBanner(v);
+        }
+
+        addBtn.addEventListener('click', addCustom);
+        addInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') addCustom();
+        });
+        addInput.addEventListener('input', function() {
+            pendingInput = addInput.value;
+        });
+
+        addRow.appendChild(addInput);
+        addRow.appendChild(addBtn);
+        addSection.appendChild(addRow);
+        content.appendChild(addSection);
+
+        // count
+        var countDiv = document.createElement('div');
+        countDiv.className = 'stream-count';
+        var countText = document.createElement('span');
+        countText.textContent = total + ' stream' + (total !== 1 ? 's' : '');
+        countDiv.appendChild(countText);
+        content.appendChild(countDiv);
+
+        // streams box
+        var box = document.createElement('div');
+        box.className = 'streams-box';
+
+        // custom streams first (highlighted, removable)
+        customStreams.forEach(function(url, idx) {
+            var div = document.createElement('div');
+            div.className = 'stream-url custom';
+
+            var urlSpan = document.createElement('span');
+            urlSpan.className = 'url-text';
+            formatURL(urlSpan, url);
+
+            var btn = document.createElement('button');
+            btn.className = 'btn-remove-url';
+            btn.type = 'button';
+            var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.setAttribute('width', '14');
+            svg.setAttribute('height', '14');
+            svg.setAttribute('viewBox', '0 0 12 12');
+            svg.setAttribute('fill', 'none');
+            var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', 'M3 3l6 6M9 3l-6 6');
+            path.setAttribute('stroke', 'currentColor');
+            path.setAttribute('stroke-width', '1.5');
+            path.setAttribute('stroke-linecap', 'round');
+            svg.appendChild(path);
+            btn.appendChild(svg);
+            btn.addEventListener('click', function() {
+                customStreams.splice(idx, 1);
+                renderAll();
+            });
+
+            div.appendChild(urlSpan);
+            div.appendChild(btn);
+            box.appendChild(div);
+        });
+
+        // db streams
+        dbStreams.forEach(function(url) {
+            var div = document.createElement('div');
+            div.className = 'stream-url';
+            formatURL(div, url);
+            box.appendChild(div);
+        });
+
+        content.appendChild(box);
+
+        // update button
+        updateButton();
+    }
+
+    function formatURL(el, url) {
+        var schemeEnd = url.indexOf('://');
+        if (schemeEnd === -1) {
+            el.textContent = url;
+            return;
+        }
+
+        var scheme = document.createElement('span');
+        scheme.className = 'scheme';
+        scheme.textContent = url.substring(0, schemeEnd + 3);
+        el.appendChild(scheme);
+        el.appendChild(document.createTextNode(url.substring(schemeEnd + 3)));
+    }
+
+    function updateButton() {
+        var total = dbStreams.length + customStreams.length;
+        var btn = document.getElementById('btn-test');
+        var count = document.getElementById('btn-count');
+        btn.disabled = total === 0;
+        count.textContent = total > 0 ? '(' + total + ')' : '';
+    }
+
+    function renderError(msg) {
+        var content = document.getElementById('content');
+        while (content.firstChild) content.removeChild(content.firstChild);
+        var div = document.createElement('div');
+        div.className = 'error-box';
+        div.textContent = msg;
+        content.appendChild(div);
+    }
+
+    function renderEmpty() {
+        var content = document.getElementById('content');
+        while (content.firstChild) content.removeChild(content.firstChild);
+
+        var box = document.createElement('div');
+        box.style.cssText = 'text-align:center; padding:2.5rem 1.5rem; background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:8px;';
+
+        var title = document.createElement('div');
+        title.style.cssText = 'font-size:1.125rem; font-weight:600; color:var(--text-primary); margin-bottom:0.75rem;';
+        title.textContent = 'No streams found for this camera';
+
+        var msg = document.createElement('div');
+        msg.style.cssText = 'font-size:0.875rem; color:var(--text-secondary); line-height:1.6; margin-bottom:1.5rem;';
+        msg.textContent = 'The Strix database does not have stream patterns for this device yet. You can help by adding your camera model to the database.';
+
+        var link = document.createElement('a');
+        var p = new URLSearchParams();
+        if (vendor) p.set('brand', vendor);
+        if (model) p.set('model', model);
+        if (mac && mac.length >= 8) p.set('mac_prefix', mac.substring(0, 8));
+        link.href = 'https://gostrix.github.io/#/contribute?' + p.toString();
+        link.target = '_blank';
+        link.style.cssText = 'display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; background:var(--purple-primary); color:white; border-radius:8px; text-decoration:none; font-size:0.875rem; font-weight:600; transition:opacity 150ms;';
+        link.textContent = 'Add your camera to Strix DB';
+        link.onmouseover = function() { link.style.opacity = '0.85'; };
+        link.onmouseout = function() { link.style.opacity = '1'; };
+
+        var issueLink = document.createElement('a');
+        issueLink.href = 'https://github.com/eduard256/Strix/issues';
+        issueLink.target = '_blank';
+        issueLink.style.cssText = 'display:inline-flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem; background:var(--bg-tertiary); color:var(--text-secondary); border:1px solid var(--border-color); border-radius:8px; text-decoration:none; font-size:0.875rem; font-weight:600; transition:all 150ms;';
+        issueLink.textContent = 'Report Issue';
+        issueLink.onmouseover = function() { issueLink.style.borderColor = 'var(--purple-primary)'; issueLink.style.color = 'var(--purple-light)'; };
+        issueLink.onmouseout = function() { issueLink.style.borderColor = 'var(--border-color)'; issueLink.style.color = 'var(--text-secondary)'; };
+
+        var btns = document.createElement('div');
+        btns.style.cssText = 'display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;';
+        btns.appendChild(link);
+        btns.appendChild(issueLink);
+
+        var or = document.createElement('div');
+        or.style.cssText = 'margin:1.25rem 0; color:var(--text-tertiary); font-size:0.75rem;';
+        or.textContent = 'or add a custom stream URL below';
+
+        box.appendChild(title);
+        box.appendChild(msg);
+        box.appendChild(btns);
+        box.appendChild(or);
+        content.appendChild(box);
+
+        // still show add section below
+        renderAddSection(content);
+        updateButton();
+    }
+
+    function renderAddSection(content) {
+        var addSection = document.createElement('div');
+        addSection.className = 'add-section';
+        var addRow = document.createElement('div');
+        addRow.className = 'add-row';
+        var addInput = document.createElement('input');
+        addInput.className = 'add-input';
+        addInput.type = 'text';
+        addInput.placeholder = 'rtsp://user:pass@host/path or bubble://...';
+        addInput.spellcheck = false;
+        addInput.value = pendingInput;
+        var addBtn = document.createElement('button');
+        addBtn.className = 'btn-add';
+        addBtn.type = 'button';
+        addBtn.textContent = '+';
+
+        function addCustom() {
+            var v = addInput.value.trim();
+            if (!v) return;
+            if (v.indexOf('://') === -1) { showToast('URL must include protocol (rtsp://, http://, bubble://, ...)'); return; }
+            if (customStreams.indexOf(v) !== -1 || dbStreams.indexOf(v) !== -1) { showToast('This URL is already in the list'); return; }
+            customStreams.push(v);
+            pendingInput = '';
+            renderAll();
+            var newInput = document.querySelector('.add-input');
+            if (newInput) newInput.focus();
+            showContributeBanner(v);
+        }
+
+        addBtn.addEventListener('click', addCustom);
+        addInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') addCustom(); });
+        addInput.addEventListener('input', function() { pendingInput = addInput.value; });
+        addRow.appendChild(addInput);
+        addRow.appendChild(addBtn);
+        addSection.appendChild(addRow);
+        content.appendChild(addSection);
+    }
+
+    // test button
+    document.getElementById('btn-test').addEventListener('click', startTest);
+
+    async function startTest() {
+        var btn = document.getElementById('btn-test');
+        btn.disabled = true;
+        btn.textContent = 'Creating session...';
+
+        var allStreams = customStreams.concat(dbStreams);
+
+        try {
+            var r = await fetch('api/test', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sources: { streams: allStreams } })
+            });
+
+            if (!r.ok) {
+                var text = await r.text();
+                showToast(text || 'Error ' + r.status);
+                btn.disabled = false;
+                updateButton();
+                return;
+            }
+
+            var data = await r.json();
+            var sid = data.session_id;
+
+            // navigate to test page with all known params
+            var tp = new URLSearchParams();
+            tp.set('id', sid);
+            if (ip) tp.set('ip', ip);
+            if (mac) tp.set('mac', mac);
+            if (vendor) tp.set('vendor', vendor);
+            if (model) tp.set('model', model);
+            if (server) tp.set('server', server);
+            if (hostname) tp.set('hostname', hostname);
+            if (ports) tp.set('ports', ports);
+            if (user) tp.set('user', user);
+            if (channel) tp.set('channel', channel);
+            if (ids) tp.set('ids', ids);
+
+            window.location.href = 'test.html?' + tp.toString();
+
+        } catch (e) {
+            showToast('Connection error: ' + e.message);
+            btn.disabled = false;
+            updateButton();
+        }
+    }
+
+    function showContributeBanner(rawURL) {
+        // remove previous banner if any
+        var old = document.querySelector('.contribute-banner');
+        if (old) old.remove();
+
+        var addSection = document.querySelector('.add-section');
+        if (!addSection) return;
+
+        var banner = document.createElement('div');
+        banner.className = 'contribute-banner';
+
+        var text = document.createElement('div');
+        text.className = 'contribute-text';
+        text.textContent = 'Want to add this URL to the Strix camera database so others can find it?';
+        banner.appendChild(text);
+
+        var actions = document.createElement('div');
+        actions.className = 'contribute-actions';
+
+        var btnYes = document.createElement('button');
+        btnYes.className = 'btn-contribute-yes';
+        btnYes.type = 'button';
+        btnYes.textContent = 'Yes, contribute';
+        btnYes.addEventListener('click', function() {
+            window.open(buildContributeURL(rawURL), '_blank');
+            banner.remove();
+        });
+
+        var btnNo = document.createElement('button');
+        btnNo.className = 'btn-contribute-no';
+        btnNo.type = 'button';
+        btnNo.textContent = 'No thanks';
+        btnNo.addEventListener('click', function() {
+            banner.remove();
+        });
+
+        actions.appendChild(btnYes);
+        actions.appendChild(btnNo);
+        banner.appendChild(actions);
+
+        addSection.appendChild(banner);
+    }
+
+    var defaultPorts = { rtsp: '554', rtsps: '322', http: '80', https: '443', rtmp: '1935', bubble: '80' };
+
+    function buildContributeURL(rawURL) {
+        var base = 'https://gostrix.github.io/#/contribute?';
+        var p = new URLSearchParams();
+
+        try {
+            var u = new URL(rawURL);
+            var proto = u.protocol.replace(':', '');
+            p.set('protocol', proto);
+            p.set('port', u.port || defaultPorts[proto] || '');
+            var path = u.pathname + u.search;
+            if (path && path !== '/') p.set('url', path);
+        } catch (e) {
+            var i = rawURL.indexOf('://');
+            if (i > 0) {
+                var proto = rawURL.substring(0, i);
+                p.set('protocol', proto);
+                p.set('port', defaultPorts[proto] || '');
+            }
+        }
+
+        if (vendor) p.set('brand', vendor);
+        if (model) p.set('model', model);
+        if (mac && mac.length >= 8) p.set('mac_prefix', mac.substring(0, 8));
+
+        // auto-build comment from probe data
+        var comments = [];
+        if (server) comments.push('Server: ' + server);
+        if (hostname) comments.push('Hostname: ' + hostname);
+        if (ip) comments.push('IP: ' + ip);
+        if (ports) comments.push('Open ports: ' + ports);
+        if (comments.length > 0) p.set('comment', comments.join(', '));
+
+        return base + p.toString();
+    }
+
+    function showToast(msg, duration) {
+        var t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.remove('hidden');
+        t.classList.add('show');
+        setTimeout(function() {
+            t.classList.remove('show');
+            setTimeout(function() { t.classList.add('hidden'); }, 250);
+        }, duration || 3000);
+    }
+</script>
+
+</body>
+</html>
