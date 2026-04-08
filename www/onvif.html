@@ -217,6 +217,41 @@
         }
         .btn-outline:hover { border-color: var(--purple-primary); color: var(--purple-light); }
 
+        /* Checkbox */
+        .checkbox-row {
+            margin-bottom: 1.5rem;
+        }
+
+        .checkbox-label {
+            display: flex; align-items: center; gap: 0.625rem;
+            font-size: 0.875rem; color: var(--text-secondary);
+            cursor: pointer; user-select: none;
+        }
+
+        .checkbox-label input { display: none; }
+
+        .checkbox-custom {
+            width: 18px; height: 18px; flex-shrink: 0;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-secondary);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .checkbox-label input:checked + .checkbox-custom {
+            background: var(--purple-primary);
+            border-color: var(--purple-primary);
+        }
+
+        .checkbox-label input:checked + .checkbox-custom::after {
+            content: '';
+            position: absolute; top: 2px; left: 5px;
+            width: 5px; height: 9px;
+            border: solid white; border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
@@ -279,6 +314,14 @@
                     </svg>
                 </button>
             </div>
+        </div>
+
+        <div class="checkbox-row" id="checkbox-row">
+            <label class="checkbox-label">
+                <input type="checkbox" id="cb-top1000" checked>
+                <span class="checkbox-custom"></span>
+                Also test popular stream patterns
+            </label>
         </div>
 
         <button class="btn btn-primary btn-large" id="btn-discover">Discover Streams</button>
@@ -371,6 +414,12 @@
         if (server) p.set('server', server);
         if (hostname) p.set('hostname', hostname);
         if (ports) p.set('ports', ports);
+
+        if (document.getElementById('cb-top1000').checked) {
+            p.set('ids', 'p:top-1000');
+            p.set('user', user);
+            if (pass) p.set('pass', pass);
+        }
 
         window.location.href = 'create.html?' + p.toString();
     });

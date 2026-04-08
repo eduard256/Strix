@@ -424,8 +424,10 @@
     function classifyResult(r) {
         var scheme = r.source.split('://')[0] || '';
         var isRecommended = scheme === 'rtsp' || scheme === 'rtsps' || scheme === 'onvif';
+        var isJpegOnly = r.codecs && r.codecs.length > 0 && r.codecs.indexOf('H264') === -1 && r.codecs.indexOf('H265') === -1;
         var isHD = r.width >= 1280;
 
+        if (isJpegOnly) return 'alt';
         if (isRecommended && isHD) return 'rec-main';
         if (isRecommended) return 'rec-sub';
         return 'alt';
