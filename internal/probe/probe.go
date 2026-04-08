@@ -33,6 +33,14 @@ func Init() {
 	}
 
 	ports = loadPorts()
+	// ONVIF detector (highest priority -- auto-discovers all streams)
+	detectors = append(detectors, func(r *probe.Response) string {
+		if r.Probes.ONVIF != nil {
+			return "onvif"
+		}
+		return ""
+	})
+
 	// HomeKit detector
 	detectors = append(detectors, func(r *probe.Response) string {
 		if r.Probes.MDNS != nil {
@@ -113,6 +121,12 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 		r, _ := probe.ProbeHTTP(fastCtx, ip, nil)
 		mu.Lock()
 		resp.Probes.HTTP = r
+		mu.Unlock()
+	})
+	run(func() {
+		r, _ := probe.ProbeONVIF(fastCtx, ip)
+		mu.Lock()
+		resp.Probes.ONVIF = r
 		mu.Unlock()
 	})
 
