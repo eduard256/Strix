@@ -56,6 +56,11 @@ func testURL(s *Session, rawURL string) {
 		return
 	}
 
+	if strings.HasPrefix(rawURL, "onvif://") {
+		testOnvif(s, rawURL)
+		return
+	}
+
 	handler := GetHandler(rawURL)
 	if handler == nil {
 		return

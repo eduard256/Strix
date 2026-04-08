@@ -423,11 +423,11 @@
 
     function classifyResult(r) {
         var scheme = r.source.split('://')[0] || '';
-        var isRtsp = scheme === 'rtsp' || scheme === 'rtsps';
+        var isRecommended = scheme === 'rtsp' || scheme === 'rtsps' || scheme === 'onvif';
         var isHD = r.width >= 1280;
 
-        if (isRtsp && isHD) return 'rec-main';
-        if (isRtsp) return 'rec-sub';
+        if (isRecommended && isHD) return 'rec-main';
+        if (isRecommended) return 'rec-sub';
         return 'alt';
     }
 

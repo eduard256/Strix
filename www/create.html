@@ -328,8 +328,9 @@
 
     // Pre-populate custom streams from "url" query parameter (supports multiple)
     params.getAll('url').forEach(function(u) {
+        if (!u || typeof u !== 'string') return;
         u = u.trim();
-        if (u && u.indexOf('://') !== -1 && customStreams.indexOf(u) === -1) {
+        if (u && u !== 'undefined' && u !== 'null' && u.indexOf('://') !== -1 && customStreams.indexOf(u) === -1) {
             customStreams.push(u);
         }
     });
@@ -395,7 +396,7 @@
         addInput.type = 'text';
         addInput.placeholder = 'rtsp://user:pass@host/path or bubble://...';
         addInput.spellcheck = false;
-        addInput.value = pendingInput;
+        addInput.value = pendingInput || '';
 
         var addBtn = document.createElement('button');
         addBtn.className = 'btn-add';
@@ -404,7 +405,7 @@
 
         function addCustom() {
             var v = addInput.value.trim();
-            if (!v) return;
+            if (!v || v === 'undefined' || v === 'null') return;
             if (v.indexOf('://') === -1) {
                 showToast('URL must include protocol (rtsp://, http://, bubble://, ...)');
                 return;
@@ -592,7 +593,7 @@
         addInput.type = 'text';
         addInput.placeholder = 'rtsp://user:pass@host/path or bubble://...';
         addInput.spellcheck = false;
-        addInput.value = pendingInput;
+        addInput.value = pendingInput || '';
         var addBtn = document.createElement('button');
         addBtn.className = 'btn-add';
         addBtn.type = 'button';
@@ -600,7 +601,7 @@
 
         function addCustom() {
             var v = addInput.value.trim();
-            if (!v) return;
+            if (!v || v === 'undefined' || v === 'null') return;
             if (v.indexOf('://') === -1) { showToast('URL must include protocol (rtsp://, http://, bubble://, ...)'); return; }
             if (customStreams.indexOf(v) !== -1 || dbStreams.indexOf(v) !== -1) { showToast('This URL is already in the list'); return; }
             customStreams.push(v);
