@@ -14,6 +14,7 @@ type Probes struct {
 	ARP   *ARPResult   `json:"arp"`
 	MDNS  *MDNSResult  `json:"mdns"`
 	HTTP  *HTTPResult  `json:"http"`
+	ONVIF *ONVIFResult `json:"onvif"`
 }
 
 type PortsResult struct {
@@ -42,4 +43,11 @@ type HTTPResult struct {
 	Port       int    `json:"port"`
 	StatusCode int    `json:"status_code"`
 	Server     string `json:"server"`
+}
+
+type ONVIFResult struct {
+	URL      string `json:"url"`
+	Port     int    `json:"port"`
+	Name     string `json:"name,omitempty"`
+	Hardware string `json:"hardware,omitempty"`
 }

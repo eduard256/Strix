@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Design System</title>
+    <style>
+        /* ============================================================
+           STRIX DESIGN SYSTEM
+           This file contains every UI component used across the Strix
+           frontend. When building new pages, copy the CSS variables
+           and component styles you need from here.
+
+           RULES:
+           - All pages are self-contained HTML files (no frameworks)
+           - Each page includes its own <style> block with only the
+             CSS it needs (copy from this file)
+           - JavaScript is vanilla ES5-compatible (var, not let/const)
+           - DOM is built imperatively with createElement
+           - Navigation between pages uses window.location.href with
+             URLSearchParams -- always pass ALL known data forward
+           - API calls use fetch() to api/* endpoints
+           - No external dependencies, no CDN, no build tools
+           - All SVG icons are inline, never use emoji
+           - Never use icon fonts or external icon libraries
+           ============================================================ */
+
+        /* ============================================================
+           1. RESET & CSS VARIABLES
+           These variables are identical across ALL pages.
+           Copy this entire :root block into every new page.
+           ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            /* Backgrounds (darkest to lightest) */
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+
+            /* Purple accent palette */
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+
+            /* Text hierarchy */
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --text-disabled: #404050;
+
+            /* Semantic colors */
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+
+            /* Borders */
+            --border-color: rgba(139, 92, 246, 0.15);
+            --border-focus: rgba(139, 92, 246, 0.5);
+
+            /* Typography */
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+
+            /* Motion */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Shadows */
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        /* ============================================================
+           2. PAGE LAYOUTS
+           ============================================================ */
+
+        /* --- 2a. Centered layout (index.html) ---
+           For entry pages: one form, one action. Content near top. */
+        .screen-centered {
+            min-height: 100vh;
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container-narrow {
+            max-width: 480px;
+            width: 100%;
+            margin-top: 8vh;
+        }
+
+        @media (min-width: 768px) {
+            .screen-centered { padding: 3rem 1.5rem; }
+            .container-narrow { max-width: 540px; }
+        }
+
+        /* --- 2a-alt. True-centered layout (homekit.html) ---
+           For single-action pages: content vertically centered on screen.
+           Back button floats outside the container via .back-wrapper. */
+        .screen-true-center {
+            min-height: 100vh;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container-true-center {
+            max-width: 480px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .screen-true-center { padding: 3rem 1.5rem; }
+            .container-true-center { max-width: 540px; }
+        }
+
+        /* --- 2e. Floating back button (for centered layouts) ---
+           Positioned at top, horizontally aligned wider than container
+           so it sits outside the content area. */
+        .back-wrapper {
+            position: absolute; top: 1.5rem;
+            left: 50%; transform: translateX(-50%);
+            width: 100%; max-width: 600px;
+            padding: 0 1.5rem;
+            z-index: 10;
+        }
+
+        @media (min-width: 768px) {
+            .back-wrapper { max-width: 660px; }
+        }
+
+        /* --- 2b. Standard layout (most pages) ---
+           For content pages with back button and scrollable content. */
+        .screen {
+            padding: 1.5rem;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .screen { padding: 3rem 1.5rem; }
+            .container { max-width: 700px; }
+        }
+
+        /* --- 2c. Wide layout (test.html) ---
+           For data-heavy pages with grids. */
+        .container-wide {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* --- 2d. Two-column layout (config.html) ---
+           Settings on left, live preview on right. Collapses to tabs on mobile. */
+        .columns {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .col-left { flex: 1; min-width: 0; }
+        .col-right { flex: 1; min-width: 0; position: sticky; top: 1.5rem; }
+
+        @media (max-width: 768px) {
+            .columns { flex-direction: column; }
+            .col-left, .col-right { width: 100%; }
+            .col-right { position: static; }
+            .col-left.hidden, .col-right.hidden { display: none; }
+        }
+
+
+        /* ============================================================
+           3. TYPOGRAPHY
+           ============================================================ */
+        .hero { text-align: center; margin-bottom: 3rem; }
+
+        .logo {
+            width: 64px; height: 64px;
+            color: var(--purple-primary);
+            margin: 0 auto 1rem;
+            filter: drop-shadow(0 4px 12px var(--purple-glow));
+        }
+
+        .title {
+            font-size: 2rem; font-weight: 700;
+            letter-spacing: 0.05em; margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--purple-light), var(--purple-primary));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle { font-size: 0.875rem; color: var(--text-secondary); }
+
+        .page-title { font-size: 1.375rem; font-weight: 600; margin-bottom: 1.5rem; }
+        .page-subtitle { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+        .screen-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .screen-subtitle { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+        .section-title {
+            font-size: 0.6875rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.06em; color: var(--text-tertiary);
+            padding-bottom: 0.5rem; margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-divider { height: 1px; background: var(--border-color); margin: 1.5rem 0; }
+
+
+        /* ============================================================
+           4. BUTTONS
+           ============================================================ */
+
+        /* --- 4a. Primary button --- */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--purple-glow-strong);
+        }
+
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Full-width variant */
+        .btn-large { width: 100%; padding: 1.5rem; font-size: 1.125rem; }
+
+        /* --- 4b. Back button (top-left navigation) --- */
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none;
+            color: var(--text-secondary); font-size: 0.875rem;
+            font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0; margin-bottom: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        /* --- 4c. Small button (config actions, copy) --- */
+        .btn-sm {
+            padding: 0.25rem 0.625rem; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; border: 1px solid var(--border-color);
+            background: var(--bg-tertiary); color: var(--text-secondary);
+            transition: all var(--transition-fast);
+        }
+        .btn-sm:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* --- 4d. Outline button --- */
+        .btn-outline {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 0.9375rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            background: transparent; color: var(--text-secondary);
+            border: 1px solid var(--border-color); width: 100%;
+        }
+        .btn-outline:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* --- 4e. Danger / Stop button --- */
+        .btn-stop {
+            padding: 0.5rem 1rem; border-radius: 6px;
+            font-size: 0.75rem; font-weight: 600; font-family: var(--font-primary);
+            text-transform: uppercase; letter-spacing: 0.04em;
+            background: rgba(239, 68, 68, 0.12); color: var(--error);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            cursor: pointer; transition: all var(--transition-fast);
+        }
+        .btn-stop:hover { background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.4); }
+        .btn-stop:disabled { opacity: 0.3; cursor: not-allowed; }
+
+        /* --- 4f. Add sub-item button --- */
+        .btn-add-sub {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.75rem; background: var(--bg-tertiary);
+            border: 1px solid var(--border-color); border-radius: 6px;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 500;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: all var(--transition-fast); margin-bottom: 0.75rem;
+        }
+        .btn-add-sub:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* --- 4g. Save button (green, for destructive saves) --- */
+        .btn-save {
+            flex: 1; padding: 0.625rem; border-radius: 6px;
+            background: var(--success); color: #000; border: none;
+            font-size: 0.8125rem; font-weight: 700; font-family: var(--font-primary);
+            cursor: pointer; transition: opacity var(--transition-fast);
+        }
+        .btn-save:hover:not(:disabled) { opacity: 0.9; }
+        .btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        /* --- 4h. Copy small button (icon button for inline copy) --- */
+        .btn-copy-sm {
+            flex-shrink: 0; padding: 0.375rem;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            border-radius: 4px; cursor: pointer; color: var(--text-tertiary);
+            display: flex; transition: all var(--transition-fast);
+        }
+        .btn-copy-sm:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+        .btn-copy-sm svg { width: 14px; height: 14px; }
+
+        /* --- 4i. Copy block button --- */
+        .btn-copy-block {
+            margin-top: 0.75rem; padding: 0.5rem 1rem;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            border-radius: 6px; cursor: pointer;
+            color: var(--text-secondary); font-size: 0.75rem; font-weight: 600;
+            font-family: var(--font-primary); transition: all var(--transition-fast);
+        }
+        .btn-copy-block:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* --- 4j. Add button (+) --- */
+        .btn-add {
+            padding: 0.75rem 1rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--purple-primary);
+            font-size: 1.125rem; font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .btn-add:hover { border-color: var(--purple-primary); background: var(--bg-elevated); }
+
+
+        /* ============================================================
+           5. FORM ELEMENTS
+           ============================================================ */
+
+        .form-group { margin-bottom: 1.5rem; }
+
+        .label {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.875rem; font-weight: 500;
+            color: var(--text-secondary); margin-bottom: 0.5rem;
+        }
+
+        .field-label {
+            font-size: 0.75rem; font-weight: 500; color: var(--text-secondary);
+            margin-bottom: 0.375rem; display: flex; align-items: center; gap: 0.375rem;
+        }
+
+        .optional { color: var(--text-tertiary); font-weight: 400; }
+        .hint { margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-tertiary); }
+        .field-hint { font-size: 0.6875rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+        /* --- 5a. Text input --- */
+        .input {
+            width: 100%; padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem; font-family: var(--font-primary);
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .input:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .input::placeholder { color: var(--text-tertiary); }
+        .input:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .input-large { padding: 1.5rem; font-size: 1.125rem; }
+        .input-sm { max-width: 120px; }
+        .input-mono { font-family: var(--font-mono); font-size: 0.8125rem; }
+
+        /* --- 5b. Compact input (config.html style) --- */
+        .input-compact {
+            width: 100%; padding: 0.625rem 0.75rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 6px; color: var(--text-primary);
+            font-size: 0.8125rem; font-family: var(--font-primary);
+            outline: none; transition: all var(--transition-fast);
+        }
+        .input-compact:focus { border-color: var(--purple-primary); box-shadow: 0 0 0 2px var(--purple-glow); }
+        .input-compact::placeholder { color: var(--text-tertiary); }
+
+        /* --- 5c. Select dropdown --- */
+        select.input {
+            cursor: pointer; appearance: none; padding-right: 2rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23606070' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 0.75rem center;
+        }
+
+        /* --- 5d. Validated input with checkmark --- */
+        .input-validated { position: relative; }
+        .input-validated .input { padding-right: 3rem; }
+        .icon-check {
+            position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+            color: var(--success);
+        }
+
+        /* --- 5e. Password input with toggle --- */
+        .input-password { position: relative; }
+        .input-password .input { padding-right: 3rem; }
+        .btn-toggle-pass {
+            position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%);
+            background: none; border: none; padding: 0.5rem; cursor: pointer;
+            color: var(--text-tertiary); display: flex;
+            transition: color var(--transition-fast);
+        }
+        .btn-toggle-pass:hover { color: var(--purple-primary); }
+
+        /* --- 5f. Add row (input + button side by side) --- */
+        .add-row { display: flex; gap: 0.5rem; }
+
+        .add-input {
+            flex: 1; padding: 0.75rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.875rem; font-family: var(--font-mono);
+            outline: none;
+            transition: all var(--transition-fast);
+        }
+
+        .add-input:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .add-input::placeholder { color: var(--text-tertiary); }
+
+        /* --- 5g. Row layout (side-by-side fields) --- */
+        .row { display: flex; gap: 0.75rem; }
+        .row > .form-group { flex: 1; }
+
+        /* --- 5h. Toggle switch --- */
+        .toggle-row {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.5rem 0;
+        }
+        .toggle-label { font-size: 0.8125rem; color: var(--text-primary); }
+
+        .toggle {
+            width: 36px; height: 20px; border-radius: 10px;
+            background: var(--bg-tertiary); border: 1px solid var(--border-color);
+            cursor: pointer; position: relative; transition: all var(--transition-fast);
+            flex-shrink: 0;
+        }
+        .toggle.on { background: var(--purple-primary); border-color: var(--purple-primary); }
+        .toggle::after {
+            content: ''; position: absolute; top: 2px; left: 2px;
+            width: 14px; height: 14px; border-radius: 50%;
+            background: white; transition: transform var(--transition-fast);
+        }
+        .toggle.on::after { transform: translateX(16px); }
+
+
+        /* --- 5i. PIN digit input (homekit.html) --- */
+        .pin-row {
+            display: flex; align-items: center; justify-content: center;
+            gap: 0;
+        }
+
+        .pin-group { display: flex; gap: 0.375rem; }
+
+        .pin-separator {
+            font-size: 1.5rem; font-weight: 300;
+            color: var(--text-tertiary);
+            padding: 0 0.5rem;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .pin-digit {
+            width: 57px; height: 69px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 1.375rem; font-weight: 600;
+            text-align: center;
+            outline: none;
+            transition: all var(--transition-fast);
+            caret-color: var(--purple-primary);
+            -moz-appearance: textfield;
+        }
+
+        .pin-digit::-webkit-inner-spin-button,
+        .pin-digit::-webkit-outer-spin-button {
+            -webkit-appearance: none; margin: 0;
+        }
+
+        .pin-digit:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .pin-digit.filled {
+            border-color: var(--purple-light);
+            background: rgba(139, 92, 246, 0.06);
+        }
+
+        .pin-digit.error {
+            border-color: var(--error);
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+            animation: shake 0.4s ease;
+        }
+
+        .pin-digit.success {
+            border-color: var(--success);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+        }
+
+        @media (max-width: 400px) {
+            .pin-digit { width: 36px; height: 48px; font-size: 1.125rem; }
+            .pin-separator { padding: 0 0.25rem; font-size: 1.25rem; }
+            .pin-group { gap: 0.25rem; }
+        }
+
+
+        /* ============================================================
+           6. TOOLTIPS & INFO ICONS
+           ============================================================ */
+        .info-icon {
+            position: relative; display: inline-flex;
+            align-items: center; justify-content: center;
+            width: 16px; height: 16px; cursor: help;
+            color: var(--text-tertiary); transition: color var(--transition-fast);
+        }
+
+        .info-icon:hover { color: var(--purple-primary); }
+        .info-icon svg { width: 16px; height: 16px; }
+
+        .tooltip {
+            position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-elevated);
+            border: 1px solid var(--purple-primary);
+            border-radius: 8px; padding: 1rem;
+            width: 320px; max-width: 90vw;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--purple-glow);
+            z-index: 1000; opacity: 0; visibility: hidden;
+            transition: opacity var(--transition-fast), visibility var(--transition-fast);
+            pointer-events: none;
+        }
+
+        .tooltip::after {
+            content: ''; position: absolute; bottom: 100%; left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent; border-bottom-color: var(--purple-primary);
+        }
+
+        .info-icon:hover .tooltip { opacity: 1; visibility: visible; }
+
+        .tooltip-title { font-weight: 600; color: var(--purple-primary); margin-bottom: 0.5rem; font-size: 0.875rem; }
+        .tooltip-text { font-size: 0.75rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: 0.75rem; }
+        .tooltip-text:last-child { margin-bottom: 0; }
+        .tooltip-examples { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); }
+        .tooltip-examples-title { font-weight: 600; color: var(--text-primary); font-size: 0.75rem; margin-bottom: 0.5rem; }
+        .tooltip-example {
+            font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--purple-light); background: var(--bg-secondary);
+            padding: 0.25rem 0.5rem; border-radius: 4px;
+            margin-bottom: 0.25rem; display: block;
+        }
+
+
+        /* ============================================================
+           7. BADGES & TAGS
+           ============================================================ */
+
+        /* --- 7a. Type badges (probe result) --- */
+        .type-badge {
+            display: inline-block; padding: 0.125rem 0.5rem;
+            border-radius: 4px; font-weight: 600; font-size: 0.6875rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .type-standard { background: var(--success); color: #000; }
+        .type-homekit { background: var(--purple-primary); color: #fff; }
+        .type-unreachable { background: var(--error); color: #fff; }
+
+        /* --- 7b. Mode badge --- */
+        .mode-badge {
+            font-size: 0.75rem; font-weight: 600;
+            padding: 0.25rem 0.625rem; border-radius: 4px;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            background: rgba(139, 92, 246, 0.15); color: var(--purple-light);
+            margin-left: 0.75rem; vertical-align: middle;
+        }
+
+        /* --- 7c. Status badge (running/done) --- */
+        .status-badge {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            font-weight: 500; text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0.25rem 0.625rem; border-radius: 3px;
+        }
+
+        .status-badge.running { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
+        .status-badge.done { background: rgba(16, 185, 129, 0.12); color: var(--success); }
+
+        .status-dot {
+            width: 6px; height: 6px; border-radius: 50%; background: currentColor;
+        }
+        .status-badge.running .status-dot { animation: pulse 1.2s infinite; }
+
+        /* --- 7d. Tags (selected items) --- */
+        .tag {
+            display: inline-flex; align-items: center; gap: 0.375rem;
+            padding: 0.375rem 0.625rem;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.75rem; color: var(--text-primary);
+        }
+
+        .tag .tag-type {
+            font-size: 0.625rem; font-weight: 600;
+            text-transform: uppercase; color: var(--text-tertiary);
+        }
+
+        .tag .tag-remove {
+            background: none; border: none; cursor: pointer;
+            color: var(--text-tertiary); padding: 0;
+            display: flex; align-items: center;
+            transition: color var(--transition-fast);
+        }
+
+        .tag .tag-remove:hover { color: var(--error); }
+
+        /* --- 7e. Card tags (codec overlays on thumbnails) --- */
+        .card-tag {
+            font-family: var(--font-mono); font-size: 0.625rem;
+            font-weight: 500; padding: 0.125rem 0.375rem; border-radius: 2px;
+            background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(4px);
+            color: var(--text-primary); border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+
+        /* ============================================================
+           8. CARDS
+           ============================================================ */
+
+        /* --- 8a. Stream card (simple info card) --- */
+        .stream-card {
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; margin-bottom: 0.75rem;
+        }
+        .stream-label {
+            font-size: 0.625rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 0.375rem;
+        }
+        .stream-url {
+            font-family: var(--font-mono); font-size: 0.75rem;
+            color: var(--text-secondary); word-break: break-all; line-height: 1.5;
+        }
+        .stream-url .scheme { color: var(--purple-light); }
+
+        /* --- 8b. Media card (test results with thumbnail) --- */
+        .card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: border-color var(--transition-fast), transform var(--transition-fast);
+            animation: cardIn 0.25s ease;
+        }
+        .card:hover { border-color: var(--purple-primary); transform: translateY(-2px); }
+
+        .card-thumb {
+            position: relative; width: 100%;
+            aspect-ratio: 16/9;
+            background: var(--bg-primary); overflow: hidden;
+        }
+
+        .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        .card-thumb-placeholder {
+            width: 100%; height: 100%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .card-thumb-placeholder svg { width: 32px; height: 32px; color: var(--text-tertiary); }
+
+        .card-overlay { position: absolute; top: 0.5rem; right: 0.5rem; display: flex; gap: 0.25rem; }
+
+        .card-resolution {
+            position: absolute; bottom: 0.5rem; left: 0.5rem;
+            font-family: var(--font-mono); font-size: 0.625rem;
+            font-weight: 600; padding: 0.125rem 0.375rem; border-radius: 2px;
+            background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(4px);
+            color: var(--purple-light);
+        }
+
+        .card-body { padding: 0.75rem 1rem; }
+
+        .card-url {
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary); line-height: 1.5;
+            word-break: break-all;
+            display: -webkit-box; -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .card-url .scheme { color: var(--purple-light); }
+
+        .card-meta {
+            display: flex; align-items: center; gap: 0.75rem;
+            margin-top: 0.5rem; padding-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .card-meta-item {
+            font-family: var(--font-mono); font-size: 0.625rem;
+            color: var(--text-tertiary); display: flex;
+            align-items: center; gap: 0.25rem;
+        }
+
+        .card-action { padding: 0 1rem 0.75rem; }
+
+        .btn-use {
+            width: 100%; padding: 0.5rem;
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; border: none; border-radius: 6px;
+            font-size: 0.75rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            box-shadow: 0 2px 8px var(--purple-glow);
+        }
+        .btn-use:hover { box-shadow: 0 4px 16px var(--purple-glow-strong); transform: translateY(-1px); }
+
+        /* Cards grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        @media (max-width: 640px) { .cards-grid { grid-template-columns: 1fr; } }
+
+
+        /* ============================================================
+           9. LISTS & BOXES
+           ============================================================ */
+
+        /* --- 9a. Streams box (scrollable list) --- */
+        .streams-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 60vh; overflow-y: auto;
+        }
+
+        .streams-box::-webkit-scrollbar { width: 6px; }
+        .streams-box::-webkit-scrollbar-track { background: transparent; }
+        .streams-box::-webkit-scrollbar-thumb { background: var(--purple-primary); border-radius: 3px; }
+
+        .stream-url-item {
+            padding: 0.5rem 0.75rem;
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.07);
+            word-break: break-all; line-height: 1.5;
+        }
+        .stream-url-item:last-child { border-bottom: none; }
+
+        /* --- 9b. Device info table --- */
+        .device-info {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .device-row {
+            display: flex; justify-content: space-between;
+            padding: 0.375rem 0;
+            font-size: 0.8125rem;
+        }
+
+        .device-row:not(:last-child) {
+            border-bottom: 1px solid rgba(139, 92, 246, 0.07);
+        }
+
+        .device-label { color: var(--text-tertiary); }
+        .device-value { color: var(--text-primary); font-family: var(--font-mono); font-size: 0.75rem; }
+
+        /* --- 9c. Stream count --- */
+        .stream-count {
+            font-size: 0.75rem; color: var(--text-tertiary);
+            font-family: var(--font-mono);
+            margin-bottom: 0.75rem;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+
+
+        /* ============================================================
+           10. PROGRESS & STATUS
+           ============================================================ */
+
+        /* --- 10a. Status bar --- */
+        .status-bar {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .status-top {
+            display: flex; align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .status-session { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-tertiary); }
+
+        /* --- 10b. Counters grid --- */
+        .counters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+
+        @media (max-width: 640px) { .counters { grid-template-columns: repeat(2, 1fr); } }
+
+        .counter {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.75rem; text-align: center;
+        }
+
+        .counter-value {
+            font-family: var(--font-mono); font-size: 1.5rem;
+            font-weight: 600; line-height: 1; margin-bottom: 0.25rem;
+        }
+
+        .counter-label {
+            font-family: var(--font-mono); font-size: 0.625rem;
+            color: var(--text-secondary); text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* Counter color variants */
+        .counter.total .counter-value { color: var(--text-primary); }
+        .counter.tested .counter-value { color: #3b82f6; }
+        .counter.alive .counter-value { color: var(--success); }
+        .counter.screenshots .counter-value { color: var(--warning); }
+
+        /* --- 10c. Progress bar --- */
+        .progress-track {
+            height: 3px; background: var(--border-color);
+            border-radius: 2px; margin-top: 1rem; overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%; background: #3b82f6;
+            border-radius: 2px; width: 0%;
+            transition: width 0.3s ease;
+        }
+        .progress-fill.complete { background: var(--success); }
+
+        /* --- 10d. Loading spinner --- */
+        .loading {
+            text-align: center; padding: 3rem;
+            color: var(--text-tertiary); font-size: 0.875rem;
+        }
+
+        .loading-spinner {
+            width: 24px; height: 24px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--purple-primary);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            animation: spin 0.8s linear infinite;
+        }
+
+        /* --- 10e. Pairing spinner (inline, white) --- */
+        .pairing-spinner {
+            width: 20px; height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+
+
+        /* ============================================================
+           11. COLLAPSIBLE SECTIONS & GROUPS
+           ============================================================ */
+
+        /* --- 11a. Expand button (config settings) --- */
+        .expand-btn {
+            display: flex; align-items: center; gap: 0.5rem;
+            width: 100%; padding: 0.75rem 0; background: none; border: none;
+            color: var(--text-secondary); font-size: 0.8125rem; font-weight: 600;
+            font-family: var(--font-primary); cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+        .expand-btn:hover { color: var(--purple-primary); }
+        .expand-btn .chevron { transition: transform var(--transition-fast); width: 12px; height: 12px; }
+        .expand-btn.open .chevron { transform: rotate(90deg); }
+
+        .expandable { display: none; }
+        .expandable.open { display: block; }
+
+        /* --- 11b. Group with collapse (test results) --- */
+        .group { margin-bottom: 1.5rem; }
+
+        .group-header {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            cursor: pointer; user-select: none;
+            transition: color var(--transition-fast);
+        }
+        .group-header:hover { color: var(--purple-primary); }
+
+        .group-toggle {
+            display: flex; background: none; border: none;
+            padding: 0; cursor: pointer; color: var(--text-tertiary);
+        }
+        .group-toggle .chevron { transition: transform var(--transition-fast); }
+        .group.collapsed .group-toggle .chevron { transform: rotate(-90deg); }
+        .group.collapsed .group-content { display: none; }
+
+        .group-title {
+            font-size: 0.8125rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .group-count { font-size: 0.8125rem; color: var(--text-tertiary); }
+
+
+        /* ============================================================
+           12. MOBILE TABS
+           ============================================================ */
+        .tabs { display: none; margin-bottom: 1rem; }
+
+        .tabs-row {
+            display: flex; gap: 0;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; padding: 3px; overflow: hidden;
+        }
+
+        .tab-btn {
+            flex: 1; padding: 0.625rem; text-align: center;
+            background: none; border: none; border-radius: 6px;
+            font-size: 0.8125rem; font-weight: 600; font-family: var(--font-primary);
+            color: var(--text-tertiary); cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        .tab-btn.active { background: var(--purple-primary); color: white; }
+
+        @media (max-width: 768px) { .tabs { display: block; } }
+
+
+        /* ============================================================
+           13. CONFIG / CODE PANELS
+           ============================================================ */
+
+        .config-panel {
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px; overflow: hidden;
+        }
+
+        .config-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color);
+        }
+        .config-title { font-size: 0.8125rem; font-weight: 600; }
+        .config-actions { display: flex; gap: 0.5rem; }
+
+        .config-code {
+            padding: 1rem; font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--text-secondary); line-height: 1.7;
+            max-height: 75vh; overflow-y: auto; white-space: pre;
+        }
+        .config-code::-webkit-scrollbar { width: 5px; }
+        .config-code::-webkit-scrollbar-track { background: transparent; }
+        .config-code::-webkit-scrollbar-thumb { background: var(--purple-primary); border-radius: 3px; }
+
+        /* Config example block */
+        .config-example {
+            margin-top: 1rem; padding: 1rem;
+            background: var(--bg-secondary); border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        .config-label { font-size: 0.6875rem; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+
+
+        /* ============================================================
+           14. FEEDBACK: TOASTS, ERRORS, RESULTS, NOTICES
+           ============================================================ */
+
+        /* --- 14a. Toast notification --- */
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px; box-shadow: var(--shadow-lg);
+            font-size: 0.875rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+        }
+
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        /* --- 14b. Error box --- */
+        .error-box {
+            padding: 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: var(--error);
+            font-size: 0.875rem;
+        }
+
+        /* --- 14c. Result messages --- */
+        .result {
+            margin-top: 1.25rem; padding: 1rem;
+            border-radius: 8px; font-size: 0.875rem;
+        }
+        .result-ok { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--success); }
+        .result-err { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: var(--error); }
+
+        .result-ok a {
+            color: var(--purple-light); text-decoration: none;
+            font-weight: 600;
+        }
+        .result-ok a:hover { text-decoration: underline; }
+
+        /* --- 14d. Info box --- */
+        .info-box {
+            padding: 1rem; background: rgba(139, 92, 246, 0.06);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 8px; margin-bottom: 1.5rem;
+        }
+        .info-title { font-size: 0.875rem; font-weight: 600; color: var(--purple-light); margin-bottom: 0.5rem; }
+        .info-text { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6; }
+
+        /* --- 14e. Notice banner --- */
+        .notice {
+            padding: 1rem; background: rgba(139, 92, 246, 0.06);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 8px; margin-bottom: 1.5rem;
+        }
+        .notice-title { font-size: 0.875rem; font-weight: 600; color: var(--purple-light); margin-bottom: 0.375rem; }
+        .notice-text { font-size: 0.75rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem; }
+
+        /* --- 14f. Contribute banner --- */
+        .contribute-banner {
+            margin-top: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(139, 92, 246, 0.08);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 8px;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .contribute-text {
+            font-size: 0.8125rem; color: var(--text-secondary);
+            margin-bottom: 0.625rem; line-height: 1.5;
+        }
+
+
+        /* ============================================================
+           15. STICKY BOTTOM BAR
+           ============================================================ */
+        .bottom-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            padding: 1rem 1.5rem;
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            display: flex; justify-content: center;
+            z-index: 100;
+        }
+
+        .bottom-bar .btn { max-width: 700px; width: 100%; }
+
+        .btn-count {
+            font-size: 0.75rem; opacity: 0.8;
+            font-weight: 400;
+        }
+
+
+        /* ============================================================
+           16. AUTOCOMPLETE DROPDOWN
+           ============================================================ */
+        .autocomplete-wrapper { position: relative; }
+
+        .autocomplete-dropdown {
+            position: absolute; top: 100%; left: 0; right: 0;
+            margin-top: 0.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 300px; overflow-y: auto;
+            z-index: 100; box-shadow: var(--shadow-lg);
+            display: none;
+        }
+
+        .autocomplete-dropdown.open { display: block; }
+
+        .autocomplete-item {
+            padding: 0.75rem 1rem; cursor: pointer;
+            transition: background-color var(--transition-fast);
+            font-size: 0.875rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .autocomplete-item:hover { background: var(--bg-tertiary); }
+        .autocomplete-item.selected { background: var(--bg-tertiary); border-left: 2px solid var(--purple-primary); }
+        .autocomplete-item.disabled { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
+
+        .autocomplete-item .item-type {
+            font-size: 0.6875rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            padding: 0.125rem 0.375rem; border-radius: 3px;
+            flex-shrink: 0; min-width: 48px; text-align: center;
+        }
+
+        .item-type-preset { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .item-type-brand { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+        .item-type-model { background: rgba(139, 92, 246, 0.15); color: var(--purple-primary); }
+
+
+        /* ============================================================
+           17. LATENCY COLORS
+           ============================================================ */
+        .latency-fast { color: var(--success); }
+        .latency-medium { color: var(--warning); }
+        .latency-slow { color: var(--error); }
+
+
+        /* ============================================================
+           18. ANIMATIONS
+           ============================================================ */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes cardIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-4px); }
+            40%, 80% { transform: translateX(4px); }
+        }
+
+
+        /* ============================================================
+           DEMO PAGE STYLES (only for this design-system page)
+           ============================================================ */
+        .ds-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .ds-section:last-child { border-bottom: none; }
+
+        .ds-title {
+            font-size: 1.125rem; font-weight: 700;
+            color: var(--purple-light);
+            margin-bottom: 0.25rem;
+            font-family: var(--font-mono);
+        }
+
+        .ds-subtitle {
+            font-size: 0.75rem; color: var(--text-tertiary);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-mono);
+        }
+
+        .ds-row {
+            display: flex; flex-wrap: wrap; gap: 1rem;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .ds-col {
+            flex: 1; min-width: 280px;
+        }
+
+        .ds-label {
+            font-size: 0.625rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--text-tertiary);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-mono);
+        }
+
+        .ds-spacer { height: 1rem; }
+
+        .ds-demo {
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .ds-inline { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+
+        .ds-page { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+        .ds-hero {
+            text-align: center; margin-bottom: 3rem; padding: 2rem 0;
+        }
+
+        .ds-hero-title {
+            font-size: 1.5rem; font-weight: 700;
+            background: linear-gradient(135deg, var(--purple-light), var(--purple-primary));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .ds-hero-sub { font-size: 0.875rem; color: var(--text-tertiary); }
+    </style>
+</head>
+<body>
+
+<div class="ds-page">
+    <div class="ds-hero">
+        <h1 class="ds-hero-title">Strix Design System</h1>
+        <p class="ds-hero-sub">All components used across the Strix frontend</p>
+    </div>
+
+    <!-- ==================== COLORS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">1. Colors</div>
+        <div class="ds-subtitle">CSS variables from :root</div>
+
+        <div class="ds-row">
+            <div class="ds-col">
+                <div class="ds-label">Backgrounds</div>
+                <div style="display:flex; gap:0.5rem;">
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--bg-primary); border:1px solid var(--border-color);" title="--bg-primary"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--bg-secondary);" title="--bg-secondary"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--bg-tertiary);" title="--bg-tertiary"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--bg-elevated);" title="--bg-elevated"></div>
+                </div>
+            </div>
+            <div class="ds-col">
+                <div class="ds-label">Purple Accent</div>
+                <div style="display:flex; gap:0.5rem;">
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--purple-dark);" title="--purple-dark"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--purple-primary);" title="--purple-primary"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--purple-light);" title="--purple-light"></div>
+                </div>
+            </div>
+            <div class="ds-col">
+                <div class="ds-label">Semantic</div>
+                <div style="display:flex; gap:0.5rem;">
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--success);" title="--success"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--warning);" title="--warning"></div>
+                    <div style="width:60px; height:60px; border-radius:8px; background:var(--error);" title="--error"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ds-row">
+            <div class="ds-col">
+                <div class="ds-label">Text Hierarchy</div>
+                <div style="margin-bottom:0.25rem; color:var(--text-primary);">--text-primary: Main content text</div>
+                <div style="margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.875rem;">--text-secondary: Labels, descriptions</div>
+                <div style="margin-bottom:0.25rem; color:var(--text-tertiary); font-size:0.875rem;">--text-tertiary: Hints, placeholders</div>
+                <div style="color:var(--text-disabled); font-size:0.875rem;">--text-disabled: Disabled elements</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TYPOGRAPHY ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">2. Typography</div>
+        <div class="ds-subtitle">Headings, labels, mono text</div>
+
+        <div class="ds-demo">
+            <h1 class="title" style="margin-bottom:1rem;">STRIX</h1>
+            <div class="page-title" style="margin-bottom:0.75rem;">Page Title (.page-title)</div>
+            <div class="screen-title" style="margin-bottom:0.75rem;">Screen Title (.screen-title)</div>
+            <div class="section-title" style="margin-bottom:0.75rem;">Section Title (.section-title)</div>
+            <div class="label" style="margin-bottom:0.5rem;">Label (.label)</div>
+            <div class="field-label">Field Label (.field-label)</div>
+            <div class="ds-spacer"></div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary);">Monospace text (--font-mono)</div>
+        </div>
+    </div>
+
+    <!-- ==================== BUTTONS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">3. Buttons</div>
+        <div class="ds-subtitle">All button variants</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">Primary</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-primary" disabled>Disabled</button>
+            </div>
+
+            <div class="ds-label">Primary Large (full width)</div>
+            <div style="max-width:400px; margin-bottom:1.5rem;">
+                <button class="btn btn-primary btn-large">Discover Streams</button>
+            </div>
+
+            <div class="ds-label">Outline</div>
+            <div style="max-width:400px; margin-bottom:1.5rem;">
+                <button class="btn-outline">Try Standard Discovery</button>
+            </div>
+
+            <div class="ds-label">Small Buttons</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <button class="btn-sm">Copy</button>
+                <button class="btn-sm">Download</button>
+            </div>
+
+            <div class="ds-label">Stop / Danger</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <button class="btn-stop">Cancel</button>
+                <button class="btn-stop" disabled>Disabled</button>
+            </div>
+
+            <div class="ds-label">Add Sub / Secondary Action</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <button class="btn-add-sub">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Add Sub Stream
+                </button>
+            </div>
+
+            <div class="ds-label">Save (Green)</div>
+            <div style="max-width:300px; margin-bottom:1.5rem;">
+                <button class="btn-save">Save to Frigate & Restart</button>
+            </div>
+
+            <div class="ds-label">Back Navigation</div>
+            <button class="btn-back" style="margin-bottom:0;">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                Back
+            </button>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Add (+) Button</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <button class="btn-add" style="width:48px;">+</button>
+            </div>
+
+            <div class="ds-label">Use as Stream Button (card action)</div>
+            <div style="max-width:300px;">
+                <button class="btn-use">Use as Main Stream</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FORM ELEMENTS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">4. Form Elements</div>
+        <div class="ds-subtitle">Inputs, selects, toggles</div>
+
+        <div class="ds-demo">
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Standard Input</div>
+                    <div class="form-group">
+                        <label class="label">
+                            Network Address
+                            <span class="info-icon">
+                                <svg viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <div class="tooltip">
+                                    <div class="tooltip-title">Network Address</div>
+                                    <p class="tooltip-text">Enter the IP address of your camera.</p>
+                                    <div class="tooltip-examples">
+                                        <div class="tooltip-examples-title">Examples:</div>
+                                        <code class="tooltip-example">192.168.1.100</code>
+                                        <code class="tooltip-example">10.0.0.50</code>
+                                    </div>
+                                </div>
+                            </span>
+                        </label>
+                        <input type="text" class="input" placeholder="192.168.1.100" value="">
+                        <p class="hint">IP address or stream URL</p>
+                    </div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Large Input</div>
+                    <div class="form-group">
+                        <input type="text" class="input input-large" placeholder="Large input variant">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Validated Input (readonly)</div>
+                    <div class="form-group">
+                        <div class="input-validated">
+                            <input type="text" class="input" value="192.168.1.100" readonly>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Password with Toggle</div>
+                    <div class="form-group">
+                        <div class="input-password">
+                            <input type="password" class="input" placeholder="Camera password" value="secret123">
+                            <button class="btn-toggle-pass" type="button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Select Dropdown</div>
+                    <div class="form-group">
+                        <div class="field-label">HW Acceleration</div>
+                        <select class="input">
+                            <option value="">auto</option>
+                            <option value="preset-vaapi">VAAPI</option>
+                            <option value="preset-nvidia-h264">NVIDIA H264</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Small Inputs in Row</div>
+                    <div class="row">
+                        <div class="form-group"><div class="field-label">FPS</div><input class="input" style="max-width:120px;" type="number" placeholder="5"></div>
+                        <div class="form-group"><div class="field-label">Width</div><input class="input" style="max-width:120px;" type="number" placeholder="1920"></div>
+                        <div class="form-group"><div class="field-label">Height</div><input class="input" style="max-width:120px;" type="number" placeholder="1080"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-label">Add Row (input + button)</div>
+            <div class="add-row" style="max-width:500px; margin-bottom:1.5rem;">
+                <input class="add-input" type="text" placeholder="rtsp://user:pass@host/path">
+                <button class="btn-add">+</button>
+            </div>
+
+            <div class="ds-label">Toggle Switches</div>
+            <div style="max-width:300px;">
+                <div class="toggle-row"><span class="toggle-label">Enabled (on)</span><div class="toggle on" id="demo-toggle-1"></div></div>
+                <div class="toggle-row"><span class="toggle-label">Disabled (off)</span><div class="toggle" id="demo-toggle-2"></div></div>
+            </div>
+
+            <div class="ds-spacer"></div>
+            <div class="ds-label">Optional Label</div>
+            <div class="form-group">
+                <label class="label">Camera Model <span class="optional">(optional)</span></label>
+                <input type="text" class="input" placeholder="Search brand, model or preset...">
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PIN INPUT ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">4b. PIN Digit Input</div>
+        <div class="ds-subtitle">Segmented code entry (homekit.html pairing)</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">PIN Input (3-2-3 format)</div>
+            <div class="pin-row" style="margin-bottom:1.5rem;">
+                <div class="pin-group">
+                    <input type="text" class="pin-digit" value="1" maxlength="1" readonly>
+                    <input type="text" class="pin-digit" value="2" maxlength="1" readonly>
+                    <input type="text" class="pin-digit filled" value="3" maxlength="1" readonly>
+                </div>
+                <span class="pin-separator">-</span>
+                <div class="pin-group">
+                    <input type="text" class="pin-digit filled" value="4" maxlength="1" readonly>
+                    <input type="text" class="pin-digit" maxlength="1" readonly>
+                </div>
+                <span class="pin-separator">-</span>
+                <div class="pin-group">
+                    <input type="text" class="pin-digit" maxlength="1" readonly>
+                    <input type="text" class="pin-digit" maxlength="1" readonly>
+                    <input type="text" class="pin-digit" maxlength="1" readonly>
+                </div>
+            </div>
+
+            <div class="ds-label">States</div>
+            <div class="ds-inline">
+                <input type="text" class="pin-digit" value="" maxlength="1" readonly style="flex:none;">
+                <span style="font-size:0.625rem; color:var(--text-tertiary);">empty</span>
+                <input type="text" class="pin-digit filled" value="5" maxlength="1" readonly style="flex:none;">
+                <span style="font-size:0.625rem; color:var(--text-tertiary);">filled</span>
+                <input type="text" class="pin-digit error" value="9" maxlength="1" readonly style="flex:none;">
+                <span style="font-size:0.625rem; color:var(--text-tertiary);">error</span>
+                <input type="text" class="pin-digit success" value="7" maxlength="1" readonly style="flex:none;">
+                <span style="font-size:0.625rem; color:var(--text-tertiary);">success</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BADGES & TAGS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">5. Badges & Tags</div>
+        <div class="ds-subtitle">Status indicators, type labels</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">Type Badges</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <span class="type-badge type-standard">standard</span>
+                <span class="type-badge type-homekit">homekit</span>
+                <span class="type-badge type-unreachable">unreachable</span>
+            </div>
+
+            <div class="ds-label">Status Badges</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <div class="status-badge running"><div class="status-dot"></div><span>running</span></div>
+                <div class="status-badge done"><div class="status-dot"></div><span>done</span></div>
+            </div>
+
+            <div class="ds-label">Mode Badge</div>
+            <div style="margin-bottom:1.5rem;">
+                <span style="font-size:1.25rem; font-weight:600;">Stream Testing</span>
+                <span class="mode-badge">sub</span>
+            </div>
+
+            <div class="ds-label">Tags (selected items)</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <span class="tag">
+                    <span class="tag-type">preset</span>
+                    Top 1000 Stream Patterns
+                    <button class="tag-remove" type="button">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </button>
+                </span>
+                <span class="tag">
+                    <span class="tag-type">brand</span>
+                    Hikvision
+                    <button class="tag-remove" type="button">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </button>
+                </span>
+            </div>
+
+            <div class="ds-label">Card Tags (codec overlays)</div>
+            <div class="ds-inline" style="margin-bottom:1.5rem;">
+                <span class="card-tag">H264</span>
+                <span class="card-tag">AAC</span>
+                <span class="card-tag">MJPEG</span>
+            </div>
+
+            <div class="ds-label">Latency Colors</div>
+            <div class="ds-inline">
+                <span class="latency-fast" style="font-family:var(--font-mono); font-size:0.75rem;">42ms (fast)</span>
+                <span class="latency-medium" style="font-family:var(--font-mono); font-size:0.75rem;">320ms (medium)</span>
+                <span class="latency-slow" style="font-family:var(--font-mono); font-size:0.75rem;">850ms (slow)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CARDS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">6. Cards</div>
+        <div class="ds-subtitle">Stream cards, media cards</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">Stream Card (info)</div>
+            <div style="max-width:500px; margin-bottom:1.5rem;">
+                <div class="stream-card">
+                    <div class="stream-label">Main Stream</div>
+                    <div class="stream-url"><span class="scheme">rtsp://</span>admin:pass@192.168.1.100:554/stream1</div>
+                </div>
+                <div class="stream-card">
+                    <div class="stream-label">Sub Stream</div>
+                    <div class="stream-url"><span class="scheme">rtsp://</span>admin:pass@192.168.1.100:554/stream2</div>
+                </div>
+            </div>
+
+            <div class="ds-label">Media Card (test result)</div>
+            <div class="cards-grid" style="max-width:700px;">
+                <div class="card">
+                    <div class="card-thumb">
+                        <div class="card-thumb-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="m21 15-5-5L5 21"/>
+                            </svg>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-tag">H264</span>
+                            <span class="card-tag">AAC</span>
+                        </div>
+                        <span class="card-resolution">1920x1080</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-url"><span class="scheme">rtsp://</span>admin:***@192.168.1.100:554/stream1</div>
+                        <div class="card-meta">
+                            <span class="card-meta-item latency-fast">42ms</span>
+                            <span class="card-meta-item">1920x1080</span>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn-use">Use as Main Stream</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-thumb">
+                        <div class="card-thumb-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="m21 15-5-5L5 21"/>
+                            </svg>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-tag">H265</span>
+                        </div>
+                        <span class="card-resolution">640x480</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-url"><span class="scheme">rtsp://</span>admin:***@192.168.1.100:554/stream2</div>
+                        <div class="card-meta">
+                            <span class="card-meta-item latency-medium">280ms</span>
+                            <span class="card-meta-item">640x480</span>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <button class="btn-use">Use as Sub Stream</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PROGRESS & STATUS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">7. Progress & Status</div>
+        <div class="ds-subtitle">Status bars, counters, progress, spinners</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">Status Bar (complete component)</div>
+            <div class="status-bar" style="max-width:800px;">
+                <div class="status-top">
+                    <div class="status-badge running"><div class="status-dot"></div><span>running</span></div>
+                    <span class="status-session">sess_abc123</span>
+                </div>
+                <div class="counters">
+                    <div class="counter total"><div class="counter-value">48</div><div class="counter-label">total</div></div>
+                    <div class="counter tested"><div class="counter-value">32</div><div class="counter-label">tested</div></div>
+                    <div class="counter alive"><div class="counter-value">5</div><div class="counter-label">alive</div></div>
+                    <div class="counter screenshots"><div class="counter-value">3</div><div class="counter-label">screenshots</div></div>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width:67%;"></div>
+                </div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Loading Spinner</div>
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                Building stream URLs...
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== COLLAPSIBLE ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">8. Collapsible Sections</div>
+        <div class="ds-subtitle">Expandable settings, grouped results</div>
+
+        <div class="ds-demo">
+            <div class="ds-label">Expand Button (settings)</div>
+            <button class="expand-btn" id="demo-expand">
+                <svg class="chevron" viewBox="0 0 12 12" fill="none"><path d="M4.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Advanced Settings
+            </button>
+            <div class="expandable" id="demo-expandable">
+                <div class="section-title">FFmpeg</div>
+                <div class="form-group"><div class="field-label">Hardware Acceleration</div><input class="input" placeholder="auto"></div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Group with Collapse (results)</div>
+            <div class="group" id="demo-group">
+                <div class="group-header" id="demo-group-header">
+                    <button class="group-toggle" type="button">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="chevron"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </button>
+                    <span class="group-title">Recommended - Main</span>
+                    <span class="group-count">(3)</span>
+                </div>
+                <div class="group-content">
+                    <div style="padding:1rem; color:var(--text-tertiary); font-size:0.875rem;">Cards would go here...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FEEDBACK ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">9. Feedback</div>
+        <div class="ds-subtitle">Toasts, errors, results, info boxes, notices</div>
+
+        <div class="ds-demo">
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Error Box</div>
+                    <div class="error-box">Connection error: timeout after 5s</div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Info Box</div>
+                    <div class="info-box" style="margin-bottom:0;">
+                        <div class="info-title">How to use</div>
+                        <div class="info-text">Add these URLs to your NVR software.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Result OK</div>
+                    <div class="result result-ok" style="margin-top:0;">Added to go2rtc: camera_main. <a href="#">Open go2rtc UI</a></div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Result Error</div>
+                    <div class="result result-err" style="margin-top:0;">camera_main: go2rtc not found</div>
+                </div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Notice Banner</div>
+            <div class="notice" style="margin-bottom:0;">
+                <div class="notice-title">Frigate NVR not detected</div>
+                <div class="notice-text">If you have Frigate NVR, we recommend running Strix on the same server.</div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Toast (click to demo)</div>
+            <button class="btn-sm" id="demo-toast-btn">Show Toast</button>
+        </div>
+    </div>
+
+    <!-- ==================== CONFIG PANEL ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">10. Config Panel</div>
+        <div class="ds-subtitle">Code display with diff highlighting</div>
+
+        <div class="config-panel" style="max-width:600px;">
+            <div class="config-header">
+                <span class="config-title">Generated Config</span>
+                <div class="config-actions">
+                    <button class="btn-sm">Copy</button>
+                    <button class="btn-sm">Download</button>
+                </div>
+            </div>
+            <div class="config-code">go2rtc:
+  streams:
+    camera_main:
+      - rtsp://admin:pass@192.168.1.100:554/stream1
+    camera_sub:
+      - rtsp://admin:pass@192.168.1.100:554/stream2
+
+cameras:
+  camera:
+    ffmpeg:
+      inputs:
+        - path: rtsp://127.0.0.1:8554/camera_sub
+          input_args: preset-rtsp-restream
+          roles:
+            - detect
+        - path: rtsp://127.0.0.1:8554/camera_main
+          input_args: preset-rtsp-restream
+          roles:
+            - record</div>
+        </div>
+
+        <div class="ds-spacer"></div>
+
+        <div class="ds-label">Config Example Block (copyable)</div>
+        <div class="config-example" style="max-width:600px;">
+            <div class="config-label">go2rtc.yaml</div>
+            <div class="config-code" style="padding:0; max-height:none;">streams:
+  'camera_main':
+    - rtsp://admin:pass@192.168.1.100:554/stream1</div>
+            <button class="btn-copy-block">Copy</button>
+        </div>
+    </div>
+
+    <!-- ==================== LISTS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">11. Lists & Tables</div>
+        <div class="ds-subtitle">Stream lists, device info tables</div>
+
+        <div class="ds-demo">
+            <div class="ds-row">
+                <div class="ds-col">
+                    <div class="ds-label">Streams Box (scrollable list)</div>
+                    <div class="stream-count"><span>3 streams</span></div>
+                    <div class="streams-box" style="max-height:200px;">
+                        <div class="stream-url-item"><span class="scheme">rtsp://</span>admin:pass@192.168.1.100:554/stream1</div>
+                        <div class="stream-url-item"><span class="scheme">rtsp://</span>admin:pass@192.168.1.100:554/stream2</div>
+                        <div class="stream-url-item"><span class="scheme">http://</span>192.168.1.100:80/video.cgi</div>
+                    </div>
+                </div>
+                <div class="ds-col">
+                    <div class="ds-label">Device Info Table</div>
+                    <div class="device-info">
+                        <div class="device-row"><span class="device-label">IP Address</span><span class="device-value">192.168.1.100</span></div>
+                        <div class="device-row"><span class="device-label">Model</span><span class="device-value">DS-2CD2043G2-I</span></div>
+                        <div class="device-row"><span class="device-label">Vendor</span><span class="device-value">Hikvision</span></div>
+                        <div class="device-row"><span class="device-label">MAC</span><span class="device-value">AA:BB:CC:DD:EE:FF</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-spacer"></div>
+
+            <div class="ds-label">Stream URL with Copy Button</div>
+            <div class="stream-card" style="max-width:500px;">
+                <div class="stream-label">Main Stream</div>
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <div class="stream-url" style="flex:1;"><span class="scheme">rtsp://</span>admin:pass@192.168.1.100:554/stream1</div>
+                    <button class="btn-copy-sm" type="button">
+                        <svg viewBox="0 0 16 16" fill="none">
+                            <rect x="5" y="5" width="9" height="9" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MOBILE TABS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">12. Mobile Tabs</div>
+        <div class="ds-subtitle">Tab switcher for two-column layouts on mobile</div>
+
+        <div class="ds-demo">
+            <div style="max-width:400px;">
+                <div class="tabs-row">
+                    <button class="tab-btn active">Settings</button>
+                    <button class="tab-btn">Config</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BOTTOM BAR ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">13. Sticky Bottom Bar</div>
+        <div class="ds-subtitle">Fixed action bar at page bottom (not shown fixed in this demo)</div>
+
+        <div class="ds-demo">
+            <div style="padding:1rem 1.5rem; background:var(--bg-primary); border:1px solid var(--border-color); border-radius:8px; display:flex; justify-content:center;">
+                <button class="btn btn-primary" style="max-width:700px; width:100%;">
+                    Test Streams <span class="btn-count">(12)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== AUTOCOMPLETE ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">14. Autocomplete Dropdown</div>
+        <div class="ds-subtitle">Searchable dropdown with type badges</div>
+
+        <div class="ds-demo">
+            <div style="max-width:500px; position:relative;">
+                <input type="text" class="input" placeholder="Search brand, model or preset..." value="hikvi">
+                <div class="autocomplete-dropdown" style="display:block; position:relative; margin-top:0.5rem;">
+                    <div style="display:flex; flex-wrap:wrap; gap:0.375rem; padding:0.625rem 0.75rem; border-bottom:1px solid var(--border-color);">
+                        <span class="tag">
+                            <span class="tag-type">preset</span>
+                            Top 1000
+                            <button class="tag-remove" type="button"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+                        </span>
+                    </div>
+                    <div class="autocomplete-item">
+                        <span class="item-type item-type-brand">brand</span>
+                        Hikvision
+                    </div>
+                    <div class="autocomplete-item">
+                        <span class="item-type item-type-model">model</span>
+                        Hikvision DS-2CD2043G2-I
+                    </div>
+                    <div class="autocomplete-item">
+                        <span class="item-type item-type-model">model</span>
+                        Hikvision DS-2CD2347G2-LU
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CENTERED PAGE PATTERN ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">15. Centered Page Pattern</div>
+        <div class="ds-subtitle">True-center layout with floating back button (homekit.html)</div>
+
+        <div class="ds-demo" style="position:relative; min-height:300px; display:flex; align-items:center; justify-content:center;">
+            <!-- Floating back button outside container -->
+            <div style="position:absolute; top:1rem; left:1rem;">
+                <button class="btn-back" style="margin:0; padding:0.5rem 0;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    Back
+                </button>
+            </div>
+
+            <!-- Centered content -->
+            <div style="text-align:center; max-width:320px;">
+                <div style="margin-bottom:1.5rem;">
+                    <svg style="width:48px; height:48px; margin:0 auto 0.5rem; display:block; filter:drop-shadow(0 4px 12px rgba(255, 171, 31, 0.3));" viewBox="100 120 824 780" fill="none">
+                        <path fill="#FA9012" d="M883.2,413.1l-70.4-55.6V231.1c0-8.6-3.4-11-9.5-11h-64.4c-7,0-11.3,1.4-11.3,11v59.1C634.5,216.7,533.6,137,529.8,134c-7.6-6-12.3-7.6-17.8-7.6c-5.4,0-10.1,1.6-17.8,7.6c-7.6,6-343.2,271.1-353.4,279.1c-12.4,9.8-8.9,23.9,4.9,23.9h65.5v355.6c0,23,9.2,32.2,31.1,32.2h539.4c21.9,0,31.1-9.2,31.1-32.2V436.9h65.5C892.1,436.9,895.6,422.9,883.2,413.1z"/>
+                        <path fill="#FFAB1F" d="M739.6,371.1L527.1,203.3c-5.6-4.4-10.6-6.3-15.1-6.3c-4.6,0-9.5,1.9-15.1,6.4L284.4,371.1c-9.6,7.6-18.1,19.9-18.1,39.2v332.3c0,15.9,8.2,26.9,24.8,26.9h441.7c16.6,0,24.8-11,24.8-26.9V410.3C757.6,391,749.2,378.7,739.6,371.1z"/>
+                        <path fill="#FFBE41" d="M688.9,402.5c-5.8-4.5-160.3-126.6-164.4-129.8c-4.1-3.3-8.5-4.9-12.5-4.9c-4,0-8.4,1.7-12.5,4.9c-4.1,3.3-158.6,125.3-164.4,129.8c-10.2,8.1-13.6,16.4-13.6,30.7v259.5c0,14.8,8.4,21.7,20.7,21.7h339.7c12.3,0,20.7-6.9,20.7-21.7V433.2C702.5,418.9,699.1,410.6,688.9,402.5z"/>
+                        <path fill="#FFD260" d="M638.3,434c-6-4.8-113.2-89.4-116.4-91.9c-2.8-2.4-6.3-3.7-9.9-3.8c-3.5,0-6.7,1.3-9.9,3.8S391.6,429.2,385.7,434c-9.1,7.3-9.1,13.9-9.1,22.2v186.6c0,11.9,6.6,16.5,15.6,16.5h239.5c9,0,15.6-4.6,15.6-16.5V456.2C647.4,447.8,647.4,441.2,638.3,434z"/>
+                        <path fill="#FFE780" d="M512,604.1h69.2c6.4,0,11-2.1,11-11.2V479.1c0-6.4-2.9-12.6-7.8-16.6c-2.8-2.3-63-49.4-65.1-51.1c-4.2-3.5-10.4-3.5-14.6,0c-2.1,1.7-62.3,48.8-65.1,51.1c-5,4.1-7.9,10.2-7.8,16.6v113.8c0,9.2,4.6,11.2,11,11.2L512,604.1z"/>
+                    </svg>
+                    <div style="font-size:1.25rem; font-weight:600; color:var(--text-primary);">Apple HomeKit</div>
+                </div>
+                <div style="font-size:0.75rem; color:var(--text-tertiary);">Content centered on screen, back button floats at top</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SVG ICONS ==================== -->
+    <div class="ds-section">
+        <div class="ds-title">15. SVG Icons</div>
+        <div class="ds-subtitle">All inline SVG icons used across pages (never use emoji or icon fonts)</div>
+
+        <div class="ds-demo">
+            <div class="ds-inline" style="gap:1.5rem;">
+                <div style="text-align:center;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="color:var(--text-secondary);"><path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">back</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="color:var(--text-secondary);"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">info</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="color:var(--text-secondary);"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">add</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="color:var(--text-secondary);"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">close</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="color:var(--text-secondary);"><path d="M4.5 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">chevron</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="color:var(--text-secondary);"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">chevron-down</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="color:var(--text-secondary);"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">check</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="color:var(--text-secondary);">
+                        <rect x="5" y="5" width="9" height="9" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">copy</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--text-secondary);">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">eye</div>
+                </div>
+                <div style="text-align:center;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="color:var(--text-secondary);">
+                        <rect x="2" y="2" width="20" height="20" rx="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <path d="m21 15-5-5L5 21"/>
+                    </svg>
+                    <div style="font-size:0.5rem; color:var(--text-tertiary); margin-top:0.25rem;">image</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast element (required on every page) -->
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    /* ================================================================
+       JAVASCRIPT PATTERNS
+       All Strix pages use these same patterns. Copy and adapt.
+       ================================================================ */
+
+    // --- Toggle switches ---
+    document.querySelectorAll('.toggle').forEach(function(el) {
+        el.addEventListener('click', function() {
+            el.classList.toggle('on');
+        });
+    });
+
+    // --- Expand/collapse buttons ---
+    document.getElementById('demo-expand').addEventListener('click', function() {
+        this.classList.toggle('open');
+        document.getElementById('demo-expandable').classList.toggle('open');
+    });
+
+    // --- Group collapse ---
+    document.getElementById('demo-group-header').addEventListener('click', function() {
+        document.getElementById('demo-group').classList.toggle('collapsed');
+    });
+
+    // --- Toast ---
+    document.getElementById('demo-toast-btn').addEventListener('click', function() {
+        showToast('Stream URL copied to clipboard');
+    });
+
+    // --- Password toggle ---
+    document.querySelector('.btn-toggle-pass').addEventListener('click', function() {
+        var input = document.querySelector('.input-password .input');
+        input.type = input.type === 'password' ? 'text' : 'password';
+    });
+
+    /* ================================================================
+       STANDARD TOAST FUNCTION
+       Include this on every page. Always use the same pattern.
+       ================================================================ */
+    function showToast(msg, duration) {
+        var t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.remove('hidden');
+        t.classList.add('show');
+        setTimeout(function() {
+            t.classList.remove('show');
+            setTimeout(function() { t.classList.add('hidden'); }, 250);
+        }, duration || 3000);
+    }
+
+    /* ================================================================
+       STANDARD NAVIGATION PATTERN
+       Always pass ALL known data to the next page via URL params.
+
+       Example:
+       function navigateToTest(sessionId) {
+           var p = new URLSearchParams();
+           p.set('id', sessionId);
+           if (ip) p.set('ip', ip);
+           if (mac) p.set('mac', mac);
+           if (vendor) p.set('vendor', vendor);
+           if (model) p.set('model', model);
+           if (server) p.set('server', server);
+           if (hostname) p.set('hostname', hostname);
+           if (ports) p.set('ports', ports);
+           if (user) p.set('user', user);
+           if (channel) p.set('channel', channel);
+           if (ids) p.set('ids', ids);
+           window.location.href = 'test.html?' + p.toString();
+       }
+       ================================================================ */
+
+    /* ================================================================
+       STANDARD API CALL PATTERN
+       All API calls go to api/* endpoints. Handle errors consistently.
+
+       Example:
+       async function loadData() {
+           try {
+               var r = await fetch('api/endpoint?param=' + encodeURIComponent(value));
+               if (!r.ok) {
+                   var text = await r.text();
+                   showToast(text || 'Error ' + r.status);
+                   return;
+               }
+               var data = await r.json();
+               // use data...
+           } catch (e) {
+               showToast('Connection error: ' + e.message);
+           }
+       }
+
+       POST example:
+       async function submitData(payload) {
+           try {
+               var r = await fetch('api/endpoint', {
+                   method: 'POST',
+                   headers: { 'Content-Type': 'application/json' },
+                   body: JSON.stringify(payload)
+               });
+               if (!r.ok) {
+                   var text = await r.text();
+                   showToast(text || 'Error ' + r.status);
+                   return;
+               }
+               var data = await r.json();
+               // use data...
+           } catch (e) {
+               showToast('Connection error: ' + e.message);
+           }
+       }
+       ================================================================ */
+
+    /* ================================================================
+       STANDARD URL FORMAT HELPER
+       Used to colorize scheme:// prefix in stream URLs.
+
+       Example:
+       function formatURL(el, url) {
+           var schemeEnd = url.indexOf('://');
+           if (schemeEnd === -1) {
+               el.textContent = url;
+               return;
+           }
+           var scheme = document.createElement('span');
+           scheme.className = 'scheme';
+           scheme.textContent = url.substring(0, schemeEnd + 3);
+           el.appendChild(scheme);
+           el.appendChild(document.createTextNode(url.substring(schemeEnd + 3)));
+       }
+       ================================================================ */
+
+    /* ================================================================
+       STANDARD COPY TO CLIPBOARD
+       Example:
+       function copyText(text) {
+           var ta = document.createElement('textarea');
+           ta.value = text;
+           ta.style.position = 'fixed';
+           ta.style.left = '-9999px';
+           document.body.appendChild(ta);
+           ta.select();
+           document.execCommand('copy');
+           document.body.removeChild(ta);
+       }
+       ================================================================ */
+
+    /* ================================================================
+       PAGE INIT PATTERN
+       Every page starts by reading URL params:
+
+       var params = new URLSearchParams(location.search);
+       var ip = params.get('ip') || '';
+       var mac = params.get('mac') || '';
+       var vendor = params.get('vendor') || '';
+       var model = params.get('model') || '';
+       var server = params.get('server') || '';
+       var hostname = params.get('hostname') || '';
+       var ports = params.get('ports') || '';
+       var user = params.get('user') || '';
+       var channel = params.get('channel') || '';
+
+       Back button always goes to history.back() or a specific page:
+       document.getElementById('btn-back').addEventListener('click', function() {
+           history.back();
+       });
+
+       For centered layouts (homekit.html), the back button is placed
+       OUTSIDE the container in a .back-wrapper div with position:absolute,
+       aligned wider than the content so it floats at the top-left of
+       the content area but not the screen edge.
+       ================================================================ */
+
+    /* ================================================================
+       PIN INPUT PATTERN
+       For segmented code entry. Each digit is a separate <input>.
+       Auto-advance on input, backspace goes to previous field.
+       Supports paste (distributes digits across fields).
+
+       HTML structure:
+       <div class="pin-row">
+           <div class="pin-group" id="group-0"></div>
+           <span class="pin-separator">-</span>
+           <div class="pin-group" id="group-1"></div>
+           <span class="pin-separator">-</span>
+           <div class="pin-group" id="group-2"></div>
+       </div>
+
+       JS creates inputs dynamically:
+       var pinGroups = [3, 2, 3]; // digits per group
+       var inputs = [];
+       pinGroups.forEach(function(count, gi) {
+           var group = document.getElementById('group-' + gi);
+           for (var i = 0; i < count; i++) {
+               var input = document.createElement('input');
+               input.type = 'text';
+               input.inputMode = 'numeric';
+               input.maxLength = 1;
+               input.className = 'pin-digit';
+               input.autocomplete = 'off';
+               group.appendChild(input);
+               inputs.push(input);
+           }
+       });
+
+       States: .filled (has value), .error (wrong), .success (paired)
+       ================================================================ */
+</script>
+
+</body>
+</html>

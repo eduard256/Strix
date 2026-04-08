@@ -317,13 +317,18 @@
 
             const data = await r.json();
 
-            if (data.type === 'standard' || (data.reachable && data.type !== 'homekit')) {
-                navigateStandard(ip, data);
+            if (data.type === 'onvif') {
+                navigateOnvif(ip, data);
                 return;
             }
 
             if (data.type === 'homekit') {
                 navigateHomeKit(ip, data);
+                return;
+            }
+
+            if (data.type === 'standard' || data.reachable) {
+                navigateStandard(ip, data);
                 return;
             }
 
@@ -338,6 +343,46 @@
             btnCheck.disabled = false;
             btnCheck.textContent = 'Check Address';
         }
+    }
+
+    function navigateOnvif(ip, data) {
+        var p = new URLSearchParams();
+        p.set('ip', ip);
+
+        var probes = data.probes || {};
+
+        if (probes.ports && probes.ports.open && probes.ports.open.length) {
+            p.set('ports', probes.ports.open.join(','));
+        }
+        if (probes.arp) {
+            if (probes.arp.mac) p.set('mac', probes.arp.mac);
+            if (probes.arp.vendor) p.set('vendor', probes.arp.vendor);
+        }
+        if (probes.http && probes.http.server) {
+            p.set('server', probes.http.server);
+        }
+        if (probes.dns && probes.dns.hostname) {
+            p.set('hostname', probes.dns.hostname);
+        }
+        if (probes.ping && probes.ping.latency_ms) {
+            p.set('latency', Math.round(probes.ping.latency_ms));
+        }
+        if (probes.onvif) {
+            if (probes.onvif.url) p.set('onvif_url', probes.onvif.url);
+            if (probes.onvif.port) p.set('onvif_port', probes.onvif.port);
+            if (probes.onvif.name) p.set('onvif_name', probes.onvif.name);
+            if (probes.onvif.hardware) p.set('onvif_hardware', probes.onvif.hardware);
+        }
+        if (probes.mdns) {
+            if (probes.mdns.name) p.set('mdns_name', probes.mdns.name);
+            if (probes.mdns.model) p.set('mdns_model', probes.mdns.model);
+            if (probes.mdns.category) p.set('mdns_category', probes.mdns.category);
+            if (probes.mdns.device_id) p.set('mdns_device_id', probes.mdns.device_id);
+            if (probes.mdns.port) p.set('mdns_port', probes.mdns.port);
+            p.set('mdns_paired', probes.mdns.paired ? '1' : '0');
+        }
+
+        window.location.href = 'onvif.html?' + p.toString();
     }
 
     function navigateStandard(ip, data) {
