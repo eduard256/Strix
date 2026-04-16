@@ -413,6 +413,54 @@ main_loop() {
 }
 
 # ---------------------------------------------------------------------------
+# Launch navigator based on detected system
+# ---------------------------------------------------------------------------
+launch_navigator() {
+    if [[ ! -f "$DETECT_RESULT" ]]; then
+        main_loop
+        restore_screen
+        return
+    fi
+
+    local sys_type
+    sys_type=$(grep -oP '"type"\s*:\s*"\K(proxmox|linux|macos)' "$DETECT_RESULT" | head -1)
+
+    case "$sys_type" in
+        proxmox)
+            sleep 3
+            restore_screen
+
+            local proxmox_script="/tmp/strix-proxmox-$$.sh"
+            curl -fsSL "${DETECT_BASE}/proxmox.sh" -o "$proxmox_script" 2>/dev/null
+            if [[ -f "$proxmox_script" ]]; then
+                bash "$proxmox_script"
+                rm -f "$proxmox_script"
+            fi
+            ;;
+        linux)
+            sleep 3
+            restore_screen
+
+            local linux_script="/tmp/strix-linux-$$.sh"
+            curl -fsSL "${DETECT_BASE}/linux.sh" -o "$linux_script" 2>/dev/null
+            if [[ -f "$linux_script" ]]; then
+                bash "$linux_script"
+                rm -f "$linux_script"
+            fi
+            ;;
+        macos)
+            print_at_center "$((STATUS_ROW + 6))" "macOS installer coming soon" "\033[33m"
+            main_loop
+            restore_screen
+            ;;
+        *)
+            main_loop
+            restore_screen
+            ;;
+    esac
+}
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
@@ -444,8 +492,9 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     # Draw real results
     draw_detect_results || true
 
-    # Owl animation (infinite)
-    main_loop
+    # Check system type and launch appropriate navigator
+    launch_navigator
 
-    restore_screen
+    # Cleanup
+    rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null
 fi
