@@ -225,7 +225,7 @@ run_worker() {
     echo ""
 
     bash "$script" "$@" 2>/dev/null | while IFS= read -r line; do
-        local type msg
+        type=""; msg=""
         type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
         msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
 
@@ -285,6 +285,9 @@ echo -e "  ${C_DIM}Mode: ${INSTALL_MODE} | Port: ${STRIX_PORT}${C_RESET}"
 echo ""
 
 # Step 1: Create LXC container
+echo -e "  ${C_MAGENTA}${C_BOLD}--- Creating LXC Container ---${C_RESET}"
+echo ""
+
 lxc_script=$(download_worker "proxmox-lxc-create.sh")
 
 lxc_args=""
@@ -304,7 +307,7 @@ lxc_done=$(echo "$lxc_output" | grep '"type":"done"')
 
 # Display LXC creation events
 echo "$lxc_output" | while IFS= read -r line; do
-    local type msg
+    type=""; msg=""
     type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
     msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
     case "$type" in
