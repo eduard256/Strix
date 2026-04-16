@@ -188,18 +188,236 @@ advanced_flow() {
 }
 
 # ---------------------------------------------------------------------------
+# Colors
+# ---------------------------------------------------------------------------
+C_RESET="\033[0m"
+C_BOLD="\033[1m"
+C_DIM="\033[2m"
+C_GREEN="\033[32m"
+C_RED="\033[31m"
+C_YELLOW="\033[33m"
+C_CYAN="\033[36m"
+C_WHITE="\033[97m"
+C_MAGENTA="\033[35m"
+
+# ---------------------------------------------------------------------------
+# Worker runner: streams JSON events and prints status lines
+# ---------------------------------------------------------------------------
+SCRIPTS_BASE="https://raw.githubusercontent.com/eduard256/Strix/main/scripts"
+
+# Download a worker script to /tmp
+download_worker() {
+    local name="$1"
+    local dest="/tmp/strix-${name}"
+    curl -fsSL "${SCRIPTS_BASE}/${name}" -o "$dest" 2>/dev/null
+    echo "$dest"
+}
+
+# Run a worker and display its JSON events as status lines
+run_worker() {
+    local script="$1"
+    shift
+    local label="$1"
+    shift
+
+    echo ""
+    echo -e "  ${C_MAGENTA}${C_BOLD}--- ${label} ---${C_RESET}"
+    echo ""
+
+    bash "$script" "$@" 2>/dev/null | while IFS= read -r line; do
+        local type msg
+        type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
+        msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
+
+        case "$type" in
+            check)   echo -e "  ${C_CYAN}[..]${C_RESET}  ${msg}" ;;
+            ok)      echo -e "  ${C_GREEN}[OK]${C_RESET}  ${msg}" ;;
+            miss)    echo -e "  ${C_YELLOW}[--]${C_RESET}  ${msg}" ;;
+            install) echo -e "  ${C_CYAN}[>>]${C_RESET}  ${msg}" ;;
+            error)   echo -e "  ${C_RED}[XX]${C_RESET}  ${msg}" ;;
+            done)    ;; # handled after loop
+        esac
+    done
+
+    echo ""
+}
+
+# Extract a field from JSON done line
+json_field() {
+    echo "$1" | grep -oP "\"$2\"\s*:\s*\"\K[^\"]*" | head -1
+}
+
+# ---------------------------------------------------------------------------
+# Show final URLs
+# ---------------------------------------------------------------------------
+show_urls() {
+    local ip="$1"
+    local port="$2"
+    local mode="$3"
+
+    echo ""
+    echo -e "  ${C_GREEN}${C_BOLD}====================================${C_RESET}"
+    echo -e "  ${C_GREEN}${C_BOLD}  Installation Complete${C_RESET}"
+    echo -e "  ${C_GREEN}${C_BOLD}====================================${C_RESET}"
+    echo ""
+    echo -e "  ${C_WHITE}${C_BOLD}Strix:${C_RESET}           ${C_CYAN}http://${ip}:${port}${C_RESET}"
+
+    if [[ "$mode" == "strix-frigate" ]]; then
+        echo -e "  ${C_WHITE}${C_BOLD}Frigate:${C_RESET}         ${C_CYAN}http://${ip}:8971${C_RESET}"
+        echo -e "  ${C_WHITE}${C_BOLD}Frigate API:${C_RESET}     ${C_CYAN}http://${ip}:5000${C_RESET}"
+        echo -e "  ${C_WHITE}${C_BOLD}go2rtc:${C_RESET}          ${C_CYAN}http://${ip}:1984${C_RESET}"
+    fi
+
+    echo ""
+    echo -e "  ${C_DIM}Press Enter to exit${C_RESET}"
+    read -r
+}
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 simple_flow
 
 clear
-echo "Mode:      $INSTALL_MODE"
-echo "Port:      $STRIX_PORT"
-[[ -n "$FRIGATE_URL" ]] && echo "Frigate:   $FRIGATE_URL"
-[[ -n "$GO2RTC_URL" ]]  && echo "go2rtc:    $GO2RTC_URL"
-echo "LXC:       ${LXC_HOSTNAME} ${LXC_MEMORY}MB ${LXC_CORES}cpu ${LXC_DISK}GB"
-echo "Network:   ${LXC_IP} ${LXC_GATEWAY:+gw $LXC_GATEWAY}"
-echo "Bridge:    ${LXC_BRIDGE:-auto}"
-echo "Storage:   ${LXC_STORAGE:-auto}"
 echo ""
-echo "(Workers would run here)"
+echo -e "  ${C_MAGENTA}${C_BOLD}STRIX INSTALLER${C_RESET}"
+echo -e "  ${C_DIM}Mode: ${INSTALL_MODE} | Port: ${STRIX_PORT}${C_RESET}"
+echo ""
+
+# Step 1: Create LXC container
+lxc_script=$(download_worker "proxmox-lxc-create.sh")
+
+lxc_args=""
+[[ -n "$LXC_HOSTNAME" ]] && lxc_args="$lxc_args --hostname $LXC_HOSTNAME"
+[[ -n "$LXC_MEMORY" ]]   && lxc_args="$lxc_args --memory $LXC_MEMORY"
+[[ -n "$LXC_CORES" ]]    && lxc_args="$lxc_args --cores $LXC_CORES"
+[[ -n "$LXC_DISK" ]]     && lxc_args="$lxc_args --disk $LXC_DISK"
+[[ -n "$LXC_SWAP" ]]     && lxc_args="$lxc_args --swap $LXC_SWAP"
+[[ -n "$LXC_BRIDGE" ]]   && lxc_args="$lxc_args --bridge $LXC_BRIDGE"
+[[ -n "$LXC_STORAGE" ]]  && lxc_args="$lxc_args --storage $LXC_STORAGE"
+[[ "$LXC_IP" != "dhcp" && -n "$LXC_IP" ]] && lxc_args="$lxc_args --ip $LXC_IP"
+[[ -n "$LXC_GATEWAY" ]]  && lxc_args="$lxc_args --gateway $LXC_GATEWAY"
+
+# Run LXC creation and capture full output
+lxc_output=$(bash "$lxc_script" $lxc_args 2>/dev/null)
+lxc_done=$(echo "$lxc_output" | grep '"type":"done"')
+
+# Display LXC creation events
+echo "$lxc_output" | while IFS= read -r line; do
+    local type msg
+    type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
+    msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
+    case "$type" in
+        check)   echo -e "  ${C_CYAN}[..]${C_RESET}  ${msg}" ;;
+        ok)      echo -e "  ${C_GREEN}[OK]${C_RESET}  ${msg}" ;;
+        miss)    echo -e "  ${C_YELLOW}[--]${C_RESET}  ${msg}" ;;
+        install) echo -e "  ${C_CYAN}[>>]${C_RESET}  ${msg}" ;;
+        error)   echo -e "  ${C_RED}[XX]${C_RESET}  ${msg}" ;;
+    esac
+done
+
+# Check if LXC creation succeeded
+lxc_ok=$(echo "$lxc_done" | grep -oP '"ok"\s*:\s*\K[a-z]+' | head -1)
+if [[ "$lxc_ok" != "true" ]]; then
+    echo ""
+    echo -e "  ${C_RED}${C_BOLD}LXC creation failed. Aborting.${C_RESET}"
+    rm -f "$lxc_script"
+    exit 1
+fi
+
+# Extract LXC data
+CT_ID=$(json_field "$lxc_done" "id")
+CT_IP=$(json_field "$lxc_done" "ip")
+CT_PASS=$(json_field "$lxc_done" "password")
+
+echo ""
+echo -e "  ${C_GREEN}${C_BOLD}LXC ${CT_ID} ready${C_RESET} -- IP: ${C_WHITE}${CT_IP}${C_RESET}"
+
+# Step 2: Run prepare.sh inside LXC (install Docker)
+echo ""
+echo -e "  ${C_MAGENTA}${C_BOLD}--- Installing Docker ---${C_RESET}"
+echo ""
+
+prepare_script=$(download_worker "prepare.sh")
+pct push "$CT_ID" "$prepare_script" /tmp/prepare.sh &>/dev/null
+
+pct exec "$CT_ID" -- bash /tmp/prepare.sh 2>/dev/null | while IFS= read -r line; do
+    type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
+    msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
+    case "$type" in
+        check)   echo -e "  ${C_CYAN}[..]${C_RESET}  ${msg}" ;;
+        ok)      echo -e "  ${C_GREEN}[OK]${C_RESET}  ${msg}" ;;
+        miss)    echo -e "  ${C_YELLOW}[--]${C_RESET}  ${msg}" ;;
+        install) echo -e "  ${C_CYAN}[>>]${C_RESET}  ${msg}" ;;
+        error)   echo -e "  ${C_RED}[XX]${C_RESET}  ${msg}" ;;
+    esac
+done
+
+# Step 3: Deploy Strix (or Strix + Frigate)
+if [[ "$INSTALL_MODE" == "strix-frigate" ]]; then
+    echo ""
+    echo -e "  ${C_MAGENTA}${C_BOLD}--- Deploying Strix + Frigate ---${C_RESET}"
+    echo ""
+
+    deploy_script=$(download_worker "strix-frigate.sh")
+    pct push "$CT_ID" "$deploy_script" /tmp/deploy.sh &>/dev/null
+
+    deploy_args="--port $STRIX_PORT"
+    [[ -n "$GO2RTC_URL" ]] && deploy_args="$deploy_args --go2rtc-url $GO2RTC_URL"
+
+    deploy_output=$(pct exec "$CT_ID" -- bash /tmp/deploy.sh $deploy_args 2>/dev/null)
+    deploy_done=$(echo "$deploy_output" | grep '"type":"done"')
+
+    echo "$deploy_output" | while IFS= read -r line; do
+        type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
+        msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
+        case "$type" in
+            check)   echo -e "  ${C_CYAN}[..]${C_RESET}  ${msg}" ;;
+            ok)      echo -e "  ${C_GREEN}[OK]${C_RESET}  ${msg}" ;;
+            miss)    echo -e "  ${C_YELLOW}[--]${C_RESET}  ${msg}" ;;
+            install) echo -e "  ${C_CYAN}[>>]${C_RESET}  ${msg}" ;;
+            error)   echo -e "  ${C_RED}[XX]${C_RESET}  ${msg}" ;;
+        esac
+    done
+
+else
+    echo ""
+    echo -e "  ${C_MAGENTA}${C_BOLD}--- Deploying Strix ---${C_RESET}"
+    echo ""
+
+    deploy_script=$(download_worker "strix.sh")
+    pct push "$CT_ID" "$deploy_script" /tmp/deploy.sh &>/dev/null
+
+    deploy_args="--port $STRIX_PORT"
+    [[ -n "$FRIGATE_URL" ]] && deploy_args="$deploy_args --frigate-url $FRIGATE_URL"
+    [[ -n "$GO2RTC_URL" ]]  && deploy_args="$deploy_args --go2rtc-url $GO2RTC_URL"
+
+    deploy_output=$(pct exec "$CT_ID" -- bash /tmp/deploy.sh $deploy_args 2>/dev/null)
+    deploy_done=$(echo "$deploy_output" | grep '"type":"done"')
+
+    echo "$deploy_output" | while IFS= read -r line; do
+        type=$(echo "$line" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1)
+        msg=$(echo "$line" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1)
+        case "$type" in
+            check)   echo -e "  ${C_CYAN}[..]${C_RESET}  ${msg}" ;;
+            ok)      echo -e "  ${C_GREEN}[OK]${C_RESET}  ${msg}" ;;
+            miss)    echo -e "  ${C_YELLOW}[--]${C_RESET}  ${msg}" ;;
+            install) echo -e "  ${C_CYAN}[>>]${C_RESET}  ${msg}" ;;
+            error)   echo -e "  ${C_RED}[XX]${C_RESET}  ${msg}" ;;
+        esac
+    done
+fi
+
+# Show final URLs
+deploy_ok=$(echo "$deploy_done" | grep -oP '"ok"\s*:\s*\K[a-z]+' | head -1)
+if [[ "$deploy_ok" == "true" ]]; then
+    show_urls "$CT_IP" "$STRIX_PORT" "$INSTALL_MODE"
+else
+    echo ""
+    echo -e "  ${C_RED}${C_BOLD}Deployment failed.${C_RESET}"
+    echo -e "  ${C_DIM}LXC ${CT_ID} (${CT_IP}) is still running. Check logs inside.${C_RESET}"
+    echo ""
+fi
+
+# Cleanup
+rm -f "$lxc_script" "$prepare_script" "$deploy_script" 2>/dev/null
