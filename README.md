@@ -41,11 +41,13 @@ Camera stream discovery and Frigate config generator.
 
 ## Install
 
-Any Linux, one command:
+Any Linux or Proxmox, one command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/install.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/install.sh)
 ```
+
+Run as root (or with `sudo`). Interactive installer detects your system (Linux / Proxmox) and guides you through setup.
 
 Open `http://YOUR_IP:4567`
 
