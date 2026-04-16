@@ -8,8 +8,8 @@
 # Then guides the user through installation by calling worker scripts.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/scripts/install.sh | bash
-#   bash scripts/install.sh
+#   curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/install.sh | bash
+#   bash install.sh
 # =============================================================================
 
 # ---------------------------------------------------------------------------
