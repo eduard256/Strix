@@ -1,5 +1,14 @@
 # Strix + Frigate
-# Usage: docker compose -f docker-compose.frigate.yml up -d
+# Usage:
+#   curl -O https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.frigate.yml
+#   mkdir -p frigate/config frigate/storage
+#   docker compose -f docker-compose.frigate.yml up -d
+#
+# Strix UI:        http://YOUR_IP:4567
+# Frigate UI:      http://YOUR_IP:8971
+# Frigate API:     http://YOUR_IP:5000  (internal, no auth)
+# go2rtc UI:       http://YOUR_IP:1984  (built into Frigate)
+# RTSP restream:   rtsp://YOUR_IP:8554
 
 services:
   strix:
@@ -9,22 +18,31 @@ services:
     restart: unless-stopped
     environment:
       STRIX_LISTEN: ":4567"
-      STRIX_FRIGATE_URL: "http://localhost:8971"
+      STRIX_FRIGATE_URL: "http://localhost:5000"
+      # STRIX_GO2RTC_URL: "http://localhost:1984"
       # STRIX_LOG_LEVEL: debug
     depends_on:
-      - frigate
+      frigate:
+        condition: service_started
 
   frigate:
     container_name: frigate
     image: ghcr.io/blakeblackshear/frigate:stable
     privileged: true
+    network_mode: host
     restart: unless-stopped
     stop_grace_period: 30s
     shm_size: "512mb"
+    # Uncomment devices for your hardware:
     # devices:
-    #   - /dev/bus/usb:/dev/bus/usb          # USB Coral
-    #   - /dev/apex_0:/dev/apex_0            # PCIe Coral
-    #   - /dev/dri/renderD128:/dev/dri/renderD128  # Intel/AMD GPU
+    #   - /dev/bus/usb:/dev/bus/usb            # USB Coral
+    #   - /dev/apex_0:/dev/apex_0              # PCIe Coral
+    #   - /dev/dri:/dev/dri                    # Intel/AMD GPU
+    #   - /dev/accel:/dev/accel                # Intel NPU
+    #   - /dev/video11:/dev/video11            # Raspberry Pi 4
+    # For Nvidia GPU use image: ghcr.io/blakeblackshear/frigate:stable-tensorrt
+    # For AMD GPU use image: ghcr.io/blakeblackshear/frigate:stable-rocm
+    # For Rockchip use image: ghcr.io/blakeblackshear/frigate:stable-rk
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./frigate/config:/config
@@ -33,10 +51,5 @@ services:
         target: /tmp/cache
         tmpfs:
           size: 1000000000
-    ports:
-      - "8971:8971"
-      - "8554:8554"
-      - "8555:8555/tcp"
-      - "8555:8555/udp"
     environment:
       FRIGATE_RTSP_PASSWORD: "password"
