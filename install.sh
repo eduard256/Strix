@@ -1,894 +1,500 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Strix Installer
-# Universal installer for any Linux distribution.
-# Installs Docker (via get.docker.com), Docker Compose, detects Frigate/go2rtc,
-# and deploys Strix via docker compose.
+# Strix -- install.sh (navigator / frontend)
+#
+# Main entry point for Strix installation.
+# Shows animated owl + STRIX logo while running background checks.
+# Detects system type (Proxmox / Linux / macOS), Docker, Frigate, go2rtc.
+# Then guides the user through installation by calling worker scripts.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/install.sh | sudo bash
-#   sudo bash install.sh [OPTIONS]
-#
-# Options:
-#   --no-logo          Suppress ASCII logo (useful when called from another script)
-#   --no-color         Disable colored output
-#   --yes, -y          Non-interactive mode, accept all defaults
-#   --version TAG      Set image tag without prompt (latest/dev/1.0.9)
-#   --verbose, -v      Show detailed output from docker commands
-#
-# Exit codes:
-#   0 = success
-#   1 = docker installation failed
-#   2 = docker compose not available
-#   3 = image pull failed
-#   4 = container failed to start
-#   5 = healthcheck failed
+#   curl -fsSL https://raw.githubusercontent.com/eduard256/Strix/main/install.sh | bash
+#   bash install.sh
 # =============================================================================
 
-set -euo pipefail
+# ---------------------------------------------------------------------------
+# Owl definitions (5 lines each: line1, line2, line3, line4, name)
+# ---------------------------------------------------------------------------
+OWL_COUNT=5
+
+# Wide-eyed owl
+OWL_0_1="   ___"
+OWL_0_2="  <O,O>"
+OWL_0_3="  [\`-']"
+OWL_0_4="  -\"-\"-"
+OWL_0_NAME="wide-eyed owl"
+
+# Happy owl
+OWL_1_1="   ___"
+OWL_1_2="  <^,^>"
+OWL_1_3="  [\`-']"
+OWL_1_4="  -\"-\"-"
+OWL_1_NAME="happy owl"
+
+# Winking owl
+OWL_2_1="   ___"
+OWL_2_2="  <*,->"
+OWL_2_3="  [\`-']"
+OWL_2_4="  -\"-\"-"
+OWL_2_NAME="winking owl"
+
+# Flying owl
+OWL_3_1="   ___"
+OWL_3_2="  <*,*>"
+OWL_3_3="  =^\`-'^="
+OWL_3_4="    \" \""
+OWL_3_NAME="flying owl"
+
+# Super owl
+OWL_4_1="   ___"
+OWL_4_2="  <*,*>"
+OWL_4_3="  [\`S']"
+OWL_4_4="  -\"-\"-"
+OWL_4_NAME="super owl"
 
 # ---------------------------------------------------------------------------
-# Globals
-# ---------------------------------------------------------------------------
-STRIX_DIR="/opt/strix"
-STRIX_PORT="4567"
-IMAGE="eduard256/strix"
-LOG_FILE="${STRIX_DIR}/install.log"
-DIALOG_TIMEOUT=10
-
-# Flags (overridden by CLI args)
-SHOW_LOGO=true
-USE_COLOR=true
-INTERACTIVE=true
-VERBOSE=false
-TAG=""
-
-# Result variables (printed at the end for parent scripts)
-INSTALL_MODE=""        # install | update
-FRIGATE_STATUS="none"  # found | set | none
-GO2RTC_STATUS="none"   # found | set | none
-FINAL_VERSION=""
-
-# ---------------------------------------------------------------------------
-# Parse CLI arguments
-# ---------------------------------------------------------------------------
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --no-logo)   SHOW_LOGO=false; shift ;;
-        --no-color)  USE_COLOR=false;  shift ;;
-        --yes|-y)    INTERACTIVE=false; shift ;;
-        --verbose|-v) VERBOSE=true;    shift ;;
-        --version)   TAG="$2";         shift 2 ;;
-        *)           shift ;;
-    esac
-done
-
-# ---------------------------------------------------------------------------
-# Color setup
-# ---------------------------------------------------------------------------
-setup_colors() {
-    if [[ "$USE_COLOR" == false ]] || [[ "${NO_COLOR:-}" != "" ]] || [[ ! -t 1 ]]; then
-        USE_COLOR=false
-        C_RESET="" C_BOLD="" C_DIM=""
-        C_RED="" C_GREEN="" C_YELLOW="" C_CYAN="" C_MAGENTA="" C_WHITE=""
-        return
-    fi
-
-    local colors
-    colors=$(tput colors 2>/dev/null || echo 0)
-    if [[ "$colors" -lt 8 ]]; then
-        USE_COLOR=false
-        C_RESET="" C_BOLD="" C_DIM=""
-        C_RED="" C_GREEN="" C_YELLOW="" C_CYAN="" C_MAGENTA="" C_WHITE=""
-        return
-    fi
-
-    C_RESET="\033[0m"
-    C_BOLD="\033[1m"
-    C_DIM="\033[2m"
-    C_RED="\033[31m"
-    C_GREEN="\033[32m"
-    C_YELLOW="\033[33m"
-    C_CYAN="\033[36m"
-    C_MAGENTA="\033[35m"
-    C_WHITE="\033[97m"
-}
-
-# ---------------------------------------------------------------------------
-# Terminal width helpers
+# Terminal helpers
 # ---------------------------------------------------------------------------
 term_width() {
     local w
     w=$(tput cols 2>/dev/null || echo 80)
-    [[ "$w" -lt 40 ]] && w=40
+    [[ "$w" -lt 20 ]] && w=80
     echo "$w"
 }
 
-# Print text centered in terminal
-center() {
-    local text="$1"
+term_height() {
+    local h
+    h=$(tput lines 2>/dev/null || echo 24)
+    [[ "$h" -lt 10 ]] && h=24
+    echo "$h"
+}
+
+# Print text centered horizontally at a specific row
+# Usage: print_at_center ROW "text" [color_code]
+print_at_center() {
+    local row="$1"
+    local text="$2"
+    local color="${3:-}"
+    local reset="\033[0m"
+
     local w
     w=$(term_width)
-    # Strip ANSI codes for length calculation
+
+    # Strip ANSI for length calc
     local stripped
     stripped=$(echo -e "$text" | sed 's/\x1b\[[0-9;]*m//g')
     local len=${#stripped}
-    local pad=$(( (w - len) / 2 ))
-    [[ "$pad" -lt 0 ]] && pad=0
-    printf "%*s%b\n" "$pad" "" "$text"
-}
+    local col=$(( (w - len) / 2 ))
+    [[ "$col" -lt 0 ]] && col=0
 
-# ---------------------------------------------------------------------------
-# Logging
-# ---------------------------------------------------------------------------
-mkdir -p "$STRIX_DIR" 2>/dev/null || true
-
-log_raw() {
-    local ts
-    ts=$(date '+%H:%M:%S')
-    echo -e "$ts  $1" >> "$LOG_FILE" 2>/dev/null || true
-}
-
-log() {
-    log_raw "$1"
-    if [[ "$VERBOSE" == true ]]; then
-        local ts
-        ts=$(date '+%H:%M:%S')
-        echo -e "  ${C_DIM}${ts}  $1${C_RESET}"
+    tput cup "$row" "$col" 2>/dev/null
+    if [[ -n "$color" ]]; then
+        echo -ne "${color}${text}${reset}"
+    else
+        echo -ne "${text}"
     fi
 }
 
-# Status line helpers
-status_ok()   { echo -e "  ${C_GREEN}${C_BOLD}[OK]${C_RESET}  $1"; log "[OK] $1"; }
-status_warn() { echo -e "  ${C_YELLOW}${C_BOLD}[!!]${C_RESET}  $1"; log "[!!] $1"; }
-status_fail() { echo -e "  ${C_RED}${C_BOLD}[XX]${C_RESET}  $1"; log "[XX] $1"; }
-status_info() { echo -e "  ${C_CYAN}${C_BOLD}[..]${C_RESET}  $1"; log "[..] $1"; }
-status_skip() { echo -e "  ${C_DIM}[--]${C_RESET}  $1"; log "[--] $1"; }
-
 # ---------------------------------------------------------------------------
-# ASCII art
+# Show a single owl centered on screen
+# Usage: show_owl INDEX [brightness]
+#   brightness: "bright" "dim" "verydim" "hidden"
 # ---------------------------------------------------------------------------
-show_logo() {
-    [[ "$SHOW_LOGO" == false ]] && return
+show_owl() {
+    local idx="$1"
+    local brightness="${2:-bright}"
 
-    echo ""
+    local color=""
+    case "$brightness" in
+        bright)  color="\033[97m" ;;     # bright white
+        dim)     color="\033[37m" ;;     # normal white
+        verydim) color="\033[90m" ;;     # dark gray
+        hidden)  color="\033[30m" ;;     # black (invisible)
+    esac
 
-    # Block STRIX title
-    center "${C_MAGENTA}${C_BOLD}███████╗████████╗██████╗ ██╗██╗  ██╗${C_RESET}"
-    center "${C_MAGENTA}${C_BOLD}██╔════╝╚══██╔══╝██╔══██╗██║╚██╗██╔╝${C_RESET}"
-    center "${C_MAGENTA}${C_BOLD}███████╗   ██║   ██████╔╝██║ ╚███╔╝${C_RESET}"
-    center "${C_MAGENTA}${C_BOLD}╚════██║   ██║   ██╔══██╗██║ ██╔██╗${C_RESET}"
-    center "${C_MAGENTA}${C_BOLD}███████║   ██║   ██║  ██║██║██╔╝ ██╗${C_RESET}"
-    center "${C_MAGENTA}${C_BOLD}╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝${C_RESET}"
+    local name_color=""
+    case "$brightness" in
+        bright)  name_color="\033[36m" ;;   # cyan
+        dim)     name_color="\033[2;36m" ;; # dim cyan
+        verydim) name_color="\033[90m" ;;   # dark gray
+        hidden)  name_color="\033[30m" ;;   # black
+    esac
 
-    echo ""
+    # Get owl lines by index
+    local l1 l2 l3 l4 name
+    eval "l1=\"\$OWL_${idx}_1\""
+    eval "l2=\"\$OWL_${idx}_2\""
+    eval "l3=\"\$OWL_${idx}_3\""
+    eval "l4=\"\$OWL_${idx}_4\""
+    eval "name=\"\$OWL_${idx}_NAME\""
 
-    # Owl
-    center "${C_CYAN}     __________-------____                 ____-------__________${C_RESET}"
-    center "${C_CYAN}    \\------____-------___--__---------__--___-------____------/${C_RESET}"
-    center "${C_CYAN}     \\//////// / / / / / \\   _-------_   / \\ \\ \\ \\ \\ \\\\\\\\\\\\\\\\/${C_RESET}"
-    center "${C_CYAN}       \\////-/-/------/_/_| /___   ___\\ |_\\_\\------\\-\\-\\\\\\\\/${C_RESET}"
-    center "${C_CYAN}         --//// / /  /  //|| ${C_YELLOW}(O)${C_CYAN}\\ /${C_YELLOW}(O)${C_CYAN} ||\\\\  \\  \\ \\ \\\\\\\\--${C_RESET}"
-    center "${C_CYAN}              ---__/  // /| \\_  /V\\  _/ |\\ \\\\  \\__---${C_RESET}"
-    center "${C_CYAN}                   -//  / /\\_ ------- _/\\ \\  \\\\-${C_RESET}"
-    center "${C_CYAN}                     \\_/_/ /\\---------/\\ \\_\\_/${C_RESET}"
-    center "${C_CYAN}                         ----\\   |   /----${C_RESET}"
-    center "${C_CYAN}                              | -|- |${C_RESET}"
-    center "${C_CYAN}                             /   |   \\${C_RESET}"
-    center "${C_CYAN}                             ----  ----${C_RESET}"
+    # Position: top area of screen
+    local start_row=2
 
-    echo ""
-    center "${C_WHITE}${C_BOLD}Smart IP Camera Stream Finder${C_RESET}"
-    center "${C_DIM}────────────────────────────────────────${C_RESET}"
-    echo ""
-}
-
-show_owl_small() {
-    echo -e "  ${C_CYAN}       ,___,${C_RESET}"
-    echo -e "  ${C_CYAN}      /(6 6)\\_${C_RESET}"
-    echo -e "  ${C_CYAN}     /\\\` ' \`'\\\\_${C_RESET}"
-    echo -e "  ${C_CYAN}     \\\\\\\\_''''|\\\\\\\\${C_RESET}"
-    echo -e "  ${C_CYAN}      )\\\\\\\\\\\\''//||/${C_RESET}"
-    echo -e "  ${C_CYAN} ._,--/////\"\"------${C_RESET}"
+    print_at_center "$start_row"       "$l1" "$color"
+    print_at_center "$((start_row+1))" "$l2" "$color"
+    print_at_center "$((start_row+2))" "$l3" "$color"
+    print_at_center "$((start_row+3))" "$l4" "$color"
 }
 
 # ---------------------------------------------------------------------------
-# Dialog boxes
+# Clear owl area (rows 2-6)
 # ---------------------------------------------------------------------------
-
-# Draw a box around content.
-# Usage: draw_box "Title" "line1" "line2" ...
-draw_box() {
-    local title="$1"; shift
+clear_owl_area() {
     local w
     w=$(term_width)
-    local box_w=$(( w - 4 ))
-    [[ "$box_w" -gt 60 ]] && box_w=60
+    local blank
+    blank=$(printf "%*s" "$w" "")
 
-    local top_line=""
-    local bot_line=""
-    local i
-
-    # Build horizontal lines
-    for (( i = 0; i < box_w - 2; i++ )); do
-        top_line="${top_line}─"
-        bot_line="${bot_line}─"
+    for row in 2 3 4 5 6; do
+        tput cup "$row" 0 2>/dev/null
+        echo -ne "$blank"
     done
-
-    # Center the box
-    local pad=$(( (w - box_w) / 2 ))
-    [[ "$pad" -lt 0 ]] && pad=0
-    local sp
-    sp=$(printf "%*s" "$pad" "")
-
-    echo ""
-    echo -e "${sp}${C_CYAN}┌─ ${C_WHITE}${C_BOLD}${title}${C_RESET}${C_CYAN} ${top_line:$(( ${#title} + 3 ))}┐${C_RESET}"
-    echo -e "${sp}${C_CYAN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-
-    for line in "$@"; do
-        local stripped
-        stripped=$(echo -e "$line" | sed 's/\x1b\[[0-9;]*m//g')
-        local line_len=${#stripped}
-        local right_pad=$(( box_w - 2 - line_len ))
-        [[ "$right_pad" -lt 0 ]] && right_pad=0
-        echo -e "${sp}${C_CYAN}│${C_RESET} ${line}$(printf "%*s" "$right_pad" "")${C_CYAN}│${C_RESET}"
-    done
-
-    echo -e "${sp}${C_CYAN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-    echo -e "${sp}${C_CYAN}└${bot_line}┘${C_RESET}"
-    echo ""
 }
 
-# Prompt with timeout. Returns user input or default.
-# Usage: timed_prompt "prompt text" "default" timeout_seconds
-timed_prompt() {
-    local prompt_text="$1"
-    local default="$2"
-    local timeout="$3"
-    local result=""
+# ---------------------------------------------------------------------------
+# Transition: fade out current owl, fade in next
+# ---------------------------------------------------------------------------
+transition_owl() {
+    local from_idx="$1"
+    local to_idx="$2"
 
-    if [[ "$INTERACTIVE" == false ]]; then
-        echo "$default"
-        return
-    fi
+    # Fade out: bright -> dim -> verydim -> hidden
+    show_owl "$from_idx" "dim"
+    sleep 0.1
+    show_owl "$from_idx" "verydim"
+    sleep 0.1
+    clear_owl_area
 
-    # Show countdown hint
-    echo -ne "  ${C_YELLOW}${prompt_text}${C_RESET} ${C_DIM}(${timeout}s -> ${default})${C_RESET}: "
+    # Fade in: hidden -> verydim -> dim -> bright
+    show_owl "$to_idx" "verydim"
+    sleep 0.1
+    show_owl "$to_idx" "dim"
+    sleep 0.1
+    show_owl "$to_idx" "bright"
+}
 
-    if read -r -t "$timeout" result 2>/dev/null; then
-        if [[ -z "$result" ]]; then
-            echo "$default"
+# ---------------------------------------------------------------------------
+# Cycle through all owls with animation
+# Usage: cycle_owls [cycles] [delay_between_seconds]
+#   cycles=0 means infinite
+# ---------------------------------------------------------------------------
+cycle_owls() {
+    local cycles="${1:-3}"
+    local delay="${2:-2}"
+    local infinite=false
+    [[ "$cycles" -eq 0 ]] && infinite=true
+
+    local current=0
+    local i=0
+
+    while [[ "$infinite" == true ]] || [[ "$i" -lt $((cycles * OWL_COUNT)) ]]; do
+        [[ "${_OWL_RUNNING:-true}" == false ]] && return
+
+        local next=$(( (current + 1) % OWL_COUNT ))
+
+        if [[ "$i" -eq 0 ]]; then
+            show_owl "$current" "verydim"
+            sleep 0.1 || return
+            show_owl "$current" "dim"
+            sleep 0.1 || return
+            show_owl "$current" "bright"
         else
-            echo "$result"
+            transition_owl "$current" "$next"
+            current=$next
         fi
-    else
-        echo ""  # newline after timeout
-        echo "$default"
-    fi
+
+        sleep "$delay" || return
+        i=$((i + 1))
+    done
 }
 
 # ---------------------------------------------------------------------------
-# System detection
+# Setup screen
 # ---------------------------------------------------------------------------
-detect_system() {
-    log "Detecting OS from /etc/os-release"
+setup_screen() {
+    tput civis 2>/dev/null
+    clear
+}
 
-    if [[ -f /etc/os-release ]]; then
-        # shellcheck disable=SC1091
-        . /etc/os-release
-        OS_ID="${ID:-unknown}"
-        OS_VERSION="${VERSION_ID:-unknown}"
-        OS_NAME="${PRETTY_NAME:-${ID} ${VERSION_ID}}"
-    else
-        OS_ID="unknown"
-        OS_VERSION="unknown"
-        OS_NAME="Unknown Linux"
+# ---------------------------------------------------------------------------
+# Restore screen
+# ---------------------------------------------------------------------------
+restore_screen() {
+    tput cnorm 2>/dev/null
+    echo -ne "\033[0m"
+    clear
+}
+
+# ---------------------------------------------------------------------------
+# STRIX block title (static, drawn once below owl area)
+# ---------------------------------------------------------------------------
+show_title() {
+    local c="\033[35;1m"  # bold magenta
+    local tr=7
+    print_at_center "$((tr))"   '███████╗████████╗██████╗ ██╗██╗  ██╗' "$c"
+    print_at_center "$((tr+1))" '██╔════╝╚══██╔══╝██╔══██╗██║╚██╗██╔╝' "$c"
+    print_at_center "$((tr+2))" '███████╗   ██║   ██████╔╝██║ ╚███╔╝'  "$c"
+    print_at_center "$((tr+3))" '╚════██║   ██║   ██╔══██╗██║ ██╔██╗'  "$c"
+    print_at_center "$((tr+4))" '███████║   ██║   ██║  ██║██║██╔╝ ██╗' "$c"
+    print_at_center "$((tr+5))" '╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝' "$c"
+}
+
+# ---------------------------------------------------------------------------
+# Detection: download and run detect.sh in background
+# ---------------------------------------------------------------------------
+DETECT_FILE="/tmp/strix-detect-$$.sh"
+DETECT_RESULT="/tmp/strix-detect-$$.out"
+DETECT_BASE="https://raw.githubusercontent.com/eduard256/Strix/main/scripts"
+
+run_detection() {
+    # Download detect.sh
+    local dl_ok=false
+    if command -v curl &>/dev/null; then
+        curl -fsSL "${DETECT_BASE}/detect.sh" -o "$DETECT_FILE" 2>/dev/null && dl_ok=true
+    elif command -v wget &>/dev/null; then
+        wget -qO "$DETECT_FILE" "${DETECT_BASE}/detect.sh" 2>/dev/null && dl_ok=true
     fi
 
-    ARCH=$(uname -m)
-    case "$ARCH" in
-        x86_64)  ARCH_LABEL="amd64" ;;
-        aarch64) ARCH_LABEL="arm64" ;;
-        armv7l)  ARCH_LABEL="armv7" ;;
-        *)       ARCH_LABEL="$ARCH" ;;
+    if [[ "$dl_ok" == false ]] || [[ ! -f "$DETECT_FILE" ]]; then
+        echo '{"type":"error","msg":"Failed to download detect.sh"}' > "$DETECT_RESULT"
+        echo '{"type":"done","ok":false}' >> "$DETECT_RESULT"
+        return 1
+    fi
+
+    # Run detect.sh, redirect stdout to file, stderr to /dev/null
+    bash "$DETECT_FILE" 1>"$DETECT_RESULT" 2>/dev/null
+}
+
+# ---------------------------------------------------------------------------
+# Status table: parse detect.sh JSON output and draw below STRIX title
+# ---------------------------------------------------------------------------
+STATUS_ROW=14
+
+draw_status_line() {
+    local row="$1"
+    local label="$2"
+    local value="$3"
+    local status="${4:-}"
+
+    local lbl_color="\033[37m"
+    local val_color="\033[97m"
+    local dot_color="\033[90m"
+
+    case "$status" in
+        ok)      val_color="\033[32m" ;;
+        miss)    val_color="\033[90m" ;;
+        loading) val_color="\033[33m" ;;
     esac
 
-    log "Detected: ${OS_ID} ${OS_VERSION} (${ARCH_LABEL})"
-    status_ok "System: ${C_WHITE}${C_BOLD}${OS_NAME}${C_RESET} (${ARCH_LABEL})"
+    local w
+    w=$(term_width)
+    local box_w=44
+    local col=$(( (w - box_w) / 2 ))
+    [[ "$col" -lt 0 ]] && col=0
+
+    tput cup "$row" 0 2>/dev/null
+    printf "%*s" "$w" ""
+
+    tput cup "$row" "$col" 2>/dev/null
+
+    local dots_len=$(( box_w - ${#label} - ${#value} - 4 ))
+    [[ "$dots_len" -lt 1 ]] && dots_len=1
+    local dots=""
+    local d
+    for (( d = 0; d < dots_len; d++ )); do dots="${dots}."; done
+
+    echo -ne "${lbl_color}  ${label} ${dot_color}${dots} ${val_color}${value}\033[0m"
 }
 
-# ---------------------------------------------------------------------------
-# Ensure root
-# ---------------------------------------------------------------------------
-ensure_root() {
-    if [[ "$(id -u)" -ne 0 ]]; then
-        status_info "Root privileges required, re-running with sudo..."
-        exec sudo "$0" "$@"
-    fi
+draw_loading_status() {
+    draw_status_line "$STATUS_ROW"       "System"  "detecting..." "loading"
+    draw_status_line "$((STATUS_ROW+1))" "Docker"  "..." "loading"
+    draw_status_line "$((STATUS_ROW+2))" "Compose" "..." "loading"
+    draw_status_line "$((STATUS_ROW+3))" "Frigate" "..." "loading"
+    draw_status_line "$((STATUS_ROW+4))" "go2rtc"  "..." "loading"
 }
 
-# ---------------------------------------------------------------------------
-# Install curl if missing
-# ---------------------------------------------------------------------------
-ensure_curl() {
-    if command -v curl &>/dev/null; then
-        log "curl found"
-        return
-    fi
-
-    status_info "Installing curl..."
-    log "curl not found, installing"
-
-    case "$OS_ID" in
-        ubuntu|debian|raspbian|linuxmint|pop)
-            apt-get update -qq && apt-get install -y -qq curl ;;
-        centos|rhel|rocky|almalinux|ol)
-            yum install -y -q curl ;;
-        fedora)
-            dnf install -y -q curl ;;
-        alpine)
-            apk add --no-cache curl ;;
-        arch|manjaro)
-            pacman -Sy --noconfirm curl ;;
-        opensuse*|sles)
-            zypper install -y curl ;;
-        *)
-            status_fail "Cannot install curl: unknown package manager for ${OS_ID}"
-            status_fail "Please install curl manually and re-run the script"
-            exit 1 ;;
-    esac
-
-    if command -v curl &>/dev/null; then
-        status_ok "curl installed"
-    else
-        status_fail "Failed to install curl"
-        exit 1
-    fi
+# Parse a JSON field from a line: extract "msg" value (first match only)
+json_msg() {
+    echo "$1" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1 || echo ""
 }
 
-# ---------------------------------------------------------------------------
-# Docker installation
-# ---------------------------------------------------------------------------
-check_docker() {
-    if command -v docker &>/dev/null; then
-        local ver
-        ver=$(docker --version 2>/dev/null | grep -oP '\d+\.\d+\.\d+' | head -1 || echo "unknown")
-        status_ok "Docker ${C_WHITE}${C_BOLD}${ver}${C_RESET}"
-        log "Docker found: ${ver}"
-        return 0
-    fi
-    return 1
+# Parse a JSON field: extract "type" value (first match only)
+json_type() {
+    echo "$1" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1 || echo ""
 }
 
-install_docker() {
-    status_info "Installing Docker via ${C_WHITE}get.docker.com${C_RESET}..."
-    log "Downloading and running get.docker.com"
+draw_detect_results() {
+    [[ -f "$DETECT_RESULT" ]] || return 1
+    grep -q '"type":"done"' "$DETECT_RESULT" 2>/dev/null || return 1
 
-    if [[ "$VERBOSE" == true ]]; then
-        curl -fsSL https://get.docker.com | sh
-    else
-        curl -fsSL https://get.docker.com | sh &>/dev/null
-    fi
+    # Parse each "check" section: the line after "check" is either "ok" or "miss"
+    local section=""
+    local sys_msg="unknown" sys_status="miss"
+    local docker_msg="not installed" docker_status="miss"
+    local compose_msg="not installed" compose_status="miss"
+    local frigate_msg="not found" frigate_status="miss"
+    local go2rtc_msg="not found" go2rtc_status="miss"
 
-    # Enable and start docker
-    if command -v systemctl &>/dev/null; then
-        systemctl enable docker &>/dev/null || true
-        systemctl start docker &>/dev/null || true
-    fi
+    while IFS= read -r line; do
+        local t m
+        t=$(json_type "$line")
+        m=$(json_msg "$line")
 
-    if check_docker; then
-        return 0
-    else
-        status_fail "Docker installation failed"
-        log "Docker installation failed"
-        exit 1
-    fi
-}
-
-# ---------------------------------------------------------------------------
-# Docker Compose check
-# ---------------------------------------------------------------------------
-check_compose() {
-    # Check plugin first (docker compose v2)
-    if docker compose version &>/dev/null; then
-        local ver
-        ver=$(docker compose version --short 2>/dev/null || echo "unknown")
-        status_ok "Docker Compose ${C_WHITE}${C_BOLD}${ver}${C_RESET}"
-        log "Docker Compose found: ${ver}"
-        COMPOSE_CMD="docker compose"
-        return 0
-    fi
-
-    # Check standalone docker-compose
-    if command -v docker-compose &>/dev/null; then
-        local ver
-        ver=$(docker-compose --version 2>/dev/null | grep -oP '\d+\.\d+\.\d+' | head -1 || echo "unknown")
-        status_ok "Docker Compose ${C_WHITE}${C_BOLD}${ver}${C_RESET} (standalone)"
-        log "Docker Compose standalone found: ${ver}"
-        COMPOSE_CMD="docker-compose"
-        return 0
-    fi
-
-    return 1
-}
-
-install_compose() {
-    status_info "Installing Docker Compose plugin..."
-    log "Installing Docker Compose plugin"
-
-    # Docker Compose V2 is typically bundled with Docker now.
-    # Try installing the plugin package.
-    case "$OS_ID" in
-        ubuntu|debian|raspbian|linuxmint|pop)
-            apt-get update -qq && apt-get install -y -qq docker-compose-plugin 2>/dev/null ;;
-        centos|rhel|rocky|almalinux|ol|fedora)
-            yum install -y -q docker-compose-plugin 2>/dev/null || dnf install -y -q docker-compose-plugin 2>/dev/null ;;
-        *)
-            # Fallback: download binary
-            local compose_ver="v2.29.1"
-            local compose_arch
-            case "$ARCH_LABEL" in
-                amd64) compose_arch="x86_64" ;;
-                arm64) compose_arch="aarch64" ;;
-                *)     compose_arch="$ARCH" ;;
+        if [[ "$t" == "check" ]]; then
+            case "$m" in
+                *system*)    section="system" ;;
+                *Docker\ C*|*Compose*) section="compose" ;;
+                *Docker*)    section="docker" ;;
+                *Frigate*)   section="frigate" ;;
+                *go2rtc*)    section="go2rtc" ;;
             esac
-            mkdir -p /usr/local/lib/docker/cli-plugins
-            curl -fsSL "https://github.com/docker/compose/releases/download/${compose_ver}/docker-compose-linux-${compose_arch}" \
-                -o /usr/local/lib/docker/cli-plugins/docker-compose
-            chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
-            ;;
-    esac
-
-    if check_compose; then
-        return 0
-    else
-        status_fail "Docker Compose installation failed"
-        log "Docker Compose installation failed"
-        exit 2
-    fi
-}
-
-# ---------------------------------------------------------------------------
-# Check if Strix is already installed
-# ---------------------------------------------------------------------------
-check_existing() {
-    if [[ -f "${STRIX_DIR}/docker-compose.yml" ]]; then
-        if $COMPOSE_CMD -f "${STRIX_DIR}/docker-compose.yml" ps --format '{{.State}}' 2>/dev/null | grep -qi "running"; then
-            INSTALL_MODE="update"
-            status_info "Strix is already running -- ${C_WHITE}${C_BOLD}update mode${C_RESET}"
-            log "Existing Strix installation found, switching to update mode"
-            return 0
+            continue
         fi
-        # compose file exists but not running
-        INSTALL_MODE="update"
-        status_info "Strix config found but not running -- ${C_WHITE}${C_BOLD}update mode${C_RESET}"
-        log "Existing Strix config found (not running), switching to update mode"
-        return 0
-    fi
 
-    INSTALL_MODE="install"
-    log "No existing Strix installation found"
-    return 1
+        case "$section" in
+            system)
+                [[ "$t" == "ok" ]]   && { sys_msg="$m"; sys_status="ok"; }
+                [[ "$t" == "miss" ]] && { sys_msg="unknown"; sys_status="miss"; }
+                section="" ;;
+            docker)
+                [[ "$t" == "ok" ]]   && { docker_msg="$m"; docker_status="ok"; }
+                [[ "$t" == "miss" ]] && { docker_msg="not installed"; docker_status="miss"; }
+                section="" ;;
+            compose)
+                [[ "$t" == "ok" ]]   && { compose_msg="$m"; compose_status="ok"; }
+                [[ "$t" == "miss" ]] && { compose_msg="not installed"; compose_status="miss"; }
+                section="" ;;
+            frigate)
+                [[ "$t" == "ok" ]]   && { frigate_msg="$m"; frigate_status="ok"; }
+                [[ "$t" == "miss" ]] && { frigate_msg="not found"; frigate_status="miss"; }
+                section="" ;;
+            go2rtc)
+                [[ "$t" == "ok" ]]   && { go2rtc_msg="$m"; go2rtc_status="ok"; }
+                [[ "$t" == "miss" ]] && { go2rtc_msg="not found"; go2rtc_status="miss"; }
+                section="" ;;
+        esac
+    done < "$DETECT_RESULT"
+
+    draw_status_line "$STATUS_ROW"       "System"  "$sys_msg"     "$sys_status"
+    draw_status_line "$((STATUS_ROW+1))" "Docker"  "$docker_msg"  "$docker_status"
+    draw_status_line "$((STATUS_ROW+2))" "Compose" "$compose_msg" "$compose_status"
+    draw_status_line "$((STATUS_ROW+3))" "Frigate" "$frigate_msg" "$frigate_status"
+    draw_status_line "$((STATUS_ROW+4))" "go2rtc"  "$go2rtc_msg"  "$go2rtc_status"
+
+    return 0
 }
 
 # ---------------------------------------------------------------------------
-# Version selection dialog
+# Main loop: owl animation + status table refresh
 # ---------------------------------------------------------------------------
-select_version() {
-    # If already set via --version flag
-    if [[ -n "$TAG" ]]; then
-        FINAL_VERSION="$TAG"
-        status_ok "Version: ${C_WHITE}${C_BOLD}${TAG}${C_RESET} (from --version flag)"
-        log "Version set via flag: ${TAG}"
+main_loop() {
+    local current=0
+    local i=0
+
+    while [[ "${_OWL_RUNNING:-true}" == true ]]; do
+        local next=$(( (current + 1) % OWL_COUNT ))
+
+        if [[ "$i" -eq 0 ]]; then
+            show_owl "$current" "verydim"
+            sleep 0.1 || return
+            show_owl "$current" "dim"
+            sleep 0.1 || return
+            show_owl "$current" "bright"
+        else
+            transition_owl "$current" "$next"
+            current=$next
+        fi
+
+        sleep 2 || return
+        i=$((i + 1))
+    done
+}
+
+# ---------------------------------------------------------------------------
+# Launch navigator based on detected system
+# ---------------------------------------------------------------------------
+launch_navigator() {
+    if [[ ! -f "$DETECT_RESULT" ]]; then
+        main_loop
+        restore_screen
         return
     fi
 
-    if [[ "$INTERACTIVE" == false ]]; then
-        FINAL_VERSION="latest"
-        status_ok "Version: ${C_WHITE}${C_BOLD}latest${C_RESET} (non-interactive default)"
-        log "Version defaulted to latest (non-interactive)"
-        return
-    fi
+    local sys_type
+    sys_type=$(grep -oP '"type"\s*:\s*"\K(proxmox|linux|macos)' "$DETECT_RESULT" | head -1)
 
-    draw_box "Select Version" \
-        "  ${C_GREEN}${C_BOLD}[1]${C_RESET}  latest              ${C_DIM}(recommended)${C_RESET}" \
-        "  ${C_YELLOW}${C_BOLD}[2]${C_RESET}  dev                 ${C_DIM}(development)${C_RESET}" \
-        "  ${C_CYAN}${C_BOLD}[3]${C_RESET}  custom tag           ${C_DIM}(e.g. 1.0.9)${C_RESET}"
+    case "$sys_type" in
+        proxmox)
+            sleep 3
+            restore_screen
 
-    local choice
-    choice=$(timed_prompt "Choice [1/2/3]" "1" "$DIALOG_TIMEOUT")
-
-    case "$choice" in
-        1|"") FINAL_VERSION="latest" ;;
-        2)    FINAL_VERSION="dev" ;;
-        3)
-            echo -ne "  ${C_YELLOW}Enter tag: ${C_RESET}"
-            local custom_tag
-            if read -r -t "$DIALOG_TIMEOUT" custom_tag 2>/dev/null && [[ -n "$custom_tag" ]]; then
-                FINAL_VERSION="$custom_tag"
-            else
-                FINAL_VERSION="latest"
-                echo ""
+            local proxmox_script="/tmp/strix-proxmox-$$.sh"
+            curl -fsSL "${DETECT_BASE}/proxmox.sh" -o "$proxmox_script" 2>/dev/null
+            if [[ -f "$proxmox_script" ]]; then
+                bash "$proxmox_script"
+                rm -f "$proxmox_script"
             fi
             ;;
-        *)    FINAL_VERSION="latest" ;;
+        linux)
+            sleep 3
+            restore_screen
+
+            local linux_script="/tmp/strix-linux-$$.sh"
+            curl -fsSL "${DETECT_BASE}/linux.sh" -o "$linux_script" 2>/dev/null
+            if [[ -f "$linux_script" ]]; then
+                bash "$linux_script"
+                rm -f "$linux_script"
+            fi
+            ;;
+        macos)
+            print_at_center "$((STATUS_ROW + 6))" "macOS installer coming soon" "\033[33m"
+            main_loop
+            restore_screen
+            ;;
+        *)
+            main_loop
+            restore_screen
+            ;;
     esac
-
-    status_ok "Version: ${C_WHITE}${C_BOLD}${FINAL_VERSION}${C_RESET}"
-    log "Version selected: ${FINAL_VERSION}"
-}
-
-# ---------------------------------------------------------------------------
-# Service detection (Frigate / go2rtc)
-# ---------------------------------------------------------------------------
-probe_frigate() {
-    log "Probing Frigate at localhost:5000"
-
-    if curl -sf --connect-timeout 2 --max-time 3 "http://localhost:5000/api/config" &>/dev/null; then
-        FRIGATE_STATUS="found"
-        FRIGATE_URL="http://localhost:5000"
-        status_ok "Frigate: ${C_WHITE}${C_BOLD}localhost:5000${C_RESET}"
-        log "Frigate found at localhost:5000"
-        return
-    fi
-
-    log "Frigate not found locally"
-
-    if [[ "$INTERACTIVE" == false ]]; then
-        FRIGATE_STATUS="none"
-        FRIGATE_URL=""
-        status_skip "Frigate: not found (skipped)"
-        return
-    fi
-
-    echo ""
-    show_owl_small
-    draw_box "Frigate Not Found" \
-        "  Frigate was not detected on this machine." \
-        "  Enter Frigate URL or leave empty to skip." \
-        "" \
-        "  ${C_DIM}Example: http://192.168.1.100:5000${C_RESET}"
-
-    local input
-    input=$(timed_prompt "Frigate URL" "" "$DIALOG_TIMEOUT")
-
-    if [[ -n "$input" ]]; then
-        FRIGATE_STATUS="set"
-        FRIGATE_URL="$input"
-        status_ok "Frigate: ${C_WHITE}${C_BOLD}${input}${C_RESET} (manual)"
-        log "Frigate URL set manually: ${input}"
-    else
-        FRIGATE_STATUS="none"
-        FRIGATE_URL=""
-        status_skip "Frigate: not configured"
-        log "Frigate skipped"
-    fi
-}
-
-probe_go2rtc() {
-    log "Probing go2rtc at localhost:1984 and localhost:11984"
-
-    if curl -sf --connect-timeout 2 --max-time 3 "http://localhost:1984/api" &>/dev/null; then
-        GO2RTC_STATUS="found"
-        GO2RTC_URL="http://localhost:1984"
-        status_ok "go2rtc: ${C_WHITE}${C_BOLD}localhost:1984${C_RESET}"
-        log "go2rtc found at localhost:1984"
-        return
-    fi
-
-    if curl -sf --connect-timeout 2 --max-time 3 "http://localhost:11984/api" &>/dev/null; then
-        GO2RTC_STATUS="found"
-        GO2RTC_URL="http://localhost:11984"
-        status_ok "go2rtc: ${C_WHITE}${C_BOLD}localhost:11984${C_RESET}"
-        log "go2rtc found at localhost:11984"
-        return
-    fi
-
-    log "go2rtc not found locally"
-
-    if [[ "$INTERACTIVE" == false ]]; then
-        GO2RTC_STATUS="none"
-        GO2RTC_URL=""
-        status_skip "go2rtc: not found (skipped)"
-        return
-    fi
-
-    echo ""
-    show_owl_small
-    draw_box "go2rtc Not Found" \
-        "  go2rtc was not detected on this machine." \
-        "  Enter go2rtc URL or leave empty to skip." \
-        "" \
-        "  ${C_DIM}Example: http://192.168.1.100:1984${C_RESET}"
-
-    local input
-    input=$(timed_prompt "go2rtc URL" "" "$DIALOG_TIMEOUT")
-
-    if [[ -n "$input" ]]; then
-        GO2RTC_STATUS="set"
-        GO2RTC_URL="$input"
-        status_ok "go2rtc: ${C_WHITE}${C_BOLD}${input}${C_RESET} (manual)"
-        log "go2rtc URL set manually: ${input}"
-    else
-        GO2RTC_STATUS="none"
-        GO2RTC_URL=""
-        status_skip "go2rtc: not configured"
-        log "go2rtc skipped"
-    fi
-}
-
-# ---------------------------------------------------------------------------
-# Generate config files
-# ---------------------------------------------------------------------------
-generate_env() {
-    log "Generating ${STRIX_DIR}/.env"
-
-    cat > "${STRIX_DIR}/.env" <<EOF
-# Strix configuration -- generated by install.sh
-STRIX_TAG=${FINAL_VERSION}
-STRIX_PORT=${STRIX_PORT}
-EOF
-
-    if [[ -n "${FRIGATE_URL:-}" ]]; then
-        echo "STRIX_FRIGATE_URL=${FRIGATE_URL}" >> "${STRIX_DIR}/.env"
-    fi
-
-    if [[ -n "${GO2RTC_URL:-}" ]]; then
-        echo "STRIX_GO2RTC_URL=${GO2RTC_URL}" >> "${STRIX_DIR}/.env"
-    fi
-
-    log "Generated .env: TAG=${FINAL_VERSION}, FRIGATE=${FRIGATE_URL:-}, GO2RTC=${GO2RTC_URL:-}"
-}
-
-generate_compose() {
-    log "Generating ${STRIX_DIR}/docker-compose.yml"
-
-    local env_section=""
-    if [[ -n "${FRIGATE_URL:-}" ]] || [[ -n "${GO2RTC_URL:-}" ]]; then
-        env_section="    environment:"
-        [[ -n "${FRIGATE_URL:-}" ]] && env_section="${env_section}
-      - STRIX_FRIGATE_URL=\${STRIX_FRIGATE_URL}"
-        [[ -n "${GO2RTC_URL:-}" ]] && env_section="${env_section}
-      - STRIX_GO2RTC_URL=\${STRIX_GO2RTC_URL}"
-    fi
-
-    cat > "${STRIX_DIR}/docker-compose.yml" <<EOF
-# Strix -- Smart IP Camera Stream Finder
-# Generated by install.sh -- do not edit manually, re-run installer to update.
-
-services:
-  strix:
-    image: ${IMAGE}:\${STRIX_TAG:-latest}
-    container_name: strix
-    restart: unless-stopped
-    network_mode: host
-${env_section}
-    healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:\${STRIX_PORT:-4567}/api/health"]
-      interval: 30s
-      timeout: 3s
-      retries: 3
-EOF
-
-    log "Generated docker-compose.yml"
-}
-
-# ---------------------------------------------------------------------------
-# Deploy
-# ---------------------------------------------------------------------------
-pull_image() {
-    status_info "Pulling ${C_WHITE}${C_BOLD}${IMAGE}:${FINAL_VERSION}${C_RESET}..."
-    log "Pulling image ${IMAGE}:${FINAL_VERSION}"
-
-    if [[ "$VERBOSE" == true ]]; then
-        $COMPOSE_CMD -f "${STRIX_DIR}/docker-compose.yml" --env-file "${STRIX_DIR}/.env" pull
-    else
-        $COMPOSE_CMD -f "${STRIX_DIR}/docker-compose.yml" --env-file "${STRIX_DIR}/.env" pull 2>&1 | tail -1
-    fi
-
-    if [[ $? -eq 0 ]]; then
-        status_ok "Image pulled: ${C_WHITE}${C_BOLD}${IMAGE}:${FINAL_VERSION}${C_RESET}"
-        log "Image pulled successfully"
-    else
-        status_fail "Failed to pull image ${IMAGE}:${FINAL_VERSION}"
-        log "Image pull failed"
-        exit 3
-    fi
-}
-
-start_container() {
-    log "Starting container"
-
-    if [[ "$INSTALL_MODE" == "update" ]]; then
-        status_info "Recreating container..."
-        $COMPOSE_CMD -f "${STRIX_DIR}/docker-compose.yml" --env-file "${STRIX_DIR}/.env" up -d --force-recreate 2>&1 | \
-            if [[ "$VERBOSE" == true ]]; then cat; else tail -1; fi
-    else
-        status_info "Starting container..."
-        $COMPOSE_CMD -f "${STRIX_DIR}/docker-compose.yml" --env-file "${STRIX_DIR}/.env" up -d 2>&1 | \
-            if [[ "$VERBOSE" == true ]]; then cat; else tail -1; fi
-    fi
-
-    if [[ $? -ne 0 ]]; then
-        status_fail "Container failed to start"
-        log "Container failed to start"
-        exit 4
-    fi
-
-    log "Container started"
-}
-
-healthcheck() {
-    status_info "Running healthcheck..."
-    log "Waiting for healthcheck on localhost:${STRIX_PORT}"
-
-    local retries=10
-    local i
-    for (( i = 1; i <= retries; i++ )); do
-        if curl -sf --connect-timeout 2 --max-time 3 "http://localhost:${STRIX_PORT}/api/health" &>/dev/null; then
-            local version
-            version=$(curl -sf --max-time 3 "http://localhost:${STRIX_PORT}/api" 2>/dev/null | grep -oP '"version"\s*:\s*"\K[^"]+' || echo "unknown")
-            status_ok "Strix is running ${C_WHITE}${C_BOLD}v${version}${C_RESET} on port ${C_WHITE}${C_BOLD}${STRIX_PORT}${C_RESET}"
-            log "Healthcheck passed, version: ${version}"
-            return 0
-        fi
-        sleep 1
-    done
-
-    status_fail "Healthcheck failed after ${retries} attempts"
-    log "Healthcheck failed"
-    exit 5
-}
-
-# ---------------------------------------------------------------------------
-# Detect LAN IP address
-# ---------------------------------------------------------------------------
-detect_lan_ip() {
-    local ip=""
-
-    # Method 1: ip route (most reliable on modern Linux)
-    ip=$(ip route get 1.1.1.1 2>/dev/null | grep -oP 'src \K\S+' | head -1)
-
-    # Method 2: hostname -I
-    if [[ -z "$ip" ]]; then
-        ip=$(hostname -I 2>/dev/null | awk '{print $1}')
-    fi
-
-    # Method 3: ifconfig fallback
-    if [[ -z "$ip" ]]; then
-        ip=$(ifconfig 2>/dev/null | grep -oP 'inet \K[0-9.]+' | grep -v '127.0.0.1' | head -1)
-    fi
-
-    # Fallback to localhost
-    if [[ -z "$ip" ]]; then
-        ip="localhost"
-    fi
-
-    echo "$ip"
-}
-
-# ---------------------------------------------------------------------------
-# Summary
-# ---------------------------------------------------------------------------
-show_summary() {
-    echo ""
-    local w
-    w=$(term_width)
-    local line=""
-    local box_w=$(( w - 4 ))
-    [[ "$box_w" -gt 60 ]] && box_w=60
-    for (( i = 0; i < box_w - 2; i++ )); do line="${line}─"; done
-    local pad=$(( (w - box_w) / 2 ))
-    [[ "$pad" -lt 0 ]] && pad=0
-    local sp
-    sp=$(printf "%*s" "$pad" "")
-
-    local lan_ip
-    lan_ip=$(detect_lan_ip)
-    local open_url="http://${lan_ip}:${STRIX_PORT}"
-
-    echo -e "${sp}${C_GREEN}┌─ ${C_WHITE}${C_BOLD}Complete${C_RESET} ${C_GREEN}${line:11}┐${C_RESET}"
-    echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Mode:     ${C_WHITE}${C_BOLD}${INSTALL_MODE}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#INSTALL_MODE} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Version:  ${C_WHITE}${C_BOLD}${FINAL_VERSION}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#FINAL_VERSION} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Port:     ${C_WHITE}${C_BOLD}${STRIX_PORT}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#STRIX_PORT} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Frigate:  ${C_WHITE}${FRIGATE_STATUS}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#FRIGATE_STATUS} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  go2rtc:   ${C_WHITE}${GO2RTC_STATUS}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#GO2RTC_STATUS} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Config:   ${C_DIM}${STRIX_DIR}/${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#STRIX_DIR} - 1 )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  Log:      ${C_DIM}${LOG_FILE}${C_RESET}$(printf "%*s" $(( box_w - 16 - ${#LOG_FILE} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│${C_RESET}  ${C_CYAN}Open: ${C_WHITE}${C_BOLD}${open_url}${C_RESET}$(printf "%*s" $(( box_w - 9 - ${#open_url} )) "")${C_GREEN}│${C_RESET}"
-    echo -e "${sp}${C_GREEN}│$(printf "%*s" $(( box_w - 2 )) "")│${C_RESET}"
-    echo -e "${sp}${C_GREEN}└${line}┘${C_RESET}"
-    echo ""
-
-    # Machine-readable output for parent scripts (always last line)
-    echo "STRIX_RESULT=OK MODE=${INSTALL_MODE} VERSION=${FINAL_VERSION} FRIGATE=${FRIGATE_STATUS} GO2RTC=${GO2RTC_STATUS}"
-}
-
-# ---------------------------------------------------------------------------
-# Verbose log tail (shown on error)
-# ---------------------------------------------------------------------------
-show_error_log() {
-    if [[ -f "$LOG_FILE" ]]; then
-        echo ""
-        echo -e "  ${C_RED}${C_BOLD}── Last log entries ──${C_RESET}"
-        tail -20 "$LOG_FILE" | while IFS= read -r line; do
-            echo -e "  ${C_RED}${line}${C_RESET}"
-        done
-        echo -e "  ${C_RED}${C_BOLD}──────────────────────${C_RESET}"
-        echo ""
-        echo -e "  Full log: ${C_WHITE}${LOG_FILE}${C_RESET}"
-    fi
 }
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
-main() {
-    # Trap errors to show log
-    trap 'show_error_log' ERR
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    _OWL_RUNNING=true
 
-    # Initialize
-    setup_colors
-    ensure_root "$@"
+    _owl_cleanup() {
+        _OWL_RUNNING=false
+        rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null
+        restore_screen
+        exit 0
+    }
 
-    # Show logo
-    show_logo
+    trap _owl_cleanup INT TERM
+    trap 'rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null; restore_screen' EXIT
 
-    # Detect system
-    detect_system
+    setup_screen
+    show_title
 
-    # Ensure curl is available
-    ensure_curl
+    # Show loading state while detecting
+    draw_loading_status
 
-    # Docker
-    if ! check_docker; then
-        install_docker
-    fi
+    # Run detection (synchronous, ~6-8 sec on slow networks)
+    run_detection
 
-    # Docker Compose
-    if ! check_compose; then
-        install_compose
-    fi
+    # Redraw screen in case detect leaked output
+    clear
+    show_title
 
-    # Version selection
-    select_version
+    # Draw real results
+    draw_detect_results || true
 
-    # Check existing installation
-    check_existing || true
+    # Check system type and launch appropriate navigator
+    launch_navigator
 
-    # Detect services (only for fresh install)
-    if [[ "$INSTALL_MODE" == "install" ]]; then
-        probe_frigate
-        probe_go2rtc
-    else
-        # For updates, load existing env
-        if [[ -f "${STRIX_DIR}/.env" ]]; then
-            # shellcheck disable=SC1091
-            source "${STRIX_DIR}/.env" 2>/dev/null || true
-            FRIGATE_URL="${STRIX_FRIGATE_URL:-}"
-            GO2RTC_URL="${STRIX_GO2RTC_URL:-}"
-            [[ -n "$FRIGATE_URL" ]] && FRIGATE_STATUS="set"
-            [[ -n "$GO2RTC_URL" ]] && GO2RTC_STATUS="set"
-        fi
-    fi
-
-    echo ""
-    echo -e "  ${C_DIM}────────────────────────────────────────${C_RESET}"
-    echo ""
-
-    # Generate configs
-    generate_env
-    generate_compose
-
-    # Deploy
-    pull_image
-    start_container
-    healthcheck
-
-    # Done
-    show_summary
-}
-
-main "$@"
+    # Cleanup
+    rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null
+fi
