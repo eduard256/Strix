@@ -5,7 +5,7 @@
 
 set -o pipefail
 
-BACKTITLE="Strix Installer"
+BACKTITLE="Strix Installer | Proxmox mode"
 WT_H=16
 WT_W=60
 
