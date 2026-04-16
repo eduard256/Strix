@@ -241,6 +241,178 @@ show_title() {
 }
 
 # ---------------------------------------------------------------------------
+# Detection: download and run detect.sh in background
+# ---------------------------------------------------------------------------
+DETECT_FILE="/tmp/strix-detect-$$.sh"
+DETECT_RESULT="/tmp/strix-detect-$$.out"
+DETECT_BASE="https://raw.githubusercontent.com/eduard256/Strix/main/scripts"
+
+run_detection() {
+    # Download detect.sh
+    local dl_ok=false
+    if command -v curl &>/dev/null; then
+        curl -fsSL "${DETECT_BASE}/detect.sh" -o "$DETECT_FILE" 2>/dev/null && dl_ok=true
+    elif command -v wget &>/dev/null; then
+        wget -qO "$DETECT_FILE" "${DETECT_BASE}/detect.sh" 2>/dev/null && dl_ok=true
+    fi
+
+    if [[ "$dl_ok" == false ]] || [[ ! -f "$DETECT_FILE" ]]; then
+        echo '{"type":"error","msg":"Failed to download detect.sh"}' > "$DETECT_RESULT"
+        echo '{"type":"done","ok":false}' >> "$DETECT_RESULT"
+        return 1
+    fi
+
+    # Run detect.sh, redirect stdout to file, stderr to /dev/null
+    bash "$DETECT_FILE" 1>"$DETECT_RESULT" 2>/dev/null
+}
+
+# ---------------------------------------------------------------------------
+# Status table: parse detect.sh JSON output and draw below STRIX title
+# ---------------------------------------------------------------------------
+STATUS_ROW=14
+
+draw_status_line() {
+    local row="$1"
+    local label="$2"
+    local value="$3"
+    local status="${4:-}"
+
+    local lbl_color="\033[37m"
+    local val_color="\033[97m"
+    local dot_color="\033[90m"
+
+    case "$status" in
+        ok)      val_color="\033[32m" ;;
+        miss)    val_color="\033[90m" ;;
+        loading) val_color="\033[33m" ;;
+    esac
+
+    local w
+    w=$(term_width)
+    local box_w=44
+    local col=$(( (w - box_w) / 2 ))
+    [[ "$col" -lt 0 ]] && col=0
+
+    tput cup "$row" 0 2>/dev/null
+    printf "%*s" "$w" ""
+
+    tput cup "$row" "$col" 2>/dev/null
+
+    local dots_len=$(( box_w - ${#label} - ${#value} - 4 ))
+    [[ "$dots_len" -lt 1 ]] && dots_len=1
+    local dots=""
+    local d
+    for (( d = 0; d < dots_len; d++ )); do dots="${dots}."; done
+
+    echo -ne "${lbl_color}  ${label} ${dot_color}${dots} ${val_color}${value}\033[0m"
+}
+
+draw_loading_status() {
+    draw_status_line "$STATUS_ROW"       "System"  "detecting..." "loading"
+    draw_status_line "$((STATUS_ROW+1))" "Docker"  "..." "loading"
+    draw_status_line "$((STATUS_ROW+2))" "Compose" "..." "loading"
+    draw_status_line "$((STATUS_ROW+3))" "Frigate" "..." "loading"
+    draw_status_line "$((STATUS_ROW+4))" "go2rtc"  "..." "loading"
+}
+
+# Parse a JSON field from a line: extract "msg" value (first match only)
+json_msg() {
+    echo "$1" | grep -oP '"msg"\s*:\s*"\K[^"]+' | head -1 || echo ""
+}
+
+# Parse a JSON field: extract "type" value (first match only)
+json_type() {
+    echo "$1" | grep -oP '"type"\s*:\s*"\K[^"]+' | head -1 || echo ""
+}
+
+draw_detect_results() {
+    [[ -f "$DETECT_RESULT" ]] || return 1
+    grep -q '"type":"done"' "$DETECT_RESULT" 2>/dev/null || return 1
+
+    # Parse each "check" section: the line after "check" is either "ok" or "miss"
+    local section=""
+    local sys_msg="unknown" sys_status="miss"
+    local docker_msg="not installed" docker_status="miss"
+    local compose_msg="not installed" compose_status="miss"
+    local frigate_msg="not found" frigate_status="miss"
+    local go2rtc_msg="not found" go2rtc_status="miss"
+
+    while IFS= read -r line; do
+        local t m
+        t=$(json_type "$line")
+        m=$(json_msg "$line")
+
+        if [[ "$t" == "check" ]]; then
+            case "$m" in
+                *system*)    section="system" ;;
+                *Docker\ C*|*Compose*) section="compose" ;;
+                *Docker*)    section="docker" ;;
+                *Frigate*)   section="frigate" ;;
+                *go2rtc*)    section="go2rtc" ;;
+            esac
+            continue
+        fi
+
+        case "$section" in
+            system)
+                [[ "$t" == "ok" ]]   && { sys_msg="$m"; sys_status="ok"; }
+                [[ "$t" == "miss" ]] && { sys_msg="unknown"; sys_status="miss"; }
+                section="" ;;
+            docker)
+                [[ "$t" == "ok" ]]   && { docker_msg="$m"; docker_status="ok"; }
+                [[ "$t" == "miss" ]] && { docker_msg="not installed"; docker_status="miss"; }
+                section="" ;;
+            compose)
+                [[ "$t" == "ok" ]]   && { compose_msg="$m"; compose_status="ok"; }
+                [[ "$t" == "miss" ]] && { compose_msg="not installed"; compose_status="miss"; }
+                section="" ;;
+            frigate)
+                [[ "$t" == "ok" ]]   && { frigate_msg="$m"; frigate_status="ok"; }
+                [[ "$t" == "miss" ]] && { frigate_msg="not found"; frigate_status="miss"; }
+                section="" ;;
+            go2rtc)
+                [[ "$t" == "ok" ]]   && { go2rtc_msg="$m"; go2rtc_status="ok"; }
+                [[ "$t" == "miss" ]] && { go2rtc_msg="not found"; go2rtc_status="miss"; }
+                section="" ;;
+        esac
+    done < "$DETECT_RESULT"
+
+    draw_status_line "$STATUS_ROW"       "System"  "$sys_msg"     "$sys_status"
+    draw_status_line "$((STATUS_ROW+1))" "Docker"  "$docker_msg"  "$docker_status"
+    draw_status_line "$((STATUS_ROW+2))" "Compose" "$compose_msg" "$compose_status"
+    draw_status_line "$((STATUS_ROW+3))" "Frigate" "$frigate_msg" "$frigate_status"
+    draw_status_line "$((STATUS_ROW+4))" "go2rtc"  "$go2rtc_msg"  "$go2rtc_status"
+
+    return 0
+}
+
+# ---------------------------------------------------------------------------
+# Main loop: owl animation + status table refresh
+# ---------------------------------------------------------------------------
+main_loop() {
+    local current=0
+    local i=0
+
+    while [[ "${_OWL_RUNNING:-true}" == true ]]; do
+        local next=$(( (current + 1) % OWL_COUNT ))
+
+        if [[ "$i" -eq 0 ]]; then
+            show_owl "$current" "verydim"
+            sleep 0.1 || return
+            show_owl "$current" "dim"
+            sleep 0.1 || return
+            show_owl "$current" "bright"
+        else
+            transition_owl "$current" "$next"
+            current=$next
+        fi
+
+        sleep 2 || return
+        i=$((i + 1))
+    done
+}
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
@@ -248,15 +420,32 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
     _owl_cleanup() {
         _OWL_RUNNING=false
+        rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null
         restore_screen
         exit 0
     }
 
     trap _owl_cleanup INT TERM
-    trap restore_screen EXIT
+    trap 'rm -f "$DETECT_FILE" "$DETECT_RESULT" 2>/dev/null; restore_screen' EXIT
 
     setup_screen
     show_title
-    cycle_owls 0 2
+
+    # Show loading state while detecting
+    draw_loading_status
+
+    # Run detection (synchronous, ~6-8 sec on slow networks)
+    run_detection
+
+    # Redraw screen in case detect leaked output
+    clear
+    show_title
+
+    # Draw real results
+    draw_detect_results || true
+
+    # Owl animation (infinite)
+    main_loop
+
     restore_screen
 fi
