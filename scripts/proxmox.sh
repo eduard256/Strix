@@ -11,6 +11,24 @@ WT_W=60
 
 command -v whiptail &>/dev/null || { echo "whiptail required"; exit 1; }
 
+# Dark theme for whiptail
+export NEWT_COLORS='
+root=,black
+window=,black
+border=white,black
+textbox=white,black
+button=black,white
+actbutton=white,magenta
+compactbutton=white,black
+listbox=white,black
+actlistbox=white,magenta
+title=magenta,black
+roottext=white,black
+emptyscale=,black
+fullscale=,magenta
+helpline=white,black
+'
+
 # Parameters
 INSTALL_MODE=""
 FRIGATE_URL=""
