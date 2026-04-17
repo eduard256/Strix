@@ -9,12 +9,13 @@ type Response struct {
 }
 
 type Probes struct {
-	Ports *PortsResult `json:"ports"`
-	DNS   *DNSResult   `json:"dns"`
-	ARP   *ARPResult   `json:"arp"`
-	MDNS  *MDNSResult  `json:"mdns"`
-	HTTP  *HTTPResult  `json:"http"`
-	ONVIF *ONVIFResult `json:"onvif"`
+	Ports  *PortsResult  `json:"ports"`
+	DNS    *DNSResult    `json:"dns"`
+	ARP    *ARPResult    `json:"arp"`
+	MDNS   *MDNSResult   `json:"mdns"`
+	HTTP   *HTTPResult   `json:"http"`
+	ONVIF  *ONVIFResult  `json:"onvif"`
+	Xiaomi *XiaomiResult `json:"xiaomi"`
 }
 
 type PortsResult struct {
@@ -50,4 +51,9 @@ type ONVIFResult struct {
 	Port     int    `json:"port"`
 	Name     string `json:"name,omitempty"`
 	Hardware string `json:"hardware,omitempty"`
+}
+
+type XiaomiResult struct {
+	DeviceID uint32 `json:"device_id"`
+	Stamp    uint32 `json:"stamp"`
 }
