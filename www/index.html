@@ -327,6 +327,11 @@
                 return;
             }
 
+            if (data.type === 'xiaomi') {
+                navigateXiaomi(ip, data);
+                return;
+            }
+
             if (data.type === 'standard' || data.reachable) {
                 navigateStandard(ip, data);
                 return;
@@ -409,6 +414,36 @@
         }
 
         window.location.href = 'standard.html?' + p.toString();
+    }
+
+    function navigateXiaomi(ip, data) {
+        var p = new URLSearchParams();
+        p.set('ip', ip);
+
+        var probes = data.probes || {};
+
+        if (probes.ports && probes.ports.open && probes.ports.open.length) {
+            p.set('ports', probes.ports.open.join(','));
+        }
+        if (probes.arp) {
+            if (probes.arp.mac) p.set('mac', probes.arp.mac);
+            if (probes.arp.vendor) p.set('vendor', probes.arp.vendor);
+        }
+        if (probes.http && probes.http.server) {
+            p.set('server', probes.http.server);
+        }
+        if (probes.dns && probes.dns.hostname) {
+            p.set('hostname', probes.dns.hostname);
+        }
+        if (probes.ping && probes.ping.latency_ms) {
+            p.set('latency', Math.round(probes.ping.latency_ms));
+        }
+        if (probes.xiaomi) {
+            if (probes.xiaomi.device_id) p.set('xiaomi_device_id', probes.xiaomi.device_id);
+            if (probes.xiaomi.stamp) p.set('xiaomi_stamp', probes.xiaomi.stamp);
+        }
+
+        window.location.href = 'xiaomi.html?' + p.toString();
     }
 
     function navigateHomeKit(ip, data) {

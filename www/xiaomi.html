@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Strix - Xiaomi Camera</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #1a1a24;
+            --bg-tertiary: #24242f;
+            --bg-elevated: #2a2a38;
+            --purple-primary: #8b5cf6;
+            --purple-light: #a78bfa;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(139, 92, 246, 0.3);
+            --purple-glow-strong: rgba(139, 92, 246, 0.5);
+            --text-primary: #e0e0e8;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #606070;
+            --success: #10b981;
+            --error: #ef4444;
+            --xiaomi-teal: #2BB6AC;
+            --border-color: rgba(139, 92, 246, 0.15);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .screen {
+            min-height: 100vh;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn var(--transition-base);
+        }
+
+        .container { max-width: 480px; width: 100%; }
+
+        @media (min-width: 768px) {
+            .screen { padding: 3rem 1.5rem; }
+            .container { max-width: 540px; }
+        }
+
+        .back-wrapper {
+            position: absolute; top: 1.5rem;
+            left: 50%; transform: translateX(-50%);
+            width: 100%; max-width: 600px;
+            padding: 0 1.5rem;
+            z-index: 10;
+        }
+
+        @media (min-width: 768px) {
+            .back-wrapper { max-width: 660px; }
+        }
+
+        .btn-back {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: none; border: none;
+            color: var(--text-secondary); font-size: 0.875rem;
+            font-family: var(--font-primary); cursor: pointer;
+            padding: 0.5rem 0;
+            transition: color var(--transition-fast);
+        }
+        .btn-back:hover { color: var(--purple-primary); }
+
+        .hero { text-align: center; margin-bottom: 2.5rem; }
+
+        .xiaomi-logo {
+            width: 72px; height: 72px;
+            margin: 0 auto 0.875rem;
+            border-radius: 16px;
+            filter: drop-shadow(0 4px 16px rgba(43, 182, 172, 0.3));
+            display: block;
+        }
+
+        .title {
+            font-size: 1.25rem; font-weight: 600;
+            letter-spacing: 0.03em;
+            color: var(--text-primary);
+        }
+
+        /* Form */
+        .form-group { margin-bottom: 1.25rem; }
+
+        .label {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 0.875rem; font-weight: 500;
+            color: var(--text-secondary); margin-bottom: 0.5rem;
+        }
+
+        .input, .select {
+            width: 100%; padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem; font-family: var(--font-primary);
+            transition: all var(--transition-fast);
+            outline: none;
+        }
+
+        .input:focus, .select:focus {
+            border-color: var(--purple-primary);
+            box-shadow: 0 0 0 3px var(--purple-glow);
+        }
+
+        .input::placeholder { color: var(--text-tertiary); }
+
+        .select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a0a0b0' stroke-width='2'%3e%3cpath d='M6 9l6 6 6-6'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.25rem;
+            padding-right: 3rem;
+            cursor: pointer;
+        }
+
+        /* Info icon + tooltip */
+        .info-icon {
+            position: relative; display: inline-flex;
+            align-items: center; justify-content: center;
+            width: 16px; height: 16px; cursor: help;
+            color: var(--text-tertiary); transition: color var(--transition-fast);
+        }
+
+        .info-icon:hover { color: var(--purple-primary); }
+        .info-icon svg { width: 16px; height: 16px; }
+
+        .tooltip {
+            position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-elevated);
+            border: 1px solid var(--purple-primary);
+            border-radius: 8px; padding: 1rem;
+            width: 300px; max-width: 90vw;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--purple-glow);
+            z-index: 1000; opacity: 0; visibility: hidden;
+            transition: opacity var(--transition-fast), visibility var(--transition-fast);
+            pointer-events: none;
+            text-align: left;
+        }
+
+        .tooltip::after {
+            content: ''; position: absolute; bottom: 100%; left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent; border-bottom-color: var(--purple-primary);
+        }
+
+        .info-icon:hover .tooltip { opacity: 1; visibility: visible; }
+
+        .tooltip-title { font-weight: 600; color: var(--purple-primary); margin-bottom: 0.5rem; font-size: 0.875rem; }
+        .tooltip-text { font-size: 0.75rem; line-height: 1.5; color: var(--text-secondary); }
+
+        /* Captcha image */
+        .captcha-img {
+            display: block; margin: 0 auto 1rem;
+            height: 64px; width: auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 0.5rem;
+        }
+
+        /* Verify label */
+        .verify-target {
+            padding: 0.875rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 0.875rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Error / not found box */
+        .error-box {
+            padding: 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: var(--error);
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
+            display: none;
+            animation: fadeIn var(--transition-fast);
+        }
+
+        .error-box.visible { display: block; }
+
+        /* Not found state */
+        .notfound {
+            text-align: center; padding: 1.5rem 0;
+        }
+
+        .notfound-title {
+            font-size: 1.125rem; font-weight: 600;
+            color: var(--error); margin-bottom: 0.75rem;
+        }
+
+        .notfound-text {
+            font-size: 0.875rem; color: var(--text-secondary);
+            line-height: 1.6; margin-bottom: 0.375rem;
+        }
+
+        .notfound-text code {
+            font-family: var(--font-mono);
+            color: var(--purple-light);
+            background: var(--bg-secondary);
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            border: none; outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-primary), var(--purple-dark));
+            color: white; box-shadow: 0 4px 12px var(--purple-glow);
+        }
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--purple-glow-strong);
+        }
+        .btn-primary:active:not(:disabled) { transform: translateY(0); }
+        .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .btn-large { width: 100%; padding: 1.25rem; font-size: 1rem; }
+
+        .btn-outline {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 0.5rem; padding: 1rem 1.5rem; border-radius: 8px;
+            font-size: 0.9375rem; font-weight: 600; font-family: var(--font-primary);
+            cursor: pointer; transition: all var(--transition-fast);
+            background: transparent; color: var(--text-secondary);
+            border: 1px solid var(--border-color); width: 100%;
+            margin-top: 0.75rem;
+        }
+        .btn-outline:hover { border-color: var(--purple-primary); color: var(--purple-light); }
+
+        /* Spinner */
+        .spinner {
+            width: 20px; height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .loading-wrap {
+            text-align: center; padding: 2rem 0;
+        }
+
+        .loading-spinner {
+            width: 28px; height: 28px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--purple-primary);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        .loading-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* State switch */
+        .state { display: none; animation: fadeIn var(--transition-base); }
+        .state.visible { display: block; }
+
+        /* Toast */
+        .toast {
+            position: fixed; bottom: 1.5rem; left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px; box-shadow: var(--shadow-lg);
+            font-size: 0.875rem; color: var(--text-primary);
+            z-index: 1000; transition: transform var(--transition-base);
+            max-width: 90vw;
+        }
+
+        .toast.show { transform: translateX(-50%) translateY(0); }
+        .toast.hidden { display: none; }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="back-wrapper">
+    <button class="btn-back" id="btn-back">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M12 4L6 10l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Back
+    </button>
+</div>
+
+<div class="screen">
+    <div class="container">
+        <div class="hero">
+            <img class="xiaomi-logo" src="icons/mihome.webp" alt="Xiaomi" width="72" height="72">
+            <h1 class="title">Xiaomi Camera</h1>
+        </div>
+
+        <div class="error-box" id="error-box"></div>
+
+        <!-- Loading -->
+        <div class="state" id="state-loading">
+            <div class="loading-wrap">
+                <div class="loading-spinner"></div>
+                <div class="loading-text" id="loading-text">Loading...</div>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="state" id="state-login">
+            <form id="form-login">
+                <div class="form-group">
+                    <label class="label" for="input-username">
+                        Mi Account
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Mi Account</div>
+                                <p class="tooltip-text">Use your Mi Home app credentials. Strix requests a login token from Mi Cloud to fetch the P2P keys needed to stream your camera.</p>
+                            </div>
+                        </span>
+                    </label>
+                    <input type="text" id="input-username" class="input" name="username" placeholder="Email, phone or ID" autocomplete="username" spellcheck="false" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="input-password">Password</label>
+                    <input type="password" id="input-password" class="input" name="password" placeholder="Password" autocomplete="current-password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large" id="btn-login">Log in</button>
+            </form>
+            <button class="btn-outline" id="btn-skip-login">Skip, use Standard Discovery</button>
+        </div>
+
+        <!-- Captcha -->
+        <div class="state" id="state-captcha">
+            <form id="form-captcha">
+                <div class="form-group">
+                    <label class="label">Captcha</label>
+                    <img id="captcha-img" class="captcha-img" alt="captcha">
+                    <input type="text" id="input-captcha" class="input" name="captcha" placeholder="Enter captcha" autocomplete="off" spellcheck="false" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Verify</button>
+            </form>
+            <button class="btn-outline" id="btn-back-login-1">Back</button>
+        </div>
+
+        <!-- Verify (2FA) -->
+        <div class="state" id="state-verify">
+            <form id="form-verify">
+                <div class="form-group">
+                    <label class="label">
+                        Verification Code
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Two-step verification</div>
+                                <p class="tooltip-text">Mi Cloud sent a verification code to the address shown. Enter it to complete the login.</p>
+                            </div>
+                        </span>
+                    </label>
+                    <div class="verify-target" id="verify-target"></div>
+                    <input type="text" id="input-verify" class="input" name="verify" placeholder="Enter code" autocomplete="one-time-code" inputmode="numeric" spellcheck="false" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Verify</button>
+            </form>
+            <button class="btn-outline" id="btn-back-login-2">Back</button>
+        </div>
+
+        <!-- Region / account picker -->
+        <div class="state" id="state-region">
+            <form id="form-region">
+                <div class="form-group" id="group-account" style="display:none;">
+                    <label class="label" for="select-account">Account</label>
+                    <select id="select-account" class="select" name="id" required></select>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="select-region">
+                        Server Region
+                        <span class="info-icon">
+                            <svg viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M8 7v4M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <div class="tooltip">
+                                <div class="tooltip-title">Mi Home server region</div>
+                                <p class="tooltip-text">Pick the region your Mi Home account is registered in. This is the server setting you chose when you first signed up in the Mi Home app.</p>
+                            </div>
+                        </span>
+                    </label>
+                    <select id="select-region" class="select" name="region" required>
+                        <option value="cn">China</option>
+                        <option value="de">Europe</option>
+                        <option value="i2">India</option>
+                        <option value="ru">Russia</option>
+                        <option value="sg">Singapore</option>
+                        <option value="us">United States</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large" id="btn-find">Find my camera</button>
+            </form>
+            <button class="btn-outline" id="btn-skip-region">Skip, use Standard Discovery</button>
+            <button class="btn-outline" id="btn-relogin">Log in with a different account</button>
+        </div>
+
+        <!-- Not found -->
+        <div class="state" id="state-notfound">
+            <div class="notfound">
+                <div class="notfound-title">Camera not found</div>
+                <p class="notfound-text">No camera with IP <code id="nf-ip"></code></p>
+                <p class="notfound-text">in this Mi Home account / region.</p>
+            </div>
+            <button class="btn btn-primary btn-large" id="btn-try-region">Try another region</button>
+            <button class="btn-outline" id="btn-skip-notfound">Skip, use Standard Discovery</button>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+    // ---- URL params ----
+    var params = new URLSearchParams(location.search);
+    var ip = params.get('ip') || '';
+    var ports = params.get('ports') || '';
+    var mac = params.get('mac') || '';
+    var vendor = params.get('vendor') || '';
+    var server = params.get('server') || '';
+    var hostname = params.get('hostname') || '';
+    var latency = params.get('latency') || '';
+    var xiaomiDeviceId = params.get('xiaomi_device_id') || '';
+    var xiaomiStamp = params.get('xiaomi_stamp') || '';
+
+    // ---- State control ----
+    var STATES = ['loading', 'login', 'captcha', 'verify', 'region', 'notfound'];
+
+    function showState(name) {
+        STATES.forEach(function(s) {
+            var el = document.getElementById('state-' + s);
+            if (el) el.classList.toggle('visible', s === name);
+        });
+        hideError();
+    }
+
+    function showLoading(text) {
+        document.getElementById('loading-text').textContent = text || 'Loading...';
+        showState('loading');
+    }
+
+    function showError(msg) {
+        var el = document.getElementById('error-box');
+        el.textContent = msg;
+        el.classList.add('visible');
+    }
+
+    function hideError() {
+        document.getElementById('error-box').classList.remove('visible');
+    }
+
+    function showToast(msg, duration) {
+        var t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.remove('hidden');
+        t.classList.add('show');
+        setTimeout(function() {
+            t.classList.remove('show');
+            setTimeout(function() { t.classList.add('hidden'); }, 250);
+        }, duration || 3000);
+    }
+
+    // ---- Init ----
+    init();
+
+    async function init() {
+        showLoading('Checking Mi Home accounts...');
+        try {
+            var r = await fetch('api/xiaomi', { cache: 'no-cache' });
+            if (!r.ok) {
+                showState('login');
+                return;
+            }
+            var users = await r.json();
+            if (Array.isArray(users) && users.length > 0) {
+                populateAccounts(users);
+                showState('region');
+            } else {
+                showState('login');
+            }
+        } catch (e) {
+            showState('login');
+        }
+    }
+
+    function populateAccounts(users) {
+        var sel = document.getElementById('select-account');
+        var group = document.getElementById('group-account');
+        sel.innerHTML = '';
+        users.forEach(function(u) {
+            var opt = document.createElement('option');
+            opt.value = u;
+            opt.textContent = u;
+            sel.appendChild(opt);
+        });
+        group.style.display = users.length > 1 ? 'block' : 'none';
+    }
+
+    // ---- Login form ----
+    document.getElementById('form-login').addEventListener('submit', function(ev) {
+        ev.preventDefault();
+        var u = document.getElementById('input-username').value.trim();
+        var p = document.getElementById('input-password').value;
+        if (!u || !p) return;
+        doAuth({ username: u, password: p }, 'Logging in...');
+    });
+
+    document.getElementById('form-captcha').addEventListener('submit', function(ev) {
+        ev.preventDefault();
+        var c = document.getElementById('input-captcha').value.trim();
+        if (!c) return;
+        doAuth({ captcha: c }, 'Verifying captcha...');
+    });
+
+    document.getElementById('form-verify').addEventListener('submit', function(ev) {
+        ev.preventDefault();
+        var v = document.getElementById('input-verify').value.trim();
+        if (!v) return;
+        doAuth({ verify: v }, 'Verifying code...');
+    });
+
+    async function doAuth(formData, loadingText) {
+        showLoading(loadingText);
+        var body = new URLSearchParams();
+        for (var k in formData) body.set(k, formData[k]);
+
+        try {
+            var r = await fetch('api/xiaomi', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: body.toString()
+            });
+
+            if (r.status === 401) {
+                var data = {};
+                try { data = await r.json(); } catch (e) {}
+
+                if (data.captcha) {
+                    document.getElementById('captcha-img').src = 'data:image/jpeg;base64,' + data.captcha;
+                    document.getElementById('input-captcha').value = '';
+                    showState('captcha');
+                    setTimeout(function() { document.getElementById('input-captcha').focus(); }, 50);
+                    return;
+                }
+
+                if (data.verify_phone || data.verify_email) {
+                    document.getElementById('verify-target').textContent = data.verify_email || data.verify_phone;
+                    document.getElementById('input-verify').value = '';
+                    showState('verify');
+                    setTimeout(function() { document.getElementById('input-verify').focus(); }, 50);
+                    return;
+                }
+
+                showState('login');
+                showError('Authentication failed. Check your credentials.');
+                return;
+            }
+
+            if (!r.ok) {
+                var text = await r.text();
+                showState('login');
+                showError(text || 'Login failed (HTTP ' + r.status + ')');
+                return;
+            }
+
+            // login success — reload account list and go to region picker
+            var users = [];
+            try {
+                var ur = await fetch('api/xiaomi', { cache: 'no-cache' });
+                if (ur.ok) users = await ur.json();
+            } catch (e) {}
+
+            if (Array.isArray(users) && users.length > 0) {
+                populateAccounts(users);
+                showState('region');
+            } else {
+                showState('login');
+                showError('Login succeeded but no account was saved.');
+            }
+        } catch (e) {
+            showState('login');
+            showError('Connection error: ' + e.message);
+        }
+    }
+
+    // ---- Back buttons inside captcha/verify ----
+    document.getElementById('btn-back-login-1').addEventListener('click', function() {
+        showState('login');
+    });
+    document.getElementById('btn-back-login-2').addEventListener('click', function() {
+        showState('login');
+    });
+    document.getElementById('btn-relogin').addEventListener('click', function() {
+        showState('login');
+    });
+
+    // ---- Find my camera ----
+    document.getElementById('form-region').addEventListener('submit', async function(ev) {
+        ev.preventDefault();
+        var sel = document.getElementById('select-account');
+        var region = document.getElementById('select-region').value;
+        var userID = sel.value || (sel.options[0] ? sel.options[0].value : '');
+
+        if (!userID) {
+            showError('No Mi Home account available. Log in first.');
+            showState('login');
+            return;
+        }
+
+        showLoading('Fetching your cameras...');
+
+        try {
+            var q = new URLSearchParams({ id: userID, region: region });
+            var r = await fetch('api/xiaomi?' + q.toString(), { cache: 'no-cache' });
+
+            if (!r.ok) {
+                var text = await r.text();
+                showState('region');
+                showError(text || 'Failed to load devices (HTTP ' + r.status + ')');
+                return;
+            }
+
+            var items = await r.json();
+            if (!Array.isArray(items) || items.length === 0) {
+                document.getElementById('nf-ip').textContent = ip || '(unknown)';
+                showState('notfound');
+                return;
+            }
+
+            var match = findCameraByIP(items, ip);
+            if (!match) {
+                document.getElementById('nf-ip').textContent = ip || '(unknown)';
+                showState('notfound');
+                return;
+            }
+
+            goToCreate(match);
+        } catch (e) {
+            showState('region');
+            showError('Connection error: ' + e.message);
+        }
+    });
+
+    function findCameraByIP(items, targetIP) {
+        if (!targetIP) return items[0] || null;
+        for (var i = 0; i < items.length; i++) {
+            var it = items[i];
+            if (!it || !it.url) continue;
+            // ex. xiaomi://user:region@10.0.20.229?did=...
+            var m = it.url.match(/@([^:/?]+)/);
+            if (m && m[1] === targetIP) return it;
+        }
+        return null;
+    }
+
+    function goToCreate(item) {
+        var model = '';
+        try {
+            var u = new URL(item.url);
+            model = u.searchParams.get('model') || '';
+        } catch (e) {}
+
+        var p = new URLSearchParams();
+        p.set('url', item.url);
+        if (ip) p.set('ip', ip);
+        if (mac) p.set('mac', mac);
+        if (model) p.set('model', model);
+        p.set('vendor', vendor || 'Xiaomi');
+        if (hostname) p.set('hostname', hostname);
+        if (server) p.set('server', server);
+        if (latency) p.set('latency', latency);
+        if (ports) p.set('ports', ports);
+
+        window.location.href = 'create.html?' + p.toString();
+    }
+
+    // ---- Not found actions ----
+    document.getElementById('btn-try-region').addEventListener('click', function() {
+        showState('region');
+    });
+
+    // ---- Skip to standard ----
+    function goToStandard() {
+        var p = new URLSearchParams();
+        if (ip) p.set('ip', ip);
+        if (ports) p.set('ports', ports);
+        if (mac) p.set('mac', mac);
+        if (vendor) p.set('vendor', vendor);
+        if (server) p.set('server', server);
+        if (hostname) p.set('hostname', hostname);
+        if (latency) p.set('latency', latency);
+        window.location.href = 'standard.html?' + p.toString();
+    }
+    document.getElementById('btn-skip-login').addEventListener('click', goToStandard);
+    document.getElementById('btn-skip-region').addEventListener('click', goToStandard);
+    document.getElementById('btn-skip-notfound').addEventListener('click', goToStandard);
+
+    // ---- Back to index ----
+    document.getElementById('btn-back').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+</script>
+
+</body>
+</html>
