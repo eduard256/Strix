@@ -2,5 +2,5 @@ package www
 
 import "embed"
 
-//go:embed *.html
+//go:embed *.html icons
 var Static embed.FS
