@@ -111,12 +111,8 @@ func buildInfo(req *Request) *cameraInfo {
 			info.addCredential(subSection, subKey, subValue)
 		}
 
-		subPath := "rtsp://127.0.0.1:8554/" + subName
-		if needMP4[subScheme] {
-			subPath += "?mp4"
-		}
-		subInputArgs := "preset-rtsp-restream"
-
+		// apply go2rtc overrides BEFORE deriving subPath -- otherwise a rename
+		// would desync go2rtc.streams (new name) and frigate inputs (old name).
 		if req.Go2RTC != nil {
 			if req.Go2RTC.SubStreamName != "" {
 				subName = req.Go2RTC.SubStreamName
@@ -129,6 +125,13 @@ func buildInfo(req *Request) *cameraInfo {
 				}
 			}
 		}
+
+		subPath := "rtsp://127.0.0.1:8554/" + subName
+		if needMP4[subScheme] {
+			subPath += "?mp4"
+		}
+		subInputArgs := "preset-rtsp-restream"
+
 		if req.Frigate != nil {
 			if req.Frigate.SubStreamPath != "" {
 				subPath = req.Frigate.SubStreamPath

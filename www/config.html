@@ -479,8 +479,7 @@
     var defaultName = ip ? 'camera_' + ip.replace(/\./g, '_') : 'camera';
     document.getElementById('f-name').value = defaultName;
 
-    // prefill ONVIF from probe
-    if (ip) document.getElementById('f-onvif-host').value = ip;
+    // prefill ONVIF user only (host stays empty so the onvif block is opt-in)
     if (userParam) document.getElementById('f-onvif-user').value = userParam;
 
     // -- tabs (mobile) --
