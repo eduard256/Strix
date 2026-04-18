@@ -15,6 +15,7 @@ import (
 	"github.com/AlexxIT/go2rtc/pkg/xiaomi/crypto"
 	"github.com/eduard256/strix/internal/api"
 	"github.com/eduard256/strix/internal/app"
+	"github.com/eduard256/strix/pkg/generate"
 	"github.com/eduard256/strix/pkg/tester"
 	"github.com/rs/zerolog"
 )
@@ -53,6 +54,29 @@ func Init() {
 	})
 
 	api.HandleFunc("api/xiaomi", apiXiaomi)
+
+	generate.RegisterExtract("xiaomi", extractForConfig)
+}
+
+// extractForConfig strips ?token=... from xiaomi:// URL and returns
+// userID + token for a top-level `xiaomi:` yaml section.
+// ex. xiaomi://4161148305:cn@10.0.20.229?did=450924912&model=X&token=V1:...
+//   -> xiaomi://4161148305:cn@10.0.20.229?did=450924912&model=X, "xiaomi", "4161148305", "V1:..."
+func extractForConfig(rawURL string) (cleaned, section, key, value string) {
+	u, err := url.Parse(rawURL)
+	if err != nil || u.User == nil {
+		return rawURL, "", "", ""
+	}
+
+	q := u.Query()
+	token := q.Get("token")
+	if token == "" {
+		return rawURL, "", "", ""
+	}
+	q.Del("token")
+	u.RawQuery = q.Encode()
+
+	return u.String(), "xiaomi", u.User.Username(), token
 }
 
 var log zerolog.Logger

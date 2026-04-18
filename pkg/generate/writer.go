@@ -2,6 +2,7 @@ package generate
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -15,6 +16,38 @@ func writeStreamLines(b *strings.Builder, info *cameraInfo) {
 	}
 
 	b.WriteByte('\n')
+}
+
+// writeCredentials writes top-level credential sections (xiaomi, tapo, ring, ...)
+// populated by registered ExtractFunc handlers. Sorted by section, then by key.
+// ex.
+//   xiaomi:
+//     "4161148305": V1:9d2w...
+func writeCredentials(b *strings.Builder, creds map[string]map[string]string) {
+	if len(creds) == 0 {
+		return
+	}
+
+	sections := make([]string, 0, len(creds))
+	for s := range creds {
+		sections = append(sections, s)
+	}
+	sort.Strings(sections)
+
+	for _, section := range sections {
+		fmt.Fprintf(b, "%s:\n", section)
+
+		keys := make([]string, 0, len(creds[section]))
+		for k := range creds[section] {
+			keys = append(keys, k)
+		}
+		sort.Strings(keys)
+
+		for _, k := range keys {
+			fmt.Fprintf(b, "  %q: %s\n", k, creds[section][k])
+		}
+		b.WriteByte('\n')
+	}
 }
 
 func writeCameraBlock(b *strings.Builder, info *cameraInfo, req *Request) {
