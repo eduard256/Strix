@@ -312,8 +312,72 @@
         .toast.show { transform: translateX(-50%) translateY(0); }
         .toast.hidden { display: none; }
 
+        /* Modal: version-warning popup shown on page open.
+           Blocking (full-screen backdrop + centered panel) so the user
+           cannot miss the go2rtc/Frigate version caveat before attempting
+           to pair a Xiaomi camera. */
+        .modal-backdrop {
+            position: fixed; inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            display: flex; align-items: center; justify-content: center;
+            padding: 1.5rem;
+            z-index: 2000;
+            animation: fadeIn var(--transition-base);
+        }
+        .modal-backdrop.hidden { display: none; }
+
+        .modal {
+            width: 100%; max-width: 420px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.75rem 1.5rem 1.5rem;
+            box-shadow: var(--shadow-lg), 0 0 0 1px var(--purple-glow);
+            text-align: center;
+            animation: modalIn var(--transition-base);
+        }
+
+        .modal-icon {
+            width: 48px; height: 48px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            background: rgba(245, 158, 11, 0.12);
+            display: flex; align-items: center; justify-content: center;
+            color: #f59e0b;
+        }
+        .modal-icon svg { width: 28px; height: 28px; }
+
+        .modal-title {
+            font-size: 1.0625rem; font-weight: 600;
+            color: var(--text-primary); margin-bottom: 0.625rem;
+            letter-spacing: 0.01em;
+        }
+
+        .modal-text {
+            font-size: 0.875rem; line-height: 1.55;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+        }
+        .modal-text p + p { margin-top: 0.625rem; }
+        .modal-text code {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--purple-light);
+            background: var(--bg-tertiary);
+            padding: 0.0625rem 0.375rem;
+            border-radius: 4px;
+        }
+
+        .modal .btn-primary { width: 100%; }
+
         @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes modalIn {
+            from { opacity: 0; transform: translateY(8px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
     </style>
 </head>
 <body>
@@ -465,6 +529,26 @@
 
 <div id="toast" class="toast hidden"></div>
 
+<!-- Version-warning modal: displayed on page load until the user dismisses it.
+     Remove this block once Frigate ships with go2rtc v1.9.13 or newer. -->
+<div id="version-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="version-modal-title">
+    <div class="modal">
+        <div class="modal-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3L2 20h20L12 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 10v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="17.5" r="1" fill="currentColor"/>
+            </svg>
+        </div>
+        <h2 class="modal-title" id="version-modal-title">Xiaomi support pending</h2>
+        <div class="modal-text">
+            <p>Frigate <code>0.17.1-stable</code> ships with go2rtc below <code>v1.9.13</code>, which is required for Xiaomi cameras.</p>
+            <p>Use an external go2rtc <code>v1.9.13+</code>, or wait for the next Frigate release.</p>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-modal-ok">Got it</button>
+    </div>
+</div>
+
 <script>
     // ---- URL params ----
     var params = new URLSearchParams(location.search);
@@ -514,6 +598,36 @@
             setTimeout(function() { t.classList.add('hidden'); }, 250);
         }, duration || 3000);
     }
+
+    // ---- Version-warning modal ----
+    // Show on every page load until the user dismisses it; no persistence.
+    // When Frigate bundles go2rtc v1.9.13+ this block (plus the markup and
+    // styles) can be removed entirely.
+    (function showVersionModal() {
+        var modal = document.getElementById('version-modal');
+        var okBtn = document.getElementById('btn-modal-ok');
+        if (!modal || !okBtn) return;
+
+        function close() {
+            modal.classList.add('hidden');
+            document.removeEventListener('keydown', onKey);
+        }
+        function onKey(ev) {
+            if (ev.key === 'Escape' || ev.key === 'Enter') {
+                ev.preventDefault();
+                close();
+            }
+        }
+
+        modal.classList.remove('hidden');
+        document.addEventListener('keydown', onKey);
+        okBtn.addEventListener('click', close);
+        // Click on backdrop (outside the panel) also dismisses.
+        modal.addEventListener('click', function(ev) {
+            if (ev.target === modal) close();
+        });
+        setTimeout(function() { okBtn.focus(); }, 50);
+    })();
 
     // ---- Init ----
     init();
