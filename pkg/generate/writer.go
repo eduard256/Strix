@@ -14,15 +14,17 @@ func writeStreamLines(b *strings.Builder, info *cameraInfo) {
 		fmt.Fprintf(b, "    '%s':\n", info.SubStreamName)
 		fmt.Fprintf(b, "      - %s\n", info.SubSource)
 	}
-
-	b.WriteByte('\n')
 }
 
-// writeCredentials writes top-level credential sections (xiaomi, tapo, ring, ...)
-// populated by registered ExtractFunc handlers. Sorted by section, then by key.
+// writeCredentials writes credential sections (xiaomi, tapo, ring, ...) as
+// nested keys under go2rtc:, populated by registered ExtractFunc handlers.
+// Sorted by section, then by key. Frigate only allows known keys at root,
+// so credentials must live inside go2rtc: (which allows extra keys).
 // ex.
-//   xiaomi:
-//     "4161148305": V1:9d2w...
+//   go2rtc:
+//     streams: { ... }
+//     xiaomi:
+//       "4161148305": V1:9d2w...
 func writeCredentials(b *strings.Builder, creds map[string]map[string]string) {
 	if len(creds) == 0 {
 		return
@@ -35,7 +37,7 @@ func writeCredentials(b *strings.Builder, creds map[string]map[string]string) {
 	sort.Strings(sections)
 
 	for _, section := range sections {
-		fmt.Fprintf(b, "%s:\n", section)
+		fmt.Fprintf(b, "  %s:\n", section)
 
 		keys := make([]string, 0, len(creds[section]))
 		for k := range creds[section] {
@@ -44,10 +46,10 @@ func writeCredentials(b *strings.Builder, creds map[string]map[string]string) {
 		sort.Strings(keys)
 
 		for _, k := range keys {
-			fmt.Fprintf(b, "  %q: %s\n", k, creds[section][k])
+			fmt.Fprintf(b, "    %q: %s\n", k, creds[section][k])
 		}
-		b.WriteByte('\n')
 	}
+	b.WriteByte('\n')
 }
 
 func writeCameraBlock(b *strings.Builder, info *cameraInfo, req *Request) {

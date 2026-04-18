@@ -155,8 +155,10 @@ func newConfig(info *cameraInfo, req *Request) string {
 
 	b.WriteString("go2rtc:\n  streams:\n")
 	writeStreamLines(&b, info)
-
 	writeCredentials(&b, info.Credentials)
+	if len(info.Credentials) == 0 {
+		b.WriteByte('\n')
+	}
 
 	b.WriteString("cameras:\n")
 	writeCameraBlock(&b, info, req)
