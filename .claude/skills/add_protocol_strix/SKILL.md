@@ -13,23 +13,30 @@ The protocol name is provided as argument (e.g. `/add_protocol_strix bubble`). I
 
 ## Repositories
 
-- Strix: `/home/user/Strix`
+- Strix: current working directory (`/home/user/Strix`)
 - go2rtc: `/home/user/go2rtc` (reference implementation, read-only)
 - StrixCamDB: issues at https://github.com/eduard256/StrixCamDB/issues (for database updates)
 
+## Related skills (know when to hand off)
+
+- `/add_generate_strix <proto>` -- register a credentials extractor for the Frigate config generator. Run AFTER this skill if the protocol has tokens/passwords that must go into a separate YAML section of `frigate-config.yaml`.
+- `/add_probe_detector_strix <proto>` -- add a device-type detector to `/api/probe` so the frontend auto-routes a matching IP to your new protocol page.
+
 ---
 
-## STEP 0: Understand the existing RTSP implementation (REFERENCE)
+## STEP 0: Understand the existing implementations (REFERENCE)
 
 Before doing anything, read these files completely to understand the patterns:
 
 ```
-/home/user/Strix/pkg/tester/source.go    -- handler registry + RTSP reference implementation
-/home/user/Strix/pkg/tester/worker.go    -- how handlers are called, screenshot logic
-/home/user/Strix/pkg/tester/session.go   -- session data structures
-/home/user/Strix/pkg/camdb/streams.go    -- URL builder, placeholder replacement
-/home/user/Strix/internal/test/test.go   -- API layer for tester
-/home/user/Strix/internal/search/search.go -- search API (rarely needs changes)
+pkg/tester/source.go              -- handler registry + RTSP reference (Type A)
+pkg/tester/worker.go              -- how handlers are called, screenshot logic
+pkg/tester/session.go             -- session data structures
+pkg/camdb/streams.go              -- URL builder, placeholder replacement
+internal/test/test.go             -- API layer for tester
+internal/search/search.go         -- search API (rarely needs changes)
+internal/xiaomi/xiaomi.go         -- golden reference for Type B with cloud auth + token URLs
+internal/homekit/homekit.go       -- reference for Type B with pairing-based custom source blocks
 ```
 
 ### How RTSP works (the reference pattern)
@@ -99,11 +106,13 @@ go2rtc already implements most camera protocols. Study the implementation:
 
 | What | Where |
 |------|-------|
-| Protocol client logic | `/home/user/go2rtc/pkg/{protocol}/` |
-| Module registration | `/home/user/go2rtc/internal/{protocol}/` |
-| Core interfaces | `/home/user/go2rtc/pkg/core/core.go` |
-| Stream handler registry | `/home/user/go2rtc/internal/streams/handlers.go` |
-| Keyframe capture | `/home/user/go2rtc/pkg/magic/keyframe.go` |
+| Protocol client logic | `../go2rtc/pkg/{protocol}/` |
+| Module registration | `../go2rtc/internal/{protocol}/` |
+| Core interfaces | `../go2rtc/pkg/core/core.go` |
+| Stream handler registry | `../go2rtc/internal/streams/handlers.go` |
+| Keyframe capture | `../go2rtc/pkg/magic/keyframe.go` |
+
+**Version note:** cloud-auth protocols like `xiaomi` require go2rtc >= 1.9.13. Frigate `stable` still ships with go2rtc 1.9.10; Frigate `dev`/0.18+ upgrades to 1.9.13+. A user on Frigate stable cannot stream a xiaomi camera even if Strix generates a perfect config -- the go2rtc binary inside Frigate will log `unsupported scheme`. Mention this in your handoff.
 
 ### Protocol map in go2rtc
 
@@ -161,24 +170,36 @@ Most protocols follow this exact pattern: `pkg/{protocol}.Dial(url)` returns `co
 
 Use AskUserQuestion to discuss with the user. Determine the protocol type:
 
-### Type A: Standard URL-based protocol (rtsp, rtmp, bubble, dvrip, http, etc.)
+### Type A: Standard URL-based protocol (rtsp, rtmp, bubble, dvrip, http)
 
-- Has URL scheme (e.g. `bubble://host:port/path`)
+- Has URL scheme (ex. `bubble://host:port/path`)
 - URLs stored in StrixCamDB database
 - Flow: user searches camera -> gets URL templates -> URLs built with credentials -> sent to tester
 - Needs: stream handler in tester + default port in URL builder + database issue
+- Hands off to: no other skill needed (credentials live in userinfo, captured by the URL itself)
 
-### Type B: Custom/discovery protocol (homekit, onvif, etc.)
+### Type B1: Custom pairing / discovery (homekit)
 
-- Does NOT use standard URL templates from database
-- Has custom discovery or authentication flow
-- Data comes from probe endpoint or direct user input, NOT from camera search
-- Needs: source handler in tester with custom logic, possibly probe endpoint update
-- Does NOT need database issue
+- Does NOT use URL templates from database
+- mDNS discovery + multi-step pairing (PIN, PSK, etc.)
+- Custom frontend page, custom API endpoint, custom source block in `/api/test`
+- Data comes from `/api/probe` or direct user input
+- Needs: `SourceBlockHandler` registration, pairing endpoint, dedicated HTML page
+- Reference: `internal/homekit/homekit.go`, `www/homekit.html`
+- Hands off to: `/add_probe_detector_strix` (if detectable by IP)
+
+### Type B2: Cloud-auth with token URL (xiaomi, tapo, nest, ring, roborock, tuya)
+
+- Has URL scheme (`xiaomi://userID:region@IP?did=X&model=Y&token=T`)
+- Credentials come from a cloud API (Mi Cloud, Tapo Cloud, etc.) not from local discovery
+- Stateless design: token is extracted server-side, embedded in URL, then consumed by a generator extractor that moves it to a dedicated YAML section
+- Copy `internal/<proto>/<proto>.go` from go2rtc (adapt imports), add API endpoint for the cloud login flow, build a dedicated HTML page mirroring `www/xiaomi.html`
+- Reference: `internal/xiaomi/xiaomi.go` (copy template), `www/xiaomi.html` (UI template)
+- Hands off to: `/add_generate_strix <proto>` for the YAML credentials extractor, `/add_probe_detector_strix <proto>` if detectable by IP
 
 ### Type C: HTTP sub-protocol (mjpeg, jpeg snapshot, hls)
 
-- Uses http:// or https:// URL scheme
+- Uses `http://` or `https://` URL scheme
 - Already has URLs in database (same as HTTP)
 - Needs special handling in tester based on Content-Type response
 - Needs: stream handler that detects content type and handles accordingly
@@ -331,40 +352,70 @@ func {scheme}Handler(rawURL string) (core.Producer, error) {
 }
 ```
 
-### For custom protocols (Type B -- homekit, onvif, etc.)
+### For Type B2 -- cloud-auth protocols (xiaomi, tapo, nest, ring, roborock, tuya)
 
-These protocols do NOT go through the standard URL -> handler flow. They need a **source handler** that receives custom parameters and produces results directly.
+Use xiaomi as the golden reference. These protocols fit the normal `tester.RegisterSource` contract -- their URL scheme IS routable, you just have to do cloud auth first and embed the resulting token in the URL.
 
-The current architecture uses `SourceHandler func(rawURL string) (core.Producer, error)` for standard protocols. For custom protocols, you need to:
+**1. Copy `internal/<proto>/<proto>.go` from go2rtc** into Strix. Change imports:
 
-1. Extend the POST /api/test request to accept custom source blocks
-2. Handle them separately from the `streams` array
-
-Current request format:
-```json
-{
-  "sources": {
-    "streams": ["rtsp://...", "http://..."]
-  }
-}
-```
-
-Extended format for custom protocols:
-```json
-{
-  "sources": {
-    "streams": ["rtsp://...", "http://..."],
-    "homekit": {"device_id": "AA:BB:CC", "pin": "123-45-678"},
-    "onvif": {"host": "192.168.1.100", "username": "admin", "password": "pass"}
-  }
-}
-```
-
-To implement this:
-
-1. Define a source handler type in `/home/user/Strix/pkg/tester/source.go`:
 ```go
-// SourceBlockHandler processes a custom source block, writes results directly to session
+// go2rtc:
+"github.com/AlexxIT/go2rtc/internal/api"
+"github.com/AlexxIT/go2rtc/internal/app"
+"github.com/AlexxIT/go2rtc/internal/streams"
+
+// strix:
+"github.com/eduard256/strix/internal/api"
+"github.com/eduard256/strix/internal/app"
+"github.com/eduard256/strix/pkg/tester"
+```
+
+Replace `streams.HandleFunc("<proto>", ...)` with `tester.RegisterSource("<proto>", ...)`. Drop `app.LoadConfig`/`app.PatchConfig` calls -- Strix is stateless, tokens live only in memory + URL (see xiaomi for the pattern).
+
+**2. Stream handler extracts token from URL query** and seeds the in-memory cache:
+
+```go
+tester.RegisterSource("<proto>", func(rawURL string) (core.Producer, error) {
+    u, _ := url.Parse(rawURL)
+    // seed in-memory tokens cache from the URL so cloud-auth'd functions work
+    if token := u.Query().Get("token"); token != "" && u.User != nil {
+        ...
+    }
+    if u.User != nil {
+        rawURL, _ = getCameraURL(u) // cloud call for p2p keys
+    }
+    return <proto>.Dial(rawURL)
+})
+```
+
+**3. Cloud auth API endpoint** -- 4-step flow (username/password -> captcha -> 2FA -> success):
+
+```go
+api.HandleFunc("api/<proto>", apiHandler)
+```
+
+See `internal/xiaomi/xiaomi.go` for the exact switch on GET/POST and the 401+JSON-with-captcha/verify_phone response shape. The frontend mirrors this across several state transitions.
+
+**4. Register with `main.go`:**
+
+```go
+modules := []module{
+    ...
+    {"<proto>", <proto>.Init},
+}
+```
+
+**5. Build a frontend page `www/<proto>.html`** mirroring `www/xiaomi.html`. It has 6 states: loading, login, captcha, verify, region picker, not found. Also update `www/index.html`'s `navigateXiaomi`-style router to handle this protocol's probe type.
+
+**6. Register credentials extractor with the config generator.** Do this in THE SAME `Init()` by calling `/add_generate_strix <proto>` (or hand off to that skill). The extractor strips `?token=...` from the URL and moves it into a top-level section under `go2rtc:` in the generated Frigate config.
+
+### For Type B1 -- pairing-based protocols (homekit)
+
+These don't fit the URL scheme contract -- data comes from a mDNS discovery plus a user-entered PIN. They use `SourceBlockHandler` instead of `SourceHandler`:
+
+**1. Define block handler in `pkg/tester/source.go`:**
+
+```go
 type SourceBlockHandler func(data json.RawMessage, s *Session)
 
 var sourceHandlers = map[string]SourceBlockHandler{}
@@ -374,15 +425,24 @@ func RegisterSourceBlock(name string, handler SourceBlockHandler) {
 }
 ```
 
-2. Update `/home/user/Strix/internal/test/test.go` `apiTestCreate()` to parse and dispatch custom source blocks.
+**2. Update `internal/test/test.go:apiTestCreate()`** to parse and dispatch custom source blocks alongside `sources.streams`.
 
-3. Write the handler for your protocol. It receives raw JSON and a Session, and is responsible for:
-   - Parsing its own parameters
-   - Running its own discovery/test logic
-   - Adding Results to the Session
-   - Calling `s.AddTested()` for progress tracking
+**3. Extended request format:**
 
-**IMPORTANT**: Before implementing a custom protocol, discuss the approach with the user. Custom protocols are rare and need careful design.
+```json
+{
+  "sources": {
+    "streams": ["rtsp://...", "http://..."],
+    "homekit": {"device_id": "AA:BB:CC", "pin": "123-45-678"}
+  }
+}
+```
+
+**4. Write the block handler** -- parses its params, runs pairing, calls `s.AddResult(...)` and `s.AddTested(...)` directly.
+
+Reference: `internal/homekit/homekit.go`, `www/homekit.html`.
+
+**IMPORTANT**: Before starting Type B1, discuss the approach with the user -- pairing flows are rare and each one is custom.
 
 ---
 
@@ -423,19 +483,14 @@ curl -s -X POST http://localhost:4567/api/test \
 
 ---
 
-## STEP 7: Commit and push
+## STEP 7: Hand off to related skills
 
-```bash
-cd /home/user/Strix
-git add -A
-git commit -m "Add {protocol} protocol support
+Once the tester handler works and the test returns a screenshot, the protocol is NOT fully wired yet. Check what else is needed:
 
-- Register {protocol} stream handler using go2rtc pkg/{protocol}
-- Add default port {port} for {protocol} scheme
-- {any other changes}"
+- **Does the URL carry credentials (tokens, passwords)?** Run `/add_generate_strix <proto>` to register the extractor that moves them into a top-level section of the generated Frigate config. Without this, `frigate-config.yaml` embeds the full URL with the token, and a user pasting the config into Frigate directly will leak the secret (plus `go2rtc:xiaomi` section won't populate).
+- **Is the device detectable by IP probe?** Run `/add_probe_detector_strix <proto>` so that `/api/probe?ip=X` returns `type: "<proto>"` and the frontend auto-routes to the protocol page.
 
-git push origin develop
-```
+Do NOT commit -- leave changes staged for the user to review.
 
 ---
 
@@ -568,14 +623,18 @@ Many protocols use `pkg/tcp` for low-level connection:
 
 ## CHECKLIST BEFORE FINISHING
 
-- [ ] Read all existing protocol handlers in `source.go`
-- [ ] Read go2rtc pkg/ and internal/ for this protocol
-- [ ] Determined protocol type (A/B/C)
+- [ ] Read all existing protocol handlers in `pkg/tester/source.go`
+- [ ] Read xiaomi (`internal/xiaomi/xiaomi.go`) AND homekit (`internal/homekit/homekit.go`) as references
+- [ ] Read go2rtc `pkg/` and `internal/` for this protocol
+- [ ] Determined protocol type (A / B1 / B2 / C)
 - [ ] For Type A: created StrixCamDB issue (protocol + placeholders if needed)
 - [ ] For Type A: added default port to `defaultPorts` in `streams.go` (if not already there)
-- [ ] Added handler registration in `source.go` init() or new file
-- [ ] Handler follows RTSP pattern: Dial -> return Producer
+- [ ] Added handler registration (or full `internal/<proto>/` module for B2)
+- [ ] Handler follows established pattern (RTSP for A, xiaomi for B2, homekit for B1)
 - [ ] Error messages prefixed with protocol name
 - [ ] Connections closed on error
-- [ ] Code compiles: `go build ./...`
-- [ ] Committed and pushed to develop
+- [ ] `go build ./...` compiles
+- [ ] For B2: frontend page created (`www/<proto>.html`) and `www/index.html` router updated
+- [ ] For B2: `/add_generate_strix <proto>` run to register the credentials extractor
+- [ ] For detectable protocols: `/add_probe_detector_strix <proto>` run
+- [ ] Changes LEFT STAGED (not committed -- user will review)
