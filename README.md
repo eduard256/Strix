@@ -122,6 +122,22 @@ curl -O https://raw.githubusercontent.com/eduard256/Strix/main/docker-compose.go
 docker compose -f docker-compose.go2rtc.yml up -d
 ```
 
+### Podman
+
+Podman drops `NET_RAW` and `NET_ADMIN` by default, which Strix needs for network scanning. Add them explicitly:
+
+```bash
+podman run -d \
+  --name strix \
+  --network host \
+  --cap-add=NET_RAW \
+  --cap-add=NET_ADMIN \
+  --restart unless-stopped \
+  eduard256/strix:latest
+```
+
+Or run with `--privileged` if you prefer.
+
 ### Home Assistant Add-on
 
 1. **Settings** > **Add-ons** > **Add-on Store**
