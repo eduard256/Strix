@@ -147,7 +147,7 @@ Or run with `--privileged` if you prefer.
 ### Umbrel
 
 <a href="https://apps.umbrel.com/app/strix">
-  <img src="https://apps.umbrel.com/api/app/strix/badge-light.svg" alt="Install on Umbrel" height="60">
+  <img src="https://apps.umbrel.com/badge-light.svg" alt="Install on Umbrel" height="60">
 </a>
 
 Install in one click from the [Umbrel App Store](https://apps.umbrel.com/app/strix).
