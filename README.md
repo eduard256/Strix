@@ -150,8 +150,6 @@ Or run with `--privileged` if you prefer.
   <img src="https://apps.umbrel.com/badge-light.svg" alt="Install on Umbrel" height="60">
 </a>
 
-Install in one click from the [Umbrel App Store](https://apps.umbrel.com/app/strix).
-
 ### Binary
 
 Download from [GitHub Releases](https://github.com/eduard256/Strix/releases). No dependencies except `ffmpeg` for screenshot conversion.
