@@ -3,6 +3,8 @@ package tester
 import (
 	"bytes"
 	"fmt"
+	"net"
+	"net/url"
 	"os/exec"
 	"strings"
 	"time"
@@ -50,6 +52,11 @@ func RunWorkers(s *Session, urls []string) {
 
 func testURL(s *Session, rawURL string) {
 	defer s.AddTested()
+
+	// Enforce SSRF boundary validation
+	if !isSafeURL(rawURL) {
+		return
+	}
 
 	if strings.HasPrefix(rawURL, "homekit://") {
 		testHomeKit(s, rawURL)
@@ -201,4 +208,62 @@ func toJPEG(raw []byte) []byte {
 		return nil
 	}
 	return out
+}
+
+// isSafeURL extracts the host, resolves it, and verifies it is safe against SSRF
+func isSafeURL(rawURL string) bool {
+	uStr := rawURL
+	// Rewrite custom schemes (rtsp://, dvrip://) temporarily to http:// 
+	// so Go's standard url.Parse handles them correctly
+	if idx := strings.Index(uStr, "://"); idx > 0 {
+		uStr = "http" + uStr[idx:]
+	}
+
+	u, err := url.Parse(uStr)
+	if err != nil {
+		return false
+	}
+
+	host := u.Hostname()
+	if host == "" {
+		return false
+	}
+
+	// If the host is a raw IP address, validate it directly
+	if ip := net.ParseIP(host); ip != nil {
+		return isSafeIP(ip)
+	}
+
+	// Otherwise, resolve the hostname to IP addresses
+	ips, err := net.LookupIP(host)
+	if err != nil {
+		return false // Reject if resolution fails
+	}
+
+	if len(ips) == 0 {
+		return false
+	}
+
+	// Verify that every resolved IP is safe
+	for _, ip := range ips {
+		if !isSafeIP(ip) {
+			return false
+		}
+	}
+
+	return true
+}
+
+// isSafeIP checks if the IP is loopback, multicast, or link-local (cloud metadata)
+func isSafeIP(ip net.IP) bool {
+	if ip.IsLoopback() {
+		return false
+	}
+	if ip.IsMulticast() {
+		return false
+	}
+	if ip.IsLinkLocalUnicast() || ip.IsLinkLocalMulticast() {
+		return false
+	}
+	return true
 }
