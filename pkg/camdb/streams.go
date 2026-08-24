@@ -12,12 +12,13 @@ import (
 var defaultPorts = map[string]int{
 	"rtsp": 554, "rtsps": 322, "http": 80, "https": 443,
 	"rtmp": 1935, "mms": 554, "rtp": 5004, "bubble": 80,
-	"dvrip": 34567,
+	"dvrip": 34567, "tapo": 8800, "vigi": 8800, "kasa": 19443,
 }
 
 // protocols where port must always be explicit in URL (raw TCP dial without default port logic)
 var portRequired = map[string]bool{
 	"bubble": true,
+	"kasa":   true,
 }
 
 type StreamParams struct {
@@ -131,7 +132,6 @@ func BuildStreams(db *sql.DB, p *StreamParams) ([]string, error) {
 	return streams, nil
 }
 
-
 // internals
 
 func buildURL(protocol, path, ip string, port int, user, pass string, channel int) string {
@@ -164,6 +164,9 @@ func replacePlaceholders(s, ip string, port int, user, pass string, channel int)
 	encUser := url.QueryEscape(user)
 	encPass := url.QueryEscape(pass)
 
+	// kasa wants the cloud password as base64, not plaintext
+	b64Pass := base64.StdEncoding.EncodeToString([]byte(pass))
+
 	pairs := []string{
 		"[CHANNEL]", strconv.Itoa(channel),
 		"[channel]", strconv.Itoa(channel),
@@ -184,6 +187,7 @@ func replacePlaceholders(s, ip string, port int, user, pass string, channel int)
 		"[IP]", ip, "[ip]", ip,
 		"[PORT]", strconv.Itoa(port), "[port]", strconv.Itoa(port),
 		"[AUTH]", auth, "[auth]", auth,
+		"[PASSWORD_B64]", b64Pass, "[password_b64]", b64Pass,
 		"[TOKEN]", "", "[token]", "",
 	}
 
