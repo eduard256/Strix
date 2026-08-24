@@ -54,10 +54,16 @@ func buildInfo(req *Request) *cameraInfo {
 		streamBase = sanitized
 	}
 
+	mainSource, mainSection, mainKey, mainValue := runExtract(req.MainStream)
+
 	info := &cameraInfo{
 		CameraName:     base,
 		MainStreamName: streamBase + "_main",
-		MainSource:     req.MainStream,
+		MainSource:     mainSource,
+	}
+
+	if mainSection != "" {
+		info.addCredential(mainSection, mainKey, mainValue)
 	}
 
 	if req.Name != "" {
@@ -70,7 +76,11 @@ func buildInfo(req *Request) *cameraInfo {
 			info.MainStreamName = req.Go2RTC.MainStreamName
 		}
 		if req.Go2RTC.MainStreamSource != "" {
-			info.MainSource = req.Go2RTC.MainStreamSource
+			src, section, key, value := runExtract(req.Go2RTC.MainStreamSource)
+			info.MainSource = src
+			if section != "" {
+				info.addCredential(section, key, value)
+			}
 		}
 	}
 
@@ -95,21 +105,33 @@ func buildInfo(req *Request) *cameraInfo {
 		if req.Name != "" {
 			subName = req.Name + "_sub"
 		}
-		subSource := req.SubStream
+
+		subSource, subSection, subKey, subValue := runExtract(req.SubStream)
+		if subSection != "" {
+			info.addCredential(subSection, subKey, subValue)
+		}
+
+		// apply go2rtc overrides BEFORE deriving subPath -- otherwise a rename
+		// would desync go2rtc.streams (new name) and frigate inputs (old name).
+		if req.Go2RTC != nil {
+			if req.Go2RTC.SubStreamName != "" {
+				subName = req.Go2RTC.SubStreamName
+			}
+			if req.Go2RTC.SubStreamSource != "" {
+				src, section, key, value := runExtract(req.Go2RTC.SubStreamSource)
+				subSource = src
+				if section != "" {
+					info.addCredential(section, key, value)
+				}
+			}
+		}
+
 		subPath := "rtsp://127.0.0.1:8554/" + subName
 		if needMP4[subScheme] {
 			subPath += "?mp4"
 		}
 		subInputArgs := "preset-rtsp-restream"
 
-		if req.Go2RTC != nil {
-			if req.Go2RTC.SubStreamName != "" {
-				subName = req.Go2RTC.SubStreamName
-			}
-			if req.Go2RTC.SubStreamSource != "" {
-				subSource = req.Go2RTC.SubStreamSource
-			}
-		}
 		if req.Frigate != nil {
 			if req.Frigate.SubStreamPath != "" {
 				subPath = req.Frigate.SubStreamPath
@@ -136,6 +158,10 @@ func newConfig(info *cameraInfo, req *Request) string {
 
 	b.WriteString("go2rtc:\n  streams:\n")
 	writeStreamLines(&b, info)
+	writeCredentials(&b, info.Credentials)
+	if len(info.Credentials) == 0 {
+		b.WriteByte('\n')
+	}
 
 	b.WriteString("cameras:\n")
 	writeCameraBlock(&b, info, req)
@@ -156,6 +182,17 @@ type cameraInfo struct {
 	SubSource      string
 	SubPath        string
 	SubInputArgs   string
+	Credentials    map[string]map[string]string // section -> key -> value
+}
+
+func (c *cameraInfo) addCredential(section, key, value string) {
+	if c.Credentials == nil {
+		c.Credentials = map[string]map[string]string{}
+	}
+	if c.Credentials[section] == nil {
+		c.Credentials[section] = map[string]string{}
+	}
+	c.Credentials[section][key] = value
 }
 
 func urlScheme(rawURL string) string {

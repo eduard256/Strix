@@ -10,6 +10,7 @@ import (
 	"github.com/eduard256/strix/internal/probe"
 	"github.com/eduard256/strix/internal/search"
 	"github.com/eduard256/strix/internal/test"
+	"github.com/eduard256/strix/internal/xiaomi"
 )
 
 // version is set at build time via ldflags:
@@ -35,6 +36,7 @@ func main() {
 		{"frigate", frigate.Init},
 		{"go2rtc", go2rtc.Init},
 		{"homekit", homekit.Init},
+		{"xiaomi", xiaomi.Init},
 	}
 
 	for _, m := range modules {

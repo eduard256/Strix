@@ -3,6 +3,7 @@ package generate
 import (
 	"fmt"
 	"regexp"
+	"sort"
 	"strings"
 )
 
@@ -14,6 +15,7 @@ var (
 	reStreamName    = regexp.MustCompile(`^\s{4}'?(\w[\w-]*)'?:`)
 	reStreamContent = regexp.MustCompile(`^\s{4,}`)
 	reNextSection   = regexp.MustCompile(`^[a-z#]`)
+	reSibling       = regexp.MustCompile(`^  \w`) // sibling under go2rtc: (ex. `  xiaomi:`)
 	reCameraBody    = regexp.MustCompile(`^\s{2,}\S`)
 	reVersion       = regexp.MustCompile(`^version:`)
 )
@@ -63,6 +65,9 @@ func addToConfig(existing string, info *cameraInfo, req *Request) (*Response, er
 		added[mark+i] = true
 	}
 	result = append(result, rest[split:]...)
+
+	// upsert credential sections (xiaomi, tapo, ...) before cameras:
+	result, added = upsertCredentials(result, info.Credentials, added)
 
 	config := strings.Join(result, "\n")
 
@@ -134,6 +139,13 @@ func findStreamInsertPoint(lines []string) int {
 			continue
 		}
 		if in {
+			// stop at sibling under go2rtc: (ex. `  xiaomi:`)
+			if reSibling.MatchString(line) && !reStreamsHeader.MatchString(line) {
+				if last >= 0 {
+					return last + 1
+				}
+				return headerIdx + 1
+			}
 			if reStreamContent.MatchString(line) {
 				last = i
 			} else if reNextSection.MatchString(line) {
@@ -154,6 +166,184 @@ func findStreamInsertPoint(lines []string) int {
 		return headerIdx + 1
 	}
 	return -1
+}
+
+// upsertCredentials merges creds into credential sections nested under go2rtc:.
+// For each section: if a matching line `    "<key>":` exists -- replace its
+// value; else insert in sorted order. If the section itself doesn't exist --
+// create a new nested block inside go2rtc: (after streams: block).
+func upsertCredentials(lines []string, creds map[string]map[string]string, added map[int]bool) ([]string, map[int]bool) {
+	if len(creds) == 0 {
+		return lines, added
+	}
+
+	sections := make([]string, 0, len(creds))
+	for s := range creds {
+		sections = append(sections, s)
+	}
+	sort.Strings(sections)
+
+	for _, section := range sections {
+		lines, added = upsertSection(lines, section, creds[section], added)
+	}
+
+	return lines, added
+}
+
+// ex. `    "4161148305": V1:xxx` -- 4-space indent under nested section
+var reCredKey = regexp.MustCompile(`^\s{4}"([^"]+)":`)
+
+func upsertSection(lines []string, section string, kv map[string]string, added map[int]bool) ([]string, map[int]bool) {
+	// section header is nested under go2rtc:, ex. `  xiaomi:`
+	reHeader := regexp.MustCompile(`^  ` + regexp.QuoteMeta(section) + `:\s*$`)
+
+	headerIdx := -1
+	for i, line := range lines {
+		if reHeader.MatchString(line) {
+			headerIdx = i
+			break
+		}
+	}
+
+	if headerIdx == -1 {
+		return insertNewSection(lines, section, kv, added)
+	}
+
+	// section exists -- find end (blank line, top-level header, or sibling 2-space key)
+	end := len(lines)
+	for i := headerIdx + 1; i < len(lines); i++ {
+		line := lines[i]
+		if strings.TrimSpace(line) == "" || reTopLevel.MatchString(line) {
+			end = i
+			break
+		}
+		// sibling under go2rtc: has 2-space indent, not 4
+		if len(line) >= 2 && line[0] == ' ' && line[1] == ' ' && (len(line) == 2 || line[2] != ' ') {
+			end = i
+			break
+		}
+	}
+
+	keys := make([]string, 0, len(kv))
+	for k := range kv {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+
+	for _, k := range keys {
+		newLine := fmt.Sprintf("    %q: %s", k, kv[k])
+
+		// try replace -- no length change, just mark modified line
+		replaced := false
+		for i := headerIdx + 1; i < end; i++ {
+			if m := reCredKey.FindStringSubmatch(lines[i]); m != nil && m[1] == k {
+				if lines[i] != newLine {
+					lines[i] = newLine
+					added[i] = true
+				}
+				replaced = true
+				break
+			}
+		}
+		if replaced {
+			continue
+		}
+
+		// insert in sorted order within section
+		insertAt := headerIdx + 1
+		for i := headerIdx + 1; i < end; i++ {
+			if m := reCredKey.FindStringSubmatch(lines[i]); m != nil {
+				if m[1] < k {
+					insertAt = i + 1
+				} else {
+					break
+				}
+			} else {
+				insertAt = i + 1
+			}
+		}
+
+		lines = append(lines[:insertAt], append([]string{newLine}, lines[insertAt:]...)...)
+		added = shiftAdded(added, insertAt)
+		added[insertAt] = true
+		end++
+	}
+
+	return lines, added
+}
+
+// insertNewSection adds a new nested section under go2rtc:, after the streams:
+// block but before any sibling go2rtc key or top-level header.
+func insertNewSection(lines []string, section string, kv map[string]string, added map[int]bool) ([]string, map[int]bool) {
+	// find end of streams: block inside go2rtc:
+	insertAt := findGo2RTCInsertPoint(lines)
+	if insertAt < 0 {
+		return lines, added
+	}
+
+	block := []string{"  " + section + ":"}
+	keys := make([]string, 0, len(kv))
+	for k := range kv {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, k := range keys {
+		block = append(block, fmt.Sprintf("    %q: %s", k, kv[k]))
+	}
+
+	lines = append(lines[:insertAt], append(block, lines[insertAt:]...)...)
+	added = shiftAdded(added, insertAt)
+	for i := range block {
+		added[insertAt+i] = true
+	}
+
+	return lines, added
+}
+
+// findGo2RTCInsertPoint returns the line index where a new nested section
+// under go2rtc: should be inserted -- after the last non-blank content line
+// of the go2rtc: block.
+func findGo2RTCInsertPoint(lines []string) int {
+	reGo2RTCHeader := regexp.MustCompile(`^go2rtc:\s*$`)
+
+	headerIdx := -1
+	for i, line := range lines {
+		if reGo2RTCHeader.MatchString(line) {
+			headerIdx = i
+			break
+		}
+	}
+	if headerIdx == -1 {
+		return -1
+	}
+
+	last := headerIdx
+	for i := headerIdx + 1; i < len(lines); i++ {
+		line := lines[i]
+		if strings.TrimSpace(line) == "" {
+			continue
+		}
+		if reTopLevel.MatchString(line) {
+			break
+		}
+		last = i
+	}
+
+	return last + 1
+}
+
+// shiftAdded moves all marks at index >= from by +1. Also used with from=len(lines)
+// as a no-op shift (just return same map).
+func shiftAdded(added map[int]bool, from int) map[int]bool {
+	out := make(map[int]bool, len(added))
+	for i := range added {
+		if i >= from {
+			out[i+1] = true
+		} else {
+			out[i] = true
+		}
+	}
+	return out
 }
 
 func findCameraInsertPoint(lines []string) int {

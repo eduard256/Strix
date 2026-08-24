@@ -7,8 +7,10 @@ import (
 	"github.com/AlexxIT/go2rtc/pkg/bubble"
 	"github.com/AlexxIT/go2rtc/pkg/core"
 	"github.com/AlexxIT/go2rtc/pkg/dvrip"
+	"github.com/AlexxIT/go2rtc/pkg/kasa"
 	"github.com/AlexxIT/go2rtc/pkg/rtmp"
 	"github.com/AlexxIT/go2rtc/pkg/rtsp"
+	"github.com/AlexxIT/go2rtc/pkg/tapo"
 )
 
 // SourceHandler tests stream URL, returns Producer or error
@@ -36,6 +38,33 @@ func init() {
 	RegisterSource("rtmps", rtmpHandler)
 	RegisterSource("rtmpx", rtmpHandler)
 	RegisterSource("dvrip", dvripHandler)
+	RegisterSource("tapo", tapoHandler)
+	RegisterSource("vigi", tapoHandler)
+	RegisterSource("kasa", kasaHandler)
+}
+
+// tapoHandler -- Dial handles TCP connect on port 8800 and the encrypted TP-Link handshake.
+// Tapo wants the cloud password (not the RTSP one), Vigi wants the admin password.
+// ex. "tapo://cloud-password@192.168.1.100"
+// ex. "tapo://admin:UPPERCASE-MD5@192.168.1.100?subtype=1"
+// ex. "vigi://admin:pass@192.168.1.100"
+func tapoHandler(rawURL string) (core.Producer, error) {
+	conn, err := tapo.Dial(rawURL)
+	if err != nil {
+		return nil, fmt.Errorf("tapo: dial: %w", err)
+	}
+	return conn, nil
+}
+
+// kasaHandler -- Dial opens the multipart HTTP stream and probes its first frames.
+// Username is the urlsafe cloud email, password is that cloud password in base64.
+// ex. "kasa://alex%40gmail.com:c2VjcmV0MQ==@192.168.1.100:19443/https/stream/mixed"
+func kasaHandler(rawURL string) (core.Producer, error) {
+	conn, err := kasa.Dial(rawURL)
+	if err != nil {
+		return nil, fmt.Errorf("kasa: dial: %w", err)
+	}
+	return conn, nil
 }
 
 // dvripHandler -- Dial handles TCP connect, Sofia MD5 auth, and OPMonitor stream negotiation.

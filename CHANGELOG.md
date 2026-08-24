@@ -1,5 +1,25 @@
 # Changelog
 
+## [2.1.1] - 2026-08-24
+
+### Added
+- Xiaomi camera support: Mi Cloud integration, miIO probe detector, and a dedicated Xiaomi camera page in the web UI
+- Credential extraction registry for Frigate config generation, so per-vendor credentials are pulled out automatically
+- TP-Link protocols: tapo, vigi and kasa
+- Modular installer: new `install.sh` at repo root with system detection, a Proxmox navigator and a Linux navigator (whiptail UI, dark theme)
+- README sections for Podman (with the required capabilities) and Umbrel one-click install
+- End-to-end tests for the Frigate config writer
+
+### Fixed
+- Stray ONVIF block and go2rtc sub-stream rename desync in generated configs
+- `install.sh` now works correctly when piped through `curl | bash`
+- Local-in-pipe error in the installer scripts
+
+### Changed
+- Credential sections are now nested under go2rtc in the generated Frigate config
+- Xiaomi cameras show a warning modal about go2rtc v1.9.13 compatibility
+- Icons directory is embedded in the static assets bundle
+
 ## [2.1.0] - 2026-04-08
 
 ### Added

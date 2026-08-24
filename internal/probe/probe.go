@@ -51,6 +51,14 @@ func Init() {
 		return ""
 	})
 
+	// Xiaomi detector (miIO hello on UDP:54321)
+	detectors = append(detectors, func(r *probe.Response) string {
+		if r.Probes.Xiaomi != nil {
+			return "xiaomi"
+		}
+		return ""
+	})
+
 	api.HandleFunc("api/probe", apiProbe)
 }
 
@@ -129,12 +137,19 @@ func runProbe(parent context.Context, ip string) *probe.Response {
 		resp.Probes.ONVIF = r
 		mu.Unlock()
 	})
+	run(func() {
+		r, _ := probe.ProbeXiaomi(fastCtx, ip)
+		mu.Lock()
+		resp.Probes.Xiaomi = r
+		mu.Unlock()
+	})
 
 	wg.Wait()
 
 	// determine reachable
 	resp.Reachable = (resp.Probes.Ports != nil && len(resp.Probes.Ports.Open) > 0) ||
-		resp.Probes.MDNS != nil
+		resp.Probes.MDNS != nil ||
+		resp.Probes.Xiaomi != nil
 
 	// determine type
 	resp.Type = "standard"
