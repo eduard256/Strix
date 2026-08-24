@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.1.1] - 2026-08-24
+## [2.2.0] - 2026-08-24
 
 ### Added
 - Xiaomi camera support: Mi Cloud integration, miIO probe detector, and a dedicated Xiaomi camera page in the web UI
